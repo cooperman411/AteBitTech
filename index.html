@@ -321,6 +321,25 @@ a.brand .brand-text{
 #brand-header .brand-block{margin-left:auto;margin-right:auto}
 #brand-header .taglines{text-align:center}
 </style>
+<style>
+/* retro visitor counter at page bottom */
+.retro-counter{
+  font-family:"VT323", monospace;
+  background:rgba(0,0,0,0.55);
+  border:4px solid #111;
+  outline:1px solid #0ff;
+  box-shadow:0 0 8px var(--accent, #00ffd0), inset 0 0 6px rgba(0,255,208,0.35);
+  padding:8px 10px; min-width:180px; max-width:320px;
+  image-rendering:pixelated; text-shadow:0 0 6px var(--accent, #00ffd0);
+  margin:2rem auto 0; /* centers it at the bottom of the page */
+}
+.retro-counter .rc-title{ text-align:center; font-size:20px; margin:0 0 6px 0; letter-spacing:1px; }
+.retro-counter .rc-grid{ display:grid; gap:2px; }
+.retro-counter .rc-row{ display:flex; justify-content:space-between; align-items:center; }
+.retro-counter .rc-row .rc-label{ font-size:18px; }
+.retro-counter .rc-row .rc-val{ font-size:20px; padding-left:8px; }
+.retro-counter .rc-total .rc-val{ font-size:22px; }
+</style>
 </head>
 
 </head>
@@ -6218,6 +6237,19 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
 <p><strong>Do you want to submit a new resource, or change or remove an existing one? Found a bad or incorrect link?
     <a href="mailto:picks.favored4z@icloud.com" rel="noopener"><strong>Click here!</strong></a>
 </strong></p>
+<footer id="about-privacy" class="about-privacy-section">
+  ...
+  <div id="retro-counter" class="retro-counter" role="region" aria-label="Visitor counter">
+    <div class="rc-title">VISITORS</div>
+    <div class="rc-grid">
+      <div class="rc-row"><span class="rc-label">Day</span><span class="rc-val" id="rc-day">--</span></div>
+      <div class="rc-row"><span class="rc-label">Week</span><span class="rc-val" id="rc-week">--</span></div>
+      <div class="rc-row"><span class="rc-label">Month</span><span class="rc-val" id="rc-month">--</span></div>
+      <div class="rc-row"><span class="rc-label">Year</span><span class="rc-val" id="rc-year">--</span></div>
+      <div class="rc-row rc-total"><span class="rc-label">Total</span><span class="rc-val" id="rc-total">--</span></div>
+    </div>
+  </div>
+</footer>
 </footer>
 </body>
 </html>
