@@ -131,7 +131,44 @@ select:focus, input:focus {
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
-</style><meta content="A curated retro and vintage computing database: hardware, parts, magazines, vendors, and communities. Cataloging Amiga to ZX Spectrum and beyond." name="description"/><meta content="Ate Bit Tech — Retro &amp; Vintage Computing Database, Cataloging Amiga to ZX Spectrum and Beyond" property="og:title"/><meta content="Search a curated retro computing database: hardware, parts, mags, vendors, communities." property="og:description"/><meta content="website" property="og:type"/><meta content="summary_large_image" name="twitter:card"/><script type="application/ld+json">[
+</style>
+
+/* Header navigation */
+.top-right-link {
+  position: fixed; top: 12px; right: 12px; z-index: 1000;
+  padding: 6px 10px; border-radius: 8px; text-decoration: none;
+  color: var(--accent); background: var(--card);
+  border: 1px solid var(--border); font-size: 0.85rem;
+}
+.top-right-link:hover { text-decoration: underline; }
+
+/* Skip link */
+.skip-link {
+  position: absolute; left: -9999px; width: 1px; height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static; width: auto; height: auto;
+  padding: 8px 12px; background: var(--accent); color: #000;
+  text-decoration: none; font-weight: bold;
+}
+
+/* Logo glow */
+.glow-logo {
+  filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 12px var(--accent));
+}
+
+/* Brand header layout */
+.brand-block { text-align: center; }
+.brand-block img { display: block; margin-left: auto; margin-right: auto; }
+
+/* Footer section */
+.about-privacy-section {
+  max-width: 800px; margin: 2rem auto; padding: 1rem;
+  text-align: center; font-size: 0.85rem;
+}
+.about-privacy-section hr { margin: 1.5rem 0; }
+<meta content="A curated retro and vintage computing database: hardware, parts, magazines, vendors, and communities. Cataloging Amiga to ZX Spectrum and beyond." name="description"/><meta content="Ate Bit Tech — Retro &amp; Vintage Computing Database, Cataloging Amiga to ZX Spectrum and Beyond" property="og:title"/><meta content="Search a curated retro computing database: hardware, parts, mags, vendors, communities." property="og:description"/><meta content="website" property="og:type"/><meta content="summary_large_image" name="twitter:card"/><script type="application/ld+json">[
   {
     "Name": "68k.news",
     "URL": "http://68k.news/",
