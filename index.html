@@ -10,138 +10,105 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=VT323&amp;family=Roboto+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
 <style>
-        body {
-            font-family: 'Roboto Mono', monospace;
-            background-color: #1a202c;
-            color: #a0aec0;
-        }
-        .title-font {
-            font-family: 'VT323', monospace;
-        }
-        /* Custom scrollbar for a retro feel */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #2d3748;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: #4a5568;
-            border-radius: 6px;
-            border: 3px solid #2d3748;
-        }
-        .card {
-            background-color: #2d3748;
-            border: 1px solid #4a5568;
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-        }
-        .tag {
-            background-color: #4a5568;
-            color: #e2e8f0;
-        }
-        .brand-tag {
-             background-color: #319795;
-        }
-        select, input {
-            background-color: #2d3748;
-            border-color: #4a5568;
-        }
-        select:focus, input:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px #63b3ed;
-        }
-        .glowing-text {
-            text-shadow: 0 0 5px #63b3ed, 0 0 10px #63b3ed;
-        }
-    </style>
-<style>
-/* v33 responsive filter layout */
-#filters-row{
-  display:grid;
+/* === AteBitTech — Consolidated Stylesheet === */
+
+/* Theme Variables */
+:root[data-theme="dark"] {
+  --bg: #0f1115;
+  --fg: #e6e7ea;
+  --muted: #b8bcc4;
+  --card: #161a20;
+  --accent: #3ea6ff;
+  --border: #2a2f3a;
+}
+:root.hc {
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: #ffffff;
+  --card: #000000;
+  --accent: #00ffff;
+  --border: #ffffff;
+}
+
+/* Base */
+html, body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Roboto Mono', monospace;
+}
+.title-font {
+  font-family: 'VT323', monospace;
+}
+a, .link { color: var(--accent); }
+hr { border-color: var(--border); }
+
+/* Cards */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+:root.hc .card { border-width: 3px; }
+
+/* Filters */
+#filters-row {
+  display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap:16px;
-  align-items:start;
-  max-width:1200px;
+  gap: 16px;
+  align-items: start;
+  max-width: 1200px;
   margin: 0 auto 12px;
   padding: 8px 12px;
 }
-#filters-row label{
-  display:block;
-  text-align:left;
-  margin-bottom:6px;
+#filters-row > div { align-items: flex-start !important; margin: 0 !important; }
+#filters-row label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
 }
-@media (max-width: 980px){
-  #filters-row{ grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+@media (max-width: 980px) {
+  #filters-row { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
 }
-@media (max-width: 640px){
-  #filters-row{ grid-template-columns: 1fr; }
-}
-</style><style>
-
-#filters-row > div{ align-items:flex-start !important; margin:0 !important; }
-#filters-row label{ display:block; text-align:left; margin-bottom:6px; }
-@media (max-width: 980px){ #filters-row{ grid-template-columns: repeat(2, minmax(220px, 1fr)); } }
-@media (max-width: 640px){ #filters-row{ grid-template-columns: 1fr; } }
-
-</style>
-<style>
-/* Base contrast variables */
-:root { --bg: #0b0b0b; --fg: #eaeaea; --muted:#b5b5b5; --card:#141414; --accent:#00d68f; }
-:root.hc { --bg:#000; --fg:#fff; --muted:#e0e0e0; --card:#000; --accent:#0ff; }
-
-html, body { background-color: var(--bg); color: var(--fg); }
-.card { background-color: var(--card); }
-a, .link { color: var(--accent); }
-
-/* Focus visibility */
-:where(a, button, input, select, textarea, [tabindex]) :focus { outline: none; }
-:where(a, button, input, select, textarea, [tabindex]):focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 10px;
+@media (max-width: 640px) {
+  #filters-row { grid-template-columns: 1fr; }
 }
 
-/* Skip link */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+/* Tags & Brands */
+.tag {
+  background-color: #4a5568;
+  color: #e2e8f0;
 }
-.skip-link:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  padding: 0.5rem 0.75rem;
-  background: var(--card);
-  border: 2px solid var(--accent);
-  border-radius: 0.5rem;
-  display: inline-block;
-  margin: 0.5rem;
+.brand-tag {
+  background-color: #319795;
 }
 
-/* Larger targets */
-button, .btn, select, .tag, .control {
-  min-height: 44px;
-  min-width: 44px;
+/* Form Controls */
+select, input {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+select:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #63b3ed;
 }
 
-/* Typography for legibility */
-body { font-size: 18px; line-height: 1.6; }
-h1,h2,h3 { line-height: 1.25; }
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+/* Title Glow */
+.glowing-text, .title-glow {
+  text-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent);
 }
+#brand-header .title-font { letter-spacing: 0.5px; }
+#brand-header h2 { max-width: 60ch; margin-left: auto; margin-right: auto; }
+#results-count { color: var(--fg); }
 
-/* High-contrast toggle button */
+/* Controls Row */
+.controls-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* High-Contrast Toggle Button */
 .hc-toggle {
   border: 2px solid var(--accent);
   background: transparent;
@@ -150,86 +117,20 @@ h1,h2,h3 { line-height: 1.25; }
   border-radius: 0.75rem;
 }
 .hc-toggle:focus-visible { outline: 3px solid var(--accent); }
-</style>
-<style>
-/* Theme variables */
-:root[data-theme="dark"] { 
-  --bg:#0f1115;        /* near-black */
-  --fg:#e6e7ea;        /* very light gray */
-  --muted:#b8bcc4;     /* mid gray */
-  --card:#161a20;      /* dark panel */
-  --accent:#3ea6ff;    /* bright blue for strong contrast */
-  --border:#2a2f3a;    /* visible on dark */
-}
-:root.hc { 
-  --bg:#000000; 
-  --fg:#ffffff; 
-  --muted:#ffffff; 
-  --card:#000000; 
-  --accent:#00ffff; 
-  --border:#ffffff; 
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: #2d3748; }
+::-webkit-scrollbar-thumb {
+  background-color: #4a5568;
+  border-radius: 6px;
+  border: 3px solid #2d3748;
 }
 
-html, body { background-color: var(--bg); color: var(--fg); }
-.card { background-color: var(--card); border:1px solid var(--border); border-radius: 0.75rem; }
-a, .link { color: var(--accent); }
-hr { border-color: var(--border); }
-
-/* Controls row spacing */
-.controls-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
-
-/* Focus visibility */
-:where(a, button, input, select, textarea, [tabindex]):focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 8px;
-}
-
-/* Buttons */
-.btn, .hc-toggle, /* Larger targets and typography */
-button, .btn, select, .tag, .control { min-height: 44px; min-width: 44px; }
-body { font-size: 18px; line-height: 1.6; }
-h1,h2,h3 { line-height: 1.25; }
-
-/* Reduced motion */
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
-
-/* Print: high-contrast black on white */
-@media print {
-  :root { --bg:#ffffff !important; --fg:#000000 !important; --card:#ffffff !important; --accent:#000000 !important; --border:#000000 !important; }
-  a { text-decoration: underline; }
-  .hc-toggle, #hc-toggle, }
-
-html, body { background-color: var(--bg); color: var(--fg); }
-.card { background-color: var(--card); border:2px solid var(--border); border-radius: 0.75rem; }
-a, .link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
-.card a { color: var(--accent); }
-.text-muted, .muted { color: var(--muted); }
-
-:root.hc a { text-decoration: underline; }
-
-/* Ensure headings and primary text use --fg, never fixed whites */
-h1,h2,h3,.heading { color: var(--fg); }
-
-/* Tag chips should have borders for visibility */
-.tag { border:1px solid var(--border); background: transparent; color: var(--fg); }
-
-/* Results count readable */
-#results-count { color: var(--fg); }
-
-/* High-contrast cards heavier border */
-:root.hc .card { border-width:3px; }
-
-/* Title glow for brand */
-.title-glow {
-  text-shadow:
-    0 0 6px var(--accent),
-    0 0 12px var(--accent);
-}
-#brand-header .title-font { letter-spacing: 0.5px; }
-#brand-header h2 { max-width: 60ch; margin-left: auto; margin-right: auto; }
 </style><meta content="A curated retro and vintage computing database: hardware, parts, magazines, vendors, and communities. Cataloging Amiga to ZX Spectrum and beyond." name="description"/><meta content="Ate Bit Tech — Retro &amp; Vintage Computing Database, Cataloging Amiga to ZX Spectrum and Beyond" property="og:title"/><meta content="Search a curated retro computing database: hardware, parts, mags, vendors, communities." property="og:description"/><meta content="website" property="og:type"/><meta content="summary_large_image" name="twitter:card"/><script type="application/ld+json">[
   {
     "Name": "68k.news",
@@ -272,86 +173,11 @@ h1,h2,h3,.heading { color: var(--fg); }
     "Keywords": null
   }
 ]</script>
-<style>
-@font-face{
-  font-family:"VT323";
-  src:url("./VT323-Regular.ttf") format("truetype");
-  font-display:swap;
-}
-.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
-.brand-text{font-family:"VT323",monospace;font-size:clamp(24px,4vw,48px);color:#fff;
-  text-shadow:0 0 10px rgba(0,255,200,.35)}
-/* Light theme override */
-@media (prefers-color-scheme: light){
-  .brand-text{color:#111;text-shadow:0 0 8px rgba(0,168,138,.25)}
-}
-</style>
 <link href="https://./favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="https://./favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="https://./favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://./apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <meta content="#0b0b0b" name="theme-color"/>
-<style>
-/* Hard overrides for brand header layout */
-a.brand{display:inline-flex !important; flex-direction:row !important; align-items:center !important; gap:12px !important; text-decoration:none !important;}
-a.brand img{height:64px !important; width:auto !important; max-width:none !important; image-rendering:pixelated !important;}
-a.brand .brand-text{
-  display:inline-block !important;
-  font-family:"VT323", monospace !important;
-  font-size:clamp(24px,4vw,48px) !important;
-  line-height:1 !important;
-  white-space:nowrap !important;
-  writing-mode:horizontal-tb !important;
-  text-orientation:mixed !important;
-  transform:none !important;
-  rotate:0deg !important;
-}
-/* Reset any global image rules that might stretch sprites */
-img#logo-left, img#logo-right{object-fit:contain !important;}
-/* Optional: lock header container to avoid wrap on small widths */
-@media (min-width: 480px){
-  a.brand{flex-wrap:nowrap !important;}
-}
-</style>
-<style>
-/* Center the brand block and enforce dark theme text */
-a.brand{
-  display:inline-flex !important;
-  flex-direction:row !important;
-  align-items:center !important;
-  justify-content:center !important;
-  gap:12px !important;
-  text-decoration:none !important;
-  margin:24px auto !important;
-}
-a.brand .brand-text{
-  color:#ffffff !important;
-  text-shadow:0 0 10px rgba(0,255,200,.35) !important;
-}
-/* Optional container centering if parent uses text layout */
-.brand, .brand * { vertical-align: middle; }
-</style>
-<style>
-/* v37: top-right link + footer block */
-.top-right-link{
-  position:fixed; top:12px; right:12px; z-index:1000;
-  padding:6px 10px; border-radius:8px; text-decoration:none;
-  background:rgba(0,0,0,0.35);
-  backdrop-filter:saturate(140%) blur(2px);
-  box-shadow:0 0 8px var(--accent, #00ffd0);
-}
-.about-privacy-section{ margin:3rem auto; max-width:900px; padding:0 1rem; }
-.about-privacy-section hr{ margin-bottom:1rem; opacity:0.4; }
-.about-privacy-section a{ text-decoration:underline; }
-.about-privacy-section p{ margin:0.9rem 0; }
-</style>
-<style>
-/* center header without touching rest of layout */
-#brand-header{display:flex;flex-direction:column;align-items:center;text-align:center}
-#brand-header .brand-row{display:flex;align-items:center;justify-content:center}
-#brand-header .brand-block{margin-left:auto;margin-right:auto}
-#brand-header .taglines{text-align:center}
-</style>
 </head>
 <body class="p-4 md:p-8">
 <a aria-label="Privacy and About" class="top-right-link" href="#about-privacy">Privacy &amp; About</a><button class="hc-toggle" id="hc-toggle">High contrast</button><a class="skip-link" href="#main">Skip to content</a>
@@ -464,7 +290,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "8bitdevices",
-    "URL": "8bitdevices.com",
+    "URL": "https://8bitdevices.com",
     "Description": "8bitdevices Modern devices for vintage computing. 8-bit packet radio project. Apple, Atari, C64, TRS-80 Modern devices Apple, Atari, TRS-80, C-64, and other ...",
     "Category": "Hardware & Parts, Repair & Services",
     "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack",
@@ -574,7 +400,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Adwater and Stir",
-    "URL": "adwaterandstir.com",
+    "URL": "https://adwaterandstir.com",
     "Description": "Adwater and Stir Historic Computer Kits We create kits to build replicas of historic computers, including the Altar 8800 and Kenbak-1. Also see a demonstrati...",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari",
@@ -800,7 +626,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Analytics Lounge, NFP",
-    "URL": "www.analyticslounge.org",
+    "URL": "https://www.analyticslounge.org",
     "Description": "Analytics Lounge, NFP Electron Microscopy! Born in 1984 and restored slowly over many years this Amray Scanning Electron Microscope is a delightful mix of em...",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
     "Brands": "Acorn/BBC, Atari",
@@ -821,7 +647,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "andira2010",
     "URL": "http://www.youtube.com/channel/UCo8kqJklmGs1hhBibP70BnA",
-    "Description": "andira2010 — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "andira2010 \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -839,7 +665,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "IBM PC, ST, AT, engineer, electrical engineer maker, engineer maker retired, maker retired senior, retired senior foreign, senior foreign service, foreign service officer, service officer statedept, officer statedept space"
   },
   {
-    "Name": "ANTIC – The Atari 8‑Bit Podcast",
+    "Name": "ANTIC \u2013 The Atari 8\u2011Bit Podcast",
     "URL": "https://www.google.com/search?q=ANTIC+The+Atari+8-Bit+Podcast",
     "Description": "Interviews with Atari developers.",
     "Category": "Hardware & Parts, Podcasts & Audio",
@@ -910,7 +736,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "ARC Javmaster",
     "URL": "http://www.youtube.com/channel/UC550QsLjbk-zxUv4u717EJQ",
-    "Description": "ARC Javmaster — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "ARC Javmaster \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Sinclair/ZX",
     "Tags": "YouTube",
@@ -1127,7 +953,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "BastichB 64K",
     "URL": "http://www.youtube.com/channel/UCQ9wMZNpJn07oufDIfWhgtw",
-    "Description": "BastichB 64K — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "BastichB 64K \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -1235,7 +1061,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "Amiga, ST, amiga hardware, hardware, book, book amiga hardware, book amiga, amiga hardware book, hardware book commodore, book commodore, commodore, amiga hardware probably"
   },
   {
-    "Name": "Big Mess o’ Wires Blog",
+    "Name": "Big Mess o\u2019 Wires Blog",
     "URL": "https://www.bigmessowires.com/",
     "Description": "Apple II/Mac hardware projects (Floppy Emu, ROM-inator)",
     "Category": "Hardware & Parts, News & Blogs, Repair & Services",
@@ -1267,7 +1093,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "The Bit Culture",
     "URL": "http://www.youtube.com/channel/UCJWAJAMT4tUfwum-65yIwqQ",
-    "Description": "The Bit Culture — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "The Bit Culture \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -1286,7 +1112,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "BitHistory.org",
-    "URL": "bithistory.org",
+    "URL": "https://bithistory.org",
     "Description": "BitHistory.org Surplus items from the BitHistory.org collection. I undetermined mix of various surplus items from the BitHistory.org collection. Likely syste...",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari",
@@ -1346,7 +1172,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Bonus Life Computers",
-    "URL": "www.bonuslifecomputers.com",
+    "URL": "https://www.bonuslifecomputers.com",
     "Description": "Bonus Life Computers Everything Commodore, Atari, Apple, TRS-80, Next, Altair and Other! Vintage computer sales and service for Atari, Commodore, TRS-80, App...",
     "Category": "Hardware & Parts, Repair & Services",
     "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack",
@@ -1437,7 +1263,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "C64 OS Official Channel",
     "URL": "http://www.youtube.com/channel/UCkbH84WXA45xtvkqOfV2hmw",
-    "Description": "C64 OS Official Channel — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "C64 OS Official Channel \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -1566,7 +1392,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Centre for Computing History",
     "URL": "https://www.computinghistory.org.uk/",
-    "Description": "Located in Cambridge, UK. Focus on Computers + Games from 1960s–2000s. Hands-on galleries; education focus.",
+    "Description": "Located in Cambridge, UK. Focus on Computers + Games from 1960s\u20132000s. Hands-on galleries; education focus.",
     "Category": "Hardware & Parts, Software & Games",
     "Brands": "Various",
     "Tags": "",
@@ -1575,7 +1401,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Channel Id",
-    "URL": "Channel Url",
+    "URL": "",
     "Description": "Retro computing channel. Repairs, restorations, history, and projects from Channel Id.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
@@ -1614,7 +1440,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "Commodore 64, Atari, Amiga, Commodore, Sinclair, MSX, Amstrad, XL, XE, ST, BBC Micro, AT"
   },
   {
-    "Name": "Chris’s Acorns",
+    "Name": "Chris\u2019s Acorns",
     "URL": "https://www.chrisacorns.computinghistory.org.uk/",
     "Description": "Acorn hardware documentation and archive",
     "Category": "Documentation & Wikis",
@@ -1705,7 +1531,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "COCOMAN/Fairly Amused",
-    "URL": "cocoman.biz & fairlyamused.com",
+    "URL": "https://cocoman.biz & fairlyamused.com",
     "Description": "COCOMAN/Fairly Amused COCOMAN's demos and sales Tandy CoCo goodies , Apple IIgs video cables, and other retro goodies!",
     "Category": "Hardware & Parts",
     "Brands": "Apple, Tandy/Radio Shack",
@@ -1795,7 +1621,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Computer Compulsive",
     "URL": "http://www.youtube.com/channel/UCbS3m4DL-dAoU-f9Z_3fwXw",
-    "Description": "Computer Compulsive — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Computer Compulsive \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -1815,7 +1641,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Computer History Museum (CHM)",
     "URL": "https://computerhistory.org/",
-    "Description": "Located in Mountain View, CA. Focus on Computers from 1940s–2000s. Large permanent collection; landmark exhibits.",
+    "Description": "Located in Mountain View, CA. Focus on Computers from 1940s\u20132000s. Large permanent collection; landmark exhibits.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -1944,7 +1770,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Danielle (thegirlg33k)",
-    "URL": "thegirlg33k.com",
+    "URL": "https://thegirlg33k.com",
     "Description": "Danielle (thegirlg33k) Japanese Systems from the 80s and 90s Come check out the software libraries of different Japanese computers from the early 80s through...",
     "Category": "Hardware & Parts, Software & Games",
     "Brands": "Atari, Nintendo",
@@ -1954,7 +1780,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Dave Runkle",
-    "URL": "www.astrorat.com",
+    "URL": "https://www.astrorat.com",
     "Description": "Dave Runkle Home Computer of the 70's. H8, COSMAC Elf, Altair 8800 Home Computer of the 70's. H8, COSMAC Elf, Altair 8800",
     "Category": "Hardware & Parts",
     "Brands": "Apple",
@@ -1975,7 +1801,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Daves Vintage Apple Tech",
     "URL": "http://www.youtube.com/channel/UCm6wvlnm88F_6Sg-bcaIYhg",
-    "Description": "Daves Vintage Apple Tech — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Daves Vintage Apple Tech \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -1983,9 +1809,9 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "Macintosh, Apple, ST, TT, AT, vintage, vintage apple tech, vintage apple, apple tech, tech, dave vintage apple, apple computers"
   },
   {
-    "Name": "Dave’s Retro Video Lab",
+    "Name": "Dave\u2019s Retro Video Lab",
     "URL": "https://youtube.com/@davesretrovideolab2709?si=e_merkzuv0gxgwex",
-    "Description": "Dave’s Retro Video Lab Sony F65 Digital Cinema Camera Production Workflow Join Dave as he breaks down the full production workflow of the Sony F65 digital ci...",
+    "Description": "Dave\u2019s Retro Video Lab Sony F65 Digital Cinema Camera Production Workflow Join Dave as he breaks down the full production workflow of the Sony F65 digital ci...",
     "Category": "Hardware & Parts, YouTube & Social Channels",
     "Brands": "Apple",
     "Tags": "YouTube",
@@ -2004,7 +1830,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Dayton Computer Museum",
-    "URL": "dma1.org",
+    "URL": "https://dma1.org",
     "Description": "Dayton Computer Museum Dayton Computer Museum See and learn how our Relay based Binary Digital Computer works. Experience the beginnings of Electronic comput...",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Acorn/BBC, Atari",
@@ -2072,9 +1898,9 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Denial (VIC‑20)",
+    "Name": "Denial (VIC\u201120)",
     "URL": "https://sleepingelephant.com/denial/",
-    "Description": "VIC‑20 community, projects, support",
+    "Description": "VIC\u201120 community, projects, support",
     "Category": "Community Hubs & Forums, Hardware & Parts, Repair & Services",
     "Brands": "Commodore",
     "Tags": "Forum",
@@ -2171,7 +1997,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Dwayne",
-    "URL": "build-a-blinkie.org",
+    "URL": "https://build-a-blinkie.org",
     "Description": "Dwayne Build-a-Blinkie Learn-to-Solder workshop Build-a-Blinkie is a 501(c)3 organization started by engineers, dedicated to the teaching of STEAM (Science, ...",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari",
@@ -2200,7 +2026,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "Commodore 64, ZX Spectrum, Commodore, MSX, Amstrad, ST, STE, XT, AT, spectrum, homebrew, spectrumero"
   },
   {
-    "Name": "Eli’s Software Encyclopedia",
+    "Name": "Eli\u2019s Software Encyclopedia",
     "URL": "https://elisoftware.org",
     "Description": "Vintage software archive across C64, Amiga, DOS and more.",
     "Category": "Software & Games",
@@ -2269,9 +2095,9 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "nan, phone, happycomputerguy, retro computing, retro, computing, sharing camera phone, camera phone phone, phone phone upload, happycomputerguy retro computing, sharing camera, camera phone"
   },
   {
-    "Name": "Eric’s Edge",
+    "Name": "Eric\u2019s Edge",
     "URL": "https://quackofdawn.com",
-    "Description": "Eric’s Edge Adventure! The Quack of Dawn \"You should know better than to pick up a duck in a dungeon\" Welcome to Adventure! The Quack of Dawn Adventure! The ...",
+    "Description": "Eric\u2019s Edge Adventure! The Quack of Dawn \"You should know better than to pick up a duck in a dungeon\" Welcome to Adventure! The Quack of Dawn Adventure! The ...",
     "Category": "Hardware & Parts",
     "Brands": "Atari",
     "Tags": "",
@@ -2280,7 +2106,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Evan Wright",
-    "URL": "textadventure.net",
+    "URL": "https://textadventure.net",
     "Description": "Evan Wright Lantern Text Adventures Lantern is a adventure game development system that allows you to export games to many 8-bit systems",
     "Category": "Software & Games",
     "Brands": "Atari",
@@ -2340,7 +2166,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Frank Palazzolo and Evan Allen",
-    "URL": "abzman2k.wordpress.com",
+    "URL": "https://abzman2k.wordpress.com",
     "Description": "Frank Palazzolo and Evan Allen Pizza Time Theatre Computer, Homebrew software running on a Poly88 and a TRS-80 Restored Pizza Time Theatre Animatronics Contr...",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
     "Brands": "Atari, Tandy/Radio Shack",
@@ -2475,7 +2301,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "GameStar – Retro Klub",
+    "Name": "GameStar \u2013 Retro Klub",
     "URL": "https://www.youtube.com/playlist?list=PL_T_v8p-H6-J9-3-LCVXIV-a5zPIfD_hG",
     "Description": "Retro games & hardware. Pro team.",
     "Category": "YouTube & Social Channels",
@@ -2487,7 +2313,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Garth Beagle",
     "URL": "http://www.youtube.com/channel/UCHskucHwDQT4dkciquYX_4Q",
-    "Description": "Garth Beagle — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Garth Beagle \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -2516,7 +2342,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Genericable",
-    "URL": "genericable.com",
+    "URL": "https://genericable.com",
     "Description": "Genericable Genericable Genericable is back, showing you behind the screens from your local cable TV company. You'll see how The Weather Channel showed your ...",
     "Category": "Hardware & Parts, YouTube & Social Channels",
     "Brands": "Atari",
@@ -2566,7 +2392,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Hak4Kidz",
     "URL": "https://www.hak4kidz.com",
-    "Description": "Hak4Kidz Hak4Kidz Soldering Lab – Hands-On Projects for All Ages Hak4Kidz offers soldering projects with a fun twist—interactive badges and playful circuits ...",
+    "Description": "Hak4Kidz Hak4Kidz Soldering Lab \u2013 Hands-On Projects for All Ages Hak4Kidz offers soldering projects with a fun twist\u2014interactive badges and playful circuits ...",
     "Category": "Hardware & Parts, Repair & Services",
     "Brands": "Atari",
     "Tags": "",
@@ -2635,7 +2461,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Heinz Nixdorf MuseumsForum (HNF)",
     "URL": "https://www.hnf.de/en/home.html",
-    "Description": "Located in Paderborn, Germany. Focus on Computers + IT history from Ancient–present. World’s largest computer museum campus.",
+    "Description": "Located in Paderborn, Germany. Focus on Computers + IT history from Ancient\u2013present. World\u2019s largest computer museum campus.",
     "Category": "Community Hubs & Forums, Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -2655,7 +2481,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "HomeComputerMuseum",
     "URL": "https://www.homecomputermuseum.nl/",
-    "Description": "Located in Helmond, Netherlands. Focus on Home Computers from 1970s–2000s. Interactive, hands-on museum.",
+    "Description": "Located in Helmond, Netherlands. Focus on Home Computers from 1970s\u20132000s. Interactive, hands-on museum.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -2672,7 +2498,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "HXC2001 (Jean-François DEL NERO)",
+    "Name": "HXC2001 (Jean-Fran\u00e7ois DEL NERO)",
     "URL": "https://hxc2001.com/",
     "Description": "HxC floppy drive emulators for Amiga, Atari, CPC, etc.",
     "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
@@ -2693,8 +2519,8 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "i80386sx",
-    "URL": "i80386sx.com",
-    "Description": "i80386sx Compaq laptops of the 1990s I’ll be showing off Compaq laptops from my collection. I’ll be selling accessories for select Compaq laptops",
+    "URL": "https://i80386sx.com",
+    "Description": "i80386sx Compaq laptops of the 1990s I\u2019ll be showing off Compaq laptops from my collection. I\u2019ll be selling accessories for select Compaq laptops",
     "Category": "Hardware & Parts, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "",
@@ -2771,7 +2597,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Internet Archive",
     "URL": "http://www.youtube.com/channel/UCFa_X02QhJnP0FNpFAKyRRg",
-    "Description": "Internet Archive — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Internet Archive \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -2801,7 +2627,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "IPSJ Computer Museum (virtual)",
     "URL": "https://museum.ipsj.or.jp/en/index.html",
-    "Description": "Online museum with a Japan focus. Covers computers from the 1950s–1990s. Canonical virtual museum by Japan’s IPSJ.",
+    "Description": "Online museum with a Japan focus. Covers computers from the 1950s\u20131990s. Canonical virtual museum by Japan\u2019s IPSJ.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "Japan",
@@ -2829,7 +2655,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Jack Rubin",
-    "URL": "www.computerarium.org",
+    "URL": "https://www.computerarium.org",
     "Description": "Jack Rubin Old And In The Way Old guys, old computers - except for Kyle",
     "Category": "Hardware & Parts",
     "Brands": "Various",
@@ -2860,7 +2686,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "jaromaz",
     "URL": "http://www.youtube.com/channel/UCIAidAcBpFXy17qmgL9_K3g",
-    "Description": "jaromaz — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "jaromaz \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -2870,7 +2696,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "JDW",
     "URL": "http://www.youtube.com/channel/UCQlrWbkbU-N-HddTe_Ydajw",
-    "Description": "JDW — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "JDW \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -2879,7 +2705,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Jefferey L. Wilson",
-    "URL": "s100projects.com",
+    "URL": "https://s100projects.com",
     "Description": "Jefferey L. Wilson S100Projects / CompuPro 816 Multiuser S-100 New S-100 Systems. Motherboards, and S-100 Cards, plus a 1980s Multiuser CompuPro 816 running ...",
     "Category": "Hardware & Parts",
     "Brands": "Atari, PC",
@@ -2890,7 +2716,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Jess B's Tech Dept.",
     "URL": "http://www.youtube.com/channel/UC9v_yfGg9CQW8M181EqHgog",
-    "Description": "Jess B's Tech Dept. — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Jess B's Tech Dept. \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -2998,7 +2824,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Juicy Crumb",
-    "URL": "juicycrumb.com",
+    "URL": "https://juicycrumb.com",
     "Description": "Juicy Crumb Juicy Crumb See our products in action and talk to the team behind the DockLite and DockLite G4!",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
@@ -3009,7 +2835,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Juicy Crumb Systems",
     "URL": "http://www.youtube.com/channel/UCSIPOBlkQ_zyq9SfqVSCZtA",
-    "Description": "Juicy Crumb Systems — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Juicy Crumb Systems \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3039,7 +2865,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Kevin Noki",
     "URL": "http://www.youtube.com/channel/UCwO690Ba2x8YE980UQqnjXA",
-    "Description": "Kevin Noki — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Kevin Noki \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3137,7 +2963,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "Commodore 64, Commodore, C64, AT, commodore community, community, forum, lemon64 commodore commodore, commodore commodore community, commodore community forum, lemon64 commodore, commodore commodore"
   },
   {
-    "Name": "Levi Ma’ aia",
+    "Name": "Levi Ma\u2019 aia",
     "URL": "https://www.levimaaia.com",
     "Description": "Showcases CRT video walls, Apple IIGS, Commodore 64, and retro-modern bridges.",
     "Category": "Hardware & Parts, Repair & Services",
@@ -3188,7 +3014,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Mac84",
-    "URL": "www.mac84.net",
+    "URL": "https://www.mac84.net",
     "Description": "Mac84 Mac84 Shenanigans Exciting Macintosh systems and historical artifacts and more!",
     "Category": "Hardware & Parts",
     "Brands": "Apple, Atari",
@@ -3228,7 +3054,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Macintosh Librarian",
-    "URL": "www.maclibrarian.com",
+    "URL": "https://www.maclibrarian.com",
     "Description": "Macintosh Librarian Macintosh Librarian's Retro Collection Come to Maccy and Kate's table to check out the first Macintosh, rare accessories, and play some O...",
     "Category": "Hardware & Parts",
     "Brands": "Apple, Atari",
@@ -3317,7 +3143,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Matthew Jones / McJonesTech",
-    "URL": "mcjonestech.com",
+    "URL": "https://mcjonestech.com",
     "Description": "Matthew Jones / McJonesTech The Seequa Computer Corporation & Their Competitors See three lost machines from the Seequa Computer Corporation, alongside some ...",
     "Category": "Hardware & Parts",
     "Brands": "Apple, Atari, Nintendo",
@@ -3327,7 +3153,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Matthew Schreiner Jr",
-    "URL": "matthewschreiner.com",
+    "URL": "https://matthewschreiner.com",
     "Description": "Matthew Schreiner Jr The Atari Guy YouTube channel",
     "Category": "YouTube & Social Channels",
     "Brands": "Atari",
@@ -3357,7 +3183,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Melissa Barron // M-three-L Art",
-    "URL": "melissabarron.net",
+    "URL": "https://melissabarron.net",
     "Description": "Melissa Barron // M-three-L Art Original art and prints inspired by vintage technology I create original art inspired by vintage technology, especially the A...",
     "Category": "Hardware & Parts",
     "Brands": "Apple",
@@ -3377,7 +3203,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Michael Katz",
-    "URL": "drones.katzphoto.net",
+    "URL": "https://drones.katzphoto.net",
     "Description": "Michael Katz Minicomputers, HP Calculators from the 70's & 80's and misc. electrnonic stuff for sale. I will be demonstrating a PDP-8 minicomputer, a teletyp...",
     "Category": "Hardware & Parts",
     "Brands": "Acorn/BBC, Atari",
@@ -3388,7 +3214,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Michael MJD",
     "URL": "http://www.youtube.com/channel/UCS-WzPVpAAli-1IfEG2lN8A",
-    "Description": "Michael MJD — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Michael MJD \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3504,7 +3330,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Mr. Macintosh",
-    "URL": "mrmacintosh.com",
+    "URL": "https://mrmacintosh.com",
     "Description": "Mr. Macintosh Display Macintosh Servers",
     "Category": "Hardware & Parts",
     "Brands": "Apple",
@@ -3515,7 +3341,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "MrVenom1974",
     "URL": "http://www.youtube.com/channel/UCI0aw3sE0RUEavAYiNR6avQ",
-    "Description": "MrVenom1974 — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "MrVenom1974 \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3584,7 +3410,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Museum of Computing",
     "URL": "https://museumofcomputing.org.uk/",
-    "Description": "Located in Swindon, UK. Focus on Computers from 1970s–2000s. Volunteer museum; local collections.",
+    "Description": "Located in Swindon, UK. Focus on Computers from 1970s\u20132000s. Volunteer museum; local collections.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -3653,7 +3479,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "The National Museum of Computing (TNMOC)",
     "URL": "https://www.tnmoc.org/",
-    "Description": "Located in Milton Keynes (Bletchley Park), UK. Focus on Computers from 1940s–1990s. World’s largest collection of working historic computers.",
+    "Description": "Located in Milton Keynes (Bletchley Park), UK. Focus on Computers from 1940s\u20131990s. World\u2019s largest collection of working historic computers.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -3673,7 +3499,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "National Videogame Museum (UK)",
     "URL": "https://thenvm.org/",
-    "Description": "Located in Sheffield, UK. Focus on Video Games from 1970s–present. National UK centre for videogames.",
+    "Description": "Located in Sheffield, UK. Focus on Video Games from 1970s\u2013present. National UK centre for videogames.",
     "Category": "Hardware & Parts, Museums & Exhibits, Software & Games",
     "Brands": "Various",
     "Tags": "",
@@ -3720,7 +3546,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Noel’s Retro Lab",
+    "Name": "Noel\u2019s Retro Lab",
     "URL": "https://www.youtube.com/@NoelsRetroLab/",
     "Description": "Restorations and repairs of vintage computers and electronics",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
@@ -3760,9 +3586,9 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "ST, TT, AT, tinkering, restoration, make restoration videos, restoration videos wish, videos wish send, wish send anything, send anything letters, anything letters packages, letters packages mail"
   },
   {
-    "Name": "Official Commodore®",
+    "Name": "Official Commodore\u00ae",
     "URL": "http://www.youtube.com/channel/UCVtHSIwgtd_ahsmNwCP9W5g",
-    "Description": "Official Commodore® — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Official Commodore\u00ae \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3771,7 +3597,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Old School Gamer Magazine",
-    "URL": "oldschoolgamer.com",
+    "URL": "https://oldschoolgamer.com",
     "Description": "Old School Gamer Magazine Retro Gaming Magazine North America's ONLY Multi-Platform Retro Gaming and Computing Print Magazine",
     "Category": "Hardware & Parts, News & Blogs",
     "Brands": "Various",
@@ -3810,9 +3636,9 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "nan, oldcomp, oldcomp obsah, obsah"
   },
   {
-    "Name": "Oldcomputers.net – The Old Computer Museum",
+    "Name": "Oldcomputers.net \u2013 The Old Computer Museum",
     "URL": "https://oldcomputers.net/",
-    "Description": "Online museum focusing on Home Computers from the 1970s–1990s. Long-running online museum of classic machines.",
+    "Description": "Online museum focusing on Home Computers from the 1970s\u20131990s. Long-running online museum of classic machines.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -3822,7 +3648,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Olde World Tech Fridays",
     "URL": "http://www.youtube.com/channel/UCBCpE57pwCPUf-UB6VEsMdg",
-    "Description": "Olde World Tech Fridays — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Olde World Tech Fridays \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3911,7 +3737,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Paul Rak",
-    "URL": "pjrcomputing.com",
+    "URL": "https://pjrcomputing.com",
     "Description": "Paul Rak Uncle Paulie's Retro Circus Sun / AT&T / misc vintage micros",
     "Category": "Hardware & Parts",
     "Brands": "Various",
@@ -3920,7 +3746,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "nan"
   },
   {
-    "Name": "PC-98の館",
+    "Name": "PC-98\u306e\u9928",
     "URL": "https://www.youtube.com/results?search_query=PC-98+%E3%81%AE%E9%A4%A8",
     "Description": "PC-98",
     "Category": "YouTube & Social Channels",
@@ -3952,7 +3778,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Peak Retro",
     "URL": "http://www.youtube.com/channel/UC09X9h4m2SMgHXInkUI1SMQ",
-    "Description": "Peak Retro — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Peak Retro \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -3982,7 +3808,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "piers rocks",
     "URL": "http://www.youtube.com/channel/UC4d_tODKgZU8Fc9O3x-5Gew",
-    "Description": "piers rocks — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "piers rocks \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4068,7 +3894,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "nan, betflix, betflix betflix"
   },
   {
-    "Name": "Printables – Amstrad CPC464 Tape Deck Button",
+    "Name": "Printables \u2013 Amstrad CPC464 Tape Deck Button",
     "URL": "https://www.printables.com/model/203016-amstrad-cpc464-tape-deck-button",
     "Description": "Replacement Amstrad CPC464 tape deck buttons",
     "Category": "Hardware & Parts, Repair & Services",
@@ -4077,7 +3903,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Printables – Classic Mac Floppy Drive Bezel",
+    "Name": "Printables \u2013 Classic Mac Floppy Drive Bezel",
     "URL": "https://www.printables.com/model/130728-classic-macintosh-floppy-drive-bezel",
     "Description": "Replacement floppy bezel for vintage Mac",
     "Category": "Hardware & Parts, Repair & Services",
@@ -4086,7 +3912,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Printables – Commodore 64 Keycaps",
+    "Name": "Printables \u2013 Commodore 64 Keycaps",
     "URL": "https://www.printables.com/model/285498-commodore-64-keycaps",
     "Description": "Modern 3D printable keycaps for C64",
     "Category": "Hardware & Parts, Repair & Services",
@@ -4095,7 +3921,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Printables – Retro Computer Brackets Collection",
+    "Name": "Printables \u2013 Retro Computer Brackets Collection",
     "URL": "https://www.printables.com/model/187479-retro-computer-brackets-collection",
     "Description": "Brackets and adapters for many retro machines",
     "Category": "Hardware & Parts, Repair & Services",
@@ -4104,7 +3930,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Project EGG 公式",
+    "Name": "Project EGG \u516c\u5f0f",
     "URL": "https://www.youtube.com/ProjectEGG",
     "Description": "Classic JP micros. Official channel.",
     "Category": "Hardware & Parts, YouTube & Social Channels",
@@ -4116,7 +3942,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "projectCD.Chronicles",
     "URL": "http://www.youtube.com/channel/UC4gRRyPrXz-BbMZsV2ZcqWg",
-    "Description": "projectCD.Chronicles — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "projectCD.Chronicles \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4305,7 +4131,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "r12freon",
-    "URL": "r-12.net",
+    "URL": "https://r-12.net",
     "Description": "r12freon NeXTstation Color, 8-Bits + Stuff for Sale NeXT slab running the Doom level editor used by Id, a Commodore 64 and Apple IIe with plenty of disks, pl...",
     "Category": "Hardware & Parts, Repair & Services",
     "Brands": "Apple, Atari, Commodore",
@@ -4374,7 +4200,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "RDKL, Inc.",
     "URL": "http://www.youtube.com/channel/UCF-tqqmlcJT5FtoUqYgxblQ",
-    "Description": "RDKL, Inc. — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "RDKL, Inc. \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4424,7 +4250,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "The Retro Collective",
     "URL": "http://www.youtube.com/channel/UCLEoyoOKZK0idGqSc6Pi23w",
-    "Description": "The Retro Collective — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "The Retro Collective \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4434,7 +4260,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Computer Museum",
     "URL": "https://www.retrocomputermuseum.co.uk/",
-    "Description": "Located in Leicestershire, UK. Focus on Computers + Consoles from 1970s–2000s. Playable systems; events and education.",
+    "Description": "Located in Leicestershire, UK. Focus on Computers + Consoles from 1970s\u20132000s. Playable systems; events and education.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -4503,7 +4329,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Games",
     "URL": "http://www.youtube.com/channel/UC-lvVA19BR7PduUMeOXETOA",
-    "Description": "Retro Games — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Retro Games \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4513,7 +4339,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Games Ltd.",
     "URL": "https://retrogames.biz/",
-    "Description": "TheC64 (full size), TheC64 Mini, TheA500 Mini – official licensed emulated recreations",
+    "Description": "TheC64 (full size), TheC64 Mini, TheA500 Mini \u2013 official licensed emulated recreations",
     "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
     "Brands": "Amiga, Atari, Commodore, Sinclair/ZX",
     "Tags": "Vendor,Emulation,Modern Hardware,Licensed",
@@ -4523,7 +4349,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Games Rediscovered",
     "URL": "http://www.youtube.com/channel/UCzyhDtaWfLbRVLqYk5Wh_5w",
-    "Description": "Retro Games Rediscovered — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Retro Games Rediscovered \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4552,7 +4378,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "RETRO Innovations",
-    "URL": "www.go4retro.com",
+    "URL": "https://www.go4retro.com",
     "Description": "RETRO Innovations Classic Systems, Contemporary Gear Solutions to help you continue enjoying your classic systems in today's world",
     "Category": "Hardware & Parts",
     "Brands": "Atari",
@@ -4622,7 +4448,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Recipes x Commodore",
     "URL": "http://www.youtube.com/channel/UC6gARF3ICgaLfs3o2znuqXA",
-    "Description": "Retro Recipes x Commodore — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Retro Recipes x Commodore \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4632,7 +4458,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Repair Roundup",
     "URL": "http://www.youtube.com/channel/UCBYOerUDazPvxJKU3cNxy4w",
-    "Description": "Retro Repair Roundup — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Retro Repair Roundup \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4652,7 +4478,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Rich",
     "URL": "http://www.youtube.com/channel/UC5C5oziAqltmB6uPdyl0_Uw",
-    "Description": "Retro Rich — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Retro Rich \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4662,7 +4488,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "The Retro Shack",
     "URL": "http://www.youtube.com/channel/UCu_sNgTzqhX0xXc02ufoTYg",
-    "Description": "The Retro Shack — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "The Retro Shack \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4672,7 +4498,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Retro Tech Foundation",
     "URL": "https://www.retrotechfoundation.org",
-    "Description": "Retro Tech Foundation Retro Tech Foundation Museum The Retro Tech Foundation’s mission is to educate the public about the value of vintage technology, from a...",
+    "Description": "Retro Tech Foundation Retro Tech Foundation Museum The Retro Tech Foundation\u2019s mission is to educate the public about the value of vintage technology, from a...",
     "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
     "Brands": "Apple, Atari",
     "Tags": "Museum, Vendor",
@@ -4702,7 +4528,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "retrobits",
     "URL": "http://www.youtube.com/channel/UCnua6gZFiw77kxwNChkXGuw",
-    "Description": "retrobits — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "retrobits \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4742,7 +4568,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "retroCombs",
     "URL": "http://www.youtube.com/channel/UCjdKGdIl5leQfhJZiHUYFbQ",
-    "Description": "retroCombs — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "retroCombs \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4802,7 +4628,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "RetroMacCast",
     "URL": "http://www.youtube.com/channel/UC3JzvMVaf-ny-JbdVFortrw",
-    "Description": "RetroMacCast — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "RetroMacCast \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4861,7 +4687,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "RetroTechy",
     "URL": "http://www.youtube.com/channel/UCWwpIgGmCzVXUrQelC-QyPQ",
-    "Description": "RetroTechy — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "RetroTechy \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4911,7 +4737,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Rhode Island Computer Museum (RICM)",
     "URL": "https://www.ricomputermuseum.org/",
-    "Description": "Located in Warwick / North Kingstown, RI, USA. Focus on Computers from 1970s–1990s. Workshops and preservation; tours by arrangement.",
+    "Description": "Located in Warwick / North Kingstown, RI, USA. Focus on Computers from 1970s\u20131990s. Workshops and preservation; tours by arrangement.",
     "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
     "Brands": "Various",
     "Tags": "",
@@ -4921,7 +4747,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Rich Natili",
     "URL": "https://sites.google.com/view/spyhuntercoco/home",
-    "Description": "Rich Natili Adventures in CoCo Spy Hunting I will be running my custom programmed version of the classic Bally ‘Spy Hunter’ on a TRS-80 Color Computer 1 conn...",
+    "Description": "Rich Natili Adventures in CoCo Spy Hunting I will be running my custom programmed version of the classic Bally \u2018Spy Hunter\u2019 on a TRS-80 Color Computer 1 conn...",
     "Category": "Hardware & Parts",
     "Brands": "Atari, Tandy/Radio Shack",
     "Tags": "",
@@ -4931,7 +4757,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Rich's Random Retro Reviews",
     "URL": "http://www.youtube.com/channel/UCUjmO9ngHQAvYVvg3QfI7uQ",
-    "Description": "Rich's Random Retro Reviews — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Rich's Random Retro Reviews \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -4951,7 +4777,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Rik's Random Retro",
     "URL": "http://www.youtube.com/channel/UCd6zvRJJepjqEi3LFcRsjzg",
-    "Description": "Rik's Random Retro — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Rik's Random Retro \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5010,7 +4836,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Sam Coupe Users Club",
     "URL": "https://www.samcoupe.com/",
-    "Description": "Sam Coupé community and resources",
+    "Description": "Sam Coup\u00e9 community and resources",
     "Category": "Community Hubs & Forums",
     "Brands": "Other",
     "Tags": "Community",
@@ -5039,7 +4865,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Scott Baret",
-    "URL": "www.scottbaret.com",
+    "URL": "https://www.scottbaret.com",
     "Description": "Scott Baret Pittsburgh Classic Mac Lab Out there, it's 2025. In here, it's always 1992",
     "Category": "Hardware & Parts",
     "Brands": "Apple",
@@ -5117,7 +4943,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Language": "English"
   },
   {
-    "Name": "Shapeways – Mac 128/512k Parts",
+    "Name": "Shapeways \u2013 Mac 128/512k Parts",
     "URL": "https://www.shapeways.com/marketplace?q=macintosh+128k",
     "Description": "3D printed parts for vintage compact Macs",
     "Category": "Hardware & Parts",
@@ -5246,7 +5072,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "SpecFive",
-    "URL": "www.specfive.com",
+    "URL": "https://www.specfive.com",
     "Description": "SpecFive Off-grid Mesh Radios Spec5 products are rugged, off-grid communication devices that use LoRa mesh networking to enable decentralized, secure messagi...",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari",
@@ -5326,7 +5152,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Stewart Newfeld",
-    "URL": "www.zebrasystems.com",
+    "URL": "https://www.zebrasystems.com",
     "Description": "Stewart Newfeld Timex TS1000 & Sinclair ZX81 products An extensive selection of Timex 1000 / Sinclair ZX81 computers, printers, kits, books, cassette softwar...",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari, Sinclair/ZX",
@@ -5346,7 +5172,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "The Stop Bits",
-    "URL": "thestopbits.net",
+    "URL": "https://thestopbits.net",
     "Description": "The Stop Bits The Stop Bits - a nerdy rock band Four YouTubers making music about (and sometimes with) vintage computers. Featuring Veronica Explains, The Ta...",
     "Category": "Hardware & Parts, YouTube & Social Channels",
     "Brands": "Atari",
@@ -5386,7 +5212,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Superstar64",
-    "URL": "youtube.com/@superstar64",
+    "URL": "https://youtube.com/@superstar64",
     "Description": "Superstar64 Superstar's Collection I'll have a live demo of some of my favorite systems from the horde",
     "Category": "Hardware & Parts, YouTube & Social Channels",
     "Brands": "Atari",
@@ -5407,7 +5233,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "System Source Computer Museum",
     "URL": "https://museum.syssrc.com/",
-    "Description": "Located in Hunt Valley, MD, USA. Focus on Computers from 1950s–2000s. Tours by appointment; large hands-on collection.",
+    "Description": "Located in Hunt Valley, MD, USA. Focus on Computers from 1950s\u20132000s. Tours by appointment; large hands-on collection.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -5436,7 +5262,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Tattler Solutions",
-    "URL": "www.retromodem.com",
+    "URL": "https://www.retromodem.com",
     "Description": "Tattler Solutions WiFi Retromodem Modern WiFi replacements for vintage Hayes and US Robotics modems. We will also be showing our mini VT100 emulator",
     "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
     "Brands": "Various",
@@ -5467,7 +5293,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Tech Time Traveller",
     "URL": "http://www.youtube.com/channel/UC0UflzOybq16vw7b638_-pg",
-    "Description": "Tech Time Traveller — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Tech Time Traveller \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5537,7 +5363,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "TheRetroChannel",
     "URL": "http://www.youtube.com/channel/UCDCXIPcYNKXFnR8q145UvCg",
-    "Description": "TheRetroChannel — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "TheRetroChannel \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "PC",
     "Tags": "YouTube",
@@ -5545,7 +5371,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "ST, TT, retro, computers, theretrochannel, retro computers, consoles, vintage, looking retro computers, retro computers consoles, computers consoles take, consoles take things"
   },
   {
-    "Name": "Thingiverse – Amiga Case Projects",
+    "Name": "Thingiverse \u2013 Amiga Case Projects",
     "URL": "https://www.thingiverse.com/search?q=amiga+case&page=1&type=things",
     "Description": "Replacement shells and case mods for Amiga computers",
     "Category": "Hardware & Parts, Repair & Services",
@@ -5555,7 +5381,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "nan, objects, thingiverse, laser, thingiverse thingiverse, things digital design, digital design physical, design physical objects, physical objects rapid, objects rapid prototyping, rapid prototyping objects, prototyping objects printing"
   },
   {
-    "Name": "Thingiverse – Macintosh SE/30 3D Printed Brackets",
+    "Name": "Thingiverse \u2013 Macintosh SE/30 3D Printed Brackets",
     "URL": "https://www.thingiverse.com/thing:2809833",
     "Description": "Brackets and parts for SE/30 restorations",
     "Category": "Hardware & Parts, Repair & Services",
@@ -5565,7 +5391,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Keywords": "ST, STE, TT, AT, caster, moving around, objects, laser, stop, moving, around, caster castor cups"
   },
   {
-    "Name": "Thingiverse – Printables – Atari ST Mouse Adapters",
+    "Name": "Thingiverse \u2013 Printables \u2013 Atari ST Mouse Adapters",
     "URL": "https://www.printables.com/model/264383-atari-st-mouse-adapter-case",
     "Description": "Cases for mouse adapters for Atari ST",
     "Category": "Hardware & Parts, Repair & Services",
@@ -5586,7 +5412,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "This Week in Retro",
     "URL": "http://www.youtube.com/channel/UCFMx-JitepTttWc-ABHhu8A",
-    "Description": "This Week in Retro — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "This Week in Retro \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5636,7 +5462,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "TNMOC 3D Virtual Tour",
     "URL": "https://www.tnmoc.org/3d-virtual-tour2",
-    "Description": "Online virtual tour of The National Museum of Computing, covering computers from the 1940s–1990s.",
+    "Description": "Online virtual tour of The National Museum of Computing, covering computers from the 1940s\u20131990s.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -5656,7 +5482,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Trina's Technobabble",
     "URL": "http://www.youtube.com/channel/UC-cIpJvy0FypBR04P-SCrdQ",
-    "Description": "Trina's Technobabble — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Trina's Technobabble \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5815,7 +5641,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Veronica Explains",
     "URL": "http://www.youtube.com/channel/UCMiyV_Ib77XLpzHPQH_q0qQ",
-    "Description": "Veronica Explains — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Veronica Explains \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5825,7 +5651,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Veronica Explains Nothing",
     "URL": "http://www.youtube.com/channel/UCsbmzVl1byLQmc79Ff4xgIg",
-    "Description": "Veronica Explains Nothing — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Veronica Explains Nothing \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -5883,7 +5709,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Vintage Computer Federation Museum @ InfoAge",
     "URL": "https://vcfed.org/vcf-museum/",
-    "Description": "Located in Wall, NJ, USA. Focus on Computers from 1960s–1990s. VCF museum space within InfoAge campus.",
+    "Description": "Located in Wall, NJ, USA. Focus on Computers from 1960s\u20131990s. VCF museum space within InfoAge campus.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -5942,7 +5768,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Walker Computer Solutions",
-    "URL": "facebook.com/walkercomputersol",
+    "URL": "https://facebook.com/walkercomputersol",
     "Description": "Walker Computer Solutions ESD Safe Weller, and Lindstrom Cutters and Pliers for board repairs and Laptops and Micro PC sales Selling Cutters and various supp...",
     "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
     "Brands": "Atari, PC",
@@ -5973,7 +5799,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Wi-Fi Sheep Tech Channel",
     "URL": "http://www.youtube.com/channel/UCyoGtuvngylmF2a20sj2cUA",
-    "Description": "Wi-Fi Sheep Tech Channel — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "Wi-Fi Sheep Tech Channel \u2014 retro computing YouTube channel focused on repairs, builds, and history.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Tags": "YouTube",
@@ -6011,7 +5837,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Wisconsin Computer Club",
-    "URL": "wisconsincomputerclub.com",
+    "URL": "https://wisconsincomputerclub.com",
     "Description": "Wisconsin Computer Club Wisconsin Computer Club Showcase A showcase of exhibits by Wisconsin Computer Club members",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
@@ -6050,7 +5876,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   },
   {
     "Name": "Wumpus Hunters",
-    "URL": "quarex.com",
+    "URL": "https://quarex.com",
     "Description": "Wumpus Hunters One displays TI99 computers, one sells big box PC games. Two great tastes that have nothing to do with one another. Ti99s and big box games",
     "Category": "Software & Games, YouTube & Social Channels",
     "Brands": "Atari, PC",
@@ -6081,7 +5907,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "Zap Coders",
     "URL": "https://zap-coders.com/",
-    "Description": "Zap Coders Zap Coders’ brand new game for the gameboy color Zap Coders’ new video game releasing this year for the gameboy color will be on display! Meet the...",
+    "Description": "Zap Coders Zap Coders\u2019 brand new game for the gameboy color Zap Coders\u2019 new video game releasing this year for the gameboy color will be on display! Meet the...",
     "Category": "Hardware & Parts, Software & Games",
     "Brands": "Various",
     "Tags": "",
@@ -6101,7 +5927,7 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
   {
     "Name": "ZCOM Zuse-Computer-Museum",
     "URL": "https://www.zuse-computer-museum.com/",
-    "Description": "Located in Hoyerswerda, Germany. Focus on Computers from 1930s–1990s. Museum dedicated to Konrad Zuse's work.",
+    "Description": "Located in Hoyerswerda, Germany. Focus on Computers from 1930s\u20131990s. Museum dedicated to Konrad Zuse's work.",
     "Category": "Hardware & Parts, Museums & Exhibits",
     "Brands": "Various",
     "Tags": "",
@@ -6177,6 +6003,465 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     "Tags": "FPGA",
     "Language": "Spanish",
     "Keywords": "ST, AT, zxuno, github, repositories, code, zxuno repositories available, repositories available follow, available follow code, follow code github, zxuno repositories, repositories available"
+  },
+  {
+    "Name": "AmigApple Pi77",
+    "URL": "https://www.amigapple.com/pi77.html",
+    "Description": "DIY hardware project to build a Pi-based Amiga or Apple II emulation machine with original-style case and keyboard.",
+    "Category": "Hardware & Parts",
+    "Brands": "Amiga, Apple",
+    "Tags": "Vendor, Modern Hardware, DIY",
+    "Language": "English"
+  },
+  {
+    "Name": "Infinite Mac",
+    "URL": "https://infinitemac.org/",
+    "Description": "In-browser Macintosh emulation from System 1 through Mac OS 9, running entirely via WebAssembly with no install required.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Apple",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "MacintoshPi",
+    "URL": "https://jm.iq.pl/macintoshpi-mac-os-7-8-9-for-raspberry-pi/",
+    "Description": "Guide and tools for running Mac OS 7/8/9 on a Raspberry Pi using emulation, with hardware acceleration.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Apple",
+    "Tags": "Emulator, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "Classic Mac (bsuto)",
+    "URL": "https://bsuto.com/classic/",
+    "Description": "Resource for classic Mac screw types, part identification, and restoration reference.",
+    "Category": "Hardware & Parts, Documentation & Wikis",
+    "Brands": "Apple",
+    "Tags": "Parts, Repair",
+    "Language": "English"
+  },
+  {
+    "Name": "Software.Inc \u2014 Classic Mac Online",
+    "URL": "https://software.inc/",
+    "Description": "Browser-based classic Macintosh emulation running Mac OS 8, accessible instantly with no setup.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Apple",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "MacinPi \u2014 A New Old Computer",
+    "URL": "https://blog.lazd.net/macinpi-a-new-old-computer.html",
+    "Description": "Detailed blog post about running Mac OS on a Raspberry Pi inside a compact custom chassis.",
+    "Category": "News & Blogs",
+    "Brands": "Apple",
+    "Tags": "Blog, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "Cults3D \u2014 iMac G3 Inner Bezel (3D Print)",
+    "URL": "https://cults3d.com/en/3d-model/gadget/imac-g3-inner-bezel",
+    "Description": "3D printable replacement inner bezel for the iMac G3, useful for repairs and modifications.",
+    "Category": "Hardware & Parts",
+    "Brands": "Apple",
+    "Tags": "Vendor, 3D Printing",
+    "Language": "English"
+  },
+  {
+    "Name": "MYTHIC Computer",
+    "URL": "https://www.mythic.computer/",
+    "Description": "Modern retro computer built from custom hardware, running classic Mac software. Compact Pi-based clamshell design.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Apple",
+    "Tags": "Vendor, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "Virtual x86 (copy.sh)",
+    "URL": "https://copy.sh/v86/",
+    "Description": "In-browser x86 PC emulator running various operating systems including classic Mac OS, Windows, and Linux.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Various",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "Mac OS 9 for Windows (Mendelson)",
+    "URL": "https://mendelson.org/macos9win.html",
+    "Description": "Guide for running classic Mac OS 9 on Windows using the Basilisk II emulator.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Apple",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "MicroMac",
+    "URL": "http://axio.ms/projects/2024/06/16/MicroMac.html",
+    "Description": "Open-source single-chip Macintosh Plus replica built around a modern microcontroller.",
+    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Brands": "Apple",
+    "Tags": "FPGA, Modern Hardware, Replica",
+    "Language": "English"
+  },
+  {
+    "Name": "Old Crap Vintage Computing",
+    "URL": "https://oldcrap.org/",
+    "Description": "Museum and preservation archive of vintage computing hardware, software, and accessories with detailed photos.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
+    "Brands": "Various",
+    "Tags": "Museum, Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "Tulip Creative Computer",
+    "URL": "https://tulip.computer/",
+    "Description": "Modern open-source retro computer designed for creative coding, music, and game development.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
+    "Tags": "Modern Hardware, Vendor, Homebrew",
+    "Language": "English"
+  },
+  {
+    "Name": "MARCHintosh",
+    "URL": "https://marchintosh.com/",
+    "Description": "Annual March event celebrating classic Macintosh computing with competitions, events, and community projects.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Apple",
+    "Tags": "Community",
+    "Language": "English"
+  },
+  {
+    "Name": "8 Bit Stuff",
+    "URL": "https://www.8bitstuff.com/",
+    "Description": "Retro gaming handheld vendor offering pre-loaded emulation devices including Apple II emulator handhelds.",
+    "Category": "Vendors & Stores",
+    "Brands": "Various",
+    "Tags": "Vendor, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "Paleotronic \u2014 MicroM8",
+    "URL": "https://paleotronic.com/software/microm8/download/",
+    "Description": "High-fidelity Apple II and IIgs emulator available for Windows, macOS, and Linux.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Apple",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "Retro Directory",
+    "URL": "https://retro.directory/",
+    "Description": "Curated directory of retro computing websites, communities, and resources organized by platform.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Various",
+    "Tags": "Directory, Community",
+    "Language": "English"
+  },
+  {
+    "Name": "Retro Computing Forum",
+    "URL": "https://retrocomputingforum.com/",
+    "Description": "Active forum for retro computing enthusiasts covering hardware, software, repair, and collecting.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Various",
+    "Tags": "Forum, Community",
+    "Language": "English"
+  },
+  {
+    "Name": "ASCII Converter (Branah)",
+    "URL": "https://www.branah.com/ascii-converter",
+    "Description": "Online tool for converting text to ASCII/hex/binary and vice versa, useful for retro programming.",
+    "Category": "Web Tools & Browsers",
+    "Brands": "Various",
+    "Tags": "Tool",
+    "Language": "English"
+  },
+  {
+    "Name": "Applerok",
+    "URL": "https://applerokofficial.com/",
+    "Description": "Vendor of new reproduction parts, accessories, and upgrades for classic Apple computers.",
+    "Category": "Vendors & Stores",
+    "Brands": "Apple",
+    "Tags": "Vendor, Parts",
+    "Language": "English"
+  },
+  {
+    "Name": "Celso Martinho",
+    "URL": "https://celso.io/",
+    "Description": "Personal blog covering retro computing projects, vintage hardware restoration, and FPGA development.",
+    "Category": "News & Blogs",
+    "Brands": "Various",
+    "Tags": "Blog",
+    "Language": "English"
+  },
+  {
+    "Name": "C64.com",
+    "URL": "https://www.c64.com/",
+    "Description": "Massive archive of Commodore 64 software including games, demos, and applications with screenshots and reviews.",
+    "Category": "Software & Games, Preservation & Archives",
+    "Brands": "Commodore",
+    "Tags": "Archive, Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "Commodore Software",
+    "URL": "https://commodore.software/",
+    "Description": "Large curated collection of Commodore 64, Amiga, and VIC-20 software available for download.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Commodore",
+    "Tags": "Vendor, Downloads",
+    "Language": "English"
+  },
+  {
+    "Name": "Planet Emulation \u2014 Commodore 64",
+    "URL": "https://www.planetemu.net/machine/commodore-64",
+    "Description": "Commodore 64 ROM and software archive with organized game and application collections.",
+    "Category": "Emulation & FPGA, Preservation & Archives",
+    "Brands": "Commodore",
+    "Tags": "Emulator, Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "Zimmers.net \u2014 VIC-20 Archive",
+    "URL": "https://www.zimmers.net/anonftp/pub/cbm/vic20/",
+    "Description": "Comprehensive FTP archive of Commodore VIC-20 software, documentation, and utilities.",
+    "Category": "Preservation & Archives",
+    "Brands": "Commodore",
+    "Tags": "Archive, Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "Commodore Bookmarks",
+    "URL": "https://commodore.bookmark.computer/",
+    "Description": "Curated collection of links to Commodore-related websites, communities, and resources.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Commodore",
+    "Tags": "Directory, Community",
+    "Language": "English"
+  },
+  {
+    "Name": "Breadbox64",
+    "URL": "https://breadbox64.com/",
+    "Description": "C64 hardware mods, repairs, upgrades, and custom parts including SD card adapters and replacement components.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Commodore",
+    "Tags": "Vendor, Mods, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "CSDb (Commodore Scene Database)",
+    "URL": "https://csdb.dk/",
+    "Description": "Community database for the Commodore 64 demoscene with releases, parties, groups, and news.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Commodore",
+    "Tags": "Community, Forum, Database",
+    "Language": "English"
+  },
+  {
+    "Name": "HCC Commodore Club",
+    "URL": "https://commodore.hcc.nl/",
+    "Description": "Dutch Commodore computer club website with software archives, documentation, and member projects.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Commodore",
+    "Tags": "Community",
+    "Language": "Dutch"
+  },
+  {
+    "Name": "C64 Zone",
+    "URL": "https://c64zone.neocities.org/",
+    "Description": "Comprehensive Commodore 64 reference site covering emulation, hardware, software, and programming.",
+    "Category": "Community Hubs & Forums, Documentation & Wikis",
+    "Brands": "Commodore",
+    "Tags": "Wiki, Community",
+    "Language": "English"
+  },
+  {
+    "Name": "Cynthcart (Paul Slocum)",
+    "URL": "https://www.qotile.net/cynthcart.html",
+    "Description": "Homebrew Commodore 64 cartridge that turns the C64 into a polyphonic synthesizer with MIDI support.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Homebrew, Music",
+    "Language": "English"
+  },
+  {
+    "Name": "Commodore.ca \u2014 C64 User Guide",
+    "URL": "https://www.commodore.ca/manuals/c64_users_guide/c64-users_guide.htm",
+    "Description": "Full archived copy of the original Commodore 64 User's Guide with all chapters and appendices.",
+    "Category": "Documentation & Wikis",
+    "Brands": "Commodore",
+    "Tags": "Manuals",
+    "Language": "English"
+  },
+  {
+    "Name": "BMC64 (Bare Metal C64)",
+    "URL": "https://www.faszinationc64.de/BMC64-Bare-Metal-Commodore64",
+    "Description": "Raspberry Pi bare-metal Commodore 64 emulator that boots directly without an OS for authentic performance.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Commodore",
+    "Tags": "Emulator, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "Ultimate 64 FPGA",
+    "URL": "https://www.hackster.io/news/the-ultimate-64-is-a-commodore-64-clone-in-an-fpga-format-1906a3154c48",
+    "Description": "Hardware FPGA-based Commodore 64 clone with HDMI output, SD card support, and original chip accuracy.",
+    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Brands": "Commodore",
+    "Tags": "FPGA, Vendor, Modern Hardware",
+    "Language": "English"
+  },
+  {
+    "Name": "The C64 Community",
+    "URL": "https://thec64community.online/",
+    "Description": "Online community for Commodore 64 enthusiasts featuring forums, file archives, and hardware discussions.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Commodore",
+    "Tags": "Community, Forum",
+    "Language": "English"
+  },
+  {
+    "Name": "Commodore OS Vision",
+    "URL": "https://www.commodoreos.net/",
+    "Description": "Modern operating system for Commodore hardware featuring a graphical interface with updated functionality.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "OS, Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "GEOS for C64 (CBM Files)",
+    "URL": "https://cbmfiles.com/geos/",
+    "Description": "Archive of GEOS (Graphic Environment Operating System) software for the Commodore 64.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "GEOS \u2014 Lyon Labs",
+    "URL": "https://www.lyonlabs.org/commodore/onrequest/geos/index.html",
+    "Description": "Information and downloads for GEOS on the Commodore 64 including applications and utilities.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "AMI64 Links",
+    "URL": "https://www.ami64.com/links",
+    "Description": "Curated link directory of Amiga and Commodore 64 related websites and resources.",
+    "Category": "Community Hubs & Forums",
+    "Brands": "Amiga, Commodore",
+    "Tags": "Directory",
+    "Language": "English"
+  },
+  {
+    "Name": "GUI64 (WebFritzi)",
+    "URL": "https://github.com/WebFritzi/GUI64",
+    "Description": "Open-source graphical user interface and program launcher for the Commodore 64.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Homebrew",
+    "Language": "English"
+  },
+  {
+    "Name": "Iliyas Jorio (GitHub)",
+    "URL": "https://github.com/jorio",
+    "Description": "GitHub profile with modern ports of classic Mac games including Nanosaur, Bugdom, and others.",
+    "Category": "YouTube & Social Channels, Software & Games",
+    "Brands": "Apple",
+    "Tags": "GitHub, Homebrew, Game Ports",
+    "Language": "English"
+  },
+  {
+    "Name": "Compute! Magazine \u2014 MusicMaster",
+    "URL": "https://www.atarimagazines.com/compute/issue37/musicmaster.php",
+    "Description": "Archived Compute! Magazine article featuring a C64 music composition program from 1983.",
+    "Category": "Preservation & Archives, News & Blogs",
+    "Brands": "Commodore",
+    "Tags": "Archive, Magazine",
+    "Language": "English"
+  },
+  {
+    "Name": "Yaktaur Blog \u2014 C64 Mini Games",
+    "URL": "https://yaktaur.com/blog/posts/2025-08-03-C64-Mini-Black-Games",
+    "Description": "Blog post reviewing black-colored game cartridges available for the THEC64 Mini retro console.",
+    "Category": "News & Blogs",
+    "Brands": "Commodore",
+    "Tags": "Blog",
+    "Language": "English"
+  },
+  {
+    "Name": "VICE Emulator",
+    "URL": "https://vice-emu.sourceforge.io/",
+    "Description": "Versatile Commodore Emulator supporting C64, VIC-20, C128, PET, and Plus/4 on multiple platforms.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Commodore",
+    "Tags": "Emulator",
+    "Language": "English"
+  },
+  {
+    "Name": "Vintage Apple Computer of Illinois",
+    "URL": "https://vintageapplecomputers.com/",
+    "Description": "Vintage Apple computer restoration and sales, offering working systems, parts, and repairs.",
+    "Category": "Vendors & Stores",
+    "Brands": "Apple",
+    "Tags": "Vendor, Service",
+    "Language": "English"
+  },
+  {
+    "Name": "Personal Computer Museum",
+    "URL": "https://personalcomputermuseum.com/",
+    "Description": "Online museum showcasing personal computer history with photographs, specifications, and exhibits.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Various",
+    "Tags": "Museum",
+    "Language": "English"
+  },
+  {
+    "Name": "Tom's Hardware \u2014 Infinite Mac Guide",
+    "URL": "https://www.tomshardware.com/software/macos/how-to-emulate-an-original-apple-macintosh-in-your-browser",
+    "Description": "Guide explaining how to run classic Mac OS versions in the browser using Infinite Mac.",
+    "Category": "News & Blogs",
+    "Brands": "Apple",
+    "Tags": "Blog, Educational",
+    "Language": "English"
+  },
+  {
+    "Name": "HotHardware \u2014 C64 on Raspberry Pi",
+    "URL": "https://hothardware.com/reviews/commodore-64-emulator-with-raspberry-pi-diy",
+    "Description": "Guide to building a Commodore 64 emulation system on a Raspberry Pi.",
+    "Category": "News & Blogs",
+    "Brands": "Commodore",
+    "Tags": "Blog, DIY",
+    "Language": "English"
+  },
+  {
+    "Name": "C64 Zone \u2014 Emulation (ES)",
+    "URL": "https://c64zone.neocities.org/en/emulacion",
+    "Description": "Spanish-language guide to Commodore 64 emulation covering available emulators and configuration.",
+    "Category": "Emulation & FPGA, Documentation & Wikis",
+    "Brands": "Commodore",
+    "Tags": "Emulator, Wiki",
+    "Language": "Spanish"
+  },
+  {
+    "Name": "CBM Files \u2014 GEOS v1.3",
+    "URL": "https://cbmfiles.com/geos/geos-13.php",
+    "Description": "GEOS (Graphic Environment Operating System) v1.3 disk images for the Commodore 64.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Software Archive",
+    "Language": "English"
+  },
+  {
+    "Name": "CBM Files \u2014 GEOS v2.0",
+    "URL": "https://cbmfiles.com/geos/geos-2.php",
+    "Description": "GEOS (Graphic Environment Operating System) v2.0 disk images for the Commodore 64.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Tags": "Software Archive",
+    "Language": "English"
   }
 ]</script>
 <script>
