@@ -132,16 +132,7 @@ select:focus, input:focus {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
 
-/* Header navigation */
-.top-right-link {
-  position: fixed; top: 12px; right: 12px; z-index: 1000;
-  padding: 6px 10px; border-radius: 8px; text-decoration: none;
-  color: var(--accent); background: rgba(0,0,0,0.35);
-  border: 1px solid var(--border); font-size: 0.85rem;
-  backdrop-filter: saturate(140%) blur(2px);
-  box-shadow: 0 0 8px var(--accent);
-}
-.top-right-link:hover { text-decoration: underline; }
+/* Header navigation — floating buttons stacked top-right */
 
 /* Skip link */
 .skip-link {
@@ -204,9 +195,18 @@ select:focus, input:focus {
 .scroll-top-btn:focus-visible { outline: 3px solid var(--accent); }
 :root.hc .scroll-top-btn { border-width: 3px; }
 
-/* Space floating buttons */
-.top-right-link { margin-right: 6px; }
-.top-right-link + .top-right-link { margin-right: 6px; }
+/* Stack floating buttons vertically */
+.top-right-link-style { 
+  position: fixed; right: 12px; z-index: 1000;
+  padding: 6px 10px; border-radius: 8px; text-decoration: none;
+  color: var(--accent); background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border); font-size: 0.85rem;
+  backdrop-filter: saturate(140%) blur(2px);
+  box-shadow: 0 0 8px var(--accent);
+}
+.top-right-link-style:hover { text-decoration: underline; }
+.top-right-link-1 { top: 12px; }
+.top-right-link-2 { top: 48px; }
 
 /* Screen reader only */
 .sr-only {
@@ -256,7 +256,7 @@ select:focus, input:focus {
 <meta content="#0b0b0b" name="theme-color"/>
 </head>
 <body class="p-4 md:p-8">
-<a aria-label="Classic HTML version — works on old browsers without JavaScript" class="top-right-link" href="/classic/">HTML Version</a><a aria-label="Privacy and About" class="top-right-link" href="#about-privacy">Privacy &amp; About</a><button aria-label="Toggle high contrast" class="hc-toggle" id="hc-toggle">High contrast</button><a class="skip-link" href="#main">Skip to content</a><button aria-label="Scroll to top" class="scroll-top-btn" id="scroll-top" title="Back to top">&#9650;</button>
+<a aria-label="Classic HTML version — works on old browsers without JavaScript" class="top-right-link-style top-right-link-1" href="/classic/">HTML Version</a><a aria-label="Privacy and About" class="top-right-link-style top-right-link-2" href="#about-privacy">Privacy &amp; About</a><button aria-label="Toggle high contrast" class="hc-toggle" id="hc-toggle">High contrast</button><a class="skip-link" href="#main">Skip to content</a><button aria-label="Scroll to top" class="scroll-top-btn" id="scroll-top" title="Back to top">&#9650;</button>
 <header class="max-w-6xl mx-auto my-6 px-2" id="brand-header"><div class="flex items-center justify-between gap-4">
 <div class="brand-block text-center my-6">
 <img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="./logo-wordmark-vt323-dark.png" style="height:96px;width:auto;image-rendering:pixelated"/>
