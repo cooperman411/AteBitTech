@@ -179,6 +179,41 @@ select:focus, input:focus {
 }
 .about-privacy-section hr { margin-bottom: 1rem; opacity: 0.4; }
 .about-privacy-section a { text-decoration: underline; }
+
+/* Scroll-to-top button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--card);
+  color: var(--accent);
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.scroll-top-btn:hover { opacity: 1; }
+.scroll-top-btn:focus-visible { outline: 3px solid var(--accent); }
+:root.hc .scroll-top-btn { border-width: 3px; }
+
+/* Space floating buttons */
+.top-right-link { margin-right: 6px; }
+.top-right-link + .top-right-link { margin-right: 6px; }
+
+/* Screen reader only */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
 </style>
 <meta content="A curated retro and vintage computing database: hardware, parts, magazines, vendors, and communities. Cataloging Amiga to ZX Spectrum and beyond." name="description"/><meta content="Ate Bit Tech — Retro &amp; Vintage Computing Database, Cataloging Amiga to ZX Spectrum and Beyond" property="og:title"/><meta content="Search a curated retro computing database: hardware, parts, mags, vendors, communities." property="og:description"/><meta content="website" property="og:type"/><meta content="summary_large_image" name="twitter:card"/><script type="application/ld+json">[
   {
@@ -221,7 +256,7 @@ select:focus, input:focus {
 <meta content="#0b0b0b" name="theme-color"/>
 </head>
 <body class="p-4 md:p-8">
-<a aria-label="Privacy and About" class="top-right-link" href="#about-privacy">Privacy &amp; About</a><button class="hc-toggle" id="hc-toggle">High contrast</button><a class="skip-link" href="#main">Skip to content</a>
+<a aria-label="Classic HTML version — works on old browsers without JavaScript" class="top-right-link" href="/classic/">HTML Version</a><a aria-label="Privacy and About" class="top-right-link" href="#about-privacy">Privacy &amp; About</a><button aria-label="Toggle high contrast" class="hc-toggle" id="hc-toggle">High contrast</button><a class="skip-link" href="#main">Skip to content</a><button aria-label="Scroll to top" class="scroll-top-btn" id="scroll-top" title="Back to top">&#9650;</button>
 <header class="max-w-6xl mx-auto my-6 px-2" id="brand-header"><div class="flex items-center justify-between gap-4">
 <div class="brand-block text-center my-6">
 <img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="./logo-wordmark-vt323-dark.png" style="height:96px;width:auto;image-rendering:pixelated"/>
@@ -5813,9 +5848,11 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
 </script>
 <script>
 (function(){
+  // Accessibility: set roles on results
   const resultsEl = document.getElementById("results");
   const countEl = document.getElementById("results-count");
-  // Observe mutations to set role=listitem on cards
+  if(resultsEl) resultsEl.setAttribute("role","list");
+  if(countEl) countEl.setAttribute("aria-live","polite");
   const obs = new MutationObserver(() => {
     if(!resultsEl) return;
     for(const el of resultsEl.children){
@@ -5823,12 +5860,20 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     }
   });
   if(resultsEl) obs.observe(resultsEl, {childList:true});
-  // Initialize now
   if(resultsEl){
     for(const el of resultsEl.children){
       if(!el.getAttribute("role")) el.setAttribute("role","listitem");
     }
   }
+
+  // Accessibility: label filter selects
+  const catLabel = document.getElementById("category-filter");
+  const brandLabel = document.getElementById("brand-filter");
+  const langLabel = document.getElementById("language-filter");
+  if(catLabel) catLabel.setAttribute("aria-label","Filter by category");
+  if(brandLabel) brandLabel.setAttribute("aria-label","Filter by brand");
+  if(langLabel) langLabel.setAttribute("aria-label","Filter by language");
+
   // High contrast toggle
   const hcBtn = document.getElementById("hc-toggle");
   if(hcBtn){
@@ -5838,11 +5883,31 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
     });
     hcBtn.setAttribute("aria-pressed","false");
   }
+
+  // Scroll-to-top button
+  const scrollBtn = document.getElementById("scroll-top");
+  if(scrollBtn){
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = (window.scrollY > 400) ? "flex" : "none";
+    });
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({top:0, behavior:"smooth"});
+      document.getElementById("main")?.focus();
+    });
+  }
+
+  // Keyboard shortcut: press ? for accessibility help
+  document.addEventListener("keydown", function(e){
+    if(e.key === "?" && !e.target.closest("input,select,textarea")){
+      e.preventDefault();
+      alert("Accessibility: Tab through filters, Enter to select. Press Shift+Tab to go back. Press ? for this help. Use High Contrast button for better visibility.");
+    }
+  });
 })();
 </script>
 <footer class="about-privacy-section" id="about-privacy">
 <hr/>
-<p><strong>Privacy Notice:</strong> No site visitor information collected by the site owner unless you email from the link below. Email address and information given will be used for communication between the webmaster and person who emailed. Hosted on GitHub Pages so click here for GitHub's Policies (<a href="https://docs.github.com/en/site-policy/privacy-policies" rel="noopener" target="_blank">https://docs.github.com/en/site-policy/privacy-policies</a>.)</p>
+<p><strong>Privacy Notice:</strong> No site visitor information collected by the site owner unless you email from the link below. Email address and information given will be used for communication between the webmaster and person who emailed. Hosted on <a href="https://docs.github.com/en/site-policy/privacy-policies" rel="noopener" target="_blank">GitHub Pages</a> &mdash; see GitHub&rsquo;s Privacy Policies.</p>
 <p><strong>About:</strong> Just a website to connect the community with information in one spot. I do not own or claim any affiliation with any listing on this website or in this database.</p>
 <p><strong>Do you want to submit a new resource, or change or remove an existing one? Found a bad or incorrect link?
     <a href="mailto:picks.favored4z@icloud.com" rel="noopener"><strong>Click here!</strong></a>
