@@ -29,20 +29,70 @@
 <!-- GoatCounter: privacy-friendly analytics (no cookies, no personal data) -->
 <script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>
-body { background: #f5f0e8; color: #222; font-family: "Times New Roman", Times, serif; font-size: 14pt; margin: 20px; max-width: 880px; margin-left: auto; margin-right: auto; }
-h1 { font-size: 24pt; border-bottom: 2px solid #333; padding-bottom: 6px; }
-a { color: #0000cc; } a:visited { color: #660099; } a:hover { color: #cc0000; }
-ul { list-style: square; padding-left: 28px; }
-li { margin-bottom: 14px; }
-.entry-title { font-weight: bold; font-size: 14pt; }
-.entry-desc { font-size: 12pt; color: #444; margin-top: 2px; }
-.footer { margin-top: 30px; padding-top: 10px; border-top: 1px solid #999; font-size: 11pt; }
-a.brand-block { display: inline-block; margin: 4px 8px; padding: 5px 12px; border: 1px solid #999; border-radius: 4px; text-decoration: none; font-size: 13pt; background: #faf6ee; line-height: 1.8; }
-a.brand-block:hover { background: #e0d8c8; }
-.top-link { float: right; font-size: 11pt; }
+/* ============================================================
+   Ate Bit Tech -- Classic ANSI BBS Theme
+   CSS1 only. Netscape 4+, IE 5+, any vintage browser.
+   ============================================================ */
+body {
+  background: #000088; color: #aaddff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13pt; margin: 0; padding: 16px 24px;
+  max-width: 900px; margin-left: auto; margin-right: auto;
+}
+.page-border {
+  border: 2px solid #00aaaa; padding: 20px 24px; margin-bottom: 20px;
+}
+.header-bar {
+  background: #0000aa; color: #ffffff; font-weight: bold;
+  font-size: 15pt; padding: 8px 16px; border: 1px solid #00cccc;
+  text-align: center; margin-bottom: 4px; letter-spacing: 1px;
+}
+.header-sub {
+  color: #88ddff; text-align: center; font-size: 11pt;
+  margin-top: 4px; margin-bottom: 16px;
+}
+.separator {
+  color: #00aaaa; text-align: center; font-size: 11pt;
+  margin: 8px 0; letter-spacing: 2px;
+}
+a { color: #00cccc; text-decoration: none; }
+a:visited { color: #66aacc; }
+a:hover { color: #ffffff; background: #0000aa; }
+a:active { color: #ffff00; }
+.brand-nav { margin: 16px 0; text-align: center; }
+a.brand-block {
+  display: inline-block; margin: 3px 6px; padding: 3px 10px;
+  border: 1px solid #008888; text-decoration: none; font-size: 12pt;
+  background: #000066; color: #66ddff; line-height: 1.8;
+}
+a.brand-block:hover {
+  background: #0000cc; color: #ffffff; border-color: #00ffff;
+}
+ul { list-style: none; padding-left: 0; margin-top: 12px; }
+li {
+  margin-bottom: 16px; border-bottom: 1px dotted #004466;
+  padding-bottom: 10px;
+}
+li:last-child { border-bottom: none; }
+.entry-title { font-weight: bold; font-size: 13pt; }
+.entry-title a { color: #00dddd; }
+.entry-title a:hover { color: #ffffff; }
+.entry-desc {
+  font-size: 11pt; color: #88bbdd; margin-top: 3px; line-height: 1.3;
+}
+.footer {
+  margin-top: 24px; padding-top: 12px; border-top: 1px solid #008888;
+  font-size: 10pt; color: #5588aa; text-align: center;
+}
+.footer a { color: #66aacc; }
+.top-link { float: right; font-size: 10pt; margin-top: 4px; }
+.top-link a { color: #66ddff; }
+.entry-count { color: #88ddff; font-size: 11pt; margin-bottom: 6px; }
 </style>
 </head>
 <body>
+<div class=\"page-border\">
+
 <h1>Sam Coupé</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
 <p><strong>1 entries</strong></p>
@@ -52,5 +102,7 @@ a.brand-block:hover { background: #e0d8c8; }
 <p><a href="index.html">&larr; Back to All Brands</a></p>
 <div class="footer"><p><em>Classic version of <a href="../">Ate Bit Tech</a></em></p></div>
 
+
+</div><!-- /page-border -->
 </body>
 </html>
