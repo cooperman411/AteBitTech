@@ -3,46 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Ate Bit Tech — Classic Version</title>
-<meta name="description" content="Browse 677 curated vintage and retro computing resources by brand — from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
-<meta property="og:title" content="Ate Bit Tech — Classic Version">
-<meta property="og:description" content="Browse 677 curated vintage and retro computing resources by brand — from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
+<title>Ate Bit Tech -- Retro &amp; Vintage Computing Database (BBS)</title>
+<meta name="description" content="Browse 677 curated vintage and retro computing resources by brand -- from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
+<meta property="og:title" content="Ate Bit Tech -- Retro &amp; Vintage Computing Database">
+<meta property="og:description" content="Browse 677 curated vintage and retro computing resources by brand -- from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
 <meta property="og:url" content="https://atebit.tech/classic/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ate Bit Tech — Classic Version">
-<meta name="twitter:description" content="Browse 677 curated vintage and retro computing resources by brand — from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
+<meta name="twitter:title" content="Ate Bit Tech -- Classic Version">
+<meta name="twitter:description" content="Browse 677 curated vintage and retro computing resources by brand -- from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Ate Bit Tech — Classic Version",
-  "description": "Browse 677 curated vintage and retro computing resources by brand — from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.",
-  "url": "https://atebit.tech/classic/",
-  "numberOfItems": 677
+"@context": "https://schema.org",
+"@type": "CollectionPage",
+"name": "Ate Bit Tech -- Classic Version",
+"description": "Browse 677 curated vintage and retro computing resources by brand -- from Amiga and Apple to Z80 and Sinclair/ZX. 40 brands.",
+"url": "https://atebit.tech/classic/",
+"numberOfItems": 677
 }
 </script>
 <!-- GoatCounter: privacy-friendly analytics (no cookies, no personal data) -->
 <script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>
-body { background: #f5f0e8; color: #222; font-family: "Times New Roman", Times, serif; font-size: 14pt; margin: 20px; max-width: 880px; margin-left: auto; margin-right: auto; }
-h1 { font-size: 24pt; border-bottom: 2px solid #333; padding-bottom: 6px; }
-a { color: #0000cc; } a:visited { color: #660099; } a:hover { color: #cc0000; }
-ul { list-style: square; padding-left: 28px; }
-li { margin-bottom: 14px; }
-.entry-title { font-weight: bold; font-size: 14pt; }
-.entry-desc { font-size: 12pt; color: #444; margin-top: 2px; }
-.footer { margin-top: 30px; padding-top: 10px; border-top: 1px solid #999; font-size: 11pt; }
-a.brand-block { display: inline-block; margin: 4px 8px; padding: 5px 12px; border: 1px solid #999; border-radius: 4px; text-decoration: none; font-size: 13pt; background: #faf6ee; line-height: 1.8; }
-a.brand-block:hover { background: #e0d8c8; }
-.top-link { float: right; font-size: 11pt; }
+/* ============================================================
+   Ate Bit Tech -- Classic ANSI BBS Theme
+   CSS1 only. Netscape 4+, IE 5+, any vintage browser.
+   ============================================================ */
+body {
+  background: #000088; color: #aaddff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13pt; margin: 0; padding: 16px 24px;
+  max-width: 900px; margin-left: auto; margin-right: auto;
+}
+.page-border {
+  border: 2px solid #00aaaa; padding: 20px 24px; margin-bottom: 20px;
+}
+.header-bar {
+  background: #0000aa; color: #ffffff; font-weight: bold;
+  font-size: 15pt; padding: 8px 16px; border: 1px solid #00cccc;
+  text-align: center; margin-bottom: 4px; letter-spacing: 1px;
+}
+.header-sub {
+  color: #88ddff; text-align: center; font-size: 11pt;
+  margin-top: 4px; margin-bottom: 16px;
+}
+.separator {
+  color: #00aaaa; text-align: center; font-size: 11pt;
+  margin: 8px 0; letter-spacing: 2px;
+}
+a { color: #00cccc; text-decoration: none; }
+a:visited { color: #66aacc; }
+a:hover { color: #ffffff; background: #0000aa; }
+a:active { color: #ffff00; }
+.brand-nav { margin: 16px 0; text-align: center; }
+a.brand-block {
+  display: inline-block; margin: 3px 6px; padding: 3px 10px;
+  border: 1px solid #008888; text-decoration: none; font-size: 12pt;
+  background: #000066; color: #66ddff; line-height: 1.8;
+}
+a.brand-block:hover {
+  background: #0000cc; color: #ffffff; border-color: #00ffff;
+}
+ul { list-style: none; padding-left: 0; margin-top: 12px; }
+li {
+  margin-bottom: 16px; border-bottom: 1px dotted #004466;
+  padding-bottom: 10px;
+}
+li:last-child { border-bottom: none; }
+.entry-title { font-weight: bold; font-size: 13pt; }
+.entry-title a { color: #00dddd; }
+.entry-title a:hover { color: #ffffff; }
+.entry-desc {
+  font-size: 11pt; color: #88bbdd; margin-top: 3px; line-height: 1.3;
+}
+.footer {
+  margin-top: 24px; padding-top: 12px; border-top: 1px solid #008888;
+  font-size: 10pt; color: #5588aa; text-align: center;
+}
+.footer a { color: #66aacc; }
+.top-link { float: right; font-size: 10pt; margin-top: 4px; }
+.top-link a { color: #66ddff; }
+.entry-count { color: #88ddff; font-size: 11pt; margin-bottom: 6px; }
 </style>
 </head>
 <body>
-<h1>Ate Bit Tech</h1>
-<p><strong>Retro & Vintage Computing Database &mdash; Classic Version</strong></p>
-<p>677 entries across 40 brands. Browse by brand:</p>
-<p>
+
+<div class="page-border">
+
+<div class="header-bar">
++--- ATE BIT TECH ---+
+</div>
+<div class="separator">************************************</div>
+<div class="header-sub">
+[ Amiga to ZX Spectrum and beyond ]  |  [ Updated June 2026 ]
+</div>
+
+<div class="separator">====================================</div>
+
+<p style="color:#88ddff; text-align:center; font-size:11pt;">
+  Browse by brand below, or <a href="all.html">view all entries on one page</a>.
+</p>
+
+<div class="separator">====================================</div>
+
+<div class="brand-nav">
 <a class="brand-block" href="acorn-bbc.html">Acorn/BBC (13)</a>
 <a class="brand-block" href="altair.html">Altair (1)</a>
 <a class="brand-block" href="amiga.html">Amiga (79)</a>
@@ -71,7 +135,7 @@ a.brand-block:hover { background: #e0d8c8; }
 <a class="brand-block" href="rc2014.html">RC2014 (1)</a>
 <a class="brand-block" href="raspberry-pi.html">Raspberry Pi (2)</a>
 <a class="brand-block" href="scsi.html">SCSI (1)</a>
-<a class="brand-block" href="sam-coupé.html">Sam Coupé (1)</a>
+<a class="brand-block" href="sam-coupe.html">Sam Coup&eacute; (1)</a>
 <a class="brand-block" href="sega.html">Sega (12)</a>
 <a class="brand-block" href="sharp.html">Sharp (1)</a>
 <a class="brand-block" href="sinclair-zx.html">Sinclair/ZX (44)</a>
@@ -83,13 +147,16 @@ a.brand-block:hover { background: #e0d8c8; }
 <a class="brand-block" href="timex.html">Timex (1)</a>
 <a class="brand-block" href="various.html">Various (207)</a>
 <a class="brand-block" href="z80.html">Z80 (1)</a>
-</p>
-<p><a href="all.html">View all entries on one page</a></p>
-<div class="footer">
-<p><strong>About:</strong> A community directory &mdash; no affiliation with any listing.</p>
-<p><a href="mailto:picks.favored4z@icloud.com">Submit, change, or remove a resource</a></p>
-<p><strong>Privacy:</strong> This site uses <a href="https://www.goatcounter.com/" rel="noopener" target="_blank">GoatCounter</a> for anonymous analytics &mdash; no cookies, no personal data, no IPs stored. The site owner does not collect any visitor information unless you email. <a href="https://github.com/cooperman411/AteBitTech" rel="noopener" target="_blank">Source code on GitHub</a>. Hosted on <a href="https://docs.github.com/en/site-policy/privacy-policies" rel="noopener" target="_blank">GitHub Pages</a>.</p><p><a href="../">Return to modern site</a></p>
 </div>
+
+<div class="separator">====================================</div>
+
+<div class="footer">
+  Ate Bit Tech  |  Curated by hand  |  <a href="https://atebit.tech/">Switch to modern site</a><br>
+  No cookies. No tracking. No JavaScript required.
+</div>
+
+</div><!-- /page-border -->
 
 </body>
 </html>
