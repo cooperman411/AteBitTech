@@ -1,0 +1,169 @@
+/* AteBitTech — Classic Site Theme (Dark, matching main site) */
+
+:root {
+  --bg: #0f1115;
+  --fg: #e6e7ea;
+  --muted: #b8bcc4;
+  --card: #161a20;
+  --accent: #3ea6ff;
+  --border: #2a2f3a;
+  --green: #33ff33;
+  --teal: #00e5ff;
+  --orange: #ff7700;
+  --amber: #ffb000;
+  --red-accent: #ff3344;
+}
+
+:root.hc {
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: #cccccc;
+  --card: #000000;
+  --accent: #00ffff;
+  --border: #ffffff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14pt;
+  margin: 20px auto;
+  max-width: 880px;
+  padding: 0 16px;
+  line-height: 1.6;
+}
+
+h1 { 
+  font-size: 24pt; 
+  border-bottom: 2px solid var(--border); 
+  padding-bottom: 6px; 
+  color: var(--accent);
+  font-family: 'VT323', monospace;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px rgba(62,166,255,0.3);
+}
+
+h2, h3 { font-family: 'VT323', monospace; color: var(--accent); letter-spacing: 0.5px; }
+
+a { 
+  color: var(--accent); 
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:visited { color: #77aaff; }
+a:hover { color: #66ccff; text-decoration: underline; }
+
+ul { 
+  list-style: square; 
+  padding-left: 28px;
+}
+
+li { 
+  margin-bottom: 14px;
+}
+
+.entry-title { 
+  font-weight: bold; 
+  font-size: 14pt; 
+  color: var(--fg);
+}
+
+.entry-desc { 
+  font-size: 12pt; 
+  color: var(--muted); 
+  margin-top: 2px;
+}
+
+.footer { 
+  margin-top: 30px; 
+  padding-top: 10px; 
+  border-top: 1px solid var(--border); 
+  font-size: 11pt; 
+  color: var(--muted);
+  text-align: center;
+}
+
+.footer a { margin: 0 8px; }
+
+a.brand-block { 
+  display: inline-block; 
+  margin: 4px 8px; 
+  padding: 5px 12px; 
+  border: 1px solid var(--border); 
+  border-radius: 4px; 
+  text-decoration: none; 
+  font-size: 13pt; 
+  background: var(--card); 
+  line-height: 1.8; 
+  color: var(--fg);
+  transition: border-color 0.2s, background 0.2s;
+}
+a.brand-block:hover { 
+  background: rgba(62,166,255,0.1); 
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.top-link { 
+  float: right; 
+  font-size: 11pt; 
+  color: var(--accent);
+}
+
+.tagline { 
+  text-align: center; 
+  font-family: 'VT323', monospace; 
+  font-size: 18pt; 
+  color: var(--muted);
+  margin: 8px 0;
+}
+
+.logo-wordmark {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-wordmark img {
+  filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 12px var(--accent));
+  max-width: 400px;
+  height: auto;
+}
+
+hr { border-color: var(--border); }
+
+/* Site nav */
+.site-nav {
+  text-align: center;
+  margin: 12px 0 16px;
+}
+.site-nav a, .site-nav button {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 2px 12px;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.5px;
+  background: none;
+  cursor: pointer;
+}
+.site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
+.site-nav a.active { color: var(--accent); border-color: var(--border); }
+
+/* High Contrast Toggle */
+.hc-toggle {
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--fg);
+  padding: 2px 12px;
+  border-radius: 0.5rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+.hc-toggle:focus-visible { outline: 3px solid var(--accent); }
