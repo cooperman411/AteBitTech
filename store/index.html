@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AteBit Store || Pricing & Listings</title>
+<meta name="description" content="Retro computing pricing guide and marketplace listings. Search eBay, get market intelligence, find good deals.">
+<script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{--bg:#0a0a14;--bg-panel:#0d0d1a;--bg-card:#111122;--bg-input:#0d0d20;--fg:#bfd9ff;--fg-dim:#6a7a9a;--fg-bright:#e0f0ff;--cyan:#00e5ff;--green:#33ff33;--amber:#ffb000;--red:#ff3344;--purple:#aa66ff;--orange:#ff7700;--border:#1a1a3a;--border-bright:#303060;--font-mono:'VT323','Courier New',monospace;--font-ui:'Roboto Mono','Courier New',monospace}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:14px;line-height:1.5;min-height:100vh}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border-bright);border-radius:0}
+::selection{background:var(--cyan);color:var(--bg)}
+h1,h2,h3,h4{font-family:var(--font-mono);font-weight:400;margin:0}
+h1{font-size:2.2rem}
+h2{font-size:1.6rem;color:var(--cyan)}
+h3{font-size:1.2rem}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-shadow:0 0 8px var(--cyan)}
+body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.08) 2px,rgba(0,0,0,0.08) 4px);pointer-events:none;z-index:9999}
+.container{max-width:1280px;margin:0 auto;padding:0 20px}
+.header{text-align:center;padding:24px 0 8px;border-bottom:2px solid var(--border-bright);margin-bottom:20px}
+.header h1{color:var(--cyan);text-shadow:0 0 10px var(--cyan),0 0 20px rgba(0,229,255,0.3);letter-spacing:4px;font-size:2.4rem;margin:0}
+.header .subtitle{color:var(--fg-dim);font-size:0.85rem;margin-top:2px;letter-spacing:3px;text-transform:uppercase}
+.header .bbs-line{color:var(--fg-dim);font-size:0.75rem;margin-top:4px}
+.header .nav-links{margin-top:8px;font-size:0.8rem}
+.header .nav-links a{color:var(--fg-dim);padding:0 10px}
+.header .nav-links a:hover{color:var(--cyan)}
+.ansi-box{border:1px solid var(--border-bright);background:var(--bg-panel);padding:16px;position:relative;margin-bottom:16px}
+.ansi-box::before{content:'╔══════════════════════════════════╗';display:block;color:var(--cyan);font-family:var(--font-mono);font-size:0.7rem;letter-spacing:2px;margin:-16px -16px 12px;padding:2px 12px;background:var(--bg);border-bottom:1px solid var(--border-bright);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ansi-footer-line{color:var(--fg-dim);font-family:var(--font-mono);font-size:0.65rem;letter-spacing:2px;margin-top:12px;padding-top:8px;border-top:1px solid var(--border);text-align:center}
+.search-box{display:flex;gap:10px;margin-bottom:12px}
+.search-box input[type="text"]{flex:1;background:var(--bg-input);border:1px solid var(--border-bright);color:var(--fg-bright);font-family:var(--font-mono);font-size:1.1rem;padding:10px 14px;outline:none;transition:border-color 0.2s,box-shadow 0.2s}
+.search-box input[type="text"]:focus{border-color:var(--cyan);box-shadow:0 0 8px rgba(0,229,255,0.3)}
+.search-box input[type="text"]::placeholder{color:var(--fg-dim);opacity:0.6}
+.search-box button{background:var(--bg);border:1px solid var(--cyan);color:var(--cyan);font-family:var(--font-mono);font-size:1rem;padding:10px 24px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;white-space:nowrap}
+.search-box button:hover{background:rgba(0,229,255,0.1);box-shadow:0 0 12px rgba(0,229,255,0.2)}
+.filters-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:800px){.filters-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.filters-row{grid-template-columns:1fr}}
+.filter-group label{display:block;color:var(--fg-dim);font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:4px}
+.filter-group select{width:100%;background:var(--bg-input);border:1px solid var(--border);color:var(--fg);font-family:var(--font-ui);font-size:0.85rem;padding:6px 8px;outline:none;cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%236a7a9a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;padding-right:26px}
+.filter-group select:focus{border-color:var(--cyan);box-shadow:0 0 6px rgba(0,229,255,0.2)}
+.filter-group select option{background:var(--bg);color:var(--fg)}
+.quick-links{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.quick-link{padding:4px 10px;border:1px solid var(--border);font-family:var(--font-mono);font-size:0.75rem;color:var(--fg-dim);cursor:pointer;transition:all 0.15s}
+.quick-link:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,0.05)}
+.market-stats{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;padding:10px 14px;background:var(--bg-card);border:1px solid var(--border)}
+.market-stat{font-family:var(--font-mono);font-size:0.85rem}
+.market-stat .label{color:var(--fg-dim);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px}
+.market-stat .value{color:var(--fg-bright);font-size:1.3rem}
+.market-stat .value.green{color:var(--green)}
+.market-stat .value.cyan{color:var(--cyan)}
+.market-stat .value.amber{color:var(--amber)}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:20px}
+@media(max-width:600px){.results-grid{grid-template-columns:1fr}}
+.no-results{text-align:center;padding:40px;color:var(--fg-dim);font-family:var(--font-mono);font-size:1.2rem}
+.item-card{background:var(--bg-card);border:1px solid var(--border);padding:0;transition:border-color 0.2s,transform 0.15s;display:flex;flex-direction:column;position:relative}
+.item-card:hover{border-color:var(--border-bright);transform:translateY(-2px)}
+.item-card.deal{border-left:3px solid var(--green)}
+.item-card.good{border-left:3px solid var(--cyan)}
+.item-card.fair{border-left:3px solid var(--amber)}
+.item-card.overpriced{border-left:3px solid var(--red)}
+.item-card.wildly{border-left:3px solid var(--orange)}
+.item-image{width:100%;height:180px;object-fit:cover;background:#0a0a14;border-bottom:1px solid var(--border);display:block}
+.item-image-placeholder{width:100%;height:180px;background:#0a0a14;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--fg-dim);font-family:var(--font-mono);font-size:2rem}
+.item-body{padding:10px 12px 12px;flex:1;display:flex;flex-direction:column}
+.item-title{font-family:var(--font-mono);font-size:0.85rem;color:var(--fg-bright);margin-bottom:8px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.item-tag{font-size:0.65rem;padding:2px 6px;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--fg-dim);text-transform:uppercase;letter-spacing:0.5px}
+.item-tag.condition-working{border-color:rgba(51,255,51,0.3);color:var(--green)}
+.item-tag.condition-untested{border-color:rgba(255,176,0,0.3);color:var(--amber)}
+.item-tag.condition-parts{border-color:rgba(255,51,68,0.3);color:var(--red)}
+.item-tag.category{border-color:rgba(0,229,255,0.2);color:var(--cyan)}
+.item-tag.brand{border-color:rgba(170,102,255,0.3);color:var(--purple)}
+.item-price-row{display:flex;align-items:baseline;justify-content:space-between;margin-top:auto;padding-top:8px;border-top:1px solid var(--border)}
+.item-price{font-family:var(--font-mono);font-size:1.3rem;color:var(--fg-bright)}
+.item-price .currency{color:var(--fg-dim);font-size:0.75rem}
+.vs-median{font-family:var(--font-mono);font-size:0.75rem}
+.vs-median.good{color:var(--green)}
+.vs-median.ok{color:var(--amber)}
+.vs-median.bad{color:var(--red)}
+.vs-median.wild{color:var(--orange)}
+.item-actions{margin-top:8px;display:flex;gap:6px}
+.item-actions a{flex:1;display:block;text-align:center;padding:6px;font-family:var(--font-mono);font-size:0.75rem;border:1px solid var(--border-bright);color:var(--fg);transition:all 0.15s}
+.item-actions a.ebay-link:hover{border-color:var(--cyan);background:rgba(0,229,255,0.08);color:var(--cyan)}
+.badge{display:inline-block;font-family:var(--font-mono);font-size:0.65rem;padding:2px 8px;text-transform:uppercase;letter-spacing:1px;font-weight:700;border:1px solid}
+.badge-deal{background:rgba(51,255,51,0.12);color:var(--green);border-color:var(--green);text-shadow:0 0 4px rgba(51,255,51,0.4)}
+.badge-good{background:rgba(0,229,255,0.1);color:var(--cyan);border-color:rgba(0,229,255,0.5)}
+.badge-fair{background:rgba(255,176,0,0.1);color:var(--amber);border-color:rgba(255,176,0,0.5)}
+.badge-overpriced{background:rgba(255,51,68,0.1);color:var(--red);border-color:rgba(255,51,68,0.5)}
+.badge-wildly{background:rgba(255,119,0,0.15);color:var(--orange);border-color:var(--orange);text-shadow:0 0 4px rgba(255,119,0,0.3);animation:badge-pulse 2s infinite}
+@keyframes badge-pulse{0%,100%{box-shadow:0 0 4px rgba(255,119,0,0.2)}50%{box-shadow:0 0 12px rgba(255,119,0,0.5)}}
+.price-guide{margin-bottom:20px}
+.price-guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-top:8px}
+.guide-item{padding:8px 12px;border:1px solid var(--border);font-family:var(--font-mono);font-size:0.8rem;display:flex;flex-direction:column;gap:2px}
+.guide-item .range{font-size:0.65rem;color:var(--fg-dim)}
+.loading-spinner{text-align:center;padding:40px;color:var(--cyan);font-family:var(--font-mono);font-size:1.1rem}
+.boot-screen{text-align:center;padding:60px 20px;font-family:var(--font-mono)}
+.wild-section{margin-bottom:20px;border:1px solid var(--orange);background:rgba(255,119,0,0.03)}
+.wild-section .ansi-box::before{content:'╔══ ☠ WILDLY OVERPRICED ☠ ══╗';color:var(--orange);text-shadow:0 0 8px rgba(255,119,0,0.5);background:rgba(255,119,0,0.05);border-bottom-color:rgba(255,119,0,0.2)}
+.wild-header-text{color:var(--orange);font-family:var(--font-mono);font-size:0.8rem;margin-bottom:8px;text-align:center;font-style:italic;opacity:0.8}
+.wild-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.wild-card{background:rgba(255,119,0,0.05);border:1px solid rgba(255,119,0,0.2);padding:10px;display:flex;flex-direction:column;gap:4px}
+.wild-card img{width:100%;height:120px;object-fit:cover;background:#0a0a14}
+.wild-card .wild-title{font-size:0.75rem;color:var(--fg);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.wild-card .wild-price{font-size:1.1rem;color:var(--orange);font-family:var(--font-mono)}
+.wild-card .wild-commentary{font-size:0.65rem;color:var(--fg-dim);font-style:italic}
+.wild-card .wild-vs{font-size:0.7rem;color:var(--red)}
+.footer{text-align:center;padding:20px 0 30px;border-top:2px solid var(--border-bright);margin-top:20px;color:var(--fg-dim);font-size:0.75rem}
+.disclaimer{font-size:0.65rem;margin-top:6px;opacity:0.7}
+.page-border{text-align:center;color:var(--border-bright);font-family:var(--font-mono);font-size:0.5rem;letter-spacing:6px;line-height:1;margin:0;padding:4px 0 0;overflow:hidden;white-space:nowrap}
+.ghost-text{color:var(--fg-dim);opacity:0.4;font-family:var(--font-mono);font-size:0.55rem;letter-spacing:4px;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<div class="page-border" aria-hidden="true">╔══════════════════════════════════════════════════════════════════════════════╗</div>
+
+<header class="header">
+  <div class="container">
+    <a href="/" style="color:inherit;text-decoration:none;">
+      <h1>&#9674; ATEBIT STORE &#9674;</h1>
+    </a>
+    <div class="subtitle">&#9660; Retro Computing Pricing | Market Intelligence | Deals</div>
+    <div class="bbs-line">
+      <span style="color:var(--cyan);">&#9679;</span> ONLINE
+      <span style="color:var(--fg-dim);padding:0 6px;">|</span>
+      <span id="node-name" style="color:var(--green);">NODE:4601</span>
+      <span style="color:var(--fg-dim);padding:0 6px;">|</span>
+      <span id="user-count" style="color:var(--amber);">USERS:1</span>
+    </div>
+    <div class="nav-links">
+      <a href="/">[SITE]</a>
+      <a href="/store/">[STORE]</a>
+      <a href="https://substack.atebit.tech" target="_blank">[NEWSLETTER]</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Search -->
+  <div class="ansi-box">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search... (e.g. Commodore 64, Apple Macintosh, Atari ST)" autofocus>
+      <button id="search-btn">SEARCH</button>
+    </div>
+    <div class="filters-row">
+      <div class="filter-group">
+        <label>Brand</label>
+        <select id="filter-brand">
+          <option value="">All Brands</option>
+          <option value="Apple">Apple</option>
+          <option value="Commodore">Commodore</option>
+          <option value="Atari">Atari</option>
+          <option value="IBM">IBM</option>
+          <option value="Tandy">Tandy/TRS-80</option>
+          <option value="Amiga">Amiga</option>
+          <option value="Amstrad">Amstrad</option>
+          <option value="Sinclair">Sinclair</option>
+          <option value="Texas Instruments">Texas Instruments</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Category</label>
+        <select id="filter-category">
+          <option value="">All Categories</option>
+          <option value="computer">Computers / Systems</option>
+          <option value="parts">Parts &amp; Components</option>
+          <option value="accessory">Accessories &amp; Peripherals</option>
+          <option value="software">Software &amp; Media</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Condition</label>
+        <select id="filter-condition">
+          <option value="">All Conditions</option>
+          <option value="working">Working / Tested</option>
+          <option value="untested">Untested</option>
+          <option value="parts">For Parts / Not Working</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Sort By</label>
+        <select id="filter-sort">
+          <option value="default">Best Match</option>
+          <option value="deal">Best Deal</option>
+          <option value="price_asc">Price: Low to High</option>
+          <option value="price_desc">Price: High to Low</option>
+          <option value="vsmedian_asc">Most Overpriced</option>
+        </select>
+      </div>
+    </div>
+    <div class="quick-links">
+      <span style="color:var(--fg-dim);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;padding:4px 4px 4px 0;">Quick:</span>
+      <span class="quick-link" data-q="commodore 64">C64</span>
+      <span class="quick-link" data-q="amiga 500">Amiga 500</span>
+      <span class="quick-link" data-q="apple macintosh classic">Mac Classic</span>
+      <span class="quick-link" data-q="atari st">Atari ST</span>
+      <span class="quick-link" data-q="ibm thinkpad">ThinkPad</span>
+      <span class="quick-link" data-q="tandy trs-80">TRS-80</span>
+      <span class="quick-link" data-q="vintage computer lot">Vintage Lots</span>
+      <span class="quick-link" data-q="nintendo nes">NES</span>
+    </div>
+    <div class="ansi-footer-line"><span>&#9670;</span> Data from eBay Browse API | Updated in real-time <span>&#9670;</span></div>
+  </div>
+
+  <!-- Market Stats -->
+  <div id="market-stats" style="display:none;" class="market-stats"></div>
+
+  <!-- Price Guide -->
+  <div class="price-guide">
+    <h2 style="font-size:1rem;margin-bottom:6px;">&#9658; PRICE GUIDE</h2>
+    <div class="price-guide-grid">
+      <div class="guide-item" style="border-left-color:var(--green);">
+        <span><span class="badge badge-deal">DEAL</span> 30%+ below market</span>
+        <span class="range">Significantly underpriced</span>
+      </div>
+      <div class="guide-item" style="border-left-color:var(--cyan);">
+        <span><span class="badge badge-good">GOOD</span> 10-29% below market</span>
+        <span class="range">Fairly priced below median</span>
+      </div>
+      <div class="guide-item" style="border-left-color:var(--amber);">
+        <span><span class="badge badge-fair">FAIR</span> Within 10% of market</span>
+        <span class="range">Around market median price</span>
+      </div>
+      <div class="guide-item" style="border-left-color:var(--red);">
+        <span><span class="badge badge-overpriced">HIGH</span> 10-49% above market</span>
+        <span class="range">Above median price</span>
+      </div>
+      <div class="guide-item" style="border-left-color:var(--orange);">
+        <span><span class="badge badge-wildly">WILD</span> 50%+ above market</span>
+        <span class="range">Egregiously overpriced</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div id="search-results">
+    <div class="boot-screen">
+      <div style="font-size:3rem;color:var(--cyan);margin-bottom:12px;">&#9674;</div>
+      <div style="font-size:1.2rem;color:var(--fg-dim);font-family:var(--font-mono);">ATEBIT STORE v1.0</div>
+      <div style="font-size:0.85rem;color:var(--fg-dim);margin-top:8px;font-family:var(--font-mono);">Type a search above or click a quick link to begin.<br><span style="animation:blink 1s step-end infinite;">_</span></div>
+    </div>
+  </div>
+
+  <!-- Wildly Overpriced -->
+  <div id="wild-section" class="wild-section ansi-box" style="display:none;">
+    <div style="text-align:center;margin-bottom:4px;">
+      <span style="color:var(--orange);font-family:var(--font-mono);font-size:1.2rem;">&#9760;</span>
+    </div>
+    <div class="wild-header-text">"That's not 'rare,' that's just old."</div>
+    <div id="wild-grid" class="wild-grid"></div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="ghost-text" style="margin-bottom:6px;">&#9650; ATEBIT TECH &mdash; RETRO COMPUTING DATABASE &#9650;</div>
+    <div>
+      <a href="/">[ Home ]</a>
+      <a href="/store/">[ Store ]</a>
+      <a href="https://substack.atebit.tech" target="_blank">[ Newsletter ]</a>
+    </div>
+    <div class="disclaimer">
+      Prices are estimates based on eBay sold listings and may vary. Some links are affiliate links<br>
+      &copy; 2026 AteBit Tech &bull; All prices in USD
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+const API='https://ebay-pricing.coopernatural.workers.dev/';
+const DEF='commodore 64';
+const BRANDS={
+  Apple:/apple|macintosh|mac\b|imac|powerbook|powerpc|apple\s+ii|apple \d|ipad|iphone/i,
+  Commodore:/commodore|c64|c128|vic-20|vic20|pet\b|plus\/?4|amiga/i,
+  Atari:/atari|atari\s+st|atari\s+800|atari\s+2600|atari\s+400|atari\s+xl|jaguar|lynx/i,
+  IBM:/\bIBM\b|thinkpad|ps\/2|pc\s+at|pc\s+xt|ibm\s+pc|thinkcentre|thinkstation/i,
+  Tandy:/tandy|trs-80|trs80|radio\s*shack|color\s+computer|model\s+\d+|mc-10|co(co|co3?)/i,
+  Amiga:/amiga|a500|a600|a1200|a2000|a3000|a4000/i,
+  Amstrad:/amstrad|cpc|gx4000|pce\/?500/i,
+  Sinclair:/sinclair|zx\s*spectrum|zx81|ql\s|spectrum\s\+|timex/i,
+  'Texas Instruments':/texas\s+instruments|ti\s+\d|ti-?99|ti-?95/i,
+};
+function br(t){for(let[b,p]of Object.entries(BRANDS))if(p.test(t))return b;return/ibm|microsoft|intel|dell\b|hp\b|compaq|gateway|sony|toshiba|nec/i.test(t)?'Other':'Other'}
+const CATS={
+  computer:/computer|cpu\b|system\b|unit\b|motherboard|mainboard|logic\s*board/i,
+  parts:/part|cable|chip\b|processor|ic\b|capacitor|resistor|pcb\b|board\b|drive\b|floppy|power\s*supply|psu\b|adapter|connector|socket|ram\b|memory\s*chip|rom\b|eprom|transistor|diode/i,
+  accessory:/mouse|keyboard|joystick|monitor|disk\b|hard\s*drive|scsi|printer|modem|serial|parallel|cable|case\b|manual|book\b|guide/i,
+  software:/game|software|program|rom\b|disk\b|floppy|cd-?rom|tape|cassette|cartridge|application|os\b|operating\s*system|utility|demo\b/i,
+};
+function cat(t){for(let[c,p]of Object.entries(CATS))if(p.test(t))return c;return'other'}
+function cond(c){if(!c)return'untested';const s=c.toLowerCase();if(/new|refurbished|like\s*new|mint|used|tested|working|functional|runs|excellent/i.test(s))return'working';if(/unknown|untested/i.test(s))return'untested';return'parts'}
+function badge(v){let f=parseFloat(v);if(f>=30)return{b:'DEAL',c:'badge-deal',cc:'deal',i:'🔥'};if(f>=10)return{b:'GOOD',c:'badge-good',cc:'good',i:'👍'};if(f>=-10)return{b:'FAIR',c:'badge-fair',cc:'fair',i:'➖'};if(f>=-50)return{b:'HIGH',c:'badge-overpriced',cc:'overpriced',i:'💀'};return{b:'WILD',c:'badge-wildly',cc:'wildly',i:'☠'}}
+function fp(p){let n=parseFloat(p);return isNaN(n)?p:(n%1===0?'$'+n.toFixed(0):'$'+n.toFixed(2))}
+function fv(v){let n=parseFloat(v);if(isNaN(n))return'';let a=Math.abs(n);return a>=100?'0%':(n>0?n+'% below':a+'% above')}
+function wc(i){let p=parseFloat(i.price)||0,m=parseFloat(i.vsMedian)||0,a=Math.abs(m);if(a>80)return'LOL. Not even close.';if(a>65)return'Somebody watched one too many YouTube videos.';if(a>50)return'Ah yes, the "rare collector\'s item" markup.';if(i.condition&&/for\s*parts|broken|untested/i.test(i.condition))return'Broken AND overpriced. Bold strategy.';return'"Rare" = "nobody is buying this at that price."'}
+function esc(s){if(!s)return'';let d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function gn(){let p=['BBS','NODE','SYS'],n=Math.floor(Math.random()*8999)+1001;return p[Math.floor(Math.random()*p.length)]+':'+n}
+
+let allItems=[],searchQ='',marketMedian=0,soldCount=0;
+const $=s=>document.getElementById(s);
+const el={si:$('search-input'),sb:$('search-btn'),res:$('search-results'),ms:$('market-stats'),ws:$('wild-section'),wg:$('wild-grid'),fb:$('filter-brand'),fc:$('filter-category'),fcond:$('filter-condition'),fsort:$('filter-sort'),nn:$('node-name'),uc:$('user-count')};
+
+el.nn.textContent=gn();
+el.uc.textContent='USERS:'+(Math.floor(Math.random()*5)+1);
+setInterval(()=>{el.nn.textContent=gn()},120000);
+
+async function search(q){
+  q=q.trim();if(!q)return;
+  searchQ=q;
+  el.res.innerHTML='<div class="loading-spinner"><span style="animation:spin 0.8s steps(10) infinite;display:inline-block;">&#10227;</span> Searching...<br><span style="font-size:0.7rem;color:var(--fg-dim);">'+esc(q)+'</span></div>';
+  try{
+    let r=await fetch(API+'?q='+encodeURIComponent(q));
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    let d=await r.json();
+    if(!d||!d.deals){el.res.innerHTML='<div class="boot-screen" style="color:var(--amber);"><div style="font-size:2rem;">&#9888;</div><div>No results returned</div></div>';el.ms.style.display='none';return}
+    allItems=d.deals||[];marketMedian=d.marketMedian||0;soldCount=d.soldCount||0;
+    render();
+  }catch(e){
+    el.res.innerHTML='<div class="boot-screen" style="color:var(--red);"><div style="font-size:2rem;margin-bottom:8px;">&#9760;</div><div>CONNECTION ERROR</div><div style="font-size:0.8rem;color:var(--fg-dim);margin-top:4px;">'+esc(e.message)+'</div></div>';
+    el.ms.style.display='none';el.ws.style.display='none';
+  }
+}
+
+function render(){
+  let bf=el.fb.value,cf=el.fc.value,cof=el.fcond.value,sf=el.fsort.value;
+  let items=allItems.map(i=>({...i,_brand:br(i.title||''),_category:cat(i.title||''),_condition:cond(i.condition)}));
+  if(bf)items=items.filter(i=>i._brand===bf);
+  if(cf)items=items.filter(i=>i._category===cf);
+  if(cof)items=items.filter(i=>i._condition===cof);
+  switch(sf){
+    case'deal':items.sort((a,b)=>parseFloat(b.vsMedian)-parseFloat(a.vsMedian));break;
+    case'price_asc':items.sort((a,b)=>parseFloat(a.price)-parseFloat(b.price));break;
+    case'price_desc':items.sort((a,b)=>parseFloat(b.price)-parseFloat(a.price));break;
+    case'vsmedian_asc':items.sort((a,b)=>parseFloat(a.vsMedian)-parseFloat(b.vsMedian));break;
+  }
+  let wild=items.filter(i=>badge(parseFloat(i.vsMedian)).b==='WILD');
+  let norm=items.filter(i=>badge(parseFloat(i.vsMedian)).b!=='WILD'||wild.length<=3);
+  stats(norm.length);
+  renderNorm(norm,items.length);
+  renderWild(wild);
+  window.scrollTo({top:el.res.offsetTop-100,behavior:'smooth'});
+}
+
+function stats(n){
+  let s=el.ms;s.style.display='flex';
+  s.innerHTML='<div class="market-stat"><div class="label">Query</div><div class="value" style="font-size:0.9rem;color:var(--cyan);overflow:hidden;text-overflow:ellipsis;max-width:200px;white-space:nowrap;">'+esc(searchQ)+'</div></div>'+
+    '<div class="market-stat"><div class="label">Market Median</div><div class="value amber">'+fp(marketMedian)+'</div></div>'+
+    '<div class="market-stat"><div class="label">Sold Items</div><div class="value green">'+soldCount+'</div></div>'+
+    '<div class="market-stat"><div class="label">Showing</div><div class="value cyan">'+n+' of '+allItems.length+'</div></div>';
+}
+
+function renderNorm(items,total){
+  if(!items.length){el.res.innerHTML='<div class="no-results">No items match your filters.<br><span style="font-size:0.8rem;">Try broadening your search.</span></div>';return}
+  let h='<div class="results-grid">';
+  for(let i of items){
+    let b=badge(parseFloat(i.vsMedian)),p=fp(i.price),v=fv(i.vsMedian),img=i.image||'';
+    let ih=img?'<img class="item-image" src="'+img+'" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div class=item-image-placeholder>&#9674;</div>\'">':'<div class="item-image-placeholder">&#9674;</div>';
+    let cl=i._condition||'unknown',cc=cl==='working'?'condition-working':cl==='untested'?'condition-untested':'condition-parts';
+    let cl2=i._category==='computer'?'System':i._category==='parts'?'Parts':i._category==='accessory'?'Accessory':i._category==='software'?'Software':'Other';
+    let vc=parseFloat(i.vsMedian)>=0?'good':parseFloat(i.vsMedian)>-30?'ok':parseFloat(i.vsMedian)>-50?'bad':'wild';
+    let t=(i.title||'').replace(/[🕹️☠🔥👍💀➖]/g,'').trim();
+    h+='<div class="item-card '+b.cc+'">'+ih+'<div class="item-body"><div class="item-title">'+esc(t)+'</div>'+
+      '<div class="item-meta"><span class="item-tag '+cc+'">'+cl.toUpperCase()+'</span><span class="item-tag category">'+cl2+'</span><span class="item-tag brand">'+i._brand.toUpperCase()+'</span></div>'+
+      '<div class="item-price-row"><div class="item-price">'+p+'</div><div><span class="badge '+b.c+'">'+b.i+' '+b.b+'</span></div></div>'+
+      '<div style="margin-top:2px;"><span class="vs-median '+vc+'">'+v+' vs median</span></div>'+
+      '<div class="item-actions"><a class="ebay-link" href="'+i.ambassadorUrl+'" target="_blank" rel="noopener">[ VIEW ON EBAY ]</a></div></div></div>';
+  }
+  h+='</div>';el.res.innerHTML=h;
+}
+
+function renderWild(items){
+  if(!items.length){el.ws.style.display='none';return}
+  el.ws.style.display='block';let h='';
+  for(let i of items){
+    let p=fp(i.price),img=i.image||'';
+    let ih=img?'<img src="'+img+'" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div style=height:120px;display:flex;align-items:center;justify-content:center;color:var(--fg-dim);font-family:var(--font-mono);font-size:2rem;>&#9760;</div>\'">':'<div style="height:120px;display:flex;align-items:center;justify-content:center;color:var(--fg-dim);font-family:var(--font-mono);font-size:2rem;">&#9760;</div>';
+    let cm=wc(i),v=fv(i.vsMedian),t=(i.title||'').replace(/[🕹️☠🔥👍💀➖]/g,'').trim();
+    h+='<div class="wild-card">'+ih+'<div class="wild-title">'+esc(t)+'</div><div class="wild-price">'+p+'</div>'+
+      '<div class="wild-vs">'+v+' vs median ($'+(marketMedian?marketMedian.toFixed(2):'?')+')</div>'+
+      '<div class="wild-commentary">'+cm+'</div>'+
+      '<div class="item-actions" style="margin-top:4px;"><a class="ebay-link" href="'+i.ambassadorUrl+'" target="_blank" rel="noopener">[ VIEW ON EBAY ]</a></div></div>';
+  }
+  el.wg.innerHTML=h;
+}
+
+el.sb.addEventListener('click',()=>{let q=el.si.value.trim();if(q)search(q)});
+el.si.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();let q=el.si.value.trim();if(q)search(q)}});
+[el.fb,el.fc,el.fcond,el.fsort].forEach(s=>s.addEventListener('change',()=>{if(allItems.length)render()}));
+document.querySelectorAll('.quick-link').forEach(elL=>elL.addEventListener('click',function(){let q=this.getAttribute('data-q');if(q){el.si.value=q;search(q)}}));
+
+el.si.value=DEF;search(DEF);
+})();
+</script>
+</body>
+</html>
