@@ -80,28 +80,30 @@ hr { border-color: var(--border); }
   margin-top: -12px;
   margin-bottom: 8px;
 }
-.site-nav a {
-  font-family: 'VT323', monospace;
-  font-size: 1.15rem;
-  color: var(--muted);
-  text-decoration: none;
-  padding: 2px 12px;
-  border: 1px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
-  letter-spacing: 0.5px;
-}
-.site-nav a:hover { color: var(--accent); border-color: var(--border); }
-.site-nav a.active { color: var(--accent); border-color: var(--border); }
+.site-nav a, .site-nav button {
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 2px 12px;
+    border: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    letter-spacing: 0.5px;
+    background: none;
+    cursor: pointer;
+  }
+  .site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
+  .site-nav a.active { color: var(--accent); border-color: var(--border); }
 
 /* Badges */
 .badge {
-  display: inline-block;
-  font-family: 'VT323', monospace;
-  font-size: 0.8rem;
-  padding: 2px 8px;
-  letter-spacing: 0.5px;
-  border: 1px solid;
-}
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    font-size: 0.9rem;
+    padding: 2px 10px;
+    letter-spacing: 0.5px;
+    border: 1px solid;
+  }
 .badge-deal { background: rgba(51,255,51,0.1); color: var(--green); border-color: var(--green); }
 .badge-good { background: rgba(0,229,255,0.08); color: var(--teal); border-color: rgba(0,229,255,0.5); }
 .badge-fair { background: rgba(255,176,0,0.08); color: var(--amber); border-color: rgba(255,176,0,0.5); }
@@ -119,9 +121,9 @@ hr { border-color: var(--border); }
 
 /* Footer */
 .about-privacy-section {
-  max-width: 900px; margin: 3rem auto; padding: 0 1rem;
-  text-align: center; font-size: 0.85rem;
-}
+    max-width: 900px; margin: 3rem auto; padding: 0 1rem;
+    text-align: center; font-size: 0.95rem;
+  }
 .about-privacy-section hr { margin-bottom: 1rem; opacity: 0.4; }
 .about-privacy-section a { text-decoration: underline; }
 
@@ -144,9 +146,9 @@ hr { border-color: var(--border); }
   border-radius: 0.75rem;
   margin-bottom: 1rem;
 }
-.market-stat { font-size: 0.85rem; }
-.market-stat .label { color: var(--muted); font-size: 0.7rem; }
-.market-stat .value { font-size: 1.3rem; color: var(--fg); font-family: 'VT323', monospace; }
+.market-stat { font-size: 1rem; }
+  .market-stat .label { color: var(--muted); font-size: 0.85rem; }
+  .market-stat .value { font-size: 1.5rem; color: var(--fg); font-family: 'VT323', monospace; }
 .market-stat .value.green { color: var(--green); }
 .market-stat .value.cyan { color: var(--teal); }
 .market-stat .value.amber { color: var(--amber); }
@@ -188,23 +190,23 @@ hr { border-color: var(--border); }
   border-bottom: 1px solid var(--border);
 }
 .store-card .card-body { padding: 0.75rem 1rem 1rem; flex: 1; display: flex; flex-direction: column; }
-.store-card .card-title { font-size: 0.85rem; color: var(--fg); line-height: 1.4; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-.store-card .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.5rem; }
-.store-card .card-tag { font-size: 0.65rem; padding: 1px 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--muted); }
+.store-card .card-title { font-size: 1rem; color: var(--fg); line-height: 1.4; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .store-card .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.5rem; }
+  .store-card .card-tag { font-size: 0.8rem; padding: 1px 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--muted); }
 .store-card .card-tag.cond-working { color: var(--green); border-color: rgba(51,255,51,0.2); }
 .store-card .card-tag.cond-untested { color: var(--amber); border-color: rgba(255,176,0,0.2); }
 .store-card .card-tag.cond-parts { color: var(--red-accent); border-color: rgba(255,51,68,0.2); }
 .store-card .card-tag.cat { color: var(--teal); border-color: rgba(0,229,255,0.2); }
 .store-card .card-tag.brand { color: #aa66ff; border-color: rgba(170,102,255,0.2); }
 .store-card .price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
-.store-card .price { font-size: 1.3rem; color: var(--fg); font-family: 'VT323', monospace; }
-.store-card .vs-median { font-size: 0.75rem; }
+.store-card .price { font-size: 1.5rem; color: var(--fg); font-family: 'VT323', monospace; }
+  .store-card .vs-median { font-size: 0.85rem; }
 .store-card .vs-median.good { color: var(--green); }
 .store-card .vs-median.ok { color: var(--amber); }
 .store-card .vs-median.bad { color: var(--red-accent); }
 .store-card .vs-median.wild { color: var(--orange); }
 .store-card .card-actions { margin-top: 0.5rem; }
-.store-card .card-actions a { display: block; text-align: center; padding: 0.4rem; font-size: 0.75rem; border: 1px solid var(--border); color: var(--fg); border-radius: 0.4rem; transition: all 0.15s; }
+.store-card .card-actions a { display: block; text-align: center; padding: 0.4rem; font-size: 0.85rem; border: 1px solid var(--border); color: var(--fg); border-radius: 0.4rem; transition: all 0.15s; }
 .store-card .card-actions a:hover { border-color: var(--accent); color: var(--accent); background: rgba(62,166,255,0.05); }
 
 /* Search */
@@ -217,30 +219,30 @@ hr { border-color: var(--border); }
 }
 .search-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
 .search-row input[type="text"] {
-  flex: 1;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--fg);
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.4rem;
-  outline: none;
-  transition: border-color 0.2s;
-}
-.search-row input[type="text"]:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(62,166,255,0.15); }
-.search-row input[type="text"]::placeholder { color: var(--muted); opacity: 0.5; }
-.search-row button {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--accent);
-  font-family: 'VT323', monospace;
-  font-size: 1.1rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--fg);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.4rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-row input[type="text"]:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(62,166,255,0.15); }
+  .search-row input[type="text"]::placeholder { color: var(--muted); opacity: 0.5; }
+  .search-row button {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
 .search-row button:hover { border-color: var(--accent); background: rgba(62,166,255,0.05); }
 
 .filters-row {
@@ -251,47 +253,63 @@ hr { border-color: var(--border); }
 }
 @media (max-width: 800px) { .filters-row { grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 500px) { .filters-row { grid-template-columns: 1fr; } }
-.filter-group label { display: block; color: var(--muted); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
-.filter-group select {
-  width: 100%;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--fg);
-  font-family: 'Roboto Mono', monospace;
-  font-size: 0.85rem;
-  padding: 0.35rem 0.5rem;
-  border-radius: 0.3rem;
-  outline: none;
-  cursor: pointer;
-}
+.filter-group label { display: block; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
+  .filter-group select {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--fg);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    outline: none;
+    cursor: pointer;
+  }
 .filter-group select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(62,166,255,0.15); }
 
 .quick-links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
-.quick-link { padding: 0.2rem 0.6rem; border: 1px solid var(--border); border-radius: 0.3rem; font-size: 0.75rem; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+.quick-link { padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 0.3rem; font-size: 0.85rem; color: var(--muted); cursor: pointer; transition: all 0.15s; }
 .quick-link:hover { border-color: var(--accent); color: var(--accent); }
 
 .price-guide { margin-bottom: 1rem; }
 .price-guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; margin-top: 0.5rem; }
-.guide-item { padding: 0.4rem 0.75rem; border: 1px solid var(--border); border-radius: 0.4rem; font-size: 0.8rem; }
-.guide-item .range { font-size: 0.65rem; color: var(--muted); }
+.guide-item { padding: 0.5rem 0.85rem; border: 1px solid var(--border); border-radius: 0.4rem; font-size: 0.95rem; }
+  .guide-item .range { font-size: 0.8rem; color: var(--muted); }
 
 .wild-section { margin-bottom: 1.5rem; }
-.wild-section .wild-header { font-family: 'VT323', monospace; font-size: 1.3rem; color: var(--orange); text-shadow: 0 0 4px rgba(255,119,0,0.3); }
-.wild-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem; }
-.wild-card { background: rgba(255,119,0,0.03); border: 1px solid rgba(255,119,0,0.15); border-radius: 0.75rem; padding: 0.75rem; }
-.wild-card img { width: 100%; height: 120px; object-fit: cover; background: #0a0a14; border-radius: 0.3rem; }
-.wild-card .wild-title { font-size: 0.8rem; color: var(--fg); margin: 0.3rem 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.wild-card .wild-price { font-size: 1.2rem; color: var(--orange); font-family: 'VT323', monospace; }
-.wild-card .wild-commentary { font-size: 0.7rem; color: var(--muted); font-style: italic; }
-.wild-card .wild-vs { font-size: 0.7rem; color: var(--red-accent); }
-.wild-card a { display: block; text-align: center; padding: 0.3rem; font-size: 0.7rem; border: 1px solid var(--border); border-radius: 0.3rem; margin-top: 0.3rem; color: var(--fg); transition: all 0.15s; }
+.wild-section .wild-header { font-family: 'VT323', monospace; font-size: 1.5rem; color: var(--orange); text-shadow: 0 0 4px rgba(255,119,0,0.3); }
+  .wild-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem; }
+  .wild-card { background: rgba(255,119,0,0.03); border: 1px solid rgba(255,119,0,0.15); border-radius: 0.75rem; padding: 0.75rem; }
+  .wild-card img { width: 100%; height: 120px; object-fit: cover; background: #0a0a14; border-radius: 0.3rem; }
+  .wild-card .wild-title { font-size: 0.95rem; color: var(--fg); margin: 0.3rem 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .wild-card .wild-price { font-size: 1.4rem; color: var(--orange); font-family: 'VT323', monospace; }
+  .wild-card .wild-commentary { font-size: 0.85rem; color: var(--muted); font-style: italic; }
+  .wild-card .wild-vs { font-size: 0.85rem; color: var(--red-accent); }
+  .wild-card a { display: block; text-align: center; padding: 0.35rem; font-size: 0.85rem; border: 1px solid var(--border); border-radius: 0.3rem; margin-top: 0.3rem; color: var(--fg); transition: all 0.15s; }
 .wild-card a:hover { border-color: var(--accent); color: var(--accent); }
 
-.no-results { text-align: center; padding: 2rem; color: var(--muted); }
-.loading-spinner { text-align: center; padding: 2rem; color: var(--accent); }
+.no-results { text-align: center; padding: 2rem; color: var(--muted); font-size: 1rem; }
+  .loading-spinner { text-align: center; padding: 2rem; color: var(--accent); font-size: 1rem; }
 .boot-screen { text-align: center; padding: 3rem 1rem; }
 .boot-screen .cursor { animation: blink 1s step-end infinite; }
-@keyframes blink { 50% { opacity: 0; } }
+@-webkit-keyframes blink { 50% { opacity: 0; } }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* High Contrast */
+  :root.hc { --bg: #000000; --fg: #ffffff; --muted: #cccccc; --card: #000000; --accent: #00ffff; --border: #ffffff; }
+  :root.hc .card, :root.hc .store-card, :root.hc .search-area, :root.hc .market-stats { border-width: 3px; }
+  .hc-toggle {
+    border: 2px solid var(--accent);
+    background: transparent;
+    color: var(--fg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .hc-toggle:focus-visible { outline: 3px solid var(--accent); }
 </style>
 </head>
 <body>
@@ -313,14 +331,17 @@ hr { border-color: var(--border); }
 <nav class="site-nav" aria-label="Site navigation">
   <a href="/">[ Site ]</a>
   <a href="/store/" class="active">[ Store ]</a>
-  <a href="https://substack.atebit.tech" target="_blank">[ Newsletter ]</a>
+  <a href="https://atebittech.substack.com" target="_blank">[ Newsletter ]</a>
+  <button aria-label="Toggle high contrast" class="hc-toggle" id="hc-toggle">[ High Contrast ]</button>
+  <a aria-label="Classic HTML version — works on old browsers without JavaScript" href="/classic/">[ HTML Version ]</a>
+  <a aria-label="Privacy and About" href="#about-privacy">[ Privacy &amp; About ]</a>
 </nav>
 
 <main class="max-w-6xl mx-auto px-2">
 
   <h2 class="title-font text-2xl text-center mt-4 mb-1" style="color:var(--accent);">&#9670; PRICING &amp; MARKETPLACE &#9670;</h2>
-  <p class="text-center" style="color:var(--muted);font-size:0.85rem;margin-bottom:1rem;">
-    Compare prices against market data from eBay sold listings &mdash; find deals, avoid overpaying
+  <p class="text-center" style="color:var(--muted);font-size:1rem;margin-bottom:1rem;">
+        Compare prices against market data from eBay sold listings &mdash; find deals, avoid overpaying
   </p>
 
   <!-- Search -->
@@ -378,7 +399,7 @@ hr { border-color: var(--border); }
       </div>
     </div>
     <div class="quick-links">
-      <span style="color:var(--muted);font-size:0.7rem;text-transform:uppercase;letter-spacing:1px;padding:2px 4px 2px 0;">Quick:</span>
+      <span style="color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;padding:2px 4px 2px 0;">Quick:</span>
       <span class="quick-link" data-q="commodore 64">C64</span>
       <span class="quick-link" data-q="amiga 500">Amiga 500</span>
       <span class="quick-link" data-q="apple macintosh classic">Mac Classic</span>
@@ -388,7 +409,7 @@ hr { border-color: var(--border); }
       <span class="quick-link" data-q="vintage computer lot">Lots</span>
       <span class="quick-link" data-q="nintendo nes">NES</span>
     </div>
-    <div style="font-size:0.7rem;color:var(--muted);text-align:center;margin-top:0.25rem;">
+    <div style="font-size:0.85rem;color:var(--muted);text-align:center;margin-top:0.25rem;">
       Data from eBay Browse API &bull; Affiliate links via eBay Partner Network
     </div>
   </div>
@@ -398,7 +419,7 @@ hr { border-color: var(--border); }
 
   <!-- Price Guide -->
   <div class="price-guide">
-    <h3 class="store-section-title" style="font-size:1.2rem;margin-bottom:0.25rem;">&#9658; PRICE GUIDE</h3>
+    <h3 class="store-section-title" style="font-size:1.4rem;margin-bottom:0.25rem;">&#9658; PRICE GUIDE</h3>
     <div class="price-guide-grid">
       <div class="guide-item" style="border-left:3px solid var(--green);">
         <span><span class="badge badge-deal">DEAL</span> 30%+ below median</span>
@@ -439,7 +460,7 @@ hr { border-color: var(--border); }
   <div id="wild-section" class="wild-section" style="display:none;">
     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
       <span class="wild-header">&#9760; WILDLY OVERPRICED</span>
-      <span style="font-size:0.8rem;color:var(--muted);font-style:italic;">"That's not 'rare,' that's just old."</span>
+      <span style="font-size:0.95rem;color:var(--muted);font-style:italic;">"Yikes!"</span>
     </div>
     <div id="wild-grid" class="wild-grid"></div>
   </div>
@@ -456,7 +477,7 @@ hr { border-color: var(--border); }
   <p>
     <a href="/">[ Site ]</a>
     <a href="/store/">[ Store ]</a>
-    <a href="https://substack.atebit.tech" target="_blank">[ Newsletter ]</a>
+    <a href="https://atebittech.substack.com" target="_blank">[ Newsletter ]</a>
   </p>
 </footer>
 
@@ -525,8 +546,8 @@ function wildComment(i) {
 
 function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
-let allItems = [], searchQ = '', marketMedian = 0, soldCount = 0;
-const $ = s => document.getElementById(s);
+let allItems = [], searchQ = '', marketMedian = 0, soldCount = 0, computerMedian = 0, computerCount = 0;
+  const $ = s => document.getElementById(s);
 const el = {
   si: $('search-input'), sb: $('search-btn'), res: $('search-results'),
   ms: $('market-stats'), ws: $('wild-section'), wg: $('wild-grid'),
@@ -542,8 +563,8 @@ async function search(q) {
     const r = await fetch(API + '?q=' + encodeURIComponent(q));
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const d = await r.json();
-    if (!d || !d.deals) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
-    allItems = d.deals || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0;
+          if (!d || !d.deals) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
+          allItems = d.deals || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0; computerMedian = d.computerMedian || 0; computerCount = d.computerCount || 0;
     render();
   } catch (e) {
     el.res.innerHTML = '<div class="no-results" style="color:var(--red-accent);">Connection error: ' + esc(e.message) + '</div>';
@@ -571,13 +592,26 @@ function render() {
 }
 
 function stats(n) {
-  el.ms.style.display = 'flex';
-  el.ms.innerHTML =
-    '<div class="market-stat"><div class="label">Query</div><div class="value" style="font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;">' + esc(searchQ) + '</div></div>' +
-    '<div class="market-stat"><div class="label">Market Median</div><div class="value amber">' + fp(marketMedian) + '</div></div>' +
-    '<div class="market-stat"><div class="label">Sold Items</div><div class="value green">' + soldCount + '</div></div>' +
-    '<div class="market-stat"><div class="label">Showing</div><div class="value cyan">' + n + ' of ' + allItems.length + '</div></div>';
-}
+    el.ms.style.display = 'flex';
+    const hasComputerMedian = computerMedian && computerCount > 0;
+    el.ms.innerHTML =
+      '<div class="market-stat"><div class="label">Query</div><div class="value" style="font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;">' + esc(searchQ) + '</div></div>' +
+      '<div class="market-stat"><div class="label">Market Median</div><div class="value amber">' + fp(marketMedian) + '</div></div>' +
+      (hasComputerMedian ? '<div class="market-stat" style="cursor:pointer;" id="computer-median-stat" tabindex="0" role="button" aria-label="Click to show only systems"><div class="label">Systems Median</div><div class="value green">' + fp(computerMedian) + '</div></div>' : '') +
+      '<div class="market-stat"><div class="label">Showing</div><div class="value cyan">' + n + ' of ' + allItems.length + '</div></div>';
+    // Click handler for computer median stat - filter to systems only
+    const cmStat = document.getElementById('computer-median-stat');
+    if (cmStat) {
+      cmStat.addEventListener('click', function() {
+        el.fc.value = 'computer';
+        [el.fb, el.fcond, el.fsort].forEach(s => s.value = '');
+        render();
+      });
+      cmStat.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+      });
+    }
+  }
 
 function renderNorm(items) {
   if (!items.length) { el.res.innerHTML = '<div class="no-results">No items match your filters.<br><span style="font-size:0.8rem;">Try broadening your search.</span></div>'; return; }
@@ -638,6 +672,38 @@ el.si.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefau
 document.querySelectorAll('.quick-link').forEach(l => l.addEventListener('click', function() { const q = this.getAttribute('data-q'); if (q) { el.si.value = q; search(q); } }));
 
 el.si.value = DEF; search(DEF);
+
+  // High Contrast Toggle
+  const hcBtn = document.getElementById('hc-toggle');
+  if (hcBtn) {
+    hcBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('hc');
+      hcBtn.textContent = document.documentElement.classList.contains('hc') ? '[ Normal ]' : '[ High Contrast ]';
+    });
+  }
+
+  // Accessibility: announce dynamic updates to screen readers
+  const announcer = document.createElement('div');
+  announcer.setAttribute('aria-live', 'polite');
+  announcer.setAttribute('aria-atomic', 'true');
+  announcer.className = 'sr-only';
+  document.body.appendChild(announcer);
+
+  // Override render to announce results
+  const origRender = render;
+  render = function() {
+    origRender();
+    const visible = document.querySelectorAll('.store-card').length;
+    const total = allItems.length;
+    announcer.textContent = 'Showing ' + visible + ' of ' + total + ' items';
+  };
+
+  // Keyboard nav: focus-visible styles are already in CSS
+  // Ensure all interactive elements are keyboard accessible
+  document.querySelectorAll('.quick-link, .store-card .card-actions a, .wild-card a').forEach(el => {
+    if (!el.getAttribute('tabindex')) el.setAttribute('tabindex', '0');
+  });
+
 })();
 </script>
 </body>
