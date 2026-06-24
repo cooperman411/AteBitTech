@@ -355,27 +355,59 @@ hr { border-color: var(--border); }
         <label>Brand</label>
         <select id="filter-brand">
           <option value="">All Brands</option>
-          <option value="Apple">Apple</option>
-          <option value="Commodore">Commodore</option>
-          <option value="Atari">Atari</option>
-          <option value="IBM">IBM</option>
-          <option value="Tandy">Tandy</option>
+          <option value="Acorn/BBC">Acorn/BBC</option>
+          <option value="Altair">Altair</option>
           <option value="Amiga">Amiga</option>
           <option value="Amstrad">Amstrad</option>
-          <option value="Sinclair">Sinclair</option>
-          <option value="Texas Instruments">TI</option>
-          <option value="Other">Other</option>
+          <option value="Apple">Apple</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Atari">Atari</option>
+          <option value="Be">Be</option>
+          <option value="Coleco">Coleco</option>
+          <option value="Commodore">Commodore</option>
+          <option value="Compaq">Compaq</option>
+          <option value="DEC">DEC</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Enterprise">Enterprise</option>
+          <option value="Gateway">Gateway</option>
+          <option value="IBM">IBM</option>
+          <option value="Intellivision">Intellivision</option>
+          <option value="Jupiter Ace">Jupiter Ace</option>
+          <option value="MSX">MSX</option>
+          <option value="Matra">Matra</option>
+          <option value="MiniDisc">MiniDisc</option>
+          <option value="Nintendo">Nintendo</option>
+          <option value="Oric">Oric</option>
+          <option value="PC">PC</option>
+          <option value="PC-98">PC-98</option>
+          <option value="RC2014">RC2014</option>
+          <option value="Raspberry Pi">Raspberry Pi</option>
+          <option value="SCSI">SCSI</option>
+          <option value="Sam Coupé">Sam Coupé</option>
+          <option value="Sega">Sega</option>
+          <option value="Sharp">Sharp</option>
+          <option value="Sinclair/ZX">Sinclair/ZX</option>
+          <option value="Sony">Sony</option>
+          <option value="TI">TI</option>
+          <option value="TRS-80">TRS-80</option>
+          <option value="Tandy/Radio Shack">Tandy/Radio Shack</option>
+          <option value="Thomson">Thomson</option>
+          <option value="Timex">Timex</option>
+          <option value="Various">Various</option>
+          <option value="Z80">Z80</option>
+          <option value="Other">Other (known brand not in directory)</option>
+          <option value="Uncategorized">Uncategorized</option>
         </select>
       </div>
       <div class="filter-group">
         <label>Category</label>
         <select id="filter-category">
           <option value="">All Categories</option>
-          <option value="computer">Computers / Systems</option>
-          <option value="parts">Parts &amp; Components</option>
-          <option value="accessory">Accessories / Peripherals</option>
-          <option value="software">Software / Media</option>
-          <option value="other">Other</option>
+          <option value="Vintage Computers &amp; Mainframes">Vintage Computers &amp; Mainframes</option>
+          <option value="Vintage Parts &amp; Accessories">Vintage Parts &amp; Accessories</option>
+          <option value="Vintage Manuals &amp; Merchandise">Vintage Manuals &amp; Merchandise</option>
+          <option value="Other Vintage Computing">Other Vintage Computing</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <div class="filter-group">
@@ -460,7 +492,7 @@ hr { border-color: var(--border); }
   <div id="wild-section" class="wild-section" style="display:none;">
     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
       <span class="wild-header">&#9760; WILDLY OVERPRICED</span>
-      <span style="font-size:0.95rem;color:var(--muted);font-style:italic;">"Yikes!"</span>
+      <span style="font-size:0.95rem;color:var(--muted);font-style:italic;"></span>
     </div>
     <div id="wild-grid" class="wild-grid"></div>
   </div>
@@ -486,36 +518,48 @@ hr { border-color: var(--border); }
 const API = 'https://ebay-pricing.coopernatural.workers.dev/';
 const DEF = 'commodore 64';
 
-const BRANDS = {
-  Apple: /apple|macintosh|mac\b|imac|powerbook|powerpc|apple\s+ii|apple\s+\d|ipad|iphone/i,
-  Commodore: /commodore|c64|c128|vic-20|vic20|pet\b|plus\/?4|amiga/i,
-  Atari: /atari|atari\s+st|atari\s+800|atari\s+2600|atari\s+400|atari\s+xl|jaguar|lynx/i,
-  IBM: /\bIBM\b|thinkpad|ps\/2|pc\s+at|pc\s+xt|ibm\s+pc|thinkcentre|thinkstation/i,
-  Tandy: /tandy|trs-80|trs80|radio\s*shack|color\s+computer|model\s+\d+|mc-10|co(co|co3?)/i,
-  Amiga: /amiga|a500|a600|a1200|a2000|a3000|a4000/i,
-  Amstrad: /amstrad|cpc|gx4000|pce\/?500/i,
-  Sinclair: /sinclair|zx\s*spectrum|zx81|ql\s|spectrum\s\+|timex/i,
-  'Texas Instruments': /texas\s+instruments|ti\s+\d|ti-?99|ti-?95/i,
-};
+const BRANDS = [
+  { n: 'Acorn/BBC', p: /acorn|bbc\s*micro|bbc\s*model\s*[ab]|(^|\s)electron/i },
+  { n: 'Altair', p: /altair/i },
+  { n: 'Amiga', p: /amiga|a500|a600|a1200|a2000|a3000|a4000|a1000|a2500|cd32|cdtv/i },
+  { n: 'Amstrad', p: /amstrad|cpc\s*\d|gx4000|pce\/?\d/i },
+  { n: 'Apple', p: /apple\s+(i{1,3}|macintosh|mac|powerbook|power\s*mac|lisa|pro)|macintosh|macbook|imac|powerbook|power\s*pc|(^|\s)mac\s/i },
+  { n: 'Atari', p: /atari|atari\s+(s[tx]|800|2600|400|1200|xl|xe|falc|jaguar|lynx|7800|5200|1040|mega)/i },
+  { n: 'Coleco', p: /coleco/i },
+  { n: 'Commodore', p: /commodore|c64|c128|vic-?20|c16|c116|plus\/?4|pet|cbm\s*\d|(^|\s)1541|(^|\s)1571|(^|\s)1581/i },
+  { n: 'Compaq', p: /compaq/i },
+  { n: 'DEC', p: /DEC|digital\s+equipment|pdp-?\d|vax/i },
+  { n: 'IBM', p: /IBM|thinkpad|ps\/2|pc\s+at|pc\s+xt|thinkcentre|thinkstation|aptiva|pcjr/i },
+  { n: 'Intellivision', p: /intellivision/i },
+  { n: 'MSX', p: /MSX/i },
+  { n: 'Nintendo', p: /nintendo|nes|snes|famicom|game\s*boy|(^|\s)64|gamecube/i },
+  { n: 'PC', p: /pc\s+(compatible|clone|build)|(^|\s)(dos|windows)\s+(pc|computer)/i },
+  { n: 'Raspberry Pi', p: /raspberry\s*pi|rpi\s*\d/i },
+  { n: 'Sam Coupé', p: /sam\s*coup/i },
+  { n: 'Sega', p: /sega|genesis|dreamcast|saturn|master\s*system|game\s*gear|mega\s*drive/i },
+  { n: 'Sharp', p: /sharp|x68000|pc-?98/i },
+  { n: 'Sinclair/ZX', p: /sinclair|ZX\s*(spectrum|81)|spectrum\s*\+?\s*(48|128|plus)|ql|timex\s*sinclair|ts1000|ts1500|ts2068/i },
+  { n: 'Sony', p: /sony|playstation|psx|psp|psone/i },
+  { n: 'Tandy/Radio Shack', p: /tandy|trs-?80|radio\s*shack|(^|\s)co(co|co3?)|mc-10|model\s+\d+\s*(micro|computer)/i },
+  { n: 'Texas Instruments', p: /texas\s+instruments|TI-?99/i },
+  { n: 'TRS-80', p: /trs-?80/i },
+  { n: 'Various', p: /(vintage|retro|old)\s+(computer|pc|system)|(computer|pc|system)\s+(lot|bundle|collection)/i },
+];
 function detectBrand(t) {
-  for (let [b,p] of Object.entries(BRANDS)) if (p.test(t)) return b;
-  return /ibm|microsoft|intel|dell|hp|compaq|gateway|sony|toshiba|nec/i.test(t) ? 'Other' : 'Other';
+  for (let b of BRANDS) if (b.p.test(t)) return b.n;
+  if (/(ibm|microsoft|intel|dell|hp|compaq|gateway|sony|toshiba|nec|panasonic|fujitsu|nokia|motorola)/i.test(t)) return 'Other';
+  return 'Uncategorized';
 }
 
-const CATS = {
-  computer: /computer|cpu\b|system\b|unit\b|motherboard|mainboard|logic\s*board/i,
-  parts: /part|cable|chip\b|processor|ic\b|capacitor|resistor|pcb\b|board\b|drive\b|floppy|power\s*supply|psu\b|adapter|connector|socket|ram\b|memory\s*chip|rom\b|eprom|transistor|diode/i,
-  accessory: /mouse|keyboard|joystick|monitor|disk\b|hard\s*drive|scsi|printer|modem|serial|parallel|cable|case\b|manual|book\b|guide/i,
-  software: /game|software|program|rom\b|disk\b|floppy|cd-?rom|tape|cassette|cartridge|application|os\b|operating\s*system|utility|demo\b/i,
-};
-function detectCat(t) { for (let [c,p] of Object.entries(CATS)) if (p.test(t)) return c; return 'other'; }
-
-function normCond(c) {
-  if (!c) return 'untested';
-  const s = c.toLowerCase();
-  if (/new|refurbished|like\s*new|mint|used|tested|working|functional|runs|excellent/i.test(s)) return 'working';
-  if (/unknown|untested/i.test(s)) return 'untested';
-  return 'parts';
+const CATS = {};
+function detectCat(data) { return data.category || 'Other'; }
+function normCond(data) {
+  const cid = parseInt(data.conditionId) || 0;
+  if (cid >= 1000 && cid <= 2000) return 'working';
+  if (cid >= 2500 && cid <= 3000) return 'working';
+  if (cid === 4000) return 'parts';
+  if (cid >= 5000) return 'untested';
+  return 'untested';
 }
 
 function badge(v) {
@@ -535,14 +579,7 @@ function fv(v) {
   return a >= 100 ? '0%' : (n > 0 ? n + '% below' : a + '% above');
 }
 
-function wildComment(i) {
-  const p = parseFloat(i.price) || 0, m = parseFloat(i.vsMedian) || 0, a = Math.abs(m);
-  if (a > 80) return 'LOL. Not even close.';
-  if (a > 65) return 'Somebody watched one too many YouTube videos.';
-  if (a > 50) return 'Ah yes, the "rare collector\'s item" markup.';
-  if (i.condition && /for\s*parts|broken|untested/i.test(i.condition)) return 'Broken AND overpriced. Bold strategy.';
-  return '"Rare" = "nobody is buying at that price."';
-}
+
 
 function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
@@ -574,7 +611,7 @@ async function search(q) {
 
 function render() {
   const bf = el.fb.value, cf = el.fc.value, cof = el.fcond.value, sf = el.fsort.value;
-  let items = allItems.map(i => ({ ...i, _brand: detectBrand(i.title || ''), _cat: detectCat(i.title || ''), _cond: normCond(i.condition) }));
+  let items = allItems.map(i => ({ ...i, _brand: detectBrand(i.title || ''), _cat: detectCat(i), _cond: normCond(i) }));
   if (bf) items = items.filter(i => i._brand === bf);
   if (cf) items = items.filter(i => i._cat === cf);
   if (cof) items = items.filter(i => i._cond === cof);
@@ -654,12 +691,12 @@ function renderWild(items) {
     const ih = img
       ? '<img src="' + img + '" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div style=height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9760;</div>\'">'
       : '<div style="height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9760;</div>';
-    const cm = wildComment(i), v = fv(i.vsMedian), t = (i.title || '').replace(/[🕹️☠🔥👍💀➖]/g, '').trim();
+    const v = fv(i.vsMedian), t = (i.title || '').replace(/[🕹️☠🔥👍💀➖]/g, '').trim();
     h += '<div class="wild-card">' + ih +
       '<div class="wild-title">' + esc(t) + '</div>' +
       '<div class="wild-price">' + p + '</div>' +
       '<div class="wild-vs">' + v + ' vs median ($' + (marketMedian ? marketMedian.toFixed(2) : '?') + ')</div>' +
-      '<div class="wild-commentary">' + cm + '</div>' +
+      
       '<a href="' + i.ambassadorUrl + '" target="_blank" rel="noopener">View on eBay</a>' +
       '</div>';
   }
