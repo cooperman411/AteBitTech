@@ -75,25 +75,36 @@ hr { border-color: var(--border); }
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 8px 0 4px;
-  margin-top: -12px;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 6px 0;
   margin-bottom: 8px;
 }
 .site-nav a, .site-nav button {
     font-family: 'VT323', monospace;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--muted);
     text-decoration: none;
-    padding: 2px 12px;
+    padding: 2px 14px;
     border: 1px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-    letter-spacing: 0.5px;
+    border-radius: 4px;
     background: none;
     cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s;
+    letter-spacing: 0.5px;
   }
+  .site-nav a + a,
+  .site-nav a + button,
+  .site-nav button + a { border-left: 1px solid var(--border); }
   .site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
-  .site-nav a.active { color: var(--accent); border-color: var(--border); }
+  .site-nav a.active { color: var(--accent); }
+  .site-nav .nav-short { display: none; }
+  @media (max-width: 640px) {
+    .site-nav a, .site-nav button { font-size: 1rem; padding: 2px 8px; }
+    .site-nav .nav-long { display: none; }
+    .site-nav .nav-short { display: inline; }
+  }
 
 /* Badges */
 .badge {
@@ -311,9 +322,30 @@ hr { border-color: var(--border); }
   }
   .hc-toggle:focus-visible { outline: 3px solid var(--accent); }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ate Bit Tech — Pricing & Marketplace",
+  "url": "https://atebit.tech/store/",
+  "description": "Real-time eBay pricing guide and marketplace for vintage and retro computing. Search any system, compare sold-listing prices, and find deals on Commodore, Apple, Atari, Amiga, and more.",
+  "applicationCategory": "ShoppingApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Ate Bit Tech",
+    "url": "https://atebit.tech/"
+  }
+}
+</script>
 </head>
 <body>
-
+<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
 <header class="max-w-6xl mx-auto my-6 px-2" id="brand-header">
   <div class="flex items-center justify-between gap-4">
     <div class="brand-block text-center my-6">
@@ -329,17 +361,17 @@ hr { border-color: var(--border); }
 </header>
 
 <nav class="site-nav" aria-label="Site navigation">
-  <a href="/">[ Site ]</a>
-  <a href="/store/" class="active">[ Store ]</a>
-  <a href="https://atebittech.substack.com" target="_blank">[ Newsletter ]</a>
-  <button aria-label="Toggle high contrast" class="hc-toggle" id="hc-toggle">[ High Contrast ]</button>
-  <a aria-label="Classic HTML version — works on old browsers without JavaScript" href="/classic/">[ HTML Version ]</a>
-  <a aria-label="Privacy and About" href="#about-privacy">[ Privacy &amp; About ]</a>
+  <a href="/">Site</a>
+  <a href="/store/" class="active">Store</a>
+  <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
+  <button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle"><span class="nav-long">High Contrast</span><span class="nav-short">Contrast</span></button>
+  <a aria-label="Classic HTML version — works on old browsers without JavaScript" href="/classic/">HTML Version</a>
+  <a aria-label="Privacy and About" href="#about-privacy"><span class="nav-long">Privacy</span><span class="nav-short">About</span></a>
 </nav>
 
-<main class="max-w-6xl mx-auto px-2">
+<main class="max-w-6xl mx-auto px-2" id="main" tabindex="-1">
 
-  <h2 class="title-font text-2xl text-center mt-4 mb-1" style="color:var(--accent);">&#9670; PRICING &amp; MARKETPLACE &#9670;</h2>
+  <h1 class="title-font text-2xl text-center mt-4 mb-1" style="color:var(--accent);">&#9670; PRICING &amp; MARKETPLACE &#9670;</h1>
   <p class="text-center" style="color:var(--muted);font-size:1rem;margin-bottom:1rem;">
         Compare prices against market data from eBay sold listings &mdash; find deals, avoid overpaying
   </p>
@@ -407,7 +439,6 @@ hr { border-color: var(--border); }
           <option value="Vintage Parts &amp; Accessories">Vintage Parts &amp; Accessories</option>
           <option value="Vintage Manuals &amp; Merchandise">Vintage Manuals &amp; Merchandise</option>
           <option value="Other Vintage Computing">Other Vintage Computing</option>
-          <option value="Other">Other</option>
         </select>
       </div>
       <div class="filter-group">
@@ -516,7 +547,7 @@ hr { border-color: var(--border); }
 <script>
 (function(){
 const API = 'https://ebay-pricing.coopernatural.workers.dev/';
-const DEF = 'commodore 64';
+const DEF = '';
 
 const BRANDS = [
   { n: 'Acorn/BBC', p: /\bacorn\b|bbc\s*micro|bbc\s*model\s*[ab]|(^|\s)electron\b/i },
@@ -576,7 +607,7 @@ function fp(p) { const n = parseFloat(p); return isNaN(n) ? p : (n % 1 === 0 ? '
 function fv(v) {
   const n = parseFloat(v); if (isNaN(n)) return '';
   const a = Math.abs(n);
-  return a >= 100 ? '0%' : (n > 0 ? n + '% below' : a + '% above');
+  return n > 0 ? a + '% below' : a + '% above';
 }
 
 
@@ -600,13 +631,22 @@ async function search(q) {
     const r = await fetch(API + '?q=' + encodeURIComponent(q));
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const d = await r.json();
-          if (!d || !d.deals) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
-          allItems = d.deals || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0; computerMedian = d.computerMedian || 0; computerCount = d.computerCount || 0;
+          if (!d || (!d.deals && !d.items)) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
+          allItems = d.items || d.deals || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0; computerMedian = d.computerMedian || 0; computerCount = d.computerCount || 0;
     render();
   } catch (e) {
     el.res.innerHTML = '<div class="no-results" style="color:var(--red-accent);">Connection error: ' + esc(e.message) + '</div>';
     el.ms.style.display = 'none'; el.ws.style.display = 'none';
   }
+}
+
+function showEmptyState() {
+  el.ms.style.display = 'none';
+  el.ws.style.display = 'none';
+  el.res.innerHTML = '<div class="empty-state" style="text-align:center;padding:3rem 1rem;color:var(--muted);">' +
+    '<p style="font-family:VT323,monospace;font-size:2rem;color:var(--accent);margin-bottom:0.5rem;">&#9670; Search vintage computing &#9670;</p>' +
+    '<p style="font-size:1rem;">Type a system name above or try a quick link below.</p>' +
+    '</div>';
 }
 
 function render() {
@@ -622,33 +662,11 @@ function render() {
     case 'vsmedian_asc': items.sort((a, b) => parseFloat(a.vsMedian) - parseFloat(b.vsMedian)); break;
   }
   const wild = items.filter(i => badge(parseFloat(i.vsMedian)).b === 'WILD');
-  const norm = items.filter(i => badge(parseFloat(i.vsMedian)).b !== 'WILD' || wild.length <= 3);
-  stats(norm.length);
+  const norm = items.filter(i => badge(parseFloat(i.vsMedian)).b !== 'WILD');
+  el.ms.style.display = 'none';
   renderNorm(norm);
   renderWild(wild);
 }
-
-function stats(n) {
-    el.ms.style.display = 'flex';
-    const hasComputerMedian = computerMedian && computerCount > 0;
-    el.ms.innerHTML =
-      '<div class="market-stat"><div class="label">Query</div><div class="value" style="font-size:1rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;">' + esc(searchQ) + '</div></div>' +
-      '<div class="market-stat"><div class="label">Market Median</div><div class="value amber">' + fp(marketMedian) + '</div></div>' +
-      (hasComputerMedian ? '<div class="market-stat" style="cursor:pointer;" id="computer-median-stat" tabindex="0" role="button" aria-label="Click to show only systems"><div class="label">Systems Median</div><div class="value green">' + fp(computerMedian) + '</div></div>' : '') +
-      '<div class="market-stat"><div class="label">Showing</div><div class="value cyan">' + n + '</div></div>';
-    // Click handler for computer median stat - filter to systems only
-    const cmStat = document.getElementById('computer-median-stat');
-    if (cmStat) {
-      cmStat.addEventListener('click', function() {
-        el.fc.value = 'computer';
-        [el.fb, el.fcond, el.fsort].forEach(s => s.value = '');
-        render();
-      });
-      cmStat.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
-      });
-    }
-  }
 
 function renderNorm(items) {
   if (!items.length) { el.res.innerHTML = '<div class="no-results">No items match your filters.<br><span style="font-size:0.8rem;">Try broadening your search.</span></div>'; return; }
@@ -657,10 +675,14 @@ function renderNorm(items) {
     const b = badge(parseFloat(i.vsMedian)), p = fp(i.price), v = fv(i.vsMedian);
     const img = i.image || '';
     const ih = img
-      ? '<img src="' + img + '" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
+      ? '<img src="' + img + '" alt="" loading="lazy" width="280" height="180" onerror="this.parentElement.innerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
       : '<div style="height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9670;</div>';
     const cc = i._cond === 'working' ? 'cond-working' : i._cond === 'untested' ? 'cond-untested' : 'cond-parts';
-    const catLabel = i._cat === 'computer' ? 'System' : i._cat === 'parts' ? 'Parts' : i._cat === 'accessory' ? 'Accessory' : i._cat === 'software' ? 'Software' : 'Other';
+    const catLabel = i._cat === 'Vintage Computers & Mainframes' ? 'System'
+      : i._cat === 'Vintage Parts & Accessories' ? 'Parts'
+      : i._cat === 'Vintage Manuals & Merchandise' ? 'Manuals/Merch'
+      : i._cat === 'Other Vintage Computing' ? 'Other Vintage'
+      : 'Other';
     const vc = parseFloat(i.vsMedian) >= 0 ? 'good' : parseFloat(i.vsMedian) > -30 ? 'ok' : parseFloat(i.vsMedian) > -50 ? 'bad' : 'wild';
     const t = (i.title || '').replace(/[🕹️☠🔥👍💀➖]/g, '').trim();
     h += '<div class="store-card ' + b.cc + '">' + ih +
@@ -689,7 +711,7 @@ function renderWild(items) {
   for (const i of items) {
     const p = fp(i.price), img = i.image || '';
     const ih = img
-      ? '<img src="' + img + '" alt="" loading="lazy" onerror="this.parentElement.innerHTML=\'<div style=height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9760;</div>\'">'
+      ? '<img src="' + img + '" alt="" loading="lazy" width="200" height="120" onerror="this.parentElement.innerHTML=\'<div style=height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9760;</div>\'">'
       : '<div style="height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9760;</div>';
     const v = fv(i.vsMedian), t = (i.title || '').replace(/[🕹️☠🔥👍💀➖]/g, '').trim();
     h += '<div class="wild-card">' + ih +
@@ -708,14 +730,14 @@ el.si.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefau
 [el.fb, el.fc, el.fcond, el.fsort].forEach(s => s.addEventListener('change', () => { if (allItems.length) render(); }));
 document.querySelectorAll('.quick-link').forEach(l => l.addEventListener('click', function() { const q = this.getAttribute('data-q'); if (q) { el.si.value = q; search(q); } }));
 
-el.si.value = DEF; search(DEF);
+el.si.value = DEF; if (DEF) { search(DEF); } else { showEmptyState(); }
 
   // High Contrast Toggle
   const hcBtn = document.getElementById('hc-toggle');
   if (hcBtn) {
     hcBtn.addEventListener('click', () => {
       document.documentElement.classList.toggle('hc');
-      hcBtn.textContent = document.documentElement.classList.contains('hc') ? '[ Normal ]' : '[ High Contrast ]';
+      hcBtn.textContent = document.documentElement.classList.contains('hc') ? 'Normal' : 'High Contrast';
     });
   }
 

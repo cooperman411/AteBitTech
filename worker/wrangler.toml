@@ -1,0 +1,4 @@
+name = "ebay-pricing"
+main = "ebay-pricing.js"
+compatibility_date = "2026-06-24"
+usage_model = "standard"
