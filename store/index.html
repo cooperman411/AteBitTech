@@ -204,9 +204,6 @@ hr { border-color: var(--border); }
 .store-card .card-title { font-size: 1rem; color: var(--fg); line-height: 1.4; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .store-card .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.5rem; }
   .store-card .card-tag { font-size: 0.8rem; padding: 1px 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--muted); }
-.store-card .card-tag.cond-working { color: var(--green); border-color: rgba(51,255,51,0.2); }
-.store-card .card-tag.cond-untested { color: var(--amber); border-color: rgba(255,176,0,0.2); }
-.store-card .card-tag.cond-parts { color: var(--red-accent); border-color: rgba(255,51,68,0.2); }
 .store-card .card-tag.cat { color: var(--teal); border-color: rgba(0,229,255,0.2); }
 .store-card .card-tag.brand { color: #aa66ff; border-color: rgba(170,102,255,0.2); }
 .store-card .price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
@@ -442,15 +439,6 @@ hr { border-color: var(--border); }
         </select>
       </div>
       <div class="filter-group">
-        <label>Condition</label>
-        <select id="filter-condition">
-          <option value="">All Conditions</option>
-          <option value="working">Working / Tested</option>
-          <option value="untested">Untested</option>
-          <option value="parts">For Parts / Not Working</option>
-        </select>
-      </div>
-      <div class="filter-group">
         <label>Sort</label>
         <select id="filter-sort">
           <option value="default">Best Match</option>
@@ -585,15 +573,6 @@ function detectBrand(t) {
 
 const CATS = {};
 function detectCat(data) { return data.category || 'Other'; }
-function normCond(data) {
-  const cid = parseInt(data.conditionId) || 0;
-  if (cid >= 1000 && cid <= 2000) return 'working';
-  if (cid >= 2500 && cid <= 3000) return 'working';
-  if (cid === 4000) return 'parts';
-  if (cid >= 5000) return 'untested';
-  return 'untested';
-}
-
 function badge(v) {
   const f = parseFloat(v);
   if (f >= 30) return { b: 'DEAL', c: 'badge-deal', cc: 'deal', i: '🔥' };
@@ -620,7 +599,7 @@ let allItems = [], searchQ = '', marketMedian = 0, soldCount = 0, computerMedian
 const el = {
   si: $('search-input'), sb: $('search-btn'), res: $('search-results'),
   ms: $('market-stats'), ws: $('wild-section'), wg: $('wild-grid'),
-  fb: $('filter-brand'), fc: $('filter-category'), fcond: $('filter-condition'),
+  fb: $('filter-brand'), fc: $('filter-category'),
   fsort: $('filter-sort')
 };
 
@@ -651,11 +630,10 @@ function showEmptyState() {
 }
 
 function render() {
-  const bf = el.fb.value, cf = el.fc.value, cof = el.fcond.value, sf = el.fsort.value;
-  let items = allItems.map(i => ({ ...i, _brand: detectBrand(i.title || ''), _cat: detectCat(i), _cond: normCond(i) }));
+  const bf = el.fb.value, cf = el.fc.value, sf = el.fsort.value;
+  let items = allItems.map(i => ({ ...i, _brand: detectBrand(i.title || ''), _cat: detectCat(i) }));
   if (bf) items = items.filter(i => i._brand === bf);
   if (cf) items = items.filter(i => i._cat === cf);
-  if (cof) items = items.filter(i => i._cond === cof);
   switch (sf) {
     case 'deal': items.sort((a, b) => parseFloat(b.vsMedian) - parseFloat(a.vsMedian)); break;
     case 'price_asc': items.sort((a, b) => parseFloat(a.price) - parseFloat(b.price)); break;
@@ -678,7 +656,6 @@ function renderNorm(items) {
     const ih = img
       ? '<img src="' + img + '" alt="" loading="lazy" width="280" height="180" onerror="this.parentElement.innerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
       : '<div style="height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9670;</div>';
-    const cc = i._cond === 'working' ? 'cond-working' : i._cond === 'untested' ? 'cond-untested' : 'cond-parts';
     const catLabel = i._cat === 'Vintage Computers & Mainframes' ? 'System'
       : i._cat === 'Vintage Parts & Accessories' ? 'Parts'
       : i._cat === 'Vintage Manuals & Merchandise' ? 'Manuals/Merch'
@@ -690,7 +667,6 @@ function renderNorm(items) {
       '<div class="card-body">' +
       '<div class="card-title">' + esc(t) + '</div>' +
       '<div class="card-meta">' +
-      '<span class="card-tag ' + cc + '">' + i._cond.toUpperCase() + '</span>' +
       '<span class="card-tag cat">' + catLabel + '</span>' +
       '<span class="card-tag brand">' + i._brand.toUpperCase() + '</span>' +
       '</div>' +
@@ -728,7 +704,7 @@ function renderWild(items) {
 
 el.sb.addEventListener('click', () => { let q = el.si.value.trim(); if (!q) q = el.fb.value; if (q) search(q); });
 el.si.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); let q = el.si.value.trim(); if (!q) q = el.fb.value; if (q) search(q); } });
-[el.fb, el.fc, el.fcond, el.fsort].forEach(s => s.addEventListener('change', () => { if (allItems.length) render(); }));
+[el.fb, el.fc, el.fsort].forEach(s => s.addEventListener('change', () => { if (allItems.length) render(); }));
 document.querySelectorAll('.quick-link').forEach(l => l.addEventListener('click', function() { const q = this.getAttribute('data-q'); if (q) { el.si.value = q; search(q); } }));
 
 el.si.value = DEF; if (DEF) { search(DEF); } else { showEmptyState(); }
