@@ -35,7 +35,7 @@ a { color: var(--accent); }
   padding: 6px 0;
   margin-bottom: 8px;
 }
-.site-nav a {
+.site-nav a, .site-nav button {
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   color: var(--muted);
@@ -43,12 +43,24 @@ a { color: var(--accent); }
   padding: 2px 14px;
   border: 1px solid transparent;
   border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
   transition: color 0.2s, border-color 0.2s;
   letter-spacing: 0.5px;
 }
-.site-nav a + a { border-left: 1px solid var(--border); }
-.site-nav a:hover { color: var(--accent); border-color: var(--border); }
-.site-nav a.active { color: var(--accent); }
+.site-nav a + a,
+.site-nav a + button,
+.site-nav button + a {
+  border-left: 1px solid var(--border);
+}
+.site-nav a:hover, .site-nav button:hover {
+  color: var(--accent);
+  border-color: var(--border);
+}
+.site-nav a.active {
+  color: var(--accent);
+}
 .content { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8; }
 .content p { margin-bottom: 1rem; color: var(--muted); }
 .content h2 { font-family: 'VT323', monospace; font-size: 1.8rem; color: var(--fg); margin-top: 2rem; margin-bottom: 0.5rem; }
@@ -75,23 +87,25 @@ a { color: var(--accent); }
   <a href="/store/">Price Guide</a>
   <a href="/about.html">About</a>
   <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
+  <button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle"><span class="nav-long">High Contrast</span><span class="nav-short">Contrast</span></button>
+  <a aria-label="Classic HTML version — works on old browsers without JavaScript" href="/classic/">HTML Version</a>
   <a href="/privacy.html" class="active">Privacy</a>
 </nav>
 
 <main class="content">
   <h2>Privacy Policy</h2>
 
-  <p>Short version: <strong>I don't collect any personal data about you.</strong> There's nothing to sell, share, or lose. This page exists because laws in California (CCPA) and Europe (GDPR) require me to tell you that clearly.</p>
+  <p>Short version: <strong>I don't collect any personal data about you.</strong> There's nothing to sell, share, or lose.</p>
 
   <h2>What data is collected</h2>
 
   <p>Almost nothing. This site uses <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, an open-source analytics service designed for privacy. It tracks:</p>
 
   <ul>
-    <li>Which pages are visited</li>
-    <li>The approximate country of the visitor (from the IP, not the exact location)</li>
-    <li>Browser type and screen size (for basic compatibility stats)</li>
-    <li>The website you came from, if you followed a link here</li>
+    <li>Which pages are visited.</li>
+    <li>The approximate country of the visitor (from the first 2-3 digits of their IP, not the exact location, and we don't keep IP addresses.)</li>
+    <li>Browser type and screen size (for basic compatibility.)</li>
+    <li>The website you came from, if you followed a link here.</li>
   </ul>
 
   <p>GoatCounter does NOT use cookies. It does NOT store IP addresses. It does NOT track you across sites. It does NOT create profiles. It does NOT collect names, email addresses, or any personally identifiable information. The source code is public and anyone can verify this.</p>
@@ -130,7 +144,7 @@ a { color: var(--accent); }
     <li>Not be discriminated against for exercising these rights</li>
   </ul>
 
-  <p>Because I collect no personal data, there is nothing to disclose, delete, or sell. Your rights are fully honored by default. If you have questions, email <a href="mailto:picks.favored4z@icloud.com">picks.favored4z@icloud.com</a>.</p>
+  <p>Because I collect no personal data, there is nothing to disclose, delete, or sell. Your rights are fully honored by default. Similar laws exist in Virginia, Colorado, Connecticut, Utah, Oregon, Texas, Florida, Montana, Iowa, Delaware, Maryland, Minnesota, Tennessee, and Indiana. If you have questions, email <a href="mailto:picks.favored4z@icloud.com">picks.favored4z@icloud.com</a>.</p>
 
   <h2>Your rights (GDPR &mdash; Europe)</h2>
 
@@ -152,7 +166,7 @@ a { color: var(--accent); }
 
   <h2>International visitors</h2>
 
-  <p>The approximate country-level data from GoatCounter is used only to understand what regions the site's visitors come from. This is the least precise location data possible (country level, not city or IP). No location data is stored or shared.</p>
+  <p>The approximate country-level data from GoatCounter is used only to understand what regions the site's visitors come from. This is the least precise location data possible (country level only, no state/province/county/region or city). No location data is stored or shared.</p>
 
   <h2>Changes to this policy</h2>
 
