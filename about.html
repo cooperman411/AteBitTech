@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Ate Bit Tech</title>
+<meta name="description" content="About Ate Bit Tech — a curated database of retro and vintage computing resources by Kerry Cooper from Long Beach, California.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root[data-theme="dark"] {
+  --bg: #0f1115;
+  --fg: #e6e7ea;
+  --muted: #b8bcc4;
+  --card: #161a20;
+  --accent: #3ea6ff;
+  --border: #2a2f3a;
+}
+html, body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Roboto Mono', monospace;
+}
+.title-font { font-family: 'VT323', monospace; }
+a { color: var(--accent); }
+.site-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 6px 0;
+  margin-bottom: 8px;
+}
+.site-nav a {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 2px 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.5px;
+}
+.site-nav a + a { border-left: 1px solid var(--border); }
+.site-nav a:hover { color: var(--accent); border-color: var(--border); }
+.site-nav a.active { color: var(--accent); }
+.content { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8; }
+.content p { margin-bottom: 1.2rem; color: var(--muted); }
+.content h2 { font-family: 'VT323', monospace; font-size: 1.8rem; color: var(--fg); margin-top: 2rem; margin-bottom: 0.5rem; }
+.content .highlight { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="text-center mt-6 mb-2">
+  <a href="/" class="inline-block">
+    <img class="glow-logo mx-auto" src="/logo-wordmark-vt323-dark.png" style="height:96px;width:auto;image-rendering:pixelated">
+  </a>
+  <div class="mt-3">
+    <p class="title-font text-2xl" style="color:var(--fg);">Retro &amp; Vintage Computing Database</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Site navigation">
+  <a href="/">Home</a>
+  <a href="/store/">Price Guide</a>
+  <a href="/about.html" class="active">About</a>
+  <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
+  <a href="/privacy.html">Privacy</a>
+</nav>
+
+<main class="content">
+  <h2>About this site</h2>
+
+  <p>
+    I'm Kerry Cooper. I live in Long Beach, California. I've been into vintage technology since before it was vintage. My first computer was a Commodore 64, and I still remember the sound of the datasette. These machines were my introduction to how things work, and that curiosity never went away.
+  </p>
+
+  <p>
+    Ate Bit Tech started as a personal bookmark collection. I kept finding interesting retro computing sites, museum pages, restoration blogs, and reference archives scattered across the web. There was no single place to discover them. So I built one.
+  </p>
+
+  <p>
+    The site is a curated directory of vintage and retro computing resources. Everything from complete museums to one-person restoration blogs. If it's useful, interesting, or historically important, it belongs here. I add things manually, review each link, and try to keep the noise out.
+  </p>
+
+  <p>
+    I don't claim to be comprehensive. There are thousands of sites out there. This is my corner of the collection. If I missed something good, <a href="mailto:picks.favored4z@icloud.com">send me a note</a>.
+  </p>
+
+  <h2>The Price Guide</h2>
+
+  <p>
+    The Price Guide uses eBay's public API to show current listings and recent sold prices for vintage computing items. It's designed to help people figure out what things are actually worth before buying or selling. Select a brand, pick a category, and enter a search term for the most accurate pricing. The comparisons are based on actual eBay sold data, not guesses.
+  </p>
+
+  <p>
+    Some links in the Price Guide are eBay Partner Network affiliate links. If you buy something after clicking one, I may earn a small commission. It doesn't affect the price you pay.
+  </p>
+
+  <h2>Why this exists</h2>
+
+  <p>
+    The retro computing community is one of the best corners of the internet. People restoring old hardware, documenting obscure systems, writing new software for 40-year-old machines. This site is my way of contributing to that community. If you find something useful here, that's enough.
+  </p>
+
+  <p>
+    <span class="highlight">&#9670;</span>
+  </p>
+</main>
+
+<footer style="text-align:center;padding:2rem 1rem;font-size:0.8rem;color:var(--muted);border-top:1px solid var(--border);max-width:700px;margin:0 auto;">
+  <a href="/">Home</a> &nbsp;|&nbsp; <a href="/store/">Price Guide</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy</a>
+</footer>
+
+</body>
+</html>
