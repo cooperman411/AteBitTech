@@ -223,6 +223,12 @@ select:focus, input:focus {
   margin-top: -12px;
   margin-bottom: 8px;
 }
+
+@media (max-width: 480px) {
+  .site-nav { overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav { scrollbar-width: none; }
+}
 .site-nav a, .site-nav button {
   font-family: 'VT323', monospace;
   font-size: 1.3rem;
