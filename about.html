@@ -127,5 +127,17 @@ a { color: var(--accent); }
   <a href="/">Home</a> &nbsp;|&nbsp; <a href="/store/">Price Guide</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy</a>
 </footer>
 
+<script>
+(function(){
+  var btn = document.getElementById('hc-toggle');
+  if(btn){
+    btn.addEventListener('click', function(){
+      document.documentElement.classList.toggle('hc');
+      btn.setAttribute('aria-pressed', document.documentElement.classList.contains('hc') ? 'true' : 'false');
+    });
+    btn.setAttribute('aria-pressed','false');
+  }
+})();
+</script>
 </body>
 </html>
