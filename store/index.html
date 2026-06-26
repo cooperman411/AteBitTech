@@ -423,8 +423,8 @@ hr { border-color: var(--border); }
       <div class="filter-group">
         <label>Sort</label>
         <select id="filter-sort">
+          <option value="deal" selected>Best Deal</option>
           <option value="default">Best Match</option>
-          <option value="deal">Best Deal</option>
           <option value="price_asc">Price: Low to High</option>
           <option value="price_desc">Price: High to Low</option>
           <option value="vsmedian_asc">Most Overpriced</option>
@@ -599,8 +599,8 @@ async function search(q) {
     const r = await fetch(API + '?q=' + encodeURIComponent(q));
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const d = await r.json();
-          if (!d || !d.deals) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
-          allItems = d.deals || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0; computerMedian = d.computerMedian || 0; computerCount = d.computerCount || 0;
+          if (!d || !d.results) { el.res.innerHTML = '<div class="no-results">No results returned.</div>'; el.ms.style.display = 'none'; return; }
+          allItems = d.results || []; marketMedian = d.marketMedian || 0; soldCount = d.soldCount || 0; computerMedian = d.computerMedian || 0; computerCount = d.computerCount || 0;
     render();
   } catch (e) {
     el.res.innerHTML = '<div class="no-results" style="color:var(--red-accent);">Connection error: ' + esc(e.message) + '</div>';
@@ -714,7 +714,6 @@ el.si.value = DEF; search(DEF);
   if (hcBtn) {
     hcBtn.addEventListener('click', () => {
       document.documentElement.classList.toggle('hc');
-      hcBtn.textContent = document.documentElement.classList.contains('hc') ? '[ Normal ]' : '[ High Contrast ]';
     });
   }
 
