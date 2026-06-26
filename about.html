@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Ate Bit Tech</title>
-<meta name="description" content="About Ate Bit Tech — a curated database of retro and vintage computing resources and pricing tools.">
+<meta name="description" content="About Ate Bit Tech — a curated directory of retro and vintage computing resources and pricing tools.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@ a { color: var(--accent); }
   padding: 6px 0;
   margin-bottom: 8px;
 }
-.site-nav a {
+.site-nav a, .site-nav button {
   font-family: 'VT323', monospace;
   font-size: 1.2rem;
   color: var(--muted);
@@ -42,12 +42,24 @@ a { color: var(--accent); }
   padding: 2px 14px;
   border: 1px solid transparent;
   border-radius: 4px;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
   transition: color 0.2s, border-color 0.2s;
   letter-spacing: 0.5px;
 }
-.site-nav a + a { border-left: 1px solid var(--border); }
-.site-nav a:hover { color: var(--accent); border-color: var(--border); }
-.site-nav a.active { color: var(--accent); }
+.site-nav a + a,
+.site-nav a + button,
+.site-nav button + a {
+  border-left: 1px solid var(--border);
+}
+.site-nav a:hover, .site-nav button:hover {
+  color: var(--accent);
+  border-color: var(--border);
+}
+.site-nav a.active {
+  color: var(--accent);
+}
 .content { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8; }
 .content p { margin-bottom: 1.2rem; color: var(--muted); }
 .content h2 { font-family: 'VT323', monospace; font-size: 1.8rem; color: var(--fg); margin-top: 2rem; margin-bottom: 0.5rem; }
@@ -70,44 +82,46 @@ a { color: var(--accent); }
   <a href="/store/">Price Guide</a>
   <a href="/about.html" class="active">About</a>
   <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
+  <button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle"><span class="nav-long">High Contrast</span><span class="nav-short">Contrast</span></button>
+  <a aria-label="Classic HTML version — works on old browsers without JavaScript" href="/classic/">HTML Version</a>
   <a href="/privacy.html">Privacy</a>
 </nav>
 
 <main class="content">
-    <h2>About this site</h2>
+  <h2>About this site</h2>
 
-    <p>
-      Ate Bit Tech is a curated directory of vintage and retro computing resources. Everything from complete museums to one-person restoration blogs, reference archives to modern FPGA projects. If it's useful, interesting, or historically important to the retro computing community, it belongs here.
-    </p>
+  <p>
+    Ate Bit Tech started as a personal bookmark collection in a folder on my browser. I kept finding interesting retro computing sites, museum pages, restoration blogs, forums, stores, and other old-computer &amp; gaming archives scattered across the web. Once I had a pretty long list, I thought, &ldquo;Why not make this a directory for anyone for a little nostalgia for all things 8 and 16-bit.&rdquo; It&rsquo;s not obvious but there is a bite takeout of the side of the diskette on the top of the page as if the dinosaur to the left had taken out a chunk. Hence &ldquo;ate bit&rdquo;.
+  </p>
 
-    <p>
-      The site started as a personal collection of links. There was no single place to discover what was out there, so this is an attempt to create one. Entries are reviewed and added by hand to keep the signal high and the noise low.
-    </p>
+  <p>
+    So, from that bookmarks folder springs a living website. Everything from complete museums to one-person restoration blogs. If it&rsquo;s useful, interesting, historically important, or beige, it belongs here. I discover sites mostly manually. Duckduckgo is my search engine of choice. Google Alerts is my daily reminder. And yes, I even use a little AI to search for the rarest of computer resources and latest news. I then review each link, and try to keep the noise out. (For some odd reason I now want a Sam Coup&eacute;. Didn&rsquo;t realize that was a brand until just recently.)
+  </p>
 
-    <p>
-      The directory is not comprehensive. There are thousands of sites out there. This is a curated corner of the collection. If something good is missing, <a href="mailto:picks.favored4z@icloud.com">send a note</a>.
-    </p>
+  <p>
+    I don&rsquo;t claim to be comprehensive. There are at least a bajillion (that&rsquo;s a real and accurate number I&rsquo;m sure) sites out there. This is my corner of that collection. If I missed something good, please send me a note. I&rsquo;ll try to add it as soon as I make the next round of updates.
+  </p>
 
-    <h2>The Price Guide</h2>
+  <h2>The Price Guide</h2>
 
-    <p>
-      The Price Guide uses eBay's public API to show current listings and recent sold prices for vintage computing items. It's designed to help people figure out what things are actually worth before buying or selling. Select a brand, pick a category, and enter a search term for the most accurate pricing. The comparisons are based on actual eBay sold data, not guesses.
-    </p>
+  <p>
+    The Price Guide uses eBay&rsquo;s public API to show current listings and recent sold prices for vintage computing items. It&rsquo;s designed to help people figure out what things are actually worth before buying or selling. We&rsquo;ve all seen the Reddit posts where someone found an old machine in their grandpa&rsquo;s attic and want to know how much they can sell it for to make a quick buck. This price guide is meant to separate value from price gouging. It&rsquo;s only as accurate as the sellers descriptions and categorizations on eBay though, so please understand it won&rsquo;t be 100% accurate but should give you a &ldquo;ballpark&rdquo; estimate if what you are eyeing is a good deal or not. Select a brand, pick a category, and enter a search term for the pricing guidance. The comparisons are based on actual eBay sold data.
+  </p>
 
-    <p>
-      Some links in the Price Guide are eBay Partner Network affiliate links. If you buy something after clicking one, the site may earn a small commission at no extra cost to you.
-    </p>
+  <p>
+    The links in the Price Guide are eBay Ambassador affiliate links. If you buy something after clicking one, I may earn a small commission. It doesn&rsquo;t affect the price you pay. Not looking to get rich, but if it would cover this site&rsquo;s costs, that would be nice!
+  </p>
 
-    <h2>Why this exists</h2>
+  <h2>Why this exists</h2>
 
-    <p>
-      The retro computing community is one of the best corners of the internet. People restoring old hardware, documenting obscure systems, writing new software for 40-year-old machines. This site is a way of contributing to that community.
-    </p>
+  <p>
+    The retro computing community is one of the best corners of the internet: people restoring old hardware, documenting obscure systems, writing new software and games for 40-year-old machines, making music with a Commodore SID Chip, keeping these beige beauties out of the landfills and making them useful again. This site is my way of contributing to that community. If you find something useful here, I&rsquo;m happy!
+  </p>
 
-    <p>
-      <span class="highlight">&#9670;</span>
-    </p>
-  </main>
+  <p>
+    <span class="highlight">&#9670;</span>
+  </p>
+</main>
 
 <footer style="text-align:center;padding:2rem 1rem;font-size:0.8rem;color:var(--muted);border-top:1px solid var(--border);max-width:700px;margin:0 auto;">
   <a href="/">Home</a> &nbsp;|&nbsp; <a href="/store/">Price Guide</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy</a>
