@@ -75,17 +75,35 @@ hr { border-color: var(--border); }
 .site-nav {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-  padding: 6px 0;
+  gap: 2rem;
+  padding: 8px 0 4px;
+  margin-top: -12px;
   margin-bottom: 8px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.site-nav::-webkit-scrollbar { display: none; }
+.site-nav a, .site-nav button {
+  font-family: 'VT323', monospace;
+  font-size: 1.3rem;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 2px 12px;
+  border: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.5px;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
+.site-nav a.active { color: var(--accent); border-color: var(--border); }
+@media (max-width: 640px) {
+  .site-nav { gap: 0.5rem; }
+  .site-nav a, .site-nav button { font-size: 1.1rem; padding: 2px 8px; }
 }
 
-@media (max-width: 480px) {
-  .site-nav { overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
-  .site-nav::-webkit-scrollbar { display: none; }
-  .site-nav { scrollbar-width: none; }
-}
 .site-nav a, .site-nav button {
     font-family: 'VT323', monospace;
     font-size: 1.2rem;
