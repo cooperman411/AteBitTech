@@ -6770,7 +6770,41 @@ https://bloopmuseum.com">Inverse Phase / Bloop Museum</a><p>Inverse Phase / Bloo
         return span;
       }
       if (r.Category) {
-        const catCls = r.Category.split(",").map(c => "tag-cat-" + c.trim().toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")).join(" ");
+        const catColorMap = {
+        "communities": "communities",
+        "forums": "communities",
+        "documentation": "documentation",
+        "wikis": "documentation",
+        "hardware": "hardware",
+        "parts": "hardware",
+        "emulation": "emulation",
+        "fpga": "emulation",
+        "vendors": "vendors",
+        "stores": "vendors",
+        "museums": "museums",
+        "exhibits": "museums",
+        "software": "software",
+        "games": "software",
+        "news": "news",
+        "preservation": "preservation",
+        "repair": "repair",
+        "services": "repair",
+        "internet": "internet",
+        "networking": "internet",
+        "podcasts": "podcasts",
+        "web tools": "webtools",
+        "browsers": "webtools",
+        "youtube": "youtube",
+        "social": "youtube",
+        "channels": "youtube"
+      };
+      function catToClass(cat) {
+        return cat.toLowerCase().split(/[,&]/).map(p => p.trim()).filter(Boolean).map(p => {
+          const key = Object.keys(catColorMap).find(k => p.includes(k));
+          return key ? "tag-cat-" + catColorMap[key] : "";
+        }).filter(Boolean).join(" ");
+      }
+      const catCls = catToClass(r.Category);
         meta.appendChild(chip(r.Category, catCls));
       }
       splitMulti(r.Brands).forEach(b => meta.appendChild(chip(b, "brand-tag")));
