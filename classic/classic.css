@@ -63,10 +63,10 @@ li {
   margin-bottom: 14px;
 }
 
-.entry-title {
-  font-weight: bold;
-  font-size: 14pt;
-  color: var(--teal);
+.entry-title { 
+  font-weight: bold; 
+  font-size: 14pt; 
+  color: var(--fg);
 }
 
 .entry-desc { 
@@ -106,19 +106,10 @@ a.brand-block:hover {
   text-decoration: none;
 }
 
-/* Accent-colored brand blocks for visual variety */
-a.brand-block:nth-child(5n+1) { border-left: 3px solid var(--green); }
-a.brand-block:nth-child(5n+2) { border-left: 3px solid var(--teal); }
-a.brand-block:nth-child(5n+3) { border-left: 3px solid var(--amber); }
-a.brand-block:nth-child(5n+4) { border-left: 3px solid var(--orange); }
-a.brand-block:nth-child(5n+5) { border-left: 3px solid var(--red-accent); }
-
-
-
-.top-link {
-  float: right;
-  font-size: 11pt;
-  color: var(--orange);
+.top-link { 
+  float: right; 
+  font-size: 11pt; 
+  color: var(--accent);
 }
 
 .tagline { 
