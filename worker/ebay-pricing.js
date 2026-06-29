@@ -1,5 +1,10 @@
-// Ate Bit Tech — eBay Pricing Worker v2
-// Per-category medians, 5-tier badges, full tracking params, conditionId fix, caching
+// Ate Bit Tech — eBay Pricing Worker v3
+// Two-mode price guide:
+//   Mode A (price guide ON):  ?q=BRAND+KEYWORD&category=SINGLE_CAT_ID
+//   Mode B (price guide OFF): ?q=KEYWORD (no category param)
+// Per-category medians, 5-tier badges, full tracking params, caching
+// v3: Fixed 'ic ' false positive (matched 'classic'), improved system detection
+//     for bundles, reordered classification priority (system > part downgrade)
 
 export default {
   async fetch(request) {
@@ -22,18 +27,20 @@ export default {
       });
     }
 
+    const categoryParam = url.searchParams.get('category');
+
     // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query));
+    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : ''));
     const cached = await caches.default.match(cacheKey);
     if (cached) {
       return cached;
     }
 
-    const EBAY_APP_ID = 'YOUR_EBAY_APP_ID'; // Set via Cloudflare Worker secrets
-    const EBAY_CERT_ID = 'YOUR_EBAY_CERT_ID'; // Set via Cloudflare Worker secrets
+    const EBAY_APP_ID = 'YOUR_EBAY_APP_ID';
+    const EBAY_CERT_ID = 'YOUR_EBAY_CERT_ID';
     const EBAY_SCOPE = 'https://api.ebay.com/oauth/api_scope';
     const CAMPAIGN_ID = '5339157717';
-    const TRACKING_PARAMS = '&mkcid=1&mkrid=711-53200-19255-0&siteid=0&toolid=80006&mkevt=1';
+    const TRACKING_PARAMS = '&mkcid=1&mkrid=711-53200-19255-0&siteid=0&toolid=80006&mkevt=1&campid=' + CAMPAIGN_ID;
     const base64 = btoa(EBAY_APP_ID + ':' + EBAY_CERT_ID);
 
     var KNOWN_CATS = {
@@ -42,6 +49,14 @@ export default {
       '14906': 'Vintage Manuals & Merchandise',
       '4193': 'Other Vintage Computing'
     };
+
+    // Determine if price guide is available (requires a valid single category)
+    var priceGuideAvailable = false;
+    var catFilter = '';
+    if (categoryParam && KNOWN_CATS[categoryParam]) {
+      priceGuideAvailable = true;
+      catFilter = '&category_ids=' + categoryParam;
+    }
 
     try {
       // --- Get eBay OAuth token ---
@@ -58,7 +73,8 @@ export default {
       if (!accessToken) {
         return new Response(JSON.stringify({
           error: 'eBay authentication failed',
-          items: [], soldCount: 0, marketMedian: null
+          priceGuideAvailable: false,
+          results: []
         }), { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
       }
 
@@ -67,21 +83,27 @@ export default {
         'X-EBAY-C-MARKETPLACE-ID': 'EBAY_US'
       };
 
-      // --- Fetch sold, BIN, and auction items in parallel ---
-      var catFilter = '&category_ids=11189';
-      const results = await Promise.allSettled([
-        fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&filter=soldItems:{true}', { headers: ebayHeaders }).then(function(r) { return r.json(); }),
-        fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&filter=buyingOptions:{FIXED_PRICE}', { headers: ebayHeaders }).then(function(r) { return r.json(); }),
-        fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&filter=buyingOptions:{AUCTION}', { headers: ebayHeaders }).then(function(r) { return r.json(); })
-      ]);
+      // --- Fetch data ---
+      var items = [];
+      var soldItems = [];
 
-      var soldData = results[0].status === 'fulfilled' ? results[0].value : { itemSummaries: [] };
-      var binData = results[1].status === 'fulfilled' ? results[1].value : { itemSummaries: [] };
-      var aucData = results[2].status === 'fulfilled' ? results[2].value : { itemSummaries: [] };
+      if (priceGuideAvailable) {
+        // Mode A: fetch both active and sold with category filter
+        const results = await Promise.allSettled([
+          fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders }).then(function(r) { return r.json(); }),
+          fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&filter=soldItems:{true}&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders }).then(function(r) { return r.json(); })
+        ]);
 
-      var soldItems = soldData.itemSummaries || [];
-      var binItems = binData.itemSummaries || [];
-      var aucItems = aucData.itemSummaries || [];
+        var searchData = results[0].status === 'fulfilled' ? results[0].value : { itemSummaries: [] };
+        var soldData = results[1].status === 'fulfilled' ? results[1].value : { itemSummaries: [] };
+        items = searchData.itemSummaries || [];
+        soldItems = soldData.itemSummaries || [];
+      } else {
+        // Mode B: fetch active items only
+        const searchResp = await fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders });
+        const searchData = await searchResp.json();
+        items = searchData.itemSummaries || [];
+      }
 
       // --- Median helper ---
       function median(arr) {
@@ -90,35 +112,6 @@ export default {
         if (arr.length % 2 === 0) return (arr[mid - 1] + arr[mid]) / 2;
         return arr[mid];
       }
-
-      // --- Global sold median ---
-      var soldPrices = soldItems
-        .map(function(i) { return parseFloat(i.price && i.price.value); })
-        .filter(function(v) { return !isNaN(v); })
-        .sort(function(a, b) { return a - b; });
-      var marketMedian = median(soldPrices);
-
-      // --- Per-category medians ---
-      var categoryMedians = {};
-      var categoryCounts = {};
-      for (var catId in KNOWN_CATS) {
-        var prices = soldItems
-          .filter(function(i) {
-            var cats = i.categories || [];
-            for (var j = 0; j < cats.length; j++) {
-              if (cats[j].categoryId === catId) return true;
-            }
-            return false;
-          })
-          .map(function(i) { return parseFloat(i.price && i.price.value); })
-          .filter(function(v) { return !isNaN(v); })
-          .sort(function(a, b) { return a - b; });
-        categoryCounts[catId] = prices.length;
-        categoryMedians[catId] = median(prices);
-      }
-
-      var computerMedian = categoryMedians['162075'];
-      var computerCount = categoryCounts['162075'];
 
       // --- Classification (3-layer) ---
       function classifyItem(item) {
@@ -131,12 +124,9 @@ export default {
         }
         if (!ebayCatName) { ebayCatName = 'Other'; ebayCatId = ''; }
 
-        // Browse API: conditionId is plain string, condition is plain string
-        var condId = item.conditionId || '';
-        var condName = item.condition || 'Unknown';
         var title = (item.title || '').toLowerCase();
 
-        // Layer 2: Title refinement
+        // Layer 1: Merch check
         var antiPatterns = ['patch', 'shirt', 'mug', 'sticker', 'fabric', 'iron-on', 'decal', 'poster', 'vinyl', 'art print', 'badge', 'pinback', 'button pin', 'hat', 'cap', 't-shirt', 'tshirt', 'keychain', 'lanyard', 'pennant', 'banner', 'flag', 'sign', 'plaque'];
         var isMerch = false;
         for (var a = 0; a < antiPatterns.length; a++) {
@@ -146,122 +136,239 @@ export default {
           } else if (title.indexOf(pat) !== -1) { isMerch = true; break; }
         }
 
+        // Layer 2: Part/accessory keywords
+        // v3 FIX: Removed 'ic ' — it matched 'classic' in 'Macintosh Classic' titles
+        var partAccessoryWords = ['cable', 'adapter', 'adaptor', 'replacement', 'keyboard', 'mouse', 'cover', 'case shell',
+          'case cover', 'bottom case', 'top case', 'power supply', 'power adapt', 'usb', 'hdmi', 'rgb',
+          'screw', 'key stem', 'keycap', 'spring', 'plunger', 'rf shield', 'heat sink', 'heatsink',
+          'mounting bracket', 'standoff', 'spacer', 'label', 'sticker label', 'serial sticker',
+          'membrane', 'led', 'fan', 'drive belt', 'capacitor', 'resistor', 'pcb', 'board only',
+          'motherboard', 'logic board', 'floppy drive', 'hard drive', 'disk drive', 'sd card',
+          'memory', 'ram', 'rom', 'chip', 'cpu', 'processor', 'interface', 'controller',
+          'expansion', 'slot cover', 'bracket', 'bezel', 'faceplate', 'door', 'lock', 'key',
+          'feet', 'rubber', 'pad', 'grommet', 'gasket', 'filter', 'dust cover',
+          'ac power', 'dc power', 'charger', 'battery', 'battery pack', 'cmos', 'coin cell',
+          'ribbon', 'flat cable', 'connector', 'socket', 'header', 'jumper', 'shunt',
+          'transistor', 'diode', 'integrated circuit', 'eprom', 'eeprom', 'flash',
+          'dip', 'sil', 'breakout', 'module', 'sensor', 'switch', 'button',
+          'potentiometer', 'pot ', 'trimmer', 'capacitor kit', 'resistor kit', 'repair kit',
+          'bundle', 'lot of', 'lot ', 'bulk', 'qty', 'set of', 'pair of',
+          'manual', 'guide', 'handbook', 'schematics', 'service manual', 'owners manual',
+          'user guide', 'reference guide', 'programming guide', 'technical manual',
+          'instruction', 'instructions', 'documentation', 'book', 'cassette', 'tape',
+          'disk', 'disc', 'floppy', 'cd-rom', 'software', 'program', 'os ', 'operating system',
+          't-shirt', 'tshirt', 'shirt', 'mug', 'poster', 'sticker', 'decal', 'patch', 'hat',
+          'cap', 'keychain', 'pennant', 'banner', 'flag', 'sign', 'plaque', 'art print',
+          'print', 'iron-on', 'fabric', 'vinyl', 'badge', 'pinback', 'button pin', 'lanyard',
+          'advert', 'advertisement', 'catalog', 'catalogue', 'brochure', 'flyer', 'leaflet',
+          'magazine', 'newsletter', 'journal', 'issue', 'volume', 'edition'];
+
+        var isPartAccessory = false;
+        for (var w = 0; w < partAccessoryWords.length; w++) {
+          if (title.indexOf(partAccessoryWords[w]) !== -1) { isPartAccessory = true; break; }
+        }
+
+        // v3 FIX: System detection — check "computer" as primary item, not modifier
         var systemWords = ['computer system', 'desktop computer', 'complete system', 'home computer', 'personal computer', 'working computer', 'vintage computer', 'retro computer'];
         var isSystem = false;
         for (var s = 0; s < systemWords.length; s++) {
           if (title.indexOf(systemWords[s]) !== -1) { isSystem = true; break; }
         }
-        if (!isSystem && title.indexOf('computer') !== -1) isSystem = true;
-
-        var partWords = ['screw', 'key stem', 'keycap', 'spring', 'plunger', 'case shell', 'case cover', 'bottom case', 'top case', 'rf shield', 'heat sink', 'heatsink', 'mounting bracket', 'standoff', 'spacer', 'label', 'sticker label', 'serial sticker'];
-        var isPart = false;
-        for (var p = 0; p < partWords.length; p++) {
-          if (title.indexOf(partWords[p]) !== -1) { isPart = true; break; }
+        // If "computer" appears, only block if it's a modifier (e.g., "computer keyboard", "computer cable")
+        // This allows bundles like "Computer + Disk Drive + Joystick" to be classified as systems
+        if (!isSystem && title.indexOf('computer') !== -1) {
+          var computerModifiers = ['cable', 'keyboard', 'mouse', 'adapter', 'power supply',
+            'cover', 'case', 'fan', 'monitor', 'screen', 'stand', 'desk', 'table', 'shelf', 'bag',
+            'charger', 'battery', 'screw', 'capacitor', 'ribbon', 'motherboard', 'logic board',
+            'software', 'manual', 'guide', 'handbook', 'instruction', 'book'];
+          var isComputerModifier = false;
+          for (var m = 0; m < computerModifiers.length; m++) {
+            if (title.indexOf('computer ' + computerModifiers[m]) !== -1) {
+              isComputerModifier = true; break;
+            }
+          }
+          if (!isComputerModifier) isSystem = true;
         }
 
-        var docWords = ['manual', 'guide', 'handbook', 'schematics', 'service manual', 'owners manual', 'user guide', 'reference guide', 'programming guide', 'technical manual', 'instruction', 'instructions', 'documentation'];
+        // v3 NEW: Detect known system models without "computer" in title
+        // Helps with items like "Amiga 600", "Macintosh Classic", "Commodore 64c"
+        if (!isSystem) {
+          var systemModelPatterns = /\b(c64|c128|vic-?20|c16|c116|plus\/?4|pet\b|cbm\b|a500|a600|a1000|a1200|a2000|a2500|a3000|a4000|cd32|cdtv|atari\s+(st|1040|520|2600|800|400|xl|xe|mega|jaguar|lynx|7800|5200)|amstrad\s+cpc|sinclair\s+(spectrum|zx\s*81|ql)|trs-?80|ti-?99|apple\s+(ii|iie|iic|iigs|lisa)|macintosh|imac|powerbook|power\s*mac|commodore\s+(64|128|vic|pet|plus)|ibm\s+(pc|at|xt|ps)|thinkpad|raspberry\s*pi|sam\s*coup)/i;
+          if (systemModelPatterns.test(title)) {
+            // Only upgrade to system if no strong part indicator is present
+            var strongPartIndicators = /\b(cable|adapter|adaptor|power supply|charger|keyboard|mouse|joystick|controller|gamepad|cartridge|cover|case|fan|manual|guide|handbook|screw|capacitor|ribbon|motherboard|logic board|floppy drive|hard drive|disk drive|sd card|memory|ram|rom|chip|cpu|battery|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|software|cassette|tape|disk|disc|floppy|book|connector|cord)\b/i;
+            if (!strongPartIndicators.test(title)) isSystem = true;
+          }
+        }
+
+        var docWords = ['manual', 'guide', 'handbook', 'schematics', 'service manual', 'owners manual', 'user guide', 'reference guide', 'programming guide', 'technical manual', 'instruction', 'instructions', 'documentation', 'book'];
         var isDoc = false;
         for (var d = 0; d < docWords.length; d++) {
           if (title.indexOf(docWords[d]) !== -1) { isDoc = true; break; }
         }
 
+        // v3 FIX: Reordered — system classification takes priority over part downgrade
+        // This prevents real computers from being downgraded due to accessory keywords in bundles
         var finalCat = ebayCatName;
         var finalSub = ebayCatId;
         if (isMerch) { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
         else if (isDoc && ebayCatId !== '14906') { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
-        else if (isSystem && (ebayCatId === '175690' || ebayCatId === '14906' || ebayCatId === '4193' || ebayCatId === '')) { finalCat = 'Vintage Computers & Mainframes'; finalSub = '162075'; }
-        else if (isPart && ebayCatId === '162075') { finalCat = 'Vintage Parts & Accessories'; finalSub = '175690'; }
+        else if (isSystem) { finalCat = 'Vintage Computers & Mainframes'; finalSub = '162075'; }
+        else if (isPartAccessory && (ebayCatId === '162075' || ebayCatId === '14906')) { finalCat = 'Vintage Parts & Accessories'; finalSub = '175690'; }
 
-        // Layer 3: Price sanity
-        var price = parseFloat(item.price && item.price.value);
-        if (!isNaN(price) && !isMerch) {
-          if (price < 25 && finalSub === '162075' && !isSystem) {
-            finalCat = 'Vintage Parts & Accessories'; finalSub = '175690';
+        // Layer 3: Price sanity check
+        if (finalSub === '162075' && item.price && parseFloat(item.price.value) < 20) {
+          finalCat = 'Vintage Parts & Accessories';
+          finalSub = '175690';
+        }
+
+        if (!finalCat || finalCat === 'Other') {
+          finalCat = 'Other';
+          finalSub = '';
+        }
+
+        return { category: finalCat, catId: finalSub };
+      }
+
+      // --- Compute per-category medians (Mode A only) ---
+      var marketMedian = null;
+      var categoryMedians = {};
+      var categoryCounts = {};
+
+      if (priceGuideAvailable) {
+        var soldPrices = soldItems
+          .map(function(i) { return parseFloat(i.price && i.price.value); })
+          .filter(function(v) { return !isNaN(v); })
+          .sort(function(a, b) { return a - b; });
+        marketMedian = median(soldPrices);
+
+        var categoryPrices = {};
+        for (var catId in KNOWN_CATS) {
+          categoryPrices[catId] = [];
+        }
+
+        for (var s = 0; s < soldItems.length; s++) {
+          var soldItem = soldItems[s];
+          var cls = classifyItem(soldItem);
+          var price = parseFloat(soldItem.price && soldItem.price.value);
+          if (!isNaN(price) && cls.catId && categoryPrices[cls.catId]) {
+            categoryPrices[cls.catId].push(price);
           }
         }
 
-        return { catName: finalCat, catId: finalSub, condId: String(condId), condName: condName, isMerch: isMerch };
+        for (var catId in KNOWN_CATS) {
+          var prices = categoryPrices[catId].sort(function(a, b) { return a - b; });
+          categoryCounts[catId] = prices.length;
+          categoryMedians[catId] = median(prices);
+        }
       }
 
-      // --- Score items with per-category median ---
-      function scoreItem(item) {
-        var price = parseFloat(item.price && item.price.value);
-        if (isNaN(price)) return null;
-        var rawId = item.itemId || '';
-        var parts = rawId.split('|');
-        var itemId = parts.length > 1 ? parts[1] : rawId;
-        if (!/^\d+$/.test(itemId)) return null;
-
+      // --- Build results ---
+      var results = [];
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
         var cls = classifyItem(item);
-        var medianForCat = categoryMedians[cls.catId] || marketMedian || 0;
-        var catCount = categoryCounts[cls.catId] || 0;
-        var vs = medianForCat ? ((medianForCat - price) / medianForCat) * 100 : 0;
 
-        // 5-tier badge (matching store thresholds)
-        var badge = 'FAIR', icon = '';
-        if (vs >= 30) { badge = 'DEAL'; icon = 'FLAME'; }
-        else if (vs >= 10) { badge = 'GOOD'; icon = 'THUMBS'; }
-        else if (vs >= -10) { badge = 'FAIR'; icon = ''; }
-        else if (vs >= -50) { badge = 'HIGH'; icon = 'SKULL'; }
-        else { badge = 'WILD'; icon = 'SKULL'; }
+        if (!cls.catId) continue;
 
-        return {
-          title: item.title || '',
+        var price = parseFloat(item.price && item.price.value);
+
+        var imageUrl = '';
+        if (item.thumbnailImages && item.thumbnailImages.length > 0) {
+          imageUrl = item.thumbnailImages[0].imageUrl || '';
+        }
+
+        var listingUrl = item.itemWebUrl || '';
+        var affUrl = listingUrl + (listingUrl.indexOf('?') > -1 ? '&' : '?') + TRACKING_PARAMS;
+
+        var result = {
+          title: item.title,
           price: price,
-          condition: cls.condName,
-          conditionId: cls.condId,
-          category: cls.catName,
+          image: imageUrl,
+          url: affUrl,
+          condition: item.condition || 'Unknown',
+          conditionId: item.conditionId || '',
+          category: cls.category,
+          catName: KNOWN_CATS[cls.catId] || cls.category,
           categoryId: cls.catId,
-          itemId: itemId,
-          vsMedian: Math.round(vs),
-          badge: badge,
-          icon: icon,
-          ambassadorUrl: 'https://www.ebay.com/itm/' + itemId + '?campid=' + CAMPAIGN_ID + TRACKING_PARAMS,
-          image: (item.thumbnailImages && item.thumbnailImages[0] && item.thumbnailImages[0].imageUrl) || '',
-          bidCount: item.bidCount || 0,
-          catMedian: medianForCat,
-          catSampleSize: catCount
+          brand: item.brand || ''
         };
+
+        if (priceGuideAvailable) {
+          var catId = cls.catId;
+          var catMedian = categoryMedians[catId] || marketMedian;
+          var catCount = categoryCounts[catId] || 0;
+
+          var minThreshold = 15;
+          var effectiveMedian = (catCount >= minThreshold) ? catMedian : marketMedian;
+
+          if (!effectiveMedian) effectiveMedian = 0;
+
+          var vsMedian = effectiveMedian > 0 ? Math.round(((effectiveMedian - price) / effectiveMedian) * 100) : 0;
+
+          var badge = '';
+          var badgeLabel = '';
+
+          if (vsMedian >= 50) { badge = 'STEAL'; badgeLabel = '🔥 Steal'; }
+          else if (vsMedian >= 20) { badge = 'GOOD'; badgeLabel = '✓ Good Value'; }
+          else if (vsMedian >= -10) { badge = 'FAIR'; badgeLabel = '• Fair Price'; }
+          else if (vsMedian >= -50) { badge = 'HIGH'; badgeLabel = '↑ Slightly High'; }
+          else { badge = 'WILD'; badgeLabel = '💀 Wildly Overpriced'; }
+
+          result.vsMedian = vsMedian;
+          result.median = effectiveMedian;
+          result.medianConfidence = (catCount >= minThreshold) ? 'good' : 'low';
+          result.badge = badge;
+          result.badgeLabel = badgeLabel;
+          result.catSampleCount = catCount;
+          result.marketMedian = marketMedian;
+        }
+
+        results.push(result);
       }
 
-      var fixedPrice = binItems.map(scoreItem).filter(Boolean);
-      var auctions = aucItems.map(scoreItem).filter(Boolean);
+      // --- Sort ---
+      if (priceGuideAvailable) {
+        var badgeOrder = { 'STEAL': 0, 'GOOD': 1, 'FAIR': 2, 'HIGH': 3, 'WILD': 4 };
+        results.sort(function(a, b) {
+          var ba = badgeOrder[a.badge] !== undefined ? badgeOrder[a.badge] : 2;
+          var bb = badgeOrder[b.badge] !== undefined ? badgeOrder[b.badge] : 2;
+          return bb - ba;
+        });
+      } else {
+        results.sort(function(a, b) { return (a.price || 0) - (b.price || 0); });
+      }
 
-      var result = {
+      var output = {
         query: query,
-        generatedAt: new Date().toISOString(),
-        marketMedian: marketMedian,
-        computerMedian: computerMedian,
-        computerCount: computerCount,
-        soldCount: soldData.total || soldPrices.length,
-        fixedPriceCount: binData.total || fixedPrice.length,
-        auctionCount: aucData.total || auctions.length,
-        categoryMedians: categoryMedians,
-        items: fixedPrice,
-        auctions: auctions.slice(0, 10)
+        priceGuideAvailable: priceGuideAvailable,
+        results: results,
+        cached_at: new Date().toISOString()
       };
 
-      const response = new Response(JSON.stringify(result), {
+      if (priceGuideAvailable) {
+        output.marketMedian = marketMedian;
+        output.categoryMedians = categoryMedians;
+        output.categoryCounts = categoryCounts;
+      }
+
+      // --- Cache ---
+      var response = new Response(JSON.stringify(output), {
         headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type',
           'Content-Type': 'application/json',
-          'Cache-Control': 'public, max-age=300',
+          ...corsHeaders,
+          'Cache-Control': 'public, max-age=300'
         }
       });
-
-      // Cache the response
-      caches.default.put(cacheKey, response.clone());
+      try { await caches.default.put(cacheKey, response.clone()); } catch(e) {}
 
       return response;
 
-    } catch (err) {
-      console.error(JSON.stringify({ error: err.message, query: query, timestamp: Date.now() }));
-      return new Response(JSON.stringify({
-        error: 'Internal error',
-        items: [], soldCount: 0, marketMedian: null
-      }), { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+    } catch (error) {
+      return new Response(JSON.stringify({ error: error.message, priceGuideAvailable: false, results: [] }), {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
+      });
     }
   }
-};
+}
