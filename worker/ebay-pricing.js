@@ -36,9 +36,20 @@ export default {
     }
 
     const categoryParam = url.searchParams.get('category');
+    const marketplaceParam = url.searchParams.get('marketplace') || 'EBAY_US';
+
+    // v3.7: International marketplace support
+    var MARKETPLACES = {
+      'EBAY_US': { name: 'US', currency: 'USD', symbol: '$' },
+      'EBAY_CA': { name: 'Canada', currency: 'CAD', symbol: 'CA$' },
+      'EBAY_GB': { name: 'UK & Ireland', currency: 'GBP', symbol: '£' },
+      'EBAY_AU': { name: 'Australia & NZ', currency: 'AUD', symbol: 'AU$' }
+    };
+    var marketplace = MARKETPLACES[marketplaceParam] ? marketplaceParam : 'EBAY_US';
+    var marketInfo = MARKETPLACES[marketplace];
 
     // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=43');
+    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&mkt=' + marketplace + '&v=44');
     const cached = await caches.default.match(cacheKey);
     if (cached) {
       return cached;
@@ -88,7 +99,7 @@ export default {
 
       const ebayHeaders = {
         'Authorization': 'Bearer ' + accessToken,
-        'X-EBAY-C-MARKETPLACE-ID': 'EBAY_US'
+        'X-EBAY-C-MARKETPLACE-ID': marketplace
       };
 
       // --- Fetch data ---
@@ -305,18 +316,23 @@ export default {
         return { category: finalCat, catId: finalSub };
       }
 
-      // --- Compute per-category medians (Mode A only) ---
+      // --- Compute per-item price-clustered medians (Mode A only) ---
+      // v3.7: Instead of one median per category, compute a per-item median
+      // based on the price neighborhood of each item. This prevents $12 screw
+      // caps from dragging down the median for $99 bezels.
       var marketMedian = null;
       var categoryMedians = {};
       var categoryCounts = {};
 
       if (priceGuideAvailable) {
+        // Global median from all sold items (fallback)
         var soldPrices = soldItems
           .map(function(i) { return parseFloat(i.price && i.price.value); })
           .filter(function(v) { return !isNaN(v); })
           .sort(function(a, b) { return a - b; });
         marketMedian = median(soldPrices);
 
+        // Classify sold items and group by category
         var categoryPrices = {};
         for (var catId in KNOWN_CATS) {
           categoryPrices[catId] = [];
@@ -336,6 +352,35 @@ export default {
           categoryCounts[catId] = prices.length;
           categoryMedians[catId] = median(prices);
         }
+      }
+
+      // v3.7: Price-clustered median for a specific item
+      // Finds sold items in the same category within a price range and
+      // computes the median from the nearest ones.
+      function clusteredMedian(itemPrice, catId) {
+        if (!priceGuideAvailable || !catId) return null;
+        var catPrices = (categoryPrices[catId] || []).slice().sort(function(a, b) { return a - b; });
+        if (catPrices.length === 0) return null;
+
+        // If very few items, just use the category median
+        if (catPrices.length < 5) return categoryMedians[catId];
+
+        // Find items within 0.3x to 3x of the item's price
+        var lowBound = itemPrice * 0.3;
+        var highBound = itemPrice * 3;
+        var inRange = catPrices.filter(function(p) { return p >= lowBound && p <= highBound; });
+
+        // If not enough in range, expand to nearest by price distance
+        if (inRange.length < 5) {
+          // Sort by distance from itemPrice, take nearest 15
+          var byDistance = catPrices.slice().sort(function(a, b) {
+            return Math.abs(a - itemPrice) - Math.abs(b - itemPrice);
+          });
+          inRange = byDistance.slice(0, Math.min(15, byDistance.length));
+        }
+
+        inRange.sort(function(a, b) { return a - b; });
+        return median(inRange);
       }
 
       // --- Build results ---
@@ -371,12 +416,11 @@ export default {
 
         if (priceGuideAvailable) {
           var catId = cls.catId;
-          var catMedian = categoryMedians[catId] || marketMedian;
           var catCount = categoryCounts[catId] || 0;
 
-          var minThreshold = 15;
-          var effectiveMedian = (catCount >= minThreshold) ? catMedian : marketMedian;
-
+          // v3.7: Use price-clustered median instead of flat category median
+          var effectiveMedian = clusteredMedian(price, catId);
+          if (!effectiveMedian) effectiveMedian = categoryMedians[catId] || marketMedian;
           if (!effectiveMedian) effectiveMedian = 0;
 
           var vsMedian = effectiveMedian > 0 ? Math.round(((effectiveMedian - price) / effectiveMedian) * 100) : 0;
@@ -392,7 +436,7 @@ export default {
 
           result.vsMedian = vsMedian;
           result.median = effectiveMedian;
-          result.medianConfidence = (catCount >= minThreshold) ? 'good' : 'low';
+          result.medianConfidence = (catCount >= 15) ? 'good' : 'low';
           result.badge = badge;
           result.badgeLabel = badgeLabel;
           result.catSampleCount = catCount;
@@ -435,6 +479,10 @@ export default {
       var output = {
         query: query,
         priceGuideAvailable: priceGuideAvailable,
+        marketplace: marketplace,
+        marketplaceName: marketInfo.name,
+        currency: marketInfo.currency,
+        currencySymbol: marketInfo.symbol,
         results: results,
         cached_at: new Date().toISOString()
       };

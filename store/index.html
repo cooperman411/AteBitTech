@@ -249,6 +249,9 @@ hr { border-color: var(--border); }
   margin-bottom: 1rem;
 }
 .search-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+.country-btn { font-family: VT323, monospace; font-size: 1rem; padding: 2px 10px; border: 1px solid var(--border); border-radius: 4px; background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+.country-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.country-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
 .search-row input[type="text"] {
     flex: 1;
     background: var(--bg);
@@ -422,6 +425,12 @@ hr { border-color: var(--border); }
     <div class="search-row">
       <input type="text" id="search-input" placeholder="Search... (e.g. Commodore 64, Apple Macintosh, Atari ST)" autofocus>
       <button id="search-btn">Search</button>
+    </div>
+    <div class="country-row" style="display:flex;gap:0.25rem;margin-bottom:0.5rem;flex-wrap:wrap;">
+      <button class="country-btn active" data-mkt="EBAY_US">US</button>
+      <button class="country-btn" data-mkt="EBAY_CA">Canada</button>
+      <button class="country-btn" data-mkt="EBAY_GB">UK &amp; Ireland</button>
+      <button class="country-btn" data-mkt="EBAY_AU">Australia &amp; NZ</button>
     </div>
     <div class="filters-row">
       <div class="filter-group">
@@ -630,7 +639,7 @@ function badge(v) {
     return { b: 'WILD', c: 'badge-wild', cc: 'wild', i: '☠' };
   }
 
-function fp(p) { const n = parseFloat(p); return isNaN(n) ? p : (n % 1 === 0 ? '$' + n.toFixed(0) : '$' + n.toFixed(2)); }
+function fp(p) { const n = parseFloat(p); return isNaN(n) ? p : (n % 1 === 0 ? currencySymbol + n.toFixed(0) : currencySymbol + n.toFixed(2)); }
 
 function fv(v) {
     const n = parseFloat(v); if (isNaN(n)) return '';
@@ -665,11 +674,21 @@ const CAT_TO_ID = {
     let url = API + '?q=' + encodeURIComponent(q);
     const hasAll = keyword && brand && catId;
     if (hasAll) url += '&category=' + catId;
+    if (selectedMarketplace && selectedMarketplace !== 'EBAY_US') url += '&marketplace=' + selectedMarketplace;
     return url;
   }
 
   let allItems = [], searchQ = '', priceGuideAvailable = false, marketMedian = 0;
-    const $ = s => document.getElementById(s);
+    let selectedMarketplace = 'EBAY_US';
+    let currencySymbol = '$';
+    document.querySelectorAll('.country-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedMarketplace = btn.dataset.mkt;
+      });
+    });
+      const $ = s => document.getElementById(s);
 const el = {
   si: $('search-input'), sb: $('search-btn'), res: $('search-results'),
   ms: $('market-stats'), ws: $('wild-section'), wg: $('wild-grid'),
@@ -686,6 +705,7 @@ async function search() {
       const r = await fetch(url);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const d = await r.json();
+      if (d.currencySymbol) currencySymbol = d.currencySymbol;
       if (!d || !d.results || !d.results.length) {
         el.res.innerHTML = '<div class="no-results">No vintage computing items found.<br><span style="font-size:0.8rem;">Try a different search term, brand, or category.</span></div>';
         el.ms.style.display = 'none'; el.ws.style.display = 'none';
@@ -820,7 +840,7 @@ function renderWild(items) {
     h += '<div class="wild-card">' + ih +
       '<div class="wild-title">' + esc(t) + '</div>' +
       '<div class="wild-price">' + p + '</div>' +
-      '<div class="wild-vs">' + v + ' vs median ($' + (marketMedian ? marketMedian.toFixed(2) : '?') + ')</div>' +
+      '<div class="wild-vs">' + v + ' vs median (' + currencySymbol + (marketMedian ? marketMedian.toFixed(2) : '?') + ')</div>' +
       
       '<a href="' + i.url + '" target="_blank" rel="noopener">View on eBay</a>' +
               '</div>';
