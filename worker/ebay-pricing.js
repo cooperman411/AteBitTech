@@ -38,7 +38,7 @@ export default {
     const categoryParam = url.searchParams.get('category');
 
     // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=34');
+    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=37');
     const cached = await caches.default.match(cacheKey);
     if (cached) {
       return cached;
@@ -162,6 +162,7 @@ export default {
           'potentiometer', 'pot ', 'trimmer', 'capacitor kit', 'resistor kit', 'repair kit',
           'scandoubler', 'flickerfixer', 'gotek', 'sound sampler', 'kickstart',
           'monitor', 'crt', 'display', 'printer', 'imagewriter', 'modem', 'scanner',
+          'psu', 'parts only', 'for parts',
           'bundle', 'lot of', 'lot ', 'bulk', 'qty', 'set of', 'pair of',
           'manual', 'guide', 'handbook', 'schematics', 'service manual', 'owners manual',
           'user guide', 'reference guide', 'programming guide', 'technical manual',
@@ -200,7 +201,16 @@ export default {
 
         // v3.2: Strip negative-context phrases before part checks
         // "No power supply", "no cable", etc. should not trigger part indicators
-        var cleanTitle = title.replace(/\bno\s+(power supply|cable|adapter|charger|battery|mouse|keyboard|manual|disk|disc|drive|cord|power)\b/gi, '');
+        var cleanTitle = title.replace(/\bno\s+(power supply|cable|adapter|charger|battery|mouse|keyboard|manual|disk|disc|drive|cord|power|psu)\b/gi, '');
+
+        // v3.4: Definitive parts — never a computer, even with "vintage computer" in title
+        // Used to override systemWords and Step 3 (non-bundle only)
+        var definitiveParts = /\b(logic board|motherboard|mainboard|board only|psu|monitor|crt|display|printer|imagewriter|scandoubler|flickerfixer|gotek|sound sampler|kickstart|ram card|memory card|memory module|ram module|pcmcia|compact flash|cf card|repair kit|capacitor kit|resistor kit)\b/i;
+
+        // v3.4: Even if systemWords matched, override if definitive parts present (non-bundle only)
+        if (isSystem && !isBundle && definitiveParts.test(cleanTitle)) {
+          isSystem = false;
+        }
 
         // v3.3: Game/software check — blocks system classification unless in a bundle
         // "Game for Amiga 500" = game (block). "Amiga 500 with games" = computer bundle (allow).
@@ -216,7 +226,7 @@ export default {
             // Tier 1: never a computer, regardless of price or bundle
             // v3.3: Added psu, kickstart, scandoubler, flickerfixer, gotek, sound sampler
             // v3.3: Removed "cord" (moved to tier2 — computers come with cords)
-            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler)\b/i;
+            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler|monitor|crt|display|printer|imagewriter|modem|scanner)\b/i;
             // Tier 2: part indicators, overridable by high price (>$150) or bundle context
             // v3.1: Removed ram/memory/rom — these are specs (e.g., "132MB RAM"), not parts
             // v3.3: Removed "software" (now handled by isGameSoftware), added "cords?"
@@ -239,6 +249,9 @@ export default {
         if (!isSystem && hasComputer) {
           if (isBundle) {
             isSystem = true;
+          } else if (definitiveParts.test(cleanTitle)) {
+            // v3.4: Part listing with "computer" as keyword (e.g., "PSU for Commodore 64 Computer")
+            // Don't classify as system
           } else {
             var computerModifiers = ['cable', 'keyboard', 'mouse', 'adapter', 'power supply',
               'cover', 'case', 'fan', 'monitor', 'screen', 'stand', 'desk', 'table', 'shelf', 'bag',
