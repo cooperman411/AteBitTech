@@ -38,7 +38,7 @@ export default {
     const categoryParam = url.searchParams.get('category');
 
     // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=41');
+    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=43');
     const cached = await caches.default.match(cacheKey);
     if (cached) {
       return cached;
@@ -122,7 +122,7 @@ export default {
       }
 
       // --- Classification (3-layer) ---
-      function classifyItem(item) {
+      function classifyItem(item, selectedCat) {
         var cats = item.categories || [];
         var ebayCatId = '';
         var ebayCatName = '';
@@ -135,14 +135,8 @@ export default {
         var title = (item.title || '').toLowerCase();
 
         // Layer 1: Merch check
-        var antiPatterns = ['patch', 'shirt', 'mug', 'sticker', 'fabric', 'iron-on', 'decal', 'poster', 'vinyl', 'art print', 'badge', 'pinback', 'button pin', 'hat', 'cap', 't-shirt', 'tshirt', 'keychain', 'lanyard', 'pennant', 'banner', 'flag', 'sign', 'plaque'];
-        var isMerch = false;
-        for (var a = 0; a < antiPatterns.length; a++) {
-          var pat = antiPatterns[a];
-          if (pat === 'print') {
-            if (/\bprint(?!er)\b/.test(title)) { isMerch = true; break; }
-          } else if (title.indexOf(pat) !== -1) { isMerch = true; break; }
-        }
+        // v3.6: Use word boundary regex — prevents 'cap' matching 'caps', 'sign' matching 'design', etc.
+        var isMerch = /\b(patch|shirt|mug|sticker|fabric|iron-on|decal|poster|vinyl|art print|badge|pinback|button pin|hat|cap|t-shirt|tshirt|keychain|lanyard|pennant|banner|flag|sign|plaque)\b/i.test(title) || /\bprint(?!er)\b/i.test(title);
 
         // Layer 2: Part/accessory keywords
         // v3 FIX: Removed 'ic ' — it matched 'classic' in 'Macintosh Classic' titles
@@ -207,7 +201,7 @@ export default {
 
         // v3.5: Definitive parts — never a computer, even with "vintage computer" in title
         // v3.5: Added datassette, datasette, chassis, cartridge, pcb, club, magazine, newsletter
-        var definitiveParts = /\b(logic board|motherboard|mainboard|board only|psu|monitor|crt|display|printer|imagewriter|scandoubler|flickerfixer|gotek|sound sampler|kickstart|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|repair kit|capacitor kit|resistor kit|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|magazine|newsletter|club\s|emulation|emulator)\b/i;
+        var definitiveParts = /\b(logic board|motherboard|mainboard|board only|psu|monitor|crt|display|printer|imagewriter|scandoubler|flickerfixer|gotek|sound sampler|kickstart|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|repair kit|capacitor kit|resistor kit|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|magazine|newsletter|club\s|emulation|emulator|bezel|faceplate)\b/i;
 
         // v3.4: Even if systemWords matched, override if definitive parts present (non-bundle only)
         if (isSystem && !isBundle && definitiveParts.test(cleanTitle)) {
@@ -226,13 +220,14 @@ export default {
           if (systemModelPatterns.test(title)) {
             // Tier 1: never a computer, regardless of price or bundle
             // v3.5: Added datassette, datasette, chassis, cartridge, pcb, diagnostic, replacement
-            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler|monitor|crt|display|printer|imagewriter|modem|scanner|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|club)\b/i;
+            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler|monitor|crt|display|printer|imagewriter|modem|scanner|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|club|bezel|faceplate|housing|frame|shell)\b/i;
             // Tier 2: part indicators, overridable by high price (>$150) or bundle+computer
             var tier2Parts = /\b(keyboard|mouse|joystick|controller|gamepad|disks?|discs?|floppy|battery|chip|cpu|cover|case|fan|power supply|charger|adapter|adaptor|cords?|ram)\b/i;
             if (!tier1Parts.test(cleanTitle) && !isGameSoftware) {
-              // v3.5: Bundle override requires "computer" in title OR very high price
-              // Prevents "55 Floppy Disks With Box" from being a computer
-              var tier2Override = priceVeryHigh || (isBundle && (hasComputer || priceHigh));
+              // v3.6: Keyboard/mouse/joystick can only be overridden by bundle context, not price alone
+              // Prevents "Amiga 600 TS600 Mechanical Keyboard" $233 from being a computer
+              var tier2Accessory = /\b(keyboard|mouse|joystick|controller|gamepad)\b/i.test(cleanTitle);
+              var tier2Override = (isBundle && (hasComputer || priceHigh)) || (priceVeryHigh && !tier2Accessory);
               if (tier2Override) {
                 isSystem = true;
               } else if (!tier2Parts.test(cleanTitle)) {
@@ -278,14 +273,23 @@ export default {
           if (title.indexOf(docWords[d]) !== -1) { isDoc = true; break; }
         }
 
-        // v3 FIX: Reordered — system classification takes priority over part downgrade
-        // This prevents real computers from being downgraded due to accessory keywords in bundles
+        // v3.6: Respect user's selected category.
+        // When searching Parts or Merch, don't reclassify items out of that category.
+        // Only when searching Computers do we want classification to downgrade parts.
         var finalCat = ebayCatName;
         var finalSub = ebayCatId;
-        if (isMerch) { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
-        else if (isDoc && ebayCatId !== '14906') { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
-        else if (isSystem) { finalCat = 'Vintage Computers & Mainframes'; finalSub = '162075'; }
-        else if (isPartAccessory && (ebayCatId === '162075' || ebayCatId === '14906')) { finalCat = 'Vintage Parts & Accessories'; finalSub = '175690'; }
+        if (selectedCat === '175690' || selectedCat === '14906') {
+          // User selected Parts or Merch — keep eBay's category, don't override with isMerch/isSystem
+          // Still allow part-accessory and doc flags for fine-grained sorting within the selected category
+          if (selectedCat === '175690' && isDoc) {
+            finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906';
+          }
+        } else {
+          if (isMerch) { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
+          else if (isDoc && ebayCatId !== '14906') { finalCat = 'Vintage Manuals & Merchandise'; finalSub = '14906'; }
+          else if (isSystem) { finalCat = 'Vintage Computers & Mainframes'; finalSub = '162075'; }
+          else if (isPartAccessory && (ebayCatId === '162075' || ebayCatId === '14906')) { finalCat = 'Vintage Parts & Accessories'; finalSub = '175690'; }
+        }
 
         // Layer 3: Price sanity check
         if (finalSub === '162075' && item.price && parseFloat(item.price.value) < 20) {
@@ -320,7 +324,7 @@ export default {
 
         for (var s = 0; s < soldItems.length; s++) {
           var soldItem = soldItems[s];
-          var cls = classifyItem(soldItem);
+          var cls = classifyItem(soldItem, categoryParam);
           var price = parseFloat(soldItem.price && soldItem.price.value);
           if (!isNaN(price) && cls.catId && categoryPrices[cls.catId]) {
             categoryPrices[cls.catId].push(price);
@@ -338,7 +342,7 @@ export default {
       var results = [];
       for (var i = 0; i < items.length; i++) {
         var item = items[i];
-        var cls = classifyItem(item);
+        var cls = classifyItem(item, categoryParam);
 
         if (!cls.catId) continue;
 
@@ -399,15 +403,33 @@ export default {
       }
 
       // --- Sort ---
+      // v3.6: Secondary sort by search-term relevance within each badge tier
+      var queryTerms = query.toLowerCase().split(/\s+/).filter(function(t) { return t.length > 1; });
+      function relevance(title) {
+        var t = (title || '').toLowerCase();
+        var matches = 0;
+        for (var qi = 0; qi < queryTerms.length; qi++) {
+          if (t.indexOf(queryTerms[qi]) !== -1) matches++;
+        }
+        return matches;
+      }
       if (priceGuideAvailable) {
         var badgeOrder = { 'STEAL': 0, 'GOOD': 1, 'FAIR': 2, 'HIGH': 3, 'WILD': 4 };
         results.sort(function(a, b) {
           var ba = badgeOrder[a.badge] !== undefined ? badgeOrder[a.badge] : 2;
           var bb = badgeOrder[b.badge] !== undefined ? badgeOrder[b.badge] : 2;
-          return bb - ba;
+          if (ba !== bb) return bb - ba;
+          // Within same badge, items with more search-term matches rank first
+          var ra = relevance(a.title), rb = relevance(b.title);
+          if (ra !== rb) return rb - ra;
+          return (a.price || 0) - (b.price || 0);
         });
       } else {
-        results.sort(function(a, b) { return (a.price || 0) - (b.price || 0); });
+        results.sort(function(a, b) {
+          var ra = relevance(a.title), rb = relevance(b.title);
+          if (ra !== rb) return rb - ra;
+          return (a.price || 0) - (b.price || 0);
+        });
       }
 
       var output = {
