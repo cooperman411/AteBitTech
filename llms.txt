@@ -1,0 +1,26 @@
+# AteBit Tech — Retro & Vintage Computing Database
+> Hand-curated directory of 732 retro and vintage computing resources — repair services, hardware vendors, YouTube channels, community forums, and more. Amiga to ZX Spectrum and beyond.
+
+## Core Pages
+- Home / Directory: https://atebit.tech/  (searchable, filterable directory of all 732 entries)
+- Price Guide: https://atebit.tech/store/  (search eBay sold listings, compare prices)
+- Classic Version: https://atebit.tech/classic/  (plain HTML, works on vintage browsers)
+- About: https://atebit.tech/about.html  (project background and contact)
+- Privacy: https://atebit.tech/privacy.html  (no tracking, no personal data)
+- Newsletter: https://atebittech.substack.com  (Substack updates)
+
+## Top Brand Pages (Classic)
+- Commodore (135 resources): https://atebit.tech/classic/commodore.html
+- Atari (126): https://atebit.tech/classic/atari.html
+- Apple (107): https://atebit.tech/classic/apple.html
+- Amiga (78): https://atebit.tech/classic/amiga.html
+- PC (58): https://atebit.tech/classic/pc.html
+- Sinclair/ZX (44): https://atebit.tech/classic/sinclair-zx.html
+- Nintendo (26): https://atebit.tech/classic/nintendo.html
+- Tandy/Radio Shack (18): https://atebit.tech/classic/tandy-radio-shack.html
+- Amstrad (17): https://atebit.tech/classic/amstrad.html
+- MSX (14): https://atebit.tech/classic/msx.html
+- All brands: https://atebit.tech/classic/
+
+## Directory Categories
+Each entry is tagged by category: Community Hubs & Forums, Documentation & Wikis, Emulation & FPGA, Hardware & Parts, Internet & Networking, Museums & Exhibits, News & Blogs, Podcasts & Audio, Preservation & Archives, Repair & Services, Software & Games, Vendors & Stores, Web Tools & Browsers, YouTube & Social Channels.
