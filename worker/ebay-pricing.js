@@ -38,7 +38,7 @@ export default {
     const categoryParam = url.searchParams.get('category');
 
     // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=37');
+    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&v=41');
     const cached = await caches.default.match(cacheKey);
     if (cached) {
       return cached;
@@ -162,7 +162,13 @@ export default {
           'potentiometer', 'pot ', 'trimmer', 'capacitor kit', 'resistor kit', 'repair kit',
           'scandoubler', 'flickerfixer', 'gotek', 'sound sampler', 'kickstart',
           'monitor', 'crt', 'display', 'printer', 'imagewriter', 'modem', 'scanner',
-          'psu', 'parts only', 'for parts',
+          'psu', 'parts only', 'for parts', 'datassette', 'datasette', 'chassis',
+          'case,', 'case.', 'case ', 'club no', 'club magazine',
+          'joystick', 'joysticks', 'gamepad', 'controller', 'multicart',
+          'rom chip', 'eprom', 'eeprom', 'pla ', 'recap', 'capacitor kit',
+          'vga', 'isa', 'pci', 'agp', 'scsi', 'ide', 'sata',
+          'emulation', 'emulator', 'x commodore', 'x amiga', 'x atari',
+          'retro-gaming', 'retro gaming', 'gaming ',
           'bundle', 'lot of', 'lot ', 'bulk', 'qty', 'set of', 'pair of',
           'manual', 'guide', 'handbook', 'schematics', 'service manual', 'owners manual',
           'user guide', 'reference guide', 'programming guide', 'technical manual',
@@ -179,7 +185,7 @@ export default {
           if (title.indexOf(partAccessoryWords[w]) !== -1) { isPartAccessory = true; break; }
         }
 
-        // v3.3: System detection — restructured for accuracy
+        // v3.5: System detection — comprehensive rewrite for accuracy
         // Priority: explicit system phrases -> model patterns (with price/bundle override) -> "computer" word
         var systemWords = ['computer system', 'desktop computer', 'complete system', 'home computer', 'personal computer', 'working computer', 'vintage computer', 'retro computer', 'all-in-one computer'];
         var isSystem = false;
@@ -188,9 +194,6 @@ export default {
         }
 
         // Bundle detection and price threshold (used in multiple checks below)
-        // v3.3: Fixed "+" bug — only " + " (with spaces) is a bundle, not "A500+" (model number)
-        // v3.3: Added slash bundle (3+ "/" separators indicate item list, not model range)
-        // v3.3: Added "included" to bundle words
         var slashBundle = (title.match(/\//g) || []).length >= 3;
         var isBundle = /\s\+\s/.test(title) || slashBundle || /\b(bundle|with|w\/|include[ds]?|including|plus)\b/i.test(title);
         var itemPrice = parseFloat(item.price && item.price.value);
@@ -200,41 +203,36 @@ export default {
         var hasComputer = /\bcomputer\b(?!s)/i.test(title);
 
         // v3.2: Strip negative-context phrases before part checks
-        // "No power supply", "no cable", etc. should not trigger part indicators
         var cleanTitle = title.replace(/\bno\s+(power supply|cable|adapter|charger|battery|mouse|keyboard|manual|disk|disc|drive|cord|power|psu)\b/gi, '');
 
-        // v3.4: Definitive parts — never a computer, even with "vintage computer" in title
-        // Used to override systemWords and Step 3 (non-bundle only)
-        var definitiveParts = /\b(logic board|motherboard|mainboard|board only|psu|monitor|crt|display|printer|imagewriter|scandoubler|flickerfixer|gotek|sound sampler|kickstart|ram card|memory card|memory module|ram module|pcmcia|compact flash|cf card|repair kit|capacitor kit|resistor kit)\b/i;
+        // v3.5: Definitive parts — never a computer, even with "vintage computer" in title
+        // v3.5: Added datassette, datasette, chassis, cartridge, pcb, club, magazine, newsletter
+        var definitiveParts = /\b(logic board|motherboard|mainboard|board only|psu|monitor|crt|display|printer|imagewriter|scandoubler|flickerfixer|gotek|sound sampler|kickstart|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|repair kit|capacitor kit|resistor kit|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|magazine|newsletter|club\s|emulation|emulator)\b/i;
 
         // v3.4: Even if systemWords matched, override if definitive parts present (non-bundle only)
         if (isSystem && !isBundle && definitiveParts.test(cleanTitle)) {
           isSystem = false;
         }
 
-        // v3.3: Game/software check — blocks system classification unless in a bundle
-        // "Game for Amiga 500" = game (block). "Amiga 500 with games" = computer bundle (allow).
-        // Also catches game media: "game on floppy disk" even in a bundle
-        var isGameSoftware = (/\b(game|games|program|software)\b/i.test(cleanTitle) && !isBundle) ||
-                             (/\b(game|games)\b/i.test(cleanTitle) && /\b(floppy|disk|disc|cassette|tape|cartridge)\b/i.test(cleanTitle));
+        // v3.5: Game/software check — expanded patterns
+        // "Game for Amiga 500" = game. "OLYMPIAD x Commodore 16" = game. "retro-gaming" = game.
+        var isGameSoftware = (/\b(game|games|gaming|program|software|rom)\b/i.test(cleanTitle) && !isBundle) ||
+                             (/\b(game|games)\b/i.test(cleanTitle) && /\b(floppy|disk|disc|cassette|tape|cartridge)\b/i.test(cleanTitle)) ||
+                             /\b\w+\s+x\s+(commodore|amiga|atari|amstrad|sinclair|sega)/i.test(cleanTitle);
 
         // Step 2: Model pattern detection (before "computer" word so price/bundle can override)
-        // v3.2: Added amiga\s+(500|600|...) to match "Amiga 600" (with space), not just "A600"
         if (!isSystem) {
-          var systemModelPatterns = /\b(c64|c128|vic-?20|c16|c116|plus\/?4|pet\b|cbm\b|a500|a600|a1000|a1200|a2000|a2500|a3000|a4000|cd32|cdtv|amiga\s+(500|600|1000|1200|2000|2500|3000|4000)|atari\s+(st|1040|520|2600|800|400|xl|xe|mega|jaguar|lynx|7800|5200)|amstrad\s+cpc|sinclair\s+(spectrum|zx\s*81|ql)|trs-?80|ti-?99|apple\s+(ii|iie|iic|iigs|lisa)|macintosh|imac|powerbook|power\s*mac|commodore\s+(64|128|vic|pet|plus)|ibm\s+(pc|at|xt|ps)|thinkpad|raspberry\s*pi|sam\s*coup)/i;
+          var systemModelPatterns = /\b(c64|c128|vic-?20|c16|c116|plus\/?4|pet\b|cbm\b|a500|a600|a1000|a1200|a2000|a2500|a3000|a4000|cd32|cdtv|amiga\s+(500|600|1000|1200|2000|2500|3000|4000)|atari\s+(st|1040|520|2600|800|400|xl|xe|mega|jaguar|lynx|7800|5200)|amstrad\s+cpc|sinclair\s+(spectrum|zx\s*81|ql)|trs-?80|ti-?99|apple\s+(ii|iie|iic|iigs|lisa)|macintosh|imac|powerbook|power\s*mac|commodore\s+(64|128|16|116|vic|pet|plus)|ibm\s+(pc|at|xt|ps)|thinkpad|raspberry\s*pi|sam\s*coup)/i;
           if (systemModelPatterns.test(title)) {
             // Tier 1: never a computer, regardless of price or bundle
-            // v3.3: Added psu, kickstart, scandoubler, flickerfixer, gotek, sound sampler
-            // v3.3: Removed "cord" (moved to tier2 — computers come with cords)
-            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler|monitor|crt|display|printer|imagewriter|modem|scanner)\b/i;
-            // Tier 2: part indicators, overridable by high price (>$150) or bundle context
-            // v3.1: Removed ram/memory/rom — these are specs (e.g., "132MB RAM"), not parts
-            // v3.3: Removed "software" (now handled by isGameSoftware), added "cords?"
-            var tier2Parts = /\b(keyboard|mouse|joystick|controller|gamepad|cartridge|disk|disc|floppy|battery|chip|cpu|cover|case|fan|power supply|charger|adapter|adaptor|cords?)\b/i;
-            // v3.3: Price override no longer requires "computer" in title — uses $150 threshold
-            // This allows "Macintosh Color Classic M1600 Keyboard Mouse" ($725) to be a computer
+            // v3.5: Added datassette, datasette, chassis, cartridge, pcb, diagnostic, replacement
+            var tier1Parts = /\b(cable|screw|capacitor|ribbon|sticker|decal|poster|mug|shirt|patch|hat|keychain|repair kit|capacitor kit|resistor kit|cassette|tape|book|connector|external|logic board|motherboard|mainboard|board only|ram card|memory card|memory module|ram module|ram expansion|pcmcia|compact flash|cf card|drive|sd card|psu|kickstart|scandoubler|flickerfixer|gotek|sound sampler|monitor|crt|display|printer|imagewriter|modem|scanner|datassette|datasette|chassis|cartridge|pcb|diagnostic|replacement|club)\b/i;
+            // Tier 2: part indicators, overridable by high price (>$150) or bundle+computer
+            var tier2Parts = /\b(keyboard|mouse|joystick|controller|gamepad|disks?|discs?|floppy|battery|chip|cpu|cover|case|fan|power supply|charger|adapter|adaptor|cords?|ram)\b/i;
             if (!tier1Parts.test(cleanTitle) && !isGameSoftware) {
-              var tier2Override = priceVeryHigh || isBundle;
+              // v3.5: Bundle override requires "computer" in title OR very high price
+              // Prevents "55 Floppy Disks With Box" from being a computer
+              var tier2Override = priceVeryHigh || (isBundle && (hasComputer || priceHigh));
               if (tier2Override) {
                 isSystem = true;
               } else if (!tier2Parts.test(cleanTitle)) {
@@ -245,18 +243,25 @@ export default {
         }
 
         // Step 3: "computer" in title (bundle-aware modifier check)
-        // If bundle, skip modifier check entirely (bundles containing "computer" are systems)
         if (!isSystem && hasComputer) {
           if (isBundle) {
-            isSystem = true;
+            // v3.5: Bundle with "computer" — but check for "for" pattern first
+            // "RAM Module for Commodore 16 Computer" is an accessory, not a computer
+            if (/\bfor\b/i.test(cleanTitle) && definitiveParts.test(cleanTitle)) {
+              // Accessory FOR a computer
+            } else {
+              isSystem = true;
+            }
           } else if (definitiveParts.test(cleanTitle)) {
-            // v3.4: Part listing with "computer" as keyword (e.g., "PSU for Commodore 64 Computer")
-            // Don't classify as system
+            // Part listing with "computer" as keyword
+          } else if (/\bfor\b/i.test(cleanTitle) && tier2Parts && /\b(keyboard|mouse|joystick|drive|disk|cable|adapter|power supply|charger|battery|cover|case|fan|chip|cpu|expansion|module)\b/i.test(cleanTitle)) {
+            // v3.5: "for ... computer" with part words = accessory, not computer
           } else {
             var computerModifiers = ['cable', 'keyboard', 'mouse', 'adapter', 'power supply',
               'cover', 'case', 'fan', 'monitor', 'screen', 'stand', 'desk', 'table', 'shelf', 'bag',
               'charger', 'battery', 'screw', 'capacitor', 'ribbon', 'motherboard', 'logic board',
-              'software', 'manual', 'guide', 'handbook', 'instruction', 'book'];
+              'software', 'manual', 'guide', 'handbook', 'instruction', 'book', 'club', 'magazine',
+              'newsletter', 'expansion', 'module', 'card'];
             var isComputerModifier = false;
             for (var m = 0; m < computerModifiers.length; m++) {
               if (title.indexOf('computer ' + computerModifiers[m]) !== -1) {
