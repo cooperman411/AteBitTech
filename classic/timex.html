@@ -4,42 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Timex Resources — Ate Bit Tech</title>
-<meta name="description" content="Hand-curated directory of 1 Timex retro computing resources.">
+<meta name="description" content="Timex resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:title" content="Timex Resources — Ate Bit Tech">
-<meta property="og:description" content="Hand-curated directory of 1 Timex retro computing resources.">
+<meta property="og:description" content="Timex resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:url" content="https://atebit.tech/classic/timex.html">
-<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Timex Resources — Ate Bit Tech">
-<meta name="twitter:description" content="Hand-curated directory of 1 Timex retro computing resources.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Timex Resources — Ate Bit Tech",
-  "description": "Hand-curated directory of 1 Timex retro computing resources.",
-  "url": "https://atebit.tech/classic/timex.html",
-  "about": {"@type": "Brand", "name": "Timex"},
-  "numberOfItems": 1
-}
-</script>
-<script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <link rel="stylesheet" href="classic.css">
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation">
-<a href="/">Home</a>
-<a href="/store/">Price Guide</a>
-<a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
-<a href="/about.html">About</a>
-<a href="/privacy.html">Privacy</a>
-<button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">High Contrast</button>
-<a aria-label="Retro site — works on old browsers without JavaScript" href="/classic/">Retro Site</a>
+<nav>
+<a href="/">Modern Site</a>
+<a href="/classic/">Retro Site</a>
 </nav>
 <h1>Timex</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
@@ -47,17 +22,16 @@
 <ul>
 <li><span class="entry-title"><a href="https://www.timexsinclair.com/">Timex Computer World</a></span><div class="entry-desc">Timex Sinclair clones, refurbs, parts</div></li>
 </ul>
-<p><a href="index.html">&larr; Back to All Brands</a></p>
-<div class="footer"><p><em>Classic version of <a href="../">Ate Bit Tech</a></em></p></div>
-
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle">[ High Contrast ]</button>
+</footer>
 <script>
-const hcBtn = document.getElementById("hc-toggle");
-if(hcBtn){
-  hcBtn.addEventListener("click", function() {
-    document.documentElement.classList.toggle("hc");
-    this.textContent = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
-  });
-}
+document.getElementById("hc-toggle").addEventListener("click",function(){
+document.documentElement.classList.toggle("hc");
+this.textContent=document.documentElement.classList.contains("hc")?"[ Normal ]":"[ High Contrast ]";
+});
 </script>
 </body>
 </html>

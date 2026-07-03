@@ -4,42 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Amstrad Resources — Ate Bit Tech</title>
-<meta name="description" content="Hand-curated directory of 17 Amstrad retro computing resources.">
+<meta name="description" content="Amstrad resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:title" content="Amstrad Resources — Ate Bit Tech">
-<meta property="og:description" content="Hand-curated directory of 17 Amstrad retro computing resources.">
+<meta property="og:description" content="Amstrad resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:url" content="https://atebit.tech/classic/amstrad.html">
-<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Amstrad Resources — Ate Bit Tech">
-<meta name="twitter:description" content="Hand-curated directory of 17 Amstrad retro computing resources.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Amstrad Resources — Ate Bit Tech",
-  "description": "Hand-curated directory of 17 Amstrad retro computing resources.",
-  "url": "https://atebit.tech/classic/amstrad.html",
-  "about": {"@type": "Brand", "name": "Amstrad"},
-  "numberOfItems": 17
-}
-</script>
-<script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <link rel="stylesheet" href="classic.css">
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation">
-<a href="/">Home</a>
-<a href="/store/">Price Guide</a>
-<a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
-<a href="/about.html">About</a>
-<a href="/privacy.html">Privacy</a>
-<button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">High Contrast</button>
-<a aria-label="Retro site — works on old browsers without JavaScript" href="/classic/">Retro Site</a>
+<nav>
+<a href="/">Modern Site</a>
+<a href="/classic/">Retro Site</a>
 </nav>
 <h1>Amstrad</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
@@ -58,22 +33,21 @@
 <li><span class="entry-title"><a href="https://hxc2001.com/">HXC2001 (Jean-François DEL NERO)</a></span><div class="entry-desc">HxC floppy drive emulators for Amiga, Atari, CPC, etc.</div></li>
 <li><span class="entry-title"><a href="https://polyplay.xyz/">Poly.play</a></span><div class="entry-desc">New releases for classic systems</div></li>
 <li><span class="entry-title"><a href="https://www.printables.com/model/203016-amstrad-cpc464-tape-deck-button">Printables – Amstrad CPC464 Tape Deck Button</a></span><div class="entry-desc">Replacement Amstrad CPC464 tape deck buttons</div></li>
-<li><span class="entry-title"><a href="https://www.reddit.com/r/amstrad/">r/amstrad</a></span><div class="entry-desc">Amstrad CPC</div></li>
+<li><span class="entry-title"><a href="https://www.reddit.com/r/amstrad/">r/amstrad</a></span><div class="entry-desc">Amstrad subreddit for discussion, help, buying and selling.</div></li>
 <li><span class="entry-title"><a href="https://www.retrofuzion.com/">Retro Fusion</a></span><div class="entry-desc">Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.</div></li>
 <li><span class="entry-title"><a href="https://retrobug.org/">Retrobug</a></span><div class="entry-desc">Retro computer library with technical specifications, news, reviews, and podcasts. Covers systems from Amstrad CPC to MSX, TRS-80, Tatung Einstein, and vintage consoles.</div></li>
 <li><span class="entry-title"><a href="https://www.sellmyretro.com/store/zaxon">Zaxon (Retro-Computer Sales)</a></span><div class="entry-desc">ZX Spectrum add-ons, DivMMC, Harlequin boards, Amstrad parts</div></li>
 </ul>
-<p><a href="index.html">&larr; Back to All Brands</a></p>
-<div class="footer"><p><em>Classic version of <a href="../">Ate Bit Tech</a></em></p></div>
-
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle">[ High Contrast ]</button>
+</footer>
 <script>
-const hcBtn = document.getElementById("hc-toggle");
-if(hcBtn){
-  hcBtn.addEventListener("click", function() {
-    document.documentElement.classList.toggle("hc");
-    this.textContent = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
-  });
-}
+document.getElementById("hc-toggle").addEventListener("click",function(){
+document.documentElement.classList.toggle("hc");
+this.textContent=document.documentElement.classList.contains("hc")?"[ Normal ]":"[ High Contrast ]";
+});
 </script>
 </body>
 </html>

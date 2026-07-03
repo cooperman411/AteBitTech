@@ -4,51 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>IBM Resources — Ate Bit Tech</title>
-<meta name="description" content="Hand-curated directory of 10 IBM retro computing resources.">
+<meta name="description" content="IBM resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:title" content="IBM Resources — Ate Bit Tech">
-<meta property="og:description" content="Hand-curated directory of 10 IBM retro computing resources.">
+<meta property="og:description" content="IBM resources directory: hardware, repair, software, emulation, community forums, and more.">
 <meta property="og:url" content="https://atebit.tech/classic/ibm.html">
-<meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IBM Resources — Ate Bit Tech">
-<meta name="twitter:description" content="Hand-curated directory of 10 IBM retro computing resources.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "IBM Resources — Ate Bit Tech",
-  "description": "Hand-curated directory of 10 IBM retro computing resources.",
-  "url": "https://atebit.tech/classic/ibm.html",
-  "about": {"@type": "Brand", "name": "IBM"},
-  "numberOfItems": 10
-}
-</script>
-<script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <link rel="stylesheet" href="classic.css">
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
-<nav class="site-nav" aria-label="Site navigation">
-<a href="/">Home</a>
-<a href="/store/">Price Guide</a>
-<a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
-<a href="/about.html">About</a>
-<a href="/privacy.html">Privacy</a>
-<button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">High Contrast</button>
-<a aria-label="Retro site — works on old browsers without JavaScript" href="/classic/">Retro Site</a>
+<nav>
+<a href="/">Modern Site</a>
+<a href="/classic/">Retro Site</a>
 </nav>
 <h1>IBM</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
-<p><strong>10 entries</strong></p>
+<p><strong>11 entries</strong></p>
 <ul>
 <li><span class="entry-title"><a href="https://agonconsole8.github.io/">Agon Light (Byte Attic)</a></span><div class="entry-desc">eZ80-based open-source 8-bit microcomputer</div></li>
 <li><span class="entry-title"><a href="https://www.ardent-tool.com/">Ardent Tool</a></span><div class="entry-desc">Comprehensive IBM ThinkPad and vintage IBM PC documentation, drivers, and technical information.</div></li>
 <li><span class="entry-title"><a href="https://eater.net/">Ben Eater Kits</a></span><div class="entry-desc">Breadboard computer kits (6502, 8-bit CPU teaching)</div></li>
 <li><span class="entry-title"><a href="https://shop.heathkit.com/">Heathkit Company</a></span><div class="entry-desc">Vintage Heathkit manuals, kits (via collectors); new Heathkit kits</div></li>
+<li><span class="entry-title"><a href="https://i80386sx.com">i80386sx</a></span><div class="entry-desc">i80386sx Compaq laptops of the 1990s I’ll be showing off Compaq laptops from my collection. I’ll be selling accessories for select Compaq laptops</div></li>
 <li><span class="entry-title"><a href="http://www.ibm1130.org/">IBM 1130 Site</a></span><div class="entry-desc">Dedicated site for the IBM 1130 computing system with documentation, software, and restoration information.</div></li>
 <li><span class="entry-title"><a href="https://ibm1401.computerhistory.org/">IBM 1401 Computer History</a></span><div class="entry-desc">Computer History Museum&#x27;s IBM 1401 restoration project with documentation, photographs, and operational details.</div></li>
 <li><span class="entry-title"><a href="https://minuszerodegrees.net/">Minus Zero Degrees</a></span><div class="entry-desc">Extensive collection of vintage IBM computer documentation, including 5150, 5160, 5170 technical references, ROMs, and restore guides.</div></li>
@@ -56,17 +32,16 @@
 <li><span class="entry-title"><a href="https://www.retrofuzion.com/">Retro Fusion</a></span><div class="entry-desc">Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.</div></li>
 <li><span class="entry-title"><a href="https://tinkerdifferent.com/">TinkerDifferent</a></span><div class="entry-desc">A forum and community for vintage tech enthusiasts to collaborate and share information about classic computers, primarily focusing on Apple products.</div></li>
 </ul>
-<p><a href="index.html">&larr; Back to All Brands</a></p>
-<div class="footer"><p><em>Classic version of <a href="../">Ate Bit Tech</a></em></p></div>
-
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle">[ High Contrast ]</button>
+</footer>
 <script>
-const hcBtn = document.getElementById("hc-toggle");
-if(hcBtn){
-  hcBtn.addEventListener("click", function() {
-    document.documentElement.classList.toggle("hc");
-    this.textContent = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
-  });
-}
+document.getElementById("hc-toggle").addEventListener("click",function(){
+document.documentElement.classList.toggle("hc");
+this.textContent=document.documentElement.classList.contains("hc")?"[ Normal ]":"[ High Contrast ]";
+});
 </script>
 </body>
 </html>
