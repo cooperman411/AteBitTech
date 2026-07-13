@@ -79,10 +79,11 @@ hr { border-color: var(--border); }
   padding: 8px 0 4px;
   margin-top: -12px;
   margin-bottom: 8px;
-  flex-wrap: wrap;
-  -webkit-overflow-scrolling: touch;
 }
-.site-nav::-webkit-scrollbar { display: none; }
+
+@media (max-width: 480px) {
+  .site-nav { flex-wrap: wrap; justify-content: center; }
+}
 .site-nav a, .site-nav button {
   font-family: 'VT323', monospace;
   font-size: 1.3rem;
@@ -94,40 +95,9 @@ hr { border-color: var(--border); }
   letter-spacing: 0.5px;
   background: none;
   cursor: pointer;
-  white-space: nowrap;
 }
 .site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
 .site-nav a.active { color: var(--accent); border-color: var(--border); }
-@media (max-width: 640px) {
-  .site-nav { gap: 0.5rem; }
-  .site-nav a, .site-nav button { font-size: 1.1rem; padding: 2px 8px; }
-}
-
-.site-nav a, .site-nav button {
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    color: var(--muted);
-    text-decoration: none;
-    padding: 2px 14px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background: none;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: color 0.2s, border-color 0.2s;
-    letter-spacing: 0.5px;
-  }
-  .site-nav a + a,
-  .site-nav a + button,
-  .site-nav button + a { border-left: 1px solid var(--border); }
-  .site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
-  .site-nav a.active { color: var(--accent); }
-  .site-nav .nav-short { display: none; }
-  @media (max-width: 640px) {
-    .site-nav a, .site-nav button { font-size: 1rem; padding: 2px 8px; }
-    .site-nav .nav-long { display: none; }
-    .site-nav .nav-short { display: inline; }
-  }
 
 /* Badges */
 .badge {
@@ -337,11 +307,12 @@ hr { border-color: var(--border); }
     border: 2px solid var(--accent);
     background: transparent;
     color: var(--fg);
-    padding: 0.25rem 0.5rem;
+    padding: 2px 12px;
     border-radius: 0.5rem;
     font-family: 'VT323', monospace;
     font-size: 1.3rem;
     cursor: pointer;
+    letter-spacing: 0.5px;
   }
   .hc-toggle:focus-visible { outline: 3px solid var(--accent); }
 </style>
@@ -389,19 +360,15 @@ hr { border-color: var(--border); }
 </head>
 <body>
 <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
-<header class="max-w-6xl mx-auto my-6 px-2" id="brand-header">
-  <div class="flex items-center justify-between gap-4">
-    <div class="brand-block text-center my-6">
-      <a href="/">
-        <img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="/logo-wordmark-vt323-dark.png" style="height:96px;width:auto;image-rendering:pixelated">
-      </a>
-      <div class="mt-3">
-        <p class="title-font title-glow text-2xl md:text-3xl">Retro &amp; Vintage Computing Database</p>
-        <p class="title-font title-glow text-2xl md:text-3xl">Amiga to ZX and Beyond</p>
-      </div>
+<header class="max-w-6xl mx-auto my-6 px-2" id="brand-header"><div class="flex items-center justify-between gap-4">
+  <div class="brand-block text-center my-6">
+    <img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="/logo-wordmark-vt323-dark.png" width="1140" height="220" style="height:96px;width:auto;image-rendering:pixelated">
+    <div class="mt-3">
+      <h1 class="title-font title-glow text-2xl md:text-3xl">Retro &amp; Vintage Computing Database</h1>
+      <p class="title-font title-glow text-2xl md:text-3xl">Amiga to ZX and Beyond</p>
     </div>
   </div>
-</header>
+</div></header>
 
 <nav class="site-nav" aria-label="Site navigation">
   <a href="/">Home</a>
