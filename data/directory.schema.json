@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atebit.tech/data/directory.schema.json",
+  "title": "AteBit.Tech directory",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "ID",
+      "Name",
+      "URL",
+      "Description",
+      "Category",
+      "Brands",
+      "Language"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "Name": { "type": "string" },
+      "URL": { "type": "string" },
+      "Description": { "type": "string" },
+      "Category": { "type": "string" },
+      "Brands": { "type": "string" },
+      "Language": { "type": "string" },
+      "ID": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "Wikipedia": {
+        "type": "string",
+        "format": "uri"
+      },
+      "GitHub": {
+        "type": "array",
+        "items": { "type": "string", "format": "uri" },
+        "uniqueItems": true
+      },
+      "YouTube": {
+        "type": "string",
+        "format": "uri"
+      },
+      "Reddit": {
+        "type": "string",
+        "format": "uri"
+      },
+      "CommunityLinks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["Type", "URL"],
+          "additionalProperties": false,
+          "properties": {
+            "Type": {
+              "type": "string",
+              "enum": ["forum", "discord", "community"]
+            },
+            "Label": { "type": "string" },
+            "URL": { "type": "string", "format": "uri" }
+          }
+        }
+      },
+      "Featured": { "type": "boolean" },
+      "LastReviewed": {
+        "type": "string",
+        "format": "date"
+      }
+    }
+  }
+}
