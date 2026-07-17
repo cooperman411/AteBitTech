@@ -380,7 +380,7 @@
   {
     "Name": "Amiga.org",
     "URL": "https://www.amiga.org/",
-    "Description": "Amiga discussion across models and OS variants",
+    "Description": "Amiga discussion forum covering hardware, software, repairs, and operating systems. Search by model, symptom, or software title before starting a thread.",
     "Category": "Communities & Forums, Repair & Services",
     "Brands": "Amiga",
     "Language": "English",
@@ -549,15 +549,6 @@
     "ID": "aquarius-1-stage"
   },
   {
-    "Name": "Get Your 8-Bit On! (Aquarius+)",
-    "URL": "https://aquarius.1stage.com",
-    "Description": "Vendor offering new Aquarius+ systems and refurbished original Mattel Aquarius computers.",
-    "Category": "Repair & Services, Vendors & Stores",
-    "Brands": "Aquarius",
-    "Language": "English",
-    "ID": "get-your-8-bit-on"
-  },
-  {
     "Name": "Aquarius+ (GitHub)",
     "URL": "https://github.com/fvdhoef/aquarius-plus",
     "Description": "Open-source Aquarius+ firmware and hardware files.",
@@ -594,13 +585,13 @@
     "ID": "arcade-shopper"
   },
   {
-    "Name": "Archive.org - Amiga Software",
-    "URL": "https://archive.org/details/softwarelibrary_amiga",
-    "Description": "Amiga software collection at Internet Archive",
-    "Category": "Internet & Networking, Software & Games",
-    "Brands": "Amiga",
+    "Name": "Archive.org",
+    "URL": "https://archive.org/",
+    "Description": "Large archive of retro software, manuals, magazines, books, and computing history. Search for a system plus software, magazines, or manuals, then narrow results by collection and date.",
+    "Category": "Preservation & Archives, Software & Games, News & Blogs, Documentation & Wikis",
+    "Brands": "Amiga, Sinclair/ZX, Apple, Commodore, PC, Various",
     "Language": "English",
-    "ID": "archive-org-amiga-software"
+    "ID": "archive-org"
   },
   {
     "Name": "ARCI",
@@ -945,20 +936,11 @@
     "ID": "bitmap-soft"
   },
   {
-    "Name": "Bitsavers - DEC PDP-11 Handbooks",
-    "URL": "https://bitsavers.trailing-edge.com/pdf/dec/pdp11/handbooks/",
-    "Description": "Digital archive of DEC PDP-11 handbooks, technical manuals, and documentation from the Bitsavers project.",
-    "Category": "Hardware & Parts",
-    "Brands": "DEC",
-    "Language": "English",
-    "ID": "bitsavers-dec-pdp-11-handbooks"
-  },
-  {
     "Name": "bitsavers.org",
     "URL": "http://www.bitsavers.org/",
-    "Description": "Massive archive of vintage computer manuals, schematics, and technical documentation.",
-    "Category": "Documentation & Wikis, Hardware & Parts",
-    "Brands": "Various",
+    "Description": "Large archive of vintage computer manuals, schematics, and technical documentation. Search by manufacturer, model, or document type, then browse the matching archive folder.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
+    "Brands": "DEC, Various",
     "Language": "English",
     "ID": "bitsavers-org"
   },
@@ -990,15 +972,6 @@
     "ID": "bluescsi"
   },
   {
-    "Name": "BMC64 (Bare Metal C64)",
-    "URL": "https://www.faszinationc64.de/BMC64-Bare-Metal-Commodore64",
-    "Description": "Raspberry Pi bare-metal Commodore 64 emulator that boots directly without an OS for authentic performance.",
-    "Category": "Emulation & FPGA",
-    "Brands": "Commodore",
-    "Language": "English",
-    "ID": "bmc64-bare-metal-c64"
-  },
-  {
     "Name": "bmc64 - Commodore 64 on Raspberry Pi",
     "URL": "https://github.com/randyrossi/bmc64/",
     "Description": "Commodore 64 bare-metal emulator for Raspberry Pi, providing near-native performance for C64 emulation on Pi hardware.",
@@ -1006,6 +979,15 @@
     "Brands": "Raspberry Pi",
     "Language": "English",
     "ID": "bmc64-commodore-64-on-raspberry-pi"
+  },
+  {
+    "Name": "BMC64 (Bare Metal C64)",
+    "URL": "https://www.faszinationc64.de/BMC64-Bare-Metal-Commodore64",
+    "Description": "Raspberry Pi bare-metal Commodore 64 emulator that boots directly without an OS for authentic performance.",
+    "Category": "Emulation & FPGA",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "bmc64-bare-metal-c64"
   },
   {
     "Name": "Bonus Life Computers",
@@ -1044,6 +1026,15 @@
     "ID": "briel-computers"
   },
   {
+    "Name": "Brusaporto Retrocomputing",
+    "URL": "https://www.brusaretro.it/",
+    "Description": "Italian retrocomputing gathering with open exhibits of historic computers, consoles, and video games. Raduno italiano con esposizione libera di computer, console e videogiochi d'epoca.",
+    "Category": "Events & Shows",
+    "Brands": "Commodore, Atari, Apple, Amiga, Various",
+    "Language": "Italian, English",
+    "ID": "brusaporto-retrocomputing"
+  },
+  {
     "Name": "Bryce Wilson",
     "URL": "https://github.com/gummyworm/monster",
     "Description": "Bryce Wilson Monster: a modern native assembly development environment for the Commodore Vic-20 Try out a powerful development tool almost a decade in the ma...",
@@ -1060,15 +1051,6 @@
     "Brands": "Amiga, Apple, Atari",
     "Language": "English",
     "ID": "byte-cellar"
-  },
-  {
-    "Name": "BYTE Magazine",
-    "URL": "https://archive.org/details/byte-magazine",
-    "Description": "Digitized archives of the influential general computing magazine from the 1970s-90s.",
-    "Category": "Hardware & Parts, News & Blogs",
-    "Brands": "Various",
-    "Language": "English",
-    "ID": "byte-magazine"
   },
   {
     "Name": "ByteDelight",
@@ -1213,6 +1195,24 @@
     "Brands": "Apple",
     "Language": "English",
     "ID": "call-a-p-p-l-e"
+  },
+  {
+    "Name": "Canadian Vintage Computer Federation",
+    "URL": "https://cvcfed.org/",
+    "Description": "Canadian vintage-computing federation with bilingual event information, including VCF Montréal and other Canadian activities. Fédération canadienne des ordinateurs d'époque avec des informations bilingues sur les événements, dont VCF Montréal et d'autres activités canadiennes.",
+    "Category": "Events & Shows, Communities & Forums",
+    "Brands": "Apple, Commodore, MSX, Tandy/Radio Shack, Various",
+    "Language": "English, French",
+    "ID": "canadian-vintage-computer-federation"
+  },
+  {
+    "Name": "Canberra Vintage Computer Exhibition",
+    "URL": "https://cbrvce.org/",
+    "Description": "Canberra vintage-computing event and enthusiast site for exhibitions, community activity, and classic-computer preservation.",
+    "Category": "Events & Shows, Communities & Forums",
+    "Brands": "Apple, Atari, Commodore, Acorn/BBC, Various",
+    "Language": "English",
+    "ID": "canberra-vintage-computer-exhibition"
   },
   {
     "Name": "Capcom Arcade Stadium",
@@ -1388,9 +1388,9 @@
   {
     "Name": "classiccmp.org",
     "URL": "https://www.classiccmp.org/",
-    "Description": "Docs, mailing lists (cctalk/cctech)",
-    "Category": "Communities & Forums, Hardware & Parts",
-    "Brands": "DEC, PC",
+    "Description": "Classic-computer community with technical documentation, mailing lists, and resources for older systems.",
+    "Category": "Communities & Forums, Documentation & Wikis",
+    "Brands": "Nabu, DEC, PC, Various",
     "Language": "English",
     "ID": "classiccmp-org"
   },
@@ -1503,6 +1503,15 @@
     "ID": "commodore-international"
   },
   {
+    "Name": "Commodore Los Angeles",
+    "URL": "https://portcommodore.com/dokuwiki/doku.php?id=class:start",
+    "Description": "Los Angeles Commodore event with community activities, exhibits, and Commodore-focused resources.",
+    "Category": "Events & Shows",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "commodore-los-angeles"
+  },
+  {
     "Name": "Commodore OS Vision",
     "URL": "https://www.commodoreos.net/",
     "Description": "Modern operating system for Commodore hardware featuring a graphical interface with updated functionality.",
@@ -1528,15 +1537,6 @@
     "Brands": "Amiga, Commodore",
     "Language": "Spanish",
     "ID": "commodore-spain-youtube"
-  },
-  {
-    "Name": "Commodore Z and Katherine",
-    "URL": "https://www.commodorez.com \nhttps://partlyobsolete.com",
-    "Description": "Commodore Z and Katherine Start Me Up: 30 years of Windows 95 30 years ago, Microsoft introduced Windows 95 and set the standard for graphical user interface...",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari, Commodore",
-    "Language": "English",
-    "ID": "commodore-z-and-katherine"
   },
   {
     "Name": "Commodore.ca",
@@ -1566,13 +1566,13 @@
     "ID": "commodore-gen-tr"
   },
   {
-    "Name": "Compute! Magazine",
-    "URL": "https://archive.org/details/compute-magazine",
-    "Description": "Full archives of the classic 1980s general computing magazine at Internet Archive.",
-    "Category": "Hardware & Parts, News & Blogs",
-    "Brands": "Various",
+    "Name": "CommodoreZ",
+    "URL": "https://www.commodorez.com/",
+    "Description": "Commodore-focused resource with a list of vintage-computing events and related links.",
+    "Category": "Events & Shows, Documentation & Wikis",
+    "Brands": "Commodore",
     "Language": "English",
-    "ID": "compute-magazine"
+    "ID": "commodore-z-and-katherine"
   },
   {
     "Name": "Compute! Magazine — MusicMaster",
@@ -1791,13 +1791,13 @@
     "ID": "daves-garage"
   },
   {
-    "Name": "DAVES OLD COMPUTERS - Nabu",
-    "URL": "http://dunfield.classiccmp.org/nabu/index.htm",
-    "Description": "Technical documentation and detailed photos of NABU PC hardware and peripherals.",
-    "Category": "Documentation & Wikis, Museums & Exhibits",
-    "Brands": "Nabu",
+    "Name": "Dave’s Retro Video Lab (YouTube)",
+    "URL": "https://youtube.com/@davesretrovideolab2709?si=e_merkzuv0gxgwex",
+    "Description": "Dave’s Retro Video Lab Sony F65 Digital Cinema Camera Production Workflow Join Dave as he breaks down the full production workflow of the Sony F65 digital ci...",
+    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Brands": "Apple",
     "Language": "English",
-    "ID": "daves-old-computers-nabu"
+    "ID": "daves-retro-video-lab-youtube"
   },
   {
     "Name": "Daves Vintage Apple Tech (YouTube)",
@@ -1807,15 +1807,6 @@
     "Brands": "Apple",
     "Language": "English",
     "ID": "daves-vintage-apple-tech-youtube"
-  },
-  {
-    "Name": "Dave’s Retro Video Lab (YouTube)",
-    "URL": "https://youtube.com/@davesretrovideolab2709?si=e_merkzuv0gxgwex",
-    "Description": "Dave’s Retro Video Lab Sony F65 Digital Cinema Camera Production Workflow Join Dave as he breaks down the full production workflow of the Sony F65 digital ci...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Apple",
-    "Language": "English",
-    "ID": "daves-retro-video-lab-youtube"
   },
   {
     "Name": "Dayton Computer Museum",
@@ -2160,6 +2151,15 @@
     "ID": "f256k2"
   },
   {
+    "Name": "Firenze Vintage Bit",
+    "URL": "https://www.retrocomputer.org/",
+    "Description": "Free Italian retrocomputing event with historic computers, consoles, exhibitors, talks, and workshops. Manifestazione italiana gratuita di retrocomputing con computer, console, espositori, conferenze e workshop.",
+    "Category": "Events & Shows",
+    "Brands": "MSX, Commodore, Atari, Apple, Various",
+    "Language": "Italian, English",
+    "ID": "firenze-vintage-bit"
+  },
+  {
     "Name": "FOR(RETRO){LOOP}",
     "URL": "https://www.forretroloop.com/",
     "Description": "Ambitious project building the world's largest database of vintage computers and game consoles. Detailed specs, collector tools, YouTube channel, and hardware rescue and restoration mission.",
@@ -2349,6 +2349,24 @@
     "ID": "geekenspiel"
   },
   {
+    "Name": "GemTos Convention",
+    "URL": "https://gemtos.jimdofree.com/",
+    "Description": "French Atari convention with competitions, exhibits, and community activities. Convention Atari en France avec concours, expositions et activités communautaires.",
+    "Category": "Events & Shows",
+    "Brands": "Atari",
+    "Language": "French, English",
+    "ID": "gemtos-convention"
+  },
+  {
+    "Name": "Generation Amiga",
+    "URL": "https://www.generationamiga.com/",
+    "Description": "Amiga and retro-gaming news covering releases, hardware, emulation, and projects across several systems.",
+    "Category": "News & Blogs, Software & Games",
+    "Brands": "Amiga, Commodore, Sega, Nintendo, Sony, Various",
+    "Language": "English",
+    "ID": "generation-amiga"
+  },
+  {
     "Name": "Generation-MSX",
     "URL": "https://www.generation-msx.nl/",
     "Description": "MSX game database and downloads",
@@ -2367,6 +2385,15 @@
     "ID": "genericable"
   },
   {
+    "Name": "GEOS — Lyon Labs",
+    "URL": "https://lyonlabs.lillianskinner.ca/commodore/onrequest/geos/index.html",
+    "Description": "Information and downloads for GEOS on the Commodore 64 including applications and utilities.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "geos-lyon-labs"
+  },
+  {
     "Name": "GEOS for C64 (CBM Files)",
     "URL": "https://cbmfiles.com/geos/",
     "Description": "Archive of GEOS (Graphic Environment Operating System) software for the Commodore 64.",
@@ -2376,13 +2403,13 @@
     "ID": "geos-for-c64-cbm-files"
   },
   {
-    "Name": "GEOS — Lyon Labs",
-    "URL": "https://lyonlabs.lillianskinner.ca/commodore/onrequest/geos/index.html",
-    "Description": "Information and downloads for GEOS on the Commodore 64 including applications and utilities.",
-    "Category": "Software & Games",
-    "Brands": "Commodore",
+    "Name": "Get Your 8-Bit On! (Aquarius+)",
+    "URL": "https://aquarius.1stage.com",
+    "Description": "Vendor offering new Aquarius+ systems and refurbished original Mattel Aquarius computers.",
+    "Category": "Repair & Services, Vendors & Stores",
+    "Brands": "Aquarius",
     "Language": "English",
-    "ID": "geos-lyon-labs"
+    "ID": "get-your-8-bit-on"
   },
   {
     "Name": "GOG.com (Good Old Games)",
@@ -2457,15 +2484,6 @@
     "ID": "hand-held-legend"
   },
   {
-    "Name": "Happy Computer Magazine",
-    "URL": "https://archive.org/details/happycomputer-magazine",
-    "Description": "Gescanntes Archiv des beliebten deutschen Computermagazins der 1980er Jahre auf Archive.org. Vollstandige Ausgaben mit Tests, Listings und Anzeigen aus der Heimcomputer-Ara.",
-    "Category": "News & Blogs",
-    "Brands": "Various",
-    "Language": "German",
-    "ID": "happy-computer-magazine"
-  },
-  {
     "Name": "Happy Hardwear",
     "URL": "https://happyhardwear.etsy.com",
     "Description": "PCB-based jewelry and wearable tech with retro motifs.",
@@ -2527,6 +2545,15 @@
     "Brands": "Commodore, Apple, Atari, MSX, Sinclair/ZX, Various",
     "Language": "Dutch",
     "ID": "home-computer-museum"
+  },
+  {
+    "Name": "HomeCon",
+    "URL": "https://forum.homecon.org/",
+    "Description": "German retro-computing meeting community with event information, registration, archives, and discussion. Deutsche Retro-Computer-Treffen-Community mit Veranstaltungsinformationen, Anmeldung, Archiven und Diskussionen.",
+    "Category": "Events & Shows, Communities & Forums",
+    "Brands": "Amiga, Atari, Commodore, PC, Various",
+    "Language": "German",
+    "ID": "homecon"
   },
   {
     "Name": "HotHardware — C64 on Raspberry Pi",
@@ -2698,15 +2725,6 @@
     "Brands": "Various",
     "Language": "English",
     "ID": "internet-archive-youtube"
-  },
-  {
-    "Name": "Internet Archive - Software Library",
-    "URL": "https://archive.org/details/software",
-    "Description": "Massive online archive of retro software, ROMs, disk images",
-    "Category": "Hardware & Parts, Internet & Networking, Software & Games",
-    "Brands": "Apple, Commodore, Sinclair/ZX, Various",
-    "Language": "English",
-    "ID": "internet-archive-software-library"
   },
   {
     "Name": "Inverse Phase / Bloop Museum",
@@ -2934,6 +2952,15 @@
     "ID": "jupiter-ace-archive"
   },
   {
+    "Name": "KansasFest",
+    "URL": "https://www.kansasfest.org/",
+    "Description": "Annual Apple II convention with sessions, demos, announcements, contests, a vendor fair, and virtual events.",
+    "Category": "Events & Shows",
+    "Brands": "Apple",
+    "Language": "English",
+    "ID": "kansasfest"
+  },
+  {
     "Name": "Kevin Noki (YouTube)",
     "URL": "http://www.youtube.com/channel/UCwO690Ba2x8YE980UQqnjXA",
     "Description": "Kevin Noki — retro computing YouTube channel focused on repairs, builds, and history.",
@@ -2950,6 +2977,24 @@
     "Brands": "Atari",
     "Language": "English",
     "ID": "kokoscript"
+  },
+  {
+    "Name": "Komoda & Amiga plus",
+    "URL": "https://ka-plus.pl/",
+    "Description": "English and Polish magazine covering Commodore and Amiga software, hardware, games, interviews, and tutorials. Angielski i polski magazyn o oprogramowaniu, sprzęcie, grach, wywiadach i poradnikach dla komputerów Commodore i Amiga.",
+    "Category": "News & Blogs, Vendors & Stores",
+    "Brands": "Commodore, Amiga",
+    "Language": "English, Polish",
+    "ID": "komoda-amiga-plus"
+  },
+  {
+    "Name": "Komoda & Amiga plus (itch.io)",
+    "URL": "https://kaplus.itch.io/",
+    "Description": "Digital storefront for Komoda & Amiga plus issues and related releases. Cyfrowy sklep z numerami Komoda & Amiga plus i powiązanymi wydaniami.",
+    "Category": "Vendors & Stores",
+    "Brands": "Commodore, Amiga",
+    "Language": "English, Polish",
+    "ID": "komoda-amiga-plus-itch-io"
   },
   {
     "Name": "Krikzz",
@@ -3017,7 +3062,7 @@
   {
     "Name": "Legend continues... Commodore 64",
     "URL": "https://c64.icapan.net/",
-    "Description": "A personal Commodore 64 resource site featuring emulator guides, games, tools, screenshots, projects, and links to additional C64 resources.",
+    "Description": "Personal Commodore 64 resource with emulator guides, games, tools, screenshots, projects, and related links.",
     "Category": "Software & Games, Emulation & FPGA, Documentation & Wikis",
     "Brands": "Commodore",
     "Language": "English",
@@ -3067,6 +3112,15 @@
     "Brands": "Apple",
     "Language": "English",
     "ID": "low-end-mac"
+  },
+  {
+    "Name": "M5Tab Macintosh",
+    "URL": "https://github.com/amcchord/M5Tab-Macintosh",
+    "Description": "Basilisk II port for the M5Stack Tab5, running classic Macintosh software on an ESP32-P4 device.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
+    "Brands": "Apple",
+    "Language": "English",
+    "ID": "m5tab-macintosh"
   },
   {
     "Name": "Mac GUI (software archive)",
@@ -3645,15 +3699,6 @@
     "ID": "n9tax-retro-lab-youtube"
   },
   {
-    "Name": "NABU - Adam's Vintage Computer Restorations",
-    "URL": "https://retrorepairsandrefurbs.com/nabu/",
-    "Description": "Personal NABU collection with restoration notes, hardware documentation, and system photos.",
-    "Category": "Repair & Services, Hardware & Parts",
-    "Brands": "Nabu",
-    "Language": "English",
-    "ID": "nabu-adams-vintage-computer-restorations"
-  },
-  {
     "Name": "NABU RetroNET",
     "URL": "https://nabu.ca/",
     "Description": "NABU RetroNET Preservation Project offering Cloud CP/M, network adapter emulation, and homebrew software.",
@@ -3663,15 +3708,6 @@
     "ID": "nabu-retronet"
   },
   {
-    "Name": "National Videogame Museum (US)",
-    "URL": "https://nvmusa.org",
-    "Description": "Museum dedicated to the history of video games and related computing hardware.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Various",
-    "Language": "English",
-    "ID": "national-videogame-museum-us"
-  },
-  {
     "Name": "National Videogame Museum (UK)",
     "URL": "https://thenvm.org/",
     "Description": "Located in Sheffield, UK. Focus on Video Games from 1970s–present. National UK centre for videogames.",
@@ -3679,6 +3715,15 @@
     "Brands": "Various",
     "Language": "English",
     "ID": "national-videogame-museum-uk"
+  },
+  {
+    "Name": "National Videogame Museum (US)",
+    "URL": "https://nvmusa.org",
+    "Description": "Museum dedicated to the history of video games and related computing hardware.",
+    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "national-videogame-museum-us"
   },
   {
     "Name": "NCommander",
@@ -3746,20 +3791,11 @@
   {
     "Name": "Obsolete Computer Museum",
     "URL": "http://www.obsoletecomputermuseum.org/",
-    "Description": "Museum dedicated to preserving and documenting obsolete computer systems from the early microcomputer era.",
+    "Description": "Online museum documenting early personal computers with photographs, specifications, and historical notes.",
     "Category": "Museums & Exhibits",
-    "Brands": "Various",
+    "Brands": "Compaq, Various",
     "Language": "English",
     "ID": "obsolete-computer-museum"
-  },
-  {
-    "Name": "Obsolete Computer Museum - Compaq",
-    "URL": "http://www.obsoletecomputermuseum.org/compaq/",
-    "Description": "Museum exhibit featuring Compaq portable computers with photographs, specifications, and historical context.",
-    "Category": "Museums & Exhibits",
-    "Brands": "Compaq",
-    "Language": "English",
-    "ID": "obsolete-computer-museum-compaq"
   },
   {
     "Name": "Odd Tinkering",
@@ -3825,11 +3861,11 @@
     "ID": "oldcomp-cz"
   },
   {
-    "Name": "Oldcomputers.net – The Old Computer Museum",
+    "Name": "Oldcomputers.net - The Old Computer Museum",
     "URL": "https://oldcomputers.net/",
-    "Description": "Online museum focusing on Home Computers from the 1970s–1990s. Long-running online museum of classic machines.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Various",
+    "Description": "Long-running online museum of home and personal computers from the 1970s through the 1990s.",
+    "Category": "Museums & Exhibits, Documentation & Wikis",
+    "Brands": "Osbourne, Various",
     "Language": "English",
     "ID": "oldcomputers-net-the-old-computer-museum"
   },
@@ -4113,6 +4149,15 @@
     "ID": "poly-play"
   },
   {
+    "Name": "Port Commodore",
+    "URL": "https://portcommodore.com/",
+    "Description": "Commodore-focused wiki and personal archive covering hardware, software, BBS history, and related projects.",
+    "Category": "Documentation & Wikis, Communities & Forums, Preservation & Archives",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "port-commodore"
+  },
+  {
     "Name": "Power of Vintage (YouTube)",
     "URL": "https://www.youtube.com/@powerofvintage9442",
     "Description": "Power of Vintage Atari Home Computers 8-bit to the end Atari home computers including the various 8-bit variations through the 16-bit ST's to the TT and Falcon",
@@ -4158,40 +4203,13 @@
     "ID": "pravetz-computer-museum"
   },
   {
-    "Name": "Printables – Amstrad CPC464 Tape Deck Button",
-    "URL": "https://www.printables.com/model/203016-amstrad-cpc464-tape-deck-button",
-    "Description": "Replacement Amstrad CPC464 tape deck buttons",
+    "Name": "Printables",
+    "URL": "https://www.printables.com/",
+    "Description": "General 3D-printing library with retro-computer parts. Search by system name plus case, bezel, bracket, keycap, or adapter, then check the model files and print settings.",
     "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Amstrad",
+    "Brands": "Amstrad, Atari, Apple, Commodore, Various",
     "Language": "English",
-    "ID": "printables-amstrad-cpc464-tape-deck-button"
-  },
-  {
-    "Name": "Printables – Classic Mac Floppy Drive Bezel",
-    "URL": "https://www.printables.com/model/130728-classic-macintosh-floppy-drive-bezel",
-    "Description": "Replacement floppy bezel for vintage Mac",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Apple",
-    "Language": "English",
-    "ID": "printables-classic-mac-floppy-drive-bezel"
-  },
-  {
-    "Name": "Printables – Commodore 64 Keycaps",
-    "URL": "https://www.printables.com/model/285498-commodore-64-keycaps",
-    "Description": "Modern 3D printable keycaps for C64",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Commodore",
-    "Language": "English",
-    "ID": "printables-commodore-64-keycaps"
-  },
-  {
-    "Name": "Printables – Retro Computer Brackets Collection",
-    "URL": "https://www.printables.com/model/187479-retro-computer-brackets-collection",
-    "Description": "Brackets and adapters for many retro machines",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Various",
-    "Language": "English",
-    "ID": "printables-retro-computer-brackets-collection"
+    "ID": "printables"
   },
   {
     "Name": "printf.neocities.org - PC-98",
@@ -4833,13 +4851,13 @@
     "ID": "retro-repair-roundup-youtube"
   },
   {
-    "Name": "Retro Repairs and Refurbs - Sony",
-    "URL": "https://retrorepairsandrefurbs.com/sony/",
-    "Description": "Restoration and repair guides for Sony vintage computers and peripherals.",
-    "Category": "Repair & Services",
-    "Brands": "Sony",
+    "Name": "Retro Repairs and Refurbs",
+    "URL": "https://retrorepairsandrefurbs.com/",
+    "Description": "Personal restoration site with repair services, vintage computer projects, parts, and system documentation. Search by brand or model, then check the repair notes and photos.",
+    "Category": "Repair & Services, Hardware & Parts, Documentation & Wikis",
+    "Brands": "Nabu, Dragon, Sharp, Sony, TI, Various",
     "Language": "English",
-    "ID": "retro-repairs-and-refurbs-sony"
+    "ID": "retro-repairs-and-refurbs"
   },
   {
     "Name": "Retro Rewind",
@@ -5193,10 +5211,10 @@
     "ID": "rwap-software"
   },
   {
-    "Name": "Sam Coupe Users Club",
+    "Name": "Sam Coupé Users Club",
     "URL": "https://www.samcoupe.com/",
-    "Description": "Sam Coupé community and resources",
-    "Category": "Communities & Forums",
+    "Description": "SAM Coupé community site with user resources, news, and links for the surviving hardware and software community.",
+    "Category": "Communities & Forums, Documentation & Wikis",
     "Brands": "Sam Coupé",
     "Language": "English",
     "ID": "sam-coupe-users-club"
@@ -5391,6 +5409,15 @@
     "ID": "silicium-fr-youtube"
   },
   {
+    "Name": "Silly Venture",
+    "URL": "https://www.sillyventure.eu/",
+    "Description": "Atari-focused demo-scene party in Poland with competitions, showcases, and community events. Polska impreza sceny demo Atari z konkursami, pokazami i wydarzeniami społecznościowymi.",
+    "Category": "Events & Shows, Software & Games",
+    "Brands": "Atari",
+    "Language": "Polish, English",
+    "ID": "silly-venture"
+  },
+  {
     "Name": "Silverwand Software Collection",
     "URL": "https://sites.google.com/view/silverwandsoftware",
     "Description": "Collection of vintage Apple software and gaming resources.",
@@ -5398,6 +5425,15 @@
     "Brands": "Apple",
     "Language": "English",
     "ID": "silverwand-software-collection"
+  },
+  {
+    "Name": "Simon Owen",
+    "URL": "https://simonowen.com/",
+    "Description": "Personal project site with technical articles and tools, including SimCoupe, SAMdisk, and emulators.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
+    "Brands": "Sam Coupé, Sinclair/ZX",
+    "Language": "English",
+    "ID": "simon-owen"
   },
   {
     "Name": "Sinclair QL, ZX81, ZX Spectrum Facebook Group (Facebook Group)",
@@ -5553,15 +5589,6 @@
     "ID": "steem-sse"
   },
   {
-    "Name": "Steve's Computer Museum - Osborne 1",
-    "URL": "https://oldcomputers.net/osborne-1.html",
-    "Description": "Detailed Osborne 1 history, technical specifications, and vintage photos from the first portable computer.",
-    "Category": "Museums & Exhibits, Documentation & Wikis",
-    "Brands": "Osbourne",
-    "Language": "English",
-    "ID": "steves-computer-museum-osborne-1"
-  },
-  {
     "Name": "Steve's Retro Gaming - Aquarius FAQ",
     "URL": "https://stevesretrogaming.com/mattel-aquarius-faq/",
     "Description": "Comprehensive FAQ for the Mattel Aquarius computer covering hardware, software, and peripherals.",
@@ -5650,6 +5677,15 @@
     "Brands": "Various",
     "Language": "English",
     "ID": "taki-udon-youtube"
+  },
+  {
+    "Name": "Tandy Retro Show",
+    "URL": "https://tandyretroshow.com/",
+    "Description": "Online Tandy and Radio Shack computing show with presentations, exhibits, and community participation.",
+    "Category": "Events & Shows, Communities & Forums",
+    "Brands": "Tandy/Radio Shack",
+    "Language": "English",
+    "ID": "tandy-retro-show"
   },
   {
     "Name": "Tandy Showcase",
@@ -5834,9 +5870,9 @@
   {
     "Name": "The National Museum of Computing (TNMOC)",
     "URL": "https://www.tnmoc.org/",
-    "Description": "Located in Milton Keynes (Bletchley Park), UK. Focus on Computers from 1940s–1990s. World’s largest collection of working historic computers.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Various",
+    "Description": "Museum at Bletchley Park with working historic computers, exhibitions, and online material covering early machines through the personal-computer era.",
+    "Category": "Museums & Exhibits, Preservation & Archives, Documentation & Wikis",
+    "Brands": "DEC, IBM, Acorn/BBC, PC, Apple, Various",
     "Language": "English",
     "ID": "the-national-museum-of-computing-tnmoc"
   },
@@ -5976,31 +6012,13 @@
     "ID": "theretrochannel-youtube"
   },
   {
-    "Name": "Thingiverse – Amiga Case Projects",
-    "URL": "https://www.thingiverse.com/search?q=amiga+case&page=1&type=things",
-    "Description": "Replacement shells and case mods for Amiga computers",
+    "Name": "Thingiverse",
+    "URL": "https://www.thingiverse.com/",
+    "Description": "General 3D-printing library with retro-computer parts. Search by system name plus case, bracket, bezel, adapter, or replacement part, then review the model files.",
     "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Amiga",
+    "Brands": "Atari, Amiga, Apple, Commodore, Various",
     "Language": "English",
-    "ID": "thingiverse-amiga-case-projects"
-  },
-  {
-    "Name": "Thingiverse – Macintosh SE/30 3D Printed Brackets",
-    "URL": "https://www.thingiverse.com/thing:2809833",
-    "Description": "Brackets and parts for SE/30 restorations",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Apple",
-    "Language": "English",
-    "ID": "thingiverse-macintosh-se-30-3d-printed-brackets"
-  },
-  {
-    "Name": "Thingiverse – Printables – Atari ST Mouse Adapters",
-    "URL": "https://www.printables.com/model/264383-atari-st-mouse-adapter-case",
-    "Description": "Cases for mouse adapters for Atari ST",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari",
-    "Language": "English",
-    "ID": "thingiverse-printables-atari-st-mouse-adapters"
+    "ID": "thingiverse"
   },
   {
     "Name": "This Does Not Compute",
@@ -6058,10 +6076,10 @@
   },
   {
     "Name": "Tindie",
-    "URL": "https://www.tindie.com/search/?q=retro+computing",
-    "Description": "DIY kits: 6502, Z80, 8085 hobbyist builds",
-    "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Various",
+    "URL": "https://www.tindie.com/",
+    "Description": "Maker marketplace for electronics, kits, adapters, and retro-computer hardware. Search by platform or part type, such as C64, Amiga, Spectrum, adapter, or diagnostic board.",
+    "Category": "Hardware & Parts, Vendors & Stores, Repair & Services",
+    "Brands": "RC2014, Z80, Acorn/BBC, Amiga, Sinclair/ZX, Various",
     "Language": "English",
     "ID": "tindie"
   },
@@ -6073,15 +6091,6 @@
     "Brands": "Apple, Atari, Commodore, IBM, MSX",
     "Language": "English",
     "ID": "tinkerdifferent"
-  },
-  {
-    "Name": "TNMOC 3D Virtual Tour",
-    "URL": "https://www.tnmoc.org/3d-virtual-tour2",
-    "Description": "Online virtual tour of The National Museum of Computing, covering computers from the 1940s–1990s.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Various",
-    "Language": "English",
-    "ID": "tnmoc-3d-virtual-tour"
   },
   {
     "Name": "Tom's Hardware — Infinite Mac Guide",
@@ -6237,22 +6246,112 @@
     "ID": "vampire-apollo-team"
   },
   {
-    "Name": "VCF (Vintage Computer Festival)",
+    "Name": "VCF (Vintage Computer Federation)",
     "URL": "https://vcfed.org/",
-    "Description": "Series of events in the US and Europe celebrating computer history",
-    "Category": "Hardware & Parts",
+    "Description": "Vintage Computer Federation site covering official festivals, affiliated events, forums, museums, and preservation work.",
+    "Category": "Events & Shows, Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "vcf-vintage-computer-festival"
   },
   {
+    "Name": "VCF East",
+    "URL": "https://vcfed.org/events/vintage-computer-festival-east/",
+    "Description": "Vintage Computer Federation festival in New Jersey with exhibits, vendors, classes, talks, workshops, and consignment.",
+    "Category": "Events & Shows",
+    "Brands": "DEC, Acorn/BBC, Apple, Commodore, Various",
+    "Language": "English",
+    "ID": "vcf-east"
+  },
+  {
+    "Name": "VCF Florida",
+    "URL": "https://vcfed.org/vcf-florida/",
+    "Description": "Vintage Computer Federation festival and community event in Florida.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, Various",
+    "Language": "English",
+    "ID": "vcf-florida"
+  },
+  {
+    "Name": "VCF Great Britain",
+    "URL": "https://www.vintagecomputerfestival.org.uk/",
+    "Description": "United Kingdom vintage-computer festival with exhibits, talks, vendors, retro games, and guest speakers.",
+    "Category": "Events & Shows",
+    "Brands": "Acorn/BBC, Amiga, Atari, Commodore, Sinclair/ZX, Various",
+    "Language": "English",
+    "ID": "vcf-great-britain"
+  },
+  {
+    "Name": "VCF Latam",
+    "URL": "https://vcf.espaciotec.com.ar/?lang=en",
+    "Description": "Latin American vintage-computer festival in Bahía Blanca, Argentina. Festival latinoamericano de computación vintage en Bahía Blanca, Argentina. Festival latino-americano de computadores antigos em Bahía Blanca, Argentina.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Atari, Commodore, Sinclair/ZX, MSX, Various",
+    "Language": "Spanish, English, Portuguese",
+    "ID": "vcf-latam"
+  },
+  {
     "Name": "VCF Midwest",
-    "URL": "https://vcfmw.org",
-    "Description": "VCF Midwest The Show You're At This is where we sell shirts and garage sale items and stickers too",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "URL": "https://vcfmw.org/",
+    "Description": "Annual Midwest vintage-computer festival with exhibits, vendors, talks, and community activities.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, Various",
     "Language": "English",
     "ID": "vcf-midwest"
+  },
+  {
+    "Name": "VCF Pacific Northwest",
+    "URL": "https://vcfpnw.org/",
+    "Description": "Pacific Northwest vintage-computer festival with event information, an online program, and a photo archive.",
+    "Category": "Events & Shows, Preservation & Archives",
+    "Brands": "Apple, Atari, Commodore, DEC, Tandy/Radio Shack, Various",
+    "Language": "English",
+    "ID": "vcf-pacific-northwest"
+  },
+  {
+    "Name": "VCF Solothurn",
+    "URL": "https://vintagecomputerfestival.ch/en/home-en/",
+    "Description": "Swiss vintage-computer festival with exhibits, talks, workshops, a flea market, and access to a museum exhibition. Schweizer Vintage-Computer-Festival mit Ausstellungen, Vorträgen, Workshops, einem Flohmarkt und Zugang zu einer Museumsausstellung.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Commodore, Atari, Amiga, Various",
+    "Language": "English, German, French, Italian",
+    "ID": "vcf-solothurn"
+  },
+  {
+    "Name": "VCF Southeast",
+    "URL": "https://vcfed.org/events/otherevents/vintage-computer-festival-southeast/",
+    "Description": "Vintage Computer Federation festival in the southeastern United States with exhibits, vendors, talks, and community activities.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Atari, Commodore, TI, Various",
+    "Language": "English",
+    "ID": "vcf-southeast"
+  },
+  {
+    "Name": "VCF Southwest",
+    "URL": "https://www.vcfsw.org/",
+    "Description": "Dallas-Fort Worth vintage-computer festival with vendors, exhibits, workshops, talks, an auction, and consignment.",
+    "Category": "Events & Shows",
+    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, Various",
+    "Language": "English",
+    "ID": "vcf-southwest"
+  },
+  {
+    "Name": "VCF West",
+    "URL": "https://vcfed.org/events/vintage-computer-festival-west/",
+    "Description": "Vintage Computer Federation festival at the Computer History Museum with exhibits, vendors, talks, classes, and consignment.",
+    "Category": "Events & Shows",
+    "Brands": "DEC, Apple, Atari, Commodore, Various",
+    "Language": "English",
+    "ID": "vcf-west"
+  },
+  {
+    "Name": "VCFe (Vintage Computer Festival Europe)",
+    "URL": "https://vcfe.org/E/",
+    "Description": "Munich vintage-computer festival with exhibits, talks, and historic machines. Münchner Vintage-Computer-Festival mit Ausstellungen, Vorträgen und historischen Maschinen.",
+    "Category": "Events & Shows",
+    "Brands": "Acorn/BBC, Amiga, Apple, Commodore, Sinclair/ZX, Various",
+    "Language": "English, German",
+    "ID": "vcfe-vintage-computer-festival-europe"
   },
   {
     "Name": "VCFed Forums",
@@ -6388,6 +6487,15 @@
     "Brands": "Sony",
     "Language": "English",
     "ID": "vintage-computer-net-sony"
+  },
+  {
+    "Name": "Vintage Electronics Expo",
+    "URL": "https://www.thevee.org/",
+    "Description": "Michigan vintage-electronics show with seller tables, admission information, and event details.",
+    "Category": "Events & Shows, Vendors & Stores",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "vintage-electronics-expo"
   },
   {
     "Name": "Vintage Is The New Old",
@@ -6552,6 +6660,15 @@
     "ID": "world-of-dragon"
   },
   {
+    "Name": "World of SAM",
+    "URL": "https://www.worldofsam.org/",
+    "Description": "Community-edited SAM Coupé archive with software, hardware, utilities, history, and technical information.",
+    "Category": "Documentation & Wikis, Communities & Forums, Software & Games",
+    "Brands": "Sam Coupé",
+    "Language": "English",
+    "ID": "world-of-sam"
+  },
+  {
     "Name": "World of Spectrum",
     "URL": "https://worldofspectrum.org/",
     "Description": "ZX Spectrum software, manuals, magazines",
@@ -6613,15 +6730,6 @@
     "Brands": "Various",
     "Language": "English",
     "ID": "ye-olde-retro-electronic-computer-store-yore"
-  },
-  {
-    "Name": "Your Sinclair",
-    "URL": "https://archive.org/details/your-sinclair-magazine",
-    "Description": "Full issues of the classic ZX Spectrum magazine are online at the Internet Archive.",
-    "Category": "Hardware & Parts, News & Blogs",
-    "Brands": "Sinclair/ZX",
-    "Language": "English",
-    "ID": "your-sinclair"
   },
   {
     "Name": "Z80 Information",
