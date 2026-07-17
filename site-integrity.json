@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "expectedEntryCount": 761,
+  "expectedEntryCount": 762,
   "requiredEntryFields": [
     "Name",
     "URL",
