@@ -6309,6 +6309,15 @@
     "ID": "vcf-pacific-northwest"
   },
   {
+    "Name": "VCF SoCal",
+    "URL": "https://www.vcfsocal.com/",
+    "Description": "Independent Southern California vintage-computer festival with exhibits, vendors, talks, hands-on activities, and consignment. Affiliated with VCF events but independently organized.",
+    "Category": "Events & Shows",
+    "Brands": "DEC, Osbourne, Tandy/Radio Shack, TI, Sinclair/ZX, Various",
+    "Language": "English",
+    "ID": "vcf-socal"
+  },
+  {
     "Name": "VCF Solothurn",
     "URL": "https://vintagecomputerfestival.ch/en/home-en/",
     "Description": "Swiss vintage-computer festival with exhibits, talks, workshops, a flea market, and access to a museum exhibition. Schweizer Vintage-Computer-Festival mit Ausstellungen, Vorträgen, Workshops, einem Flohmarkt und Zugang zu einer Museumsausstellung.",
