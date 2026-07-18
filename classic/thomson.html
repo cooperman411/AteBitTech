@@ -12,13 +12,17 @@
 <link rel="stylesheet" href="classic.css">
 </head>
 <body>
-<nav>
-<a href="/">Modern Site</a>
-<a href="/classic/">Retro Site</a>
-</nav>
 <div class="logo-wordmark">
 <a href="/classic/"><img src="classic-wordmark-dark.png" width="360" height="70" border="0" alt="Ate Bit Tech"></a>
 </div>
+<nav class="site-nav" aria-label="Site navigation">
+<a href="/">[ Home ]</a>
+<a href="/store/">[ Price Guide ]</a>
+<a href="https://atebittech.substack.com" target="_blank" rel="noopener">[ Newsletter ]</a>
+<a href="/about.html">[ About ]</a>
+<a href="/privacy.html">[ Privacy ]</a>
+<button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">[ High Contrast ]</button>
+</nav>
 <h1>Thomson</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
 <p><strong>1 entries</strong></p>
@@ -28,12 +32,17 @@
 <footer>
 <a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
 <p>Ate Bit Tech — retro computing directory</p>
-<button id="hc-toggle">[ High Contrast ]</button>
+<button id="hc-toggle-footer" class="hc-toggle">[ High Contrast ]</button>
 </footer>
 <script>
-document.getElementById("hc-toggle").addEventListener("click",function(){
-document.documentElement.classList.toggle("hc");
-this.textContent=document.documentElement.classList.contains("hc")?"[ Normal ]":"[ High Contrast ]";
+document.querySelectorAll(".hc-toggle").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.documentElement.classList.toggle("hc");
+    const label = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
+    document.querySelectorAll(".hc-toggle").forEach(function(toggle) {
+      toggle.textContent = label;
+    });
+  });
 });
 </script>
 </body>
