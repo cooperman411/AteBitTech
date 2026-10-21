@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+from collections import Counter
 from pathlib import Path
 import re
 import sys
@@ -119,6 +120,49 @@ def render_classic_index(
     return source
 
 
+def render_llms(entries: list[dict[str, str]], brand_hrefs: dict[str, str]) -> str:
+    """Regenerate llms.txt counts from the directory data so they cannot drift."""
+    total = len(entries)
+    brand_counts: Counter[str] = Counter()
+    categories: set[str] = set()
+    for entry in entries:
+        for brand in entry["Brands"].split(","):
+            brand_counts[brand.strip()] += 1
+        for category in entry["Category"].split(","):
+            categories.add(category.strip())
+    ranked = sorted(
+        ((brand, count) for brand, count in brand_counts.items() if brand != "Various"),
+        key=lambda item: (-item[1], item[0].lower()),
+    )
+    brand_lines = []
+    for brand, count in ranked[:10]:
+        href = brand_hrefs.get(brand, "")
+        brand_lines.append(f"- [{brand} ({count})](https://atebit.tech/classic/{href})")
+    category_lines = [f"- [{category}](https://atebit.tech/)" for category in sorted(categories)]
+    return (
+        "# AteBit Tech \u2014 Retro & Vintage Computing Database\n"
+        f"> Hand-curated directory of {total} retro and vintage computing resources "
+        "\u2014 repair services, hardware vendors, YouTube channels, community forums, "
+        "and more. Amiga to ZX Spectrum and beyond.\n"
+        "\n"
+        "## Core Pages\n"
+        f"- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all {total} entries\n"
+        "- [Price Guide](https://atebit.tech/store/): search eBay sold listings, compare prices\n"
+        "- [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers\n"
+        "- [About](https://atebit.tech/about.html): project background and contact\n"
+        "- [Privacy](https://atebit.tech/privacy.html): no tracking, no personal data\n"
+        "- [Newsletter](https://atebittech.substack.com): Substack updates\n"
+        "\n"
+        "## Top Brand Pages\n"
+        + "\n".join(brand_lines)
+        + f"\n- [All {len(brand_counts)} brands](https://atebit.tech/classic/)\n"
+        "\n"
+        "## Directory Categories\n"
+        + "\n".join(category_lines)
+        + "\n"
+    )
+
+
 def proposed_outputs(entries: list[dict[str, str]]) -> dict[Path, str]:
     outputs: dict[Path, str] = {}
     index_path = ROOT / "index.html"
@@ -140,6 +184,8 @@ def proposed_outputs(entries: list[dict[str, str]]) -> dict[Path, str]:
             f"extra={sorted(indexed_brands - set(entries_by_brand))}"
         )
     outputs[classic_index_path] = render_classic_index(classic_index, entries_by_brand, len(entries))
+    brand_hrefs = {brand: href for href, brand in links}
+    outputs[ROOT / "llms.txt"] = render_llms(entries, brand_hrefs)
 
     all_path = ROOT / "classic" / "all.html"
     all_source = replace_classic_list(all_path.read_text(encoding="utf-8"), entries)

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 from collections import Counter
 import hashlib
+import unicodedata
 import html
 import json
 from pathlib import Path
@@ -149,6 +150,28 @@ def check_protected_files(report: Report, config: dict[str, Any]) -> None:
                 f"protected directory inventory changed: {relative_directory}/ "
                 f"(expected {sorted(expected_files)}, found {actual_files})"
             )
+
+
+def sort_key(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value.lower())
+    stripped = "".join(c for c in normalized if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9 ]", "", stripped)
+
+
+def check_sort_order(report: Report, entries: list[dict[str, Any]]) -> None:
+    names = [str(entry.get("Name", "")) for entry in entries]
+    drift = [
+        (names[i - 1], names[i])
+        for i in range(1, len(names))
+        if sort_key(names[i]) < sort_key(names[i - 1])
+    ]
+    if drift:
+        report.error(
+            f"data/directory.json has {len(drift)} out-of-order entries "
+            f"(first: {drift[0][0]!r} before {drift[0][1]!r})"
+        )
+    else:
+        report.ok("data/directory.json is alphabetically sorted by name")
 
 
 def check_database(
@@ -368,6 +391,7 @@ def main() -> int:
 
     check_protected_files(report, config)
     check_database(report, config, schema, entries)
+    check_sort_order(report, entries)
     if entries == embedded_entries:
         report.ok("data/directory.json exactly matches the embedded main database")
     else:
