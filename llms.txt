@@ -6,7 +6,7 @@
 - [Price Guide](https://atebit.tech/store/): search eBay sold listings, compare prices
 - [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers
 - [About](https://atebit.tech/about.html): project background and contact
-- [Privacy](https://atebit.tech/privacy.html): no tracking, no personal data
+- [Privacy](https://atebit.tech/privacy.html): no cookies, no stored IP addresses, no personal data; GoatCounter records page views and country only. Price Guide links are eBay Partner Network affiliate links
 - [Newsletter](https://atebittech.substack.com): Substack updates
 
 ## Top Brand Pages
