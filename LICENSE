@@ -1,0 +1,77 @@
+Ate Bit Tech — Licensing
+
+Copyright (c) 2025-2026 Kerry Cooper
+
+This repository mixes software and editorial content, and the two are licensed
+differently. Read the scope table before reusing anything.
+
+SCOPE
+-----
+
+1. SOFTWARE — MIT License (text below)
+
+   Applies to every file whose purpose is to make the site work:
+
+     index.html, about.html, privacy.html, store/index.html, classic/*.html
+     scripts/            (build-directory.py, validate-site.py)
+     worker/             (ebay-pricing.js, wrangler.toml)
+     .github/workflows/  (integrity.yml)
+     any root-level .py helper scripts
+
+2. EDITORIAL CONTENT AND DIRECTORY DATA — Creative Commons
+
+   Applies to:
+
+     data/directory.json          CC BY-NC 4.0
+     data/directory.schema.json   CC BY-NC 4.0
+     site-integrity.json          CC BY-NC 4.0
+     README.md, llms.txt, robots.txt, sitemap.xml
+     written descriptions, editorial text, and prose in this repository
+                                  CC BY-NC-SA 4.0
+
+   Full terms, attribution string, and a plain-English summary are in
+   CONTENT-LICENSE.md.
+
+3. BRAND AND IMAGES — All rights reserved
+
+   The Ate Bit Tech name, the wordmark and logo files, the mascot artwork, the
+   favicons, and the visual design are not licensed for reuse, modification, or
+   redistribution. That includes:
+
+     logo-wordmark-vt323-dark.png, RetroDino.png, RetroDino.lightbg.png,
+     RetroDisk.png, favicon.svg, favicon-16.png, favicon-32.png,
+     apple-touch-icon.png, classic/classic-wordmark-dark.png, VT323-Regular.ttf
+
+   VT323 is a third-party font distributed under the SIL Open Font License;
+   that font remains under its own license.
+
+4. THIRD-PARTY MATERIAL
+
+   Directory entries link to third-party sites and name third-party products.
+   Those names, marks, and sites belong to their owners. Ate Bit Tech claims no
+   affiliation with, endorsement by, or rights over them.
+
+If a file's applicable license is unclear, ask before reusing it:
+picks.favored4z @ icloud . com
+
+-------------------------------------------------------------------------------
+SECTION 1 — MIT LICENSE
+-------------------------------------------------------------------------------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
