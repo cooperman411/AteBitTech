@@ -81,10 +81,12 @@ Practical consequences:
 
 ## Licensing of contributions
 
-By submitting a resource, correction, or description, you confirm you have the
-right to share it and you license it under the same terms as the rest of the
-directory: [CC BY-NC 4.0](CONTENT-LICENSE.md) for data, CC BY-NC-SA 4.0 for
-written material. You keep whatever rights you already had; you are not signing
-them away, and no exclusive rights are claimed over your contribution.
+By submitting a contribution, confirm you have the rights to share it and do not include third-party content you lack permission to provide.
 
-The site code is MIT-licensed; see [LICENSE](LICENSE).
+- **Original directory entries, descriptions, and editorial submissions:** You retain your copyright and agree to make your submitted original work available under [CC BY-NC 4.0](CONTENT-LICENSE.md). You also authorize Ate Bit Tech to publish and maintain your contribution as part of its website, including where the site has affiliate links or other monetization.
+- **Code or technical-file contributions:** Submit under the [MIT software license](LICENSE).
+- **Branding, third-party materials, and fonts:** Do not submit these without clearing the relevant rights first.
+
+Contributions received under older CC BY-NC-SA 4.0 terms retain those permissions unless their authors separately agree to relicense them. This update does not revoke older grants.
+
+Read the [license scope](LICENSE) before submitting a pull request.
