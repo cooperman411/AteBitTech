@@ -20,13 +20,14 @@ Centralize vendors, parts suppliers, magazines, emulators, museums, forums, and 
 - Hosted on GitHub Pages
 
 ## License and Use
-This repository mixes code and content, so two licenses apply:
+This repository uses different permissions for different kinds of material:
 
-- **Code** (site HTML, `scripts/`, `worker/`, workflow files): MIT.
-- **Directory data and written content**: CC BY-NC 4.0 / CC BY-NC-SA 4.0 — free for non-commercial use with attribution.
-- **Name, wordmark, artwork, and design**: all rights reserved.
+- **Website code and technical files:** [MIT](LICENSE).
+- **Original curated directory and editorial content:** [CC BY-NC 4.0](CONTENT-LICENSE.md) — noncommercial reuse with attribution; separate permission for commercial reuse.
+- **Ate Bit Tech name, logos, mascot, and original brand artwork:** all rights reserved.
+- **VT323 font:** third-party [SIL Open Font License 1.1](OFL.txt), not Ate Bit Tech branding.
 
-Full scope table in [LICENSE](LICENSE). Attribution terms and a plain-English summary in [CONTENT-LICENSE.md](CONTENT-LICENSE.md). Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+See [LICENSE](LICENSE) for precise scope and [CONTENT-LICENSE.md](CONTENT-LICENSE.md) for attribution examples and previous-license details. Facts and public URLs aren't owned merely because they're listed here. Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Collaborate
 Do you want to submit a new resource, or change or remove an existing one? 
