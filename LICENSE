@@ -1,62 +1,77 @@
 Ate Bit Tech — Licensing
+Copyright (c) 2025–2026 Kerry Cooper
+Updated October 28, 2026
 
-Copyright (c) 2025-2026 Kerry Cooper
+This repository contains code, a curated directory, editorial work, branding,
+and a third-party font. Different rights apply to each.
 
-This repository mixes software and editorial content, and the two are licensed
-differently. Read the scope table before reusing anything.
+1. SOFTWARE AND TECHNICAL FILES — MIT License
 
-SCOPE
------
+   The MIT terms below cover the website's implementation: HTML/CSS/JavaScript
+   code (not editorial content embedded in HTML), Python scripts, workers,
+   build and validation workflows, JSON schemas, and technical configuration.
+   Examples include scripts/, worker/, .github/workflows/,
+   data/directory.schema.json, and site-integrity.json.
 
-1. SOFTWARE — MIT License (text below)
+   IMPORTANT: The MIT permission for a page's code does not grant permission
+   to reuse protected directory entries, descriptions, or branded artwork
+   embedded in or generated into that page.
 
-   Applies to every file whose purpose is to make the site work:
+2. ORIGINAL EDITORIAL CONTENT AND CURATED DIRECTORY — CC BY-NC 4.0
 
-     index.html, about.html, privacy.html, store/index.html, classic/*.html
-     scripts/            (build-directory.py, validate-site.py)
-     worker/             (ebay-pricing.js, wrangler.toml)
-     .github/workflows/  (integrity.yml)
-     any root-level .py helper scripts
+   Original directory descriptions, the copyrightable selection and
+   arrangement of data/directory.json, and original editorial prose in this
+   repository are licensed under Creative Commons
+   Attribution-NonCommercial 4.0 International (CC BY-NC 4.0), to the extent
+   Ate Bit Tech owns or controls the relevant rights.
 
-2. EDITORIAL CONTENT AND DIRECTORY DATA — Creative Commons
+   License: https://creativecommons.org/licenses/by-nc/4.0/
+   Legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
-   Applies to:
+   Noncommercial reuse and adaptation are permitted with attribution and
+   an indication of changes. Commercial reuse of protected content requires
+   separate permission. Facts, site names, and URLs are not owned by Ate Bit
+   Tech merely because they appear in the directory. Third-party contributions
+   are subject to the rights actually granted by their authors.
 
-     data/directory.json          CC BY-NC 4.0
-     data/directory.schema.json   CC BY-NC 4.0
-     site-integrity.json          CC BY-NC 4.0
-     README.md, llms.txt, robots.txt, sitemap.xml
-     written descriptions, editorial text, and prose in this repository
-                                  CC BY-NC-SA 4.0
+   See CONTENT-LICENSE.md for examples and attribution guidance.
 
-   Full terms, attribution string, and a plain-English summary are in
-   CONTENT-LICENSE.md.
+3. ORIGINAL BRAND AND ARTWORK — ALL RIGHTS RESERVED
 
-3. BRAND AND IMAGES — All rights reserved
+   The Ate Bit Tech name, original wordmarks, mascot illustrations, logos,
+   favicons, and original brand artwork are not licensed for reuse by the
+   MIT or Creative Commons grants above. This includes files such as
+   RetroDino.png, RetroDino.lightbg.png, RetroDisk.png,
+   logo-wordmark-vt323-dark.png, favicon.svg, favicon-16.png,
+   favicon-32.png, and apple-touch-icon.png, insofar as the rights belong
+   to Ate Bit Tech.
 
-   The Ate Bit Tech name, the wordmark and logo files, the mascot artwork, the
-   favicons, and the visual design are not licensed for reuse, modification, or
-   redistribution. That includes:
+   This does not override the rights in third-party components.
 
-     logo-wordmark-vt323-dark.png, RetroDino.png, RetroDino.lightbg.png,
-     RetroDisk.png, favicon.svg, favicon-16.png, favicon-32.png,
-     apple-touch-icon.png, classic/classic-wordmark-dark.png, VT323-Regular.ttf
+4. THIRD-PARTY FONT — SIL OPEN FONT LICENSE 1.1
 
-   VT323 is a third-party font distributed under the SIL Open Font License;
-   that font remains under its own license.
+   VT323-Regular.ttf is a third-party font, NOT all-rights-reserved Ate Bit
+   Tech artwork. VT323 is distributed under the SIL Open Font License 1.1.
+   Its copyright notice and full license text are in OFL.txt.
 
-4. THIRD-PARTY MATERIAL
+5. THIRD-PARTY WEBSITES AND PREVIOUS LICENSES
 
-   Directory entries link to third-party sites and name third-party products.
-   Those names, marks, and sites belong to their owners. Ate Bit Tech claims no
-   affiliation with, endorsement by, or rights over them.
+   A directory listing does not transfer rights in a linked website or its
+   name, logo, or content. No affiliation or endorsement is implied.
 
-If a file's applicable license is unclear, ask before reusing it:
+   Previously granted licenses remain valid for copies made available under
+   them, including past CC BY-NC-SA 4.0 grants for written material. Rights
+   in work contributed by third parties cannot be relicensed without their
+   permission. This updated licensing statement does not revoke prior grants.
+
+For commercial permission or unclear cases, contact:
 picks.favored4z @ icloud . com
 
--------------------------------------------------------------------------------
-SECTION 1 — MIT LICENSE
--------------------------------------------------------------------------------
+------------------------------------------------------------
+MIT LICENSE — SOFTWARE ONLY
+------------------------------------------------------------
+
+Copyright (c) 2025–2026 Kerry Cooper
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
