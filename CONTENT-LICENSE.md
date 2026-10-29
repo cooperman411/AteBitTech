@@ -1,57 +1,37 @@
-# Content License
+# Content licensing
 
-The directory data and the written material in this repository are licensed
-under Creative Commons. The site's code is under the MIT License; see
-[LICENSE](LICENSE) for the full scope table.
+Ate Bit Tech publishes an original directory of links to retro and vintage computing resources. The code, original editorial material, and brand do **not** all have the same license. See [LICENSE](LICENSE) for the complete scope and MIT software terms.
 
-## What is covered
-
-| Material | License |
+| Material | Terms |
 | --- | --- |
-| `data/directory.json`, `data/directory.schema.json`, `site-integrity.json` | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) |
-| Directory descriptions, editorial text, README and other prose | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
-| Logo, wordmark, mascot artwork, favicons, visual design | All rights reserved — not licensed for reuse |
+| Website code, scripts, workers, schemas, and technical configuration | [MIT](LICENSE) |
+| Original directory descriptions, copyrightable selection/arrangement of `data/directory.json`, and original editorial writing owned or controlled by Ate Bit Tech | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) |
+| Original name, logos, mascots, wordmarks, favicons, and brand artwork | All rights reserved; separate permission needed |
+| `VT323-Regular.ttf` font | Third-party [SIL Open Font License 1.1](OFL.txt) |
+| Third-party sites, trademarks, and contributed material | Rights stay with their respective owners; contributor permissions may differ |
 
-## What that means in plain English
+## What CC BY-NC 4.0 means
 
-**You may**, for non-commercial purposes: copy the directory data, quote the
-descriptions, build something on top of it, redistribute it, and adapt it.
+For content we have the right to license, you may **share and adapt it for noncommercial purposes**. Give appropriate credit, link to [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), and say if you changed it.
 
-**You must** credit the source and, for adapted written material, license your
-version under the same terms.
+The license does **not** authorize commercial reuse of the copyright-protected directory compilation or editorial descriptions. Contact the project to discuss separate commercial permission. Whether a particular activity counts as commercial depends on its circumstances; ads, affiliate links, resale, and paid products can be relevant.
 
-**You may not** use it commercially — including republishing the directory on a
-site with ads or affiliate links, or bundling it into a paid product — without
-written permission.
+You do not need Ate Bit Tech's permission to link to a publicly accessible website, state factual information, or independently compile your own directory from public facts. The license does not grant rights to content on the sites we link to.
 
-**You may not** reuse the Ate Bit Tech name, wordmark, or artwork, or present a
-derivative as if it were Ate Bit Tech or endorsed by it.
+CC BY-NC 4.0 does **not** require your adaptation to use the same Creative Commons license. That was a feature of the prior CC BY-NC-SA license.
 
-## Attribution
+## Attribution example
 
-Use this credit, or something a reader can follow back to the source:
+> Based on original directory descriptions and curation by [Ate Bit Tech](https://atebit.tech), licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Changes were made.
 
-> Directory data from Ate Bit Tech (https://atebit.tech), licensed CC BY-NC 4.0.
+Adapt the wording to describe the particular material and whether it was changed. Attribution does not imply endorsement.
 
-For adapted written material:
+## Existing licenses and contributors
 
-> Adapted from Ate Bit Tech (https://atebit.tech), CC BY-NC-SA 4.0.
+Previously published versions may have been offered under CC BY-NC-SA 4.0 for writing. Those grants remain valid for those copies; they are not revoked by this update.
 
-## Notes on scope
+We license material under CC BY-NC 4.0 only where we have the rights to do so. Submissions by other contributors remain subject to their original permissions unless they authorize relicensing.
 
-- **Facts are not copyrightable.** A URL, a site name, and the fact that a site
-  covers the ZX Spectrum are facts. What is protected here is the *selection
-  and arrangement* of the collection, the descriptions as written, and the
-  editorial judgments behind the categories and tags.
-- **Links point outward.** Each entry describes and links to a third-party site.
-  Nothing in this license grants rights to that site's content.
-- **Commercial use** means anything intended for or directed toward commercial
-  advantage or monetary compensation. If you want to use the directory
-  commercially, ask first; permission is likely to be cheap and easy.
-  picks.favored4z @ icloud . com
+For future submissions, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Contributing
-
-If you submit a resource, a correction, or a revised description, you agree that
-your contribution is licensed under the terms above. Details are in
-[CONTRIBUTING.md](CONTRIBUTING.md).
+For commercial licensing questions, contact **picks.favored4z @ icloud . com**.
