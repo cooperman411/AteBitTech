@@ -266,6 +266,29 @@ def check_database(
         report.ok("database contains no duplicate Name/URL pairs")
 
 
+    # Validate approved taxonomy labels and primary URL syntax.
+    from urllib.parse import urlsplit
+    taxonomy = json.loads((ROOT / "data/taxonomy.json").read_text(encoding="utf-8"))
+    taxonomy_errors: list[str] = []
+    for entry in entries:
+        for field, key in (("Category", "categories"), ("Brands", "brands"), ("Language", "languages")):
+            values = [part.strip() for part in str(entry.get(field, "")).split(",")]
+            if (not all(values) or len(values) != len(set(values))
+                    or any(value not in taxonomy[key] for value in values)):
+                taxonomy_errors.append(f"{entry.get('ID', entry.get('Name'))}: invalid {field}")
+        url = str(entry.get("URL", ""))
+        parts = urlsplit(url)
+        if (parts.scheme not in ("http", "https") or not parts.netloc
+                or any(char.isspace() for char in url) or "<" in url or ">" in url):
+            taxonomy_errors.append(f"{entry.get('ID', entry.get('Name'))}: malformed primary URL")
+    if taxonomy_errors:
+        report.error(f"{len(taxonomy_errors)} taxonomy or primary URL violations")
+        for detail in taxonomy_errors[:10]:
+            print(f"      {detail}")
+    else:
+        report.ok("all directory labels and primary URLs match taxonomy constraints")
+
+
 def check_main_static_content(
     report: Report, source: str, entries: list[dict[str, Any]]
 ) -> None:

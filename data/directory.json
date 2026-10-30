@@ -128,7 +128,7 @@
   {
     "Name": "A1K.org",
     "URL": "https://www.a1k.org/",
-    "Description": "Deutsche Amiga- und Phoenix-Community mit Hardware-Entwicklerforum, PCB-Explorer, Kickstart-Archiv und Fanshop. Langjahriges Zentrum der deutschen Amiga-Szene.",
+    "Description": "Deutschsprachige Amiga- und Phoenix-Community mit Diskussionen über Hardware, Entwicklung und Betriebssysteme. Die Website bietet außerdem Links zu Softwarearchiven, Projekten und einem Fanshop. German-language Amiga and Phoenix community discussing hardware, development and operating systems. The site links to software archives, projects and a fan shop.",
     "Category": "Communities & Forums",
     "Brands": "Amiga",
     "Language": "German",
@@ -209,9 +209,9 @@
   {
     "Name": "Adrian Black / Adrian's Digital Basement (YouTube)",
     "URL": "https://www.youtube.com/@adriansdigitalbasement",
-    "Description": "Adrian Black / Adrian's Digital Basement Adrian Black from Adrian's Digital Basement I'll bring myself, Rammy and a few fun machines that have been featured ...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Apple, Nintendo",
+    "Description": "Adrian Black's video channel documents repairs, restoration and testing of vintage computers. Episodes investigate hardware faults, upgrades and troubleshooting across different machines.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "adrian-black-adrians-digital-basement-youtube"
   },
@@ -308,8 +308,8 @@
   {
     "Name": "Amiberry",
     "URL": "https://amiberry.com/",
-    "Description": "Optimized Amiga emulator for Raspberry Pi and ARM boards",
-    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Description": "Amiga emulator based on the WinUAE core, available for Linux, macOS, Windows and other systems. Supports ARM and desktop hardware, including Raspberry Pi computers.",
+    "Category": "Emulation & FPGA",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "amiberry"
@@ -460,10 +460,10 @@
   },
   {
     "Name": "Analytics Lounge, NFP",
-    "URL": "https://www.analyticslounge.org",
-    "Description": "Analytics Lounge, NFP Electron Microscopy! Born in 1984 and restored slowly over many years this Amray Scanning Electron Microscope is a delightful mix of em...",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Acorn/BBC, Atari",
+    "URL": "https://analyticslounge.org/",
+    "Description": "Nonprofit community organization supporting the reuse and repair of scientific instruments and older electronic equipment. Its resources cover instrument restoration, controls and community science projects.",
+    "Category": "Communities & Forums, Repair & Services",
+    "Brands": "Various",
     "Language": "English",
     "ID": "analytics-lounge-nfp"
   },
@@ -496,9 +496,9 @@
   },
   {
     "Name": "ANTIC – The Atari 8‑Bit Podcast",
-    "URL": "https://www.google.com/search?q=ANTIC+The+Atari+8-Bit+Podcast",
-    "Description": "Interviews with Atari developers.",
-    "Category": "Hardware & Parts, Podcasts & Audio",
+    "URL": "https://ataripodcast.libsyn.com/",
+    "Description": "Podcast devoted to Atari 8-bit computers, with news, software discussions and interviews with developers, collectors and people involved in the platform's history. The website archives episodes.",
+    "Category": "Podcasts & Audio",
     "Brands": "Atari",
     "Language": "English",
     "ID": "antic-the-atari-8bit-podcast"
@@ -623,8 +623,8 @@
   {
     "Name": "AROS",
     "URL": "https://aros.sourceforge.io/",
-    "Description": "Open-source AmigaOS reimplementation",
-    "Category": "Hardware & Parts",
+    "Description": "Open-source desktop operating system designed for compatibility with AmigaOS applications at the API level. The project publishes downloads, documentation and developer resources for supported platforms.",
+    "Category": "Operating Systems",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "aros"
@@ -1028,10 +1028,10 @@
   {
     "Name": "Brusaporto Retrocomputing",
     "URL": "https://www.brusaretro.it/",
-    "Description": "Italian retrocomputing gathering with open exhibits of historic computers, consoles, and video games. Raduno italiano con esposizione libera di computer, console e videogiochi d'epoca.",
+    "Description": "Raduno di retrocomputing a Brusaporto, vicino a Bergamo, con esposizioni di computer storici, console, videogiochi e materiali d'epoca. Il sito offre informazioni per visitatori ed espositori. Retrocomputing gathering in Brusaporto, near Bergamo, with vintage computers, consoles, games and related materials on display. The site has information for visitors and exhibitors.",
     "Category": "Events & Shows",
-    "Brands": "Commodore, Atari, Apple, Amiga, Various",
-    "Language": "Italian, English",
+    "Brands": "Various",
+    "Language": "Italian",
     "ID": "brusaporto-retrocomputing"
   },
   {
@@ -1109,8 +1109,8 @@
   {
     "Name": "C64 Wiki (DE)",
     "URL": "https://www.c64-wiki.de/",
-    "Description": "Deutschsprachiges Commodore-64-Lexikon mit technischen Referenzen, Programmieranleitungen und Hardware-Dokumentation. Das umfangreichste C64-Nachschlagewerk im deutschen Sprachraum.",
-    "Category": "Documentation & Wikis, Repair & Services",
+    "Description": "Deutschsprachiges Wiki zum Commodore 64 und verwandten Systemen mit Artikeln über Hardware, Software, Programmierung und Spiele. Die Seiten bieten technische Erklärungen und praktische Anleitungen. German-language Commodore 64 wiki covering hardware, software, programming and games. Its articles provide technical explanations, reference material and practical guides.",
+    "Category": "Documentation & Wikis",
     "Brands": "Commodore",
     "Language": "German",
     "ID": "c64-wiki-de"
@@ -1163,8 +1163,8 @@
   {
     "Name": "C64.emu",
     "URL": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu",
-    "Description": "C64 emulator for Android based on VICE",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Android Commodore 64 emulator based on VICE, with on-screen controls and support for loading classic software. The Google Play listing has installation and compatibility information.",
+    "Category": "Emulation & FPGA",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "c64-emu"
@@ -1172,8 +1172,8 @@
   {
     "Name": "C64OS",
     "URL": "https://c64os.com/",
-    "Description": "Modern OS for Commodore 64, available with SD card",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Modern operating environment for the Commodore 64, with applications, utilities and a graphical interface. The site provides software downloads, user guides and compatible hardware information.",
+    "Category": "Operating Systems",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "c64os"
@@ -1423,9 +1423,9 @@
   },
   {
     "Name": "COCOMAN/Fairly Amused",
-    "URL": "https://cocoman.biz & fairlyamused.com",
-    "Description": "COCOMAN/Fairly Amused COCOMAN's demos and sales Tandy CoCo goodies , Apple IIgs video cables, and other retro goodies!",
-    "Category": "Hardware & Parts",
+    "URL": "https://cocoman.onlineweb.shop/",
+    "Description": "Shop for Tandy/Radio Shack Color Computer and MC-10 cables, switches and accessories, plus Apple IIgs video adapters. The catalog includes specialty connectors and display cables.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple, Tandy/Radio Shack",
     "Language": "English",
     "ID": "cocoman-fairly-amused"
@@ -1792,10 +1792,10 @@
   },
   {
     "Name": "Dave’s Retro Video Lab (YouTube)",
-    "URL": "https://youtube.com/@davesretrovideolab2709?si=e_merkzuv0gxgwex",
-    "Description": "Dave’s Retro Video Lab Sony F65 Digital Cinema Camera Production Workflow Join Dave as he breaks down the full production workflow of the Sony F65 digital ci...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Apple",
+    "URL": "https://www.youtube.com/@davesretrovideolab2709",
+    "Description": "Video channel about vintage camcorders, VCRs and other video equipment from the 1980s through the early 2000s. Episodes examine the technology and demonstrate how it works.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "daves-retro-video-lab-youtube"
   },
@@ -2153,10 +2153,10 @@
   {
     "Name": "Firenze Vintage Bit",
     "URL": "https://www.retrocomputer.org/",
-    "Description": "Free Italian retrocomputing event with historic computers, consoles, exhibitors, talks, and workshops. Manifestazione italiana gratuita di retrocomputing con computer, console, espositori, conferenze e workshop.",
+    "Description": "Manifestazione italiana di retrocomputing con esposizioni di computer e console storici, incontri e attività per appassionati. Il sito raccoglie informazioni sulle edizioni e un archivio degli eventi passati. Italian retrocomputing event featuring historic computers, consoles and community activities. Its website documents Firenze Vintage Bit editions and previous events.",
     "Category": "Events & Shows",
-    "Brands": "MSX, Commodore, Atari, Apple, Various",
-    "Language": "Italian, English",
+    "Brands": "Various",
+    "Language": "Italian",
     "ID": "firenze-vintage-bit"
   },
   {
@@ -2450,8 +2450,8 @@
   {
     "Name": "Haiku OS",
     "URL": "https://www.haiku-os.org/",
-    "Description": "Open-source recreation of BeOS",
-    "Category": "Hardware & Parts",
+    "Description": "Open-source desktop operating system inspired by BeOS, with a unified interface and a focus on personal computing. The project publishes installation images, documentation and software development resources.",
+    "Category": "Operating Systems",
     "Brands": "Be",
     "Language": "English",
     "ID": "haiku-os"
@@ -2548,10 +2548,10 @@
   },
   {
     "Name": "HomeCon",
-    "URL": "https://forum.homecon.org/",
-    "Description": "German retro-computing meeting community with event information, registration, archives, and discussion. Deutsche Retro-Computer-Treffen-Community mit Veranstaltungsinformationen, Anmeldung, Archiven und Diskussionen.",
-    "Category": "Events & Shows, Communities & Forums",
-    "Brands": "Amiga, Atari, Commodore, PC, Various",
+    "URL": "https://www.homecon.org/",
+    "Description": "Deutsches Retrocomputing-Treffen im Rhein-Main-Gebiet für Fans klassischer Heimcomputer und Videospiele. Die Website informiert über Termine, Veranstaltungsorte und Neuigkeiten. German retrocomputing gatherings in the Rhine-Main region for home-computer and video-game enthusiasts. The website lists dates, venues and event updates.",
+    "Category": "Events & Shows",
+    "Brands": "Various",
     "Language": "German",
     "ID": "homecon"
   },
@@ -2728,10 +2728,10 @@
   },
   {
     "Name": "Inverse Phase / Bloop Museum",
-    "URL": "https://inversephase.bandcamp.com\nhttps://bloopmuseum.com",
-    "Description": "Inverse Phase / Bloop Museum Chiptunes, Museums, and other weird stuff, oh my? It turns out Inverse Phase does chiptunes but also runs a thing called Bloop M...",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Atari, Nintendo",
+    "URL": "https://inversephase.bandcamp.com/",
+    "Description": "Inverse Phase produces chiptune music and game-inspired soundtracks, with albums available on Bandcamp. The artist also runs Bloop, a museum project focused on electronic entertainment.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Various",
     "Language": "English",
     "ID": "inverse-phase-bloop-museum"
   },
@@ -2828,9 +2828,9 @@
   {
     "Name": "Jim Drew",
     "URL": "https://www.cbmstuff.com",
-    "Description": "Jim Drew Commodore Products I will be showing the latest Commodore products - including those that have never been seen (yet). VCFMW will be their debut",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Atari, Commodore",
+    "Description": "CBMStuff sells hardware and accessories for vintage Commodore systems, including WiModem devices, disk-copying equipment and replacement connectors. Product manuals and downloads are also available.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "jim-drew"
   },
@@ -2981,7 +2981,7 @@
   {
     "Name": "Komoda & Amiga plus",
     "URL": "https://ka-plus.pl/",
-    "Description": "English and Polish magazine covering Commodore and Amiga software, hardware, games, interviews, and tutorials. Angielski i polski magazyn o oprogramowaniu, sprzęcie, grach, wywiadach i poradnikach dla komputerów Commodore i Amiga.",
+    "Description": "Commodore and Amiga magazine published in Polish and English, with articles about games, hardware, programming and new releases. The website includes an issue index and store. Polsko- i anglojęzyczny magazyn o komputerach Commodore i Amiga z artykułami o grach, sprzęcie, programowaniu i nowych wydaniach. Na stronie znajduje się spis numerów oraz sklep.",
     "Category": "News & Blogs, Vendors & Stores",
     "Brands": "Commodore, Amiga",
     "Language": "English, Polish",
@@ -3206,9 +3206,9 @@
   {
     "Name": "Macintosh Librarian",
     "URL": "https://www.maclibrarian.com",
-    "Description": "Macintosh Librarian Macintosh Librarian's Retro Collection Come to Maccy and Kate's table to check out the first Macintosh, rare accessories, and play some O...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple, Atari",
+    "Description": "Classic Macintosh video channel hosted by Ms. Fox and Maccy, covering games, hardware, upgrades and repairs. The website collects videos and links to other vintage Mac resources.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "macintosh-librarian"
   },
@@ -3539,8 +3539,8 @@
   {
     "Name": "MorphOS",
     "URL": "https://www.morphos-team.net/",
-    "Description": "Amiga-compatible OS for PowerPC",
-    "Category": "Hardware & Parts",
+    "Description": "Desktop operating system with Amiga heritage for supported PowerPC computers. The website provides system downloads, feature information, developer resources and user support.",
+    "Category": "Operating Systems",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "morphos"
@@ -3737,8 +3737,8 @@
   {
     "Name": "NetBSD/amiga",
     "URL": "https://wiki.netbsd.org/ports/amiga/",
-    "Description": "NetBSD port for Amiga systems",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "Documentation for the NetBSD operating system port to supported Amiga and DraCo computers. The page covers hardware requirements, installation, development status and related resources.",
+    "Category": "Operating Systems, Documentation & Wikis",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "netbsd-amiga"
@@ -4079,9 +4079,9 @@
   {
     "Name": "PiSCSI / RaSCSI",
     "URL": "https://piscsi.com/",
-    "Description": "Raspberry Pi-based SCSI device emulator kits for classic Macintosh and SCSI systems",
-    "Category": "Communities & Forums, Emulation & FPGA, Hardware & Parts, Internet & Networking, Repair & Services, Web Tools & Browsers",
-    "Brands": "Apple",
+    "Description": "Raspberry Pi-based SCSI device emulator for vintage computers, replacing hard disks and other SCSI peripherals with virtual devices. The project wiki provides hardware, installation and configuration guides.",
+    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Brands": "Various",
     "Language": "English",
     "ID": "piscsi-rascsi"
   },
@@ -5510,10 +5510,10 @@
   {
     "Name": "Speccy.pl",
     "URL": "https://speccy.pl/",
-    "Description": "Polish ZX Spectrum forum",
+    "Description": "Polskie forum użytkowników ZX Spectrum poświęcone sprzętowi, oprogramowaniu, programowaniu i spotkaniom społeczności. Uczestnicy dzielą się projektami, poradami oraz informacjami o wydarzeniach. Polish-language ZX Spectrum forum covering hardware, software, programming and community gatherings. Members share projects, technical advice and event information.",
     "Category": "Communities & Forums",
     "Brands": "Sinclair/ZX",
-    "Language": "English",
+    "Language": "Polish",
     "ID": "speccy-pl"
   },
   {
@@ -6274,10 +6274,10 @@
   },
   {
     "Name": "VCF Latam",
-    "URL": "https://vcf.espaciotec.com.ar/?lang=en",
-    "Description": "Latin American vintage-computer festival in Bahía Blanca, Argentina. Festival latinoamericano de computación vintage en Bahía Blanca, Argentina. Festival latino-americano de computadores antigos em Bahía Blanca, Argentina.",
+    "URL": "https://vcf.espaciotec.com.ar/?lang=es",
+    "Description": "Festival latinoamericano de computación clásica organizado por Espacio TEC en Bahía Blanca, Argentina. Reúne exhibiciones de equipos históricos, charlas, talleres y proyectos de la comunidad. Latin American vintage-computing festival organized by Espacio TEC in Bahía Blanca, Argentina. Features historic computer exhibits, talks, workshops and community projects.",
     "Category": "Events & Shows",
-    "Brands": "Apple, Atari, Commodore, Sinclair/ZX, MSX, Various",
+    "Brands": "Various",
     "Language": "Spanish, English, Portuguese",
     "ID": "vcf-latam"
   },
@@ -6311,9 +6311,9 @@
   {
     "Name": "VCF Solothurn",
     "URL": "https://vintagecomputerfestival.ch/en/home-en/",
-    "Description": "Swiss vintage-computer festival with exhibits, talks, workshops, a flea market, and access to a museum exhibition. Schweizer Vintage-Computer-Festival mit Ausstellungen, Vorträgen, Workshops, einem Flohmarkt und Zugang zu einer Museumsausstellung.",
+    "Description": "Swiss vintage-computing festival in the Solothurn area with exhibitions, talks, workshops, a flea market and access to a museum collection. The website publishes visitor details and program information. Schweizer Vintage-Computer-Festival in der Region Solothurn mit Ausstellungen, Vorträgen, Workshops, Flohmarkt und Zugang zu einer Museumssammlung. Die Website informiert über Programm und Besuch.",
     "Category": "Events & Shows",
-    "Brands": "Apple, Commodore, Atari, Amiga, Various",
+    "Brands": "Various",
     "Language": "English, German, French, Italian",
     "ID": "vcf-solothurn"
   },
