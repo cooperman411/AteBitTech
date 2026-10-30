@@ -945,6 +945,15 @@
     "ID": "bitsavers-org"
   },
   {
+    "Name": "Bloop Museum",
+    "URL": "https://www.linkedin.com/company/bloopmuseum",
+    "Description": "Nonprofit electronic entertainment museum in Penn Hills, Pennsylvania, displaying vintage computers, video games and related technology. The museum shares exhibit news, volunteer opportunities and visitor information on its official LinkedIn page.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "bloop-museum"
+  },
+  {
     "Name": "Blue Sky Rangers",
     "URL": "https://www.blueskyrangers.com",
     "Description": "Intellivision history and developer archive maintained by original team.",
@@ -2727,10 +2736,10 @@
     "ID": "internet-archive-youtube"
   },
   {
-    "Name": "Inverse Phase / Bloop Museum",
+    "Name": "Inverse Phase",
     "URL": "https://inversephase.bandcamp.com/",
-    "Description": "Inverse Phase produces chiptune music and game-inspired soundtracks, with albums available on Bandcamp. The artist also runs Bloop, a museum project focused on electronic entertainment.",
-    "Category": "Museums & Exhibits",
+    "Description": "Chiptune musician and video-game composer whose Bandcamp catalog includes original tracks, retro game-inspired remixes and soundtracks. The artist also runs the Bloop Museum in Pennsylvania.",
+    "Category": "Podcasts & Audio",
     "Brands": "Various",
     "Language": "English",
     "ID": "inverse-phase-bloop-museum"

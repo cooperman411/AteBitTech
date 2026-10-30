@@ -1,8 +1,8 @@
 # AteBit Tech — Retro & Vintage Computing Database
-> Hand-curated directory of 762 retro and vintage computing resources — repair services, hardware vendors, YouTube channels, community forums, and more. Amiga to ZX Spectrum and beyond.
+> Hand-curated directory of 763 retro and vintage computing resources — repair services, hardware vendors, YouTube channels, community forums, and more. Amiga to ZX Spectrum and beyond.
 
 ## Core Pages
-- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all 762 entries
+- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all 763 entries
 - [Price Guide](https://atebit.tech/store/): search eBay sold listings, compare prices
 - [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers
 - [About](https://atebit.tech/about.html): project background and contact

@@ -13,7 +13,7 @@ The allowed category, brand and language labels are in [data/taxonomy.json](data
 | Museums & Exhibits | Curated historical museums and exhibitions | Someone displayed one computer |
 | News & Blogs | Editorial news, magazines and blogs | A seller posts occasional news |
 | Operating Systems | Operating systems and system software | A product is an emulator |
-| Podcasts & Audio | Podcasts and audio-first computing shows | A video covers vintage equipment |
+| Podcasts & Audio | Podcasts, audio-first computing shows and chiptune music projects | A video covers vintage equipment |
 | Preservation & Archives | Preserved historical collections and media | A site offers one download |
 | Repair & Services | Repair providers and dedicated repair resources | A video demonstrates a repair |
 | Software & Games | Games, programs and software libraries | It is a complete operating system |
