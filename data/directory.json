@@ -38,8 +38,8 @@
   {
     "Name": "8 Bit Stuff",
     "URL": "https://www.8bitstuff.com/",
-    "Description": "Retro gaming handheld vendor offering pre-loaded emulation devices including Apple II emulator handhelds.",
-    "Category": "Vendors & Stores",
+    "Description": "Shop for custom-made and original accessories for vintage computers, including handheld devices, adapters, peripherals and 3D-printed gadgets. Products include an Apple II emulation handheld and replacement power supplies for Amiga and Macintosh systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "8-bit-stuff"
@@ -56,8 +56,8 @@
   {
     "Name": "86Box",
     "URL": "https://86box.net/",
-    "Description": "Community Discord server for 86Box emulator support, development, and discussion.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "Low-level x86 emulator for running operating systems and software designed for IBM PC systems and compatibles. It models machines from the original 1981 IBM PC through Pentium-era systems and supports a range of peripherals.",
+    "Category": "Emulation & FPGA",
     "Brands": "PC",
     "Language": "English",
     "ID": "86box"
@@ -92,9 +92,9 @@
   {
     "Name": "8bithe.art",
     "URL": "https://8bithe.art",
-    "Description": "Showcases Commodore and retro computer mods, builds, and art projects.",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
-    "Brands": "Commodore",
+    "Description": "Personal retro-computing blog documenting vintage computers, projects and festival visits. Posts include a Commodore 128 collection, an Apple II file-server project and event reports.",
+    "Category": "News & Blogs",
+    "Brands": "Commodore, Apple",
     "Language": "English",
     "ID": "8bithe-art"
   },
@@ -110,8 +110,8 @@
   {
     "Name": "9800 Guide",
     "URL": "https://9800guide.uwu.ai/",
-    "Description": "Guide to NEC PC-9800 series computers, including hardware specifications and emulation setup.",
-    "Category": "Hardware & Parts",
+    "Description": "English-language introductory guide to NEC PC-9800 computers, covering common misconceptions, choosing a system, MS-DOS basics and additional resources for readers new to the platform.",
+    "Category": "Documentation & Wikis",
     "Brands": "PC-98",
     "Language": "English",
     "ID": "9800-guide"
@@ -137,8 +137,8 @@
   {
     "Name": "A2 Retro Systems",
     "URL": "https://a2retrosystems.com/",
-    "Description": "Apple II hardware shop focused on Uthernet II network cards, expansion boards, software downloads, manuals, and setup help.",
-    "Category": "Internet & Networking, Repair & Services, Vendors & Stores, Web Tools & Browsers",
+    "Description": "Apple II networking and expansion hardware shop featuring Uthernet cards, manuals, application downloads and setup guidance for developers and enthusiasts.",
+    "Category": "Hardware & Parts, Internet & Networking, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "a2-retro-systems"
@@ -164,8 +164,8 @@
   {
     "Name": "Acorn Electron World",
     "URL": "https://acornelectron.co.uk/",
-    "Description": "Acorn Electron-focused forum and resource site",
-    "Category": "Communities & Forums",
+    "Description": "Acorn Electron resource site with a searchable library of games and programs, FAQs and collecting guides. It preserves software listings and instructions for classic Electron titles.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Acorn/BBC",
     "Language": "English",
     "ID": "acorn-electron-world"
@@ -182,8 +182,8 @@
   {
     "Name": "A-Cube Systems",
     "URL": "https://www.acube-systems.biz/",
-    "Description": "PowerPC-based AmigaOS compatible motherboards",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "ACube Systems sells PowerPC motherboards and related software for Amiga-compatible computers, including Sam460 systems. Its website provides product updates, downloads and a shop.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "a-cube-systems"
@@ -192,7 +192,7 @@
     "Name": "ADAM Archive",
     "URL": "https://www.adamarchive.org/",
     "Description": "Comprehensive archive of Coleco ADAM software, documentation, and hardware information for the ADAM computer system.",
-    "Category": "Software & Games",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Coleco",
     "Language": "English",
     "ID": "adam-archive"
@@ -218,9 +218,9 @@
   {
     "Name": "Adwater and Stir",
     "URL": "https://adwaterandstir.com",
-    "Description": "Adwater and Stir Historic Computer Kits We create kits to build replicas of historic computers, including the Altar 8800 and Kenbak-1. Also see a demonstrati...",
+    "Description": "Builder and seller of kit recreations of historic computers, including Altair 8800, Altair 680 and Kenbak-1 systems. The site provides build, software and operation guides, plus parts and accessories.",
     "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Atari",
+    "Brands": "Various",
     "Language": "English",
     "ID": "adwater-and-stir"
   },
