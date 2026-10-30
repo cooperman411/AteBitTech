@@ -245,16 +245,16 @@
   {
     "Name": "Alinea Computer",
     "URL": "https://www.amiga-shop.net/",
-    "Description": "German Amiga/Commodore retailer",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "Deutschsprachiger Amiga- und Retrocomputer-Shop mit klassischer und neuer Amiga-Hardware, Ersatzteilen, Betriebssystemen, Anwendungen, Spielen und Magazinen. Der Shop führt auch Commodore- und Retrocomputer-Fanartikel. German-language Amiga and retro-computer store offering classic and modern Amiga hardware, replacement parts, operating systems, applications, games and magazines, plus Commodore and retro-computing merchandise.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Commodore",
-    "Language": "English",
+    "Language": "German",
     "ID": "alinea-computer"
   },
   {
     "Name": "Altair 8800 Emulator",
     "URL": "https://github.com/gloveboxes/Altair-8800-Emulator",
-    "Description": "Open-source Altair 8800 emulator with front panel simulation, supporting Altair BASIC and CP/M.",
+    "Description": "Open-source Altair 8800 emulator for POSIX-compatible systems, including Linux, macOS and Raspberry Pi. It includes a virtual front panel for learning Intel 8080 assembly, BASIC and computer fundamentals.",
     "Category": "Emulation & FPGA",
     "Brands": "Altair",
     "Language": "English",
@@ -272,9 +272,9 @@
   {
     "Name": "AmericanRetro.Shop",
     "URL": "https://americanretro.shop/",
-    "Description": "AmericanRetro.Shop Home of Retro Chip Tester Professional - The Swiss Army Knife for Retroist from Germany Proudly Made In USA! Retro Chip Tester Pro, The Me...",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Atari, Commodore, Sinclair/ZX",
+    "Description": "Retro-computing store featuring the Retro Chip Tester Professional, replacement products for Commodore, Amiga and ZX Spectrum systems, and custom boards and accessories. Its site also publishes product updates and event reports.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amiga, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "americanretro-shop"
   },
@@ -326,8 +326,8 @@
   {
     "Name": "Amiga Forever (Cloanto)",
     "URL": "https://www.amigaforever.com/",
-    "Description": "Official Amiga emulation suite, licenses, ROMs",
-    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Description": "Cloanto’s official Amiga and AmigaOS emulation and preservation suite combines software with ROM and Workbench environments, games, demos and historical content. The site describes editions, features, registration and updates.",
+    "Category": "Emulation & FPGA, Software & Games",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "amiga-forever-cloanto"
@@ -353,9 +353,9 @@
   {
     "Name": "Amiga of Rochester",
     "URL": "https://amigaofrochester.com",
-    "Description": "Amiga of Rochester Amiga and Macintosh Upgrades. On site soldering services Amiga and Macintosh Upgrades. On site soldering services",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Amiga, Apple, Atari, Commodore",
+    "Description": "Vintage-computer repair shop and retailer in Rochester, New York, serving Amiga and Macintosh systems. The site documents repair work and links to a store selling upgrades for both platforms.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Amiga, Apple",
     "Language": "English",
     "ID": "amiga-of-rochester"
   },
@@ -371,10 +371,10 @@
   {
     "Name": "Amiga Resource (resource.cx)",
     "URL": "https://amiga.resource.cx/",
-    "Description": "Amiga hardware and software database",
-    "Category": "Software & Games",
+    "Description": "Searchable Amiga hardware database covering classic models, expansion cards, manufacturers and benchmarks. Entries provide specifications, board photos and related installation disks; the site is available in English and German.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Amiga",
-    "Language": "English",
+    "Language": "English, German",
     "ID": "amiga-resource-resource-cx"
   },
   {
@@ -389,8 +389,8 @@
   {
     "Name": "Amiga.org",
     "URL": "https://www.amiga.org/",
-    "Description": "Amiga discussion forum covering hardware, software, repairs, and operating systems. Search by model, symptom, or software title before starting a thread.",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Amiga.org links its discussion forums with Amiga developer and wiki resources, plus a community store. The site provides a place to discuss Amiga systems and consult related technical information.",
+    "Category": "Communities & Forums, Documentation & Wikis",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "amiga-org"
@@ -407,8 +407,8 @@
   {
     "Name": "AmigaStore.eu",
     "URL": "https://amigastore.eu/",
-    "Description": "Gotek drives, flash storage solutions for Amiga, Atari, CPC",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "Online Amiga and retro-computer shop offering Amiga systems, software and accessories, with an “Other systems” section for additional vintage platforms. The catalog and news cover storage, adapters, peripherals and add-ons.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Amstrad, Atari",
     "Language": "English",
     "ID": "amigastore-eu"
@@ -443,8 +443,8 @@
   {
     "Name": "Amstrad NoRecess",
     "URL": "https://norecess.cpcscene.net/",
-    "Description": "Amstrad CPC hardware add-ons, demos, software",
-    "Category": "Repair & Services, Software & Games",
+    "Description": "Amstrad CPC and GX-4000 homebrew site publishing games, demos, productions and technical articles. It provides downloadable releases and source code for selected projects.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Amstrad",
     "Language": "English",
     "ID": "amstrad-norecess"
