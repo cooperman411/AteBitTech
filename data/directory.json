@@ -6311,7 +6311,7 @@
   {
     "Name": "VCF SoCal",
     "URL": "https://www.vcfsocal.com/",
-    "Description": "Southern California vintage-computing festival with exhibits, vendors, talks, and hands-on activities. Explore classic computers, consoles, software, repairs, and collecting through displays and demonstrations. The event also includes consignment opportunities. Check the site for current schedules, exhibitors, vendors, and event updates.",
+    "Description": "Annual Southern California vintage-computing festival at the OC Fair & Event Center, with exhibits, talks, and hands-on activities. The next festival is scheduled for February 20–21, 2027.",
     "Category": "Events & Shows",
     "Brands": "DEC, Osbourne, Tandy/Radio Shack, TI, Sinclair/ZX, Various",
     "Language": "English",
@@ -6367,7 +6367,7 @@
     "URL": "https://vcfe.org/E/",
     "Description": "Munich vintage-computer festival with exhibits, talks, and historic machines. Münchner Vintage-Computer-Festival mit Ausstellungen, Vorträgen und historischen Maschinen.",
     "Category": "Events & Shows",
-    "Brands": "Acorn/BBC, Amiga, Apple, Commodore, Sinclair/ZX, Various",
+    "Brands": "Various",
     "Language": "English, German",
     "ID": "vcfe-vintage-computer-festival-europe"
   },
@@ -6393,7 +6393,7 @@
     "Name": "Vectrex",
     "URL": "https://vectrex.com/",
     "Description": "Official site for the Vectrex vector display console with history, games, and the new Vectrex Mini.",
-    "Category": "Emulation & FPGA",
+    "Category": "Hardware & Parts",
     "Brands": "Vectrex",
     "Language": "English",
     "ID": "vectrex"
@@ -6456,7 +6456,7 @@
     "Name": "VICE",
     "URL": "https://vice-emu.sourceforge.io/",
     "Description": "Versatile Commodore Emulator (C64, C128, VIC20, PET, Plus/4)",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
+    "Category": "Emulation & FPGA",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "vice"
@@ -6464,8 +6464,8 @@
   {
     "Name": "Vinpaq",
     "URL": "https://vinpaq.com/",
-    "Description": "Vintage Compaq Portable resource with repair guides, parts information, and technical documentation.",
-    "Category": "Hardware & Parts",
+    "Description": "Vintage Compaq collection site documenting portables, laptops, and handheld devices, with a WhatsApp community for Compaq discussion and help.",
+    "Category": "Communities & Forums, Preservation & Archives",
     "Brands": "Compaq",
     "Language": "English",
     "ID": "vinpaq"
@@ -6473,8 +6473,8 @@
   {
     "Name": "Vintage Apple Computer of Illinois",
     "URL": "https://vintageapplecomputers.com/",
-    "Description": "Vintage Apple computer restoration and sales, offering working systems, parts, and repairs.",
-    "Category": "Vendors & Stores",
+    "Description": "Online shop for professionally restored vintage Apple computers, peripherals, software, and replacement parts, with select non-Apple items.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "vintage-apple-computer-of-illinois"
@@ -6482,8 +6482,8 @@
   {
     "Name": "Vintage Computer Federation Museum @ InfoAge",
     "URL": "https://vcfed.org/vcf-museum/",
-    "Description": "Located in Wall, NJ, USA. Focus on Computers from 1960s–1990s. VCF museum space within InfoAge campus.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Museum at InfoAge Science Center in Wall, New Jersey, displaying the Vintage Computer Federation's curated collection of historic computing artifacts.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "vintage-computer-federation-museum-infoage"
