@@ -2360,7 +2360,7 @@
   {
     "Name": "GemTos Convention",
     "URL": "https://gemtos.jimdofree.com/",
-    "Description": "French Atari convention with competitions, exhibits, and community activities. Convention Atari en France avec concours, expositions et activités communautaires.",
+    "Description": "L’association Manine organise la convention Atari GemTos en France, avec expositions de machines, démonstrations, conférences, compétitions, ateliers de programmation et de réparation, et concerts chiptune. English: Association Manine’s Atari GemTos convention in France features vintage-machine exhibits and demonstrations, talks, competitions, programming and repair workshops, and chiptune concerts.",
     "Category": "Events & Shows",
     "Brands": "Atari",
     "Language": "French, English",
@@ -2369,17 +2369,17 @@
   {
     "Name": "Generation Amiga",
     "URL": "https://www.generationamiga.com/",
-    "Description": "Amiga and retro-gaming news covering releases, hardware, emulation, and projects across several systems.",
-    "Category": "News & Blogs, Software & Games",
-    "Brands": "Amiga, Commodore, Sega, Nintendo, Sony, Various",
+    "Description": "Retro-gaming and Amiga news site covering new releases, ports, hardware, software and projects across Amiga and other game platforms.",
+    "Category": "News & Blogs",
+    "Brands": "Amiga, Commodore, Various",
     "Language": "English",
     "ID": "generation-amiga"
   },
   {
     "Name": "Generation-MSX",
     "URL": "https://www.generation-msx.nl/",
-    "Description": "MSX game database and downloads",
-    "Category": "Software & Games",
+    "Description": "Reference database for MSX software, hardware, publications and companies, with catalog records, release details, credits, images, user ratings and project updates.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "MSX",
     "Language": "English",
     "ID": "generation-msx"
@@ -2396,8 +2396,8 @@
   {
     "Name": "GEOS — Lyon Labs",
     "URL": "https://lyonlabs.lillianskinner.ca/commodore/onrequest/geos/index.html",
-    "Description": "Information and downloads for GEOS on the Commodore 64 including applications and utilities.",
-    "Category": "Software & Games",
+    "Description": "Unofficial mirror of LyonLabs GEOS resources for the Commodore 64, including software, applications, programming tools, usage tips and a downloadable GEOS font catalog.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "geos-lyon-labs"
@@ -2414,8 +2414,8 @@
   {
     "Name": "Get Your 8-Bit On! (Aquarius+)",
     "URL": "https://aquarius.1stage.com",
-    "Description": "Vendor offering new Aquarius+ systems and refurbished original Mattel Aquarius computers.",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "Developer and support hub for Mattel Aquarius computer systems, including modern Aquarius+ models and cartridges sold through a linked eBay store.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "get-your-8-bit-on"
@@ -2423,8 +2423,8 @@
   {
     "Name": "GOG.com (Good Old Games)",
     "URL": "https://www.gog.com/",
-    "Description": "DRM-free rereleases of DOS, Windows, and classic PC games",
-    "Category": "Hardware & Parts, Vendors & Stores",
+    "Description": "Digital storefront for DRM-free PC games, including classic DOS and Windows releases alongside newer titles.",
+    "Category": "Software & Games, Vendors & Stores",
     "Brands": "PC",
     "Language": "English",
     "ID": "gog-com-good-old-games"
@@ -2432,8 +2432,8 @@
   {
     "Name": "gotBASIC.com",
     "URL": "https://gotbasic.com",
-    "Description": "Resource dedicated to BASIC programming language systems and retro computing projects.",
-    "Category": "Hardware & Parts",
+    "Description": "Community resource and index for the BASIC programming language, with dialect and platform directories, historical references, project links and discussion channels.",
+    "Category": "Communities & Forums, Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "gotbasic-com"
@@ -2441,8 +2441,8 @@
   {
     "Name": "Gotek FlashFloppy",
     "URL": "https://github.com/keirf/FlashFloppy",
-    "Description": "Firmware for Gotek drives to emulate floppy disks",
-    "Category": "Hardware & Parts",
+    "Description": "Open-source firmware that turns Gotek hardware into a floppy-drive emulator, using disk-image files on a USB stick across supported retro computers, synthesizers and other equipment.",
+    "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
     "ID": "gotek-flashfloppy"
@@ -2450,7 +2450,7 @@
   {
     "Name": "GUI64 (WebFritzi)",
     "URL": "https://github.com/WebFritzi/GUI64",
-    "Description": "Open-source graphical user interface and program launcher for the Commodore 64.",
+    "Description": "Graphical, windowed interface and built-in file browser for the Commodore 64; when used as a cartridge, it starts the computer directly in the GUI.",
     "Category": "Software & Games",
     "Brands": "Commodore",
     "Language": "English",
@@ -2486,8 +2486,8 @@
   {
     "Name": "Hand Held Legend",
     "URL": "https://handheldlegend.com/",
-    "Description": "Game Boy modding kits, shells, replacement parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for Nintendo handheld and console modding, with display upgrades, shells, replacement parts, custom builds, controllers and installation guides.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "hand-held-legend"
@@ -2504,7 +2504,7 @@
   {
     "Name": "Hatari",
     "URL": "https://hatari.tuxfamily.org/",
-    "Description": "Atari ST/STE/TT/Falcon emulator",
+    "Description": "Open-source Atari ST, STE, TT and Falcon emulator for Linux, BSD, macOS, Windows and other SDL-supported systems, with hardware-focused emulation for games and demos.",
     "Category": "Emulation & FPGA",
     "Brands": "Atari",
     "Language": "English",
@@ -2513,7 +2513,7 @@
   {
     "Name": "HCC Commodore Club",
     "URL": "https://commodore.hcc.nl/",
-    "Description": "Nederlandse Commodore computerclub met software-archief, documentatie en ledenprojecten. Alleen Nederlandstalig.",
+    "Description": "Nederlandse Commodore-computerclub met clubdagen, nieuws, technische vragen, soldeerworkshops en ledenprojecten. English: Dutch Commodore computer club with meetups, news, technical questions, soldering workshops and member projects.",
     "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "Dutch",
@@ -2522,19 +2522,19 @@
   {
     "Name": "Heathkit Company",
     "URL": "https://shop.heathkit.com/",
-    "Description": "Vintage Heathkit manuals, kits (via collectors); new Heathkit kits",
-    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "IBM",
+    "Description": "Heathkit’s official store sells new and vintage electronics kits, replacement parts and support kits, software, publications and manuals; it also lists factory repairs for recent models.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "heathkit-company"
   },
   {
     "Name": "Heinz Nixdorf MuseumsForum (HNF)",
     "URL": "https://www.hnf.de/en/home.html",
-    "Description": "Weltgrosstes Computermuseum in Paderborn. Deckt IT-Geschichte von der Antike bis zur Gegenwart ab mit Schwerpunkt auf Konrad Zuse und fruher Rechentechnik. The world's largest computer museum, covering IT history from ancient times to the present with a focus on Konrad Zuse.",
-    "Category": "Communities & Forums, Hardware & Parts, Museums & Exhibits",
+    "Description": "Das Heinz Nixdorf MuseumsForum in Paderborn zeigt auf 6.000 m² die Geschichte der Informationstechnik, von frühen Schrift- und Rechenmaschinen bis zu Computern und Robotern. English: The museum in Paderborn presents information technology history across 6,000 m², from early writing and calculating machines to computers and robots.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
-    "Language": "German",
+    "Language": "German, English, French, Dutch",
     "ID": "heinz-nixdorf-museumsforum-hnf"
   },
   {
@@ -2549,10 +2549,10 @@
   {
     "Name": "Home Computer Museum",
     "URL": "https://www.homecomputermuseum.nl/",
-    "Description": "Interactief computermuseum in Helmond met tijdreis door de geschiedenis van de thuiscomputer van de jaren 70 tot 2000. Reparatiewerkplaats, arcadecafe en sociale werkplaats. Interactive computer museum in Helmond, Netherlands, featuring hands-on exhibits from the 1970s-2000s, a repair workshop and arcade cafe.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Het HomeComputerMuseum in Helmond biedt een interactieve reis door de geschiedenis van thuiscomputers en verwante apparaten, met een arcadecafé, gespecialiseerde reparatiewerkplaats en webwinkel. English: The museum in Helmond offers an interactive tour through the history of home computers and related devices, with an arcade café, specialist repair workshop and online store.",
+    "Category": "Museums & Exhibits, Repair & Services, Vendors & Stores",
     "Brands": "Commodore, Apple, Atari, MSX, Sinclair/ZX, Various",
-    "Language": "Dutch",
+    "Language": "Dutch, English",
     "ID": "home-computer-museum"
   },
   {
@@ -2576,17 +2576,17 @@
   {
     "Name": "How To Retro",
     "URL": "https://www.howtoretro.com/",
-    "Description": "Guides, tutorials, and tips for retro gaming, emulation, and vintage hardware across multiple classic platforms.",
-    "Category": "Software & Games, Emulation & FPGA",
-    "Brands": "Sega, Vectrex, Atari, Amiga, Sinclair/ZX, Sony, Raspberry Pi",
+    "Description": "Guide site for retro gaming and console emulation, with setup walkthroughs, emulator comparisons, game lists and reviews across home computers, consoles and handhelds.",
+    "Category": "Documentation & Wikis, Emulation & FPGA",
+    "Brands": "Various",
     "Language": "English",
     "ID": "how-to-retro"
   },
   {
     "Name": "HXC2001 (Jean-François DEL NERO)",
     "URL": "https://hxc2001.com/",
-    "Description": "HxC floppy drive emulators for Amiga, Atari, CPC, etc.",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Products and software for replacing floppy drives with HxC emulators, including SD and USB emulator hardware and firmware for Gotek drives, with compatibility lists, downloads and a support forum.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Amstrad, Atari",
     "Language": "English",
     "ID": "hxc2001-jean-francois-del-nero"
@@ -2594,8 +2594,8 @@
   {
     "Name": "Hyperion Entertainment",
     "URL": "https://www.hyperion-entertainment.com/",
-    "Description": "Current publisher of AmigaOS 4.x and ports of classic games",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Publisher of AmigaOS and ports of classic games for Amiga systems; the site provides product news, downloads, dealer information and purchase links.",
+    "Category": "Operating Systems, Software & Games",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "hyperion-entertainment"
