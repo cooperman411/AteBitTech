@@ -1451,8 +1451,8 @@
   {
     "Name": "ColecoVision ADAM Computer",
     "URL": "https://www.colecovisionadam.com/",
-    "Description": "Documentation and resources for the Coleco ADAM computer, including hardware specifications and software downloads.",
-    "Category": "Hardware & Parts",
+    "Description": "ColecoVision and ADAM history and preservation site with game listings, hardware expansion information, downloadable software and manuals, and a community forum.",
+    "Category": "Communities & Forums, Preservation & Archives, Software & Games",
     "Brands": "Coleco",
     "Language": "English",
     "ID": "colecovision-adam-computer"
@@ -1460,7 +1460,7 @@
   {
     "Name": "ColEm ColecoVision Emulator",
     "URL": "http://www.emulation.org/ColEm/",
-    "Description": "ColecoVision and ADAM emulator for multiple platforms, providing accurate hardware emulation for Coleco systems.",
+    "Description": "Portable ColecoVision and Coleco ADAM emulator with downloads for desktop and mobile platforms, documentation, screenshots and hardware emulation settings.",
     "Category": "Emulation & FPGA",
     "Brands": "Coleco",
     "Language": "English",
@@ -1469,8 +1469,8 @@
   {
     "Name": "Commander X16",
     "URL": "https://commanderx16.com",
-    "Description": "Modern 65xx-based retro-inspired computer project.",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
+    "Description": "Community project for the Commander X16, a 65C02-based 8-bit computer, with official reference documentation and related ROM and emulator projects.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "commander-x16"
@@ -1505,8 +1505,8 @@
   {
     "Name": "Commodore International",
     "URL": "https://commodore.net",
-    "Description": "The official revival of the original brand. An online store specializing in new Commodore computers, original and replacement parts, accessories, and merchandise.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Commodore’s official product and community site lists the Commodore 64 Ultimate, Commodore 77, Callback 8020, games, accessories and merchandise.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "commodore-international"
@@ -1514,17 +1514,17 @@
   {
     "Name": "Commodore Los Angeles",
     "URL": "https://portcommodore.com/dokuwiki/doku.php?id=class:start",
-    "Description": "Los Angeles Commodore event with community activities, exhibits, and Commodore-focused resources.",
+    "Description": "The Commodore Los Angeles Super Show (CLASS) site provides show details, exhibits and presentations for Commodore and Amiga systems, along with information about past shows.",
     "Category": "Events & Shows",
-    "Brands": "Commodore",
+    "Brands": "Commodore, Amiga",
     "Language": "English",
     "ID": "commodore-los-angeles"
   },
   {
     "Name": "Commodore OS Vision",
     "URL": "https://www.commodoreos.net/",
-    "Description": "Modern operating system for Commodore hardware featuring a graphical interface with updated functionality.",
-    "Category": "Software & Games",
+    "Description": "Commodore OS Vision is Commodore’s Debian-based Linux distribution, with a retro-inspired desktop, Commodore OS BASIC, and tools for Commodore hardware and software.",
+    "Category": "Operating Systems",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "commodore-os-vision"
@@ -1550,17 +1550,17 @@
   {
     "Name": "Commodore.ca",
     "URL": "https://www.commodore.ca/",
-    "Description": "Comprehensive Commodore resource: detailed histories of every Commodore computer, company history, people profiles, magazine archives, manuals, advertising gallery, and active forum.",
-    "Category": "Documentation & Wikis, News & Blogs, Communities & Forums, Preservation & Archives",
-    "Brands": "Commodore, Amiga",
+    "Description": "Commodore.ca provides histories, manuals and ROM downloads for 8-bit Commodore computers, with a user forum for support and discussion.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "commodore-ca"
   },
   {
     "Name": "Commodore.ca — C64 User Guide",
     "URL": "https://www.commodore.ca/manuals/c64_users_guide/c64-users_guide.htm",
-    "Description": "Full archived copy of the original Commodore 64 User's Guide with all chapters and appendices.",
-    "Category": "Documentation & Wikis",
+    "Description": "Scanned copy of the official 1982 Commodore 64 User’s Guide, available as a complete PDF and separate chapters covering setup, BASIC, graphics, sound, data handling and appendices.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "commodore-ca-c64-user-guide"
@@ -1568,8 +1568,8 @@
   {
     "Name": "Commodore.gen.tr",
     "URL": "https://www.commodore.gen.tr/forum/",
-    "Description": "Turk Commodore topluluk forumu. C64, Amiga ve diger Commodore sistemleri hakkinda tartismalar, yazilim paylasimi ve donanim rehberleri.",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Commodore topluluğu için Türkçe forum; C64, Amiga ve diğer sistemler hakkında yazılım, donanım, projeler ve etkinlikler üzerine tartışmalar içerir. A Turkish-language community forum for discussions about software, hardware, projects and events related to the C64, Amiga and other systems.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "Turkish",
     "ID": "commodore-gen-tr"
@@ -1586,8 +1586,8 @@
   {
     "Name": "Compute! Magazine — MusicMaster",
     "URL": "https://www.atarimagazines.com/compute/issue37/musicmaster.php",
-    "Description": "Archived Compute! Magazine article featuring a C64 music composition program from 1983.",
-    "Category": "Preservation & Archives, News & Blogs",
+    "Description": "Archived June 1983 COMPUTE! article documents MusicMaster, a Commodore 64 program that simulates a real-time synthesizer control panel and includes its program listing and operating instructions.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "compute-magazine-musicmaster"
@@ -1595,9 +1595,9 @@
   {
     "Name": "Computer Clan",
     "URL": "https://www.youtube.com/computerclan",
-    "Description": "Retro tech oddities, Apple history, computing deep dives",
+    "Description": "Computer Clan’s video channel explores rare and retro technology, product failures, prototypes, unusual computers and gadgets, and scam products.",
     "Category": "YouTube & Social Channels",
-    "Brands": "Apple",
+    "Brands": "Various",
     "Language": "English",
     "ID": "computer-clan"
   },
@@ -1613,8 +1613,8 @@
   {
     "Name": "Computer History Museum",
     "URL": "https://computerhistory.org/",
-    "Description": "Located in Mountain View, CA. Focus on Computers from 1940s–2000s. Large permanent collection; landmark exhibits.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "The Computer History Museum presents exhibitions and computing artifacts, with a collection catalog, events, education resources and online histories.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "computer-history-museum"
@@ -1640,7 +1640,7 @@
   {
     "Name": "Computing History - RC2014",
     "URL": "https://www.computinghistory.org.uk/det/44351/RC2014-Z80-Kit-Computer/",
-    "Description": "RC2014 exhibit at the Centre for Computing History with photographs and specifications.",
+    "Description": "Collection entry for the RC2014 Z80 kit computer, with its modular design, technical specifications, history and photographs.",
     "Category": "Museums & Exhibits",
     "Brands": "RC2014",
     "Language": "English",
@@ -1649,7 +1649,7 @@
   {
     "Name": "Computing History - Sony",
     "URL": "https://www.computinghistory.org.uk/det/8314/Sony/",
-    "Description": "Sony computer history exhibit at the Centre for Computing History, featuring Sony's early computer products.",
+    "Description": "Centre for Computing History collection page covering Sony computing products, with a company timeline and hardware entries including MSX computers and PlayStation products.",
     "Category": "Museums & Exhibits",
     "Brands": "Sony",
     "Language": "English",
