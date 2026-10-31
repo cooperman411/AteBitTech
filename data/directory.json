@@ -2621,8 +2621,8 @@
   {
     "Name": "IBM 1401 Computer History",
     "URL": "https://ibm1401.computerhistory.org/",
-    "Description": "Computer History Museum's IBM 1401 restoration project with documentation, photographs, and operational details.",
-    "Category": "Museums & Exhibits",
+    "Description": "Computer History Museum’s IBM 1401 Demo Lab and restoration project, with operational mainframes, live demonstrations, restoration reports, technical documentation, software inventories and photographs.",
+    "Category": "Documentation & Wikis, Museums & Exhibits",
     "Brands": "IBM",
     "Language": "English",
     "ID": "ibm-1401-computer-history"
@@ -2648,8 +2648,8 @@
   {
     "Name": "Iliyas Jorio (GitHub)",
     "URL": "https://github.com/jorio",
-    "Description": "GitHub profile with modern ports of classic Mac games including Nanosaur, Bugdom, and others.",
-    "Category": "YouTube & Social Channels, Software & Games",
+    "Description": "Developer profile and source projects for modernized ports of classic Mac games, including Bugdom, Nanosaur and Otto Matic.",
+    "Category": "Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "iliyas-jorio-github"
@@ -2666,8 +2666,8 @@
   {
     "Name": "Individual Computers (iComp)",
     "URL": "https://icomp.de/shop-icomp/en/",
-    "Description": "C64 Reloaded, Turbo Chameleon, Amiga accelerators, AmigaOS licensing",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Manufacturer and online shop for hardware and software for classic computers, including Amiga accelerators and display upgrades, C64 motherboards, FPGA products, adapters, peripherals and replacement parts.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "individual-computers-icomp"
@@ -2684,8 +2684,8 @@
   {
     "Name": "Infinite Mac",
     "URL": "https://infinitemac.org/",
-    "Description": "In-browser Macintosh emulation from System 1 through Mac OS 9, running entirely via WebAssembly with no install required.",
-    "Category": "Emulation & FPGA",
+    "Description": "Browser-based virtual machines for classic Macintosh and NeXT operating systems, with representative software, customizable machines and disk images, and file import/export on supported systems.",
+    "Category": "Emulation & FPGA, Operating Systems, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "infinite-mac"
@@ -2693,8 +2693,8 @@
   {
     "Name": "Intellivision Funhouse",
     "URL": "https://intvfunhouse.com/",
-    "Description": "Intellivision FAQ, technical documentation, and programming resources for the Intellivision system.",
-    "Category": "Hardware & Parts",
+    "Description": "Intellivision reference site with game information and reviews, software and hardware catalogs, technical and repair information, overlays, manuals and community links.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "intellivision-funhouse"
@@ -2702,8 +2702,8 @@
   {
     "Name": "Intellivision Revolution",
     "URL": "https://intellivisionrevolution.com/",
-    "Description": "Modern Intellivision resource with programming tutorials, homebrew development, hardware modifications, and SDK information.",
-    "Category": "Emulation & FPGA",
+    "Description": "Intellivision resource and homebrew publisher with game, hardware and ROM databases, development guides, emulation and programming information, community features and a linked store.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "intellivision-revolution"
@@ -2747,16 +2747,16 @@
   {
     "Name": "IPSJ Computer Museum (virtual)",
     "URL": "https://museum.ipsj.or.jp/en/index.html",
-    "Description": "情報処理学会によるバーチャルコンピュータ博物館。1950年代から1990年代までの日本のコンピュータを網羅した体系的オンライン展示。Canonical online museum by Japan's IPSJ covering computing history from the 1950s-1990s, fully bilingual.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Virtual museum of Japanese computing history from the Information Processing Society of Japan, with articles, photographs and records about historical computers, their developers and IP heritage.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
-    "Language": "Japanese",
+    "Language": "Japanese, English",
     "ID": "ipsj-computer-museum-virtual"
   },
   {
     "Name": "itch.io Retro Section",
     "URL": "https://itch.io/games/tag-retro",
-    "Description": "Indie developers publish new retro games for old hardware",
+    "Description": "Discovery page for games tagged Retro on itch.io, including retro-inspired independent games and releases made for classic systems.",
     "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
@@ -2774,8 +2774,8 @@
   {
     "Name": "Jamie Lendino",
     "URL": "https://www.jamielendino.com/",
-    "Description": "Author of retro computing books and essays.",
-    "Category": "News & Blogs",
+    "Description": "Author site for Jamie Lendino’s books on classic computers and video games, including histories of ColecoVision, Atari, Intellivision and PC/DOS gaming, with news and purchase links.",
+    "Category": "Documentation & Wikis, News & Blogs",
     "Brands": "Various",
     "Language": "English",
     "ID": "jamie-lendino"
