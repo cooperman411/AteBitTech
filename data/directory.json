@@ -6608,9 +6608,9 @@
   {
     "Name": "Wi-Fi Sheep Tech Channel (YouTube)",
     "URL": "https://www.youtube.com/channel/UCyoGtuvngylmF2a20sj2cUA",
-    "Description": "Wi-Fi Sheep Tech Channel — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "Wi-Fi Sheep videos cover retro and hobbyist computing, including Raspberry Pi, BBC Micro, RISC OS, programming and 8-bit history.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various, Acorn/BBC",
     "Language": "English",
     "ID": "wi-fi-sheep-tech-channel-youtube"
   },
@@ -6662,8 +6662,8 @@
   {
     "Name": "World of Dragon",
     "URL": "https://worldofdragon.org/",
-    "Description": "Archive for Dragon 32, 64, and 200 computers, with software, manuals, magazines, technical references, emulation help, and hardware information.",
-    "Category": "Hardware & Parts",
+    "Description": "Community-maintained Dragon 32/64/200 and Tano Dragon archive with software, publications, manuals, technical references and emulation resources.",
+    "Category": "Communities & Forums, Documentation & Wikis, Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "Dragon",
     "Language": "English",
     "ID": "world-of-dragon"
@@ -6743,8 +6743,8 @@
   {
     "Name": "Z80 Information",
     "URL": "http://www.z80.info/",
-    "Description": "Comprehensive information about the Z80 microprocessor including instruction sets, programming guides, and hardware documentation.",
-    "Category": "Hardware & Parts",
+    "Description": "Z80 reference site with instruction-set tables, programming guides, hardware/software FAQs and technical documents.",
+    "Category": "Documentation & Wikis",
     "Brands": "Z80",
     "Language": "English",
     "ID": "z80-information"
@@ -6824,8 +6824,8 @@
   {
     "Name": "ZX Renew",
     "URL": "https://www.zxrenew.co.uk/",
-    "Description": "Refurbished ZX Spectrum machines, replacement keyboards",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Seller of aftermarket replacement parts for Sinclair computers, including ZX Spectrum Microdrive components.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "zx-renew"
@@ -6859,11 +6859,11 @@
   },
   {
     "Name": "ZX-Uno",
-    "URL": "https://github.com/zxuno",
-    "Description": "Clon FPGA del ZX Spectrum de codigo abierto alojado en GitHub. Compatible con multiples cores incluyendo Spectrum, MSX y Atari 8-bit.",
+    "URL": "https://zxuno.speccy.org/",
+    "Description": "Open-source FPGA-based ZX Spectrum clone project with hardware, firmware, software and download resources.",
     "Category": "Emulation & FPGA",
     "Brands": "Sinclair/ZX",
-    "Language": "Spanish",
+    "Language": "Spanish, English",
     "ID": "zx-uno"
   }
 ]
