@@ -3783,8 +3783,8 @@
     "Name": "Nosher Microcomputer Advert Archive",
     "URL": "https://nosher.net/archives/computers/",
     "Description": "History of the microcomputer industry told through 300+ original adverts from the 1970s-1990s. Covers Commodore, Sinclair, Apple, IBM, and hundreds of now-forgotten brands.",
-    "Category": "Preservation & Archives, Museums & Exhibits",
-    "Brands": "Commodore, Sinclair/ZX, Apple, IBM, Atari",
+    "Category": "Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "nosher-microcomputer-advert-archive"
   },
@@ -3836,8 +3836,8 @@
   {
     "Name": "Old School Gamer Magazine",
     "URL": "https://oldschoolgamer.com",
-    "Description": "Old School Gamer Magazine Retro Gaming Magazine North America's ONLY Multi-Platform Retro Gaming and Computing Print Magazine",
-    "Category": "Hardware & Parts, News & Blogs",
+    "Description": "Retro-gaming magazine publishing news and features about arcade, console, handheld and computer games, with print and digital subscriptions.",
+    "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
     "ID": "old-school-gamer-magazine"
@@ -3865,7 +3865,7 @@
     "URL": "https://oldcomputers.net/",
     "Description": "Long-running online museum of home and personal computers from the 1970s through the 1990s.",
     "Category": "Museums & Exhibits, Documentation & Wikis",
-    "Brands": "Osbourne, Various",
+    "Brands": "Various",
     "Language": "English",
     "ID": "oldcomputers-net-the-old-computer-museum"
   },
@@ -3890,9 +3890,9 @@
   {
     "Name": "OldGamesItalia",
     "URL": "https://www.oldgamesitalia.net/forum",
-    "Description": "Comunita italiana di retro computing e gaming. Forum attivo con sezioni dedicate a computer classici, console e giochi vintage.",
+    "Description": "Comunità italiana dedicata al retrogaming, con forum su videogiochi, podcast, traduzioni e narrativa interattiva. Italian retro-gaming community with forums for video games, podcasts, translations and interactive fiction.",
     "Category": "Communities & Forums",
-    "Brands": "Commodore, Amiga, Atari, PC, Various",
+    "Brands": "Various",
     "Language": "Italian",
     "ID": "oldgamesitalia"
   },
@@ -3909,7 +3909,7 @@
     "Name": "OldSilicon - Osborne 1",
     "URL": "https://oldsilicon.com/portables/osborne-1/",
     "Description": "Osborne 1 restoration guide covering Gotek floppy emulator installation and CP/M file transfers.",
-    "Category": "Repair & Services, Hardware & Parts",
+    "Category": "Documentation & Wikis",
     "Brands": "Osbourne",
     "Language": "English",
     "ID": "oldsilicon-osborne-1"
@@ -3926,7 +3926,7 @@
   {
     "Name": "OpenFPGA (Analogue)",
     "URL": "https://www.analogue.co/developer",
-    "Description": "Analogue Pocket cores for retro systems",
+    "Description": "Analogue Pocket developer platform for creating third-party FPGA cores that recreate video-game hardware for preservation, study and play.",
     "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
@@ -3944,7 +3944,7 @@
   {
     "Name": "OpenPS2Loader",
     "URL": "https://github.com/ps2homebrew/Open-PS2-Loader",
-    "Description": "Open-source PS2 game loader for retro hardware",
+    "Description": "Open-source game and application loader for PS2 and PS3 consoles, supporting USB storage, network shares and internal or external drives.",
     "Category": "Software & Games",
     "Brands": "Sony",
     "Language": "English",
@@ -3953,8 +3953,8 @@
   {
     "Name": "Oric.org",
     "URL": "https://www.oric.org/",
-    "Description": "Oric computer preservation and community site",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Online Oric software catalogue with searchable game and utility entries, downloadable releases, and recent homebrew and demo projects.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Oric",
     "Language": "English",
     "ID": "oric-org"
@@ -3998,10 +3998,10 @@
   {
     "Name": "PC-98 Nihongo Portal",
     "URL": "https://pc98.ne.jp/",
-    "Description": "NEC PC-98シリーズの情報ポータル。ハードウェアデータベース、ソフトウェアライブラリ、技術文書を網羅。NEC PC-98 series information portal with hardware database, software library and technical documentation.",
-    "Category": "Hardware & Parts",
+    "Description": "English-language NEC PC-9800 community portal linking hardware and development documentation, software libraries, utilities, emulators and chat spaces.",
+    "Category": "Communities & Forums, Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "PC-98",
-    "Language": "Japanese",
+    "Language": "English",
     "ID": "pc-98-nihongo-portal"
   },
   {
