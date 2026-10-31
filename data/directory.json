@@ -3089,8 +3089,8 @@
   {
     "Name": "Lemon64 Forums",
     "URL": "https://www.lemon64.com/forum/",
-    "Description": "Commodore 64 user forums and marketplace",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Commodore 64 community forum for game discussion, help, releases, emulation, and hardware; includes a buy/sell/trade area.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "lemon64-forums"
@@ -3197,8 +3197,8 @@
   {
     "Name": "MacDat - Gateway Laptops",
     "URL": "https://www.macdat.net/laptops/gateway_home.html",
-    "Description": "Specifications and parts information for Gateway laptop computers, including Solo series.",
-    "Category": "Hardware & Parts",
+    "Description": "MacDat reference page documenting Gateway laptop models with a dated model list and linked information pages.",
+    "Category": "Documentation & Wikis",
     "Brands": "Gateway",
     "Language": "English",
     "ID": "macdat-gateway-laptops"
@@ -3332,8 +3332,8 @@
   {
     "Name": "Mattel Aquarius Fan Site",
     "URL": "https://vdsteenoven.com/aquarius/",
-    "Description": "Dedicated fan site for the Mattel Aquarius computer with software downloads, documentation, and hardware information.",
-    "Category": "Hardware & Parts",
+    "Description": "Fan reference for the Mattel Aquarius home computer, with system history, technical information, software and cartridge inventories, manuals, and scanned user magazines.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "mattel-aquarius-fan-site"
@@ -3503,8 +3503,8 @@
   {
     "Name": "MiSTer FPGA Official",
     "URL": "https://misterfpga.org/",
-    "Description": "Site links to Discord; large active server.",
-    "Category": "Communities & Forums, Emulation & FPGA, Hardware & Parts",
+    "Description": "MiSTer FPGA forum for core and setup discussions, project updates, hardware add-ons, and community support.",
+    "Category": "Communities & Forums, Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
     "ID": "mister-fpga-official"
