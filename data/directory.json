@@ -1377,6 +1377,15 @@
     "ID": "classic-bits-gateway-2000"
   },
   {
+    "Name": "Classic Computing - Sony MiniDisc PC Drive",
+    "URL": "https://classiccomputing.net/2025/04/24/sonys-internal-pc-minidisc-data-drive-mdm-111/",
+    "Description": "Article about Sony's internal PC MiniDisc data drive (MDM-111) including technical details and driver information.",
+    "Category": "Hardware & Parts",
+    "Brands": "MiniDisc",
+    "Language": "English",
+    "ID": "classic-computing-sony-minidisc-pc-drive"
+  },
+  {
     "Name": "Classic Gaming Quarterly (YouTube)",
     "URL": "https://www.youtube.com/@CGQuarterly",
     "Description": "Console and PC histories, documentaries with computing overlap",
@@ -6415,15 +6424,6 @@
     "Brands": "Various",
     "Language": "Portuguese",
     "ID": "velberan"
-  },
-  {
-    "Name": "Verein zum Erhalt klassischer Computer e.V.",
-    "URL": "https://classiccomputing.net/2025/04/24/sonys-internal-pc-minidisc-data-drive-mdm-111/",
-    "Description": "German community association for preserving classic computers. Its site provides a forum, knowledge base, hardware and software projects, and recurring events.",
-    "Category": "Communities & Forums, Documentation & Wikis, Events & Shows",
-    "Brands": "Various",
-    "Language": "German",
-    "ID": "classic-computing-sony-minidisc-pc-drive"
   },
   {
     "Name": "Veronica Explains Nothing (YouTube)",
