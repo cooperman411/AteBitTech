@@ -12,14 +12,14 @@
 ## Top Brand Pages
 - [Commodore (154)](https://atebit.tech/classic/commodore.html)
 - [Apple (115)](https://atebit.tech/classic/apple.html)
-- [Atari (110)](https://atebit.tech/classic/atari.html)
+- [Atari (112)](https://atebit.tech/classic/atari.html)
 - [Amiga (87)](https://atebit.tech/classic/amiga.html)
-- [PC (55)](https://atebit.tech/classic/pc.html)
+- [PC (57)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (49)](https://atebit.tech/classic/sinclair-zx.html)
 - [Tandy/Radio Shack (27)](https://atebit.tech/classic/tandy-radio-shack.html)
 - [Nintendo (24)](https://atebit.tech/classic/nintendo.html)
 - [Acorn/BBC (17)](https://atebit.tech/classic/acorn-bbc.html)
-- [Sega (16)](https://atebit.tech/classic/sega.html)
+- [Sega (17)](https://atebit.tech/classic/sega.html)
 - [All 43 brands](https://atebit.tech/classic/)
 
 ## Directory Categories
