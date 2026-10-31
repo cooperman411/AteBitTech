@@ -6051,7 +6051,7 @@
     "Name": "TI-99/4A Tech Pages",
     "URL": "https://www.unige.ch/medecine/nouspikel/ti99/titech.htm",
     "Description": "Extensive technical documentation for the TI-99/4A computer including hardware architecture, programming, and peripherals.",
-    "Category": "Hardware & Parts",
+    "Category": "Documentation & Wikis",
     "Brands": "TI",
     "Language": "English",
     "ID": "ti-99-4a-tech-pages"
@@ -6077,8 +6077,8 @@
   {
     "Name": "Timex Computer World",
     "URL": "https://www.timexsinclair.com/",
-    "Description": "Timex Sinclair clones, refurbs, parts",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
+    "Description": "Reference and community resource for Sinclair and Timex/Sinclair computers, with model pages, hardware and software catalogs, downloadable programs, publications, user groups, and regular online meetings.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
     "Brands": "Sinclair/ZX, Timex",
     "Language": "English",
     "ID": "timex-computer-world"
@@ -6113,8 +6113,8 @@
   {
     "Name": "TOSEC (The Old School Emulation Center)",
     "URL": "https://www.tosecdev.org/",
-    "Description": "ROM sets, disk images, software preservation",
-    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
+    "Description": "Community project cataloging and preserving vintage computer and console software through DAT files and curated ROM, disk-image, and media collections.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "tosec-the-old-school-emulation-center"
@@ -6167,17 +6167,17 @@
   {
     "Name": "Tynemouth Software",
     "URL": "https://www.tindie.com/stores/tynemouth/",
-    "Description": "Spectrum diagnostics boards, refurbished ZX81 kits",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore, Sinclair/ZX",
+    "Description": "Tynemouth Software store offering Minstrel ZX80/ZX81-compatible kits, expansion products, and vintage-computer boards, with kit and prebuilt options.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "tynemouth-software"
   },
   {
     "Name": "Tynemouth Software Blog",
     "URL": "http://blog.tynemouthsoftware.co.uk/p/welcome.html",
-    "Description": "Repairs, diagnostics, adapters for Spectrum/Amiga,BBC,C64",
-    "Category": "Hardware & Parts, News & Blogs, Repair & Services",
+    "Description": "Technical blog documenting vintage-computer projects, repairs, diagnostics, upgrades, and adapter development across ZX81, Commodore, and other systems.",
+    "Category": "News & Blogs",
     "Brands": "Acorn/BBC, Amiga, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "tynemouth-software-blog"
@@ -6185,8 +6185,8 @@
   {
     "Name": "Ultimate 1541/64 Projects",
     "URL": "https://ultimate64.com/",
-    "Description": "FPGA-based C64 and 1541 drive recreations",
-    "Category": "Emulation & FPGA, Repair & Services",
+    "Description": "Official store for Commodore 64/128 hardware, including the Ultimate-64 computer, 1541 drive emulation cartridges, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "ultimate-1541-64-projects"
@@ -6230,8 +6230,8 @@
   {
     "Name": "Unofficial cores (MiST/MiSTer)",
     "URL": "https://github.com/mist-devel",
-    "Description": "Community FPGA cores for computers/consoles",
-    "Category": "Communities & Forums, Emulation & FPGA, Hardware & Parts",
+    "Description": "MiST FPGA development organization maintaining firmware, classic-computer and console cores, and related board tools.",
+    "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
     "ID": "unofficial-cores-mist-mister"
@@ -6239,8 +6239,8 @@
   {
     "Name": "UTM SE",
     "URL": "https://getutm.app/",
-    "Description": "PC emulator for iOS (i486/PowerPC), first on App Store",
-    "Category": "Emulation & FPGA, Vendors & Stores",
+    "Description": "UTM SE is the iOS edition of UTM for emulating older systems such as DOS and lightweight Linux using a slower interpreter.",
+    "Category": "Emulation & FPGA",
     "Brands": "PC",
     "Language": "English",
     "ID": "utm-se"
@@ -6248,8 +6248,8 @@
   {
     "Name": "Vampire (Apollo Team)",
     "URL": "https://www.apollo-computer.com/",
-    "Description": "Vampire FPGA accelerators for Amiga",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Apollo Computer shop and project site for Vampire FPGA accelerators, Amiga-compatible computers, software, and accessories.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "vampire-apollo-team"
