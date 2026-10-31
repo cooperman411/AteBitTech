@@ -6761,8 +6761,8 @@
   {
     "Name": "Zap Coders",
     "URL": "https://zap-coders.com/",
-    "Description": "Zap Coders Zap Coders’ brand new game for the gameboy color Zap Coders’ new video game releasing this year for the gameboy color will be on display! Meet the...",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Small game-development group creating retro-style games. Its first title, Proxima B, has a Steam demo and a planned physical cartridge release; the site shares project news and updates.",
+    "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "zap-coders"
@@ -6779,8 +6779,8 @@
   {
     "Name": "ZCOM Zuse-Computer-Museum",
     "URL": "https://www.zuse-computer-museum.com/",
-    "Description": "Museum in Hoyerswerda mit Fokus auf Konrad Zuses Rechner der 1930er bis 1990er Jahre. Prasentiert originale Zuse-Maschinen und die Entwicklung der Computertechnik in der DDR.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Das ZCOM Zuse-Computer-Museum in Hoyerswerda erzählt die Geschichte des Computers und zeigt historische Zuse-Rechner. Seit dem 1. September 2026 ist das Museum für den öffentlichen Besucherverkehr geschlossen; gebuchte Workshops und Veranstaltungsreihen laufen bis zum 31. Dezember 2026. English: The ZCOM Zuse Computer Museum in Hoyerswerda explores computer history and presents historic Zuse computers. It has been closed to public visitors since September 1, 2026; booked workshops and event series continue through December 31, 2026.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "German",
     "ID": "zcom-zuse-computer-museum"
@@ -6797,9 +6797,9 @@
   {
     "Name": "zigzagjoe",
     "URL": "https://zigzagjoe.com",
-    "Description": "zigzagjoe zigzagjoe's vintage I make upgrades for vintage macintoshes and other systems! I plan to exhibit some of my more recent projects and offerings for ...",
-    "Category": "Museums & Exhibits",
-    "Brands": "Apple, Atari",
+    "Description": "Personal site documenting hardware designs and upgrades for 68K Macintosh and NeXT systems, including accelerators, video cards, SCSI projects and interposers.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "zigzagjoe"
   },
@@ -6815,8 +6815,8 @@
   {
     "Name": "ZuluSCSI",
     "URL": "https://github.com/ZuluSCSI/ZuluSCSI-firmware",
-    "Description": "Modern SD-card based SCSI emulator, firmware open",
-    "Category": "Emulation & FPGA, Repair & Services, Software & Games",
+    "Description": "Open-source firmware repository for the ZuluSCSI family of hardware devices, which emulate SCSI storage devices using disk images stored on an SD card.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "zuluscsi"
@@ -6833,8 +6833,8 @@
   {
     "Name": "ZX Spectrum Discord (zx.tr)",
     "URL": "https://zx.tr/",
-    "Description": "The largest ZX Spectrum Discord server with over 400 members. Active emulator development, demoscene, pixel art, Sinclair BASIC and assembler channels, plus Next-gen Spectrum discussions.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "English-language ZX Spectrum Discord community for emulator development, demoscene, pixel art, music, BASIC and assembler; hosted projects include BasinC and ZXDB Search.",
+    "Category": "Communities & Forums",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "zx-spectrum-discord-zx-tr"
