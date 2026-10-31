@@ -1550,8 +1550,8 @@
   {
     "Name": "Commodore Spain (YouTube)",
     "URL": "https://www.youtube.com/user/CommodoreSpain",
-    "Description": "Canal espanol de YouTube sobre Commodore de 8 bits y Amiga. Contenido tecnico, reparaciones, demos y novedades de la escena Commodore en Espana.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Canal de YouTube en español sobre Commodore de 8 bits y Amiga, con demos, tutoriales y novedades de la escena Commodore en España. Spanish-language YouTube channel about 8-bit Commodore and Amiga, with demos, tutorials and Commodore-scene news.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Amiga, Commodore",
     "Language": "Spanish",
     "ID": "commodore-spain-youtube"
@@ -1586,7 +1586,7 @@
   {
     "Name": "CommodoreZ",
     "URL": "https://www.commodorez.com/",
-    "Description": "Commodore-focused resource with a list of vintage-computing events and related links.",
+    "Description": "Home of the Cactus homebrew computer, with Commodore and VIC-20 collections, project information, retro-computing links and vintage-computing event listings.",
     "Category": "Events & Shows, Documentation & Wikis",
     "Brands": "Commodore",
     "Language": "English",
@@ -1613,9 +1613,9 @@
   {
     "Name": "Computer Compulsive (YouTube)",
     "URL": "https://www.youtube.com/channel/UCbS3m4DL-dAoU-f9Z_3fwXw",
-    "Description": "Computer Compulsive — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "YouTube channel about vintage computers including Apple and Commodore, featuring repairs, refurbishing, modifications, software and hardware demonstrations, and retro-tech reviews.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple, Commodore, Various",
     "Language": "English",
     "ID": "computer-compulsive-youtube"
   },
@@ -1631,8 +1631,8 @@
   {
     "Name": "Computer Museum of America",
     "URL": "http://www.computer-museum.org",
-    "Description": "Historic museum archive featuring computer history collections.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Preserved Computer Museum of America collection now being inventoried and documented through a reclamation project, including computers, hardware, software, manuals, books and period publications.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "computer-museum-of-america"
@@ -1641,7 +1641,7 @@
     "Name": "Computerphile (YouTube)",
     "URL": "https://www.youtube.com/user/Computerphile",
     "Description": "Educational computer science videos, occasionally covering retro topics",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "computerphile-youtube"
@@ -1776,7 +1776,7 @@
     "Name": "Dan Wood Leftfield and Vintage Tech (YouTube)",
     "URL": "https://www.youtube.com/@danwood_uk",
     "Description": "Amiga, Commodore, retro PC explorations",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Category": "YouTube & Social Channels",
     "Brands": "Amiga, Commodore, PC",
     "Language": "English",
     "ID": "dan-wood-leftfield-and-vintage-tech-youtube"
@@ -1803,7 +1803,7 @@
     "Name": "Dave's Garage",
     "URL": "https://www.youtube.com/davesgarage",
     "Description": "Retro coding, operating systems, vintage Microsoft stories",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Category": "YouTube & Social Channels",
     "Brands": "PC",
     "Language": "English",
     "ID": "daves-garage"
@@ -1820,8 +1820,8 @@
   {
     "Name": "Daves Vintage Apple Tech (YouTube)",
     "URL": "https://www.youtube.com/channel/UCm6wvlnm88F_6Sg-bcaIYhg",
-    "Description": "Daves Vintage Apple Tech — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about vintage and newer Apple computers and peripherals, with repair and modification videos, computer-history projects and vintage-tech event coverage.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Apple",
     "Language": "English",
     "ID": "daves-vintage-apple-tech-youtube"
@@ -1874,7 +1874,7 @@
   {
     "Name": "Defenestrando Jogos",
     "URL": "https://www.youtube.com/DefenestrandoJogos",
-    "Description": "Canal brasileiro de YouTube com analise critica de jogos retro. Videos aprofundados e bem pesquisados sobre classicos e obscuridades.",
+    "Description": "Canal brasileiro de jogos e cultura gamer, com análises e conversas sobre jogos retrô, clássicos e obscuridades. Brazilian gaming channel covering videogame culture and retro, classic and lesser-known games.",
     "Category": "YouTube & Social Channels",
     "Brands": "Nintendo, Sega, Sony, Various",
     "Language": "Portuguese",
@@ -1928,8 +1928,8 @@
   {
     "Name": "Digital Foundry (DF Retro)",
     "URL": "https://www.youtube.com/digitalfoundry",
-    "Description": "Technical retrospectives. Expert analysis.",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "Digital Foundry’s YouTube channel for technical game and hardware analysis, performance testing and DF Retro histories of classic games and systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "digital-foundry-df-retro"
@@ -1937,10 +1937,10 @@
   {
     "Name": "Digital Retro Park (YouTube)",
     "URL": "https://www.youtube.com/@digitalretropark",
-    "Description": "Museum channel with talks and tours from the DRP museum, covering multi-platform systems",
-    "Category": "Hardware & Parts, Museums & Exhibits, YouTube & Social Channels",
+    "Description": "German retro-computing museum channel featuring museum updates, talks, platform discussions, demonstrations, events and live music.",
+    "Category": "Museums & Exhibits, YouTube & Social Channels",
     "Brands": "Various",
-    "Language": "English",
+    "Language": "German",
     "ID": "digital-retro-park-youtube"
   },
   {
@@ -2045,7 +2045,7 @@
   {
     "Name": "El Spectrumero Javi Ortiz (YouTube)",
     "URL": "https://www.youtube.com/@ElSpectrumeroJaviOrtiz",
-    "Description": "Canal espanol de YouTube centrado en ZX Spectrum y ordenadores de 8 bits. Gameplay, restauraciones y analisis de hardware clasico.",
+    "Description": "Canal en español sobre ZX Spectrum y la escena retro de 8 bits, con reseñas de juegos, entrevistas y presentaciones de proyectos homebrew. También cubre plataformas clásicas como CPC, MSX y Atari.",
     "Category": "YouTube & Social Channels",
     "Brands": "Sinclair/ZX",
     "Language": "Spanish",
@@ -2081,7 +2081,7 @@
   {
     "Name": "English Amiga Board (EAB)",
     "URL": "https://eab.abime.net/",
-    "Description": "Amiga user forums and marketplace",
+    "Description": "English-language Amiga community forum covering Amiga news, retro-gaming, nostalgia, emulation, hardware, software, games, demos, projects and a member marketplace.",
     "Category": "Communities & Forums, Hardware & Parts",
     "Brands": "Amiga",
     "Language": "English",
@@ -2108,9 +2108,9 @@
   {
     "Name": "Eric Moore (YouTube)",
     "URL": "https://www.youtube.com/@happycomputerguy",
-    "Description": "Eric Moore Paper Tape and IBM Gear Various Teletypes and IBM Computers on display, and Model M keyboards for sale",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
-    "Brands": "PC",
+    "Description": "Retro-computing YouTube channel that also covers computer hardware and broader technology topics.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "PC, Various",
     "Language": "English",
     "ID": "eric-moore-youtube"
   },
