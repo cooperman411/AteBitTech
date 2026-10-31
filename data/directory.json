@@ -4034,8 +4034,8 @@
   {
     "Name": "PDP-8 Online",
     "URL": "https://pdp8online.com/",
-    "Description": "Online PDP-8 emulator and documentation, allowing users to run PDP-8 software in a web browser.",
-    "Category": "Emulation & FPGA",
+    "Description": "Learn about and run PDP-8 systems in a browser, with PDP-8 documentation and software archives, operating information, system photos and games.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "DEC",
     "Language": "English",
     "ID": "pdp-8-online"
@@ -4095,10 +4095,10 @@
     "ID": "piscsi-rascsi"
   },
   {
-    "Name": "PiTubeDirect (community sellers)",
+    "Name": "PiTubeDirect",
     "URL": "https://github.com/hoglet67/PiTubeDirect",
-    "Description": "Raspberry Pi-based co-processor for BBC Micro",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
+    "Description": "Bare-metal Raspberry Pi project that connects to the BBC Micro’s Acorn TUBE interface and emulates BBC Micro co-processors.",
+    "Category": "Emulation & FPGA, Hardware & Parts",
     "Brands": "Acorn/BBC",
     "Language": "English",
     "ID": "pitubedirect-community-sellers"
@@ -4124,10 +4124,10 @@
   {
     "Name": "Planet Emulation — Commodore 64",
     "URL": "https://www.planetemu.net/machine/commodore-64",
-    "Description": "Commodore 64 ROM and software archive with organized game and application collections.",
-    "Category": "Emulation & FPGA, Preservation & Archives",
+    "Description": "Archives de ROMs, jeux et applications pour Commodore 64, avec actualités, émulateurs et utilitaires téléchargeables. Commodore 64 ROM, game and application archive with news, downloadable emulators and utilities.",
+    "Category": "Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "Commodore",
-    "Language": "English",
+    "Language": "French",
     "ID": "planet-emulation-commodore-64"
   },
   {
@@ -4151,17 +4151,17 @@
   {
     "Name": "Poly.play",
     "URL": "https://polyplay.xyz/",
-    "Description": "New releases for classic systems",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Amstrad, Commodore",
-    "Language": "English",
+    "Description": "Retroshop für klassische Computer, Spiele, Hardware und Ersatzteile aus verschiedenen Systemfamilien. German retro shop for classic computers, games, hardware and spare parts across multiple systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
+    "Language": "German",
     "ID": "poly-play"
   },
   {
     "Name": "Port Commodore",
     "URL": "https://portcommodore.com/",
-    "Description": "Commodore-focused wiki and personal archive covering hardware, software, BBS history, and related projects.",
-    "Category": "Documentation & Wikis, Communities & Forums, Preservation & Archives",
+    "Description": "Commodore-focused personal wiki and link archive, with pages about classic computing, BBS history, collections, projects and related resources.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "port-commodore"
@@ -4178,8 +4178,8 @@
   {
     "Name": "Powerfox",
     "URL": "https://powerfox.jazzzny.me/",
-    "Description": "A browser for Apple iBook, Powerbook, iMac, and PowerMac computers with PowerPC G4 or G5 processors.",
-    "Category": "Software & Games",
+    "Description": "Open-source PowerFox and PowerFox Classic browsers for PowerPC or Intel Macs, supporting Mac OS X 10.3 through macOS 10.14.",
+    "Category": "Web Tools & Browsers",
     "Brands": "Apple",
     "Language": "English",
     "ID": "powerfox"
@@ -4187,8 +4187,8 @@
   {
     "Name": "Powkiddy",
     "URL": "https://powkiddy.com/",
-    "Description": "Affordable retro handheld consoles using emulation",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online store selling handheld game consoles, gamepads and replacement parts for portable gaming systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "powkiddy"
@@ -4223,8 +4223,8 @@
   {
     "Name": "printf.neocities.org - PC-98",
     "URL": "https://printf.neocities.org/",
-    "Description": "NEC PC-98のプログラミング、ハードウェア実験、保存活動を扱う個人サイト。Personal site featuring NEC PC-98 content including programming, hardware experiments and preservation efforts.",
-    "Category": "News & Blogs",
+    "Description": "NEC PC-9800シリーズのプログラミングや画像編集に関する個人の参考サイト。ソフトウェア、開発資料、エミュレーターなどのリンクを掲載。Personal reference site for NEC PC-9800 programming and graphics, with software, development documentation and emulator links.",
+    "Category": "Documentation & Wikis",
     "Brands": "PC-98",
     "Language": "English, Japanese",
     "ID": "printf-neocities-org-pc-98"
