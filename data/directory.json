@@ -6041,8 +6041,8 @@
   {
     "Name": "This Week in Retro (YouTube)",
     "URL": "https://www.youtube.com/channel/UCFMx-JitepTttWc-ABHhu8A",
-    "Description": "This Week in Retro — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "This Week in Retro produces a weekly show covering news and stories from retro computing and games, with guests and platform-specific discussions.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "this-week-in-retro-youtube"
@@ -6059,8 +6059,8 @@
   {
     "Name": "Time Rift Arcade",
     "URL": "https://timeriftarcade.com",
-    "Description": "Retro arcade and gaming venue showcasing classic hardware and software.",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Bedford, Texas arcade with classic and modern arcade games, pinball and vintage computers, offering day and monthly passes, food, and merchandise.",
+    "Category": "Events & Shows, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "time-rift-arcade"
@@ -6086,9 +6086,9 @@
   {
     "Name": "Tindie",
     "URL": "https://www.tindie.com/",
-    "Description": "Maker marketplace for electronics, kits, adapters, and retro-computer hardware. Search by platform or part type, such as C64, Amiga, Spectrum, adapter, or diagnostic board.",
-    "Category": "Hardware & Parts, Vendors & Stores, Repair & Services",
-    "Brands": "RC2014, Z80, Acorn/BBC, Amiga, Sinclair/ZX, Various",
+    "Description": "Marketplace for independent hardware, electronics and maker-built products, including retro-computing kits and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "tindie"
   },
@@ -6140,7 +6140,7 @@
   {
     "Name": "TuberViejuner",
     "URL": "https://www.youtube.com/TuberViejuner",
-    "Description": "Canal espanol de YouTube sobre hardware retro y emulacion. Subidas frecuentes de gameplays, configuraciones y proyectos con ordenadores clasicos.",
+    "Description": "Canal en español de retroinformática y videojuegos retro, con contenido sobre hardware antiguo, emulación y consolas portátiles actuales.",
     "Category": "Emulation & FPGA, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "Spanish",
@@ -6149,7 +6149,7 @@
   {
     "Name": "Tulip Creative Computer",
     "URL": "https://tulip.computer/",
-    "Description": "Modern open-source retro computer designed for creative coding, music, and game development.",
+    "Description": "Open-source portable computer for music, writing and coding, built around a microcontroller with Python, a touchscreen, synthesizer and programmable graphics.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -6266,18 +6266,18 @@
   {
     "Name": "VCF Florida",
     "URL": "https://vcfed.org/vcf-florida/",
-    "Description": "Vintage Computer Federation festival and community event in Florida.",
+    "Description": "Florida festival page for the Vintage Computer Federation; event details are forthcoming.",
     "Category": "Events & Shows",
-    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, Various",
+    "Brands": "Various",
     "Language": "English",
     "ID": "vcf-florida"
   },
   {
     "Name": "VCF Great Britain",
     "URL": "https://www.vintagecomputerfestival.org.uk/",
-    "Description": "United Kingdom vintage-computer festival with exhibits, talks, vendors, retro games, and guest speakers.",
+    "Description": "UK festival celebrating computing history; the 2026 Aintree event featured exhibits, gaming, workshops, talks, films and live music.",
     "Category": "Events & Shows",
-    "Brands": "Acorn/BBC, Amiga, Atari, Commodore, Sinclair/ZX, Various",
+    "Brands": "Various",
     "Language": "English",
     "ID": "vcf-great-britain"
   },
@@ -6446,8 +6446,8 @@
   {
     "Name": "Vetusware",
     "URL": "https://vetusware.com/",
-    "Description": "Archive of DOS and Windows abandonware, drivers, and vintage software.",
-    "Category": "Hardware & Parts",
+    "Description": "Download archive of vintage software for DOS, Windows and other systems, including games, utilities and drivers.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "PC",
     "Language": "English",
     "ID": "vetusware"
