@@ -11,9 +11,9 @@
 
 ## Top Brand Pages
 - [Commodore (148)](https://atebit.tech/classic/commodore.html)
-- [Apple (109)](https://atebit.tech/classic/apple.html)
+- [Apple (108)](https://atebit.tech/classic/apple.html)
 - [Atari (101)](https://atebit.tech/classic/atari.html)
-- [Amiga (81)](https://atebit.tech/classic/amiga.html)
+- [Amiga (80)](https://atebit.tech/classic/amiga.html)
 - [PC (53)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (45)](https://atebit.tech/classic/sinclair-zx.html)
 - [Tandy/Radio Shack (28)](https://atebit.tech/classic/tandy-radio-shack.html)

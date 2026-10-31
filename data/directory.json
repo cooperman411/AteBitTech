@@ -3632,7 +3632,7 @@
     "Description": "MSX Resource Center forums for MSX discussion, development, trading, and help.",
     "Category": "Communities & Forums",
     "Brands": "MSX",
-    "Language": "English",
+    "Language": "English, Spanish, Russian, Dutch, Portuguese, French, Korean, Arabic, Japanese",
     "ID": "msx-org-forums"
   },
   {
@@ -4043,10 +4043,10 @@
   {
     "Name": "PDA-Soft (Newton)",
     "URL": "https://www.pda-soft.de/",
-    "Description": "Apple Newton and eMate battery rebuilds and repairs",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Information site for Apple Newton and eMate PDAs, with device resources and software-patch links.",
+    "Category": "Documentation & Wikis",
     "Brands": "Apple",
-    "Language": "English",
+    "Language": "English, German",
     "ID": "pda-soft-newton"
   },
   {
@@ -4079,9 +4079,9 @@
   {
     "Name": "Perifractic's Retro Recipes (YouTube)",
     "URL": "https://www.youtube.com/@RetroRecipes",
-    "Description": "Restorations, builds, and interviews covering Commodore, Amiga, and Apple systems",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
-    "Brands": "Amiga, Apple, Commodore",
+    "Description": "Perifractic and Ladyfractic’s channel shares nostalgic videos and projects about 1980s technology and television, with a focus on Commodore.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "perifractics-retro-recipes-youtube"
   },
@@ -4097,7 +4097,7 @@
   {
     "Name": "Phil's Computer Lab",
     "URL": "https://www.youtube.com/philscomputerlab",
-    "Description": "Retro PC builds, DOS/Win9x gaming hardware",
+    "Description": "Video channel on retro PC builds, DOS and Windows 9x gaming, hardware troubleshooting, benchmarks, and drivers.",
     "Category": "YouTube & Social Channels",
     "Brands": "PC",
     "Language": "English",
@@ -4172,7 +4172,7 @@
     "Description": "The central community hub for Commodore Plus/4 and C16 enthusiasts. Software downloads, games, demos, programming resources, and active forums.",
     "Category": "Communities & Forums, Software & Games, Preservation & Archives",
     "Brands": "Commodore",
-    "Language": "English",
+    "Language": "English, German, Hungarian, Italian, Russian, Traditional Chinese",
     "ID": "plus-4-world"
   },
   {
@@ -4223,8 +4223,8 @@
   {
     "Name": "PPA.pl",
     "URL": "https://www.ppa.pl/",
-    "Description": "Polski portal i forum Amigi. Centrum polskiej sceny Amiga z wiadomosciami, recenzjami, tutorialami i aktywna spolecznoscia uzytkownikow.",
-    "Category": "Communities & Forums",
+    "Description": "Polski Portal Amigowy z aktualnościami, forum, giełdą, programami, publicystyką, sprzętem i grami. Polish Amiga portal with news, a community forum, listings, software, editorial articles, hardware coverage and games.",
+    "Category": "Communities & Forums, News & Blogs, Software & Games",
     "Brands": "Amiga",
     "Language": "Polish",
     "ID": "ppa-pl"
@@ -4502,8 +4502,8 @@
   {
     "Name": "ReactiveMicro",
     "URL": "https://www.reactivemicro.com/",
-    "Description": "Apple II replacement boards, power supplies, accelerators",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online Apple II hardware store with products from ReActiveMicro and partner companies.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "reactivemicro"
