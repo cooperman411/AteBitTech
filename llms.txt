@@ -13,7 +13,7 @@
 - [Commodore (147)](https://atebit.tech/classic/commodore.html)
 - [Apple (108)](https://atebit.tech/classic/apple.html)
 - [Atari (86)](https://atebit.tech/classic/atari.html)
-- [Amiga (76)](https://atebit.tech/classic/amiga.html)
+- [Amiga (75)](https://atebit.tech/classic/amiga.html)
 - [PC (42)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (40)](https://atebit.tech/classic/sinclair-zx.html)
 - [Tandy/Radio Shack (28)](https://atebit.tech/classic/tandy-radio-shack.html)

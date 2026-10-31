@@ -6221,9 +6221,9 @@
   {
     "Name": "Un Mundo de Retro Juegos",
     "URL": "https://www.youtube.com/UnMundodeRetroJuegos",
-    "Description": "Canal espanol de YouTube centrado en MSX, Amiga y sistemas de 8/16 bits. Gameplays extensos, cobertura de la escena homebrew y analisis tecnico.",
+    "Description": "Canal en español sobre videojuegos retro, nostalgia y coleccionismo, con videos sobre juegos y equipos de MSX, Amstrad, Commodore, Famicom, TI-99/4A y Atari ST. English: Spanish-language channel about retro games, nostalgia, and collecting, with videos on MSX, Amstrad, Commodore, Famicom, TI-99/4A, and Atari ST games and hardware.",
     "Category": "YouTube & Social Channels",
-    "Brands": "Amiga, MSX",
+    "Brands": "Various",
     "Language": "Spanish",
     "ID": "un-mundo-de-retro-juegos"
   },
@@ -6410,7 +6410,7 @@
   {
     "Name": "Velberan",
     "URL": "https://www.youtube.com/velberan",
-    "Description": "Grande canal brasileiro de YouTube sobre retrogaming. Conteudo extenso e variado com gameplays, analises e curiosidades de jogos classicos.",
+    "Description": "Canal de análisis, gameplays y curiosidades sobre juegos de distintas épocas, incluidos juegos retro e indies, noticias comentadas y juegos de lucha como The King of Fighters y Street Fighter. English: Portuguese-language channel covering games from different eras through reviews, gameplay, and trivia, including retro and indie games, gaming news, and fighting games such as The King of Fighters and Street Fighter.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "Portuguese",
@@ -6419,8 +6419,8 @@
   {
     "Name": "Veronica Explains Nothing (YouTube)",
     "URL": "https://www.youtube.com/channel/UCsbmzVl1byLQmc79Ff4xgIg",
-    "Description": "Veronica Explains Nothing — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Small companion YouTube channel whose description directs viewers to Veronica’s main channel for her regular videos.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "veronica-explains-nothing-youtube"
@@ -6563,8 +6563,8 @@
   {
     "Name": "VWestlife",
     "URL": "https://www.youtube.com/vwestlife",
-    "Description": "Retro audio/video equipment and computing crossovers",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "YouTube channel featuring demonstrations, reviews, and tutorials about computers and electronics, alongside stereo equipment, gadgets, classic video games, cars, radio, and videography.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "vwestlife"
