@@ -2477,9 +2477,9 @@
   {
     "Name": "Hak4Kidz",
     "URL": "https://www.hak4kidz.com",
-    "Description": "Hak4Kidz Hak4Kidz Soldering Lab – Hands-On Projects for All Ages Hak4Kidz offers soldering projects with a fun twist—interactive badges and playful circuits ...",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari",
+    "Description": "Youth-focused ethical-hacking conference offering capture-the-flag puzzles, hands-on hardware hacking and soldering, robotics, and cybersecurity workshops.",
+    "Category": "Events & Shows",
+    "Brands": "Various",
     "Language": "English",
     "ID": "hak4kidz"
   },
@@ -2720,18 +2720,18 @@
   {
     "Name": "Intellivision World",
     "URL": "https://www.intellivisionworld.com/",
-    "Description": "Comprehensive Intellivision resource covering games, hardware, programming, and community forums.",
-    "Category": "Communities & Forums",
+    "Description": "Collector reference for the Intellivision system with hardware and software information, a game database, system history, downloads, and resources. The site has English and Italian versions.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Intellivision",
-    "Language": "English",
+    "Language": "English, Italian",
     "ID": "intellivision-world"
   },
   {
     "Name": "Interim Computer Museum",
     "URL": "https://icm.museum",
-    "Description": "Interim Computer Museum Recollections at the Interim Computer Museum Recollect the past or experience it for the first time with remote access to 26 vintage ...",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Atari",
+    "Description": "Nonprofit museum preserving and sharing computing history through interactive exhibits, vintage hardware, remote access to historic systems, artifact preservation, and restoration.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "interim-computer-museum"
   },
