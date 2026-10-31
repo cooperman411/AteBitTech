@@ -5600,8 +5600,8 @@
   {
     "Name": "Steve's Retro Gaming - Aquarius FAQ",
     "URL": "https://stevesretrogaming.com/mattel-aquarius-faq/",
-    "Description": "Comprehensive FAQ for the Mattel Aquarius computer covering hardware, software, and peripherals.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference FAQ for the Mattel Aquarius, covering its history and specifications, software, accessories, unreleased items, documentation, and emulation.",
+    "Category": "Documentation & Wikis",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "steves-retro-gaming-aquarius-faq"
@@ -5609,18 +5609,18 @@
   {
     "Name": "Stewart Newfeld",
     "URL": "https://www.zebrasystems.com",
-    "Description": "Stewart Newfeld Timex TS1000 & Sinclair ZX81 products An extensive selection of Timex 1000 / Sinclair ZX81 computers, printers, kits, books, cassette softwar...",
+    "Description": "Timex/Sinclair supplier offering ZX81 and TS1000 computers, kits, upgrades, keyboards, replacement parts, manuals, books, and software.",
     "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Atari, Sinclair/ZX",
+    "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "stewart-newfeld"
   },
   {
     "Name": "Stone Age Gamer",
     "URL": "https://stoneagegamer.com/",
-    "Description": "EverDrive flash carts, SNES, NES, N64 accessories",
+    "Description": "Retro-gaming retailer selling games, consoles, accessories, EverDrive flash carts, hardware modifications, and repair services across multiple platforms.",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo, Sega",
+    "Brands": "Various",
     "Language": "English",
     "ID": "stone-age-gamer"
   },
@@ -5636,9 +5636,9 @@
   {
     "Name": "Style64",
     "URL": "https://style64.org/",
-    "Description": "Style64 Style64 - We make demos, tools, and toys for your Commodore Business Machine We make demos, tools, and toys for your Commodore Business Machine",
-    "Category": "Repair & Services, Software & Games",
-    "Brands": "Apple, Atari, Commodore, Nintendo",
+    "Description": "Commodore-focused development group creating demos, utilities, games, and tools, including disk-image software, BBS terminals, and cross-assemblers.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "style64"
   },
@@ -5663,17 +5663,17 @@
   {
     "Name": "Svenska Commodoreklubben",
     "URL": "https://commodore.se/",
-    "Description": "Svensk Commodore-klubb med forumdiskussioner. Svensk community for Commodore-entusiaster med fokus pa C64, Amiga och retro-datorer.",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Rikstäckande förening för Commodore-entusiaster, med webb, sociala medier och datorträffar som främjar intresset för och bevarandet av äldre datorer. National Swedish club for Commodore enthusiasts, with online and in-person activities supporting interest in and preservation of older computers.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore, Amiga",
-    "Language": "Swedish",
+    "Language": "Swedish, English",
     "ID": "svenska-commodoreklubben"
   },
   {
     "Name": "System Source Computer Museum",
     "URL": "https://museum.syssrc.com/",
-    "Description": "Located in Hunt Valley, MD, USA. Focus on Computers from 1950s–2000s. Tours by appointment; large hands-on collection.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Computer museum in Hunt Valley, Maryland, preserving computing history with exhibits of mainframes, minicomputers, vintage microcomputers, telecommunications equipment, calculators, and game systems; tours and events are available.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "system-source-computer-museum"
@@ -5690,8 +5690,8 @@
   {
     "Name": "Tandy Retro Show",
     "URL": "https://tandyretroshow.com/",
-    "Description": "Online Tandy and Radio Shack computing show with presentations, exhibits, and community participation.",
-    "Category": "Events & Shows, Communities & Forums",
+    "Description": "Virtual showcase for Tandy and Radio Shack systems, with project presentations, exhibits, and streamed talks.",
+    "Category": "Events & Shows",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "tandy-retro-show"
@@ -5699,8 +5699,8 @@
   {
     "Name": "Tandy Showcase",
     "URL": "https://tandyshowcase.com",
-    "Description": "Resource and showcase site dedicated to Tandy/Radio Shack computers.",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Private collection archive documenting Tandy and Radio Shack computing and corporate history through artifacts, exhibits, scans, and research.",
+    "Category": "Preservation & Archives",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "tandy-showcase"
@@ -5717,7 +5717,7 @@
   {
     "Name": "Tech Dungeon",
     "URL": "https://techdungeon.xyz",
-    "Description": "Retro systems, joysticks, and accessories. Store and parts.",
+    "Description": "Online store for retro-computing joystick adapters, controllers, cartridge trays, and other accessories, with product information and event updates.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -5753,9 +5753,9 @@
   {
     "Name": "Terraonion",
     "URL": "https://shop.terraonion.com/",
-    "Description": "MODE optical drive emulator, MegaSD, NeoSD",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Sega",
+    "Description": "Online store for hardware add-ons, flash cartridges, and optical-disc emulators for multiple retro console platforms.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "terraonion"
   },
@@ -5771,16 +5771,16 @@
   {
     "Name": "TexElec",
     "URL": "https://texelec.com/",
-    "Description": "TI-99/4A, C64, VIC-20 modern peripherals and carts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, TI",
+    "Description": "Online store for retro-computing hardware and upgrades, including cartridges, adapters, storage, and expansion products for TI-99/4A, Commodore, Atari, and other systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "texelec"
   },
   {
     "Name": "Thalamus Digital",
     "URL": "https://thalamusdigital.itch.io/roguecraft",
-    "Description": "Roguecraft boxed CD release",
+    "Description": "Digital listing for Roguecraft, a turn-based roguelike for Commodore Amiga, offered as downloadable disk-image files for emulation or use with real hardware.",
     "Category": "Software & Games",
     "Brands": "Amiga",
     "Language": "English",
@@ -5816,9 +5816,9 @@
   {
     "Name": "The Brewing Academy",
     "URL": "https://www.thebrewingacademy.com/",
-    "Description": "Commodore, Amiga, TI parts and modern upgrades",
+    "Description": "Online store for aftermarket hardware, homebrew cartridges, upgrades, and repair or installation services for retro computers and consoles including TI, Atari, Commodore, and Amiga.",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore, TI",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-brewing-academy"
   },

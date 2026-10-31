@@ -10,16 +10,16 @@
 - [Newsletter](https://atebittech.substack.com): Substack updates
 
 ## Top Brand Pages
-- [Commodore (153)](https://atebit.tech/classic/commodore.html)
-- [Apple (114)](https://atebit.tech/classic/apple.html)
-- [Atari (111)](https://atebit.tech/classic/atari.html)
-- [Amiga (85)](https://atebit.tech/classic/amiga.html)
+- [Commodore (151)](https://atebit.tech/classic/commodore.html)
+- [Apple (113)](https://atebit.tech/classic/apple.html)
+- [Atari (109)](https://atebit.tech/classic/atari.html)
+- [Amiga (84)](https://atebit.tech/classic/amiga.html)
 - [PC (57)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (47)](https://atebit.tech/classic/sinclair-zx.html)
 - [Tandy/Radio Shack (27)](https://atebit.tech/classic/tandy-radio-shack.html)
-- [Nintendo (24)](https://atebit.tech/classic/nintendo.html)
+- [Nintendo (22)](https://atebit.tech/classic/nintendo.html)
 - [Acorn/BBC (17)](https://atebit.tech/classic/acorn-bbc.html)
-- [Sega (17)](https://atebit.tech/classic/sega.html)
+- [Amstrad (15)](https://atebit.tech/classic/amstrad.html)
 - [All 43 brands](https://atebit.tech/classic/)
 
 ## Directory Categories
