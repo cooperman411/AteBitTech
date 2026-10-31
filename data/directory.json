@@ -3978,6 +3978,15 @@
     "ID": "paleotronic-microm8"
   },
   {
+    "Name": "Particles! BBS",
+    "URL": "https://www.particles.org/particlesbbs/",
+    "Description": "Retro-computing BBS and website with connection, software, downloads, and blog posts covering systems including Commodore, Amiga, and PC.",
+    "Category": "Internet & Networking, News & Blogs, Software & Games",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "restoration-team"
+  },
+  {
     "Name": "Paul Rak",
     "URL": "https://pjrcomputing.com",
     "Description": "Paul Rak Uncle Paulie's Retro Circus Sun / AT&T / misc vintage micros",
@@ -4466,8 +4475,8 @@
   {
     "Name": "r/dosgaming",
     "URL": "https://www.reddit.com/r/dosgaming/",
-    "Description": "PC subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Community for playing and discussing MS-DOS and early Windows games, including use on DOSBox or original hardware.",
+    "Category": "Communities & Forums",
     "Brands": "PC",
     "Language": "English",
     "ID": "r-dosgaming"
@@ -4484,7 +4493,7 @@
   {
     "Name": "Reboot (Jaguar devs)",
     "URL": "https://www.reboot-games.com/rebootnews/",
-    "Description": "Homebrew Jaguar games sold on cartridge and download",
+    "Description": "Reboot develops and publishes Atari Jaguar games, including physical cartridge releases and downloads, and provides Jaguar development tools.",
     "Category": "News & Blogs, Software & Games, Vendors & Stores",
     "Brands": "Atari",
     "Language": "English",
@@ -4493,8 +4502,8 @@
   {
     "Name": "Recap-A-Mac",
     "URL": "https://recapamac.com.au/",
-    "Description": "Recap and repair services for compact Macs and Power Macs",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Macintosh recapping and repair reference with capacitor guides for more than 30 models, restoration write-ups, and recent vintage Mac posts.",
+    "Category": "Documentation & Wikis, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "recap-a-mac"
@@ -4502,26 +4511,17 @@
   {
     "Name": "r/emulation",
     "URL": "https://www.reddit.com/r/emulation/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, Emulation & FPGA, YouTube & Social Channels",
+    "Description": "Reddit community for discussion of emulators and emulation software.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-emulation"
   },
   {
-    "Name": "Restoration Team",
-    "URL": "https://www.particles.org/particlesbbs/",
-    "Description": "Amiga CD32, A1200, A600 replacement parts and refurb services",
-    "Category": "Communities & Forums, Hardware & Parts, News & Blogs, Repair & Services",
-    "Brands": "Amiga",
-    "Language": "English",
-    "ID": "restoration-team"
-  },
-  {
     "Name": "Retro Computer Museum",
     "URL": "https://www.retrocomputermuseum.co.uk/",
-    "Description": "Located in Leicestershire, UK. Focus on Computers + Consoles from 1970s–2000s. Playable systems; events and education.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Leicestershire museum with playable classic computers, consoles, arcade systems, and virtual-reality exhibits, open on scheduled weekends and select bank holidays.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-computer-museum"
@@ -4557,7 +4557,7 @@
     "Name": "Retro Fusion",
     "URL": "https://www.retrofuzion.com/",
     "Description": "Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Amstrad, Apple, Atari, Commodore, IBM, PC, Sinclair/ZX, Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-fusion"
@@ -4574,8 +4574,8 @@
   {
     "Name": "Retro Game Repair Shop",
     "URL": "https://retrogamerepairshop.com/",
-    "Description": "Game Boy, NES, SNES refurb kits, IPS screens, shells",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for console and handheld repair and upgrade parts, including Game Boy display kits, shells, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "retro-game-repair-shop"
@@ -4583,7 +4583,7 @@
   {
     "Name": "Retro Gamer",
     "URL": "https://www.retrogamer.net",
-    "Description": "Still published monthly by Future Publishing, covering retro gaming and computing.",
+    "Description": "Online edition of Retro Gamer magazine, featuring news, features, and reviews about classic video games and systems.",
     "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
@@ -4592,8 +4592,8 @@
   {
     "Name": "Retro Games Ltd.",
     "URL": "https://retrogames.biz/",
-    "Description": "TheC64 (full size), TheC64 Mini, TheA500 Mini – official licensed emulated recreations",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Company site for classic computer and console recreations and accessories, including THEC64, THEA500 Mini, THE400 Mini, and The Spectrum.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "retro-games-ltd"
@@ -4637,27 +4637,27 @@
   {
     "Name": "RETRO Innovations",
     "URL": "https://www.go4retro.com",
-    "Description": "RETRO Innovations Classic Systems, Contemporary Gear Solutions to help you continue enjoying your classic systems in today's world",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Maker and store for contemporary peripherals and expansion hardware for classic computers, including storage devices and memory expansions.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, TI",
     "Language": "English",
     "ID": "retro-innovations"
   },
   {
     "Name": "Retro Innovations (go4retro) Blog",
     "URL": "http://www.go4retro.com/blog/",
-    "Description": "Commodore hardware project updates and news",
-    "Category": "News & Blogs, Repair & Services",
-    "Brands": "Commodore",
+    "Description": "Technical project blog about hardware for classic computers, including expansion designs such as memory upgrades for the Tandy Color Computer 3.",
+    "Category": "Documentation & Wikis, News & Blogs",
+    "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-innovations-go4retro-blog"
   },
   {
     "Name": "Retro Modding",
     "URL": "https://www.retromodding.com/",
-    "Description": "Game Boy shells, IPS kits, NES/SNES mods",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo",
+    "Description": "Online store for handheld and console modification parts, shells, display kits, and accessories, including products for Game Boy and Sega systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Nintendo, Sega",
     "Language": "English",
     "ID": "retro-modding"
   },
@@ -4673,8 +4673,8 @@
   {
     "Name": "Retro Passion",
     "URL": "https://www.retropassion.co.uk/",
-    "Description": "Amiga repairs, recaps, refurbs, spares",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Amiga specialist store selling custom and modified systems, refurbished motherboards, replacement parts, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "retro-passion"
@@ -4682,7 +4682,7 @@
   {
     "Name": "Retro PC Parts",
     "URL": "https://retropcparts.com/",
-    "Description": "Searchable database of PC hardware manufactured before 2005. Covers retro GPUs, CPUs, motherboards, displays, and components with specs and photos across 400+ parts.",
+    "Description": "Searchable retro PC parts reference with technical tables and photos for motherboards, graphics cards, CPUs, displays, and other components.",
     "Category": "Hardware & Parts, Documentation & Wikis",
     "Brands": "PC",
     "Language": "English",
