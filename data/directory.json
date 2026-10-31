@@ -3107,8 +3107,8 @@
   {
     "Name": "Lotharek's Lair",
     "URL": "https://lotharek.pl/",
-    "Description": "Floppy emulators, Atari/Amiga hardware upgrades",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online shop for HxC floppy emulators, FPGA computers, and replacement hardware and upgrades for Amiga, Atari and other classic systems; the site also lists electronic assembly services.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Atari, Commodore",
     "Language": "English",
     "ID": "lothareks-lair"
@@ -3116,8 +3116,8 @@
   {
     "Name": "Low End Mac",
     "URL": "https://lowendmac.com/",
-    "Description": "Classic Mac buying guides, upgrades, compatibility",
-    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Description": "Apple-focused reference and publishing site with vintage hardware specifications, repair and upgrade guides, a software index, compatibility information, articles and user groups.",
+    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "low-end-mac"
@@ -3143,8 +3143,8 @@
   {
     "Name": "Mac OS 9 for Windows (Mendelson)",
     "URL": "https://mendelson.org/macos9win.html",
-    "Description": "Guide for running classic Mac OS 9 on Windows using the Basilisk II emulator.",
-    "Category": "Emulation & FPGA",
+    "Description": "Guide and download for running Mac OS 9.0.4 in SheepShaver on 64-bit Windows 10 or 11, with separate Mac OS 8.1 and System 7.6.1 emulated systems and setup instructions.",
+    "Category": "Documentation & Wikis, Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mac-os-9-for-windows-mendelson"
@@ -3170,7 +3170,7 @@
   {
     "Name": "MacDat",
     "URL": "https://www.macdat.net/",
-    "Description": "A comprehensive database of specifications for a wide variety of vintage computers, with a primary focus on Apple Macintosh products and laptops.",
+    "Description": "Actively maintained vintage-computer reference site with more than 1,900 pages, including laptop and desktop specifications, Macintosh capacitor references, repair information and hardware portals.",
     "Category": "Documentation & Wikis, Hardware & Parts",
     "Brands": "Apple, Compaq, Gateway",
     "Language": "English",
@@ -3188,8 +3188,8 @@
   {
     "Name": "MacEffects",
     "URL": "https://maceffects.com/",
-    "Description": "Apple IIgs/SE/30 clear cases, replica boards",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for vintage Apple computer products, including clear cases, replica boards, upgrades and other hardware designed for classic Macintosh and Apple II systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "maceffects"
@@ -3233,17 +3233,17 @@
   {
     "Name": "MacintoshPi",
     "URL": "https://jm.iq.pl/macintoshpi-mac-os-7-8-9-for-raspberry-pi/",
-    "Description": "Guide and tools for running Mac OS 7/8/9 on a Raspberry Pi using emulation, with hardware acceleration.",
-    "Category": "Emulation & FPGA",
-    "Brands": "Apple",
+    "Description": "Project and installer for running Mac OS 7, 8 and 9 with Basilisk II and SheepShaver emulators on supported Raspberry Pi models; it also bundles VICE for Commodore 64/128/PET emulation and virtual-modem tools.",
+    "Category": "Emulation & FPGA, Software & Games",
+    "Brands": "Apple, Commodore, Raspberry Pi",
     "Language": "English",
     "ID": "macintoshpi"
   },
   {
     "Name": "MacSD",
     "URL": "https://www.macsd.com/",
-    "Description": "MacSD SCSI storage emulator for classic Macintosh",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "SCSI storage emulator for classic Macintosh computers that loads hard-drive, CD and floppy images from SD cards, with MIDI and audio features, firmware files, a manual and a purchase page.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "macsd"
@@ -3251,17 +3251,17 @@
   {
     "Name": "Maiden Ariana of Retro Alcove",
     "URL": "https://retroalcove.com",
-    "Description": "Maiden Ariana of Retro Alcove Retro Alcove w/MaidenAriana presents TWEAK: TradeWars2002 Expanded Applications Kernel Come try TWEAK: TradeWars2002 Expanded A...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Retro Alcove companion site for Maiden Ariana’s videos about classic hardware, C64 customization, computer festivals, vintage PC troubleshooting and a running telnet BBS.",
+    "Category": "Communities & Forums, Hardware & Parts, YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "maiden-ariana-of-retro-alcove"
   },
   {
     "Name": "MAMEDev",
     "URL": "https://www.mamedev.org/",
-    "Description": "Official home of MAME, with emulator releases, documentation, source code, system guides, development updates, forums, and community links.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "Official home of the MAME project, a multi-purpose emulator that documents and preserves arcade, computer, console and calculator software and hardware, with source code, downloads, documentation and project updates.",
+    "Category": "Communities & Forums, Documentation & Wikis, Emulation & FPGA",
     "Brands": "Apple, Sega, Atari, Various",
     "Language": "English",
     "ID": "mamedev"
@@ -3278,8 +3278,8 @@
   {
     "Name": "MARCHintosh",
     "URL": "https://marchintosh.com/",
-    "Description": "Annual March event celebrating classic Macintosh computing with competitions, events, and community projects.",
-    "Category": "Communities & Forums",
+    "Description": "Annual online March event for the classic Macintosh community, inviting creators to share 68K, PowerPC and early Intel Mac videos, articles, podcasts and other projects.",
+    "Category": "Communities & Forums, Events & Shows",
     "Brands": "Apple",
     "Language": "English",
     "ID": "marchintosh"
@@ -3296,17 +3296,17 @@
   {
     "Name": "Matt Massie",
     "URL": "https://github.com/nitros9project/nitros9",
-    "Description": "Matt Massie Foenix F256 NitrOS-9 / Basic09 Updates A display featuring the Foenix retro systems F256Jr / F256JrJr running NitrOS-9 and Basic09 with many new ...",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Atari",
+    "Description": "Community-maintained NitrOS-9 operating system for Motorola 6809 and Hitachi 6309 systems, supporting the Tandy Color Computer family and other compatible targets.",
+    "Category": "Operating Systems, Software & Games",
+    "Brands": "Tandy/Radio Shack, Various",
     "Language": "English",
     "ID": "matt-massie"
   },
   {
     "Name": "Matt Reichert 'Tempest'",
     "URL": "https://www.atariprotos.com/",
-    "Description": "Matt Reichert 'Tempest' Obscure Early Computers Obscure Early Computers featuring the VideoBrain, Exidy Sorcerer, and SV-328",
-    "Category": "Hardware & Parts",
+    "Description": "Archive documenting Atari game prototypes and unreleased builds, with development history, screenshots, manuals and recent discoveries.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Atari",
     "Language": "English",
     "ID": "matt-reichert-tempest"
