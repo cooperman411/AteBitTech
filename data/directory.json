@@ -5636,8 +5636,8 @@
   {
     "Name": "Suburban Chicago Atarians (SCAT)",
     "URL": "http://www.scatarians.org/",
-    "Description": "Suburban Chicago Atarians (SCAT) Fun Atari Computers and Rarities SCAT has been suburban Chicago's Atari computer users group since 1981! Come see some great...",
-    "Category": "Hardware & Parts",
+    "Description": "Suburban Chicago Atari computer users group, active since 1981, with meetings, virtual events, newsletters, downloads, TNFS servers, demos, and Atari resources.",
+    "Category": "Communities & Forums",
     "Brands": "Atari",
     "Language": "English",
     "ID": "suburban-chicago-atarians-scat"
@@ -5645,9 +5645,9 @@
   {
     "Name": "Superstar64 (YouTube)",
     "URL": "https://youtube.com/@superstar64",
-    "Description": "Superstar64 Superstar's Collection I'll have a live demo of some of my favorite systems from the horde",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "YouTube channel with livestreams and videos about retro computers, operating systems, and games, plus visits to vintage-computing events. Recent posts feature Macintosh projects and the 2026 Vintage Computer Festival Midwest.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "superstar64-youtube"
   },
@@ -5807,8 +5807,8 @@
   {
     "Name": "The Bit Culture (YouTube)",
     "URL": "https://www.youtube.com/channel/UCJWAJAMT4tUfwum-65yIwqQ",
-    "Description": "The Bit Culture — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about retro technology and classic games, with tips for maintaining vintage computers and videos about modifications and upgrades. Recent videos cover Atari ST emulation and Commodore Amiga systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-bit-culture-youtube"
@@ -5843,8 +5843,8 @@
   {
     "Name": "The Hot Holder",
     "URL": "https://www.thehotholder.com",
-    "Description": "Soldering fixture tool for electronics and retro computer bench work.",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Online store for the Hot Holder soldering tool, a bench aid with flexible heat-resistant grips and a suction base for holding electronic parts during assembly and repair.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-hot-holder"
@@ -5897,8 +5897,8 @@
   {
     "Name": "The Retro Collective (Channel)",
     "URL": "https://www.youtube.com/channel/UCLEoyoOKZK0idGqSc6Pi23w",
-    "Description": "The Retro Collective — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel for The Retro Collective, formerly RMCretro, covering vintage computers, consoles, arcade and gaming technology, and the group's museums and preservation work.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-retro-collective-channel"
@@ -5942,8 +5942,8 @@
   {
     "Name": "The Retro Shack (YouTube)",
     "URL": "https://www.youtube.com/channel/UCu_sNgTzqhX0xXc02ufoTYg",
-    "Description": "The Retro Shack — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel exploring the golden age of computing through retro computers, their history, and occasional modern systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-retro-shack-youtube"
@@ -5969,8 +5969,8 @@
   {
     "Name": "The Sprawl Technology Library",
     "URL": "http://www.sprawltechlib.com/",
-    "Description": "The Sprawl Technology Library The Sprawl Technology Library Exhibits The Sprawl Technology Library is a set of private libraries in Columbus, Ohio specializi...",
-    "Category": "Museums & Exhibits",
+    "Description": "Private library in Columbus, Ohio, dedicated to preserving and studying older technology, with a public archive and catalog of 666 items.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-sprawl-technology-library"
@@ -5987,8 +5987,8 @@
   {
     "Name": "The VintNerd",
     "URL": "https://www.youtube.com/TheVintNerd",
-    "Description": "YouTube channel covering retro games and computers, including Q*bert exhibits.",
-    "Category": "Museums & Exhibits, YouTube & Social Channels",
+    "Description": "YouTube channel about vintage computers and projects, covering systems such as Atari, Tandy/Radio Shack TRS-80, Commodore, TI-99/4A, and Microvision.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-vintnerd"
@@ -6014,9 +6014,9 @@
   {
     "Name": "TheRetroChannel (YouTube)",
     "URL": "https://www.youtube.com/channel/UCDCXIPcYNKXFnR8q145UvCg",
-    "Description": "TheRetroChannel — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "PC",
+    "Description": "YouTube channel about retro computers and consoles, with repair, modification, restoration, and preservation videos.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "theretrochannel-youtube"
   },
@@ -6122,8 +6122,8 @@
   {
     "Name": "Trina's Technobabble (YouTube)",
     "URL": "https://www.youtube.com/channel/UC-cIpJvy0FypBR04P-SCrdQ",
-    "Description": "Trina's Technobabble — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about working with vintage and modern computers and computer parts.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "trinas-technobabble-youtube"
@@ -6158,7 +6158,7 @@
   {
     "Name": "TVGRYpl (retro series)",
     "URL": "https://www.youtube.com/tvgrypl",
-    "Description": "Polski kanal YouTube o tematyce gier. Profesjonalny zespol dziennikarski tworzacy serie retro o klasycznych grach i sprzecie z duza widownia.",
+    "Description": "Kanał wideo redakcji GRYOnline.pl z materiałami o grach, recenzjami, opiniami i wywiadami; publikuje też materiały o historii klasycznych gier i serii. Editorial video channel from GRYOnline.pl covering games through reviews, commentary, and interviews, with occasional videos on classic games and franchises.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "Polish",
@@ -6203,8 +6203,8 @@
   {
     "Name": "Ultimate MiSTer",
     "URL": "https://ultimatemister.com/",
-    "Description": "Complete MiSTer FPGA kits and accessories",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for MiSTer FPGA systems, add-ons, cables, controllers, and accessories for platforms including Commodore 64 and Amiga, ZX Spectrum, Atari, and arcade systems.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "ultimate-mister"
