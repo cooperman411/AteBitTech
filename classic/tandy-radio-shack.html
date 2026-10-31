@@ -29,7 +29,7 @@
 <ul>
 <li><span class="entry-title"><a href="https://www.youtube.com/8BitShowAndTell">8-Bit Show And Tell</a></span><div class="entry-desc">Robin’s YouTube channel explores vintage computers and video games through in-depth videos on programming, history and development, with coverage of the Commodore 64, ZX Spectrum Next and TRS-80.</div></li>
 <li><span class="entry-title"><a href="https://byteshiftmusic.com">Byteshift</a></span><div class="entry-desc">Personal site combining music with retro-computing articles and hardware projects, including a TRS-80 Model I RS-232 interface recreation and a series about restoring TRS-80 Model I and III equipment.</div></li>
-<li><span class="entry-title"><a href="http://www.cloud9tech.com/Cloud-9/Hardware/index.html">Cloud-9 (CoCo)</a></span><div class="entry-desc">Tandy CoCo upgrades, storage solutions, parts</div></li>
+<li><span class="entry-title"><a href="http://www.cloud9tech.com/Cloud-9/Hardware/index.html">Cloud-9 (CoCo)</a></span><div class="entry-desc">Shop for Tandy Color Computer hardware, upgrades and accessories, including storage, SCSI, video, keyboard and memory products.</div></li>
 <li><span class="entry-title"><a href="https://cocoman.onlineweb.shop/">COCOMAN/Fairly Amused</a></span><div class="entry-desc">Shop for Tandy/Radio Shack Color Computer and MC-10 cables, switches and accessories, plus Apple IIgs video adapters. The catalog includes specialty connectors and display cables.</div></li>
 <li><span class="entry-title"><a href="https://downpoly.bandcamp.com">Downpoly</a></span><div class="entry-desc">Music project using TRS-80 and Orchestra-90, blending retro computing and audio.</div></li>
 <li><span class="entry-title"><a href="https://www.facebook.com/groups/232971221156828/">Frank&#x27;s CoCo Parts (Facebook Group)</a></span><div class="entry-desc">Active Tandy/Radio Shack community for discussion, trading, help, and sharing.</div></li>
@@ -47,4 +47,29 @@
 <li><span class="entry-title"><a href="https://sites.google.com/view/spyhuntercoco/home">Rich Natili</a></span><div class="entry-desc">Rich Natili Adventures in CoCo Spy Hunting I will be running my custom programmed version of the classic Bally ‘Spy Hunter’ on a TRS-80 Color Computer 1 conn...</div></li>
 <li><span class="entry-title"><a href="https://boysontech.com">Richard Lorbieski</a></span><div class="entry-desc">BoysonTech designs and sells Tandy Color Computer upgrades such as the CoCo SDC and memory expansions, plus an Atari/Sega Genesis joystick adapter.</div></li>
 <li><span class="entry-title"><a href="https://tandyretroshow.com/">Tandy Retro Show</a></span><div class="entry-desc">Virtual showcase for Tandy and Radio Shack systems, with project presentations, exhibits, and streamed talks.</div></li>
-<li><span class="entry-title"><a href="https://tandyshowcase.com">Tandy Sh
+<li><span class="entry-title"><a href="https://tandyshowcase.com">Tandy Showcase</a></span><div class="entry-desc">Private collection archive documenting Tandy and Radio Shack computing and corporate history through artifacts, exhibits, scans, and research.</div></li>
+<li><span class="entry-title"><a href="https://www.facebook.com/groups/trs80">TRS-80 (Tandy) Enthusiasts (Facebook Group)</a></span><div class="entry-desc">Active Tandy/Radio Shack community for discussion, trading, help, and sharing.</div></li>
+<li><span class="entry-title"><a href="https://vcfmw.org/">VCF Midwest</a></span><div class="entry-desc">Annual Midwest vintage-computer festival with exhibits, vendors, talks, and community activities.</div></li>
+<li><span class="entry-title"><a href="https://vcfpnw.org/">VCF Pacific Northwest</a></span><div class="entry-desc">Pacific Northwest vintage-computer festival with event information, an online program, and a photo archive.</div></li>
+<li><span class="entry-title"><a href="https://www.vcfsocal.com/">VCF SoCal</a></span><div class="entry-desc">Annual Southern California vintage-computing festival at the OC Fair &amp; Event Center, with exhibits, talks, and hands-on activities. The next festival is scheduled for February 20–21, 2027.</div></li>
+<li><span class="entry-title"><a href="https://www.vcfsw.org/">VCF Southwest</a></span><div class="entry-desc">Dallas-Fort Worth vintage-computer festival with vendors, exhibits, workshops, talks, an auction, and consignment.</div></li>
+<li><span class="entry-title"><a href="https://www.6809.org.uk/xroar/index.shtml">XRoar Dragon Emulator</a></span><div class="entry-desc">Cross-platform emulator for Dragon 32/64, Tandy Colour Computer 1–3, MC-10 and related 8-bit machines, with downloads, manuals and browser-based XRoar Online.</div></li>
+</ul>
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle-footer" class="hc-toggle">[ High Contrast ]</button>
+</footer>
+<script>
+document.querySelectorAll(".hc-toggle").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.documentElement.classList.toggle("hc");
+    const label = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
+    document.querySelectorAll(".hc-toggle").forEach(function(toggle) {
+      toggle.textContent = label;
+    });
+  });
+});
+</script>
+</body>
+</html>
