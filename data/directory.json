@@ -1,4 +1,4 @@
-Warning: truncated output (original token count: 73386)
+Warning: truncated output (original token count: 73593)
 Total output lines: 6869
 
 [
@@ -2232,33 +2232,7 @@ Total output lines: 6869
     "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
-    "ID": "…23386 tokens truncated…/",
-    "Description": "Reddit community for Atari 8-bit computers.",
-    "Category": "Communities & Forums",
-    "Brands": "Atari",
-    "Language": "English",
-    "ID": "r-atari8bit"
-  },
-  {
-    "Name": "r/AtariST",
-    "URL": "https://www.reddit.com/r/AtariST/",
-    "Description": "Reddit community for the Atari ST line of 16-bit personal computers.",
-    "Category": "Communities & Forums",
-    "Brands": "Atari",
-    "Language": "English",
-    "ID": "r-atarist"
-  },
-  {
-    "Name": "Ray Carlsen Electronics",
-    "URL": "https://www.carlsenelectronics.net/",
-    "Description": "Hand-built safe PSUs and adapters for Commodore computers",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore",
-    "Language": "English",
-    "ID": "ray-carlsen-electronics"
-  },
-  {
-    "Name": "RC2014",
+    "ID": "…23593 tokens truncated…: "RC2014",
     "URL": "https://rc2014.co.uk/",
     "Description": "Project website for the RC2014 Z80-based retro-computer kit, with full kits, backplanes, modules and assembly guides.",
     "Category": "Documentation & Wikis, Hardware & Parts",
@@ -2989,7 +2963,7 @@ Total output lines: 6869
   {
     "Name": "r/technews",
     "URL": "https://www.reddit.com/r/technews/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for hard-tech news and articles.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -2998,8 +2972,8 @@ Total output lines: 6869
   {
     "Name": "r/THEC64Community",
     "URL": "https://www.reddit.com/r/THEC64Community/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for support with THEC64 Mini, THEC64 Maxi, THEVIC20, and Project Carousel USB.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-thec64community"
@@ -3007,7 +2981,7 @@ Total output lines: 6869
   {
     "Name": "r/Vectrex",
     "URL": "https://www.reddit.com/r/Vectrex",
-    "Description": "Vectrex subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for Vectrex fans, owners, collectors, and developers discussing games, hardware, and accessories.",
     "Category": "Communities & Forums",
     "Brands": "Vectrex",
     "Language": "English",
@@ -3016,8 +2990,8 @@ Total output lines: 6869
   {
     "Name": "r/vic20",
     "URL": "https://www.reddit.com/r/vic20/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for the Commodore VIC-20, an 8-bit home computer manufactured from 1981 to 1985.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-vic20"
@@ -3025,8 +2999,8 @@ Total output lines: 6869
   {
     "Name": "r/VintageApple",
     "URL": "https://www.reddit.com/r/VintageApple/",
-    "Description": "Apple subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for vintage Apple computers and products, including pre-Intel Macintosh, Lisa, and Newton systems.",
+    "Category": "Communities & Forums",
     "Brands": "Apple",
     "Language": "English",
     "ID": "r-vintageapple"
@@ -3034,7 +3008,7 @@ Total output lines: 6869
   {
     "Name": "r/vintagecgi",
     "URL": "https://www.reddit.com/r/vintagecgi/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit archive for vintage computer-generated imagery from the 1970s through the 2000s.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -3043,8 +3017,8 @@ Total output lines: 6869
   {
     "Name": "r/VintageComputers",
     "URL": "https://www.reddit.com/r/VintageComputers/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for vintage computing, where members ask for help with old hardware and share their computers.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-vintagecomputers"
@@ -3052,7 +3026,7 @@ Total output lines: 6869
   {
     "Name": "r/vintagecomputing",
     "URL": "https://www.reddit.com/r/vintagecomputing/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community sharing information and stories about vintage computer hardware and software.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -3061,17 +3035,17 @@ Total output lines: 6869
   {
     "Name": "RWAP Software",
     "URL": "https://www.rwapsoftware.co.uk/",
-    "Description": "Sinclair QL, Spectrum, C64 hardware and software",
-    "Category": "Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Sinclair/ZX",
+    "Description": "Retro-computing business offering software, replacement parts, peripherals, support, and second-hand hardware and software across Sinclair and other vintage platforms.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "rwap-software"
   },
   {
     "Name": "Sam Coupé Users Club",
     "URL": "https://www.samcoupe.com/",
-    "Description": "SAM Coupé community site with user resources, news, and links for the surviving hardware and software community.",
-    "Category": "Communities & Forums, Documentation & Wikis",
+    "Description": "Quazar’s SAM Coupé site with news, games and utilities, custom hardware, repairs and spares, and product ordering.",
+    "Category": "Hardware & Parts, News & Blogs, Repair & Services, Software & Games, Vendors & Stores",
     "Brands": "Sam Coupé",
     "Language": "English",
     "ID": "sam-coupe-users-club"
@@ -3106,8 +3080,8 @@ Total output lines: 6869
   {
     "Name": "ScummVM",
     "URL": "https://www.scummvm.org/",
-    "Description": "ScummVM project Discord for developer discussion, user support, and release updates.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "Software project that runs more than 325 classic graphical adventure and role-playing games on many platforms using the games’ data files; it replaces game executables rather than emulating hardware.",
+    "Category": "Communities & Forums, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "scummvm"
@@ -3124,8 +3098,8 @@ Total output lines: 6869
   {
     "Name": "Seasip Compaq Info",
     "URL": "https://seasip.info/VintagePC/compaq.html",
-    "Description": "Technical information and documentation for Compaq Portable and DeskPro vintage computers.",
-    "Category": "Hardware & Parts",
+    "Description": "Technical reference pages for vintage PCs, including Compaq Portable and Deskpro hardware, video modes, firmware, switches, and software.",
+    "Category": "Documentation & Wikis",
     "Brands": "Compaq",
     "Language": "English",
     "ID": "seasip-compaq-info"
@@ -3151,7 +3125,7 @@ Total output lines: 6869
   {
     "Name": "Sega-16 Forums",
     "URL": "https://www.sega-16forums.com/forum",
-    "Description": "Sega Genesis/Mega Drive and other Sega console forums",
+    "Description": "Sega gaming forum covering Master System, Genesis/Mega Drive, Sega CD, 32X, Saturn, Dreamcast, arcade games, technical help, homebrew, and member trading.",
     "Category": "Communities & Forums",
     "Brands": "Sega",
     "Language": "English",
@@ -3160,9 +3134,9 @@ Total output lines: 6869
   {
     "Name": "SellMyRetro",
     "URL": "https://www.sellmyretro.com/",
-    "Description": "Sinclair Spectrum, ZX81, peripherals, hobbyist boards",
-    "Category": "Communities & Forums, Hardware & Parts, Vendors & Stores",
-    "Brands": "Sinclair/ZX, Various",
+    "Description": "Online marketplace and auction site for retro computers, consoles, vintage electronics, hardware, software, and related accessories, with fixed-price and auction listings.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "sellmyretro"
   },
@@ -3187,17 +3161,17 @@ Total output lines: 6869
   {
     "Name": "Shareware Plus",
     "URL": "https://sharewareplus.blogspot.com/",
-    "Description": "Amiga software, hardware, peripherals, books",
-    "Category": "News & Blogs, Vendors & Stores",
-    "Brands": "Amiga",
+    "Description": "Commodore-focused blog and store offering hardware and peripherals, including SD2IEC interfaces, Tapecart readers, and over-voltage protection for C64, C128, and VIC-20 systems.",
+    "Category": "Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "shareware-plus"
   },
   {
     "Name": "Sharp MZ Computing Archive",
     "URL": "https://www.sharpmz.net/",
-    "Description": "Detailed technical specifications and information for Sharp MZ series computers (MZ-40K, MZ-80, MZ-700, MZ-800, MZ-3500, MZ-5600, MZ-6500). Includes hardware documentation, software downloads, and community resources.",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Reference site with detailed information about Sharp MZ-series computers, including the MZ-40K, MZ-80, MZ-700/800, MZ-3500, MZ-5600, MZ-6500, and related models.",
+    "Category": "Documentation & Wikis",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "sharp-mz-computing-archive"
@@ -3205,7 +3179,7 @@ Total output lines: 6869
   {
     "Name": "Sharp MZ Emulator (mz800emu)",
     "URL": "https://github.com/michalhucik/mz800emu",
-    "Description": "Sharp MZ-800 emulator for modern systems, supporting MZF tape images and various Sharp MZ models.",
+    "Description": "Open-source emulator for Sharp MZ-800, MZ-700, and MZ-1500 computers, developed for Linux and Windows with SDL3 and ImGui.",
     "Category": "Emulation & FPGA",
     "Brands": "Sharp",
     "Language": "English",
