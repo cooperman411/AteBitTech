@@ -4934,7 +4934,7 @@
   {
     "Name": "RetroPassionUK (YouTube)",
     "URL": "https://www.youtube.com/@retropassionuk",
-    "Description": "YouTube channel companion to Retro Passion UK, featuring Amiga repair tutorials, restoration projects, hardware upgrades, and modification guides.",
+    "Description": "Amiga-focused channel featuring repair and restoration tutorials. Retro Passion UK also offers refurbishment, servicing and upgrades for the Amiga family.",
     "Category": "YouTube & Social Channels, Hardware & Parts, Repair & Services",
     "Brands": "Amiga",
     "Language": "English",
@@ -4961,17 +4961,17 @@
   {
     "Name": "RetroStack",
     "URL": "https://www.retrostack.org",
-    "Description": "Faithful TRS-80 Model 1 reimplementation with replica case, keyboard, and parts.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Tandy/Radio Shack",
+    "Description": "Open-source project documenting and reimplementing classic computers, including TRS-80 systems, Sorcerer and MicroBee. Its repositories include system documentation, software and replacement hardware projects.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Software & Games",
+    "Brands": "Tandy/Radio Shack, Various",
     "Language": "English",
     "ID": "retrostack"
   },
   {
     "Name": "RetroTechy (YouTube)",
     "URL": "https://www.youtube.com/channel/UCWwpIgGmCzVXUrQelC-QyPQ",
-    "Description": "RetroTechy — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about technology, thrifting and video games, with videos on vintage devices, retro computing and gaming.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retrotechy-youtube"
@@ -5015,9 +5015,9 @@
   {
     "Name": "Rich Natili",
     "URL": "https://sites.google.com/view/spyhuntercoco/home",
-    "Description": "Rich Natili Adventures in CoCo Spy Hunting I will be running my custom programmed version of the classic Bally ‘Spy Hunter’ on a TRS-80 Color Computer 1 conn...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari, Tandy/Radio Shack",
+    "Description": "Homebrew Spy Hunter project for the TRS-80 Color Computer, with development progress, game-layout and coding notes, arcade-control setup, MAME guidance and references.",
+    "Category": "Documentation & Wikis, Software & Games",
+    "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "rich-natili"
   },
@@ -5033,8 +5033,8 @@
   {
     "Name": "Rich's Random Retro Reviews (YouTube)",
     "URL": "https://www.youtube.com/channel/UCUjmO9ngHQAvYVvg3QfI7uQ",
-    "Description": "Rich's Random Retro Reviews — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel reviewing and unboxing retro technology, including vintage computers, games and consumer devices.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "richs-random-retro-reviews-youtube"
@@ -5042,8 +5042,8 @@
   {
     "Name": "Rik's Random Retro (YouTube)",
     "URL": "https://www.youtube.com/channel/UCd6zvRJJepjqEi3LFcRsjzg",
-    "Description": "Rik's Random Retro — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel and website about retro computers and games, with hardware videos, game coverage and regular streams.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "riks-random-retro-youtube"
@@ -5060,9 +5060,9 @@
   {
     "Name": "RobJenCollections (YouTube)",
     "URL": "https://youtube.com/@robjencollections",
-    "Description": "RobJenCollections RobJenCollections We collect, collaborate/restore, and sell retro computers, cameras, radios",
-    "Category": "Repair & Services, Vendors & Stores, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "YouTube channel documenting a retro-computer collection and preparation for VCF Midwest.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "robjencollections-youtube"
   },
@@ -5078,9 +5078,9 @@
   {
     "Name": "Ron's Computer Videos",
     "URL": "https://ronscompvids.com/",
-    "Description": "Ron's Computer Videos KARAOKE (using MIDI on Macintosh)! Have you ever wondered if it",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple",
+    "Description": "YouTube channel exploring vintage-computing hardware and classic adventure games through demonstrations, guides and interviews about early personal computing.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "rons-computer-videos"
   },
@@ -5285,9 +5285,9 @@
   {
     "Name": "Sega Lord X (YouTube)",
     "URL": "https://www.youtube.com/@SegaLordX/videos",
-    "Description": "Retro Sega. Systematic retrospectives.",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Sega",
+    "Description": "Sega-focused retro-gaming channel with reviews and retrospectives on Sega Saturn and Genesis, alongside other classic consoles.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Sega, Various",
     "Language": "English",
     "ID": "sega-lord-x-youtube"
   },
@@ -5312,9 +5312,9 @@
   {
     "Name": "Shadytel Midwest & Friends",
     "URL": "http://www.dms-100.net/vcfmw",
-    "Description": "Shadytel Midwest & Friends Shadytel Midwest Central Office Our exhibit not only provides the telephone infrastructure for the show, it is a demonstration of ...",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Atari, Nintendo",
+    "Description": "Volunteer telecom network project providing telephone, dial-up and other communications services for exhibitors at VCF Midwest. Its 2026 page documents the network build and show operations.",
+    "Category": "Events & Shows, Internet & Networking",
+    "Brands": "Various",
     "Language": "English",
     "ID": "shadytel-midwest-and-friends"
   },
@@ -5402,8 +5402,8 @@
   {
     "Name": "Silicium (FR) (YouTube)",
     "URL": "https://www.youtube.com/@retroredrum",
-    "Description": "Chaine YouTube d'une association francaise de retro computing. Restaurations, reportages sur des evenements et preservation du patrimoine informatique.",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "Chaîne française consacrée au rétrocomputing : réparations, modifications, électronique, retrogaming et bricolages informatiques. Elle présente aussi des replays de Twitch.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "French",
     "ID": "silicium-fr-youtube"
@@ -5465,9 +5465,9 @@
   {
     "Name": "Slobulus (YouTube)",
     "URL": "https://www.youtube.com/user/Slobulus",
-    "Description": "Canal espanol de YouTube sobre restauracion y tutoriales de PCs y consolas retro. Contenido practico de reparacion, montaje y mantenimiento de hardware clasico.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "PC",
+    "Description": "Spanish-language video-game channel featuring gameplay and analysis across generations, with particular attention to games from the 1980s and 1990s.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "Spanish",
     "ID": "slobulus-youtube"
   },
@@ -5528,8 +5528,8 @@
   {
     "Name": "Spectrum Computing",
     "URL": "https://spectrumcomputing.co.uk/",
-    "Description": "ZX Spectrum database and magazine archive",
-    "Category": "News & Blogs",
+    "Description": "Free community archive of ZX Spectrum software and documentation using the open-source ZXDB database. It includes game and hardware records, magazine links, forums and resources for other Sinclair systems such as the ZX80, ZX81, QL and Next.",
+    "Category": "Communities & Forums, Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "spectrum-computing"
@@ -5537,8 +5537,8 @@
   {
     "Name": "SpineCard (YouTube)",
     "URL": "https://www.youtube.com/@SpineCard/",
-    "Description": "Canal espanol de YouTube sobre coleccionismo y analisis retro. Gran audiencia con resenas detalladas de juegos clasicos y hardware vintage.",
-    "Category": "YouTube & Social Channels",
+    "Description": "Spanish-language retro-gaming channel featuring console and game reviews, collection videos and commentary. The channel also links to its console-modding workshop.",
+    "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "Spanish",
     "ID": "spinecard-youtube"
