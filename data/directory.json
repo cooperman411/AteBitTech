@@ -3539,7 +3539,7 @@
   {
     "Name": "Monsoon Studios",
     "URL": "https://monsoonstudios.net",
-    "Description": "Developer and vendor of new NES homebrew titles.",
+    "Description": "Southern California game developer focused on retro systems. Its current projects include NES games such as Copper Jacket, with plans to publish for other systems.",
     "Category": "Software & Games, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
@@ -3557,8 +3557,8 @@
   {
     "Name": "Mr. Macintosh",
     "URL": "https://mrmacintosh.com",
-    "Description": "Mr. Macintosh Display Macintosh Servers",
-    "Category": "Hardware & Parts",
+    "Description": "Apple IT and Mac support site publishing macOS news, troubleshooting articles, how-to guides, installer downloads and restore resources.",
+    "Category": "Documentation & Wikis, Operating Systems",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mr-macintosh"
@@ -3638,9 +3638,9 @@
   {
     "Name": "Mutant Caterpillar Games",
     "URL": "https://www.mutant-caterpillar.co.uk/shop/",
-    "Description": "Repairs and refurbs for Amiga, Atari, Spectrum, BBC, etc.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Atari, Sinclair/ZX",
+    "Description": "Shop for tested, refurbished 8-bit and 16-bit computers, software and spare parts, with repairs for systems including Sinclair, Amstrad, Commodore, Acorn, Atari and Amiga machines.",
+    "Category": "Hardware & Parts, Repair & Services, Software & Games, Vendors & Stores",
+    "Brands": "Acorn/BBC, Amiga, Amstrad, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "mutant-caterpillar-games"
   },
@@ -3665,9 +3665,9 @@
   {
     "Name": "MyAbandonware",
     "URL": "https://www.myabandonware.com/",
-    "Description": "Abandonware games and software for DOS, Windows, Mac",
+    "Description": "Catalog of classic PC and console games from 1965 to 2015, with game details, manuals, reviews and downloadable files.",
     "Category": "Software & Games",
-    "Brands": "Apple, PC",
+    "Brands": "Various",
     "Language": "English",
     "ID": "myabandonware"
   },
@@ -3710,8 +3710,8 @@
   {
     "Name": "NABU RetroNET",
     "URL": "https://nabu.ca/",
-    "Description": "NABU RetroNET Preservation Project offering Cloud CP/M, network adapter emulation, and homebrew software.",
-    "Category": "Preservation & Archives, Emulation & FPGA",
+    "Description": "Community project for restoring and preserving Canadian NABU PCs, the Internet Adapter and NABU Network. RetroNET shares Cloud CP/M, homebrew software and members’ projects.",
+    "Category": "Internet & Networking, Preservation & Archives, Software & Games",
     "Brands": "Nabu",
     "Language": "English",
     "ID": "nabu-retronet"
@@ -3719,8 +3719,8 @@
   {
     "Name": "National Videogame Museum (UK)",
     "URL": "https://thenvm.org/",
-    "Description": "Located in Sheffield, UK. Focus on Video Games from 1970s–present. National UK centre for videogames.",
-    "Category": "Hardware & Parts, Museums & Exhibits, Software & Games",
+    "Description": "Interactive videogame museum in Sheffield, England, with more than 100 games to play, exhibitions on game history and culture, and workshops about making games.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "national-videogame-museum-uk"
@@ -3728,8 +3728,8 @@
   {
     "Name": "National Videogame Museum (US)",
     "URL": "https://nvmusa.org",
-    "Description": "Museum dedicated to the history of video games and related computing hardware.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Videogame museum in Frisco, Texas, preserving and presenting game history through interactive exhibits and educational programs.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "national-videogame-museum-us"
@@ -3755,17 +3755,17 @@
   {
     "Name": "NetBSD/vax",
     "URL": "https://wiki.netbsd.org/ports/vax/",
-    "Description": "NetBSD port for VAX minicomputers",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "NetBSD port for DEC VAX computers, with release downloads, installation notes, supported-model information and development resources.",
+    "Category": "Documentation & Wikis, Operating Systems",
     "Brands": "DEC",
     "Language": "English",
     "ID": "netbsd-vax"
   },
   {
-    "Name": "Nintendo Virtual Console / NSO",
+    "Name": "Nintendo Switch Online (Nintendo Classics)",
     "URL": "https://www.nintendo.com/switch/online/",
-    "Description": "Official NES/SNES retro games on modern platforms",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
+    "Description": "Nintendo Switch Online includes a curated library of classic NES, Super NES and Game Boy games; the Expansion Pack adds Nintendo 64, Game Boy Advance, GameCube and SEGA Genesis titles.",
+    "Category": "Software & Games",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "nintendo-virtual-console-nso"
