@@ -956,8 +956,8 @@
   {
     "Name": "Blue Sky Rangers",
     "URL": "https://www.blueskyrangers.com",
-    "Description": "Intellivision history and developer archive maintained by original team.",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "Historical archive about Mattel’s Intellivision, with system and game histories, hardware and peripheral articles, and material about the developers known as the Blue Sky Rangers.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "blue-sky-rangers"
@@ -965,8 +965,8 @@
   {
     "Name": "blueMSX",
     "URL": "https://www.bluemsx.com/",
-    "Description": "MSX emulator (legacy but popular)",
-    "Category": "Emulation & FPGA, YouTube & Social Channels",
+    "Description": "Browser-based MSX emulator with on-screen controls for virtual disk drives, cassette, hard disk, keyboard and joystick input. The site presents the emulator as an interactive live machine.",
+    "Category": "Emulation & FPGA",
     "Brands": "MSX",
     "Language": "English",
     "ID": "bluemsx"
@@ -974,9 +974,9 @@
   {
     "Name": "BlueSCSI",
     "URL": "https://bluescsi.com/",
-    "Description": "Open-source SCSI storage emulator for vintage Macs and others",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Apple",
+    "Description": "Open-source SD-card device that replaces SCSI drives in vintage computers, including Macintosh, Amiga and Atari systems. It emulates multiple SCSI devices and offers firmware, documentation and optional Wi-Fi networking support.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Hardware & Parts",
+    "Brands": "Amiga, Apple, Atari",
     "Language": "English",
     "ID": "bluescsi"
   },
@@ -985,17 +985,17 @@
     "URL": "https://github.com/randyrossi/bmc64/",
     "Description": "Commodore 64 bare-metal emulator for Raspberry Pi, providing near-native performance for C64 emulation on Pi hardware.",
     "Category": "Emulation & FPGA",
-    "Brands": "Raspberry Pi",
+    "Brands": "Commodore, Raspberry Pi",
     "Language": "English",
     "ID": "bmc64-commodore-64-on-raspberry-pi"
   },
   {
     "Name": "BMC64 (Bare Metal C64)",
     "URL": "https://www.faszinationc64.de/BMC64-Bare-Metal-Commodore64",
-    "Description": "Raspberry Pi bare-metal Commodore 64 emulator that boots directly without an OS for authentic performance.",
-    "Category": "Emulation & FPGA",
-    "Brands": "Commodore",
-    "Language": "English",
+    "Description": "Moderner Hardware-C64-Emulator auf Raspberry-Pi-Basis, der in ein originales C64-Gehäuse eingebaut werden kann. Er ersetzt auch das Diskettenlaufwerk und wird mit einer Micro-SD-Karte geliefert. Modern hardware C64 emulator based on a Raspberry Pi, designed for installation in an original C64 case. It also replaces the floppy drive and includes a microSD card.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
+    "Brands": "Commodore, Raspberry Pi",
+    "Language": "German",
     "ID": "bmc64-bare-metal-c64"
   },
   {
@@ -1046,9 +1046,9 @@
   {
     "Name": "Bryce Wilson",
     "URL": "https://github.com/gummyworm/monster",
-    "Description": "Bryce Wilson Monster: a modern native assembly development environment for the Commodore Vic-20 Try out a powerful development tool almost a decade in the ma...",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Atari, Commodore",
+    "Description": "Monster is a 40-column editor, macro-assembler and debugger for the Commodore VIC-20. The project includes documentation and requires a VIC-20 with an Ultimem memory expansion.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "bryce-wilson"
   },
@@ -1073,9 +1073,9 @@
   {
     "Name": "Byteshift",
     "URL": "https://byteshiftmusic.com",
-    "Description": "Byteshift Demonstrating Amateur Packet Radio, data over the air in the 80s Demonstrating Amateur Packet Radio and selling various items, including my recreat...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari, Tandy/Radio Shack",
+    "Description": "Personal site combining music with retro-computing articles and hardware projects, including a TRS-80 Model I RS-232 interface recreation and a series about restoring TRS-80 Model I and III equipment.",
+    "Category": "Hardware & Parts, News & Blogs",
+    "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "byteshift"
   },
@@ -1100,17 +1100,17 @@
   {
     "Name": "C64 PSU (Electroware)",
     "URL": "https://c64psu.com/",
-    "Description": "Modern safe PSUs for Commodore and Atari",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Atari, Commodore",
+    "Description": "Electroware sells modern replacement power supplies for Commodore, Amiga, Atari and ZX Spectrum computers. Its C64PSU site describes the power products and the systems they support.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amiga, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "c64-psu-electroware"
   },
   {
     "Name": "C64 Reloaded Store (iComp)",
     "URL": "https://icomp.de/",
-    "Description": "Amiga, C64, C128 modern motherboards and accelerators",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "iComp sells Amiga expansion hardware and Commodore C64 Reloaded motherboards and cases. Its site provides product news, downloads and an online shop.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "c64-reloaded-store-icomp"
@@ -1128,7 +1128,7 @@
     "Name": "C64 Wiki (EN)",
     "URL": "https://www.c64-wiki.com/",
     "Description": "English Commodore 64 encyclopedia",
-    "Category": "Documentation & Wikis, Repair & Services",
+    "Category": "Documentation & Wikis",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "c64-wiki-en"
@@ -1136,17 +1136,17 @@
   {
     "Name": "C64 Zone",
     "URL": "https://c64zone.neocities.org/",
-    "Description": "Comprehensive Commodore 64 reference site covering emulation, hardware, software, and programming.",
-    "Category": "Communities & Forums, Documentation & Wikis",
+    "Description": "Sitio bilingüe de Commodore 64 con reseñas de juegos, artículos de historia y hardware, un directorio de juegos enlazados para jugar en el navegador, un cuestionario y música SID. Bilingual Commodore 64 site with game reviews, history and hardware articles, a directory of links to games playable in a browser, a quiz and SID music.",
+    "Category": "News & Blogs, Software & Games",
     "Brands": "Commodore",
-    "Language": "English",
+    "Language": "Spanish, English",
     "ID": "c64-zone"
   },
   {
     "Name": "C64 Zone — Emulation (ES)",
-    "URL": "https://c64zone.neocities.org/en/emulacion",
-    "Description": "Guia en espanol sobre emulacion de Commodore 64. Directorio de 576 juegos online jugables desde el navegador con categorias por genero. El sitio principal esta disponible en espanol e ingles. The main site is available in Spanish and English.",
-    "Category": "Emulation & FPGA, Documentation & Wikis",
+    "URL": "https://c64zone.neocities.org/emulacion",
+    "Description": "Directorio en español de juegos de Commodore 64 con enlaces a 576 títulos para jugar en el navegador; la página enlaza a servidores externos y no aloja ningún emulador. Spanish-language directory of Commodore 64 games with links to 576 browser-playable titles; the page links to external servers and does not host an emulator.",
+    "Category": "Software & Games",
     "Brands": "Commodore",
     "Language": "Spanish",
     "ID": "c64-zone-emulation-es"
@@ -1163,7 +1163,7 @@
   {
     "Name": "C64.com",
     "URL": "https://www.c64.com/",
-    "Description": "Massive archive of Commodore 64 software including games, demos, and applications with screenshots and reviews.",
+    "Description": "Searchable Commodore 64 game archive with downloadable titles, reviews, inlay scans, game instructions and FAQs.",
     "Category": "Software & Games, Preservation & Archives",
     "Brands": "Commodore",
     "Language": "English",
@@ -1190,17 +1190,17 @@
   {
     "Name": "C64Power",
     "URL": "https://www.c64power.com/",
-    "Description": "Polish Commodore 64 community",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Polski serwis o Commodore 64 z artykułami, archiwum gier i plików, poradnikami oraz materiałami o polskiej scenie C64. Polish-language site about the Commodore 64 with articles, game and file archives, guides, and material on the Polish C64 scene.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Commodore",
-    "Language": "English",
+    "Language": "Polish",
     "ID": "c64power"
   },
   {
     "Name": "Call-A.P.P.L.E.",
     "URL": "https://www.callapple.org/",
-    "Description": "World's largest Apple user group since 1978. Full-color magazine, software downloads, books, emulators, and technical references for the entire Apple II and early Mac ecosystem.",
-    "Category": "Communities & Forums, Documentation & Wikis, Software & Games, News & Blogs",
+    "Description": "A.P.P.L.E. is an Apple user group supporting Apple II, Macintosh and other Apple users. Its site offers current and archived magazines, historical journals, a member software library and related resources.",
+    "Category": "Communities & Forums, News & Blogs, Preservation & Archives, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "call-a-p-p-l-e"
