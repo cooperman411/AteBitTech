@@ -11,7 +11,7 @@
   {
     "Name": "6502 Workshop",
     "URL": "https://www.6502workshop.com/",
-    "Description": "Developers of 'Nox Archaist', released on floppy, digital, boxed sets",
+    "Description": "Developers of the Apple II role-playing game Nox Archaist, available in digital and boxed editions, and its sequel Nox Archaist II: Dragonsmere, in development.",
     "Category": "Software & Games, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
@@ -66,7 +66,7 @@
     "Name": "8-Bit Classics",
     "URL": "https://www.8bitclassics.com/",
     "Description": "Cables, power supplies, adapters for Commodore, Atari, others",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Atari, Commodore, Various",
     "Language": "English",
     "ID": "8-bit-classics"
@@ -147,7 +147,7 @@
     "Name": "a2heaven",
     "URL": "https://a2heaven.com",
     "Description": "Modern storage and expansion cards for Apple II",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "a2heaven"
@@ -309,7 +309,7 @@
     "Name": "AMI64 Links",
     "URL": "https://www.ami64.com/links",
     "Description": "Curated link directory of Amiga and Commodore 64 related websites and resources.",
-    "Category": "Communities & Forums",
+    "Category": "Documentation & Wikis",
     "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "ami64-links"
