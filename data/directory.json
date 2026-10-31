@@ -2169,6 +2169,15 @@
     "ID": "firenze-vintage-bit"
   },
   {
+    "Name": "Floppy Days Vintage Computing Podcast",
+    "URL": "https://www.floppydays.com",
+    "Description": "English-language podcast about vintage home computers, especially systems from the late 1970s and 1980s, with interviews and episodes on machines, software and computing history.",
+    "Category": "Podcasts & Audio",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "randy-kindig-floppy-days-and-antic-podcasts"
+  },
+  {
     "Name": "Forgotten Machines",
     "URL": "http://forgottenmachines.com",
     "Description": "Forgotten Machines Rare Vintage Computer Systems Everyone Else Forgot The rare, the obscure, the unknown, all about computers that truly are...Forgotten Mach...",
@@ -4187,7 +4196,7 @@
   {
     "Name": "Power of Vintage (YouTube)",
     "URL": "https://www.youtube.com/@powerofvintage9442",
-    "Description": "Power of Vintage Atari Home Computers 8-bit to the end Atari home computers including the various 8-bit variations through the 16-bit ST's to the TT and Falcon",
+    "Description": "Power of Vintage explores Atari home computers from the 8-bit systems through the ST, TT and Falcon, with projects, upgrades and hands-on computing videos.",
     "Category": "YouTube & Social Channels",
     "Brands": "Atari",
     "Language": "English",
@@ -4250,17 +4259,17 @@
   {
     "Name": "Project EGG 公式",
     "URL": "https://www.youtube.com/ProjectEGG",
-    "Description": "Classic JP micros. Official channel.",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "Japanese-language channel from Project EGG introducing classic Japanese PC games and related releases through videos.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
-    "Language": "English",
+    "Language": "Japanese",
     "ID": "project-egg"
   },
   {
     "Name": "projectCD.Chronicles (YouTube)",
     "URL": "https://www.youtube.com/channel/UC4gRRyPrXz-BbMZsV2ZcqWg",
-    "Description": "projectCD.Chronicles — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Channel covering computer science and technology with a focus on retro computers, programming projects, Linux and related adventures.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "projectcd-chronicles-youtube"
@@ -4345,15 +4354,6 @@
     "Brands": "Amstrad",
     "Language": "English",
     "ID": "r-amstrad"
-  },
-  {
-    "Name": "Randy Kindig, Floppy Days & ANTIC Podcasts",
-    "URL": "https://www.floppydays.com",
-    "Description": "Randy Kindig, Floppy Days & ANTIC Podcasts Floppy Days and ANTIC Podcasts If you're not listening to the Floppy Days (general vintage computing) or ANTIC (At...",
-    "Category": "Hardware & Parts, Podcasts & Audio",
-    "Brands": "Atari",
-    "Language": "English",
-    "ID": "randy-kindig-floppy-days-and-antic-podcasts"
   },
   {
     "Name": "r/apple2",
@@ -4475,7 +4475,7 @@
   {
     "Name": "RDKL, Inc. (YouTube)",
     "URL": "https://www.youtube.com/channel/UCF-tqqmlcJT5FtoUqYgxblQ",
-    "Description": "RDKL, Inc. — retro computing YouTube channel focused on repairs, builds, and history.",
+    "Description": "RDKL, Inc. videos document laptop refurbishment, vintage computers and technology, including computer rescues and artwork made with damaged displays.",
     "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
@@ -4619,8 +4619,8 @@
   {
     "Name": "Retro Games Rediscovered (YouTube)",
     "URL": "https://www.youtube.com/channel/UCzyhDtaWfLbRVLqYk5Wh_5w",
-    "Description": "Retro Games Rediscovered — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Channel playing and presenting classic video games, with facts and features on Amiga games and other retro consoles.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-games-rediscovered-youtube"
@@ -4628,8 +4628,8 @@
   {
     "Name": "Retro Games (YouTube)",
     "URL": "https://www.youtube.com/channel/UC-lvVA19BR7PduUMeOXETOA",
-    "Description": "Retro Games — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Official Retro Games channel sharing product announcements, demonstrations and features for its retro console range, including THE 400 Mini, THE A1200, THE Spectrum and THE 800XL.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-games-youtube"
@@ -4727,8 +4727,8 @@
   {
     "Name": "Retro Recipes x Commodore (YouTube)",
     "URL": "https://www.youtube.com/channel/UC6gARF3ICgaLfs3o2znuqXA",
-    "Description": "Retro Recipes x Commodore — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Retro Recipes channel covering technology and television nostalgia, Commodore computers and gaming, with project videos and product features.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "retro-recipes-x-commodore-youtube"
@@ -4736,8 +4736,8 @@
   {
     "Name": "Retro Repair Roundup (YouTube)",
     "URL": "https://www.youtube.com/channel/UCBYOerUDazPvxJKU3cNxy4w",
-    "Description": "Retro Repair Roundup — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube discussion and livestream series about vintage computer repair, configuration, modifications and new technologies, including interviews with people in the retro-computing community.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-repair-roundup-youtube"
@@ -4754,8 +4754,8 @@
   {
     "Name": "Retro Rich (YouTube)",
     "URL": "https://www.youtube.com/channel/UC5C5oziAqltmB6uPdyl0_Uw",
-    "Description": "Retro Rich — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Retro Rich offers short videos introducing technology from the past, including 1980s computer sounds and brief looks at vintage systems such as the VIC-20.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-rich-youtube"
@@ -4781,8 +4781,8 @@
   {
     "Name": "retrobits (YouTube)",
     "URL": "https://www.youtube.com/channel/UCnua6gZFiw77kxwNChkXGuw",
-    "Description": "retrobits — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Educational videos about 8-bit and 16-bit computers and gaming, including Commodore systems, consoles and retro-computing history.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retrobits-youtube"
@@ -4790,7 +4790,7 @@
   {
     "Name": "RetroBreak",
     "URL": "https://www.youtube.com/RetroBreak",
-    "Description": "RetroBreak covers classic Nintendo and Sega games, hardware, and collecting.",
+    "Description": "RetroBreak celebrates video game history with retrospectives, reviews and features on classic games, consoles, collecting and retro-gaming hardware, including Nintendo and Sega systems.",
     "Category": "YouTube & Social Channels",
     "Brands": "Nintendo, Sega",
     "Language": "English",
@@ -4810,7 +4810,7 @@
     "URL": "https://www.youtube.com/RetroBytesUK",
     "Description": "Narrated deep dives on vintage PC, UNIX, and other platforms",
     "Category": "YouTube & Social Channels",
-    "Brands": "PC",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrobytes"
   },
@@ -4826,8 +4826,8 @@
   {
     "Name": "retroCombs (YouTube)",
     "URL": "https://www.youtube.com/channel/UCjdKGdIl5leQfhJZiHUYFbQ",
-    "Description": "retroCombs — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "retroCombs covers retro computing and gaming, including MEGA65 hardware and game development, vintage computer demonstrations and collection features.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retrocombs-youtube"
@@ -4835,9 +4835,9 @@
   {
     "Name": "Retrocomputing Archive",
     "URL": "http://www.retroarchive.org/",
-    "Description": "Long-running archive of classic computer software and documentation spanning CP/M, MS-DOS, 8080, BBS software, CD-ROM images, and hardware-specific collections. Accepts submissions for any platform 15 years or older.",
+    "Description": "Long-running archive of classic computer software and documentation, including 8080 and CP/M, MS-DOS, BBS and online game software, hardware-specific collections, manuals, newsletters, CD images and Usenet material. It accepts software and documentation submissions for systems at least 15 years old, case by case.",
     "Category": "Preservation & Archives, Software & Games, Documentation & Wikis",
-    "Brands": "PC, Commodore, Apple, Atari",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrocomputing-archive"
   },
@@ -4880,18 +4880,18 @@
   {
     "Name": "Retroleum",
     "URL": "https://retroleum.co.uk/",
-    "Description": "Chips, sockets, repair kits for ZX Spectrum, C64, Amiga",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore, Sinclair/ZX",
+    "Description": "UK shop for new, old and salvaged parts for classic computers, especially the ZX Spectrum and Commodore systems, including C64, VIC-20, C16/Plus 4, ZX81 and Amstrad CPC. Also provides repair guides and tools; shipping is UK-only.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amstrad CPC, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "retroleum"
   },
   {
     "Name": "RetroMacCast (YouTube)",
     "URL": "https://www.youtube.com/channel/UC3JzvMVaf-ny-JbdVFortrw",
-    "Description": "RetroMacCast — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "Archive of the RetroMacCast podcast about Macintosh history and memories, with occasional videos. The channel features episodes hosted by James and John.",
+    "Category": "Podcasts & Audio, YouTube & Social Channels",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "retromaccast-youtube"
   },
@@ -4916,8 +4916,8 @@
   {
     "Name": "Retronauts (X)",
     "URL": "https://twitter.com/retronauts",
-    "Description": "Various news, retro finds, and community on X/Twitter.",
-    "Category": "Hardware & Parts, News & Blogs, Podcasts & Audio, YouTube & Social Channels",
+    "Description": "Official X account for the classic gaming podcast Retronauts, sharing episode announcements and posts about retro-gaming history and retrospectives.",
+    "Category": "News & Blogs, Podcasts & Audio, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "retronauts-x"
