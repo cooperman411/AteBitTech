@@ -5708,9 +5708,9 @@
   {
     "Name": "Tattler Solutions",
     "URL": "https://www.retromodem.com",
-    "Description": "Tattler Solutions WiFi Retromodem Modern WiFi replacements for vintage Hayes and US Robotics modems. We will also be showing our mini VT100 emulator",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
-    "Brands": "Various",
+    "Description": "Sells Wi-Fi retro modems for Hayes, USRobotics and Atari systems, plus FPGA arcade-game recreations and the WOPR computer terminal.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
+    "Brands": "Various, Atari",
     "Language": "English",
     "ID": "tattler-solutions"
   },
@@ -5744,8 +5744,8 @@
   {
     "Name": "Techmoan (YouTube)",
     "URL": "https://www.youtube.com/user/Techmoan",
-    "Description": "Reviews and history of retro audio/video tech, from vinyl to obscure video formats",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
+    "Description": "Techmoan makes videos about new and retro technology, including unusual audio and video formats.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "techmoan-youtube"
@@ -5789,9 +5789,9 @@
   {
     "Name": "The 8-Bit Guy",
     "URL": "https://www.youtube.com/the8bitguy",
-    "Description": "Documentaries, restorations, and new projects for Commodore, Apple II, 8-bit micros, and DOS",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
-    "Brands": "Apple, Commodore",
+    "Description": "Videos about vintage-computer history, restorations, repairs and original games, covering Apple and Commodore systems alongside other 8-bit and DOS platforms.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various, Apple, Commodore",
     "Language": "English",
     "ID": "the-8-bit-guy"
   },
@@ -5924,8 +5924,8 @@
   {
     "Name": "The Retro Collective (YouTube)",
     "URL": "https://www.youtube.com/RMCRetro",
-    "Description": "Hands-on workshops and museum content focused on Amiga/PC and multi-platform builds",
-    "Category": "Museums & Exhibits, Vendors & Stores, YouTube & Social Channels",
+    "Description": "The Retro Collective videos cover vintage computer and gaming history, restorations, preservation, interviews, museum visits and hands-on builds.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Acorn/BBC, Amiga, Commodore, PC",
     "Language": "English",
     "ID": "the-retro-collective-youtube"
@@ -5951,8 +5951,8 @@
   {
     "Name": "The Retro Web",
     "URL": "https://theretroweb.com/",
-    "Description": "A vast online database of vintage computer hardware, including motherboards, BIOS images, and CPUs.",
-    "Category": "Documentation & Wikis, Hardware & Parts, Internet & Networking, Preservation & Archives",
+    "Description": "Community-run vintage hardware database with motherboard records, BIOS images, manuals, technical articles and hardware projects.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "the-retro-web"
