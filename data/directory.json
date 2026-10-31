@@ -722,8 +722,8 @@
   {
     "Name": "AtariMax",
     "URL": "https://www.atarimax.com/",
-    "Description": "Atari 8-bit/5200 flashcarts, USB programmers",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores, YouTube & Social Channels",
+    "Description": "Atarimax sells flash multicarts, USB cartridge programmers and programming software for Atari 8-bit computers and the Atari 5200. Its site also offers interface adapters and publishes product manuals and troubleshooting guides.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Vendors & Stores",
     "Brands": "Atari",
     "Language": "English",
     "ID": "atarimax"
@@ -758,7 +758,7 @@
   {
     "Name": "Basilisk II",
     "URL": "https://basilisk.cebix.net/",
-    "Description": "68k Macintosh emulator",
+    "Description": "Open-source emulator for 68k Macintosh systems that runs Mac OS software on other computers. Depending on the ROM, it emulates a Mac Classic or Mac II; users must supply a Macintosh ROM image and copy of Mac OS.",
     "Category": "Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
@@ -795,7 +795,7 @@
     "Name": "BeBox FAQ and Documentation",
     "URL": "https://asleson.org/public/mirrors/www.be.com/support/faqs/bebox.html",
     "Description": "Archived BeBox support documentation including hardware FAQs, system specifications, and troubleshooting guides.",
-    "Category": "Hardware & Parts",
+    "Category": "Documentation & Wikis",
     "Brands": "Be",
     "Language": "English",
     "ID": "bebox-faq-and-documentation"
@@ -839,9 +839,9 @@
   {
     "Name": "Ben Eater Kits",
     "URL": "https://eater.net/",
-    "Description": "Breadboard computer kits (6502, 8-bit CPU teaching)",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "IBM",
+    "Description": "Electronics educator Ben Eater publishes video tutorials and build guides for breadboard computers, including an 8-bit CPU and a 6502-based computer. The site provides parts lists, schematics and a shop for kits.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "ben-eater-kits"
   },
@@ -866,16 +866,16 @@
   {
     "Name": "BetaArchive",
     "URL": "https://www.betaarchive.com/",
-    "Description": "Windows beta builds, old software",
-    "Category": "Software & Games",
-    "Brands": "PC",
+    "Description": "BetaArchive is a community and archive for beta and abandonware collectors. Its database includes Windows and Apple beta releases plus older software, with a forum and wiki for sharing information.",
+    "Category": "Communities & Forums, Preservation & Archives, Software & Games",
+    "Brands": "Apple, PC",
     "Language": "English",
     "ID": "betaarchive"
   },
   {
     "Name": "Big Book of Amiga Hardware",
     "URL": "https://bigbookofamigahardware.com/",
-    "Description": "Comprehensive Amiga hardware database",
+    "Description": "Searchable reference database of Amiga hardware, organized by manufacturer, connection type and hardware class. The site includes community contributions, recent updates and a forum.",
     "Category": "Hardware & Parts",
     "Brands": "Amiga",
     "Language": "English",
@@ -884,8 +884,8 @@
   {
     "Name": "Big Mess o’ Wires Blog",
     "URL": "https://www.bigmessowires.com/",
-    "Description": "Apple II/Mac hardware projects (Floppy Emu, ROM-inator)",
-    "Category": "Hardware & Parts, News & Blogs, Repair & Services",
+    "Description": "Blog and shop for vintage-computer peripherals, including Floppy Emu and disk controllers, ADB-USB Wombat adapters, and Mac ROM products. Posts cover product updates, technical projects and support.",
+    "Category": "Hardware & Parts, News & Blogs, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "big-mess-o-wires-blog"
@@ -902,36 +902,36 @@
   {
     "Name": "Bill Buzbee",
     "URL": "http://www.homebrewcpu.com",
-    "Description": "Bill Buzbee Magic-1 HomebrewCPU Magic-1 is a homebrew multi-tasking, multi-user minicomputer built from roughly 200 74-series TTL devices using wire-wrap con...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari, PC",
+    "Description": "Project site documenting Magic-1, a homebuilt minicomputer with a custom CPU made from more than 200 TTL chips. It includes construction photos, technical notes, and details of its multiuser Minix 2 software stack.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Brands": "Various",
     "Language": "English",
     "ID": "bill-buzbee"
   },
   {
     "Name": "BitBinders",
     "URL": "https://bitbinders.com/",
-    "Description": "BitBinders Commodore accessories with style and sophistication Commodore 1581 replIca single and dual drives, power supplies, keyboards and other innovative ...",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari, Commodore",
+    "Description": "Online store for Commodore-related accessories and reproduction peripherals, with product sections for Commodore 64/128, Amiga and MEGA65 systems. Its catalog includes drive replicas, power supplies, keyboards, manuals and downloads.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "bitbinders"
   },
   {
     "Name": "BitHistory.org",
     "URL": "https://bithistory.org",
-    "Description": "BitHistory.org Surplus items from the BitHistory.org collection. I undetermined mix of various surplus items from the BitHistory.org collection. Likely syste...",
-    "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Atari",
+    "Description": "Computing-history site with collection stories, preservation articles, event information and a surplus store offering items from the BitHistory.org collection.",
+    "Category": "News & Blogs, Preservation & Archives, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "bithistory-org"
   },
   {
     "Name": "Bitmap Soft",
     "URL": "https://www.bitmapsoft.co.uk/",
-    "Description": "Physical tape releases and downloads",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Amstrad, Sinclair/ZX",
+    "Description": "Online shop for retro games and software releases, offering physical editions and downloads for systems including Atari, Commodore 64, Amiga, Game Boy and ZX Spectrum.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Amiga, Atari, Commodore, Nintendo, Sinclair/ZX",
     "Language": "English",
     "ID": "bitmap-soft"
   },
