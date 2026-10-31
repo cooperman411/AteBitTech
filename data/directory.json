@@ -5825,18 +5825,18 @@
   {
     "Name": "The Future Was 8-Bit",
     "URL": "https://www.thefuturewas8bit.com/",
-    "Description": "ZX Spectrum, C64, VIC-20 peripherals, parts, modern add-ons",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Sinclair/ZX",
+    "Description": "Online store for 8-bit computer hardware add-ons, games, and spare parts for Commodore, Sinclair, Amstrad, and Acorn/BBC systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Acorn/BBC, Amstrad, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "the-future-was-8-bit"
   },
   {
     "Name": "The High Nibble",
     "URL": "https://thehighnibble.com/",
-    "Description": "Technical blog, some custom hardware for sale",
-    "Category": "Hardware & Parts, News & Blogs, Repair & Services",
-    "Brands": "Commodore, Various",
+    "Description": "Retro-computing hardware projects and technical reference for IMSAI, Cromemco, and S-100 systems, with kits and build documentation for sale.",
+    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-high-nibble"
   },
@@ -5852,8 +5852,8 @@
   {
     "Name": "The Intellivisionaries Podcast",
     "URL": "http://intellivisionaries.com",
-    "Description": "Podcast focused on Mattel Intellivision history, games, and community.",
-    "Category": "Communities & Forums, Podcasts & Audio",
+    "Description": "Podcast about Mattel Intellivision games and history, featuring news, listener feedback, and interviews.",
+    "Category": "Podcasts & Audio",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "the-intellivisionaries-podcast"
@@ -5879,9 +5879,9 @@
   {
     "Name": "The National Museum of Computing (TNMOC)",
     "URL": "https://www.tnmoc.org/",
-    "Description": "Museum at Bletchley Park with working historic computers, exhibitions, and online material covering early machines through the personal-computer era.",
-    "Category": "Museums & Exhibits, Preservation & Archives, Documentation & Wikis",
-    "Brands": "DEC, IBM, Acorn/BBC, PC, Apple, Various",
+    "Description": "Computer museum at Bletchley Park with restored machines spanning codebreaking and early computing through personal computers, shown in exhibitions and galleries.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-national-museum-of-computing-tnmoc"
   },
@@ -5915,7 +5915,7 @@
   {
     "Name": "The Retro Collective (Website)",
     "URL": "https://www.retrocollective.co.uk/",
-    "Description": "Online museum and archive of retro computing history, featuring detailed articles on vintage hardware, software, and the history of computing through hands-on exhibits and collections.",
+    "Description": "UK museum group with The Cave computer and console museum and the Arcade Archive coin-operated games museum, offering hands-on exhibits, visits, and events.",
     "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
@@ -5960,8 +5960,8 @@
   {
     "Name": "The Southern AMIS Projects",
     "URL": "https://www.southernamis.com",
-    "Description": "Designs, restores, and runs Atari Bulletin Board Systems, preserving AMIS legacy.",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Restores and runs an Atari 8-bit BBS network, with connection guides, multiple bulletin boards, downloads, forums, and preservation projects.",
+    "Category": "Communities & Forums, Internet & Networking",
     "Brands": "Atari",
     "Language": "English",
     "ID": "the-southern-amis-projects"
@@ -5978,9 +5978,9 @@
   {
     "Name": "The Stop Bits",
     "URL": "https://thestopbits.net",
-    "Description": "The Stop Bits The Stop Bits - a nerdy rock band Four YouTubers making music about (and sometimes with) vintage computers. Featuring Veronica Explains, The Ta...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "Nerdy rock band formed by four retro-computing YouTube creators, making songs about vintage computers and technology.",
+    "Category": "Podcasts & Audio",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-stop-bits"
   },
@@ -6023,9 +6023,9 @@
   {
     "Name": "Thingiverse",
     "URL": "https://www.thingiverse.com/",
-    "Description": "General 3D-printing library with retro-computer parts. Search by system name plus case, bracket, bezel, adapter, or replacement part, then review the model files.",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari, Amiga, Apple, Commodore, Various",
+    "Description": "Community library of downloadable 3D-printable designs, including user-created cases, adapters, mounts, and replacement parts for retro computers and other hardware.",
+    "Category": "Communities & Forums, Hardware & Parts",
+    "Brands": "Various",
     "Language": "English",
     "ID": "thingiverse"
   },
