@@ -3629,26 +3629,26 @@
   {
     "Name": "MSXPRO",
     "URL": "https://www.msxpro.com/",
-    "Description": "MSX technical documentation and resources",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "Site pessoal de documentação MSX com notícias, esquemas, modificações de hardware, ROMs, programas e downloads. Personal MSX resource site with news, schematics, hardware modifications, ROMs, programs and downloads.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "MSX",
-    "Language": "English",
+    "Language": "Portuguese",
     "ID": "msxpro"
   },
   {
     "Name": "Museu LOAD ZX Spectrum (YouTube)",
     "URL": "https://www.youtube.com/@LOADZX/",
-    "Description": "Canal portugues do YouTube apoiado por museu, dedicado a cultura ZX Spectrum. Gameplays, historia e preservacao com producao apoiada institucionalmente.",
+    "Description": "Canal do Museu LOAD ZX Spectrum dedicado à preservação e divulgação da história do ZX Spectrum e da Timex, com entrevistas, eventos, jogos e tecnologia recuperada. YouTube channel for the LOAD ZX Spectrum Museum, covering ZX Spectrum and Timex history through interviews, events, games and recovered technology.",
     "Category": "Museums & Exhibits, YouTube & Social Channels",
     "Brands": "Sinclair/ZX",
-    "Language": "Portuguese",
+    "Language": "Portuguese, English",
     "ID": "museu-load-zx-spectrum-youtube"
   },
   {
     "Name": "Museum of Computing",
     "URL": "https://museumofcomputing.org.uk/",
-    "Description": "Located in Swindon, UK. Focus on Computers from 1970s–2000s. Volunteer museum; local collections.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Computing history museum in central Swindon with early computers, games, calculators and hands-on exhibits. The museum also hosts events and welcomes family and school visits.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "museum-of-computing"
@@ -3710,9 +3710,9 @@
   {
     "Name": "N9TAX Retro Lab (YouTube)",
     "URL": "https://www.youtube.com/@n9taxretrolab",
-    "Description": "N9TAX Retro Lab Computer communications in the 80's Homelab telephony on a single cisco router with dialup PPP internet, BBS and phone to phone voice calls. ...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "YouTube channel for retro-electronics projects, including floppy-drive tools, vintage-computer repairs and a home-lab telephone system.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "n9tax-retro-lab-youtube"
   },
@@ -3746,7 +3746,7 @@
   {
     "Name": "NCommander",
     "URL": "https://www.youtube.com/NCommander",
-    "Description": "Unix, vintage servers, and retro computing history",
+    "Description": "YouTube channel about retrotech, digital preservation and computing history, with technical videos on operating systems, vintage server hardware and software.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
@@ -3782,8 +3782,8 @@
   {
     "Name": "Noel’s Retro Lab (YouTube)",
     "URL": "https://www.youtube.com/@NoelsRetroLab/",
-    "Description": "Restorations and repairs of vintage computers and electronics",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel documenting vintage-computer repairs, restorations and history, with projects including the TI-99/4A, ZX Spectrum and other systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "noels-retro-lab-youtube"
@@ -3809,17 +3809,17 @@
   {
     "Name": "Obsolete Computer Museum",
     "URL": "http://www.obsoletecomputermuseum.org/",
-    "Description": "Online museum documenting early personal computers with photographs, specifications, and historical notes.",
+    "Description": "Long-running online computer museum with a catalog of vintage systems, including the Acorn Electron, Apple II, Commodore, IBM and Sinclair ranges.",
     "Category": "Museums & Exhibits",
-    "Brands": "Compaq, Various",
+    "Brands": "Various",
     "Language": "English",
     "ID": "obsolete-computer-museum"
   },
   {
     "Name": "Odd Tinkering",
     "URL": "https://www.youtube.com/OddTinkering",
-    "Description": "Hardware restorations. Satisfying restores.",
-    "Category": "Repair & Services, Vendors & Stores, YouTube & Social Channels",
+    "Description": "Restoration videos for older consumer electronics and game consoles, including a PlayStation 2 Slim restoration.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "odd-tinkering"
@@ -3827,8 +3827,8 @@
   {
     "Name": "Official Commodore® (YouTube)",
     "URL": "https://www.youtube.com/channel/UCVtHSIwgtd_ahsmNwCP9W5g",
-    "Description": "Official Commodore® — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Official Commodore YouTube channel with product announcements and promotional videos for Commodore-branded computers, games, accessories and related releases.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "official-commodore-youtube"
@@ -3863,7 +3863,7 @@
   {
     "Name": "OldComp.cz",
     "URL": "https://oldcomp.cz/",
-    "Description": "Ceske retro-computing forum pokryvajici 8bitove a 16bitove pocitace. Aktivni komunita s diskuzemi o opravach, programovani a sberatelstvi.",
+    "Description": "České diskuzní fórum pro fanoušky historických počítačů s odděleními pro jednotlivé platformy, hardware, programování, opravy a setkání. Czech discussion forum for historical-computer fans, with sections for platforms, hardware, programming, repairs and meetups.",
     "Category": "Communities & Forums",
     "Brands": "Commodore, Atari, Sinclair/ZX, Various",
     "Language": "Czech",
@@ -3980,7 +3980,7 @@
   {
     "Name": "Paleotronic — MicroM8",
     "URL": "https://paleotronic.com/software/microm8/download/",
-    "Description": "High-fidelity Apple II and IIgs emulator available for Windows, macOS, and Linux.",
+    "Description": "Apple II emulator for Windows, macOS and Linux, with disk-image support, joystick and mouse controls, peripheral emulation, recording and rewind, and a web debugger.",
     "Category": "Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
@@ -4007,7 +4007,7 @@
   {
     "Name": "PC-98の館",
     "URL": "https://www.youtube.com/results?search_query=PC-98+%E3%81%AE%E9%A4%A8",
-    "Description": "PC-98のゲームとソフトウェアのYouTube動画コレクション。往年のPC-9800シリーズのゲームプレイと紹介。YouTube search collection of PC-98 game and software videos.",
+    "Description": "PC-98のシステム、ソフトウェア、ゲームに関する日本語動画のYouTube検索ページ。YouTube search page for Japanese-language videos about PC-98 systems, software and games.",
     "Category": "YouTube & Social Channels",
     "Brands": "PC-98",
     "Language": "Japanese",
@@ -4043,8 +4043,8 @@
   {
     "Name": "PDP-11 Portal",
     "URL": "http://pdp11.org/",
-    "Description": "Portal for PDP-11 enthusiasts with documentation, software downloads, and community resources for DEC PDP-11 systems.",
-    "Category": "Hardware & Parts",
+    "Description": "PDP-11 preservation and resource portal with system history, technical documentation, software archives, emulator links and information for recovering DEC hardware.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "DEC",
     "Language": "English",
     "ID": "pdp-11-portal"
@@ -4061,8 +4061,8 @@
   {
     "Name": "Peak Retro (YouTube)",
     "URL": "https://www.youtube.com/channel/UC09X9h4m2SMgHXInkUI1SMQ",
-    "Description": "Peak Retro — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about the culture, memories and history of retro gaming, with console retrospectives and reflections on maintaining older game systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "peak-retro-youtube"
@@ -4097,9 +4097,9 @@
   {
     "Name": "piers rocks (YouTube)",
     "URL": "https://www.youtube.com/channel/UC4d_tODKgZU8Fc9O3x-5Gew",
-    "Description": "piers rocks — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "Piers Rocks YouTube channel documents One ROM hardware and firmware development for vintage computers, with recent videos on Amiga, Apple IIe and ROM replacement.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple, Commodore",
     "Language": "English",
     "ID": "piers-rocks-youtube"
   },
@@ -4122,10 +4122,10 @@
     "ID": "pitubedirect-community-sellers"
   },
   {
-    "Name": "Pixel Addict (Telegram)",
-    "URL": "https://www.pixel.addict.media",
-    "Description": "A magazine for retro computing, gaming, and creative tech. Spin-off from the Amiga Addict team.",
-    "Category": "Hardware & Parts, News & Blogs",
+    "Name": "Pixel Addict Magazine",
+    "URL": "https://www.simulant.media/pixel-addict",
+    "Description": "Classic-computing and retro-gaming magazine covering home-computing history, hardware profiles, interviews, vintage software and game reviews, available in print and digital PDF editions.",
+    "Category": "News & Blogs, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "pixel-addict-telegram"
@@ -4151,8 +4151,8 @@
   {
     "Name": "PlayVectrex",
     "URL": "https://www.playvectrex.com/",
-    "Description": "Vectrex news, homebrew game store, and community hub with overlays and accessories.",
-    "Category": "Software & Games, Vendors & Stores",
+    "Description": "Vectrex-focused resource site with new hardware, how-to guides, current projects and archived history, alongside a store and community forums.",
+    "Category": "Communities & Forums, Documentation & Wikis, Hardware & Parts, Preservation & Archives, Vendors & Stores",
     "Brands": "Vectrex",
     "Language": "English",
     "ID": "playvectrex"
