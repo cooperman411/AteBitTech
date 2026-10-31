@@ -2855,8 +2855,8 @@
   {
     "Name": "Joe's Computer Museum",
     "URL": "https://jcm-1.com",
-    "Description": "Joe's Computer Museum Joe's Computer Museum! Come by and see all the cool things available from Joe's Computer Museum, including BlueSCSI, PicoGUS and more!",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Personal vintage-computer museum and online shop for retro hardware, reproduction parts, upgrades, replacement chips, apparel and related items.",
+    "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "joes-computer-museum"
@@ -2864,8 +2864,8 @@
   {
     "Name": "John Gilbert's CoCo Site",
     "URL": "https://www.cocopedia.com/wiki/index.php/Main_Page",
-    "Description": "Tandy CoCo encyclopedia and resource",
-    "Category": "Documentation & Wikis",
+    "Description": "Active Tandy/Radio Shack Color Computer encyclopedia with articles, hardware and software references, FAQs, emulator information, programming topics, publications and community links.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "john-gilberts-coco-site"
@@ -2891,9 +2891,9 @@
   {
     "Name": "joshua stein",
     "URL": "https://jcs.org/",
-    "Description": "joshua stein Classic Macintosh software development Software developed on and for classic Macintosh computers",
+    "Description": "Developer site with software, source code and projects for classic Macintosh computers, alongside notes and videos about vintage Mac hardware and software.",
     "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Apple, Atari",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "joshua-stein"
   },
@@ -2918,8 +2918,8 @@
   {
     "Name": "Juiced.GS",
     "URL": "https://juiced.gs",
-    "Description": "The longest-running Apple II publication, still active.",
-    "Category": "Hardware & Parts, News & Blogs",
+    "Description": "Quarterly print magazine devoted to all Apple II models, featuring reviews, interviews and tutorials, with subscriptions, back issues, software, PDFs and books available through its shop.",
+    "Category": "News & Blogs, Software & Games, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "juiced-gs"
@@ -2927,9 +2927,9 @@
   {
     "Name": "Juicy Crumb",
     "URL": "https://juicycrumb.com",
-    "Description": "Juicy Crumb Juicy Crumb See our products in action and talk to the team behind the DockLite and DockLite G4!",
+    "Description": "Maker and online store for products that extend vintage Apple hardware, including iMac display conversions, SCSI storage devices, replacement parts, adapters and installation guides.",
     "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Various",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "juicy-crumb"
   },
@@ -2945,17 +2945,17 @@
   {
     "Name": "June Tate-Gans",
     "URL": "https://nybblesandbytes.net/",
-    "Description": "June Tate-Gans VCF High presented by Nybbles and Bytes Join the premier 1990s technical high school computer class at VCF High School, presented by Nybbles a...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Nybbles and Bytes site for retro game development, with blog posts, articles, programs, 6502 resources, and links to its video and community channels.",
+    "Category": "News & Blogs, Software & Games",
+    "Brands": "Various",
     "Language": "English",
     "ID": "june-tate-gans"
   },
   {
     "Name": "Jupiter Ace Archive",
     "URL": "https://www.jupiter-ace.co.uk/",
-    "Description": "Community marketplace for refurbished Jupiter Ace systems",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Online restoration and preservation archive for the Jupiter Ace, collecting historical information and resources contributed by users and enthusiasts.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Jupiter Ace",
     "Language": "English",
     "ID": "jupiter-ace-archive"
@@ -2981,9 +2981,9 @@
   {
     "Name": "kokoscript",
     "URL": "https://kokoscript.com",
-    "Description": "kokoscript System Sampler II Attempting to fit as many CPU architectures into one space as I can",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Personal developer site for DOS games and tools, including the WordHopper arcade-style game and Tanuki 2D game engine, with notes on vintage PC hardware and software.",
+    "Category": "Software & Games",
+    "Brands": "PC",
     "Language": "English",
     "ID": "kokoscript"
   },
@@ -2999,8 +2999,8 @@
   {
     "Name": "Komoda & Amiga plus (itch.io)",
     "URL": "https://kaplus.itch.io/",
-    "Description": "Digital storefront for Komoda & Amiga plus issues and related releases. Cyfrowy sklep z numerami Komoda & Amiga plus i powiązanymi wydaniami.",
-    "Category": "Vendors & Stores",
+    "Description": "Digital shop for Komoda & Amiga plus, a retro-gaming culture magazine with reviews, editorials, interviews and tutorials, published in English and Polish for print and digital readers.",
+    "Category": "News & Blogs, Vendors & Stores",
     "Brands": "Commodore, Amiga",
     "Language": "English, Polish",
     "ID": "komoda-amiga-plus-itch-io"
@@ -3008,9 +3008,9 @@
   {
     "Name": "Krikzz",
     "URL": "https://krikzz.com/",
-    "Description": "EverDrive flash cartridges for NES, SNES, Genesis, GB",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo, Sega",
+    "Description": "Manufacturer and direct shop for EverDrive flash cartridges for Nintendo, Sega and other classic systems, with product downloads, a support forum, distributor information and warranty details.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Nintendo, Sega, Various",
     "Language": "English",
     "ID": "krikzz"
   },
@@ -3044,8 +3044,8 @@
   {
     "Name": "Le Grenier du Mac",
     "URL": "https://www.grenier-du-mac.net/",
-    "Description": "Site francais dedie a la preservation et a la documentation des anciens Macintosh, logiciels et peripheriques. Collection de materiel rare et guides de restauration.",
-    "Category": "Preservation & Archives",
+    "Description": "Noncommercial French site dedicated to Macintosh abandonware, retro gaming and the history of Apple computers.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Apple",
     "Language": "French",
     "ID": "le-grenier-du-mac"
@@ -3053,7 +3053,7 @@
   {
     "Name": "Lee Hart",
     "URL": "https://www.sunrise-ev.com",
-    "Description": "Lee Hart What can you do with an 1802? various microcomputer kits using the 1802, 6502, 8080, and Z80 microprocessors",
+    "Description": "Lee Hart’s site for vintage microcomputer kits and projects, including Membership Card computers based on the 1802, 8080 and Z80, with 6502 projects and product documentation.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -3062,8 +3062,8 @@
   {
     "Name": "Lee Hart's 1802 Membership Card",
     "URL": "https://www.sunrise-ev.com/1802.htm",
-    "Description": "COSMAC ELF-based kit in Altoids tin",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Buildable COSMAC 1802 microcomputer kit based on the Membership Card design, with manuals, expansion projects, software and related hardware available from Lee Hart.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "lee-harts-1802-membership-card"
