@@ -3123,6 +3123,15 @@
     "ID": "lgr-x"
   },
   {
+    "Name": "Limited Run Games",
+    "URL": "https://limitedrungames.com/",
+    "Description": "Retailer of limited-run physical editions of video games, with releases for Switch, PlayStation, Xbox and PC alongside soundtracks, books and collectibles.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Nintendo",
+    "Language": "English",
+    "ID": "wayforward-limited-run"
+  },
+  {
     "Name": "Lotharek's Lair",
     "URL": "https://lotharek.pl/",
     "Description": "Online shop for HxC floppy emulators, FPGA computers, and replacement hardware and upgrades for Amiga, Atari and other classic systems; the site also lists electronic assembly services.",
@@ -6519,7 +6528,7 @@
     "Name": "Vintage Is The New Old",
     "URL": "https://www.vintageisthenewold.com/",
     "Description": "Retro computing and gaming news site covering Commodore, Amiga, Atari, and more",
-    "Category": "News & Blogs, Repair & Services",
+    "Category": "News & Blogs",
     "Brands": "Amiga, Atari, Commodore",
     "Language": "English",
     "ID": "vintage-is-the-new-old"
@@ -6527,8 +6536,8 @@
   {
     "Name": "VintageApple Macworld Library",
     "URL": "https://vintageapple.org/macworld/",
-    "Description": "Complete Macworld magazine archive from 1984 through 2005. All issues beautifully restored and downloadable as PDFs, covering the entire history of the Macintosh platform.",
-    "Category": "Preservation & Archives, Documentation & Wikis, News & Blogs",
+    "Description": "A restored PDF archive of Macworld magazine issues from 1984 through 2005, with a catalog sortable by issue and scan date.",
+    "Category": "Preservation & Archives, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "vintageapple-macworld-library"
@@ -6545,7 +6554,7 @@
   {
     "Name": "Virtual x86 (copy.sh)",
     "URL": "https://copy.sh/v86/",
-    "Description": "In-browser x86 PC emulator running various operating systems including classic Mac OS, Windows, and Linux.",
+    "Description": "In-browser x86 emulator with a catalog of bootable Linux, BSD, Windows, Unix-like, DOS, and other operating systems.",
     "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
@@ -6572,9 +6581,9 @@
   {
     "Name": "Wafflenet",
     "URL": "https://wafflenet.com",
-    "Description": "Wafflenet The OPL Archive The OPL Archive is a tribute to the Yamaha OPL series FM synthesis chips and their historic significance within the PC music scene ...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple, Atari, PC",
+    "Description": "Personal retrocomputing and gaming site with a computer collection, BIOS dumps for historical and maintenance use, software and game projects, music, and a separate archive of Yamaha OPL2/OPL3 music.",
+    "Category": "Preservation & Archives, Software & Games",
+    "Brands": "Various",
     "Language": "English",
     "ID": "wafflenet"
   },
@@ -6588,19 +6597,10 @@
     "ID": "walker-computer-solutions-facebook"
   },
   {
-    "Name": "WayForward / Limited Run",
-    "URL": "https://limitedrungames.com/",
-    "Description": "Shantae Advance released 2025 as physical cart",
-    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
-    "Brands": "Nintendo",
-    "Language": "English",
-    "ID": "wayforward-limited-run"
-  },
-  {
     "Name": "White Flag Computing",
     "URL": "https://www.whiteflagcomputing.com",
-    "Description": "Retro computing hardware projects and products.",
-    "Category": "Vendors & Stores",
+    "Description": "El Segundo computer repair service offering hardware repairs and upgrades, malware removal, PC and Mac setup, custom and gaming PCs, networking, backups, training and data recovery.",
+    "Category": "Repair & Services",
     "Brands": "Various",
     "Language": "English",
     "ID": "white-flag-computing"
@@ -6609,7 +6609,7 @@
     "Name": "Whizz80 Z80 Computer",
     "URL": "https://whizz80.com/",
     "Description": "Z80-based single-board computer project with build documentation, software, and hardware specifications.",
-    "Category": "Hardware & Parts",
+    "Category": "Hardware & Parts, Documentation & Wikis",
     "Brands": "Z80",
     "Language": "English",
     "ID": "whizz80-z80-computer"
@@ -6626,8 +6626,8 @@
   {
     "Name": "Wild Bits Computing",
     "URL": "https://wildbitscomputing.com/",
-    "Description": "The F256K2 (Wildbits/K2) is a modern FPGA-based 'new retro' home computer that combines 8/16-bit-style CPUs with advanced graphics, sound, and storage to recreate 1980s personal-computing feel on contemporary hardware.",
-    "Category": "Emulation & FPGA, Vendors & Stores",
+    "Description": "Maker of the Foenix F256x family of home computers, including the F256K2; its site invites preorder inquiries and links to product specifications, manuals and software documentation.",
+    "Category": "Hardware & Parts",
     "Brands": "Modern 8 & 16-bit Computing",
     "Language": "English",
     "ID": "wild-bits-computing"
@@ -6644,17 +6644,17 @@
   {
     "Name": "WinWorld",
     "URL": "https://winworldpc.com/",
-    "Description": "Online museum preserving vintage, abandoned, and pre-release software, with downloads for classic PC, Mac, Amiga, and other systems.",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "PC, Apple, Amiga, Various",
+    "Description": "Online museum preserving vintage, abandoned and pre-release software, with information, media and downloads for classic PC, Mac, Amiga and other computer systems.",
+    "Category": "Preservation & Archives, Software & Games",
+    "Brands": "PC, Apple, Amiga",
     "Language": "English",
     "ID": "winworld"
   },
   {
     "Name": "Wire Wrap Odyssey",
     "URL": "https://wirewrapodyssey.com",
-    "Description": "Blog documenting wire-wrap computer projects and techniques.",
-    "Category": "News & Blogs",
+    "Description": "Documentation for a home-built wire-wrap computer, covering circuit architecture, CPU and peripherals, video, software, construction, lessons learned and project media.",
+    "Category": "Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "wire-wrap-odyssey"
@@ -6662,8 +6662,8 @@
   {
     "Name": "Wisconsin Computer Club",
     "URL": "https://wisconsincomputerclub.com",
-    "Description": "Wisconsin Computer Club Wisconsin Computer Club Showcase A showcase of exhibits by Wisconsin Computer Club members",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Wisconsin Computer Club’s retro-computing forum for platform discussions, member projects and events, with community exhibits and dedicated buying, selling and wanted sections.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "wisconsin-computer-club"
@@ -6689,8 +6689,8 @@
   {
     "Name": "World of Spectrum",
     "URL": "https://worldofspectrum.org/",
-    "Description": "ZX Spectrum software, manuals, magazines",
-    "Category": "Documentation & Wikis, News & Blogs",
+    "Description": "The official Sinclair ZX Spectrum archive, with a searchable software collection, emulators, utilities, reference material and community forums.",
+    "Category": "Preservation & Archives, Software & Games, Documentation & Wikis",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "world-of-spectrum"
@@ -6725,9 +6725,9 @@
   {
     "Name": "XRoar Dragon Emulator",
     "URL": "https://www.6809.org.uk/xroar/index.shtml",
-    "Description": "XRoar is a Dragon 32/64 emulator for multiple platforms, supporting cassette and disk images with accurate hardware emulation.",
+    "Description": "Cross-platform emulator for Dragon 32/64, Tandy Colour Computer 1–3, MC-10 and related 8-bit machines, with downloads, manuals and browser-based XRoar Online.",
     "Category": "Emulation & FPGA",
-    "Brands": "Dragon",
+    "Brands": "Dragon, Tandy/Radio Shack",
     "Language": "English",
     "ID": "xroar-dragon-emulator"
   },
