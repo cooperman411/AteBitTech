@@ -1208,26 +1208,26 @@
   {
     "Name": "Canadian Vintage Computer Federation",
     "URL": "https://cvcfed.org/",
-    "Description": "Canadian vintage-computing federation with bilingual event information, including VCF Montréal and other Canadian activities. Fédération canadienne des ordinateurs d'époque avec des informations bilingues sur les événements, dont VCF Montréal et d'autres activités canadiennes.",
-    "Category": "Events & Shows, Communities & Forums",
-    "Brands": "Apple, Commodore, MSX, Tandy/Radio Shack, Various",
-    "Language": "English, French",
+    "Description": "La Fédération canadienne des ordinateurs d’époque est un organisme sans but lucratif consacré à la préservation, à l’éducation et à la mise en valeur du patrimoine informatique canadien. Elle organise notamment VCF Montréal. The Canadian Vintage Computer Federation is a nonprofit dedicated to preserving, teaching and sharing Canadian computing heritage. It organizes events including VCF Montréal.",
+    "Category": "Communities & Forums, Events & Shows, Preservation & Archives",
+    "Brands": "Various",
+    "Language": "French, English",
     "ID": "canadian-vintage-computer-federation"
   },
   {
     "Name": "Canberra Vintage Computer Exhibition",
     "URL": "https://cbrvce.org/",
-    "Description": "Canberra vintage-computing event and enthusiast site for exhibitions, community activity, and classic-computer preservation.",
-    "Category": "Events & Shows, Communities & Forums",
-    "Brands": "Apple, Atari, Commodore, Acorn/BBC, Various",
+    "Description": "Canberra Vintage Computer Enthusiasts says it will not hold the Canberra Vintage Computer Exhibition in 2026 because it lacked volunteer support. The group hopes to return when it has a stronger organizing team.",
+    "Category": "Events & Shows",
+    "Brands": "Various",
     "Language": "English",
     "ID": "canberra-vintage-computer-exhibition"
   },
   {
     "Name": "Capcom Arcade Stadium",
     "URL": "https://www.capcom-arcade-stadium.com/",
-    "Description": "カプコンのクラシックアーケードゲームを収録したコンピレーション。iOS、Android、Steam向けに往年の名作を多数収録。Capcom classic arcade compilations for mobile and PC platforms.",
-    "Category": "Hardware & Parts",
+    "Description": "カプコンのクラシックなアーケードゲームを収録した公式コレクション。追加ゲームパックを購入でき、PlayStation 4、Xbox One、Nintendo Switch、Steam向けに配信されました。 Official collection of Capcom classic arcade games, with additional game packs available, released for PlayStation 4, Xbox One, Nintendo Switch and Steam.",
+    "Category": "Software & Games",
     "Brands": "Various",
     "Language": "Japanese",
     "ID": "capcom-arcade-stadium"
@@ -1235,9 +1235,9 @@
   {
     "Name": "CastleMania Games",
     "URL": "https://castlemaniagames.com/",
-    "Description": "Analogue FPGA consoles, cables, retro power supplies",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo, Sega",
+    "Description": "Retro game shop offering games, consoles, video cables, power supplies, adapters and other accessories for Atari, Evercade, Neo Geo, Nintendo, Sega, PlayStation, TurboGrafx/PC Engine and Xbox systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "castlemania-games"
   },
@@ -1269,10 +1269,10 @@
     "ID": "cbm-files-geos-v1-3"
   },
   {
-    "Name": "CBM Files — GEOS v2.0",
+    "Name": "CBM Files — GEOS Wraptor Guide",
     "URL": "https://cbmfiles.com/geos/geos-2.php",
-    "Description": "GEOS (Graphic Environment Operating System) v2.0 disk images for the Commodore 64.",
-    "Category": "Software & Games",
+    "Description": "Tutorial for using Wraptor to prepare GEOS files and boot disks for Commodore computers. The page also links to GEOS 64 and GEOS 128 disk images, applications and accessories.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "cbm-files-geos-v2-0"
@@ -1280,7 +1280,7 @@
   {
     "Name": "Celso Martinho",
     "URL": "https://celso.io/",
-    "Description": "Personal blog covering retro computing projects, vintage hardware restoration, and FPGA development.",
+    "Description": "Personal blog by Celso Martinho with articles about retro computing, hardware projects and vintage computer restoration. Recent posts cover an Atari 2600 and the Philips Telematico NMS3000.",
     "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
@@ -1289,8 +1289,8 @@
   {
     "Name": "Centre for Computing History",
     "URL": "https://www.computinghistory.org.uk/",
-    "Description": "Located in Cambridge, UK. Focus on Computers + Games from 1960s–2000s. Hands-on galleries; education focus.",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Cambridge museum with hands-on exhibitions about computing and video game history, a browsable collection, learning resources, events and a museum shop.",
+    "Category": "Events & Shows, Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "centre-for-computing-history"
@@ -1298,8 +1298,8 @@
   {
     "Name": "Checkmate 1500 Plus",
     "URL": "https://checkmate1500plus.com/",
-    "Description": "Amiga 1500-style expandable cases for Amiga/PC",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Shop for Checkmate 1500 Plus Amiga and PC cases, modular retro displays, motherboards and replacement parts for classic-computer setups.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, PC",
     "Language": "English",
     "ID": "checkmate-1500-plus"
@@ -1307,16 +1307,16 @@
   {
     "Name": "Chicago Gamespace",
     "URL": "https://www.chicagogamespace.com/",
-    "Description": "Chicago Gamespace Chicago Gamespace print collection Admire artwork from classic Sierra games, editioned prints by acclaimed Prince of Persia artist Jordan M...",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Atari, PC",
+    "Description": "Chicago video-game art space presenting exhibitions, artist talks and prints inspired by games. Its site lists current and past exhibitions and offers prints for sale.",
+    "Category": "Events & Shows, Museums & Exhibits, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "chicago-gamespace"
   },
   {
     "Name": "ChinnyVision (YouTube)",
     "URL": "https://www.youtube.com/@chinnyvision",
-    "Description": "Reviews and gameplay of retro computing and console systems",
+    "Description": "YouTube channel reviewing 8-bit and 16-bit games and hardware, usually captured on original equipment. Coverage includes Amstrad CPC, ZX Spectrum, Commodore, MSX, Atari and Acorn systems.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
@@ -1352,8 +1352,8 @@
   {
     "Name": "Classic Bits - Gateway 2000",
     "URL": "https://classicbits.net/vintage-computing/gateway-2000/",
-    "Description": "Gateway 2000 vintage computer documentation with specifications, photographs, and history.",
-    "Category": "Hardware & Parts",
+    "Description": "Gateway 2000 reference page in ClassicBits’ vintage-computer library, with a Gateway Handbook link. The wider site includes computer manuals, technical articles, archive materials and DOS software.",
+    "Category": "Documentation & Wikis",
     "Brands": "Gateway",
     "Language": "English",
     "ID": "classic-bits-gateway-2000"
@@ -1379,8 +1379,8 @@
   {
     "Name": "Classic Mac (bsuto)",
     "URL": "https://bsuto.com/classic/",
-    "Description": "Resource for classic Mac screw types, part identification, and restoration reference.",
-    "Category": "Hardware & Parts, Documentation & Wikis",
+    "Description": "Build guide for converting a Macintosh Classic case into a self-contained modern Mac mini. The walkthrough covers case preparation, an LCD panel, mounting and cabling.",
+    "Category": "Documentation & Wikis",
     "Brands": "Apple",
     "Language": "English",
     "ID": "classic-mac-bsuto"
@@ -1388,8 +1388,8 @@
   {
     "Name": "Classic Macintosh (68kMLA) Discord",
     "URL": "https://discord.me/classicmacs",
-    "Description": "Discord for the 68kMLA community",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Discord community for classic Macintosh computers based on 680x0 processors and Mac OS 7.x. The listing also identifies email, Hotline and FirstClass servers.",
+    "Category": "Communities & Forums",
     "Brands": "Apple",
     "Language": "English",
     "ID": "classic-macintosh-68kmla-discord"
@@ -1397,9 +1397,9 @@
   {
     "Name": "classiccmp.org",
     "URL": "https://www.classiccmp.org/",
-    "Description": "Classic-computer community with technical documentation, mailing lists, and resources for older systems.",
-    "Category": "Communities & Forums, Documentation & Wikis",
-    "Brands": "Nabu, DEC, PC, Various",
+    "Description": "ClassicCmp is a mailing-list community for classic-computer enthusiasts. Its FAQ describes plans for a software and documentation archive, but the site says that archive is not yet implemented.",
+    "Category": "Communities & Forums",
+    "Brands": "Various",
     "Language": "English",
     "ID": "classiccmp-org"
   },
@@ -1415,8 +1415,8 @@
   {
     "Name": "Cloanto / C64 Forever",
     "URL": "https://www.c64forever.com/",
-    "Description": "Licensed Commodore ROMs and C64 Forever emulator suite",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
+    "Description": "C64 Forever is Cloanto’s Commodore 8-bit emulation and preservation suite. It includes an RP9 player and a searchable database with more than 5,000 C64 game entries.",
+    "Category": "Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "cloanto-c64-forever"
