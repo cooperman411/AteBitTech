@@ -189,6 +189,15 @@
     "ID": "a-cube-systems"
   },
   {
+    "Name": "Acutis Data IEC Switcher",
+    "URL": "https://switcher.acutisdata.com/",
+    "Description": "Hand-built IEC serial-device switcher for sharing peripherals such as disk drives and printers among Commodore 64/128, VIC-20, and Commander X16 computers.",
+    "Category": "Hardware & Parts",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "retrodores"
+  },
+  {
     "Name": "ADAM Archive",
     "URL": "https://www.adamarchive.org/",
     "Description": "Comprehensive archive of Coleco ADAM software, documentation, and hardware information for the ADAM computer system.",
@@ -196,6 +205,15 @@
     "Brands": "Coleco",
     "Language": "English",
     "ID": "adam-archive"
+  },
+  {
+    "Name": "Adam's Vintage Computer Restorations",
+    "URL": "https://retrorepairsandrefurbs.com/",
+    "Description": "Electronics engineer Adam Wilson documents vintage computer and equipment repairs and restorations, offers limited repair services, and lists surplus computers, peripherals, parts, and accessories for sale.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "retro-repairs-and-refurbs"
   },
   {
     "Name": "Addict Magazines (Discord)",
@@ -4725,20 +4743,11 @@
     "ID": "retro-repair-roundup-youtube"
   },
   {
-    "Name": "Retro Repairs and Refurbs",
-    "URL": "https://retrorepairsandrefurbs.com/",
-    "Description": "Personal restoration site with repair services, vintage computer projects, parts, and system documentation. Search by brand or model, then check the repair notes and photos.",
-    "Category": "Repair & Services, Hardware & Parts, Documentation & Wikis",
-    "Brands": "Nabu, Dragon, Sharp, Sony, TI, Various",
-    "Language": "English",
-    "ID": "retro-repairs-and-refurbs"
-  },
-  {
     "Name": "Retro Rewind",
     "URL": "https://retrorewind.ca/",
-    "Description": "Canadian reseller for various retro hardware/parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Atari, Commodore",
+    "Description": "Online parts shop for Commodore 64/128/16 and VIC-20, Amiga, and Tandy Color Computer systems, with capacitors, diagnostic products, hardware, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amiga, Commodore, Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-rewind"
   },
@@ -4754,9 +4763,9 @@
   {
     "Name": "Retro Tech Foundation",
     "URL": "https://www.retrotechfoundation.org",
-    "Description": "Retro Tech Foundation Retro Tech Foundation Museum The Retro Tech Foundation’s mission is to educate the public about the value of vintage technology, from a...",
-    "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
-    "Brands": "Apple, Atari",
+    "Description": "Nonprofit in Watertown, Connecticut, developing a vintage technology museum and education program focused on preserving retro technology and sharing it with the public.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "retro-tech-foundation"
   },
@@ -4790,8 +4799,8 @@
   {
     "Name": "Retrobug",
     "URL": "https://retrobug.org/",
-    "Description": "Retro computer library with technical specifications, news, reviews, and podcasts. Covers systems from Amstrad CPC to MSX, TRS-80, Tatung Einstein, and vintage consoles.",
-    "Category": "Documentation & Wikis, News & Blogs, Podcasts & Audio",
+    "Description": "Retro-computing archive and catalog covering computers and consoles, with podcasts, news and reviews, and community events.",
+    "Category": "Documentation & Wikis, Events & Shows, News & Blogs, Podcasts & Audio",
     "Brands": "Amstrad, MSX, Tandy/Radio Shack, Atari, Commodore",
     "Language": "English",
     "ID": "retrobug"
@@ -4808,9 +4817,9 @@
   {
     "Name": "Retroclinic",
     "URL": "http://www.retroclinic.com/",
-    "Description": "BBC Micro repair, refurbishment, parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Acorn/BBC",
+    "Description": "BBC Micro and Master specialist selling spare parts, capacitor kits, upgrades, and manuals, with repair services for BBC Micros and selected arcade PCBs.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Acorn/BBC, Atari, Sega",
     "Language": "English",
     "ID": "retroclinic"
   },
@@ -4842,37 +4851,28 @@
     "ID": "retrocomputing-discord"
   },
   {
-    "Name": "Retrodores",
-    "URL": "https://switcher.acutisdata.com/",
-    "Description": "Retrodores Commodore equipment and IEC switchgear Retrodores.com celebrates retro systems with modern hardware and software. Try C64 OS and test out IEC swit...",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Atari, Commodore",
-    "Language": "English",
-    "ID": "retrodores"
-  },
-  {
     "Name": "RetroFrog",
     "URL": "https://retrofrog.net/",
-    "Description": "Genesis, Saturn, Dreamcast replacement shells, parts",
-    "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Sega",
+    "Description": "Online store for retro-console accessories, joysticks, USB adapters, cables, and MiSTer FPGA products across several classic systems.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrofrog"
   },
   {
     "Name": "Retrohax",
     "URL": "https://retrohax.net/shop/",
-    "Description": "Amiga/Commodore deep refurbs, MouSTer adapters",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore",
+    "Description": "Store listing the mouSTer USB adapter for connecting modern USB mice, gamepads, and joysticks to retro computers; its supported-platform list includes Commodore, Atari, Amiga, and Sinclair systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrohax"
   },
   {
     "Name": "Retroid Pocket (GoRetroid)",
     "URL": "https://www.goretroid.com/",
-    "Description": "Android-based retro handheld consoles (Retroid Pocket series)",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online store for Retroid Pocket handheld gaming devices and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "retroid-pocket-goretroid"
@@ -4898,8 +4898,8 @@
   {
     "Name": "Retromaniax",
     "URL": "https://www.retromaniax.gr/",
-    "Description": "Ελληνικη κοινοτητα retro computing και gaming. Forum με συζητησεις για κλασικους υπολογιστες, κονσολες, επισκευες και συλλογες.",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Ελληνική κοινότητα retro υπολογιστών και gaming με ενεργά φόρουμ για κλασικά συστήματα, παιχνίδια, emulation, hardware και τεχνολογία. English: Greek retro-computing and gaming community with active forums for classic systems, games, emulation, hardware, and technology.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "Greek",
     "ID": "retromaniax"
@@ -4908,7 +4908,7 @@
     "Name": "RETROMELS Archive - Sharp MZ Collection",
     "URL": "https://www.retromelsarchive.com/",
     "Description": "Curated collection of Sharp MZ-700, MZ-800, and MZ-80K resources, including ROM images, tape listings, and maintenance guides.",
-    "Category": "Hardware & Parts",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "retromels-archive-sharp-mz-collection"
