@@ -12,7 +12,7 @@
 ## Top Brand Pages
 - [Commodore (147)](https://atebit.tech/classic/commodore.html)
 - [Apple (109)](https://atebit.tech/classic/apple.html)
-- [Atari (105)](https://atebit.tech/classic/atari.html)
+- [Atari (104)](https://atebit.tech/classic/atari.html)
 - [Amiga (81)](https://atebit.tech/classic/amiga.html)
 - [PC (55)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (45)](https://atebit.tech/classic/sinclair-zx.html)

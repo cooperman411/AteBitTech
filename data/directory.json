@@ -732,7 +732,7 @@
     "Name": "AtariArchives.org",
     "URL": "https://www.atariarchives.org/",
     "Description": "Atari books, manuals, source code",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Atari",
     "Language": "English",
     "ID": "atariarchives-org"
@@ -759,17 +759,17 @@
     "Name": "Atariteca",
     "URL": "https://www.atariteca.net.pe/",
     "Description": "Blog peruano dedicado a las computadoras Atari de 8 bits serie XL/XE. Guias y analisis de emuladores, juegos y programas, con actualizaciones frecuentes sobre la escena homebrew de Atari.",
-    "Category": "Documentation & Wikis, Preservation & Archives",
+    "Category": "Documentation & Wikis, News & Blogs",
     "Brands": "Atari",
-    "Language": "Spanish",
+    "Language": "Spanish, English, French, German, Polish",
     "ID": "atariteca"
   },
   {
     "Name": "AwesomeDolphin",
     "URL": "https://github.com/awesomedolphin/megaagi/",
-    "Description": "AwesomeDolphin MegaAGI + more! Come see Sierra's AGI games (well, at least one game), running on the Mega65. A brand new interpreter, especially for the Mega...",
-    "Category": "Repair & Services, Software & Games",
-    "Brands": "Atari, Commodore",
+    "Description": "Sierra AGI interpreter for the MEGA65 that runs Sierra adventure games from separately supplied game data. The current repository reports it can play King’s Quest I and Space Quest I through completion.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "awesomedolphin"
   },
@@ -839,8 +839,8 @@
   {
     "Name": "Beehive Bit Bunker",
     "URL": "https://computergraphicsmuseum.org",
-    "Description": "Beehive Bit Bunker Beehive Terminals Come see a variety of terminals made by Beehive!",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Computer Graphics Museum documenting the history of computer graphics and its collection, including terminals and workstations. The site shares collection views, event talks and presentations.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "beehive-bit-bunker"
