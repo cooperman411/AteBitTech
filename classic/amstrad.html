@@ -25,7 +25,7 @@
 </nav>
 <h1>Amstrad</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
-<p><strong>16 entries</strong></p>
+<p><strong>15 entries</strong></p>
 <ul>
 <li><span class="entry-title"><a href="https://amigastore.eu/">AmigaStore.eu</a></span><div class="entry-desc">Online Amiga and retro-computer shop offering Amiga systems, software and accessories, with an “Other systems” section for additional vintage platforms. The catalog and news cover storage, adapters, peripherals and add-ons.</div></li>
 <li><span class="entry-title"><a href="https://www.cpcwiki.eu/">Amstrad CPC Wiki</a></span><div class="entry-desc">Amstrad CPC preservation, user forums, and licensed re-releases (fan-driven)</div></li>
@@ -34,8 +34,30 @@
 <li><span class="entry-title"><a href="https://www.bytedelight.com/">ByteDelight</a></span><div class="entry-desc">The ByteDelight site currently states that its webshop is closed for ordering. Its archived resources include ZX Spectrum and Amstrad peripheral manuals and build guides.</div></li>
 <li><span class="entry-title"><a href="https://www.cpcwiki.eu/forum/">CPC Wiki Forum</a></span><div class="entry-desc">Amstrad CPC user forums and marketplace</div></li>
 <li><span class="entry-title"><a href="https://www.cpc-power.com/">CPC-Power</a></span><div class="entry-desc">Base de données et archive de logiciels Amstrad CPC avec fiches de jeux, jaquettes, captures d’écran, manuels et téléchargements. An Amstrad CPC software database and archive with game entries, covers, screenshots, manuals and downloads.</div></li>
-<li><span class="entry-title"><a href="https://www.youtube.com/@hermski">Hermski (Back to 8-Bit) (YouTube)</a></span><div class="entry-desc">Retro computing YouTube channel by Paul Davies exploring 8-bit computers, software, and hardware restoration.</div></li>
 <li><span class="entry-title"><a href="https://hxc2001.com/">HXC2001 (Jean-François DEL NERO)</a></span><div class="entry-desc">Products and software for replacing floppy drives with HxC emulators, including SD and USB emulator hardware and firmware for Gotek drives, with compatibility lists, downloads and a support forum.</div></li>
 <li><span class="entry-title"><a href="https://www.mutant-caterpillar.co.uk/shop/">Mutant Caterpillar Games</a></span><div class="entry-desc">Shop for tested, refurbished 8-bit and 16-bit computers, software and spare parts, with repairs for systems including Sinclair, Amstrad, Commodore, Acorn, Atari and Amiga machines.</div></li>
 <li><span class="entry-title"><a href="https://www.printables.com/">Printables</a></span><div class="entry-desc">General 3D-printing library with retro-computer parts. Search by system name plus case, bezel, bracket, keycap, or adapter, then check the model files and print settings.</div></li>
-<li><span class="entry-title"><a href="https://www.reddit.com/r/amstrad/">r/amstrad</a></span><div class="entry-desc">Reddit community for Amstrad computers and r
+<li><span class="entry-title"><a href="https://www.reddit.com/r/amstrad/">r/amstrad</a></span><div class="entry-desc">Reddit community for Amstrad computers and related video games and software.</div></li>
+<li><span class="entry-title"><a href="https://www.retrofuzion.com/">Retro Fusion</a></span><div class="entry-desc">Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.</div></li>
+<li><span class="entry-title"><a href="https://retrobug.org/">Retrobug</a></span><div class="entry-desc">Retro-computing archive and catalog covering computers and consoles, with podcasts, news and reviews, and community events.</div></li>
+<li><span class="entry-title"><a href="https://www.thefuturewas8bit.com/">The Future Was 8-Bit</a></span><div class="entry-desc">Online store for 8-bit computer hardware add-ons, games, and spare parts for Commodore, Sinclair, Amstrad, and Acorn/BBC systems.</div></li>
+<li><span class="entry-title"><a href="https://www.sellmyretro.com/store/zaxon">Zaxon (Retro-Computer Sales)</a></span><div class="entry-desc">ZX Spectrum add-ons, DivMMC, Harlequin boards, Amstrad parts</div></li>
+</ul>
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle-footer" class="hc-toggle">[ High Contrast ]</button>
+</footer>
+<script>
+document.querySelectorAll(".hc-toggle").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.documentElement.classList.toggle("hc");
+    const label = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
+    document.querySelectorAll(".hc-toggle").forEach(function(toggle) {
+      toggle.textContent = label;
+    });
+  });
+});
+</script>
+</body>
+</html>

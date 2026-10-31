@@ -2342,8 +2342,8 @@
   {
     "Name": "Garth Beagle (YouTube)",
     "URL": "https://www.youtube.com/channel/UCHskucHwDQT4dkciquYX_4Q",
-    "Description": "Garth Beagle — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Vintage technology channel featuring computer collecting, builds, repairs, upgrades and retro technology events.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "garth-beagle-youtube"
@@ -2477,7 +2477,7 @@
   {
     "Name": "Hall of Light (HOL)",
     "URL": "https://hol.abime.net/",
-    "Description": "Amiga games database with credits and info",
+    "Description": "Searchable Amiga games database with credits and reference details, including screenshots, box scans, manuals, disks and maps for thousands of titles.",
     "Category": "Software & Games",
     "Brands": "Amiga",
     "Language": "English",
@@ -2540,9 +2540,9 @@
   {
     "Name": "Hermski (Back to 8-Bit) (YouTube)",
     "URL": "https://www.youtube.com/@hermski",
-    "Description": "Retro computing YouTube channel by Paul Davies exploring 8-bit computers, software, and hardware restoration.",
-    "Category": "YouTube & Social Channels, Hardware & Parts, Repair & Services",
-    "Brands": "Commodore, Atari, Sinclair/ZX, Amstrad, Apple",
+    "Description": "Paul Davies’ Back to 8-Bit channel covers 8-bit retro computing and gaming, including Commodore, Amiga and Sinclair systems, events, interviews and MiSTer FPGA tutorials.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Amiga, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "hermski-back-to-8-bit-youtube"
   },
@@ -2603,17 +2603,17 @@
   {
     "Name": "i80386sx",
     "URL": "https://i80386sx.com",
-    "Description": "i80386sx Compaq laptops of the 1990s I’ll be showing off Compaq laptops from my collection. I’ll be selling accessories for select Compaq laptops",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "IBM, Various",
+    "Description": "Personal Compaq Portable computing site with an online store and archive for items the owner makes or has repaired, plus services, documents, downloads and parts.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "PC",
     "Language": "English",
     "ID": "i80386sx"
   },
   {
     "Name": "IBM 1130 Site",
     "URL": "http://www.ibm1130.org/",
-    "Description": "Dedicated site for the IBM 1130 computing system with documentation, software, and restoration information.",
-    "Category": "Hardware & Parts",
+    "Description": "Enthusiast resource for the IBM 1130 with hardware and software information, manuals and documentation, an IBM 1130 simulator, and pages about surviving systems.",
+    "Category": "Documentation & Wikis, Emulation & FPGA",
     "Brands": "IBM",
     "Language": "English",
     "ID": "ibm-1130-site"
@@ -2639,8 +2639,8 @@
   {
     "Name": "iFixRetro",
     "URL": "https://www.youtube.com/iFixRetro",
-    "Description": "Console repairs & mods. Technical fixes.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Console repair and modification channel featuring technical repair videos and console hardware mods.",
+    "Category": "Repair & Services, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "ifixretro"
@@ -2675,9 +2675,9 @@
   {
     "Name": "Inertial Computing (SCSI2SD)",
     "URL": "https://store.inertialcomputing.com/",
-    "Description": "SCSI2SD boards and adapters for vintage Macintosh and SCSI systems",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Apple",
+    "Description": "Online store hosted at Rabbit Hole Computing with ZuluSCSI SCSI emulators, ZuluIDE ATA/IDE emulators and related products for vintage computers.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "inertial-computing-scsi2sd"
   },
@@ -2729,8 +2729,8 @@
   {
     "Name": "Internet Archive (YouTube)",
     "URL": "https://www.youtube.com/channel/UCFa_X02QhJnP0FNpFAKyRRg",
-    "Description": "Internet Archive — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Internet Archive video channel with tutorials and updates about the Wayback Machine, digitization and public access to archived books, films, audio and web materials.",
+    "Category": "Preservation & Archives, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "internet-archive-youtube"
@@ -2783,44 +2783,44 @@
   {
     "Name": "Jan Beta",
     "URL": "https://www.youtube.com/janbeta",
-    "Description": "Commodore and Amiga repairs, restorations",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Amiga, Commodore",
+    "Description": "Electronics and vintage technology channel covering 1980s and 1990s computers and consoles, vintage hi-fi and instruments, repairs, projects and builds.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "jan-beta"
   },
   {
     "Name": "jaromaz (YouTube)",
     "URL": "https://www.youtube.com/channel/UCIAidAcBpFXy17qmgL9_K3g",
-    "Description": "jaromaz — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "Personal YouTube channel covering software and electronics projects, including MacintoshPi, which runs classic Mac OS and Commodore emulation on Raspberry Pi.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple, Commodore, Raspberry Pi",
     "Language": "English",
     "ID": "jaromaz-youtube"
   },
   {
     "Name": "JDW (YouTube)",
     "URL": "https://www.youtube.com/channel/UCQlrWbkbU-N-HddTe_Ydajw",
-    "Description": "JDW — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "YouTube channel with vintage Macintosh restoration and repair videos, including PowerBook repairs, Macintosh Portable coverage and Apple computer reviews.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "jdw-youtube"
   },
   {
     "Name": "Jefferey L. Wilson",
     "URL": "https://s100projects.com",
-    "Description": "Jefferey L. Wilson S100Projects / CompuPro 816 Multiuser S-100 New S-100 Systems. Motherboards, and S-100 Cards, plus a 1980s Multiuser CompuPro 816 running ...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari, PC",
+    "Description": "Hobby site supporting S-100 computers of all vintages, especially advanced systems from the mid-1980s to early 1990s, with current and new projects and an availability shop.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "jefferey-l-wilson"
   },
   {
     "Name": "Jess B's Tech Dept. (YouTube)",
     "URL": "https://www.youtube.com/channel/UC9v_yfGg9CQW8M181EqHgog",
-    "Description": "Jess B's Tech Dept. — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel about old computers and games, with videos and playlists covering Atari, PC, Commodore, Apple and console systems.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "jess-bs-tech-dept-youtube"
@@ -2846,9 +2846,9 @@
   {
     "Name": "JJZ-GC (YouTube)",
     "URL": "https://www.youtube.com/@JJZ-GC",
-    "Description": "YouTube channel celebrating video gaming history and culture across platforms. Retrospectives, hardware showcases, and vintage gaming content spanning multiple console and computer generations.",
+    "Description": "Gaming culture channel covering classic and current video games, with gameplay, videogame history and retro gaming across arcade, console and computer systems.",
     "Category": "YouTube & Social Channels",
-    "Brands": "Nintendo, Sega, Sony, Atari, PC",
+    "Brands": "Various",
     "Language": "English",
     "ID": "jjz-gc-youtube"
   },
@@ -2882,9 +2882,9 @@
   {
     "Name": "Jon Obst (YouTube)",
     "URL": "https://www.youtube.com/@jonobst",
-    "Description": "Jon Obst Jon Obst on YouTube I'll be bringing some of my collection as featured in my videos for everyone to play with!",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "Jon Obst’s channel focuses on vintage and retro technology repair, restoration and history, especially Apple computers, with occasional modern repairs and Vintage Computer Festival Midwest coverage.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "jon-obst-youtube"
   },

@@ -25,12 +25,31 @@
 </nav>
 <h1>IBM</h1>
 <a class="top-link" href="index.html">&larr; All Brands</a>
-<p><strong>8 entries</strong></p>
+<p><strong>7 entries</strong></p>
 <ul>
 <li><span class="entry-title"><a href="https://www.ardent-tool.com/">Ardent Tool</a></span><div class="entry-desc">Reference site for IBM PS/2 and Micro Channel systems, with technical specifications, manuals, drivers, schematics, adapters and setup guides.</div></li>
-<li><span class="entry-title"><a href="https://i80386sx.com">i80386sx</a></span><div class="entry-desc">i80386sx Compaq laptops of the 1990s I’ll be showing off Compaq laptops from my collection. I’ll be selling accessories for select Compaq laptops</div></li>
-<li><span class="entry-title"><a href="http://www.ibm1130.org/">IBM 1130 Site</a></span><div class="entry-desc">Dedicated site for the IBM 1130 computing system with documentation, software, and restoration information.</div></li>
+<li><span class="entry-title"><a href="http://www.ibm1130.org/">IBM 1130 Site</a></span><div class="entry-desc">Enthusiast resource for the IBM 1130 with hardware and software information, manuals and documentation, an IBM 1130 simulator, and pages about surviving systems.</div></li>
 <li><span class="entry-title"><a href="https://ibm1401.computerhistory.org/">IBM 1401 Computer History</a></span><div class="entry-desc">Computer History Museum’s IBM 1401 Demo Lab and restoration project, with operational mainframes, live demonstrations, restoration reports, technical documentation, software inventories and photographs.</div></li>
 <li><span class="entry-title"><a href="https://minuszerodegrees.net/">Minus Zero Degrees</a></span><div class="entry-desc">Reference archive of IBM PC hardware documentation, including technical manuals, ROMs, schematics, specifications and restoration guides for models such as the 5150, 5160 and 5170.</div></li>
 <li><span class="entry-title"><a href="https://www.retrofuzion.com/">Retro Fusion</a></span><div class="entry-desc">Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.</div></li>
-<li><span class="entry-title"><a href="https://retropaq.com/">Retropaq</a></span><div class="entry-desc">Articles, videos, downloads and service do
+<li><span class="entry-title"><a href="https://retropaq.com/">Retropaq</a></span><div class="entry-desc">Articles, videos, downloads and service documentation about vintage computers, including Compaq Portables, Macintosh Portable, IBM P75 and Toshiba systems.</div></li>
+<li><span class="entry-title"><a href="https://tinkerdifferent.com/">TinkerDifferent</a></span><div class="entry-desc">A forum and community for vintage tech enthusiasts to collaborate and share information about classic computers, primarily focusing on Apple products.</div></li>
+</ul>
+<footer>
+<a href="/">Modern Site</a> | <a href="/classic/">Retro Site</a>
+<p>Ate Bit Tech — retro computing directory</p>
+<button id="hc-toggle-footer" class="hc-toggle">[ High Contrast ]</button>
+</footer>
+<script>
+document.querySelectorAll(".hc-toggle").forEach(function(button) {
+  button.addEventListener("click", function() {
+    document.documentElement.classList.toggle("hc");
+    const label = document.documentElement.classList.contains("hc") ? "[ Normal ]" : "[ High Contrast ]";
+    document.querySelectorAll(".hc-toggle").forEach(function(toggle) {
+      toggle.textContent = label;
+    });
+  });
+});
+</script>
+</body>
+</html>
