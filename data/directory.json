@@ -470,8 +470,8 @@
   {
     "Name": "Anbernic",
     "URL": "https://anbernic.com/",
-    "Description": "Retro handhelds running Linux/Android with emulators (RG series)",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Retro handheld game consoles with Android or Linux, plus game controllers and accessories. The site provides product listings, firmware updates and customer support.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "anbernic"
@@ -506,8 +506,8 @@
   {
     "Name": "Antstream Arcade",
     "URL": "https://www.antstream.com/",
-    "Description": "Streaming retro games legally licensed",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Cloud streaming service with more than 1,300 officially licensed retro arcade, home-computer and console games. Games stream to PC, consoles, mobile devices and TVs without local ROMs or emulator setup.",
+    "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "antstream-arcade"
@@ -524,8 +524,8 @@
   {
     "Name": "Applefritter",
     "URL": "https://www.applefritter.com/",
-    "Description": "Apple hardware hacks, articles, classifieds",
-    "Category": "Communities & Forums, Hardware & Parts, News & Blogs",
+    "Description": "Community site with forums, member posts and chat about Apple II and other vintage computers. Recent posts include hardware projects and games, with user-submitted discussions across system categories.",
+    "Category": "Communities & Forums, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "applefritter"
@@ -533,8 +533,8 @@
   {
     "Name": "Applesauce FDC",
     "URL": "https://applesaucefdc.com/",
-    "Description": "USB flux-level disk imaging and drive controller for Apple II/Mac and other vintage systems",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "Floppy disk preservation and analysis toolkit built around a USB floppy-drive controller. The site documents flux imaging, disk-image analysis and hardware for Apple-compatible and PC floppy drives.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "applesauce-fdc"
@@ -542,8 +542,8 @@
   {
     "Name": "Aquarius 1 Stage",
     "URL": "https://aquarius.1stage.com/aquarius",
-    "Description": "Mattel Aquarius resource site with ROM images, software archives, and technical documentation.",
-    "Category": "Software & Games",
+    "Description": "Aquarius resource site covering Mattel and Radofin system variants, ROM and BASIC software, hardware expansions and composite-video modifications. It also offers an Aquarius AV modification service.",
+    "Category": "Hardware & Parts, Repair & Services, Software & Games",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "aquarius-1-stage"
@@ -551,8 +551,8 @@
   {
     "Name": "Aquarius+ (GitHub)",
     "URL": "https://github.com/fvdhoef/aquarius-plus",
-    "Description": "Open-source Aquarius+ firmware and hardware files.",
-    "Category": "Documentation & Wikis, Emulation & FPGA",
+    "Description": "Open-source next-generation Z80-based Aquarius+ system designed for backward compatibility with Aquarius hardware and software. The repository includes maker resources, an SDK and system files for FPGA and emulator components.",
+    "Category": "Hardware & Parts, Emulation & FPGA",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "aquarius-plus-github"
@@ -569,8 +569,8 @@
   {
     "Name": "Arcade Components",
     "URL": "https://arcadecomponents.com",
-    "Description": "Vendor specializing in replacement parts and components for arcade and retro systems.",
-    "Category": "Hardware & Parts, Vendors & Stores",
+    "Description": "Supplier of vintage arcade, computer and game-console components, including logic chips, boards, kits and tools. The site also lists repair services, modifications and repair logs.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "arcade-components"
@@ -596,8 +596,8 @@
   {
     "Name": "ARCI",
     "URL": "https://www.antique-radios.org",
-    "Description": "ARCI Antique Radio Club of Illinois ARCI",
-    "Category": "Hardware & Parts",
+    "Description": "Antique Radio Club of Illinois is a nationwide group preserving antique radios and related items, with bi-monthly meetings, events and resources for radio repair.",
+    "Category": "Communities & Forums, Events & Shows, Repair & Services",
     "Brands": "Various",
     "Language": "English",
     "ID": "arci"
@@ -605,8 +605,8 @@
   {
     "Name": "Ardent Tool",
     "URL": "https://www.ardent-tool.com/",
-    "Description": "Comprehensive IBM ThinkPad and vintage IBM PC documentation, drivers, and technical information.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference site for IBM PS/2 and Micro Channel systems, with technical specifications, manuals, drivers, schematics, adapters and setup guides.",
+    "Category": "Documentation & Wikis",
     "Brands": "IBM",
     "Language": "English",
     "ID": "ardent-tool"
@@ -632,7 +632,7 @@
   {
     "Name": "ASCII Converter (Branah)",
     "URL": "https://www.branah.com/ascii-converter",
-    "Description": "Online tool for converting text to ASCII/hex/binary and vice versa, useful for retro programming.",
+    "Description": "Browser tool for converting ASCII text to and from hexadecimal, percent encoding, Base64, decimal and binary. It includes options for handling whitespace characters.",
     "Category": "Web Tools & Browsers",
     "Brands": "Various",
     "Language": "English",
@@ -650,7 +650,7 @@
   {
     "Name": "Atari Mania",
     "URL": "https://www.atarimania.com/",
-    "Description": "Atari games, manuals, box scans",
+    "Description": "Searchable Atari game database spanning arcade systems, consoles, 8-bit computers, ST/TT/Falcon and PC. The site also links to Atari magazines and other resources.",
     "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Atari",
     "Language": "English",
@@ -659,17 +659,17 @@
   {
     "Name": "Atari Projects",
     "URL": "http://atariprojects.org",
-    "Description": "Guides for diagnosis, repair, and upgrades for retro computers including Atari, Mac, and Amiga.",
-    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services",
-    "Brands": "Amiga, Apple, Atari",
+    "Description": "Atari 8-bit project blog with games, BASIC programming tutorials, hardware troubleshooting and modification guides. Posts include step-by-step repair articles for Atari computers.",
+    "Category": "News & Blogs, Documentation & Wikis, Repair & Services",
+    "Brands": "Atari",
     "Language": "English",
     "ID": "atari-projects"
   },
   {
     "Name": "Atari SA (Atari.com)",
     "URL": "https://atari.com/",
-    "Description": "Licensed rereleases, VCS console, game reissues",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Official Atari site offering consoles and accessories, game releases, handheld devices, apparel and collectibles through its online catalog. The site also publishes news and product information.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
     "Brands": "Atari",
     "Language": "English",
     "ID": "atari-sa-atari-com"
@@ -677,7 +677,7 @@
   {
     "Name": "Atari800",
     "URL": "https://atari800.github.io/",
-    "Description": "Atari 8-bit computer emulator",
+    "Description": "Open-source portable emulator for Atari 8-bit computers and the Atari 5200, available for Linux, macOS, Windows, Amiga and other systems. The project provides SDL, command-line and other interface builds.",
     "Category": "Emulation & FPGA",
     "Brands": "Atari",
     "Language": "English",
@@ -695,8 +695,8 @@
   {
     "Name": "AtariAge Forums",
     "URL": "https://forums.atariage.com/",
-    "Description": "Atari systems from 2600 through Jaguar, hardware, software, homebrew",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "AtariAge forums host discussions on Atari news, consoles, computers, homebrew, hardware, software, events and user projects, with sections for 2600, 5200, 7800, Lynx and Jaguar systems.",
+    "Category": "Communities & Forums",
     "Brands": "Atari",
     "Language": "English",
     "ID": "atariage-forums"
@@ -704,8 +704,8 @@
   {
     "Name": "AtariAge Store",
     "URL": "https://atariage.com/store/",
-    "Description": "Licensed Atari games and homebrew publishing, cartridges, hardware, peripherals",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games, Vendors & Stores",
+    "Description": "AtariAge online store offers homebrew games, reproductions, cartridges and hardware for Atari consoles and computers, including 2600, 5200, 7800, Lynx and Jaguar systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
     "Brands": "Atari",
     "Language": "English",
     "ID": "atariage-store"

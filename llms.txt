@@ -12,8 +12,8 @@
 ## Top Brand Pages
 - [Commodore (158)](https://atebit.tech/classic/commodore.html)
 - [Atari (136)](https://atebit.tech/classic/atari.html)
-- [Apple (123)](https://atebit.tech/classic/apple.html)
-- [Amiga (91)](https://atebit.tech/classic/amiga.html)
+- [Apple (122)](https://atebit.tech/classic/apple.html)
+- [Amiga (90)](https://atebit.tech/classic/amiga.html)
 - [PC (63)](https://atebit.tech/classic/pc.html)
 - [Sinclair/ZX (53)](https://atebit.tech/classic/sinclair-zx.html)
 - [Nintendo (28)](https://atebit.tech/classic/nintendo.html)
