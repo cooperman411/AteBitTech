@@ -3323,9 +3323,9 @@
   {
     "Name": "Matthew Jones / McJonesTech",
     "URL": "https://mcjonestech.com",
-    "Description": "Matthew Jones / McJonesTech The Seequa Computer Corporation & Their Competitors See three lost machines from the Seequa Computer Corporation, alongside some ...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple, Atari, Nintendo",
+    "Description": "Matthew Jones’s project for refurbishing and preserving older technology, with ongoing computer restoration and reverse-engineering work, exhibits and other community projects.",
+    "Category": "Hardware & Parts, Repair & Services",
+    "Brands": "Various",
     "Language": "English",
     "ID": "matthew-jones-mcjonestech"
   },
@@ -3350,8 +3350,8 @@
   {
     "Name": "MEGA65",
     "URL": "https://mega65.org/",
-    "Description": "FPGA-based Commodore 65 recreation with modern features",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Open-source FPGA implementation of the Commodore 65 as a standalone 8-bit computer, with C64 compatibility, modern storage and display features, BASIC and software; hardware is sold through a linked manufacturer webshop.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "mega65"
@@ -3359,9 +3359,9 @@
   {
     "Name": "Melissa Barron // M-three-L Art",
     "URL": "https://melissabarron.net",
-    "Description": "Melissa Barron // M-three-L Art Original art and prints inspired by vintage technology I create original art inspired by vintage technology, especially the A...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple",
+    "Description": "Artist and Apple II enthusiast creating paintings, prints and other art inspired by vintage computers, game systems and technology, with a linked online shop.",
+    "Category": "Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "melissa-barron-m-three-l-art"
   },
@@ -3404,8 +3404,8 @@
   {
     "Name": "MicroMac",
     "URL": "http://axio.ms/projects/2024/06/16/MicroMac.html",
-    "Description": "Open-source single-chip Macintosh Plus replica built around a modern microcontroller.",
-    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Description": "RP2040-based hardware project that emulates an original 128K Macintosh, with monochrome VGA output and USB keyboard/mouse; the project page documents the design and links build instructions and source.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "micromac"
@@ -3422,17 +3422,17 @@
   {
     "Name": "Midwest Computer Museum",
     "URL": "https://midwestcomputermuseum.com/",
-    "Description": "Midwest Computer Museum Midwest Computer Museum Home Computers",
+    "Description": "Nonprofit museum preserving computing history through a collection of computers, peripherals, software and documentation, with public events and a planned mobile exhibit for schools and communities.",
     "Category": "Museums & Exhibits",
-    "Brands": "Atari",
+    "Brands": "Various",
     "Language": "English",
     "ID": "midwest-computer-museum"
   },
   {
     "Name": "Mini vMac",
     "URL": "https://www.gryphel.com/c/minivmac/",
-    "Description": "Mac Plus emulator for modern platforms",
-    "Category": "Emulation & FPGA, Repair & Services",
+    "Description": "Open-source emulator collection for running software made for early 680x0 Macintosh computers on modern systems, with downloads, setup guides, hardware references, extras and developer documentation.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mini-vmac"
@@ -3440,8 +3440,8 @@
   {
     "Name": "MiniDisc Wiki",
     "URL": "https://www.minidisc.wiki/",
-    "Description": "Comprehensive resource for Sony MiniDisc technology including software, hardware, and PC data drives.",
-    "Category": "Hardware & Parts",
+    "Description": "MiniDisc reference wiki with equipment and disc databases, recording guides, buyer information, accessories, component references, price history and Web MiniDisc software resources.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Software & Games",
     "Brands": "MiniDisc",
     "Language": "English",
     "ID": "minidisc-wiki"
@@ -3449,8 +3449,8 @@
   {
     "Name": "MiniDisc.org",
     "URL": "https://minidisc.org/",
-    "Description": "Extensive archive of MiniDisc technology documentation, including Sony PC data drive manuals and software.",
-    "Category": "Hardware & Parts",
+    "Description": "MiniDisc community portal tracking the format since 1995, with technology guides, FAQs, equipment and accessory browsers, discussion links, buying resources and archival material.",
+    "Category": "Communities & Forums, Documentation & Wikis, Hardware & Parts",
     "Brands": "MiniDisc",
     "Language": "English",
     "ID": "minidisc-org"
@@ -3458,8 +3458,8 @@
   {
     "Name": "Minus Zero Degrees",
     "URL": "https://minuszerodegrees.net/",
-    "Description": "Extensive collection of vintage IBM computer documentation, including 5150, 5160, 5170 technical references, ROMs, and restore guides.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference archive of IBM PC hardware documentation, including technical manuals, ROMs, schematics, specifications and restoration guides for models such as the 5150, 5160 and 5170.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
     "Brands": "IBM",
     "Language": "English",
     "ID": "minus-zero-degrees"
@@ -3494,8 +3494,8 @@
   {
     "Name": "MITS Altair Documentation",
     "URL": "https://www.mitsaltair.com/",
-    "Description": "Dedicated site for MITS Altair documentation, including manuals, schematics, and technical information for Altair 8800 and related systems.",
-    "Category": "Hardware & Parts",
+    "Description": "Historical MITS Altair 8800 reference site with software, documentation, hardware-sale links, online resources and simulator links, preserving original 1970s product information.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Altair",
     "Language": "English",
     "ID": "mits-altair-documentation"
@@ -3512,17 +3512,17 @@
   {
     "Name": "MO5.COM",
     "URL": "https://mo5.com/",
-    "Description": "Thomson MO/TO series preservation, museum shop",
-    "Category": "Communities & Forums, Museums & Exhibits, Vendors & Stores",
+    "Description": "Association MO5 preserves and shares video-game and digital heritage through collections, research, exhibitions, events and the linked Musée du Jeu Vidéo. English: MO5 preserves and shares video-game and digital heritage through collections, research, exhibitions and events.",
+    "Category": "Communities & Forums, Museums & Exhibits, Preservation & Archives",
     "Brands": "Thomson",
-    "Language": "English",
+    "Language": "French, English",
     "ID": "mo5-com"
   },
   {
     "Name": "MoBATCH",
     "URL": "https://mobat.ch",
-    "Description": "MoBATCH Big Computer Fun Time Showing off a big fun computer from the Museum collection",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Nonprofit Museum of Batch and Time-sharing Computer History, focused on business computing, supercomputers and other behind-the-scenes systems, with event exhibits and information about its collections.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "mobatch"
