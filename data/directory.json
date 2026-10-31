@@ -1748,9 +1748,9 @@
   {
     "Name": "Ctrl-Alt-Rees",
     "URL": "https://www.youtube.com/CtrlAltRees",
-    "Description": "Retro PC and console history, restorations",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "PC",
+    "Description": "YouTube channel and project archive covering vintage computing and retro gaming, including Atari history, hardware repairs and modifications, restoration, and technical guides.",
+    "Category": "Documentation & Wikis, YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "ctrl-alt-rees"
   },
@@ -1838,9 +1838,9 @@
   {
     "Name": "Dayton Computer Museum",
     "URL": "https://dma1.org",
-    "Description": "Dayton Computer Museum Dayton Computer Museum See and learn how our Relay based Binary Digital Computer works. Experience the beginnings of Electronic comput...",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Acorn/BBC, Atari",
+    "Description": "Museum collection maintained by the Dayton Microcomputer Association, with classic and legacy computer equipment, historical user-group documents, and working exhibits. A selection is shown at outreach events and at the association workshop by appointment.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Various",
     "Language": "English",
     "ID": "dayton-computer-museum"
   },
@@ -2095,15 +2095,6 @@
     "Brands": "Amiga",
     "Language": "English",
     "ID": "english-amiga-board-eab"
-  },
-  {
-    "Name": "Enterprise 128 Community",
-    "URL": "https://www.ep128.hu/",
-    "Description": "Enterprise 128 support, parts, refurbs",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
-    "Brands": "Enterprise",
-    "Language": "English",
-    "ID": "enterprise-128-community"
   },
   {
     "Name": "Enterprise Forever",
@@ -6757,6 +6748,15 @@
     "Brands": "Z80",
     "Language": "English",
     "ID": "z80-information"
+  },
+  {
+    "Name": "Z80 Museum (ep128.hu)",
+    "URL": "https://www.ep128.hu/",
+    "Description": "Bilingual Hungarian and English museum and archive focused on the Enterprise home computer, with downloadable software, Spectrum conversions, C64-compatible games, and historical information.",
+    "Category": "Museums & Exhibits, Preservation & Archives, Software & Games",
+    "Brands": "Enterprise, Sinclair/ZX, Commodore",
+    "Language": "English",
+    "ID": "enterprise-128-community"
   },
   {
     "Name": "Zap Coders",
