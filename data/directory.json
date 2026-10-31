@@ -1910,8 +1910,8 @@
   {
     "Name": "Digilicious Nibbles",
     "URL": "https://www.epsilonsworld.com/",
-    "Description": "Released Sky Shapers in 2025",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Epsilon’s World is an Amiga-focused blog covering AmigaOS and MorphOS, new software, hardware and community projects.",
+    "Category": "News & Blogs",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "digilicious-nibbles"
@@ -1937,17 +1937,17 @@
   {
     "Name": "DLH's Archive",
     "URL": "https://commodore.bombjack.org",
-    "Description": "David Haynes Commodore / Amiga & GTE ExecSet Demo Mega 65 Computer, Amiga 500, NES and SNES demo. GTE Exec Set PC. Replacing HD with USB/CF",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Amiga, Commodore, Nintendo, PC, Atari, Oric, Osbourne, Nabu, TI",
+    "Description": "DLH’s Commodore Archive collects scanned books and technical reference material for Commodore systems and other vintage computers.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "dlhs-archive"
   },
   {
     "Name": "DOS Days - Osborne 1",
     "URL": "https://www.dosdays.co.uk/topics/osborne_1.php",
-    "Description": "Osborne 1 repair and restoration walkthrough with detailed photos and capacitor replacement guide.",
-    "Category": "Repair & Services, Documentation & Wikis",
+    "Description": "Personal repair account for an Osborne 1, documenting capacitor, CPU and display faults with photos and technical context; the author says the account is anecdotal, not instructional.",
+    "Category": "Documentation & Wikis",
     "Brands": "Osbourne",
     "Language": "English",
     "ID": "dos-days-osborne-1"
@@ -1964,9 +1964,9 @@
   {
     "Name": "Double Sided Games",
     "URL": "https://doublesidedgames.com/",
-    "Description": "Indie publisher with boxed and digital versions",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Amiga, Commodore, PC",
+    "Description": "Publisher and shop for digital and boxed games for classic computers, including the Commodore 64, VIC-20 and Amiga.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "double-sided-games"
   },
@@ -1991,7 +1991,7 @@
   {
     "Name": "Dragon 32/64 Games Database",
     "URL": "https://www.gamesdatabase.org/system-dragon_32-64",
-    "Description": "Comprehensive database of Dragon 32/64 computer games with box art, descriptions, and download links.",
+    "Description": "Dragon 32/64 games index with individual game entries, media references and a system-manual link, within a broader online games database.",
     "Category": "Software & Games",
     "Brands": "Dragon",
     "Language": "English",
@@ -2000,8 +2000,8 @@
   {
     "Name": "Dragon Archive",
     "URL": "https://archive.worldofdragon.org/",
-    "Description": "Dragon 32/64 forum and archive",
-    "Category": "Communities & Forums",
+    "Description": "Dragon 32/64 community archive and wiki with downloadable software, publications, manuals, emulation information and discussion forums.",
+    "Category": "Communities & Forums, Preservation & Archives",
     "Brands": "Dragon",
     "Language": "English",
     "ID": "dragon-archive"
@@ -2009,8 +2009,8 @@
   {
     "Name": "DragonData",
     "URL": "http://www.dragondata.co.uk/",
-    "Description": "Preservation site for Dragon computers, some parts",
-    "Category": "Hardware & Parts",
+    "Description": "Dragon Data Archive preserving the history and products of Dragon computers through manuals, software, circuit diagrams, advertisements, hardware records and photographs.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Dragon",
     "Language": "English",
     "ID": "dragondata"
@@ -2018,18 +2018,18 @@
   {
     "Name": "Dwayne",
     "URL": "https://build-a-blinkie.org",
-    "Description": "Dwayne Build-a-Blinkie Learn-to-Solder workshop Build-a-Blinkie is a 501(c)3 organization started by engineers, dedicated to the teaching of STEAM (Science, ...",
-    "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Atari",
+    "Description": "Nonprofit that teaches STEM through learn-to-solder workshops and mobile soldering stations at maker fairs, libraries, universities, maker spaces and conventions.",
+    "Category": "Events & Shows",
+    "Brands": "Various",
     "Language": "English",
     "ID": "dwayne"
   },
   {
     "Name": "Edladdin Controllers",
     "URL": "https://www.edladdin.com/",
-    "Description": "High-quality replacement controllers for CoCo, Atari, etc.",
+    "Description": "Custom arcade controllers for Atari, ColecoVision/ADAM, Atari 8-bit and Commodore systems, with custom builds and repair service for products made by Edladdin.",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Atari, Commodore, Tandy/Radio Shack",
+    "Brands": "Atari, Coleco, Commodore",
     "Language": "English",
     "ID": "edladdin-controllers"
   },
@@ -2045,8 +2045,8 @@
   {
     "Name": "Eli’s Software Encyclopedia",
     "URL": "https://elisoftware.org",
-    "Description": "Vintage software archive across C64, Amiga, DOS and more.",
-    "Category": "Software & Games",
+    "Description": "Collaborative wiki documenting commercially released software, publishers and developers as a reference for historians, researchers, hobbyists and collectors.",
+    "Category": "Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "elis-software-encyclopedia"
@@ -2063,8 +2063,8 @@
   {
     "Name": "Emu64 XL",
     "URL": "https://apps.apple.com/us/app/emu64-xl/id6483251916",
-    "Description": "Commodore 64 emulator for iPhone/iPad, VICE-based",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
+    "Description": "VICE-based Commodore 64 emulator for iPhone and iPad, with BASIC programs and sources, .T64/.D64 loading, virtual controls and support for external peripherals.",
+    "Category": "Emulation & FPGA",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "emu64-xl"
@@ -2099,9 +2099,9 @@
   {
     "Name": "EPROMsDB",
     "URL": "https://epromdb.com/",
-    "Description": "Database of raw binary files from vintage EPROMs, BIOS images, VGA ROMs, and controller firmware. Designed for use with chip analyzers and advanced hardware preservation.",
-    "Category": "Documentation & Wikis, Preservation & Archives, Hardware & Parts",
-    "Brands": "PC, Commodore, Amiga, Apple, Atari",
+    "Description": "Database of raw binary images from pre-2000 EPROMs, including BIOS, VGA and controller firmware, intended for advanced users and Universal Chip Analyzer support.",
+    "Category": "Preservation & Archives, Software & Games",
+    "Brands": "Various",
     "Language": "English",
     "ID": "epromsdb"
   },
