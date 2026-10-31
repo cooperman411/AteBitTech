@@ -5384,8 +5384,8 @@
   {
     "Name": "Sharp Pocket Computers",
     "URL": "https://www.sharppocketcomputers.com/",
-    "Description": "Spare parts, accessories, and documentation for Sharp pocket computers and terminals.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference catalog of Sharp pocket computers and related calculators, with accessory listings, manuals, and historical information.",
+    "Category": "Documentation & Wikis",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "sharp-pocket-computers"
@@ -5393,7 +5393,7 @@
   {
     "Name": "SheepShaver",
     "URL": "https://www.emaculation.com/doku.php/sheepshaver",
-    "Description": "Macintosh PowerPC emulator",
+    "Description": "Open-source PowerPC Macintosh emulator for running Mac OS versions 7.5.2 through 9.0.4 on macOS, Windows, and Linux.",
     "Category": "Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
@@ -5402,7 +5402,7 @@
   {
     "Name": "Shovel Knight Pocket Dungeon",
     "URL": "https://yachtclubgames.com/games/shovel-knight-pocket-dungeon",
-    "Description": "Retro-inspired puzzle game",
+    "Description": "Action-puzzle game combining falling-block mechanics with combat, equipment collection, boss fights, a solo campaign, and two-player versus mode.",
     "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
@@ -5420,7 +5420,7 @@
   {
     "Name": "Silly Venture",
     "URL": "https://www.sillyventure.eu/",
-    "Description": "Atari-focused demo-scene party in Poland with competitions, showcases, and community events. Polska impreza sceny demo Atari z konkursami, pokazami i wydarzeniami społecznościowymi.",
+    "Description": "Polska impreza sceny Atari z konkursami, pokazami dem i wydarzeniami społecznościowymi. Polish Atari demo-scene party featuring competitions, demo showcases, and community events.",
     "Category": "Events & Shows, Software & Games",
     "Brands": "Atari",
     "Language": "Polish, English",
@@ -5429,9 +5429,9 @@
   {
     "Name": "Silverwand Software Collection",
     "URL": "https://sites.google.com/view/silverwandsoftware",
-    "Description": "Collection of vintage Apple software and gaming resources.",
+    "Description": "Personal software collection by developer Brendan Bellina, including Apple II and Macintosh programs, multi-platform game modifications, widgets, and video backgrounds.",
     "Category": "Software & Games",
-    "Brands": "Apple",
+    "Brands": "Various",
     "Language": "English",
     "ID": "silverwand-software-collection"
   },
@@ -5456,8 +5456,8 @@
   {
     "Name": "Sinclair ZX Spectrum Next Team",
     "URL": "https://www.specnext.com/",
-    "Description": "Spectrum Next hardware and licensed games",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Official project site for the Spectrum Next, with FPGA computer designs, hardware and software information, downloads, documentation, community forums, and a shop.",
+    "Category": "Communities & Forums, Hardware & Parts, Software & Games",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "sinclair-zx-spectrum-next-team"
@@ -5483,9 +5483,9 @@
   {
     "Name": "SNESdrunk",
     "URL": "https://www.youtube.com/SNESdrunk",
-    "Description": "Retro reviews. Concise reviews.",
+    "Description": "Video reviews of games across Super Nintendo, NES, Nintendo 64, Switch, Sega Genesis/Mega Drive, and arcade platforms.",
     "Category": "YouTube & Social Channels",
-    "Brands": "Nintendo, Sega",
+    "Brands": "Nintendo, Sega, Various",
     "Language": "English",
     "ID": "snesdrunk"
   },
@@ -5510,9 +5510,9 @@
   {
     "Name": "Sordan.ie",
     "URL": "https://sordan.ie/",
-    "Description": "Cables, PSUs, SD2IEC, adapters for Commodore and others",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Amiga, Atari",
+    "Description": "Online store for retro-computing hardware, adapters, storage, ROMs, and software products for systems including Amiga, Commodore, Atari, Apple II, and PC.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "sordan-ie"
   },
@@ -5555,8 +5555,8 @@
   {
     "Name": "Stairway to Hell (Acorn)",
     "URL": "https://www.stairwaytohell.com/",
-    "Description": "Archive of Acorn BBC Micro and Electron software, documentation, and disk images.",
-    "Category": "Software & Games",
+    "Description": "BBC Micro and Acorn Electron software archive with game and program indexes, disk and tape images, and guidance for using archived software with emulators or real hardware.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Acorn/BBC",
     "Language": "English",
     "ID": "stairway-to-hell-acorn"
@@ -5573,7 +5573,7 @@
   {
     "Name": "Stardot (Acorn User Forum)",
     "URL": "https://stardot.org.uk/forums/",
-    "Description": "Acorn/BBC user forums, marketplace section",
+    "Description": "Community forum for Acorn computers and emulators, with sections for BBC Micro, Electron, Atom, Archimedes, hardware, software, programming, events, and trading.",
     "Category": "Communities & Forums",
     "Brands": "Acorn/BBC",
     "Language": "English",
@@ -5582,8 +5582,8 @@
   {
     "Name": "Steam (retro reissues)",
     "URL": "https://store.steampowered.com/",
-    "Description": "Retro game reissues and remasters for PC",
-    "Category": "Hardware & Parts, Vendors & Stores",
+    "Description": "PC game storefront with a broad catalog that includes classic games, retro collections, remasters, and retro-computing emulation software.",
+    "Category": "Software & Games, Vendors & Stores",
     "Brands": "PC",
     "Language": "English",
     "ID": "steam-retro-reissues"
@@ -5591,7 +5591,7 @@
   {
     "Name": "Steem SSE",
     "URL": "https://sourceforge.net/projects/steemsse/",
-    "Description": "Atari ST emulator (Steem continuation)",
+    "Description": "Updated version of the Steem Atari ST emulator, with improved emulation and support for Atari ST disk-image formats.",
     "Category": "Emulation & FPGA",
     "Brands": "Atari",
     "Language": "English",
