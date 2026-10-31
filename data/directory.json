@@ -1001,9 +1001,9 @@
   {
     "Name": "Bonus Life Computers",
     "URL": "https://www.bonuslifecomputers.com",
-    "Description": "Bonus Life Computers Everything Commodore, Atari, Apple, TRS-80, Next, Altair and Other! Vintage computer sales and service for Atari, Commodore, TRS-80, App...",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack",
+    "Description": "Vintage-computer sales, repair and restoration shop serving Atari, Commodore, Amiga, TI-99, Heathkit, Altair, IMSAI and other systems. Its catalog includes rebuilt computers, consoles, parts and accessories.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "bonus-life-computers"
   },
@@ -1028,9 +1028,9 @@
   {
     "Name": "Briel Computers",
     "URL": "https://github.com/Retrotink",
-    "Description": "Replica kits: Apple I Replica-1, Altair 8800 Micro",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Altair, Apple",
+    "Description": "Vince Briel’s open-source project archive, formerly Briel Computers, includes designs such as an Apple II VGA card, an Apple IIc portable add-on, a KIM-1 clone and Replica-1 files.",
+    "Category": "Hardware & Parts",
+    "Brands": "Various",
     "Language": "English",
     "ID": "briel-computers"
   },
@@ -1064,8 +1064,8 @@
   {
     "Name": "ByteDelight",
     "URL": "https://www.bytedelight.com/",
-    "Description": "ZX Spectrum and Amstrad peripherals, expansions, refurbs",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "The ByteDelight site currently states that its webshop is closed for ordering. Its archived resources include ZX Spectrum and Amstrad peripheral manuals and build guides.",
+    "Category": "Documentation & Wikis",
     "Brands": "Amstrad, Sinclair/ZX",
     "Language": "English",
     "ID": "bytedelight"
