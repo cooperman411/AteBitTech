@@ -11,7 +11,7 @@
 
 ## Top Brand Pages
 - [Commodore (148)](https://atebit.tech/classic/commodore.html)
-- [Apple (108)](https://atebit.tech/classic/apple.html)
+- [Apple (109)](https://atebit.tech/classic/apple.html)
 - [Atari (101)](https://atebit.tech/classic/atari.html)
 - [Amiga (80)](https://atebit.tech/classic/amiga.html)
 - [PC (53)](https://atebit.tech/classic/pc.html)

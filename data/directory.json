@@ -4565,7 +4565,7 @@
   {
     "Name": "Retro Dodo",
     "URL": "https://www.youtube.com/retrododo",
-    "Description": "A retro gaming news platform.",
+    "Description": "Retro Dodo's official YouTube channel complements its online magazine with reporting, reviews, videos and coverage of retro games, gaming culture and collectibles.",
     "Category": "News & Blogs, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
@@ -4592,7 +4592,7 @@
   {
     "Name": "Retro Game Corps",
     "URL": "https://www.youtube.com/RetroGameCorps",
-    "Description": "Handhelds & emulation. Clear tutorials.",
+    "Description": "Videos and step-by-step guides for retro gaming handhelds, emulation, device setup, firmware and related software.",
     "Category": "Emulation & FPGA, YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
@@ -4691,7 +4691,7 @@
   {
     "Name": "Retro Nation CZ (YouTube)",
     "URL": "https://www.youtube.com/@RetroNationCZ/",
-    "Description": "Cesky YouTube kanal o retro hrach a hardwaru. Kvalitni produkce s recenzemi, opravami a ukazkami klasickych pocitacu a konzoli.",
+    "Description": "Český kanál Retro Nation přináší videa o klasických hrách, jejich vývoji a retro kultuře. (Retro Nation publishes Czech-language videos about classic games, their development, and retro culture.)",
     "Category": "YouTube & Social Channels",
     "Brands": "Commodore, Sega, Nintendo, Various",
     "Language": "Czech",
@@ -4727,8 +4727,8 @@
   {
     "Name": "Retro Recipes Shorts (YouTube)",
     "URL": "https://www.youtube.com/@RetroRecipes/shorts",
-    "Description": "Shorter videos from Perifractic's Retro Recipes",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Short videos from Peri Fractic's Retro Recipes about vintage technology and television, with a focus on Commodore.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "retro-recipes-shorts-youtube"
@@ -4934,9 +4934,9 @@
   {
     "Name": "Retropaq",
     "URL": "https://retropaq.com/",
-    "Description": "Dedicated site for Compaq Portable computer restoration, maintenance, and documentation.",
-    "Category": "Hardware & Parts",
-    "Brands": "Compaq",
+    "Description": "Articles, videos, downloads and service documentation about vintage computers, including Compaq Portables, Macintosh Portable, IBM P75 and Toshiba systems.",
+    "Category": "Documentation & Wikis, News & Blogs",
+    "Brands": "Various, Compaq, Apple, IBM",
     "Language": "English",
     "ID": "retropaq"
   },
