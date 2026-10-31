@@ -1539,6 +1539,15 @@
     "ID": "commodore-los-angeles"
   },
   {
+    "Name": "Commodore Official Store (formerly MyRetroComputer)",
+    "URL": "https://www.myretrocomputer.com/",
+    "Description": "The former MyRetroComputer domain redirects to Commodore’s official storefront, which lists the Commodore 64 Ultimate, accessories, games, and merchandise.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "myretrocomputer-c64-cases"
+  },
+  {
     "Name": "Commodore OS Vision",
     "URL": "https://www.commodoreos.net/",
     "Description": "Commodore OS Vision is Commodore’s Debian-based Linux distribution, with a retro-inspired desktop, Commodore OS BASIC, and tools for Commodore hardware and software.",
@@ -3665,8 +3674,8 @@
   {
     "Name": "My Life in Gaming",
     "URL": "https://www.youtube.com/MyLifeInGaming",
-    "Description": "Retro video quality & hardware. Definitive signal guides.",
-    "Category": "Documentation & Wikis, Emulation & FPGA, Hardware & Parts, YouTube & Social Channels",
+    "Description": "Video channel with showcases and documentaries on retro games and hardware, plus the RGB Master Class guides to getting the best picture from original console hardware.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "my-life-in-gaming"
@@ -3697,15 +3706,6 @@
     "Brands": "Commodore",
     "Language": "English",
     "ID": "myles-skinners-commodore-projects"
-  },
-  {
-    "Name": "MyRetroComputer (C64 cases)",
-    "URL": "https://www.myretrocomputer.com/",
-    "Description": "New C64C replica cases in various colors",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore",
-    "Language": "English",
-    "ID": "myretrocomputer-c64-cases"
   },
   {
     "Name": "MYTHIC Computer",
@@ -3890,8 +3890,8 @@
   {
     "Name": "Old-DOS.ru",
     "URL": "https://www.old-dos.ru/",
-    "Description": "Российский архив DOS-игр и программ. Обширная коллекция со скриншотами, описаниями и возможностью скачивания классического ПО для DOS.",
-    "Category": "Software & Games",
+    "Description": "Крупнейший в Рунете архив старых программ с играми и приложениями для MS-DOS и Windows 3.x/9x. Russian-language archive of classic software, with games and applications for MS-DOS and Windows 3.x/9x.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "PC",
     "Language": "Russian",
     "ID": "old-dos-ru"
@@ -3917,8 +3917,8 @@
   {
     "Name": "OldGames.ru",
     "URL": "https://www.old-games.ru/",
-    "Description": "Крупнейший российский архив старых игр. Скачиваемые релизы с описаниями, скриншотами и руководствами для PC и консольных игр.",
-    "Category": "Hardware & Parts",
+    "Description": "Крупнейший российский архив старых компьютерных игр: каталог из более чем 15 000 игр, загрузки, обзоры и форум. Russian archive of classic computer games with a catalog of more than 15,000 titles, downloads, reviews, and a community forum.",
+    "Category": "Communities & Forums, Preservation & Archives, Software & Games",
     "Brands": "PC",
     "Language": "Russian",
     "ID": "oldgames-ru"
