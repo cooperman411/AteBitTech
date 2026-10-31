@@ -1676,8 +1676,8 @@
   {
     "Name": "COREi64",
     "URL": "https://corei64.com/",
-    "Description": "High-quality 3D printed cases and accessories for Commodore/Amiga",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Shop and catalog for Commodore and Amiga hardware recreations, drives, accelerators, interfaces, PCBs, components and 3D-printable cases; product listings include assembled units and DIY kits.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "corei64"
@@ -1694,17 +1694,17 @@
   {
     "Name": "CPC-Power",
     "URL": "https://www.cpc-power.com/",
-    "Description": "Base de donnees et archive logicielle pour Amstrad CPC. Scans de jaquettes, captures d'ecran, manuels et fichiers telechargeables, une reference incontournable pour la plateforme.",
-    "Category": "Software & Games",
+    "Description": "Base de données et archive de logiciels Amstrad CPC avec fiches de jeux, jaquettes, captures d’écran, manuels et téléchargements. An Amstrad CPC software database and archive with game entries, covers, screenshots, manuals and downloads.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Amstrad",
-    "Language": "French",
+    "Language": "French, English",
     "ID": "cpc-power"
   },
   {
     "Name": "Crash",
     "URL": "https://www.crashonline.org.uk",
-    "Description": "The original ZX Spectrum magazine archive, now also revived as Crash Annual.",
-    "Category": "News & Blogs",
+    "Description": "Online archive for CRASH, the ZX Spectrum magazine published from 1984 to 1992, with issue material, reviews, articles and later retrospective content. The site links to separately published new editions.",
+    "Category": "Preservation & Archives",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "crash"
@@ -1712,9 +1712,9 @@
   {
     "Name": "Cronosoft",
     "URL": "https://cronosoft.fwscart.com/",
-    "Description": "Publishes indie games for classic 8-bit platforms",
-    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
-    "Brands": "Amstrad, MSX, Sinclair/ZX",
+    "Description": "Independent shop publishing and selling new games and other software for classic 8-bit computers, with current listings for systems including ZX Spectrum, ZX81, Commodore VIC-20, Altair and Sharp MZ-700.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "cronosoft"
   },
@@ -1757,8 +1757,8 @@
   {
     "Name": "Dan Sanderson",
     "URL": "https://dansanderson.com/mega65/",
-    "Description": "Dan Sanderson MEGA65 The MEGA65 is a modern recreation of the Commodore 65, the 8-bit computer Commodore designed but never released. Based on an FPGA, the M...",
-    "Category": "Emulation & FPGA, Repair & Services",
+    "Description": "Dan Sanderson’s monthly MEGA65 newsletter and blog covers the computer, programming tutorials, software projects and community resources.",
+    "Category": "News & Blogs",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "dan-sanderson"
@@ -1784,9 +1784,9 @@
   {
     "Name": "Dave Runkle",
     "URL": "https://www.astrorat.com",
-    "Description": "Dave Runkle Home Computer of the 70's. H8, COSMAC Elf, Altair 8800 Home Computer of the 70's. H8, COSMAC Elf, Altair 8800",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple",
+    "Description": "Personal retro-computing project site documenting the author’s interests and projects across Altair 8800, COSMAC Elf/1802, Heathkit H8/H89 and S-100 systems.",
+    "Category": "Documentation & Wikis",
+    "Brands": "Various",
     "Language": "English",
     "ID": "dave-runkle"
   },
@@ -1838,8 +1838,8 @@
   {
     "Name": "Debian/m68k",
     "URL": "https://wiki.debian.org/M68k",
-    "Description": "Debian Linux port for Motorola 68k Macs/Atari/Amiga",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "Debian’s unofficial, developing Motorola 680x0 port; supported systems include Amiga, Atari, VMEbus and selected Macintosh computers.",
+    "Category": "Documentation & Wikis, Operating Systems",
     "Brands": "Amiga, Apple, Atari",
     "Language": "English",
     "ID": "debian-m68k"
@@ -1847,8 +1847,8 @@
   {
     "Name": "Deep Signal Studios",
     "URL": "https://www.deepsignalstudios.com",
-    "Description": "Retro-inspired audio tools and game projects.",
-    "Category": "Software & Games",
+    "Description": "Audio studio providing analog and digital tape transfers, mixing and mastering, conversion of legacy audio and MIDI/DAW files, and synthesizer and studio rentals.",
+    "Category": "Repair & Services",
     "Brands": "Various",
     "Language": "English",
     "ID": "deep-signal-studios"
@@ -1874,8 +1874,8 @@
   {
     "Name": "Delta",
     "URL": "https://deltaemulator.com/",
-    "Description": "Nintendo emulator for iOS via AltStore",
-    "Category": "Emulation & FPGA, Vendors & Stores",
+    "Description": "Delta is a Nintendo emulator for iOS, distributed through the App Store and AltStore PAL, with guides for importing games, settings, controllers and save states.",
+    "Category": "Emulation & FPGA",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "delta"
@@ -1883,8 +1883,8 @@
   {
     "Name": "Denial (VIC‑20)",
     "URL": "https://sleepingelephant.com/denial/",
-    "Description": "VIC‑20 community, projects, support",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
+    "Description": "VIC-20 community and resource site with a discussion forum, wiki, applications and a quick-reference handbook for VIC-20, VC20 and VIC 1001 development.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "denial-vic20"
@@ -1892,8 +1892,8 @@
   {
     "Name": "Deskthority Wiki",
     "URL": "https://deskthority.net/",
-    "Description": "Vintage keyboards documentation",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "Mechanical-keyboard wiki and discussion forum covering keyboards, switches, mice, input devices, news and reviews; the community also hosts a marketplace.",
+    "Category": "Communities & Forums, Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "deskthority-wiki"
