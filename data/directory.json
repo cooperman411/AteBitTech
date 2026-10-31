@@ -2900,7 +2900,7 @@
   {
     "Name": "Joueur Du Grenier (YouTube)",
     "URL": "https://www.youtube.com/@joueurdugrenier/",
-    "Description": "Chaine YouTube francaise humoristique sur les mauvais jeux retro. Production de qualite avec des millions d'abonnes, la reference du retrogaming critique en France.",
+    "Description": "Chaîne YouTube française consacrée aux jeux vidéo, avec des tests humoristiques de jeux rétro et des émissions spéciales sur des titres et consoles classiques. English: French YouTube channel about video games, with humorous reviews of retro games and special episodes on classic titles and consoles.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "French",
@@ -2909,9 +2909,9 @@
   {
     "Name": "Juanje Juega (YouTube)",
     "URL": "https://www.youtube.com/@JuanjeJuega/",
-    "Description": "Canal espanol de YouTube sobre microordenadores de 8 y 16 bits. Centro comunitario con gameplays, analisis y cobertura de la escena retro espanola.",
-    "Category": "Communities & Forums, Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Amstrad CPC, Sinclair/ZX, Commodore, Amiga, Various",
+    "Description": "Canal de videojuegos retro con gameplays, análisis y cobertura del ZX Spectrum, Amstrad CPC y otras plataformas clásicas; también analiza revistas como Hobby Consolas y Microhobby. English: Retro gaming channel with gameplay, analysis and coverage of the ZX Spectrum, Amstrad CPC and other classic platforms; it also reviews magazines such as Hobby Consolas and Microhobby.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Amiga, Amstrad CPC, Commodore, Sinclair/ZX",
     "Language": "Spanish",
     "ID": "juanje-juega-youtube"
   },
@@ -2972,9 +2972,9 @@
   {
     "Name": "Kevin Noki (YouTube)",
     "URL": "https://www.youtube.com/channel/UCwO690Ba2x8YE980UQqnjXA",
-    "Description": "Kevin Noki — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
-    "Brands": "Various",
+    "Description": "Designer and maker channel featuring custom builds inspired by vintage computers and technology, including a Commodore 64 laptop and 3D-printed retro peripherals.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Apple, Commodore",
     "Language": "English",
     "ID": "kevin-noki-youtube"
   },
@@ -3026,7 +3026,7 @@
   {
     "Name": "La Caverna del Gamer",
     "URL": "https://www.youtube.com/lacavernadelgamer",
-    "Description": "Canal espanol de YouTube sobre historia del videojuego con produccion cinematografica. Documentales extensos con millones de visualizaciones cubriendo consolas y franquicias clasicas.",
+    "Description": "Canal de YouTube en español con análisis, reportajes y listas sobre videojuegos clásicos y actuales, consolas y cultura del videojuego. English: Spanish-language YouTube channel with analyses, features and lists about classic and current video games, consoles and game culture.",
     "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "Spanish",
@@ -3107,9 +3107,9 @@
   {
     "Name": "LGR (X)",
     "URL": "https://twitter.com/lazygamereviews",
-    "Description": "PC news, retro finds, and community on X/Twitter.",
-    "Category": "Software & Games, YouTube & Social Channels",
-    "Brands": "PC",
+    "Description": "X account associated with the LGR YouTube channel, sharing updates and links about retro computing, games and videos.",
+    "Category": "YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "lgr-x"
   },
@@ -3152,8 +3152,8 @@
   {
     "Name": "Mac GUI (software archive)",
     "URL": "https://macgui.com/",
-    "Description": "Macintosh software archive and community",
-    "Category": "Communities & Forums, Software & Games",
+    "Description": "Mac-focused resource with downloads for themes and icons, forums, news and reviews, plus the Mac GUI Vault’s collection of vintage Apple II and Macintosh software and other materials.",
+    "Category": "Communities & Forums, Preservation & Archives, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mac-gui-software-archive"
@@ -3224,8 +3224,8 @@
   {
     "Name": "Macintosh Garden",
     "URL": "https://www.macintoshgarden.org/",
-    "Description": "Macintosh Garden is an online database dedicated to preserving and providing free access to discontinued Macintosh software and video games, functioning as an abandonware archive.",
-    "Category": "Software & Games",
+    "Description": "Community archive of discontinued Macintosh software and games, with browsable games and application catalogs, guides, a public file repository, forums and preservation news.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "macintosh-garden"
@@ -3305,10 +3305,10 @@
   {
     "Name": "Matra Alice Resources",
     "URL": "http://alice32.free.fr/",
-    "Description": "Matra Alice preservation, parts via enthusiasts",
-    "Category": "Communities & Forums, Hardware & Parts",
-    "Brands": "Matra",
-    "Language": "English",
+    "Description": "Émulateur Windows DCALICE pour les Matra-Hachette Alice 4K, 32 et 90 et le Tandy MC-10, accompagné de plus de 50 programmes, de documentation et de notices. English: Windows emulator DCALICE for the Matra-Hachette Alice 4K, 32 and 90 computers and the Tandy MC-10, with more than 50 programs, documentation and manuals.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
+    "Brands": "Matra, Tandy/Radio Shack",
+    "Language": "French",
     "ID": "matra-alice-resources"
   },
   {
@@ -3386,8 +3386,8 @@
   {
     "Name": "MetalJesusRocks (YouTube)",
     "URL": "https://www.youtube.com/@MetalJesusRocks/videos",
-    "Description": "Retro & modern gaming. Large audience.",
-    "Category": "Hardware & Parts, Repair & Services, YouTube & Social Channels",
+    "Description": "Retro-gaming channel with game collecting, hidden gems, buying guides and big-box PC gaming, alongside coverage of current games.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "metaljesusrocks-youtube"
@@ -3548,8 +3548,8 @@
   {
     "Name": "Modern Vintage Gamer",
     "URL": "https://www.youtube.com/ModernVintageGamer",
-    "Description": "Retro hardware, emulation, FPGA cores",
-    "Category": "Emulation & FPGA, Repair & Services, YouTube & Social Channels",
+    "Description": "YouTube channel exploring current and vintage video-game systems, console hardware, homebrew, modding, emulation and gaming history.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
     "Language": "English",
     "ID": "modern-vintage-gamer"
@@ -3584,17 +3584,17 @@
   {
     "Name": "MrVenom1974 (YouTube)",
     "URL": "https://www.youtube.com/channel/UCI0aw3sE0RUEavAYiNR6avQ",
-    "Description": "MrVenom1974 — retro computing YouTube channel focused on repairs, builds, and history.",
-    "Category": "Repair & Services, YouTube & Social Channels",
+    "Description": "Deutscher Retrogaming-Kanal mit Retro-Let’s Plays, Specials, Spiele-Sammlungen und Berichten von Retro-Börsen; außerdem gibt es Videos zu C64-Spielen. English: German retro-gaming channel featuring retro Let’s Plays and specials, game collections and reports from retro conventions; it also has videos about C64 games.",
+    "Category": "YouTube & Social Channels",
     "Brands": "Various",
-    "Language": "English",
+    "Language": "German",
     "ID": "mrvenom1974-youtube"
   },
   {
     "Name": "MSX Archive",
     "URL": "https://www.msxarchive.nl/",
-    "Description": "MSX software and disk images",
-    "Category": "Software & Games",
+    "Description": "MSX software archive with directories for games, demos, documentation, emulators, hardware files, magazines, music, programming and utilities.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "MSX",
     "Language": "English",
     "ID": "msx-archive"
