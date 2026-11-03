@@ -19,4 +19,4 @@ Ate Bit Tech is a curated directory of useful retro-computing resources. Descrip
 5. Regenerate via `python3 scripts/build-directory.py --write` and validate using `python3 scripts/validate-site.py` and `python3 scripts/build-directory.py`.
 6. Preserve the protected Price Guide and Worker files. Do not edit them as part of a directory cleanup.
 
-Historical entries still contain inconsistencies. These standards govern new and edited entries; the remainder must be reviewed in future batches.
+The 2026 directory review assigned a disposition to every listing in its scope. Some listings were left unchanged because evidence was insufficient. These standards apply to new and edited entries; continue reviewing listings as evidence changes or new issues arise.
