@@ -18,7 +18,7 @@ updates = {}
 # These are all based on:
 # - Model training knowledge of these well-known retro communities
 # - read_webpage checks for uncertain bilingual sites
-# - Kerry's rules: bilingual = native + English, native-only = only that language
+# - Cooperman411's rules: bilingual = native + English, native-only = only that language
 
 desc_updates = {
     # === ENGLISH + ITALIAN (bilingual) ===
