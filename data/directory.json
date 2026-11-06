@@ -189,6 +189,15 @@
     "ID": "a-cube-systems"
   },
   {
+    "Name": "Acutis Data IEC Switcher",
+    "URL": "https://switcher.acutisdata.com/",
+    "Description": "Hand-built IEC serial-device switcher for sharing peripherals such as disk drives and printers among Commodore 64/128, VIC-20, and Commander X16 computers.",
+    "Category": "Hardware & Parts",
+    "Brands": "Commodore",
+    "Language": "English",
+    "ID": "retrodores"
+  },
+  {
     "Name": "ADAM Archive",
     "URL": "https://www.adamarchive.org/",
     "Description": "Comprehensive archive of Coleco ADAM software, documentation, and hardware information for the ADAM computer system.",
@@ -196,6 +205,15 @@
     "Brands": "Coleco",
     "Language": "English",
     "ID": "adam-archive"
+  },
+  {
+    "Name": "Adam's Vintage Computer Restorations",
+    "URL": "https://retrorepairsandrefurbs.com/",
+    "Description": "Electronics engineer Adam Wilson documents vintage computer and equipment repairs and restorations, offers limited repair services, and lists surplus computers, peripherals, parts, and accessories for sale.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "retro-repairs-and-refurbs"
   },
   {
     "Name": "Addict Magazines (Discord)",
@@ -2360,7 +2378,7 @@
   {
     "Name": "GemTos Convention",
     "URL": "https://gemtos.jimdofree.com/",
-    "Description": "French Atari convention with competitions, exhibits, and community activities. Convention Atari en France avec concours, expositions et activités communautaires.",
+    "Description": "L’association Manine organise la convention Atari GemTos en France, avec expositions de machines, démonstrations, conférences, compétitions, ateliers de programmation et de réparation, et concerts chiptune. English: Association Manine’s Atari GemTos convention in France features vintage-machine exhibits and demonstrations, talks, competitions, programming and repair workshops, and chiptune concerts.",
     "Category": "Events & Shows",
     "Brands": "Atari",
     "Language": "French, English",
@@ -2369,17 +2387,17 @@
   {
     "Name": "Generation Amiga",
     "URL": "https://www.generationamiga.com/",
-    "Description": "Amiga and retro-gaming news covering releases, hardware, emulation, and projects across several systems.",
-    "Category": "News & Blogs, Software & Games",
-    "Brands": "Amiga, Commodore, Sega, Nintendo, Sony, Various",
+    "Description": "Retro-gaming and Amiga news site covering new releases, ports, hardware, software and projects across Amiga and other game platforms.",
+    "Category": "News & Blogs",
+    "Brands": "Amiga, Commodore, Various",
     "Language": "English",
     "ID": "generation-amiga"
   },
   {
     "Name": "Generation-MSX",
     "URL": "https://www.generation-msx.nl/",
-    "Description": "MSX game database and downloads",
-    "Category": "Software & Games",
+    "Description": "Reference database for MSX software, hardware, publications and companies, with catalog records, release details, credits, images, user ratings and project updates.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "MSX",
     "Language": "English",
     "ID": "generation-msx"
@@ -2396,8 +2414,8 @@
   {
     "Name": "GEOS — Lyon Labs",
     "URL": "https://lyonlabs.lillianskinner.ca/commodore/onrequest/geos/index.html",
-    "Description": "Information and downloads for GEOS on the Commodore 64 including applications and utilities.",
-    "Category": "Software & Games",
+    "Description": "Unofficial mirror of LyonLabs GEOS resources for the Commodore 64, including software, applications, programming tools, usage tips and a downloadable GEOS font catalog.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "geos-lyon-labs"
@@ -2414,8 +2432,8 @@
   {
     "Name": "Get Your 8-Bit On! (Aquarius+)",
     "URL": "https://aquarius.1stage.com",
-    "Description": "Vendor offering new Aquarius+ systems and refurbished original Mattel Aquarius computers.",
-    "Category": "Repair & Services, Vendors & Stores",
+    "Description": "Developer and support hub for Mattel Aquarius computer systems, including modern Aquarius+ models and cartridges sold through a linked eBay store.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "get-your-8-bit-on"
@@ -2423,8 +2441,8 @@
   {
     "Name": "GOG.com (Good Old Games)",
     "URL": "https://www.gog.com/",
-    "Description": "DRM-free rereleases of DOS, Windows, and classic PC games",
-    "Category": "Hardware & Parts, Vendors & Stores",
+    "Description": "Digital storefront for DRM-free PC games, including classic DOS and Windows releases alongside newer titles.",
+    "Category": "Software & Games, Vendors & Stores",
     "Brands": "PC",
     "Language": "English",
     "ID": "gog-com-good-old-games"
@@ -2432,8 +2450,8 @@
   {
     "Name": "gotBASIC.com",
     "URL": "https://gotbasic.com",
-    "Description": "Resource dedicated to BASIC programming language systems and retro computing projects.",
-    "Category": "Hardware & Parts",
+    "Description": "Community resource and index for the BASIC programming language, with dialect and platform directories, historical references, project links and discussion channels.",
+    "Category": "Communities & Forums, Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "gotbasic-com"
@@ -2441,8 +2459,8 @@
   {
     "Name": "Gotek FlashFloppy",
     "URL": "https://github.com/keirf/FlashFloppy",
-    "Description": "Firmware for Gotek drives to emulate floppy disks",
-    "Category": "Hardware & Parts",
+    "Description": "Open-source firmware that turns Gotek hardware into a floppy-drive emulator, using disk-image files on a USB stick across supported retro computers, synthesizers and other equipment.",
+    "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
     "ID": "gotek-flashfloppy"
@@ -2450,7 +2468,7 @@
   {
     "Name": "GUI64 (WebFritzi)",
     "URL": "https://github.com/WebFritzi/GUI64",
-    "Description": "Open-source graphical user interface and program launcher for the Commodore 64.",
+    "Description": "Graphical, windowed interface and built-in file browser for the Commodore 64; when used as a cartridge, it starts the computer directly in the GUI.",
     "Category": "Software & Games",
     "Brands": "Commodore",
     "Language": "English",
@@ -2486,8 +2504,8 @@
   {
     "Name": "Hand Held Legend",
     "URL": "https://handheldlegend.com/",
-    "Description": "Game Boy modding kits, shells, replacement parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for Nintendo handheld and console modding, with display upgrades, shells, replacement parts, custom builds, controllers and installation guides.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "hand-held-legend"
@@ -2504,7 +2522,7 @@
   {
     "Name": "Hatari",
     "URL": "https://hatari.tuxfamily.org/",
-    "Description": "Atari ST/STE/TT/Falcon emulator",
+    "Description": "Open-source Atari ST, STE, TT and Falcon emulator for Linux, BSD, macOS, Windows and other SDL-supported systems, with hardware-focused emulation for games and demos.",
     "Category": "Emulation & FPGA",
     "Brands": "Atari",
     "Language": "English",
@@ -2513,7 +2531,7 @@
   {
     "Name": "HCC Commodore Club",
     "URL": "https://commodore.hcc.nl/",
-    "Description": "Nederlandse Commodore computerclub met software-archief, documentatie en ledenprojecten. Alleen Nederlandstalig.",
+    "Description": "Nederlandse Commodore-computerclub met clubdagen, nieuws, technische vragen, soldeerworkshops en ledenprojecten. English: Dutch Commodore computer club with meetups, news, technical questions, soldering workshops and member projects.",
     "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "Dutch",
@@ -2522,19 +2540,19 @@
   {
     "Name": "Heathkit Company",
     "URL": "https://shop.heathkit.com/",
-    "Description": "Vintage Heathkit manuals, kits (via collectors); new Heathkit kits",
-    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "IBM",
+    "Description": "Heathkit’s official store sells new and vintage electronics kits, replacement parts and support kits, software, publications and manuals; it also lists factory repairs for recent models.",
+    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "heathkit-company"
   },
   {
     "Name": "Heinz Nixdorf MuseumsForum (HNF)",
     "URL": "https://www.hnf.de/en/home.html",
-    "Description": "Weltgrosstes Computermuseum in Paderborn. Deckt IT-Geschichte von der Antike bis zur Gegenwart ab mit Schwerpunkt auf Konrad Zuse und fruher Rechentechnik. The world's largest computer museum, covering IT history from ancient times to the present with a focus on Konrad Zuse.",
-    "Category": "Communities & Forums, Hardware & Parts, Museums & Exhibits",
+    "Description": "Das Heinz Nixdorf MuseumsForum in Paderborn zeigt auf 6.000 m² die Geschichte der Informationstechnik, von frühen Schrift- und Rechenmaschinen bis zu Computern und Robotern. English: The museum in Paderborn presents information technology history across 6,000 m², from early writing and calculating machines to computers and robots.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
-    "Language": "German",
+    "Language": "German, English, French, Dutch",
     "ID": "heinz-nixdorf-museumsforum-hnf"
   },
   {
@@ -2549,10 +2567,10 @@
   {
     "Name": "Home Computer Museum",
     "URL": "https://www.homecomputermuseum.nl/",
-    "Description": "Interactief computermuseum in Helmond met tijdreis door de geschiedenis van de thuiscomputer van de jaren 70 tot 2000. Reparatiewerkplaats, arcadecafe en sociale werkplaats. Interactive computer museum in Helmond, Netherlands, featuring hands-on exhibits from the 1970s-2000s, a repair workshop and arcade cafe.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Het HomeComputerMuseum in Helmond biedt een interactieve reis door de geschiedenis van thuiscomputers en verwante apparaten, met een arcadecafé, gespecialiseerde reparatiewerkplaats en webwinkel. English: The museum in Helmond offers an interactive tour through the history of home computers and related devices, with an arcade café, specialist repair workshop and online store.",
+    "Category": "Museums & Exhibits, Repair & Services, Vendors & Stores",
     "Brands": "Commodore, Apple, Atari, MSX, Sinclair/ZX, Various",
-    "Language": "Dutch",
+    "Language": "Dutch, English",
     "ID": "home-computer-museum"
   },
   {
@@ -2576,17 +2594,17 @@
   {
     "Name": "How To Retro",
     "URL": "https://www.howtoretro.com/",
-    "Description": "Guides, tutorials, and tips for retro gaming, emulation, and vintage hardware across multiple classic platforms.",
-    "Category": "Software & Games, Emulation & FPGA",
-    "Brands": "Sega, Vectrex, Atari, Amiga, Sinclair/ZX, Sony, Raspberry Pi",
+    "Description": "Guide site for retro gaming and console emulation, with setup walkthroughs, emulator comparisons, game lists and reviews across home computers, consoles and handhelds.",
+    "Category": "Documentation & Wikis, Emulation & FPGA",
+    "Brands": "Various",
     "Language": "English",
     "ID": "how-to-retro"
   },
   {
     "Name": "HXC2001 (Jean-François DEL NERO)",
     "URL": "https://hxc2001.com/",
-    "Description": "HxC floppy drive emulators for Amiga, Atari, CPC, etc.",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Products and software for replacing floppy drives with HxC emulators, including SD and USB emulator hardware and firmware for Gotek drives, with compatibility lists, downloads and a support forum.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Amstrad, Atari",
     "Language": "English",
     "ID": "hxc2001-jean-francois-del-nero"
@@ -2594,8 +2612,8 @@
   {
     "Name": "Hyperion Entertainment",
     "URL": "https://www.hyperion-entertainment.com/",
-    "Description": "Current publisher of AmigaOS 4.x and ports of classic games",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Publisher of AmigaOS and ports of classic games for Amiga systems; the site provides product news, downloads, dealer information and purchase links.",
+    "Category": "Operating Systems, Software & Games",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "hyperion-entertainment"
@@ -2621,8 +2639,8 @@
   {
     "Name": "IBM 1401 Computer History",
     "URL": "https://ibm1401.computerhistory.org/",
-    "Description": "Computer History Museum's IBM 1401 restoration project with documentation, photographs, and operational details.",
-    "Category": "Museums & Exhibits",
+    "Description": "Computer History Museum’s IBM 1401 Demo Lab and restoration project, with operational mainframes, live demonstrations, restoration reports, technical documentation, software inventories and photographs.",
+    "Category": "Documentation & Wikis, Museums & Exhibits",
     "Brands": "IBM",
     "Language": "English",
     "ID": "ibm-1401-computer-history"
@@ -2648,8 +2666,8 @@
   {
     "Name": "Iliyas Jorio (GitHub)",
     "URL": "https://github.com/jorio",
-    "Description": "GitHub profile with modern ports of classic Mac games including Nanosaur, Bugdom, and others.",
-    "Category": "YouTube & Social Channels, Software & Games",
+    "Description": "Developer profile and source projects for modernized ports of classic Mac games, including Bugdom, Nanosaur and Otto Matic.",
+    "Category": "Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "iliyas-jorio-github"
@@ -2666,8 +2684,8 @@
   {
     "Name": "Individual Computers (iComp)",
     "URL": "https://icomp.de/shop-icomp/en/",
-    "Description": "C64 Reloaded, Turbo Chameleon, Amiga accelerators, AmigaOS licensing",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Manufacturer and online shop for hardware and software for classic computers, including Amiga accelerators and display upgrades, C64 motherboards, FPGA products, adapters, peripherals and replacement parts.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Commodore",
     "Language": "English",
     "ID": "individual-computers-icomp"
@@ -2684,8 +2702,8 @@
   {
     "Name": "Infinite Mac",
     "URL": "https://infinitemac.org/",
-    "Description": "In-browser Macintosh emulation from System 1 through Mac OS 9, running entirely via WebAssembly with no install required.",
-    "Category": "Emulation & FPGA",
+    "Description": "Browser-based virtual machines for classic Macintosh and NeXT operating systems, with representative software, customizable machines and disk images, and file import/export on supported systems.",
+    "Category": "Emulation & FPGA, Operating Systems, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "infinite-mac"
@@ -2693,8 +2711,8 @@
   {
     "Name": "Intellivision Funhouse",
     "URL": "https://intvfunhouse.com/",
-    "Description": "Intellivision FAQ, technical documentation, and programming resources for the Intellivision system.",
-    "Category": "Hardware & Parts",
+    "Description": "Intellivision reference site with game information and reviews, software and hardware catalogs, technical and repair information, overlays, manuals and community links.",
+    "Category": "Documentation & Wikis, Software & Games",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "intellivision-funhouse"
@@ -2702,8 +2720,8 @@
   {
     "Name": "Intellivision Revolution",
     "URL": "https://intellivisionrevolution.com/",
-    "Description": "Modern Intellivision resource with programming tutorials, homebrew development, hardware modifications, and SDK information.",
-    "Category": "Emulation & FPGA",
+    "Description": "Intellivision resource and homebrew publisher with game, hardware and ROM databases, development guides, emulation and programming information, community features and a linked store.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "intellivision-revolution"
@@ -2747,16 +2765,16 @@
   {
     "Name": "IPSJ Computer Museum (virtual)",
     "URL": "https://museum.ipsj.or.jp/en/index.html",
-    "Description": "情報処理学会によるバーチャルコンピュータ博物館。1950年代から1990年代までの日本のコンピュータを網羅した体系的オンライン展示。Canonical online museum by Japan's IPSJ covering computing history from the 1950s-1990s, fully bilingual.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Virtual museum of Japanese computing history from the Information Processing Society of Japan, with articles, photographs and records about historical computers, their developers and IP heritage.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
-    "Language": "Japanese",
+    "Language": "Japanese, English",
     "ID": "ipsj-computer-museum-virtual"
   },
   {
     "Name": "itch.io Retro Section",
     "URL": "https://itch.io/games/tag-retro",
-    "Description": "Indie developers publish new retro games for old hardware",
+    "Description": "Discovery page for games tagged Retro on itch.io, including retro-inspired independent games and releases made for classic systems.",
     "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
@@ -2774,8 +2792,8 @@
   {
     "Name": "Jamie Lendino",
     "URL": "https://www.jamielendino.com/",
-    "Description": "Author of retro computing books and essays.",
-    "Category": "News & Blogs",
+    "Description": "Author site for Jamie Lendino’s books on classic computers and video games, including histories of ColecoVision, Atari, Intellivision and PC/DOS gaming, with news and purchase links.",
+    "Category": "Documentation & Wikis, News & Blogs",
     "Brands": "Various",
     "Language": "English",
     "ID": "jamie-lendino"
@@ -2855,8 +2873,8 @@
   {
     "Name": "Joe's Computer Museum",
     "URL": "https://jcm-1.com",
-    "Description": "Joe's Computer Museum Joe's Computer Museum! Come by and see all the cool things available from Joe's Computer Museum, including BlueSCSI, PicoGUS and more!",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Personal vintage-computer museum and online shop for retro hardware, reproduction parts, upgrades, replacement chips, apparel and related items.",
+    "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "joes-computer-museum"
@@ -2864,8 +2882,8 @@
   {
     "Name": "John Gilbert's CoCo Site",
     "URL": "https://www.cocopedia.com/wiki/index.php/Main_Page",
-    "Description": "Tandy CoCo encyclopedia and resource",
-    "Category": "Documentation & Wikis",
+    "Description": "Active Tandy/Radio Shack Color Computer encyclopedia with articles, hardware and software references, FAQs, emulator information, programming topics, publications and community links.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "john-gilberts-coco-site"
@@ -2891,9 +2909,9 @@
   {
     "Name": "joshua stein",
     "URL": "https://jcs.org/",
-    "Description": "joshua stein Classic Macintosh software development Software developed on and for classic Macintosh computers",
+    "Description": "Developer site with software, source code and projects for classic Macintosh computers, alongside notes and videos about vintage Mac hardware and software.",
     "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Apple, Atari",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "joshua-stein"
   },
@@ -2918,8 +2936,8 @@
   {
     "Name": "Juiced.GS",
     "URL": "https://juiced.gs",
-    "Description": "The longest-running Apple II publication, still active.",
-    "Category": "Hardware & Parts, News & Blogs",
+    "Description": "Quarterly print magazine devoted to all Apple II models, featuring reviews, interviews and tutorials, with subscriptions, back issues, software, PDFs and books available through its shop.",
+    "Category": "News & Blogs, Software & Games, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "juiced-gs"
@@ -2927,9 +2945,9 @@
   {
     "Name": "Juicy Crumb",
     "URL": "https://juicycrumb.com",
-    "Description": "Juicy Crumb Juicy Crumb See our products in action and talk to the team behind the DockLite and DockLite G4!",
+    "Description": "Maker and online store for products that extend vintage Apple hardware, including iMac display conversions, SCSI storage devices, replacement parts, adapters and installation guides.",
     "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Various",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "juicy-crumb"
   },
@@ -2945,17 +2963,17 @@
   {
     "Name": "June Tate-Gans",
     "URL": "https://nybblesandbytes.net/",
-    "Description": "June Tate-Gans VCF High presented by Nybbles and Bytes Join the premier 1990s technical high school computer class at VCF High School, presented by Nybbles a...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Nybbles and Bytes site for retro game development, with blog posts, articles, programs, 6502 resources, and links to its video and community channels.",
+    "Category": "News & Blogs, Software & Games",
+    "Brands": "Various",
     "Language": "English",
     "ID": "june-tate-gans"
   },
   {
     "Name": "Jupiter Ace Archive",
     "URL": "https://www.jupiter-ace.co.uk/",
-    "Description": "Community marketplace for refurbished Jupiter Ace systems",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Online restoration and preservation archive for the Jupiter Ace, collecting historical information and resources contributed by users and enthusiasts.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Jupiter Ace",
     "Language": "English",
     "ID": "jupiter-ace-archive"
@@ -2981,9 +2999,9 @@
   {
     "Name": "kokoscript",
     "URL": "https://kokoscript.com",
-    "Description": "kokoscript System Sampler II Attempting to fit as many CPU architectures into one space as I can",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Personal developer site for DOS games and tools, including the WordHopper arcade-style game and Tanuki 2D game engine, with notes on vintage PC hardware and software.",
+    "Category": "Software & Games",
+    "Brands": "PC",
     "Language": "English",
     "ID": "kokoscript"
   },
@@ -2999,8 +3017,8 @@
   {
     "Name": "Komoda & Amiga plus (itch.io)",
     "URL": "https://kaplus.itch.io/",
-    "Description": "Digital storefront for Komoda & Amiga plus issues and related releases. Cyfrowy sklep z numerami Komoda & Amiga plus i powiązanymi wydaniami.",
-    "Category": "Vendors & Stores",
+    "Description": "Digital shop for Komoda & Amiga plus, a retro-gaming culture magazine with reviews, editorials, interviews and tutorials, published in English and Polish for print and digital readers.",
+    "Category": "News & Blogs, Vendors & Stores",
     "Brands": "Commodore, Amiga",
     "Language": "English, Polish",
     "ID": "komoda-amiga-plus-itch-io"
@@ -3008,9 +3026,9 @@
   {
     "Name": "Krikzz",
     "URL": "https://krikzz.com/",
-    "Description": "EverDrive flash cartridges for NES, SNES, Genesis, GB",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo, Sega",
+    "Description": "Manufacturer and direct shop for EverDrive flash cartridges for Nintendo, Sega and other classic systems, with product downloads, a support forum, distributor information and warranty details.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Nintendo, Sega, Various",
     "Language": "English",
     "ID": "krikzz"
   },
@@ -3044,8 +3062,8 @@
   {
     "Name": "Le Grenier du Mac",
     "URL": "https://www.grenier-du-mac.net/",
-    "Description": "Site francais dedie a la preservation et a la documentation des anciens Macintosh, logiciels et peripheriques. Collection de materiel rare et guides de restauration.",
-    "Category": "Preservation & Archives",
+    "Description": "Noncommercial French site dedicated to Macintosh abandonware, retro gaming and the history of Apple computers.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Apple",
     "Language": "French",
     "ID": "le-grenier-du-mac"
@@ -3053,7 +3071,7 @@
   {
     "Name": "Lee Hart",
     "URL": "https://www.sunrise-ev.com",
-    "Description": "Lee Hart What can you do with an 1802? various microcomputer kits using the 1802, 6502, 8080, and Z80 microprocessors",
+    "Description": "Lee Hart’s site for vintage microcomputer kits and projects, including Membership Card computers based on the 1802, 8080 and Z80, with 6502 projects and product documentation.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -3062,8 +3080,8 @@
   {
     "Name": "Lee Hart's 1802 Membership Card",
     "URL": "https://www.sunrise-ev.com/1802.htm",
-    "Description": "COSMAC ELF-based kit in Altoids tin",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Buildable COSMAC 1802 microcomputer kit based on the Membership Card design, with manuals, expansion projects, software and related hardware available from Lee Hart.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "lee-harts-1802-membership-card"
@@ -3105,10 +3123,19 @@
     "ID": "lgr-x"
   },
   {
+    "Name": "Limited Run Games",
+    "URL": "https://limitedrungames.com/",
+    "Description": "Retailer of limited-run physical editions of video games, with releases for Switch, PlayStation, Xbox and PC alongside soundtracks, books and collectibles.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Nintendo",
+    "Language": "English",
+    "ID": "wayforward-limited-run"
+  },
+  {
     "Name": "Lotharek's Lair",
     "URL": "https://lotharek.pl/",
-    "Description": "Floppy emulators, Atari/Amiga hardware upgrades",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online shop for HxC floppy emulators, FPGA computers, and replacement hardware and upgrades for Amiga, Atari and other classic systems; the site also lists electronic assembly services.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Atari, Commodore",
     "Language": "English",
     "ID": "lothareks-lair"
@@ -3116,8 +3143,8 @@
   {
     "Name": "Low End Mac",
     "URL": "https://lowendmac.com/",
-    "Description": "Classic Mac buying guides, upgrades, compatibility",
-    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Description": "Apple-focused reference and publishing site with vintage hardware specifications, repair and upgrade guides, a software index, compatibility information, articles and user groups.",
+    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "low-end-mac"
@@ -3143,8 +3170,8 @@
   {
     "Name": "Mac OS 9 for Windows (Mendelson)",
     "URL": "https://mendelson.org/macos9win.html",
-    "Description": "Guide for running classic Mac OS 9 on Windows using the Basilisk II emulator.",
-    "Category": "Emulation & FPGA",
+    "Description": "Guide and download for running Mac OS 9.0.4 in SheepShaver on 64-bit Windows 10 or 11, with separate Mac OS 8.1 and System 7.6.1 emulated systems and setup instructions.",
+    "Category": "Documentation & Wikis, Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mac-os-9-for-windows-mendelson"
@@ -3170,7 +3197,7 @@
   {
     "Name": "MacDat",
     "URL": "https://www.macdat.net/",
-    "Description": "A comprehensive database of specifications for a wide variety of vintage computers, with a primary focus on Apple Macintosh products and laptops.",
+    "Description": "Actively maintained vintage-computer reference site with more than 1,900 pages, including laptop and desktop specifications, Macintosh capacitor references, repair information and hardware portals.",
     "Category": "Documentation & Wikis, Hardware & Parts",
     "Brands": "Apple, Compaq, Gateway",
     "Language": "English",
@@ -3188,8 +3215,8 @@
   {
     "Name": "MacEffects",
     "URL": "https://maceffects.com/",
-    "Description": "Apple IIgs/SE/30 clear cases, replica boards",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for vintage Apple computer products, including clear cases, replica boards, upgrades and other hardware designed for classic Macintosh and Apple II systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "maceffects"
@@ -3233,17 +3260,17 @@
   {
     "Name": "MacintoshPi",
     "URL": "https://jm.iq.pl/macintoshpi-mac-os-7-8-9-for-raspberry-pi/",
-    "Description": "Guide and tools for running Mac OS 7/8/9 on a Raspberry Pi using emulation, with hardware acceleration.",
-    "Category": "Emulation & FPGA",
-    "Brands": "Apple",
+    "Description": "Project and installer for running Mac OS 7, 8 and 9 with Basilisk II and SheepShaver emulators on supported Raspberry Pi models; it also bundles VICE for Commodore 64/128/PET emulation and virtual-modem tools.",
+    "Category": "Emulation & FPGA, Software & Games",
+    "Brands": "Apple, Commodore, Raspberry Pi",
     "Language": "English",
     "ID": "macintoshpi"
   },
   {
     "Name": "MacSD",
     "URL": "https://www.macsd.com/",
-    "Description": "MacSD SCSI storage emulator for classic Macintosh",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "SCSI storage emulator for classic Macintosh computers that loads hard-drive, CD and floppy images from SD cards, with MIDI and audio features, firmware files, a manual and a purchase page.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "macsd"
@@ -3251,17 +3278,17 @@
   {
     "Name": "Maiden Ariana of Retro Alcove",
     "URL": "https://retroalcove.com",
-    "Description": "Maiden Ariana of Retro Alcove Retro Alcove w/MaidenAriana presents TWEAK: TradeWars2002 Expanded Applications Kernel Come try TWEAK: TradeWars2002 Expanded A...",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Retro Alcove companion site for Maiden Ariana’s videos about classic hardware, C64 customization, computer festivals, vintage PC troubleshooting and a running telnet BBS.",
+    "Category": "Communities & Forums, Hardware & Parts, YouTube & Social Channels",
+    "Brands": "Various",
     "Language": "English",
     "ID": "maiden-ariana-of-retro-alcove"
   },
   {
     "Name": "MAMEDev",
     "URL": "https://www.mamedev.org/",
-    "Description": "Official home of MAME, with emulator releases, documentation, source code, system guides, development updates, forums, and community links.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "Official home of the MAME project, a multi-purpose emulator that documents and preserves arcade, computer, console and calculator software and hardware, with source code, downloads, documentation and project updates.",
+    "Category": "Communities & Forums, Documentation & Wikis, Emulation & FPGA",
     "Brands": "Apple, Sega, Atari, Various",
     "Language": "English",
     "ID": "mamedev"
@@ -3278,8 +3305,8 @@
   {
     "Name": "MARCHintosh",
     "URL": "https://marchintosh.com/",
-    "Description": "Annual March event celebrating classic Macintosh computing with competitions, events, and community projects.",
-    "Category": "Communities & Forums",
+    "Description": "Annual online March event for the classic Macintosh community, inviting creators to share 68K, PowerPC and early Intel Mac videos, articles, podcasts and other projects.",
+    "Category": "Communities & Forums, Events & Shows",
     "Brands": "Apple",
     "Language": "English",
     "ID": "marchintosh"
@@ -3296,17 +3323,17 @@
   {
     "Name": "Matt Massie",
     "URL": "https://github.com/nitros9project/nitros9",
-    "Description": "Matt Massie Foenix F256 NitrOS-9 / Basic09 Updates A display featuring the Foenix retro systems F256Jr / F256JrJr running NitrOS-9 and Basic09 with many new ...",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "Atari",
+    "Description": "Community-maintained NitrOS-9 operating system for Motorola 6809 and Hitachi 6309 systems, supporting the Tandy Color Computer family and other compatible targets.",
+    "Category": "Operating Systems, Software & Games",
+    "Brands": "Tandy/Radio Shack, Various",
     "Language": "English",
     "ID": "matt-massie"
   },
   {
     "Name": "Matt Reichert 'Tempest'",
     "URL": "https://www.atariprotos.com/",
-    "Description": "Matt Reichert 'Tempest' Obscure Early Computers Obscure Early Computers featuring the VideoBrain, Exidy Sorcerer, and SV-328",
-    "Category": "Hardware & Parts",
+    "Description": "Archive documenting Atari game prototypes and unreleased builds, with development history, screenshots, manuals and recent discoveries.",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Atari",
     "Language": "English",
     "ID": "matt-reichert-tempest"
@@ -3323,9 +3350,9 @@
   {
     "Name": "Matthew Jones / McJonesTech",
     "URL": "https://mcjonestech.com",
-    "Description": "Matthew Jones / McJonesTech The Seequa Computer Corporation & Their Competitors See three lost machines from the Seequa Computer Corporation, alongside some ...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple, Atari, Nintendo",
+    "Description": "Matthew Jones’s project for refurbishing and preserving older technology, with ongoing computer restoration and reverse-engineering work, exhibits and other community projects.",
+    "Category": "Hardware & Parts, Repair & Services",
+    "Brands": "Various",
     "Language": "English",
     "ID": "matthew-jones-mcjonestech"
   },
@@ -3350,8 +3377,8 @@
   {
     "Name": "MEGA65",
     "URL": "https://mega65.org/",
-    "Description": "FPGA-based Commodore 65 recreation with modern features",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Open-source FPGA implementation of the Commodore 65 as a standalone 8-bit computer, with C64 compatibility, modern storage and display features, BASIC and software; hardware is sold through a linked manufacturer webshop.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "mega65"
@@ -3359,9 +3386,9 @@
   {
     "Name": "Melissa Barron // M-three-L Art",
     "URL": "https://melissabarron.net",
-    "Description": "Melissa Barron // M-three-L Art Original art and prints inspired by vintage technology I create original art inspired by vintage technology, especially the A...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple",
+    "Description": "Artist and Apple II enthusiast creating paintings, prints and other art inspired by vintage computers, game systems and technology, with a linked online shop.",
+    "Category": "Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "melissa-barron-m-three-l-art"
   },
@@ -3404,8 +3431,8 @@
   {
     "Name": "MicroMac",
     "URL": "http://axio.ms/projects/2024/06/16/MicroMac.html",
-    "Description": "Open-source single-chip Macintosh Plus replica built around a modern microcontroller.",
-    "Category": "Emulation & FPGA, Hardware & Parts",
+    "Description": "RP2040-based hardware project that emulates an original 128K Macintosh, with monochrome VGA output and USB keyboard/mouse; the project page documents the design and links build instructions and source.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "micromac"
@@ -3422,17 +3449,17 @@
   {
     "Name": "Midwest Computer Museum",
     "URL": "https://midwestcomputermuseum.com/",
-    "Description": "Midwest Computer Museum Midwest Computer Museum Home Computers",
+    "Description": "Nonprofit museum preserving computing history through a collection of computers, peripherals, software and documentation, with public events and a planned mobile exhibit for schools and communities.",
     "Category": "Museums & Exhibits",
-    "Brands": "Atari",
+    "Brands": "Various",
     "Language": "English",
     "ID": "midwest-computer-museum"
   },
   {
     "Name": "Mini vMac",
     "URL": "https://www.gryphel.com/c/minivmac/",
-    "Description": "Mac Plus emulator for modern platforms",
-    "Category": "Emulation & FPGA, Repair & Services",
+    "Description": "Open-source emulator collection for running software made for early 680x0 Macintosh computers on modern systems, with downloads, setup guides, hardware references, extras and developer documentation.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mini-vmac"
@@ -3440,8 +3467,8 @@
   {
     "Name": "MiniDisc Wiki",
     "URL": "https://www.minidisc.wiki/",
-    "Description": "Comprehensive resource for Sony MiniDisc technology including software, hardware, and PC data drives.",
-    "Category": "Hardware & Parts",
+    "Description": "MiniDisc reference wiki with equipment and disc databases, recording guides, buyer information, accessories, component references, price history and Web MiniDisc software resources.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Software & Games",
     "Brands": "MiniDisc",
     "Language": "English",
     "ID": "minidisc-wiki"
@@ -3449,8 +3476,8 @@
   {
     "Name": "MiniDisc.org",
     "URL": "https://minidisc.org/",
-    "Description": "Extensive archive of MiniDisc technology documentation, including Sony PC data drive manuals and software.",
-    "Category": "Hardware & Parts",
+    "Description": "MiniDisc community portal tracking the format since 1995, with technology guides, FAQs, equipment and accessory browsers, discussion links, buying resources and archival material.",
+    "Category": "Communities & Forums, Documentation & Wikis, Hardware & Parts",
     "Brands": "MiniDisc",
     "Language": "English",
     "ID": "minidisc-org"
@@ -3458,8 +3485,8 @@
   {
     "Name": "Minus Zero Degrees",
     "URL": "https://minuszerodegrees.net/",
-    "Description": "Extensive collection of vintage IBM computer documentation, including 5150, 5160, 5170 technical references, ROMs, and restore guides.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference archive of IBM PC hardware documentation, including technical manuals, ROMs, schematics, specifications and restoration guides for models such as the 5150, 5160 and 5170.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
     "Brands": "IBM",
     "Language": "English",
     "ID": "minus-zero-degrees"
@@ -3494,8 +3521,8 @@
   {
     "Name": "MITS Altair Documentation",
     "URL": "https://www.mitsaltair.com/",
-    "Description": "Dedicated site for MITS Altair documentation, including manuals, schematics, and technical information for Altair 8800 and related systems.",
-    "Category": "Hardware & Parts",
+    "Description": "Historical MITS Altair 8800 reference site with software, documentation, hardware-sale links, online resources and simulator links, preserving original 1970s product information.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Altair",
     "Language": "English",
     "ID": "mits-altair-documentation"
@@ -3512,17 +3539,17 @@
   {
     "Name": "MO5.COM",
     "URL": "https://mo5.com/",
-    "Description": "Thomson MO/TO series preservation, museum shop",
-    "Category": "Communities & Forums, Museums & Exhibits, Vendors & Stores",
+    "Description": "Association MO5 preserves and shares video-game and digital heritage through collections, research, exhibitions, events and the linked Musée du Jeu Vidéo. English: MO5 preserves and shares video-game and digital heritage through collections, research, exhibitions and events.",
+    "Category": "Communities & Forums, Museums & Exhibits, Preservation & Archives",
     "Brands": "Thomson",
-    "Language": "English",
+    "Language": "French, English",
     "ID": "mo5-com"
   },
   {
     "Name": "MoBATCH",
     "URL": "https://mobat.ch",
-    "Description": "MoBATCH Big Computer Fun Time Showing off a big fun computer from the Museum collection",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Nonprofit Museum of Batch and Time-sharing Computer History, focused on business computing, supercomputers and other behind-the-scenes systems, with event exhibits and information about its collections.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "mobatch"
@@ -3539,7 +3566,7 @@
   {
     "Name": "Monsoon Studios",
     "URL": "https://monsoonstudios.net",
-    "Description": "Developer and vendor of new NES homebrew titles.",
+    "Description": "Southern California game developer focused on retro systems. Its current projects include NES games such as Copper Jacket, with plans to publish for other systems.",
     "Category": "Software & Games, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
@@ -3557,8 +3584,8 @@
   {
     "Name": "Mr. Macintosh",
     "URL": "https://mrmacintosh.com",
-    "Description": "Mr. Macintosh Display Macintosh Servers",
-    "Category": "Hardware & Parts",
+    "Description": "Apple IT and Mac support site publishing macOS news, troubleshooting articles, how-to guides, installer downloads and restore resources.",
+    "Category": "Documentation & Wikis, Operating Systems",
     "Brands": "Apple",
     "Language": "English",
     "ID": "mr-macintosh"
@@ -3638,9 +3665,9 @@
   {
     "Name": "Mutant Caterpillar Games",
     "URL": "https://www.mutant-caterpillar.co.uk/shop/",
-    "Description": "Repairs and refurbs for Amiga, Atari, Spectrum, BBC, etc.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Atari, Sinclair/ZX",
+    "Description": "Shop for tested, refurbished 8-bit and 16-bit computers, software and spare parts, with repairs for systems including Sinclair, Amstrad, Commodore, Acorn, Atari and Amiga machines.",
+    "Category": "Hardware & Parts, Repair & Services, Software & Games, Vendors & Stores",
+    "Brands": "Acorn/BBC, Amiga, Amstrad, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "mutant-caterpillar-games"
   },
@@ -3665,9 +3692,9 @@
   {
     "Name": "MyAbandonware",
     "URL": "https://www.myabandonware.com/",
-    "Description": "Abandonware games and software for DOS, Windows, Mac",
+    "Description": "Catalog of classic PC and console games from 1965 to 2015, with game details, manuals, reviews and downloadable files.",
     "Category": "Software & Games",
-    "Brands": "Apple, PC",
+    "Brands": "Various",
     "Language": "English",
     "ID": "myabandonware"
   },
@@ -3710,8 +3737,8 @@
   {
     "Name": "NABU RetroNET",
     "URL": "https://nabu.ca/",
-    "Description": "NABU RetroNET Preservation Project offering Cloud CP/M, network adapter emulation, and homebrew software.",
-    "Category": "Preservation & Archives, Emulation & FPGA",
+    "Description": "Community project for restoring and preserving Canadian NABU PCs, the Internet Adapter and NABU Network. RetroNET shares Cloud CP/M, homebrew software and members’ projects.",
+    "Category": "Internet & Networking, Preservation & Archives, Software & Games",
     "Brands": "Nabu",
     "Language": "English",
     "ID": "nabu-retronet"
@@ -3719,8 +3746,8 @@
   {
     "Name": "National Videogame Museum (UK)",
     "URL": "https://thenvm.org/",
-    "Description": "Located in Sheffield, UK. Focus on Video Games from 1970s–present. National UK centre for videogames.",
-    "Category": "Hardware & Parts, Museums & Exhibits, Software & Games",
+    "Description": "Interactive videogame museum in Sheffield, England, with more than 100 games to play, exhibitions on game history and culture, and workshops about making games.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "national-videogame-museum-uk"
@@ -3728,8 +3755,8 @@
   {
     "Name": "National Videogame Museum (US)",
     "URL": "https://nvmusa.org",
-    "Description": "Museum dedicated to the history of video games and related computing hardware.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Videogame museum in Frisco, Texas, preserving and presenting game history through interactive exhibits and educational programs.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "national-videogame-museum-us"
@@ -3755,17 +3782,17 @@
   {
     "Name": "NetBSD/vax",
     "URL": "https://wiki.netbsd.org/ports/vax/",
-    "Description": "NetBSD port for VAX minicomputers",
-    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Description": "NetBSD port for DEC VAX computers, with release downloads, installation notes, supported-model information and development resources.",
+    "Category": "Documentation & Wikis, Operating Systems",
     "Brands": "DEC",
     "Language": "English",
     "ID": "netbsd-vax"
   },
   {
-    "Name": "Nintendo Virtual Console / NSO",
+    "Name": "Nintendo Switch Online (Nintendo Classics)",
     "URL": "https://www.nintendo.com/switch/online/",
-    "Description": "Official NES/SNES retro games on modern platforms",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
+    "Description": "Nintendo Switch Online includes a curated library of classic NES, Super NES and Game Boy games; the Expansion Pack adds Nintendo 64, Game Boy Advance, GameCube and SEGA Genesis titles.",
+    "Category": "Software & Games",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "nintendo-virtual-console-nso"
@@ -3783,8 +3810,8 @@
     "Name": "Nosher Microcomputer Advert Archive",
     "URL": "https://nosher.net/archives/computers/",
     "Description": "History of the microcomputer industry told through 300+ original adverts from the 1970s-1990s. Covers Commodore, Sinclair, Apple, IBM, and hundreds of now-forgotten brands.",
-    "Category": "Preservation & Archives, Museums & Exhibits",
-    "Brands": "Commodore, Sinclair/ZX, Apple, IBM, Atari",
+    "Category": "Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "nosher-microcomputer-advert-archive"
   },
@@ -3836,8 +3863,8 @@
   {
     "Name": "Old School Gamer Magazine",
     "URL": "https://oldschoolgamer.com",
-    "Description": "Old School Gamer Magazine Retro Gaming Magazine North America's ONLY Multi-Platform Retro Gaming and Computing Print Magazine",
-    "Category": "Hardware & Parts, News & Blogs",
+    "Description": "Retro-gaming magazine publishing news and features about arcade, console, handheld and computer games, with print and digital subscriptions.",
+    "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
     "ID": "old-school-gamer-magazine"
@@ -3865,7 +3892,7 @@
     "URL": "https://oldcomputers.net/",
     "Description": "Long-running online museum of home and personal computers from the 1970s through the 1990s.",
     "Category": "Museums & Exhibits, Documentation & Wikis",
-    "Brands": "Osbourne, Various",
+    "Brands": "Various",
     "Language": "English",
     "ID": "oldcomputers-net-the-old-computer-museum"
   },
@@ -3890,9 +3917,9 @@
   {
     "Name": "OldGamesItalia",
     "URL": "https://www.oldgamesitalia.net/forum",
-    "Description": "Comunita italiana di retro computing e gaming. Forum attivo con sezioni dedicate a computer classici, console e giochi vintage.",
+    "Description": "Comunità italiana dedicata al retrogaming, con forum su videogiochi, podcast, traduzioni e narrativa interattiva. Italian retro-gaming community with forums for video games, podcasts, translations and interactive fiction.",
     "Category": "Communities & Forums",
-    "Brands": "Commodore, Amiga, Atari, PC, Various",
+    "Brands": "Various",
     "Language": "Italian",
     "ID": "oldgamesitalia"
   },
@@ -3909,7 +3936,7 @@
     "Name": "OldSilicon - Osborne 1",
     "URL": "https://oldsilicon.com/portables/osborne-1/",
     "Description": "Osborne 1 restoration guide covering Gotek floppy emulator installation and CP/M file transfers.",
-    "Category": "Repair & Services, Hardware & Parts",
+    "Category": "Documentation & Wikis",
     "Brands": "Osbourne",
     "Language": "English",
     "ID": "oldsilicon-osborne-1"
@@ -3926,7 +3953,7 @@
   {
     "Name": "OpenFPGA (Analogue)",
     "URL": "https://www.analogue.co/developer",
-    "Description": "Analogue Pocket cores for retro systems",
+    "Description": "Analogue Pocket developer platform for creating third-party FPGA cores that recreate video-game hardware for preservation, study and play.",
     "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
@@ -3944,7 +3971,7 @@
   {
     "Name": "OpenPS2Loader",
     "URL": "https://github.com/ps2homebrew/Open-PS2-Loader",
-    "Description": "Open-source PS2 game loader for retro hardware",
+    "Description": "Open-source game and application loader for PS2 and PS3 consoles, supporting USB storage, network shares and internal or external drives.",
     "Category": "Software & Games",
     "Brands": "Sony",
     "Language": "English",
@@ -3953,8 +3980,8 @@
   {
     "Name": "Oric.org",
     "URL": "https://www.oric.org/",
-    "Description": "Oric computer preservation and community site",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Online Oric software catalogue with searchable game and utility entries, downloadable releases, and recent homebrew and demo projects.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Oric",
     "Language": "English",
     "ID": "oric-org"
@@ -3978,6 +4005,15 @@
     "ID": "paleotronic-microm8"
   },
   {
+    "Name": "Particles! BBS",
+    "URL": "https://www.particles.org/particlesbbs/",
+    "Description": "Retro-computing BBS and website with connection, software, downloads, and blog posts covering systems including Commodore, Amiga, and PC.",
+    "Category": "Internet & Networking, News & Blogs, Software & Games",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "restoration-team"
+  },
+  {
     "Name": "Paul Rak",
     "URL": "https://pjrcomputing.com",
     "Description": "Paul Rak Uncle Paulie's Retro Circus Sun / AT&T / misc vintage micros",
@@ -3998,10 +4034,10 @@
   {
     "Name": "PC-98 Nihongo Portal",
     "URL": "https://pc98.ne.jp/",
-    "Description": "NEC PC-98シリーズの情報ポータル。ハードウェアデータベース、ソフトウェアライブラリ、技術文書を網羅。NEC PC-98 series information portal with hardware database, software library and technical documentation.",
-    "Category": "Hardware & Parts",
+    "Description": "English-language NEC PC-9800 community portal linking hardware and development documentation, software libraries, utilities, emulators and chat spaces.",
+    "Category": "Communities & Forums, Documentation & Wikis, Emulation & FPGA, Software & Games",
     "Brands": "PC-98",
-    "Language": "Japanese",
+    "Language": "English",
     "ID": "pc-98-nihongo-portal"
   },
   {
@@ -4034,8 +4070,8 @@
   {
     "Name": "PDP-8 Online",
     "URL": "https://pdp8online.com/",
-    "Description": "Online PDP-8 emulator and documentation, allowing users to run PDP-8 software in a web browser.",
-    "Category": "Emulation & FPGA",
+    "Description": "Learn about and run PDP-8 systems in a browser, with PDP-8 documentation and software archives, operating information, system photos and games.",
+    "Category": "Documentation & Wikis, Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "DEC",
     "Language": "English",
     "ID": "pdp-8-online"
@@ -4095,10 +4131,10 @@
     "ID": "piscsi-rascsi"
   },
   {
-    "Name": "PiTubeDirect (community sellers)",
+    "Name": "PiTubeDirect",
     "URL": "https://github.com/hoglet67/PiTubeDirect",
-    "Description": "Raspberry Pi-based co-processor for BBC Micro",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
+    "Description": "Bare-metal Raspberry Pi project that connects to the BBC Micro’s Acorn TUBE interface and emulates BBC Micro co-processors.",
+    "Category": "Emulation & FPGA, Hardware & Parts",
     "Brands": "Acorn/BBC",
     "Language": "English",
     "ID": "pitubedirect-community-sellers"
@@ -4124,10 +4160,10 @@
   {
     "Name": "Planet Emulation — Commodore 64",
     "URL": "https://www.planetemu.net/machine/commodore-64",
-    "Description": "Commodore 64 ROM and software archive with organized game and application collections.",
-    "Category": "Emulation & FPGA, Preservation & Archives",
+    "Description": "Archives de ROMs, jeux et applications pour Commodore 64, avec actualités, émulateurs et utilitaires téléchargeables. Commodore 64 ROM, game and application archive with news, downloadable emulators and utilities.",
+    "Category": "Emulation & FPGA, Preservation & Archives, Software & Games",
     "Brands": "Commodore",
-    "Language": "English",
+    "Language": "French",
     "ID": "planet-emulation-commodore-64"
   },
   {
@@ -4151,17 +4187,17 @@
   {
     "Name": "Poly.play",
     "URL": "https://polyplay.xyz/",
-    "Description": "New releases for classic systems",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Amstrad, Commodore",
-    "Language": "English",
+    "Description": "Retroshop für klassische Computer, Spiele, Hardware und Ersatzteile aus verschiedenen Systemfamilien. German retro shop for classic computers, games, hardware and spare parts across multiple systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
+    "Language": "German",
     "ID": "poly-play"
   },
   {
     "Name": "Port Commodore",
     "URL": "https://portcommodore.com/",
-    "Description": "Commodore-focused wiki and personal archive covering hardware, software, BBS history, and related projects.",
-    "Category": "Documentation & Wikis, Communities & Forums, Preservation & Archives",
+    "Description": "Commodore-focused personal wiki and link archive, with pages about classic computing, BBS history, collections, projects and related resources.",
+    "Category": "Documentation & Wikis, Preservation & Archives",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "port-commodore"
@@ -4178,8 +4214,8 @@
   {
     "Name": "Powerfox",
     "URL": "https://powerfox.jazzzny.me/",
-    "Description": "A browser for Apple iBook, Powerbook, iMac, and PowerMac computers with PowerPC G4 or G5 processors.",
-    "Category": "Software & Games",
+    "Description": "Open-source PowerFox and PowerFox Classic browsers for PowerPC or Intel Macs, supporting Mac OS X 10.3 through macOS 10.14.",
+    "Category": "Web Tools & Browsers",
     "Brands": "Apple",
     "Language": "English",
     "ID": "powerfox"
@@ -4187,8 +4223,8 @@
   {
     "Name": "Powkiddy",
     "URL": "https://powkiddy.com/",
-    "Description": "Affordable retro handheld consoles using emulation",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online store selling handheld game consoles, gamepads and replacement parts for portable gaming systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "powkiddy"
@@ -4223,8 +4259,8 @@
   {
     "Name": "printf.neocities.org - PC-98",
     "URL": "https://printf.neocities.org/",
-    "Description": "NEC PC-98のプログラミング、ハードウェア実験、保存活動を扱う個人サイト。Personal site featuring NEC PC-98 content including programming, hardware experiments and preservation efforts.",
-    "Category": "News & Blogs",
+    "Description": "NEC PC-9800シリーズのプログラミングや画像編集に関する個人の参考サイト。ソフトウェア、開発資料、エミュレーターなどのリンクを掲載。Personal reference site for NEC PC-9800 programming and graphics, with software, development documentation and emulator links.",
+    "Category": "Documentation & Wikis",
     "Brands": "PC-98",
     "Language": "English, Japanese",
     "ID": "printf-neocities-org-pc-98"
@@ -4250,26 +4286,26 @@
   {
     "Name": "Protovision",
     "URL": "https://www.protovision.games/",
-    "Description": "Publiziert und vertreibt neue C64-Spiele als Cartridge- und Digital-Releases. Auch C64-Hardware wie EasyFlash, ARMSID, Micromys und 4-Player-Interface. Deutscher Shop mit vollstandig zweisprachiger Website. German shop with fully bilingual (EN/DE) website publishing new C64 games and hardware.",
-    "Category": "Repair & Services, Software & Games, Vendors & Stores",
+    "Description": "Develops and sells new games and hardware for the Commodore 64, with boxed games, downloads, peripherals and other C64 products in its shop.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
     "Brands": "Commodore",
-    "Language": "German",
+    "Language": "English, German",
     "ID": "protovision"
   },
   {
     "Name": "Protoweb",
     "URL": "https://protoweb.org/",
-    "Description": "Protoweb Protoweb Exhibit We'll be exhibiting a working replica of the early World Wide Web using Protoweb project as the platform running on various systems",
-    "Category": "Hardware & Parts, Museums & Exhibits",
-    "Brands": "Atari",
+    "Description": "Community-run service that restores historical websites, mainly from the 1990s, for browsing through a configured web proxy. Restored pages include working searches, games and downloads.",
+    "Category": "Internet & Networking, Preservation & Archives, Web Tools & Browsers",
+    "Brands": "Various",
     "Language": "English",
     "ID": "protoweb"
   },
   {
     "Name": "Psytronik Software",
     "URL": "https://psytronik.itch.io/",
-    "Description": "C64 developer publishing new games (physical + digital) via Psytronik/itch.io",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
+    "Description": "Game publishing label for classic computers. Its current itch.io catalog includes new Commodore 64 games and downloadable demos.",
+    "Category": "Software & Games",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "psytronik-software"
@@ -4277,7 +4313,7 @@
   {
     "Name": "QEMU (Mac II support)",
     "URL": "https://www.qemu.org/",
-    "Description": "General-purpose emulator with Macintosh II and PPC support",
+    "Description": "Open-source machine emulator and virtualizer. Its system emulation includes the Macintosh Quadra 800 under m68k and Power Mac machines under PowerPC.",
     "Category": "Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
@@ -4295,7 +4331,7 @@
   {
     "Name": "Rabbit Hole Computing",
     "URL": "https://shop.rabbitholecomputing.com",
-    "Description": "Storage solutions for retro systems, including SCSI, IDE, SATA cards, and ZuluIDE.",
+    "Description": "Online store for legacy-computer storage emulators and adapters, including ZuluSCSI, ZuluIDE and QuokkADB products.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -4304,17 +4340,17 @@
   {
     "Name": "Rabbithole Computing",
     "URL": "https://www.rabbitholecomputing.com/",
-    "Description": "TI-99/4A parts, manuals, software preservation",
-    "Category": "Documentation & Wikis, Hardware & Parts, Vendors & Stores",
-    "Brands": "TI",
+    "Description": "Manufacturer of SCSI emulation products for retro computers; the site links to its product shop.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "rabbithole-computing"
   },
   {
     "Name": "r/amiga",
     "URL": "https://www.reddit.com/r/amiga/",
-    "Description": "Amiga subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for Amiga discussion, technical questions and help with specific machines and configurations.",
+    "Category": "Communities & Forums",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "r-amiga"
@@ -4322,8 +4358,8 @@
   {
     "Name": "r/amstrad",
     "URL": "https://www.reddit.com/r/amstrad/",
-    "Description": "Amstrad subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for Amstrad computers and related video games and software.",
+    "Category": "Communities & Forums",
     "Brands": "Amstrad",
     "Language": "English",
     "ID": "r-amstrad"
@@ -4340,7 +4376,7 @@
   {
     "Name": "r/apple2",
     "URL": "https://www.reddit.com/r/apple2/",
-    "Description": "Apple subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for Apple II discussion and resources.",
     "Category": "Communities & Forums",
     "Brands": "Apple",
     "Language": "English",
@@ -4349,8 +4385,8 @@
   {
     "Name": "r/Atari2600",
     "URL": "https://www.reddit.com/r/Atari2600/",
-    "Description": "Atari subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for the Atari 2600, also known as the Video Computer System or VCS.",
+    "Category": "Communities & Forums",
     "Brands": "Atari",
     "Language": "English",
     "ID": "r-atari2600"
@@ -4358,8 +4394,8 @@
   {
     "Name": "r/Atari8bit",
     "URL": "https://www.reddit.com/r/Atari8bit/",
-    "Description": "Atari subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for Atari 8-bit computers.",
+    "Category": "Communities & Forums",
     "Brands": "Atari",
     "Language": "English",
     "ID": "r-atari8bit"
@@ -4367,8 +4403,8 @@
   {
     "Name": "r/AtariST",
     "URL": "https://www.reddit.com/r/AtariST/",
-    "Description": "Atari subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for the Atari ST line of 16-bit personal computers.",
+    "Category": "Communities & Forums",
     "Brands": "Atari",
     "Language": "English",
     "ID": "r-atarist"
@@ -4385,9 +4421,9 @@
   {
     "Name": "RC2014",
     "URL": "https://rc2014.co.uk/",
-    "Description": "Z80 modular kits, backplane-based hobby computer",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Sinclair/ZX",
+    "Description": "Project website for the RC2014 Z80-based retro-computer kit, with full kits, backplanes, modules and assembly guides.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Brands": "RC2014",
     "Language": "English",
     "ID": "rc2014"
   },
@@ -4403,8 +4439,8 @@
   {
     "Name": "r/c64",
     "URL": "https://www.reddit.com/r/c64/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, Repair & Services, YouTube & Social Channels",
+    "Description": "Reddit community for Commodore 64 discussion, questions and projects.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-c64"
@@ -4412,7 +4448,7 @@
   {
     "Name": "r/ClassicComputerTime",
     "URL": "https://www.reddit.com/r/ClassicComputerTime/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community discussing classic computers, from early home systems to XP-era PCs.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -4421,8 +4457,8 @@
   {
     "Name": "r/ClassicPCGames",
     "URL": "https://www.reddit.com/r/ClassicPCGames/",
-    "Description": "PC subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, Hardware & Parts, YouTube & Social Channels",
+    "Description": "Reddit community for fans of classic PC games.",
+    "Category": "Communities & Forums",
     "Brands": "PC",
     "Language": "English",
     "ID": "r-classicpcgames"
@@ -4430,8 +4466,8 @@
   {
     "Name": "r/Commodore",
     "URL": "https://www.reddit.com/r/Commodore/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community collecting links and articles about Commodore PET, VIC, C64, C128, TED, Amiga and PC machines.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-commodore"
@@ -4439,7 +4475,7 @@
   {
     "Name": "r/CRTfinds",
     "URL": "https://www.reddit.com/r/CRTfinds/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for sharing CRT finds, collections and questions about discovered sets.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -4448,7 +4484,7 @@
   {
     "Name": "r/ditherpunk",
     "URL": "https://www.reddit.com/r/ditherpunk/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for dithered digital art, image-processing techniques and creative tools.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -4466,8 +4502,8 @@
   {
     "Name": "r/dosgaming",
     "URL": "https://www.reddit.com/r/dosgaming/",
-    "Description": "PC subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Community for playing and discussing MS-DOS and early Windows games, including use on DOSBox or original hardware.",
+    "Category": "Communities & Forums",
     "Brands": "PC",
     "Language": "English",
     "ID": "r-dosgaming"
@@ -4484,7 +4520,7 @@
   {
     "Name": "Reboot (Jaguar devs)",
     "URL": "https://www.reboot-games.com/rebootnews/",
-    "Description": "Homebrew Jaguar games sold on cartridge and download",
+    "Description": "Reboot develops and publishes Atari Jaguar games, including physical cartridge releases and downloads, and provides Jaguar development tools.",
     "Category": "News & Blogs, Software & Games, Vendors & Stores",
     "Brands": "Atari",
     "Language": "English",
@@ -4493,8 +4529,8 @@
   {
     "Name": "Recap-A-Mac",
     "URL": "https://recapamac.com.au/",
-    "Description": "Recap and repair services for compact Macs and Power Macs",
-    "Category": "Hardware & Parts, Repair & Services",
+    "Description": "Macintosh recapping and repair reference with capacitor guides for more than 30 models, restoration write-ups, and recent vintage Mac posts.",
+    "Category": "Documentation & Wikis, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "recap-a-mac"
@@ -4502,26 +4538,17 @@
   {
     "Name": "r/emulation",
     "URL": "https://www.reddit.com/r/emulation/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, Emulation & FPGA, YouTube & Social Channels",
+    "Description": "Reddit community for discussion of emulators and emulation software.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-emulation"
   },
   {
-    "Name": "Restoration Team",
-    "URL": "https://www.particles.org/particlesbbs/",
-    "Description": "Amiga CD32, A1200, A600 replacement parts and refurb services",
-    "Category": "Communities & Forums, Hardware & Parts, News & Blogs, Repair & Services",
-    "Brands": "Amiga",
-    "Language": "English",
-    "ID": "restoration-team"
-  },
-  {
     "Name": "Retro Computer Museum",
     "URL": "https://www.retrocomputermuseum.co.uk/",
-    "Description": "Located in Leicestershire, UK. Focus on Computers + Consoles from 1970s–2000s. Playable systems; events and education.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Leicestershire museum with playable classic computers, consoles, arcade systems, and virtual-reality exhibits, open on scheduled weekends and select bank holidays.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "retro-computer-museum"
@@ -4557,10 +4584,19 @@
     "Name": "Retro Fusion",
     "URL": "https://www.retrofuzion.com/",
     "Description": "Online store specializing in retro tech, vintage computer parts, and new custom shells for bread-bin Commodore computers.",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Amstrad, Apple, Atari, Commodore, IBM, PC, Sinclair/ZX, Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-fusion"
+  },
+  {
+    "Name": "Retro Game Boards",
+    "URL": "https://www.retrogameboards.com/",
+    "Description": "Retro video-game forum with general discussion and a member marketplace for buying, selling, and trading.",
+    "Category": "Communities & Forums",
+    "Brands": "Various",
+    "Language": "English",
+    "ID": "rgb-electronics"
   },
   {
     "Name": "Retro Game Corps",
@@ -4574,8 +4610,8 @@
   {
     "Name": "Retro Game Repair Shop",
     "URL": "https://retrogamerepairshop.com/",
-    "Description": "Game Boy, NES, SNES refurb kits, IPS screens, shells",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Online store for console and handheld repair and upgrade parts, including Game Boy display kits, shells, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Nintendo",
     "Language": "English",
     "ID": "retro-game-repair-shop"
@@ -4583,7 +4619,7 @@
   {
     "Name": "Retro Gamer",
     "URL": "https://www.retrogamer.net",
-    "Description": "Still published monthly by Future Publishing, covering retro gaming and computing.",
+    "Description": "Online edition of Retro Gamer magazine, featuring news, features, and reviews about classic video games and systems.",
     "Category": "News & Blogs",
     "Brands": "Various",
     "Language": "English",
@@ -4592,8 +4628,8 @@
   {
     "Name": "Retro Games Ltd.",
     "URL": "https://retrogames.biz/",
-    "Description": "TheC64 (full size), TheC64 Mini, TheA500 Mini – official licensed emulated recreations",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Company site for classic computer and console recreations and accessories, including THEC64, THEA500 Mini, THE400 Mini, and The Spectrum.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga, Atari, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "retro-games-ltd"
@@ -4637,27 +4673,27 @@
   {
     "Name": "RETRO Innovations",
     "URL": "https://www.go4retro.com",
-    "Description": "RETRO Innovations Classic Systems, Contemporary Gear Solutions to help you continue enjoying your classic systems in today's world",
-    "Category": "Hardware & Parts",
-    "Brands": "Atari",
+    "Description": "Maker and store for contemporary peripherals and expansion hardware for classic computers, including storage devices and memory expansions.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Apple, Atari, Commodore, Tandy/Radio Shack, TI",
     "Language": "English",
     "ID": "retro-innovations"
   },
   {
     "Name": "Retro Innovations (go4retro) Blog",
     "URL": "http://www.go4retro.com/blog/",
-    "Description": "Commodore hardware project updates and news",
-    "Category": "News & Blogs, Repair & Services",
-    "Brands": "Commodore",
+    "Description": "Technical project blog about hardware for classic computers, including expansion designs such as memory upgrades for the Tandy Color Computer 3.",
+    "Category": "Documentation & Wikis, News & Blogs",
+    "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-innovations-go4retro-blog"
   },
   {
     "Name": "Retro Modding",
     "URL": "https://www.retromodding.com/",
-    "Description": "Game Boy shells, IPS kits, NES/SNES mods",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo",
+    "Description": "Online store for handheld and console modification parts, shells, display kits, and accessories, including products for Game Boy and Sega systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Nintendo, Sega",
     "Language": "English",
     "ID": "retro-modding"
   },
@@ -4673,8 +4709,8 @@
   {
     "Name": "Retro Passion",
     "URL": "https://www.retropassion.co.uk/",
-    "Description": "Amiga repairs, recaps, refurbs, spares",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Amiga specialist store selling custom and modified systems, refurbished motherboards, replacement parts, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "retro-passion"
@@ -4682,7 +4718,7 @@
   {
     "Name": "Retro PC Parts",
     "URL": "https://retropcparts.com/",
-    "Description": "Searchable database of PC hardware manufactured before 2005. Covers retro GPUs, CPUs, motherboards, displays, and components with specs and photos across 400+ parts.",
+    "Description": "Searchable retro PC parts reference with technical tables and photos for motherboards, graphics cards, CPUs, displays, and other components.",
     "Category": "Hardware & Parts, Documentation & Wikis",
     "Brands": "PC",
     "Language": "English",
@@ -4725,20 +4761,11 @@
     "ID": "retro-repair-roundup-youtube"
   },
   {
-    "Name": "Retro Repairs and Refurbs",
-    "URL": "https://retrorepairsandrefurbs.com/",
-    "Description": "Personal restoration site with repair services, vintage computer projects, parts, and system documentation. Search by brand or model, then check the repair notes and photos.",
-    "Category": "Repair & Services, Hardware & Parts, Documentation & Wikis",
-    "Brands": "Nabu, Dragon, Sharp, Sony, TI, Various",
-    "Language": "English",
-    "ID": "retro-repairs-and-refurbs"
-  },
-  {
     "Name": "Retro Rewind",
     "URL": "https://retrorewind.ca/",
-    "Description": "Canadian reseller for various retro hardware/parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Atari, Commodore",
+    "Description": "Online parts shop for Commodore 64/128/16 and VIC-20, Amiga, and Tandy Color Computer systems, with capacitors, diagnostic products, hardware, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Amiga, Commodore, Tandy/Radio Shack",
     "Language": "English",
     "ID": "retro-rewind"
   },
@@ -4754,9 +4781,9 @@
   {
     "Name": "Retro Tech Foundation",
     "URL": "https://www.retrotechfoundation.org",
-    "Description": "Retro Tech Foundation Retro Tech Foundation Museum The Retro Tech Foundation’s mission is to educate the public about the value of vintage technology, from a...",
-    "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
-    "Brands": "Apple, Atari",
+    "Description": "Nonprofit in Watertown, Connecticut, developing a vintage technology museum and education program focused on preserving retro technology and sharing it with the public.",
+    "Category": "Museums & Exhibits",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "retro-tech-foundation"
   },
@@ -4790,8 +4817,8 @@
   {
     "Name": "Retrobug",
     "URL": "https://retrobug.org/",
-    "Description": "Retro computer library with technical specifications, news, reviews, and podcasts. Covers systems from Amstrad CPC to MSX, TRS-80, Tatung Einstein, and vintage consoles.",
-    "Category": "Documentation & Wikis, News & Blogs, Podcasts & Audio",
+    "Description": "Retro-computing archive and catalog covering computers and consoles, with podcasts, news and reviews, and community events.",
+    "Category": "Documentation & Wikis, Events & Shows, News & Blogs, Podcasts & Audio",
     "Brands": "Amstrad, MSX, Tandy/Radio Shack, Atari, Commodore",
     "Language": "English",
     "ID": "retrobug"
@@ -4808,9 +4835,9 @@
   {
     "Name": "Retroclinic",
     "URL": "http://www.retroclinic.com/",
-    "Description": "BBC Micro repair, refurbishment, parts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Acorn/BBC",
+    "Description": "BBC Micro and Master specialist selling spare parts, capacitor kits, upgrades, and manuals, with repair services for BBC Micros and selected arcade PCBs.",
+    "Category": "Documentation & Wikis, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Brands": "Acorn/BBC, Atari, Sega",
     "Language": "English",
     "ID": "retroclinic"
   },
@@ -4842,37 +4869,28 @@
     "ID": "retrocomputing-discord"
   },
   {
-    "Name": "Retrodores",
-    "URL": "https://switcher.acutisdata.com/",
-    "Description": "Retrodores Commodore equipment and IEC switchgear Retrodores.com celebrates retro systems with modern hardware and software. Try C64 OS and test out IEC swit...",
-    "Category": "Hardware & Parts, Repair & Services, Software & Games",
-    "Brands": "Atari, Commodore",
-    "Language": "English",
-    "ID": "retrodores"
-  },
-  {
     "Name": "RetroFrog",
     "URL": "https://retrofrog.net/",
-    "Description": "Genesis, Saturn, Dreamcast replacement shells, parts",
-    "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Sega",
+    "Description": "Online store for retro-console accessories, joysticks, USB adapters, cables, and MiSTer FPGA products across several classic systems.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrofrog"
   },
   {
     "Name": "Retrohax",
     "URL": "https://retrohax.net/shop/",
-    "Description": "Amiga/Commodore deep refurbs, MouSTer adapters",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore",
+    "Description": "Store listing the mouSTer USB adapter for connecting modern USB mice, gamepads, and joysticks to retro computers; its supported-platform list includes Commodore, Atari, Amiga, and Sinclair systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "retrohax"
   },
   {
     "Name": "Retroid Pocket (GoRetroid)",
     "URL": "https://www.goretroid.com/",
-    "Description": "Android-based retro handheld consoles (Retroid Pocket series)",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Online store for Retroid Pocket handheld gaming devices and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
     "ID": "retroid-pocket-goretroid"
@@ -4898,8 +4916,8 @@
   {
     "Name": "Retromaniax",
     "URL": "https://www.retromaniax.gr/",
-    "Description": "Ελληνικη κοινοτητα retro computing και gaming. Forum με συζητησεις για κλασικους υπολογιστες, κονσολες, επισκευες και συλλογες.",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Ελληνική κοινότητα retro υπολογιστών και gaming με ενεργά φόρουμ για κλασικά συστήματα, παιχνίδια, emulation, hardware και τεχνολογία. English: Greek retro-computing and gaming community with active forums for classic systems, games, emulation, hardware, and technology.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "Greek",
     "ID": "retromaniax"
@@ -4908,7 +4926,7 @@
     "Name": "RETROMELS Archive - Sharp MZ Collection",
     "URL": "https://www.retromelsarchive.com/",
     "Description": "Curated collection of Sharp MZ-700, MZ-800, and MZ-80K resources, including ROM images, tape listings, and maintenance guides.",
-    "Category": "Hardware & Parts",
+    "Category": "Documentation & Wikis, Preservation & Archives, Software & Games",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "retromels-archive-sharp-mz-collection"
@@ -4943,17 +4961,17 @@
   {
     "Name": "RetroPie",
     "URL": "https://retropie.org.uk/",
-    "Description": "RetroPie allows you to turn your Raspberry Pi into a retro-gaming machine with support for vintage computer emulation including Commodore, Amiga, ZX Spectrum, and more.",
+    "Description": "Open-source setup software for Raspberry Pi, ODroid, Vero4K, and Ubuntu PC systems, using RetroArch emulators and EmulationStation to build retro-gaming systems.",
     "Category": "Emulation & FPGA",
-    "Brands": "Raspberry Pi",
+    "Brands": "PC, Raspberry Pi",
     "Language": "English",
     "ID": "retropie"
   },
   {
     "Name": "RetroRGB",
     "URL": "https://www.retrorgb.com/",
-    "Description": "Site links to Discord; active support.",
-    "Category": "Communities & Forums",
+    "Description": "Retro-gaming review and news site with console RGB and video guides, modding articles, interviews, videos, and a weekly podcast.",
+    "Category": "Documentation & Wikis, News & Blogs, Podcasts & Audio",
     "Brands": "Various",
     "Language": "English",
     "ID": "retrorgb"
@@ -4988,35 +5006,26 @@
   {
     "Name": "RetroUSB",
     "URL": "https://www.retrousb.com/",
-    "Description": "AVS (FPGA NES), USB NES controllers, flash carts",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Official retroUSB product archive with product information, manuals, and downloads for AVS, games, and USB products; the site says additional details are being added.",
+    "Category": "Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "retrousb"
   },
   {
-    "Name": "RGB Electronics",
-    "URL": "https://www.retrogameboards.com/",
-    "Description": "CRT repair, flybacks, RGB mods",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Various",
-    "Language": "English",
-    "ID": "rgb-electronics"
-  },
-  {
     "Name": "RGCD",
     "URL": "https://www.rgcd.co.uk/",
-    "Description": "Publishes C64 games on cartridge and digital",
-    "Category": "Repair & Services, Software & Games, Vendors & Stores",
-    "Brands": "Commodore",
+    "Description": "Retro game development and publishing team concentrating on Atari STE, PC, and Commodore 64 releases; most games listed on its site are available through its linked shop.",
+    "Category": "Software & Games, Vendors & Stores",
+    "Brands": "Atari, Commodore, PC",
     "Language": "English",
     "ID": "rgcd"
   },
   {
     "Name": "Rhode Island Computer Museum (RICM)",
     "URL": "https://www.ricomputermuseum.org/",
-    "Description": "Located in Warwick / North Kingstown, RI, USA. Focus on Computers from 1970s–1990s. Workshops and preservation; tours by arrangement.",
-    "Category": "Hardware & Parts, Museums & Exhibits, Vendors & Stores",
+    "Description": "Museum in North Kingstown, Rhode Island, preserving and exhibiting computer-history artifacts through its collections, Fraser Archives, Learning Lab, and visitor tours.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "rhode-island-computer-museum-ricm"
@@ -5033,9 +5042,9 @@
   {
     "Name": "Richard Lorbieski",
     "URL": "https://boysontech.com",
-    "Description": "Richard Lorbieski BoysonTech Creator and manufacture of peripherals for the Tandy Color Computer",
-    "Category": "Hardware & Parts",
-    "Brands": "Tandy/Radio Shack",
+    "Description": "BoysonTech designs and sells Tandy Color Computer upgrades such as the CoCo SDC and memory expansions, plus an Atari/Sega Genesis joystick adapter.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Atari, Sega, Tandy/Radio Shack",
     "Language": "English",
     "ID": "richard-lorbieski"
   },
@@ -5060,8 +5069,8 @@
   {
     "Name": "r/msx",
     "URL": "https://www.reddit.com/r/msx/",
-    "Description": "MSX subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for fans of MSX, MSX2, MSX2+, and MSX TurboR computers and related games.",
+    "Category": "Communities & Forums",
     "Brands": "MSX",
     "Language": "English",
     "ID": "r-msx"
@@ -5078,8 +5087,8 @@
   {
     "Name": "r/oldcomputers",
     "URL": "https://www.reddit.com/r/oldcomputers/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for retro and vintage computing, where members share memories, collections, and old-computer posts.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-oldcomputers"
@@ -5096,7 +5105,7 @@
   {
     "Name": "r/rc2014",
     "URL": "https://www.reddit.com/r/rc2014/",
-    "Description": "RC2014 & Z80 subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for the RC2014 modular Z80 computer and related topics including CP/M, BASIC, and retro computing.",
     "Category": "Communities & Forums",
     "Brands": "RC2014, Z80",
     "Language": "English",
@@ -5105,8 +5114,8 @@
   {
     "Name": "r/retrobattlestations",
     "URL": "https://www.reddit.com/r/retrobattlestations/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for showing and discussing vintage computer setups, sharing old photos, and asking for help with retro computers and consoles.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-retrobattlestations"
@@ -5114,7 +5123,7 @@
   {
     "Name": "r/retrocomputing",
     "URL": "https://www.reddit.com/r/retrocomputing/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for retro-computing discussion, focused on 8-bit systems and extending through early-2000s computers, software, games, and projects.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -5123,8 +5132,8 @@
   {
     "Name": "r/retrogaming",
     "URL": "https://www.reddit.com/r/retrogaming/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for vintage gaming, including 2D and early 3D games, collections, and retro-game discussion.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-retrogaming"
@@ -5132,8 +5141,8 @@
   {
     "Name": "r/retropc",
     "URL": "https://www.reddit.com/r/retropc/",
-    "Description": "PC subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for discussing and sharing retro PCs, mostly computers from 2005 or earlier.",
+    "Category": "Communities & Forums",
     "Brands": "PC",
     "Language": "English",
     "ID": "r-retropc"
@@ -5141,7 +5150,7 @@
   {
     "Name": "r/technews",
     "URL": "https://www.reddit.com/r/technews/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for hard-tech news and articles.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -5150,8 +5159,8 @@
   {
     "Name": "r/THEC64Community",
     "URL": "https://www.reddit.com/r/THEC64Community/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for support with THEC64 Mini, THEC64 Maxi, THEVIC20, and Project Carousel USB.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-thec64community"
@@ -5159,7 +5168,7 @@
   {
     "Name": "r/Vectrex",
     "URL": "https://www.reddit.com/r/Vectrex",
-    "Description": "Vectrex subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community for Vectrex fans, owners, collectors, and developers discussing games, hardware, and accessories.",
     "Category": "Communities & Forums",
     "Brands": "Vectrex",
     "Language": "English",
@@ -5168,8 +5177,8 @@
   {
     "Name": "r/vic20",
     "URL": "https://www.reddit.com/r/vic20/",
-    "Description": "Commodore subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for the Commodore VIC-20, an 8-bit home computer manufactured from 1981 to 1985.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "r-vic20"
@@ -5177,8 +5186,8 @@
   {
     "Name": "r/VintageApple",
     "URL": "https://www.reddit.com/r/VintageApple/",
-    "Description": "Apple subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for vintage Apple computers and products, including pre-Intel Macintosh, Lisa, and Newton systems.",
+    "Category": "Communities & Forums",
     "Brands": "Apple",
     "Language": "English",
     "ID": "r-vintageapple"
@@ -5186,7 +5195,7 @@
   {
     "Name": "r/vintagecgi",
     "URL": "https://www.reddit.com/r/vintagecgi/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit archive for vintage computer-generated imagery from the 1970s through the 2000s.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -5195,8 +5204,8 @@
   {
     "Name": "r/VintageComputers",
     "URL": "https://www.reddit.com/r/VintageComputers/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
-    "Category": "Communities & Forums, YouTube & Social Channels",
+    "Description": "Reddit community for vintage computing, where members ask for help with old hardware and share their computers.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "r-vintagecomputers"
@@ -5204,7 +5213,7 @@
   {
     "Name": "r/vintagecomputing",
     "URL": "https://www.reddit.com/r/vintagecomputing/",
-    "Description": "Various subreddit for discussion, help, buying and selling.",
+    "Description": "Reddit community sharing information and stories about vintage computer hardware and software.",
     "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
@@ -5213,17 +5222,17 @@
   {
     "Name": "RWAP Software",
     "URL": "https://www.rwapsoftware.co.uk/",
-    "Description": "Sinclair QL, Spectrum, C64 hardware and software",
-    "Category": "Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Sinclair/ZX",
+    "Description": "Retro-computing business offering software, replacement parts, peripherals, support, and second-hand hardware and software across Sinclair and other vintage platforms.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "rwap-software"
   },
   {
     "Name": "Sam Coupé Users Club",
     "URL": "https://www.samcoupe.com/",
-    "Description": "SAM Coupé community site with user resources, news, and links for the surviving hardware and software community.",
-    "Category": "Communities & Forums, Documentation & Wikis",
+    "Description": "Quazar’s SAM Coupé site with news, games and utilities, custom hardware, repairs and spares, and product ordering.",
+    "Category": "Hardware & Parts, News & Blogs, Repair & Services, Software & Games, Vendors & Stores",
     "Brands": "Sam Coupé",
     "Language": "English",
     "ID": "sam-coupe-users-club"
@@ -5258,8 +5267,8 @@
   {
     "Name": "ScummVM",
     "URL": "https://www.scummvm.org/",
-    "Description": "ScummVM project Discord for developer discussion, user support, and release updates.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "Software project that runs more than 325 classic graphical adventure and role-playing games on many platforms using the games’ data files; it replaces game executables rather than emulating hardware.",
+    "Category": "Communities & Forums, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "scummvm"
@@ -5276,8 +5285,8 @@
   {
     "Name": "Seasip Compaq Info",
     "URL": "https://seasip.info/VintagePC/compaq.html",
-    "Description": "Technical information and documentation for Compaq Portable and DeskPro vintage computers.",
-    "Category": "Hardware & Parts",
+    "Description": "Technical reference pages for vintage PCs, including Compaq Portable and Deskpro hardware, video modes, firmware, switches, and software.",
+    "Category": "Documentation & Wikis",
     "Brands": "Compaq",
     "Language": "English",
     "ID": "seasip-compaq-info"
@@ -5303,7 +5312,7 @@
   {
     "Name": "Sega-16 Forums",
     "URL": "https://www.sega-16forums.com/forum",
-    "Description": "Sega Genesis/Mega Drive and other Sega console forums",
+    "Description": "Sega gaming forum covering Master System, Genesis/Mega Drive, Sega CD, 32X, Saturn, Dreamcast, arcade games, technical help, homebrew, and member trading.",
     "Category": "Communities & Forums",
     "Brands": "Sega",
     "Language": "English",
@@ -5312,9 +5321,9 @@
   {
     "Name": "SellMyRetro",
     "URL": "https://www.sellmyretro.com/",
-    "Description": "Sinclair Spectrum, ZX81, peripherals, hobbyist boards",
-    "Category": "Communities & Forums, Hardware & Parts, Vendors & Stores",
-    "Brands": "Sinclair/ZX, Various",
+    "Description": "Online marketplace and auction site for retro computers, consoles, vintage electronics, hardware, software, and related accessories, with fixed-price and auction listings.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "sellmyretro"
   },
@@ -5339,17 +5348,17 @@
   {
     "Name": "Shareware Plus",
     "URL": "https://sharewareplus.blogspot.com/",
-    "Description": "Amiga software, hardware, peripherals, books",
-    "Category": "News & Blogs, Vendors & Stores",
-    "Brands": "Amiga",
+    "Description": "Commodore-focused blog and store offering hardware and peripherals, including SD2IEC interfaces, Tapecart readers, and over-voltage protection for C64, C128, and VIC-20 systems.",
+    "Category": "Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "shareware-plus"
   },
   {
     "Name": "Sharp MZ Computing Archive",
     "URL": "https://www.sharpmz.net/",
-    "Description": "Detailed technical specifications and information for Sharp MZ series computers (MZ-40K, MZ-80, MZ-700, MZ-800, MZ-3500, MZ-5600, MZ-6500). Includes hardware documentation, software downloads, and community resources.",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Reference site with detailed information about Sharp MZ-series computers, including the MZ-40K, MZ-80, MZ-700/800, MZ-3500, MZ-5600, MZ-6500, and related models.",
+    "Category": "Documentation & Wikis",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "sharp-mz-computing-archive"
@@ -5357,7 +5366,7 @@
   {
     "Name": "Sharp MZ Emulator (mz800emu)",
     "URL": "https://github.com/michalhucik/mz800emu",
-    "Description": "Sharp MZ-800 emulator for modern systems, supporting MZF tape images and various Sharp MZ models.",
+    "Description": "Open-source emulator for Sharp MZ-800, MZ-700, and MZ-1500 computers, developed for Linux and Windows with SDL3 and ImGui.",
     "Category": "Emulation & FPGA",
     "Brands": "Sharp",
     "Language": "English",
@@ -5384,8 +5393,8 @@
   {
     "Name": "Sharp Pocket Computers",
     "URL": "https://www.sharppocketcomputers.com/",
-    "Description": "Spare parts, accessories, and documentation for Sharp pocket computers and terminals.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference catalog of Sharp pocket computers and related calculators, with accessory listings, manuals, and historical information.",
+    "Category": "Documentation & Wikis",
     "Brands": "Sharp",
     "Language": "English",
     "ID": "sharp-pocket-computers"
@@ -5393,7 +5402,7 @@
   {
     "Name": "SheepShaver",
     "URL": "https://www.emaculation.com/doku.php/sheepshaver",
-    "Description": "Macintosh PowerPC emulator",
+    "Description": "Open-source PowerPC Macintosh emulator for running Mac OS versions 7.5.2 through 9.0.4 on macOS, Windows, and Linux.",
     "Category": "Emulation & FPGA",
     "Brands": "Apple",
     "Language": "English",
@@ -5402,7 +5411,7 @@
   {
     "Name": "Shovel Knight Pocket Dungeon",
     "URL": "https://yachtclubgames.com/games/shovel-knight-pocket-dungeon",
-    "Description": "Retro-inspired puzzle game",
+    "Description": "Action-puzzle game combining falling-block mechanics with combat, equipment collection, boss fights, a solo campaign, and two-player versus mode.",
     "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
@@ -5420,7 +5429,7 @@
   {
     "Name": "Silly Venture",
     "URL": "https://www.sillyventure.eu/",
-    "Description": "Atari-focused demo-scene party in Poland with competitions, showcases, and community events. Polska impreza sceny demo Atari z konkursami, pokazami i wydarzeniami społecznościowymi.",
+    "Description": "Polska impreza sceny Atari z konkursami, pokazami dem i wydarzeniami społecznościowymi. Polish Atari demo-scene party featuring competitions, demo showcases, and community events.",
     "Category": "Events & Shows, Software & Games",
     "Brands": "Atari",
     "Language": "Polish, English",
@@ -5429,9 +5438,9 @@
   {
     "Name": "Silverwand Software Collection",
     "URL": "https://sites.google.com/view/silverwandsoftware",
-    "Description": "Collection of vintage Apple software and gaming resources.",
+    "Description": "Personal software collection by developer Brendan Bellina, including Apple II and Macintosh programs, multi-platform game modifications, widgets, and video backgrounds.",
     "Category": "Software & Games",
-    "Brands": "Apple",
+    "Brands": "Various",
     "Language": "English",
     "ID": "silverwand-software-collection"
   },
@@ -5456,8 +5465,8 @@
   {
     "Name": "Sinclair ZX Spectrum Next Team",
     "URL": "https://www.specnext.com/",
-    "Description": "Spectrum Next hardware and licensed games",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Official project site for the Spectrum Next, with FPGA computer designs, hardware and software information, downloads, documentation, community forums, and a shop.",
+    "Category": "Communities & Forums, Hardware & Parts, Software & Games",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "sinclair-zx-spectrum-next-team"
@@ -5483,9 +5492,9 @@
   {
     "Name": "SNESdrunk",
     "URL": "https://www.youtube.com/SNESdrunk",
-    "Description": "Retro reviews. Concise reviews.",
+    "Description": "Video reviews of games across Super Nintendo, NES, Nintendo 64, Switch, Sega Genesis/Mega Drive, and arcade platforms.",
     "Category": "YouTube & Social Channels",
-    "Brands": "Nintendo, Sega",
+    "Brands": "Nintendo, Sega, Various",
     "Language": "English",
     "ID": "snesdrunk"
   },
@@ -5510,9 +5519,9 @@
   {
     "Name": "Sordan.ie",
     "URL": "https://sordan.ie/",
-    "Description": "Cables, PSUs, SD2IEC, adapters for Commodore and others",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Amiga, Atari",
+    "Description": "Online store for retro-computing hardware, adapters, storage, ROMs, and software products for systems including Amiga, Commodore, Atari, Apple II, and PC.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "sordan-ie"
   },
@@ -5555,8 +5564,8 @@
   {
     "Name": "Stairway to Hell (Acorn)",
     "URL": "https://www.stairwaytohell.com/",
-    "Description": "Archive of Acorn BBC Micro and Electron software, documentation, and disk images.",
-    "Category": "Software & Games",
+    "Description": "BBC Micro and Acorn Electron software archive with game and program indexes, disk and tape images, and guidance for using archived software with emulators or real hardware.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Acorn/BBC",
     "Language": "English",
     "ID": "stairway-to-hell-acorn"
@@ -5573,7 +5582,7 @@
   {
     "Name": "Stardot (Acorn User Forum)",
     "URL": "https://stardot.org.uk/forums/",
-    "Description": "Acorn/BBC user forums, marketplace section",
+    "Description": "Community forum for Acorn computers and emulators, with sections for BBC Micro, Electron, Atom, Archimedes, hardware, software, programming, events, and trading.",
     "Category": "Communities & Forums",
     "Brands": "Acorn/BBC",
     "Language": "English",
@@ -5582,8 +5591,8 @@
   {
     "Name": "Steam (retro reissues)",
     "URL": "https://store.steampowered.com/",
-    "Description": "Retro game reissues and remasters for PC",
-    "Category": "Hardware & Parts, Vendors & Stores",
+    "Description": "PC game storefront with a broad catalog that includes classic games, retro collections, remasters, and retro-computing emulation software.",
+    "Category": "Software & Games, Vendors & Stores",
     "Brands": "PC",
     "Language": "English",
     "ID": "steam-retro-reissues"
@@ -5591,7 +5600,7 @@
   {
     "Name": "Steem SSE",
     "URL": "https://sourceforge.net/projects/steemsse/",
-    "Description": "Atari ST emulator (Steem continuation)",
+    "Description": "Updated version of the Steem Atari ST emulator, with improved emulation and support for Atari ST disk-image formats.",
     "Category": "Emulation & FPGA",
     "Brands": "Atari",
     "Language": "English",
@@ -5600,8 +5609,8 @@
   {
     "Name": "Steve's Retro Gaming - Aquarius FAQ",
     "URL": "https://stevesretrogaming.com/mattel-aquarius-faq/",
-    "Description": "Comprehensive FAQ for the Mattel Aquarius computer covering hardware, software, and peripherals.",
-    "Category": "Hardware & Parts",
+    "Description": "Reference FAQ for the Mattel Aquarius, covering its history and specifications, software, accessories, unreleased items, documentation, and emulation.",
+    "Category": "Documentation & Wikis",
     "Brands": "Aquarius",
     "Language": "English",
     "ID": "steves-retro-gaming-aquarius-faq"
@@ -5609,18 +5618,18 @@
   {
     "Name": "Stewart Newfeld",
     "URL": "https://www.zebrasystems.com",
-    "Description": "Stewart Newfeld Timex TS1000 & Sinclair ZX81 products An extensive selection of Timex 1000 / Sinclair ZX81 computers, printers, kits, books, cassette softwar...",
+    "Description": "Timex/Sinclair supplier offering ZX81 and TS1000 computers, kits, upgrades, keyboards, replacement parts, manuals, books, and software.",
     "Category": "Hardware & Parts, Vendors & Stores",
-    "Brands": "Atari, Sinclair/ZX",
+    "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "stewart-newfeld"
   },
   {
     "Name": "Stone Age Gamer",
     "URL": "https://stoneagegamer.com/",
-    "Description": "EverDrive flash carts, SNES, NES, N64 accessories",
+    "Description": "Retro-gaming retailer selling games, consoles, accessories, EverDrive flash carts, hardware modifications, and repair services across multiple platforms.",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Nintendo, Sega",
+    "Brands": "Various",
     "Language": "English",
     "ID": "stone-age-gamer"
   },
@@ -5636,9 +5645,9 @@
   {
     "Name": "Style64",
     "URL": "https://style64.org/",
-    "Description": "Style64 Style64 - We make demos, tools, and toys for your Commodore Business Machine We make demos, tools, and toys for your Commodore Business Machine",
-    "Category": "Repair & Services, Software & Games",
-    "Brands": "Apple, Atari, Commodore, Nintendo",
+    "Description": "Commodore-focused development group creating demos, utilities, games, and tools, including disk-image software, BBS terminals, and cross-assemblers.",
+    "Category": "Software & Games",
+    "Brands": "Commodore",
     "Language": "English",
     "ID": "style64"
   },
@@ -5663,17 +5672,17 @@
   {
     "Name": "Svenska Commodoreklubben",
     "URL": "https://commodore.se/",
-    "Description": "Svensk Commodore-klubb med forumdiskussioner. Svensk community for Commodore-entusiaster med fokus pa C64, Amiga och retro-datorer.",
-    "Category": "Communities & Forums, Repair & Services",
+    "Description": "Rikstäckande förening för Commodore-entusiaster, med webb, sociala medier och datorträffar som främjar intresset för och bevarandet av äldre datorer. National Swedish club for Commodore enthusiasts, with online and in-person activities supporting interest in and preservation of older computers.",
+    "Category": "Communities & Forums",
     "Brands": "Commodore, Amiga",
-    "Language": "Swedish",
+    "Language": "Swedish, English",
     "ID": "svenska-commodoreklubben"
   },
   {
     "Name": "System Source Computer Museum",
     "URL": "https://museum.syssrc.com/",
-    "Description": "Located in Hunt Valley, MD, USA. Focus on Computers from 1950s–2000s. Tours by appointment; large hands-on collection.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Computer museum in Hunt Valley, Maryland, preserving computing history with exhibits of mainframes, minicomputers, vintage microcomputers, telecommunications equipment, calculators, and game systems; tours and events are available.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
     "ID": "system-source-computer-museum"
@@ -5690,8 +5699,8 @@
   {
     "Name": "Tandy Retro Show",
     "URL": "https://tandyretroshow.com/",
-    "Description": "Online Tandy and Radio Shack computing show with presentations, exhibits, and community participation.",
-    "Category": "Events & Shows, Communities & Forums",
+    "Description": "Virtual showcase for Tandy and Radio Shack systems, with project presentations, exhibits, and streamed talks.",
+    "Category": "Events & Shows",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "tandy-retro-show"
@@ -5699,8 +5708,8 @@
   {
     "Name": "Tandy Showcase",
     "URL": "https://tandyshowcase.com",
-    "Description": "Resource and showcase site dedicated to Tandy/Radio Shack computers.",
-    "Category": "Communities & Forums, Hardware & Parts",
+    "Description": "Private collection archive documenting Tandy and Radio Shack computing and corporate history through artifacts, exhibits, scans, and research.",
+    "Category": "Preservation & Archives",
     "Brands": "Tandy/Radio Shack",
     "Language": "English",
     "ID": "tandy-showcase"
@@ -5717,7 +5726,7 @@
   {
     "Name": "Tech Dungeon",
     "URL": "https://techdungeon.xyz",
-    "Description": "Retro systems, joysticks, and accessories. Store and parts.",
+    "Description": "Online store for retro-computing joystick adapters, controllers, cartridge trays, and other accessories, with product information and event updates.",
     "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Various",
     "Language": "English",
@@ -5753,9 +5762,9 @@
   {
     "Name": "Terraonion",
     "URL": "https://shop.terraonion.com/",
-    "Description": "MODE optical drive emulator, MegaSD, NeoSD",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Sega",
+    "Description": "Online store for hardware add-ons, flash cartridges, and optical-disc emulators for multiple retro console platforms.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "terraonion"
   },
@@ -5771,16 +5780,16 @@
   {
     "Name": "TexElec",
     "URL": "https://texelec.com/",
-    "Description": "TI-99/4A, C64, VIC-20 modern peripherals and carts",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, TI",
+    "Description": "Online store for retro-computing hardware and upgrades, including cartridges, adapters, storage, and expansion products for TI-99/4A, Commodore, Atari, and other systems.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "texelec"
   },
   {
     "Name": "Thalamus Digital",
     "URL": "https://thalamusdigital.itch.io/roguecraft",
-    "Description": "Roguecraft boxed CD release",
+    "Description": "Digital listing for Roguecraft, a turn-based roguelike for Commodore Amiga, offered as downloadable disk-image files for emulation or use with real hardware.",
     "Category": "Software & Games",
     "Brands": "Amiga",
     "Language": "English",
@@ -5816,27 +5825,27 @@
   {
     "Name": "The Brewing Academy",
     "URL": "https://www.thebrewingacademy.com/",
-    "Description": "Commodore, Amiga, TI parts and modern upgrades",
+    "Description": "Online store for aftermarket hardware, homebrew cartridges, upgrades, and repair or installation services for retro computers and consoles including TI, Atari, Commodore, and Amiga.",
     "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore, TI",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-brewing-academy"
   },
   {
     "Name": "The Future Was 8-Bit",
     "URL": "https://www.thefuturewas8bit.com/",
-    "Description": "ZX Spectrum, C64, VIC-20 peripherals, parts, modern add-ons",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Commodore, Sinclair/ZX",
+    "Description": "Online store for 8-bit computer hardware add-ons, games, and spare parts for Commodore, Sinclair, Amstrad, and Acorn/BBC systems.",
+    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
+    "Brands": "Acorn/BBC, Amstrad, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "the-future-was-8-bit"
   },
   {
     "Name": "The High Nibble",
     "URL": "https://thehighnibble.com/",
-    "Description": "Technical blog, some custom hardware for sale",
-    "Category": "Hardware & Parts, News & Blogs, Repair & Services",
-    "Brands": "Commodore, Various",
+    "Description": "Retro-computing hardware projects and technical reference for IMSAI, Cromemco, and S-100 systems, with kits and build documentation for sale.",
+    "Category": "Documentation & Wikis, Hardware & Parts, News & Blogs, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-high-nibble"
   },
@@ -5852,8 +5861,8 @@
   {
     "Name": "The Intellivisionaries Podcast",
     "URL": "http://intellivisionaries.com",
-    "Description": "Podcast focused on Mattel Intellivision history, games, and community.",
-    "Category": "Communities & Forums, Podcasts & Audio",
+    "Description": "Podcast about Mattel Intellivision games and history, featuring news, listener feedback, and interviews.",
+    "Category": "Podcasts & Audio",
     "Brands": "Intellivision",
     "Language": "English",
     "ID": "the-intellivisionaries-podcast"
@@ -5879,9 +5888,9 @@
   {
     "Name": "The National Museum of Computing (TNMOC)",
     "URL": "https://www.tnmoc.org/",
-    "Description": "Museum at Bletchley Park with working historic computers, exhibitions, and online material covering early machines through the personal-computer era.",
-    "Category": "Museums & Exhibits, Preservation & Archives, Documentation & Wikis",
-    "Brands": "DEC, IBM, Acorn/BBC, PC, Apple, Various",
+    "Description": "Computer museum at Bletchley Park with restored machines spanning codebreaking and early computing through personal computers, shown in exhibitions and galleries.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-national-museum-of-computing-tnmoc"
   },
@@ -5915,7 +5924,7 @@
   {
     "Name": "The Retro Collective (Website)",
     "URL": "https://www.retrocollective.co.uk/",
-    "Description": "Online museum and archive of retro computing history, featuring detailed articles on vintage hardware, software, and the history of computing through hands-on exhibits and collections.",
+    "Description": "UK museum group with The Cave computer and console museum and the Arcade Archive coin-operated games museum, offering hands-on exhibits, visits, and events.",
     "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "English",
@@ -5960,8 +5969,8 @@
   {
     "Name": "The Southern AMIS Projects",
     "URL": "https://www.southernamis.com",
-    "Description": "Designs, restores, and runs Atari Bulletin Board Systems, preserving AMIS legacy.",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services, Vendors & Stores",
+    "Description": "Restores and runs an Atari 8-bit BBS network, with connection guides, multiple bulletin boards, downloads, forums, and preservation projects.",
+    "Category": "Communities & Forums, Internet & Networking",
     "Brands": "Atari",
     "Language": "English",
     "ID": "the-southern-amis-projects"
@@ -5978,9 +5987,9 @@
   {
     "Name": "The Stop Bits",
     "URL": "https://thestopbits.net",
-    "Description": "The Stop Bits The Stop Bits - a nerdy rock band Four YouTubers making music about (and sometimes with) vintage computers. Featuring Veronica Explains, The Ta...",
-    "Category": "Hardware & Parts, YouTube & Social Channels",
-    "Brands": "Atari",
+    "Description": "Nerdy rock band formed by four retro-computing YouTube creators, making songs about vintage computers and technology.",
+    "Category": "Podcasts & Audio",
+    "Brands": "Various",
     "Language": "English",
     "ID": "the-stop-bits"
   },
@@ -6023,9 +6032,9 @@
   {
     "Name": "Thingiverse",
     "URL": "https://www.thingiverse.com/",
-    "Description": "General 3D-printing library with retro-computer parts. Search by system name plus case, bracket, bezel, adapter, or replacement part, then review the model files.",
-    "Category": "Hardware & Parts, Repair & Services",
-    "Brands": "Atari, Amiga, Apple, Commodore, Various",
+    "Description": "Community library of downloadable 3D-printable designs, including user-created cases, adapters, mounts, and replacement parts for retro computers and other hardware.",
+    "Category": "Communities & Forums, Hardware & Parts",
+    "Brands": "Various",
     "Language": "English",
     "ID": "thingiverse"
   },
@@ -6051,7 +6060,7 @@
     "Name": "TI-99/4A Tech Pages",
     "URL": "https://www.unige.ch/medecine/nouspikel/ti99/titech.htm",
     "Description": "Extensive technical documentation for the TI-99/4A computer including hardware architecture, programming, and peripherals.",
-    "Category": "Hardware & Parts",
+    "Category": "Documentation & Wikis",
     "Brands": "TI",
     "Language": "English",
     "ID": "ti-99-4a-tech-pages"
@@ -6077,8 +6086,8 @@
   {
     "Name": "Timex Computer World",
     "URL": "https://www.timexsinclair.com/",
-    "Description": "Timex Sinclair clones, refurbs, parts",
-    "Category": "Communities & Forums, Hardware & Parts, Repair & Services",
+    "Description": "Reference and community resource for Sinclair and Timex/Sinclair computers, with model pages, hardware and software catalogs, downloadable programs, publications, user groups, and regular online meetings.",
+    "Category": "Communities & Forums, Documentation & Wikis, Software & Games",
     "Brands": "Sinclair/ZX, Timex",
     "Language": "English",
     "ID": "timex-computer-world"
@@ -6113,8 +6122,8 @@
   {
     "Name": "TOSEC (The Old School Emulation Center)",
     "URL": "https://www.tosecdev.org/",
-    "Description": "ROM sets, disk images, software preservation",
-    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
+    "Description": "Community project cataloging and preserving vintage computer and console software through DAT files and curated ROM, disk-image, and media collections.",
+    "Category": "Preservation & Archives, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "tosec-the-old-school-emulation-center"
@@ -6167,17 +6176,17 @@
   {
     "Name": "Tynemouth Software",
     "URL": "https://www.tindie.com/stores/tynemouth/",
-    "Description": "Spectrum diagnostics boards, refurbished ZX81 kits",
-    "Category": "Hardware & Parts, Repair & Services, Vendors & Stores",
-    "Brands": "Amiga, Commodore, Sinclair/ZX",
+    "Description": "Tynemouth Software store offering Minstrel ZX80/ZX81-compatible kits, expansion products, and vintage-computer boards, with kit and prebuilt options.",
+    "Category": "Hardware & Parts, Vendors & Stores",
+    "Brands": "Various",
     "Language": "English",
     "ID": "tynemouth-software"
   },
   {
     "Name": "Tynemouth Software Blog",
     "URL": "http://blog.tynemouthsoftware.co.uk/p/welcome.html",
-    "Description": "Repairs, diagnostics, adapters for Spectrum/Amiga,BBC,C64",
-    "Category": "Hardware & Parts, News & Blogs, Repair & Services",
+    "Description": "Technical blog documenting vintage-computer projects, repairs, diagnostics, upgrades, and adapter development across ZX81, Commodore, and other systems.",
+    "Category": "News & Blogs",
     "Brands": "Acorn/BBC, Amiga, Commodore, Sinclair/ZX",
     "Language": "English",
     "ID": "tynemouth-software-blog"
@@ -6185,8 +6194,8 @@
   {
     "Name": "Ultimate 1541/64 Projects",
     "URL": "https://ultimate64.com/",
-    "Description": "FPGA-based C64 and 1541 drive recreations",
-    "Category": "Emulation & FPGA, Repair & Services",
+    "Description": "Official store for Commodore 64/128 hardware, including the Ultimate-64 computer, 1541 drive emulation cartridges, and accessories.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "ultimate-1541-64-projects"
@@ -6230,8 +6239,8 @@
   {
     "Name": "Unofficial cores (MiST/MiSTer)",
     "URL": "https://github.com/mist-devel",
-    "Description": "Community FPGA cores for computers/consoles",
-    "Category": "Communities & Forums, Emulation & FPGA, Hardware & Parts",
+    "Description": "MiST FPGA development organization maintaining firmware, classic-computer and console cores, and related board tools.",
+    "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
     "ID": "unofficial-cores-mist-mister"
@@ -6239,8 +6248,8 @@
   {
     "Name": "UTM SE",
     "URL": "https://getutm.app/",
-    "Description": "PC emulator for iOS (i486/PowerPC), first on App Store",
-    "Category": "Emulation & FPGA, Vendors & Stores",
+    "Description": "UTM SE is the iOS edition of UTM for emulating older systems such as DOS and lightweight Linux using a slower interpreter.",
+    "Category": "Emulation & FPGA",
     "Brands": "PC",
     "Language": "English",
     "ID": "utm-se"
@@ -6248,8 +6257,8 @@
   {
     "Name": "Vampire (Apollo Team)",
     "URL": "https://www.apollo-computer.com/",
-    "Description": "Vampire FPGA accelerators for Amiga",
-    "Category": "Emulation & FPGA, Repair & Services, Vendors & Stores",
+    "Description": "Apollo Computer shop and project site for Vampire FPGA accelerators, Amiga-compatible computers, software, and accessories.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Vendors & Stores",
     "Brands": "Amiga",
     "Language": "English",
     "ID": "vampire-apollo-team"
@@ -6311,7 +6320,7 @@
   {
     "Name": "VCF SoCal",
     "URL": "https://www.vcfsocal.com/",
-    "Description": "Southern California vintage-computing festival with exhibits, vendors, talks, and hands-on activities. Explore classic computers, consoles, software, repairs, and collecting through displays and demonstrations. The event also includes consignment opportunities. Check the site for current schedules, exhibitors, vendors, and event updates.",
+    "Description": "Annual Southern California vintage-computing festival at the OC Fair & Event Center, with exhibits, talks, and hands-on activities. The next festival is scheduled for February 20–21, 2027.",
     "Category": "Events & Shows",
     "Brands": "DEC, Osbourne, Tandy/Radio Shack, TI, Sinclair/ZX, Various",
     "Language": "English",
@@ -6367,7 +6376,7 @@
     "URL": "https://vcfe.org/E/",
     "Description": "Munich vintage-computer festival with exhibits, talks, and historic machines. Münchner Vintage-Computer-Festival mit Ausstellungen, Vorträgen und historischen Maschinen.",
     "Category": "Events & Shows",
-    "Brands": "Acorn/BBC, Amiga, Apple, Commodore, Sinclair/ZX, Various",
+    "Brands": "Various",
     "Language": "English, German",
     "ID": "vcfe-vintage-computer-festival-europe"
   },
@@ -6393,7 +6402,7 @@
     "Name": "Vectrex",
     "URL": "https://vectrex.com/",
     "Description": "Official site for the Vectrex vector display console with history, games, and the new Vectrex Mini.",
-    "Category": "Emulation & FPGA",
+    "Category": "Hardware & Parts",
     "Brands": "Vectrex",
     "Language": "English",
     "ID": "vectrex"
@@ -6456,7 +6465,7 @@
     "Name": "VICE",
     "URL": "https://vice-emu.sourceforge.io/",
     "Description": "Versatile Commodore Emulator (C64, C128, VIC20, PET, Plus/4)",
-    "Category": "Emulation & FPGA, Hardware & Parts, Repair & Services",
+    "Category": "Emulation & FPGA",
     "Brands": "Commodore",
     "Language": "English",
     "ID": "vice"
@@ -6464,8 +6473,8 @@
   {
     "Name": "Vinpaq",
     "URL": "https://vinpaq.com/",
-    "Description": "Vintage Compaq Portable resource with repair guides, parts information, and technical documentation.",
-    "Category": "Hardware & Parts",
+    "Description": "Vintage Compaq collection site documenting portables, laptops, and handheld devices, with a WhatsApp community for Compaq discussion and help.",
+    "Category": "Communities & Forums, Preservation & Archives",
     "Brands": "Compaq",
     "Language": "English",
     "ID": "vinpaq"
@@ -6473,8 +6482,8 @@
   {
     "Name": "Vintage Apple Computer of Illinois",
     "URL": "https://vintageapplecomputers.com/",
-    "Description": "Vintage Apple computer restoration and sales, offering working systems, parts, and repairs.",
-    "Category": "Vendors & Stores",
+    "Description": "Online shop for professionally restored vintage Apple computers, peripherals, software, and replacement parts, with select non-Apple items.",
+    "Category": "Hardware & Parts, Vendors & Stores",
     "Brands": "Apple",
     "Language": "English",
     "ID": "vintage-apple-computer-of-illinois"
@@ -6482,8 +6491,8 @@
   {
     "Name": "Vintage Computer Federation Museum @ InfoAge",
     "URL": "https://vcfed.org/vcf-museum/",
-    "Description": "Located in Wall, NJ, USA. Focus on Computers from 1960s–1990s. VCF museum space within InfoAge campus.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Museum at InfoAge Science Center in Wall, New Jersey, displaying the Vintage Computer Federation's curated collection of historic computing artifacts.",
+    "Category": "Museums & Exhibits, Preservation & Archives",
     "Brands": "Various",
     "Language": "English",
     "ID": "vintage-computer-federation-museum-infoage"
@@ -6519,7 +6528,7 @@
     "Name": "Vintage Is The New Old",
     "URL": "https://www.vintageisthenewold.com/",
     "Description": "Retro computing and gaming news site covering Commodore, Amiga, Atari, and more",
-    "Category": "News & Blogs, Repair & Services",
+    "Category": "News & Blogs",
     "Brands": "Amiga, Atari, Commodore",
     "Language": "English",
     "ID": "vintage-is-the-new-old"
@@ -6527,8 +6536,8 @@
   {
     "Name": "VintageApple Macworld Library",
     "URL": "https://vintageapple.org/macworld/",
-    "Description": "Complete Macworld magazine archive from 1984 through 2005. All issues beautifully restored and downloadable as PDFs, covering the entire history of the Macintosh platform.",
-    "Category": "Preservation & Archives, Documentation & Wikis, News & Blogs",
+    "Description": "A restored PDF archive of Macworld magazine issues from 1984 through 2005, with a catalog sortable by issue and scan date.",
+    "Category": "Preservation & Archives, News & Blogs",
     "Brands": "Apple",
     "Language": "English",
     "ID": "vintageapple-macworld-library"
@@ -6545,7 +6554,7 @@
   {
     "Name": "Virtual x86 (copy.sh)",
     "URL": "https://copy.sh/v86/",
-    "Description": "In-browser x86 PC emulator running various operating systems including classic Mac OS, Windows, and Linux.",
+    "Description": "In-browser x86 emulator with a catalog of bootable Linux, BSD, Windows, Unix-like, DOS, and other operating systems.",
     "Category": "Emulation & FPGA",
     "Brands": "Various",
     "Language": "English",
@@ -6572,9 +6581,9 @@
   {
     "Name": "Wafflenet",
     "URL": "https://wafflenet.com",
-    "Description": "Wafflenet The OPL Archive The OPL Archive is a tribute to the Yamaha OPL series FM synthesis chips and their historic significance within the PC music scene ...",
-    "Category": "Hardware & Parts",
-    "Brands": "Apple, Atari, PC",
+    "Description": "Personal retrocomputing and gaming site with a computer collection, BIOS dumps for historical and maintenance use, software and game projects, music, and a separate archive of Yamaha OPL2/OPL3 music.",
+    "Category": "Preservation & Archives, Software & Games",
+    "Brands": "Various",
     "Language": "English",
     "ID": "wafflenet"
   },
@@ -6588,19 +6597,10 @@
     "ID": "walker-computer-solutions-facebook"
   },
   {
-    "Name": "WayForward / Limited Run",
-    "URL": "https://limitedrungames.com/",
-    "Description": "Shantae Advance released 2025 as physical cart",
-    "Category": "Hardware & Parts, Software & Games, Vendors & Stores",
-    "Brands": "Nintendo",
-    "Language": "English",
-    "ID": "wayforward-limited-run"
-  },
-  {
     "Name": "White Flag Computing",
     "URL": "https://www.whiteflagcomputing.com",
-    "Description": "Retro computing hardware projects and products.",
-    "Category": "Vendors & Stores",
+    "Description": "El Segundo computer repair service offering hardware repairs and upgrades, malware removal, PC and Mac setup, custom and gaming PCs, networking, backups, training and data recovery.",
+    "Category": "Repair & Services",
     "Brands": "Various",
     "Language": "English",
     "ID": "white-flag-computing"
@@ -6609,7 +6609,7 @@
     "Name": "Whizz80 Z80 Computer",
     "URL": "https://whizz80.com/",
     "Description": "Z80-based single-board computer project with build documentation, software, and hardware specifications.",
-    "Category": "Hardware & Parts",
+    "Category": "Hardware & Parts, Documentation & Wikis",
     "Brands": "Z80",
     "Language": "English",
     "ID": "whizz80-z80-computer"
@@ -6626,8 +6626,8 @@
   {
     "Name": "Wild Bits Computing",
     "URL": "https://wildbitscomputing.com/",
-    "Description": "The F256K2 (Wildbits/K2) is a modern FPGA-based 'new retro' home computer that combines 8/16-bit-style CPUs with advanced graphics, sound, and storage to recreate 1980s personal-computing feel on contemporary hardware.",
-    "Category": "Emulation & FPGA, Vendors & Stores",
+    "Description": "Maker of the Foenix F256x family of home computers, including the F256K2; its site invites preorder inquiries and links to product specifications, manuals and software documentation.",
+    "Category": "Hardware & Parts",
     "Brands": "Modern 8 & 16-bit Computing",
     "Language": "English",
     "ID": "wild-bits-computing"
@@ -6644,17 +6644,17 @@
   {
     "Name": "WinWorld",
     "URL": "https://winworldpc.com/",
-    "Description": "Online museum preserving vintage, abandoned, and pre-release software, with downloads for classic PC, Mac, Amiga, and other systems.",
-    "Category": "Hardware & Parts, Software & Games",
-    "Brands": "PC, Apple, Amiga, Various",
+    "Description": "Online museum preserving vintage, abandoned and pre-release software, with information, media and downloads for classic PC, Mac, Amiga and other computer systems.",
+    "Category": "Preservation & Archives, Software & Games",
+    "Brands": "PC, Apple, Amiga",
     "Language": "English",
     "ID": "winworld"
   },
   {
     "Name": "Wire Wrap Odyssey",
     "URL": "https://wirewrapodyssey.com",
-    "Description": "Blog documenting wire-wrap computer projects and techniques.",
-    "Category": "News & Blogs",
+    "Description": "Documentation for a home-built wire-wrap computer, covering circuit architecture, CPU and peripherals, video, software, construction, lessons learned and project media.",
+    "Category": "Documentation & Wikis",
     "Brands": "Various",
     "Language": "English",
     "ID": "wire-wrap-odyssey"
@@ -6662,8 +6662,8 @@
   {
     "Name": "Wisconsin Computer Club",
     "URL": "https://wisconsincomputerclub.com",
-    "Description": "Wisconsin Computer Club Wisconsin Computer Club Showcase A showcase of exhibits by Wisconsin Computer Club members",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Wisconsin Computer Club’s retro-computing forum for platform discussions, member projects and events, with community exhibits and dedicated buying, selling and wanted sections.",
+    "Category": "Communities & Forums",
     "Brands": "Various",
     "Language": "English",
     "ID": "wisconsin-computer-club"
@@ -6689,8 +6689,8 @@
   {
     "Name": "World of Spectrum",
     "URL": "https://worldofspectrum.org/",
-    "Description": "ZX Spectrum software, manuals, magazines",
-    "Category": "Documentation & Wikis, News & Blogs",
+    "Description": "The official Sinclair ZX Spectrum archive, with a searchable software collection, emulators, utilities, reference material and community forums.",
+    "Category": "Preservation & Archives, Software & Games, Documentation & Wikis",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "world-of-spectrum"
@@ -6725,9 +6725,9 @@
   {
     "Name": "XRoar Dragon Emulator",
     "URL": "https://www.6809.org.uk/xroar/index.shtml",
-    "Description": "XRoar is a Dragon 32/64 emulator for multiple platforms, supporting cassette and disk images with accurate hardware emulation.",
+    "Description": "Cross-platform emulator for Dragon 32/64, Tandy Colour Computer 1–3, MC-10 and related 8-bit machines, with downloads, manuals and browser-based XRoar Online.",
     "Category": "Emulation & FPGA",
-    "Brands": "Dragon",
+    "Brands": "Dragon, Tandy/Radio Shack",
     "Language": "English",
     "ID": "xroar-dragon-emulator"
   },
@@ -6761,8 +6761,8 @@
   {
     "Name": "Zap Coders",
     "URL": "https://zap-coders.com/",
-    "Description": "Zap Coders Zap Coders’ brand new game for the gameboy color Zap Coders’ new video game releasing this year for the gameboy color will be on display! Meet the...",
-    "Category": "Hardware & Parts, Software & Games",
+    "Description": "Small game-development group creating retro-style games. Its first title, Proxima B, has a Steam demo and a planned physical cartridge release; the site shares project news and updates.",
+    "Category": "Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "zap-coders"
@@ -6779,8 +6779,8 @@
   {
     "Name": "ZCOM Zuse-Computer-Museum",
     "URL": "https://www.zuse-computer-museum.com/",
-    "Description": "Museum in Hoyerswerda mit Fokus auf Konrad Zuses Rechner der 1930er bis 1990er Jahre. Prasentiert originale Zuse-Maschinen und die Entwicklung der Computertechnik in der DDR.",
-    "Category": "Hardware & Parts, Museums & Exhibits",
+    "Description": "Das ZCOM Zuse-Computer-Museum in Hoyerswerda erzählt die Geschichte des Computers und zeigt historische Zuse-Rechner. Seit dem 1. September 2026 ist das Museum für den öffentlichen Besucherverkehr geschlossen; gebuchte Workshops und Veranstaltungsreihen laufen bis zum 31. Dezember 2026. English: The ZCOM Zuse Computer Museum in Hoyerswerda explores computer history and presents historic Zuse computers. It has been closed to public visitors since September 1, 2026; booked workshops and event series continue through December 31, 2026.",
+    "Category": "Museums & Exhibits",
     "Brands": "Various",
     "Language": "German",
     "ID": "zcom-zuse-computer-museum"
@@ -6797,9 +6797,9 @@
   {
     "Name": "zigzagjoe",
     "URL": "https://zigzagjoe.com",
-    "Description": "zigzagjoe zigzagjoe's vintage I make upgrades for vintage macintoshes and other systems! I plan to exhibit some of my more recent projects and offerings for ...",
-    "Category": "Museums & Exhibits",
-    "Brands": "Apple, Atari",
+    "Description": "Personal site documenting hardware designs and upgrades for 68K Macintosh and NeXT systems, including accelerators, video cards, SCSI projects and interposers.",
+    "Category": "Documentation & Wikis, Hardware & Parts",
+    "Brands": "Apple",
     "Language": "English",
     "ID": "zigzagjoe"
   },
@@ -6815,8 +6815,8 @@
   {
     "Name": "ZuluSCSI",
     "URL": "https://github.com/ZuluSCSI/ZuluSCSI-firmware",
-    "Description": "Modern SD-card based SCSI emulator, firmware open",
-    "Category": "Emulation & FPGA, Repair & Services, Software & Games",
+    "Description": "Open-source firmware repository for the ZuluSCSI family of hardware devices, which emulate SCSI storage devices using disk images stored on an SD card.",
+    "Category": "Emulation & FPGA, Hardware & Parts, Software & Games",
     "Brands": "Various",
     "Language": "English",
     "ID": "zuluscsi"
@@ -6833,8 +6833,8 @@
   {
     "Name": "ZX Spectrum Discord (zx.tr)",
     "URL": "https://zx.tr/",
-    "Description": "The largest ZX Spectrum Discord server with over 400 members. Active emulator development, demoscene, pixel art, Sinclair BASIC and assembler channels, plus Next-gen Spectrum discussions.",
-    "Category": "Communities & Forums, Emulation & FPGA",
+    "Description": "English-language ZX Spectrum Discord community for emulator development, demoscene, pixel art, music, BASIC and assembler; hosted projects include BasinC and ZXDB Search.",
+    "Category": "Communities & Forums",
     "Brands": "Sinclair/ZX",
     "Language": "English",
     "ID": "zx-spectrum-discord-zx-tr"
