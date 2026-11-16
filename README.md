@@ -34,3 +34,12 @@ Do you want to submit a new resource, or change or remove an existing one?
 Found a bad or incorrect link?
 Want to discuss access or collaboration? Email ** picks.favored4z @ icloud . com **.
 
+## Other Public Projects
+
+- [AteBit.Tech](https://github.com/cooperman411/AteBitTech)
+- [AI Sales Prospecting & Outreach](https://github.com/cooperman411/ai-sales-prospecting-outreach)
+- [AI Social Publishing for Muse](https://github.com/cooperman411/ai-social-publishing)
+- [Hotel Group Sourcing Skill](https://github.com/cooperman411/hotel-group-rfp)
+- [Hotel Revenue Management Toolkit](https://github.com/cooperman411/hotel-revenue-management)
+- [PT/OS One](https://github.com/cooperman411/plain-text-os-one)
+- [PT/OS Workspace](https://github.com/cooperman411/plain-text-os)
