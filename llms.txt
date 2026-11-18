@@ -2,40 +2,40 @@
 > Hand-curated directory of 763 retro and vintage computing resources — repair services, hardware vendors, YouTube channels, community forums, and more. Amiga to ZX Spectrum and beyond.
 
 ## Core Pages
-- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all 763 entries
-- [Price Guide](https://atebit.tech/store/): find active eBay listings and asking prices
-- [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers
-- [About](https://atebit.tech/about.html): project background and contact
-- [Privacy](https://atebit.tech/privacy.html): no cookies, no stored IP addresses, no personal data; GoatCounter records page views and country only. Price Guide links are eBay Partner Network affiliate links
+- [Home / Directory](https://www.atebit.tech/): searchable, filterable directory of all 763 entries
+- [Price Guide](https://www.atebit.tech/store/): find active eBay listings and asking prices
+- [Classic Version](https://www.atebit.tech/classic/): plain HTML, works on vintage browsers
+- [About](https://www.atebit.tech/about.html): project background and contact
+- [Privacy](https://www.atebit.tech/privacy.html): hosting and analytics, Price Guide requests and eBay affiliate links, local theme storage, and contact email
 - [Newsletter](https://atebittech.substack.com): Substack updates
 
 ## Top Brand Pages
-- [Commodore (147)](https://atebit.tech/classic/commodore.html)
-- [Apple (108)](https://atebit.tech/classic/apple.html)
-- [Atari (86)](https://atebit.tech/classic/atari.html)
-- [Amiga (75)](https://atebit.tech/classic/amiga.html)
-- [PC (42)](https://atebit.tech/classic/pc.html)
-- [Sinclair/ZX (40)](https://atebit.tech/classic/sinclair-zx.html)
-- [Tandy/Radio Shack (28)](https://atebit.tech/classic/tandy-radio-shack.html)
-- [Nintendo (20)](https://atebit.tech/classic/nintendo.html)
-- [Amstrad (15)](https://atebit.tech/classic/amstrad.html)
-- [Acorn/BBC (14)](https://atebit.tech/classic/acorn-bbc.html)
-- [All 43 brands](https://atebit.tech/classic/)
+- [Commodore (147)](https://www.atebit.tech/classic/commodore.html)
+- [Apple (108)](https://www.atebit.tech/classic/apple.html)
+- [Atari (86)](https://www.atebit.tech/classic/atari.html)
+- [Amiga (75)](https://www.atebit.tech/classic/amiga.html)
+- [PC (42)](https://www.atebit.tech/classic/pc.html)
+- [Sinclair/ZX (40)](https://www.atebit.tech/classic/sinclair-zx.html)
+- [Tandy/Radio Shack (28)](https://www.atebit.tech/classic/tandy-radio-shack.html)
+- [Nintendo (20)](https://www.atebit.tech/classic/nintendo.html)
+- [Amstrad (15)](https://www.atebit.tech/classic/amstrad.html)
+- [Acorn/BBC (14)](https://www.atebit.tech/classic/acorn-bbc.html)
+- [All 43 brands](https://www.atebit.tech/classic/)
 
 ## Directory Categories
-- [Communities & Forums](https://atebit.tech/)
-- [Documentation & Wikis](https://atebit.tech/)
-- [Emulation & FPGA](https://atebit.tech/)
-- [Events & Shows](https://atebit.tech/)
-- [Hardware & Parts](https://atebit.tech/)
-- [Internet & Networking](https://atebit.tech/)
-- [Museums & Exhibits](https://atebit.tech/)
-- [News & Blogs](https://atebit.tech/)
-- [Operating Systems](https://atebit.tech/)
-- [Podcasts & Audio](https://atebit.tech/)
-- [Preservation & Archives](https://atebit.tech/)
-- [Repair & Services](https://atebit.tech/)
-- [Software & Games](https://atebit.tech/)
-- [Vendors & Stores](https://atebit.tech/)
-- [Web Tools & Browsers](https://atebit.tech/)
-- [YouTube & Social Channels](https://atebit.tech/)
+- [Communities & Forums](https://www.atebit.tech/)
+- [Documentation & Wikis](https://www.atebit.tech/)
+- [Emulation & FPGA](https://www.atebit.tech/)
+- [Events & Shows](https://www.atebit.tech/)
+- [Hardware & Parts](https://www.atebit.tech/)
+- [Internet & Networking](https://www.atebit.tech/)
+- [Museums & Exhibits](https://www.atebit.tech/)
+- [News & Blogs](https://www.atebit.tech/)
+- [Operating Systems](https://www.atebit.tech/)
+- [Podcasts & Audio](https://www.atebit.tech/)
+- [Preservation & Archives](https://www.atebit.tech/)
+- [Repair & Services](https://www.atebit.tech/)
+- [Software & Games](https://www.atebit.tech/)
+- [Vendors & Stores](https://www.atebit.tech/)
+- [Web Tools & Browsers](https://www.atebit.tech/)
+- [YouTube & Social Channels](https://www.atebit.tech/)

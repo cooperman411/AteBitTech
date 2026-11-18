@@ -137,8 +137,8 @@ def render_llms(entries: list[dict[str, str]], brand_hrefs: dict[str, str]) -> s
     brand_lines = []
     for brand, count in ranked[:10]:
         href = brand_hrefs.get(brand, "")
-        brand_lines.append(f"- [{brand} ({count})](https://atebit.tech/classic/{href})")
-    category_lines = [f"- [{category}](https://atebit.tech/)" for category in sorted(categories)]
+        brand_lines.append(f"- [{brand} ({count})](https://www.atebit.tech/classic/{href})")
+    category_lines = [f"- [{category}](https://www.atebit.tech/)" for category in sorted(categories)]
     return (
         "# AteBit Tech \u2014 Retro & Vintage Computing Database\n"
         f"> Hand-curated directory of {total} retro and vintage computing resources "
@@ -146,16 +146,16 @@ def render_llms(entries: list[dict[str, str]], brand_hrefs: dict[str, str]) -> s
         "and more. Amiga to ZX Spectrum and beyond.\n"
         "\n"
         "## Core Pages\n"
-        f"- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all {total} entries\n"
-        "- [Price Guide](https://atebit.tech/store/): find active eBay listings and asking prices\n"
-        "- [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers\n"
-        "- [About](https://atebit.tech/about.html): project background and contact\n"
-        "- [Privacy](https://atebit.tech/privacy.html): no cookies, no stored IP addresses, no personal data; GoatCounter records page views and country only. Price Guide links are eBay Partner Network affiliate links\n"
+        f"- [Home / Directory](https://www.atebit.tech/): searchable, filterable directory of all {total} entries\n"
+        "- [Price Guide](https://www.atebit.tech/store/): find active eBay listings and asking prices\n"
+        "- [Classic Version](https://www.atebit.tech/classic/): plain HTML, works on vintage browsers\n"
+        "- [About](https://www.atebit.tech/about.html): project background and contact\n"
+        "- [Privacy](https://www.atebit.tech/privacy.html): hosting and analytics, Price Guide requests and eBay affiliate links, local theme storage, and contact email\n"
         "- [Newsletter](https://atebittech.substack.com): Substack updates\n"
         "\n"
         "## Top Brand Pages\n"
         + "\n".join(brand_lines)
-        + f"\n- [All {len(brand_counts)} brands](https://atebit.tech/classic/)\n"
+        + f"\n- [All {len(brand_counts)} brands](https://www.atebit.tech/classic/)\n"
         "\n"
         "## Directory Categories\n"
         + "\n".join(category_lines)

@@ -1,216 +1,51 @@
 <!DOCTYPE html>
-<html data-theme="dark" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.atebit.tech/privacy.html">
 <title>Privacy — Ate Bit Tech</title>
-<meta name="description" content="Privacy policy for Ate Bit Tech. We don't collect personal data. Simple, transparent, CCPA and GDPR compliant.">
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<meta name="description" content="How Ate Bit Tech uses hosting, analytics, browser theme storage, contact email, and eBay listings and affiliate links.">
+<script>try { const theme = localStorage.getItem('atebit-theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) {}</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<style>
-:root[data-theme="dark"] {
-  --bg: #0f1115;
-  --fg: #e6e7ea;
-  --muted: #b8bcc4;
-  --card: #161a20;
-  --accent: #3ea6ff;
-  --border: #2a2f3a;
-  --amber: #ffb000;
-}
-
-:root.hc {
-  --bg: #000000;
-  --fg: #ffffff;
-  --muted: #ffffff;
-  --card: #000000;
-  --accent: #00ffff;
-  --border: #ffffff;
-}
-html, body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: 'Roboto Mono', monospace;
-}
-.title-font { font-family: 'VT323', monospace; }
-a { color: var(--accent); }
-.title-glow {
-  text-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent);
-}
-.glow-logo {
-  filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 12px var(--accent));
-}
-#brand-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.brand-block { text-align: center; }
-.brand-block img { display: block; margin-left: auto; margin-right: auto; }
-.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 8px 0 4px;
-  margin-top: -12px;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 480px) {
-  .site-nav { flex-wrap: wrap; justify-content: center; }
-}
-.site-nav a, .site-nav button {
-  font-family: 'VT323', monospace;
-  font-size: 1.3rem;
-  color: var(--muted);
-  text-decoration: none;
-  padding: 2px 12px;
-  border: 1px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
-  letter-spacing: 0.5px;
-  background: none;
-  cursor: pointer;
-}
-.site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
-.site-nav a.active { color: var(--accent); border-color: var(--border); }
-.content { max-width: 700px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8; }
-.content p { margin-bottom: 1rem; color: var(--muted); }
-.content h2 { font-family: 'VT323', monospace; font-size: 1.8rem; color: var(--fg); margin-top: 2rem; margin-bottom: 0.5rem; }
-.content ul { list-style: none; padding: 0; margin-bottom: 1rem; }
-.content ul li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); color: var(--muted); }
-.content ul li:before { content: '> '; color: var(--accent); }
-.highlight { color: var(--accent); }
-.last-updated { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 2rem; }
-</style>
+<link rel="stylesheet" href="/homepage.css">
+<script src="/appearance.js" defer></script>
+<noscript><style>.appearance{display:none!important}</style></noscript>
 </head>
 <body>
 
-<header class="max-w-6xl mx-auto my-6 px-2" id="brand-header"><div class="flex items-center justify-between gap-4">
-<div class="brand-block text-center my-6">
-<img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="./logo-wordmark-vt323-dark.png" width="1140" height="220" style="height:96px;width:auto;image-rendering:pixelated"/>
-<div class="mt-3">
-<h1 class="title-font title-glow text-2xl md:text-3xl">Retro &amp; Vintage Computing Database</h1>
-<p class="title-font title-glow text-2xl md:text-3xl">Amiga to ZX and Beyond</p>
-</div>
-</div>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="brand-header">
+  <a class="brand" href="/" aria-label="Ate Bit Tech home"><img class="mascot-image" src="/mascot.svg" alt=""><span class="wordmark" aria-hidden="true"></span></a>
+  <nav class="site-nav" aria-label="Site navigation"><a href="/#directory">Directory</a><a href="/store/">Price Guide</a><a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a><a href="/about.html">About</a><a href="/classic/">Retro Site</a></nav>
+  <div class="appearance" aria-label="Appearance controls"><button type="button" id="theme-toggle" aria-label="Switch color theme">☀ / ☾</button><button type="button" id="theme-device">Use device setting</button><button type="button" id="hc-toggle" aria-pressed="false">High contrast</button></div>
 </header>
+<main class="content" id="main" tabindex="-1">
+  <h1>Privacy notice</h1>
 
-<nav class="site-nav" aria-label="Site navigation">
-  <a href="/">Home</a>
-  <a href="/store/">Price Guide</a>
-  <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
-  <a href="/about.html">About</a>
-  <a href="/privacy.html" class="active">Privacy</a>
-  <button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">High Contrast</button>
-  <a aria-label="Retro site : works on old browsers without JavaScript" href="/classic/">Retro Site</a>
-</nav>
+  <h2>Hosting and analytics</h2>
+  <p>This site is hosted on <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages</a>. GitHub says it logs and stores visitors’ IP addresses for security. The live site also uses <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> to deliver and protect the site. Cloudflare may process network and request information, including IP addresses.</p>
 
-<main class="content">
-  <h2>Privacy Policy</h2>
+  <p>The homepage and Price Guide use <a href="https://www.goatcounter.com/help/privacy">GoatCounter</a> for traffic statistics. These can include pages visited, referrers, approximate location, browser and device information, screen width, and language. GoatCounter says its analytics do not use browser cookies. Its service uses IP and browser information temporarily in memory to count visits. The live site also loads <a href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a> to measure page performance.</p>
 
-  <p>Short version: <strong>I don't collect any personal data about you.</strong> There's nothing to sell, share, or lose.</p>
+  <h2>Price Guide and eBay</h2>
+  <p>The Price Guide loads styles and fonts from the <a href="https://fonts.googleblog.com/2022/11/your-privacy-and-google-fonts.html">Google Fonts service</a>. Those requests go directly to Google. When you search the Price Guide, your browser sends the search term and applicable marketplace and category to the Cloudflare-hosted pricing API. The API uses those search criteria to request current listings from the <a href="https://developer.ebay.com/develop/api/buy/browse_api">eBay Browse API</a>. Your browser may load listing photos from eBay’s image servers.</p>
 
-  <h2>What data is collected</h2>
+  <p>The Price Guide includes eBay Partner Network affiliate links. If you buy through one of these links, I may earn a commission. When you open a listing, eBay receives the request and may use affiliate tracking and cookies as described in <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260">eBay’s privacy notice</a>.</p>
 
-  <p>Almost nothing. This site uses <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, an open-source analytics service designed for privacy. It tracks:</p>
+  <h2>Appearance settings</h2>
+  <p>If you choose a light or dark theme, your browser stores the choice in local storage as <code>atebit-theme</code> so it applies across the homepage, About and Privacy. “Use device setting” removes the saved choice.</p>
 
-  <ul>
-    <li>Which pages are visited.</li>
-    <li>The approximate country of the visitor (from the first 2-3 digits of their IP, not the exact location, and we don't keep IP addresses.)</li>
-    <li>Browser type and screen size (for basic compatibility.)</li>
-    <li>The website you came from, if you followed a link here.</li>
-  </ul>
+  <h2>Contact email</h2>
+  <p>If you email me, I receive your email address and what you include in the message. I use that information to reply and handle your request. For privacy questions, <a href="mailto:picks.favored4z@icloud.com">email the site maintainer</a>.</p>
 
-  <p>GoatCounter does NOT use cookies. It does NOT store IP addresses. It does NOT track you across sites. It does NOT create profiles. It does NOT collect names, email addresses, or any personally identifiable information. The source code is public and anyone can verify this.</p>
-
-  <h2>What data is NOT collected</h2>
-
-  <ul>
-    <li>No names</li>
-    <li>No email addresses (unless you email me directly)</li>
-    <li>No IP addresses stored</li>
-    <li>No cookies</li>
-    <li>No tracking across websites</li>
-    <li>No user accounts</li>
-    <li>No login data</li>
-    <li>No payment information</li>
-  </ul>
-
-  <p>If you send me an email using the contact link on the site, I will see your email address in my inbox. I'll only use it to reply to your message. I won't add it to any list, share it, or use it for anything else.</p>
-
-  <h2>Affiliate links</h2>
-
-  <p>The Price Guide page contains affiliate links to eBay. If you click an affiliate link and make a purchase, eBay may pay me a small commission. eBay's use of your data is governed by <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-privacy-notice-privacy-policy?id=4260" target="_blank" rel="noopener">eBay's own privacy policy</a>. I do not receive any personal information about you from these transactions.</p>
-
-  <h2>Hosting</h2>
-
-  <p>This site is hosted on <a href="https://docs.github.com/en/site-policy/privacy-policies" target="_blank" rel="noopener">GitHub Pages</a>. GitHub may collect standard server logs (IP address, pages requested, timestamps) as part of operating the service. I don't have access to those logs. See GitHub's Privacy Policy for details.</p>
-
-  <h2>Your rights (CCPA &mdash; California)</h2>
-
-  <p>If you are a California resident, the California Consumer Privacy Act (CCPA) gives you the right to:</p>
-
-  <ul>
-    <li>Know what personal information is collected about you</li>
-    <li>Request deletion of your personal information</li>
-    <li>Opt out of the sale of your personal information</li>
-    <li>Not be discriminated against for exercising these rights</li>
-  </ul>
-
-  <p>Because I collect no personal data, there is nothing to disclose, delete, or sell. Your rights are fully honored by default. Similar laws exist in Virginia, Colorado, Connecticut, Utah, Oregon, Texas, Florida, Montana, Iowa, Delaware, Maryland, Minnesota, Tennessee, and Indiana. If you have questions, email <a href="mailto:picks.favored4z@icloud.com">picks.favored4z@icloud.com</a>.</p>
-
-  <h2>Your rights (GDPR &mdash; Europe)</h2>
-
-  <p>If you are in the European Union or European Economic Area, the General Data Protection Regulation (GDPR) gives you rights including:</p>
-
-  <ul>
-    <li>The right to be informed about data collection</li>
-    <li>The right of access to your data</li>
-    <li>The right to erasure ("right to be forgotten")</li>
-    <li>The right to restrict processing</li>
-    <li>The right to data portability</li>
-  </ul>
-
-  <p>As with CCPA, no personal data is collected. There is nothing to access, erase, restrict, or port. Your rights are fully protected. The lawful basis for using GoatCounter is legitimate interest in understanding which pages are popular, with minimal privacy impact.</p>
-
-  <h2>Cookies</h2>
-
-  <p>This site does not set any cookies. GoatCounter does not use cookies. eBay affiliate links do not set cookies from this site (eBay may set its own cookies when you visit eBay.com, which is governed by their privacy policy).</p>
-
-  <h2>International visitors</h2>
-
-  <p>The approximate country-level data from GoatCounter is used only to understand what regions the site's visitors come from. This is the least precise location data possible (country level only, no state/province/county/region or city). No location data is stored or shared.</p>
-
-  <h2>Changes to this policy</h2>
-
-  <p>If this policy changes, the "Last updated" date below will reflect that. I'll keep it accurate and honest.</p>
-
-  <p class="last-updated">Last updated: June 26, 2026</p>
-
-  <p style="text-align:center;margin-top:2rem;">
-    Questions? <a href="mailto:picks.favored4z@icloud.com">Email the webmaster</a>
-  </p>
+  <p class="last-updated">Last updated: November 18, 2026</p>
 </main>
 
 <footer style="text-align:center;padding:2rem 1rem;font-size:0.8rem;color:var(--muted);border-top:1px solid var(--border);max-width:700px;margin:0 auto;">
-  <a href="/">Home</a> &nbsp;|&nbsp; <a href="/store/">Price Guide</a> &nbsp;|&nbsp; <a href="/about.html">About</a>
+  <a href="mailto:picks.favored4z@icloud.com?subject=Suggest%20a%20resource">Suggest a resource</a> &nbsp;|&nbsp; <a href="mailto:picks.favored4z@icloud.com?subject=Report%20a%20bad%20link">Report a bad link</a> &nbsp;|&nbsp; <a href="/">Home</a> &nbsp;|&nbsp; <a href="/store/">Price Guide</a> &nbsp;|&nbsp; <a href="/about.html">About</a>
 </footer>
 
-<script>
-(function(){
-  var btn = document.getElementById('hc-toggle');
-  if(btn){
-    btn.addEventListener('click', function(){
-      document.documentElement.classList.toggle('hc');
-      btn.setAttribute('aria-pressed', document.documentElement.classList.contains('hc') ? 'true' : 'false');
-    });
-    btn.setAttribute('aria-pressed','false');
-  }
-})();
-</script>
+
 </body>
 </html>

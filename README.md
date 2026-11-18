@@ -1,27 +1,27 @@
 # Ate Bit Tech
 
-A curated, searchable index of retro and vintage computing resources — from Amiga to ZX Spectrum and beyond — published at **https://atebit.tech**.
+A curated, searchable index of retro and vintage computing resources — from Amiga to ZX Spectrum and beyond — published at **https://www.atebit.tech**.
 About: Community project. No affiliation with listed entities.
 
 ## Why
 Centralize vendors, parts suppliers, magazines, emulators, museums, forums, and communities so newcomers and veterans can find what they need fast.
 
 ## Features
-- Fast client-side filtering (category, brand of computer/console, language)
+- Client-side keyword search and shareable category, brand, and language filters
 - No-JS fallback list for accessibility
 - High-contrast toggle 
 - Schema.org metadata for better search previews
-- Privacy-first analytics: GoatCounter counts page views and country only — no cookies, no stored IP addresses, no personal data
+- [Privacy notice](https://www.atebit.tech/privacy.html) covers hosting and analytics, Price Guide requests and eBay affiliate links, local theme storage, and contact email
 
 ## Stack
-- Static HTML + Tailwind (CDN)
+- Static HTML, local CSS and JavaScript for the directory, and Tailwind (CDN) for the Price Guide
 - Generated from `data/directory.json` — edit the data, then run `python3 scripts/build-directory.py --write`
 - `python3 scripts/validate-site.py` verifies the data, the modern page, and all 45 classic pages stay in sync; it runs on every push via GitHub Actions
 - Hosted on GitHub Pages
 
 ## Use or run the project
 
-Browse the live directory at [AteBit.Tech](https://atebit.tech). To work with the site locally, use GitHub's **Code → Download ZIP** or clone the source:
+Browse the live directory at [AteBit.Tech](https://www.atebit.tech). To work with the site locally, use GitHub's **Code → Download ZIP** or clone the source:
 
 ```bash
 git clone https://github.com/cooperman411/AteBitTech.git
