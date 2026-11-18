@@ -586,7 +586,7 @@ function render() {
       const p = formatPrice(i.price, i.currency || currency);
       const img = i.image || '';
       const ih = img
-        ? '<img src="' + img + '" alt="" loading="lazy" width="280" height="180" onerror="this.parentElement.innerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
+        ? '<img src="' + img + '" alt="" loading="lazy" width="280" height="180" onerror="this.outerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
         : '<div style="height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9670;</div>';
       const catLabel = i._cat === 'Vintage Computers & Mainframes' ? 'System'
         : i._cat === 'Vintage Parts & Accessories' ? 'Parts'
