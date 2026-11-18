@@ -27,7 +27,7 @@ Browse the live directory at [AteBit.Tech](https://atebit.tech). To work with th
 git clone https://github.com/cooperman411/AteBitTech.git
 ```
 
-After editing directory data, use the build and validation commands under **Stack**. This is a website source repository; the [Skills CLI](https://skills.sh/docs) installation commands used by the AI-skill projects do not apply.
+After editing directory data, use the build and validation commands under **Stack**. This repository provides the source for the live website and its directory-building workflow.
 
 ## License and Use
 This repository uses different permissions for different kinds of material:
