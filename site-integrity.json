@@ -10,10 +10,10 @@
     "Language"
   ],
   "protectedFiles": {
-    "store/index.html": "87482312f4bdfce049bbb10548cae3793f6846b4c6d95d1a72abc7988d3f6e99",
-    "worker/README.md": "238d6088383e53467984b4a491627625a4f4b47a5e5f097b1acb7ad553f4f3bb",
-    "worker/ebay-pricing.js": "25757fa4756ea1a691a05cd8fae03fa7564c4d03b2bebafc0bc3534023a06fc0",
-    "worker/wrangler.toml": "f0cfbb915f899d14fa4601048e8b7c168ac28ae425a854e9bb8e17ea82d660ba"
+    "store/index.html": "ac571e262c4ebfa5cf5f128fccef15e08c17d9ace0a7a7dce8d02a3a55de5a33",
+    "worker/README.md": "55676f20b971aac635de797c2f59c9c441da93bcd8fa9ebc1272710408d95e4d",
+    "worker/ebay-pricing.js": "238b8d39bddd7712dd44e81f7540a0c7a8a842d2825ce9ee2d23a453a20f311f",
+    "worker/wrangler.toml": "6a04ae7ac8f513eaf8223860252c2b4873fa8435126d272d60a4316e5e23e16f"
   },
   "protectedDirectories": {
     "worker": [

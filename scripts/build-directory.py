@@ -147,7 +147,7 @@ def render_llms(entries: list[dict[str, str]], brand_hrefs: dict[str, str]) -> s
         "\n"
         "## Core Pages\n"
         f"- [Home / Directory](https://atebit.tech/): searchable, filterable directory of all {total} entries\n"
-        "- [Price Guide](https://atebit.tech/store/): search eBay sold listings, compare prices\n"
+        "- [Price Guide](https://atebit.tech/store/): find active eBay listings and asking prices\n"
         "- [Classic Version](https://atebit.tech/classic/): plain HTML, works on vintage browsers\n"
         "- [About](https://atebit.tech/about.html): project background and contact\n"
         "- [Privacy](https://atebit.tech/privacy.html): no cookies, no stored IP addresses, no personal data; GoatCounter records page views and country only. Price Guide links are eBay Partner Network affiliate links\n"

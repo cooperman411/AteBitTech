@@ -1,136 +1,128 @@
-// Ate Bit Tech — eBay Pricing Worker v3
-// Two-mode price guide:
-//   Mode A (price guide ON):  ?q=BRAND+KEYWORD&category=SINGLE_CAT_ID
-//   Mode B (price guide OFF): ?q=KEYWORD (no category param)
-// Per-category medians, 5-tier badges, full tracking params, caching
-// v3.3: Fixed "+" bundle false positive (A500+), added game/software detection,
-//       added Amiga-specific parts to tier1 (scandoubler, gotek, kickstart, PSU),
-//       price override at $150 without requiring "computer" in title, slash bundles
-//       stripping ("no power supply"), tiered part indicators refined, price
-//       override now requires "computer" in title, added drive/mainboard to tier1
-// v3.1: Refined system detection — price override (>$80), bundle override,
-//       removed RAM/memory from part indicators (they're specs, not parts),
-//       tiered part indicators (Tier 1 always blocks, Tier 2 overridable)
-// v3: Fixed 'ic ' false positive (matched 'classic'), improved system detection
-//     for bundles, reordered classification priority (system > part downgrade)
+// Ate Bit Tech Price Guide. Browse returns active listings.
+const EBAY_SCOPE = 'https://api.ebay.com/oauth/api_scope';
+const TRACKING_PARAMS = {
+  mkcid: '1', mkrid: '711-53200-19255-0', siteid: '0',
+  toolid: '80006', mkevt: '1', campid: '5339157717'
+};
+const MARKETPLACES = {
+  EBAY_US: { name: 'US', currency: 'USD', symbol: '$' },
+  EBAY_CA: { name: 'Canada', currency: 'CAD', symbol: 'CA$' },
+  EBAY_GB: { name: 'UK & Ireland', currency: 'GBP', symbol: '£' },
+  EBAY_AU: { name: 'Australia & NZ', currency: 'AUD', symbol: 'AU$' }
+};
+const KNOWN_CATS = {
+  '162075': 'Vintage Computers & Mainframes',
+  '175690': 'Vintage Parts & Accessories',
+  '14906': 'Vintage Manuals & Merchandise',
+  '4193': 'Other Vintage Computing'
+};
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type'
+};
+
+function searchError(status, code, error) {
+  return Response.json({ code, error, priceGuideAvailable: false, results: [] }, {
+    status, headers: { ...corsHeaders, 'Cache-Control': 'no-store' }
+  });
+}
 
 export default {
-  async fetch(request) {
-    const corsHeaders = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    };
-
+  async fetch(request, env) {
     const url = new URL(request.url);
+
+    // --- Classic site proxy ---
+    // Intercept /classic/* paths to serve over HTTP for old browsers.
+    if (url.pathname.startsWith('/classic')) {
+      try {
+        var fetchPath = url.pathname;
+        if (fetchPath === '/classic' || fetchPath === '/classic/') {
+          fetchPath = '/classic/index.html';
+        }
+        const ghUrl = 'https://raw.githubusercontent.com/cooperman411/AteBitTech/main' + fetchPath;
+        const ghResp = await fetch(ghUrl);
+        if (!ghResp.ok) {
+          return new Response('Not found', { status: 404, headers: corsHeaders });
+        }
+        var ct = 'text/html; charset=utf-8';
+        if (fetchPath.endsWith('.css')) ct = 'text/css; charset=utf-8';
+        else if (fetchPath.endsWith('.js')) ct = 'text/javascript; charset=utf-8';
+        else if (fetchPath.endsWith('.png')) ct = 'image/png';
+        else if (fetchPath.endsWith('.gif')) ct = 'image/gif';
+        else if (fetchPath.endsWith('.jpg') || fetchPath.endsWith('.jpeg')) ct = 'image/jpeg';
+        else if (fetchPath.endsWith('.svg')) ct = 'image/svg+xml';
+        else if (fetchPath.endsWith('.ttf')) ct = 'font/ttf';
+        else if (fetchPath.endsWith('.ico')) ct = 'image/x-icon';
+        return new Response(ghResp.body, {
+          headers: { 'content-type': ct, 'cache-control': 'public, max-age=3600' }
+        });
+      } catch (e) {
+        return new Response('Proxy error', { status: 500, headers: corsHeaders });
+      }
+    }
+
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: corsHeaders });
     }
-
-    const query = url.searchParams.get('q');
-    if (!query) {
-      return new Response(JSON.stringify({ error: 'Missing ?q= parameter' }), {
-        status: 400,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-      });
+    if (request.method !== 'GET') {
+      return searchError(405, 'METHOD_NOT_ALLOWED', 'Use GET to search.');
     }
 
-    const categoryParam = url.searchParams.get('category');
-    const marketplaceParam = url.searchParams.get('marketplace') || 'EBAY_US';
+    const query = url.searchParams.get('q')?.trim();
+    if (!query) return searchError(400, 'MISSING_QUERY', 'Enter a search term.');
 
-    // v3.7: International marketplace support
-    var MARKETPLACES = {
-      'EBAY_US': { name: 'US', currency: 'USD', symbol: '$' },
-      'EBAY_CA': { name: 'Canada', currency: 'CAD', symbol: 'CA$' },
-      'EBAY_GB': { name: 'UK & Ireland', currency: 'GBP', symbol: '£' },
-      'EBAY_AU': { name: 'Australia & NZ', currency: 'AUD', symbol: 'AU$' }
-    };
-    var marketplace = MARKETPLACES[marketplaceParam] ? marketplaceParam : 'EBAY_US';
-    var marketInfo = MARKETPLACES[marketplace];
+    const requestedCategory = url.searchParams.get('category');
+    const category = Object.hasOwn(KNOWN_CATS, requestedCategory) ? requestedCategory : '';
+    const requestedMarketplace = url.searchParams.get('marketplace');
+    const marketplace = Object.hasOwn(MARKETPLACES, requestedMarketplace) ? requestedMarketplace : 'EBAY_US';
+    const marketInfo = MARKETPLACES[marketplace];
+    const cacheKey = new Request('https://cache.local/?' + new URLSearchParams({
+      q: query, cat: category, mkt: marketplace, v: 'active-v1'
+    }));
 
-    // --- Cache check (5-minute TTL) ---
-    const cacheKey = new Request('https://cache.local/?q=' + encodeURIComponent(query) + (categoryParam ? '&cat=' + categoryParam : '') + '&mkt=' + marketplace + '&v=44');
-    const cached = await caches.default.match(cacheKey);
-    if (cached) {
-      return cached;
+    try {
+      const cached = await caches.default.match(cacheKey);
+      if (cached) return cached;
+    } catch {
+      // A cache failure should not interrupt a search.
     }
 
-    const EBAY_APP_ID = 'YOUR_EBAY_APP_ID';
-    const EBAY_CERT_ID = 'YOUR_EBAY_CERT_ID';
-    const EBAY_SCOPE = 'https://api.ebay.com/oauth/api_scope';
-    const CAMPAIGN_ID = '5339157717';
-    const TRACKING_PARAMS = '&mkcid=1&mkrid=711-53200-19255-0&siteid=0&toolid=80006&mkevt=1&campid=' + CAMPAIGN_ID;
-    const base64 = btoa(EBAY_APP_ID + ':' + EBAY_CERT_ID);
-
-    var KNOWN_CATS = {
-      '162075': 'Vintage Computers & Mainframes',
-      '175690': 'Vintage Parts & Accessories',
-      '14906': 'Vintage Manuals & Merchandise',
-      '4193': 'Other Vintage Computing'
-    };
-
-    // Determine if price guide is available (requires a valid single category)
-    var priceGuideAvailable = false;
-    var catFilter = '';
-    if (categoryParam && KNOWN_CATS[categoryParam]) {
-      priceGuideAvailable = true;
-      catFilter = '&category_ids=' + categoryParam;
+    if (!env.EBAY_APP_ID || !env.EBAY_CERT_ID) {
+      return searchError(503, 'SEARCH_UNAVAILABLE', 'Listing search is temporarily unavailable.');
     }
 
     try {
-      // --- Get eBay OAuth token ---
+      const credentials = btoa(env.EBAY_APP_ID + ':' + env.EBAY_CERT_ID);
       const tokenResp = await fetch('https://api.ebay.com/identity/v1/oauth2/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'Authorization': 'Basic ' + base64
+          Authorization: 'Basic ' + credentials
         },
-        body: 'grant_type=client_credentials&scope=' + encodeURIComponent(EBAY_SCOPE)
+        body: new URLSearchParams({ grant_type: 'client_credentials', scope: EBAY_SCOPE }),
+        signal: AbortSignal.timeout(10000)
       });
-      const tokenData = await tokenResp.json();
-      const accessToken = tokenData.access_token;
-      if (!accessToken) {
-        return new Response(JSON.stringify({
-          error: 'eBay authentication failed',
-          priceGuideAvailable: false,
-          results: []
-        }), { status: 502, headers: { ...corsHeaders, 'Content-Type': 'application/json' } });
+      if (!tokenResp.ok) throw new Error('eBay OAuth failed');
+      const { access_token: accessToken } = await tokenResp.json();
+      if (!accessToken) throw new Error('eBay OAuth returned no access token');
+
+      const browseUrl = new URL('https://api.ebay.com/buy/browse/v1/item_summary/search');
+      browseUrl.search = new URLSearchParams({ q: query, limit: '200', fieldgroups: 'EXTENDED,FULL' });
+      if (category) browseUrl.searchParams.set('category_ids', category);
+      const searchResp = await fetch(browseUrl, {
+        headers: {
+          Authorization: 'Bearer ' + accessToken,
+          'X-EBAY-C-MARKETPLACE-ID': marketplace
+        },
+        signal: AbortSignal.timeout(10000)
+      });
+      if (!searchResp.ok) throw new Error('eBay Browse failed');
+      const data = await searchResp.json();
+      if (data?.errors?.length || (!Array.isArray(data?.itemSummaries) && data?.total !== 0)) {
+        throw new Error('eBay Browse returned an unexpected response');
       }
-
-      const ebayHeaders = {
-        'Authorization': 'Bearer ' + accessToken,
-        'X-EBAY-C-MARKETPLACE-ID': marketplace
-      };
-
-      // --- Fetch data ---
-      var items = [];
-      var soldItems = [];
-
-      if (priceGuideAvailable) {
-        // Mode A: fetch both active and sold with category filter
-        const results = await Promise.allSettled([
-          fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders }).then(function(r) { return r.json(); }),
-          fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200' + catFilter + '&filter=soldItems:{true}&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders }).then(function(r) { return r.json(); })
-        ]);
-
-        var searchData = results[0].status === 'fulfilled' ? results[0].value : { itemSummaries: [] };
-        var soldData = results[1].status === 'fulfilled' ? results[1].value : { itemSummaries: [] };
-        items = searchData.itemSummaries || [];
-        soldItems = soldData.itemSummaries || [];
-      } else {
-        // Mode B: fetch active items only
-        const searchResp = await fetch('https://api.ebay.com/buy/browse/v1/item_summary/search?q=' + encodeURIComponent(query) + '&limit=200&fieldgroups=EXTENDED,FULL', { headers: ebayHeaders });
-        const searchData = await searchResp.json();
-        items = searchData.itemSummaries || [];
-      }
-
-      // --- Median helper ---
-      function median(arr) {
-        if (arr.length === 0) return null;
-        var mid = Math.floor(arr.length / 2);
-        if (arr.length % 2 === 0) return (arr[mid - 1] + arr[mid]) / 2;
-        return arr[mid];
-      }
+      const items = data.itemSummaries || [];
 
       // --- Classification (3-layer) ---
       function classifyItem(item, selectedCat) {
@@ -316,200 +308,54 @@ export default {
         return { category: finalCat, catId: finalSub };
       }
 
-      // --- Compute per-item price-clustered medians (Mode A only) ---
-      // v3.7: Instead of one median per category, compute a per-item median
-      // based on the price neighborhood of each item. This prevents $12 screw
-      // caps from dragging down the median for $99 bezels.
-      var marketMedian = null;
-      var categoryMedians = {};
-      var categoryCounts = {};
+      const results = [];
+      for (const item of items) {
+        const cls = classifyItem(item, category);
+        if (!cls.catId || !item.itemWebUrl) continue;
 
-      if (priceGuideAvailable) {
-        // Global median from all sold items (fallback)
-        var soldPrices = soldItems
-          .map(function(i) { return parseFloat(i.price && i.price.value); })
-          .filter(function(v) { return !isNaN(v); })
-          .sort(function(a, b) { return a - b; });
-        marketMedian = median(soldPrices);
-
-        // Classify sold items and group by category
-        var categoryPrices = {};
-        for (var catId in KNOWN_CATS) {
-          categoryPrices[catId] = [];
+        const price = parseFloat(item.price?.value);
+        const listingUrl = new URL(item.itemWebUrl);
+        for (const [key, value] of Object.entries(TRACKING_PARAMS)) {
+          listingUrl.searchParams.set(key, value);
         }
 
-        for (var s = 0; s < soldItems.length; s++) {
-          var soldItem = soldItems[s];
-          var cls = classifyItem(soldItem, categoryParam);
-          var price = parseFloat(soldItem.price && soldItem.price.value);
-          if (!isNaN(price) && cls.catId && categoryPrices[cls.catId]) {
-            categoryPrices[cls.catId].push(price);
-          }
-        }
-
-        for (var catId in KNOWN_CATS) {
-          var prices = categoryPrices[catId].sort(function(a, b) { return a - b; });
-          categoryCounts[catId] = prices.length;
-          categoryMedians[catId] = median(prices);
-        }
-      }
-
-      // v3.7: Price-clustered median for a specific item
-      // Finds sold items in the same category within a price range and
-      // computes the median from the nearest ones.
-      function clusteredMedian(itemPrice, catId) {
-        if (!priceGuideAvailable || !catId) return null;
-        var catPrices = (categoryPrices[catId] || []).slice().sort(function(a, b) { return a - b; });
-        if (catPrices.length === 0) return null;
-
-        // If very few items, just use the category median
-        if (catPrices.length < 5) return categoryMedians[catId];
-
-        // Find items within 0.3x to 3x of the item's price
-        var lowBound = itemPrice * 0.3;
-        var highBound = itemPrice * 3;
-        var inRange = catPrices.filter(function(p) { return p >= lowBound && p <= highBound; });
-
-        // If not enough in range, expand to nearest by price distance
-        if (inRange.length < 5) {
-          // Sort by distance from itemPrice, take nearest 15
-          var byDistance = catPrices.slice().sort(function(a, b) {
-            return Math.abs(a - itemPrice) - Math.abs(b - itemPrice);
-          });
-          inRange = byDistance.slice(0, Math.min(15, byDistance.length));
-        }
-
-        inRange.sort(function(a, b) { return a - b; });
-        return median(inRange);
-      }
-
-      // --- Build results ---
-      var results = [];
-      for (var i = 0; i < items.length; i++) {
-        var item = items[i];
-        var cls = classifyItem(item, categoryParam);
-
-        if (!cls.catId) continue;
-
-        var price = parseFloat(item.price && item.price.value);
-
-        var imageUrl = '';
-        if (item.thumbnailImages && item.thumbnailImages.length > 0) {
-          imageUrl = item.thumbnailImages[0].imageUrl || '';
-        }
-
-        var listingUrl = item.itemWebUrl || '';
-        var affUrl = listingUrl + (listingUrl.indexOf('?') > -1 ? '&' : '?') + TRACKING_PARAMS;
-
-        var result = {
+        results.push({
           title: item.title,
-          price: price,
-          image: imageUrl,
-          url: affUrl,
+          price: Number.isFinite(price) ? price : null,
+          currency: item.price?.currency || marketInfo.currency,
+          image: item.thumbnailImages?.[0]?.imageUrl || '',
+          url: listingUrl.href,
           condition: item.condition || 'Unknown',
           conditionId: item.conditionId || '',
           category: cls.category,
           catName: KNOWN_CATS[cls.catId] || cls.category,
           categoryId: cls.catId,
           brand: item.brand || ''
-        };
-
-        if (priceGuideAvailable) {
-          var catId = cls.catId;
-          var catCount = categoryCounts[catId] || 0;
-
-          // v3.7: Use price-clustered median instead of flat category median
-          var effectiveMedian = clusteredMedian(price, catId);
-          if (!effectiveMedian) effectiveMedian = categoryMedians[catId] || marketMedian;
-          if (!effectiveMedian) effectiveMedian = 0;
-
-          var vsMedian = effectiveMedian > 0 ? Math.round(((effectiveMedian - price) / effectiveMedian) * 100) : 0;
-
-          var badge = '';
-          var badgeLabel = '';
-
-          if (vsMedian >= 50) { badge = 'STEAL'; badgeLabel = '🔥 Steal'; }
-          else if (vsMedian >= 20) { badge = 'GOOD'; badgeLabel = '✓ Good Value'; }
-          else if (vsMedian >= -10) { badge = 'FAIR'; badgeLabel = '• Fair Price'; }
-          else if (vsMedian >= -50) { badge = 'HIGH'; badgeLabel = '↑ Slightly High'; }
-          else { badge = 'WILD'; badgeLabel = '💀 Wildly Overpriced'; }
-
-          result.vsMedian = vsMedian;
-          result.median = effectiveMedian;
-          result.medianConfidence = (catCount >= 15) ? 'good' : 'low';
-          result.badge = badge;
-          result.badgeLabel = badgeLabel;
-          result.catSampleCount = catCount;
-          result.marketMedian = marketMedian;
-        }
-
-        results.push(result);
+        });
       }
 
-      // --- Sort ---
-      // v3.6: Secondary sort by search-term relevance within each badge tier
-      var queryTerms = query.toLowerCase().split(/\s+/).filter(function(t) { return t.length > 1; });
+      const queryTerms = query.toLowerCase().split(/\s+/).filter(term => term.length > 1);
       function relevance(title) {
-        var t = (title || '').toLowerCase();
-        var matches = 0;
-        for (var qi = 0; qi < queryTerms.length; qi++) {
-          if (t.indexOf(queryTerms[qi]) !== -1) matches++;
-        }
-        return matches;
+        const normalized = (title || '').toLowerCase();
+        return queryTerms.filter(term => normalized.includes(term)).length;
       }
-      if (priceGuideAvailable) {
-        var badgeOrder = { 'STEAL': 0, 'GOOD': 1, 'FAIR': 2, 'HIGH': 3, 'WILD': 4 };
-        results.sort(function(a, b) {
-          var ba = badgeOrder[a.badge] !== undefined ? badgeOrder[a.badge] : 2;
-          var bb = badgeOrder[b.badge] !== undefined ? badgeOrder[b.badge] : 2;
-          if (ba !== bb) return bb - ba;
-          // Within same badge, items with more search-term matches rank first
-          var ra = relevance(a.title), rb = relevance(b.title);
-          if (ra !== rb) return rb - ra;
-          return (a.price || 0) - (b.price || 0);
-        });
-      } else {
-        results.sort(function(a, b) {
-          var ra = relevance(a.title), rb = relevance(b.title);
-          if (ra !== rb) return rb - ra;
-          return (a.price || 0) - (b.price || 0);
-        });
-      }
+      results.sort((a, b) => relevance(b.title) - relevance(a.title) || (a.price ?? 0) - (b.price ?? 0));
 
-      var output = {
-        query: query,
-        priceGuideAvailable: priceGuideAvailable,
-        marketplace: marketplace,
+      const response = Response.json({
+        query,
+        priceGuideAvailable: false,
+        marketplace,
         marketplaceName: marketInfo.name,
         currency: marketInfo.currency,
         currencySymbol: marketInfo.symbol,
-        results: results,
+        results,
         cached_at: new Date().toISOString()
-      };
+      }, { headers: { ...corsHeaders, 'Cache-Control': 'public, max-age=300' } });
 
-      if (priceGuideAvailable) {
-        output.marketMedian = marketMedian;
-        output.categoryMedians = categoryMedians;
-        output.categoryCounts = categoryCounts;
-      }
-
-      // --- Cache ---
-      var response = new Response(JSON.stringify(output), {
-        headers: {
-          'Content-Type': 'application/json',
-          ...corsHeaders,
-          'Cache-Control': 'public, max-age=300'
-        }
-      });
-      try { await caches.default.put(cacheKey, response.clone()); } catch(e) {}
-
+      try { await caches.default.put(cacheKey, response.clone()); } catch {}
       return response;
-
-    } catch (error) {
-      return new Response(JSON.stringify({ error: error.message, priceGuideAvailable: false, results: [] }), {
-        status: 500,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' }
-      });
+    } catch {
+      return searchError(502, 'EBAY_UNAVAILABLE', 'eBay listings are temporarily unavailable. Try again shortly.');
     }
   }
-}
+};

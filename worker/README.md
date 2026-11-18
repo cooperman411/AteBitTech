@@ -1,37 +1,18 @@
 # eBay Pricing Worker
 
-Cloudflare Worker that proxies the eBay Browse API for atebit.tech/store/.
+Cloudflare Worker for the [Ate Bit Tech Price Guide](https://www.atebit.tech/store/). It returns active eBay Browse listings, preserves eBay Partner Network tracking, and classifies vintage items using eBay categories, titles, and prices. Sold-price comparisons are currently unavailable.
 
 ## Deploy
 
-```bash
-npx wrangler deploy
-```
+Update the existing `ebay-pricing` Worker. Set `EBAY_APP_ID` and `EBAY_CERT_ID` as Cloudflare Worker secrets through the authenticated dashboard or Wrangler secret commands. Enter the values through the secure prompts.
 
-Or via Cloudflare API:
-```bash
-curl -X PUT \
-  "https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/scripts/ebay-pricing" \
-  -H "Authorization: Bearer {token}" \
-  -F "metadata=@wrangler.toml;type=application/json" \
-  -F "ebay-pricing.js=@ebay-pricing.js;filename=worker.js;type=application/javascript+module"
-```
-
-## Features
-
-- Per-category medians (systems vs parts vs merch)
-- 5-tier badge pricing (DEAL/GOOD/FAIR/HIGH/WILD)
-- 3-layer classification (eBay subcategory + title refinement + price sanity)
-- 5-minute response caching via Cloudflare Cache API
-- Full eBay Partner Network tracking parameters
-- ItemId validation (numeric only, XSS prevention)
-- Promise.allSettled for graceful API degradation
-- Error logging via console.error
+Upload the candidate with `npx wrangler versions upload` from this directory. Verify an active-listings search on the preview and then deploy that version. Keep the custom domain `pricing.atebit.tech` and the existing workers.dev route enabled.
 
 ## API
 
-```
-GET https://ebay-pricing.coopernatural.workers.dev/?q=<search>
+```text
+GET https://pricing.atebit.tech/?q=Commodore+64&marketplace=EBAY_US
+GET https://pricing.atebit.tech/?q=Commodore+64&category=162075&marketplace=EBAY_GB
 ```
 
-Returns JSON with `items` array, `marketMedian`, `categoryMedians`, `computerMedian`.
+A successful response includes `results`, `marketplace`, `currency`, and `priceGuideAvailable: false`. An empty search returns HTTP 200 with an empty `results` array. An eBay upstream error returns HTTP 502 with `code: "EBAY_UNAVAILABLE"`.

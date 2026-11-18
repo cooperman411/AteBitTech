@@ -1,4 +1,9 @@
 name = "ebay-pricing"
 main = "ebay-pricing.js"
 compatibility_date = "2026-06-24"
-usage_model = "standard"
+workers_dev = true
+preview_urls = true
+
+[[routes]]
+pattern = "pricing.atebit.tech"
+custom_domain = true
