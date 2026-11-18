@@ -19,6 +19,16 @@ Centralize vendors, parts suppliers, magazines, emulators, museums, forums, and 
 - `python3 scripts/validate-site.py` verifies the data, the modern page, and all 45 classic pages stay in sync; it runs on every push via GitHub Actions
 - Hosted on GitHub Pages
 
+## Use or run the project
+
+Browse the live directory at [AteBit.Tech](https://atebit.tech). To work with the site locally, use GitHub's **Code → Download ZIP** or clone the source:
+
+```bash
+git clone https://github.com/cooperman411/AteBitTech.git
+```
+
+After editing directory data, use the build and validation commands under **Stack**. This is a website source repository; the [Skills CLI](https://skills.sh/docs) installation commands used by the AI-skill projects do not apply.
+
 ## License and Use
 This repository uses different permissions for different kinds of material:
 
@@ -41,5 +51,6 @@ Want to discuss access or collaboration? Email ** picks.favored4z @ icloud . com
 - [AI Social Publishing for Muse](https://github.com/cooperman411/ai-social-publishing)
 - [Hotel Group Sourcing Skill](https://github.com/cooperman411/hotel-group-rfp)
 - [Hotel Revenue Management Toolkit](https://github.com/cooperman411/hotel-revenue-management)
+- [Job Search Simplified](https://github.com/cooperman411/job-search-simplified)
 - [PT/OS One](https://github.com/cooperman411/plain-text-os-one)
 - [PT/OS Workspace](https://github.com/cooperman411/plain-text-os)
