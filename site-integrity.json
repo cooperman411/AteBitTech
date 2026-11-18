@@ -10,7 +10,7 @@
     "Language"
   ],
   "protectedFiles": {
-    "store/index.html": "260fc2e8d7cbfc2ff74b59094458825e4db333c2341ae84a357868e2f549aff6",
+    "store/index.html": "76eee80ec956101b37a6cbf186be8c05d975ae6285e2b1586cac1d3d616d5f45",
     "worker/README.md": "55676f20b971aac635de797c2f59c9c441da93bcd8fa9ebc1272710408d95e4d",
     "worker/ebay-pricing.js": "238b8d39bddd7712dd44e81f7540a0c7a8a842d2825ce9ee2d23a453a20f311f",
     "worker/wrangler.toml": "6a04ae7ac8f513eaf8223860252c2b4873fa8435126d272d60a4316e5e23e16f"

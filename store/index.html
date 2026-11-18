@@ -1,264 +1,26 @@
 <!DOCTYPE html>
-<html data-theme="dark" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ate Bit Tech — Price Guide</title>
   <meta name="description" content="Search current eBay listings and view asking prices for vintage computers, parts, and accessories.">
   <script data-goatcounter="https://atebit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-<style>
-/* === AteBitTech — Consolidated Stylesheet === */
-
-:root[data-theme="dark"] {
-  --bg: #0f1115;
-  --fg: #e6e7ea;
-  --muted: #b8bcc4;
-  --card: #161a20;
-  --accent: #3ea6ff;
-  --border: #2a2f3a;
-  --green: #33ff33;
-  --teal: #00e5ff;
-  --orange: #ff7700;
-  --amber: #ffb000;
-  --red-accent: #ff3344;
-}
-
-html, body {
-  background-color: var(--bg);
-  color: var(--fg);
-  font-family: 'Roboto Mono', monospace;
-}
-.title-font { font-family: 'VT323', monospace; }
-a, .link { color: var(--accent); }
-hr { border-color: var(--border); }
-
-/* Cards */
-.card {
-  background-color: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-}
-
-/* Title Glow */
-.title-glow {
-  text-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent);
-}
-
-/* Logo glow */
-.glow-logo {
-  filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 12px var(--accent));
-}
-
-/* Brand header */
-#brand-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.brand-block { text-align: center; }
-.brand-block img { display: block; margin-left: auto; margin-right: auto; }
-
-/* Navigation */
-.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 8px 0 4px;
-  margin-top: -12px;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 480px) {
-  .site-nav { flex-wrap: wrap; justify-content: center; }
-}
-.site-nav a, .site-nav button {
-  font-family: 'VT323', monospace;
-  font-size: 1.3rem;
-  color: var(--muted);
-  text-decoration: none;
-  padding: 2px 12px;
-  border: 1px solid transparent;
-  transition: color 0.2s, border-color 0.2s;
-  letter-spacing: 0.5px;
-  background: none;
-  cursor: pointer;
-}
-.site-nav a:hover, .site-nav button:hover { color: var(--accent); border-color: var(--border); }
-.site-nav a.active { color: var(--accent); border-color: var(--border); }
-
-/* Custom Scrollbar */
-::-webkit-scrollbar { width: 12px; }
-::-webkit-scrollbar-track { background: #2d3748; }
-::-webkit-scrollbar-thumb {
-  background-color: #4a5568;
-  border-radius: 6px;
-  border: 3px solid #2d3748;
-}
-
-/* Footer */
-.about-privacy-section {
-    max-width: 900px; margin: 3rem auto; padding: 0 1rem;
-    text-align: center; font-size: 0.95rem;
-  }
-.about-privacy-section hr { margin-bottom: 1rem; opacity: 0.4; }
-.about-privacy-section a { text-decoration: underline; }
-
-/* ── Store-specific ── */
-
-.results-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-@media (max-width: 640px) {
-  .results-grid { grid-template-columns: 1fr; }
-}
-
-.store-card {
-  background-color: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.store-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.2);
-}
-
-.store-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  background: #0a0a14;
-  border-bottom: 1px solid var(--border);
-}
-.store-card .card-body { padding: 0.75rem 1rem 1rem; flex: 1; display: flex; flex-direction: column; }
-.store-card .card-title { font-size: 1rem; color: var(--fg); line-height: 1.4; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .store-card .card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.5rem; }
-  .store-card .card-tag { font-size: 0.8rem; padding: 1px 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--muted); }
-.store-card .card-tag.cat { color: var(--teal); border-color: rgba(0,229,255,0.2); }
-.store-card .card-tag.brand { color: #aa66ff; border-color: rgba(170,102,255,0.2); }
-.store-card .price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
-.store-card .price { font-size: 1.5rem; color: var(--fg); font-family: 'VT323', monospace; }
-.store-card .card-actions { margin-top: 0.5rem; }
-.store-card .card-actions a { display: block; text-align: center; padding: 0.4rem; font-size: 0.85rem; border: 1px solid var(--border); color: var(--fg); border-radius: 0.4rem; transition: all 0.15s; }
-.store-card .card-actions a:hover { border-color: var(--accent); color: var(--accent); background: rgba(62,166,255,0.05); }
-
-/* Search */
-.search-area {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.search-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
-.country-btn { font-family: VT323, monospace; font-size: 1rem; padding: 2px 10px; border: 1px solid var(--border); border-radius: 4px; background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
-.country-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-.country-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
-.search-row input[type="text"] {
-    flex: 1;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--fg);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.1rem;
-    padding: 0.6rem 0.85rem;
-    border-radius: 0.4rem;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-  .search-row input[type="text"]:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(62,166,255,0.15); }
-  .search-row input[type="text"]::placeholder { color: var(--muted); opacity: 0.5; }
-  .search-row button {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--accent);
-    font-family: 'VT323', monospace;
-    font-size: 1.2rem;
-    padding: 0.6rem 1.5rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-.search-row button:hover { border-color: var(--accent); background: rgba(62,166,255,0.05); }
-
-.filters-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-}
-@media (max-width: 800px) { .filters-row { grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 500px) { .filters-row { grid-template-columns: 1fr; } }
-.filter-group label { display: block; color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2px; }
-  .filter-group select {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--fg);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.95rem;
-    padding: 0.4rem 0.5rem;
-    border-radius: 0.3rem;
-    outline: none;
-    cursor: pointer;
-  }
-.filter-group select:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(62,166,255,0.15); }
-
-.quick-links { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
-.quick-link { padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 0.3rem; font-size: 0.85rem; color: var(--muted); cursor: pointer; transition: all 0.15s; }
-.quick-link:hover { border-color: var(--accent); color: var(--accent); }
-
-.price-guide-status { color: var(--muted); margin-bottom: 1rem; }
-
-
-.no-results { text-align: center; padding: 2rem; color: var(--muted); font-size: 1rem; }
-  .loading-spinner { text-align: center; padding: 2rem; color: var(--accent); font-size: 1rem; }
-.boot-screen { text-align: center; padding: 3rem 1rem; }
-.boot-screen .cursor { animation: blink 1s step-end infinite; }
-@-webkit-keyframes blink { 50% { opacity: 0; } }
-  @keyframes blink { 50% { opacity: 0; } }
-
-  /* High Contrast */
-  :root.hc { --bg: #000000; --fg: #ffffff; --muted: #cccccc; --card: #000000; --accent: #00ffff; --border: #ffffff; }
-  :root.hc .card, :root.hc .store-card, :root.hc .search-area { border-width: 3px; }
-  .hc-toggle {
-    border: 2px solid var(--accent);
-    background: transparent;
-    color: var(--fg);
-    padding: 2px 12px;
-    border-radius: 0.5rem;
-    font-family: 'VT323', monospace;
-    font-size: 1.3rem;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-  }
-  .hc-toggle:focus-visible { outline: 3px solid var(--accent); }
-</style>
+<script>try { const theme = localStorage.getItem('atebit-theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) {}</script>
+<link rel="canonical" href="https://www.atebit.tech/store/">
+<link rel="stylesheet" href="/homepage.css">
+<link rel="stylesheet" href="/store/price-guide.css">
+<script src="/appearance.js" defer></script>
+<noscript><style>.appearance,.guide-search,#search-results{display:none!important}</style></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Ate Bit Tech — Pricing & Marketplace",
-  "url": "https://atebit.tech/store/",
+  "url": "https://www.atebit.tech/store/",
   "description": "Search current eBay listings and view asking prices for vintage computers, parts, and accessories.",
   "applicationCategory": "ShoppingApplication",
   "operatingSystem": "Any",
@@ -270,14 +32,14 @@ hr { border-color: var(--border); }
   "isPartOf": {
     "@type": "WebSite",
     "name": "Ate Bit Tech",
-    "url": "https://atebit.tech/"
+    "url": "https://www.atebit.tech/"
   }
 }
 </script>
 
 <meta property="og:title" content="Ate Bit Tech — Price Guide">
 <meta property="og:description" content="Search current eBay listings and view asking prices for vintage computers, parts, and accessories.">
-<meta property="og:url" content="https://atebit.tech/store/">
+<meta property="og:url" content="https://www.atebit.tech/store/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ate Bit Tech — Price Guide">
@@ -289,57 +51,50 @@ hr { border-color: var(--border); }
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Ate Bit Tech — Price Guide",
-  "url": "https://atebit.tech/store/",
+  "url": "https://www.atebit.tech/store/",
   "description": "Search current eBay listings and view asking prices for vintage computers, parts, and accessories."
 }
 </script>
 
 </head>
 <body>
-<a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
-<header class="max-w-6xl mx-auto my-6 px-2" id="brand-header"><div class="flex items-center justify-between gap-4">
-  <div class="brand-block text-center my-6">
-    <img alt="Ate Bit Tech logo wordmark" class="glow-logo mx-auto" src="/logo-wordmark-vt323-dark.png" width="1140" height="220" style="height:96px;width:auto;image-rendering:pixelated">
-    <div class="mt-3">
-      <h1 class="title-font title-glow text-2xl md:text-3xl">Retro &amp; Vintage Computing Database</h1>
-      <p class="title-font title-glow text-2xl md:text-3xl">Amiga to ZX and Beyond</p>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="brand-header">
+  <a class="brand" href="/" aria-label="Ate Bit Tech home"><img class="mascot-image" src="/mascot.svg" alt=""><span class="wordmark" aria-hidden="true"></span></a>
+  <nav class="site-nav" aria-label="Site navigation"><a href="/#directory">Directory</a><a href="/store/" aria-current="page">Price Guide</a><a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a><a href="/about.html">About</a><a href="/classic/">Retro Site</a></nav>
+  <div class="appearance" aria-label="Appearance controls"><button type="button" id="theme-toggle" aria-label="Switch color theme">☀ / ☾</button><button type="button" id="theme-device">Use device setting</button><button type="button" id="hc-toggle" aria-pressed="false">High contrast</button></div>
+</header>
+<main class="guide" id="main" tabindex="-1">
+  <h1>Price Guide</h1>
+  <p class="guide-intro">Browse current eBay asking prices for vintage computers, parts, and accessories.</p>
+  <form class="guide-search" id="guide-search" role="search">
+    <label for="search-input">Search listings</label>
+    <div class="guide-query">
+      <input type="search" id="search-input" placeholder="Try Commodore 64, Amiga, or Macintosh">
+      <button class="guide-primary" type="submit">Search</button>
     </div>
-  </div>
-</div></header>
-
-<nav class="site-nav" aria-label="Site navigation">
-  <a href="/">Home</a>
-  <a href="/store/" class="active">Price Guide</a>
-  <a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a>
-  <a href="/about.html">About</a>
-  <a href="/privacy.html">Privacy</a>
-  <button aria-label="Toggle high contrast mode" class="hc-toggle" id="hc-toggle">High Contrast</button>
-  <a aria-label="Retro site — works on old browsers without JavaScript" href="/classic/">Retro Site</a>
-</nav>
-
-<main class="max-w-6xl mx-auto px-2" id="main" tabindex="-1">
-
-  <h1 class="title-font text-2xl text-center mt-4 mb-1" style="color:var(--accent);">&#9670; PRICING &amp; MARKETPLACE &#9670;</h1>
-  <p class="text-center" style="color:var(--muted);font-size:1rem;margin-bottom:1rem;">
-        Browse current eBay listings and asking prices for vintage computing gear
-  </p>
-
-  <!-- Search -->
-  <div class="search-area">
-    <div class="search-row">
-      <input type="text" id="search-input" placeholder="Search... (e.g. Commodore 64, Apple Macintosh, Atari ST)" autofocus>
-      <button id="search-btn">Search</button>
-    </div>
-    <div class="country-row" style="display:flex;gap:0.25rem;margin-bottom:0.5rem;flex-wrap:wrap;">
-      <button class="country-btn active" data-mkt="EBAY_US">US</button>
-      <button class="country-btn" data-mkt="EBAY_CA">Canada</button>
-      <button class="country-btn" data-mkt="EBAY_GB">UK &amp; Ireland</button>
-      <button class="country-btn" data-mkt="EBAY_AU">Australia &amp; NZ</button>
-    </div>
-    <div class="filters-row">
-      <div class="filter-group">
-        <label>Brand</label>
-        <select id="filter-brand">
+    <fieldset>
+      <legend>Marketplace</legend>
+      <div class="guide-options">
+        <label><input type="radio" name="marketplace" value="EBAY_US" checked><span>US</span></label>
+        <label><input type="radio" name="marketplace" value="EBAY_CA"><span>Canada</span></label>
+        <label><input type="radio" name="marketplace" value="EBAY_GB"><span>UK &amp; Ireland</span></label>
+        <label><input type="radio" name="marketplace" value="EBAY_AU"><span>Australia &amp; NZ</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Item type</legend>
+      <div class="guide-options">
+      <label><input type="radio" name="item-type" value="" checked><span>All</span></label>
+      <label><input type="radio" name="item-type" value="Vintage Computers &amp; Mainframes"><span>Systems</span></label>
+      <label><input type="radio" name="item-type" value="Vintage Parts &amp; Accessories"><span>Parts</span></label>
+      <label><input type="radio" name="item-type" value="Vintage Manuals &amp; Merchandise"><span>Manuals &amp; merch</span></label>
+      <label><input type="radio" name="item-type" value="Other Vintage Computing"><span>Other</span></label>
+      </div>
+    </fieldset>
+    <div class="guide-filters">
+      <div><label for="filter-brand">Brand</label>
+<select id="filter-brand">
           <option value="">All Brands</option>
           <option value="Acorn/BBC">Acorn/BBC</option>
           <option value="Altair">Altair</option>
@@ -385,67 +140,23 @@ hr { border-color: var(--border); }
           <option value="Uncategorized">Uncategorized</option>
         </select>
       </div>
-      <div class="filter-group">
-        <label>Category</label>
-        <select id="filter-category">
-          <option value="">All Categories</option>
-          <option value="Vintage Computers &amp; Mainframes">Vintage Computers &amp; Mainframes</option>
-          <option value="Vintage Parts &amp; Accessories">Vintage Parts &amp; Accessories</option>
-          <option value="Vintage Manuals &amp; Merchandise">Vintage Manuals &amp; Merchandise</option>
-          <option value="Other Vintage Computing">Other Vintage Computing</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label>Sort</label>
-        <select id="filter-sort">
+      <div><label for="filter-sort">Sort</label>
+<select id="filter-sort">
           <option value="">Best Match</option>
           <option value="price_asc">Price: Low to High</option>
           <option value="price_desc">Price: High to Low</option>
         </select>
       </div>
     </div>
-    <div class="quick-links">
-      <span style="color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;padding:2px 4px 2px 0;">Quick:</span>
-      <span class="quick-link" data-q="commodore 64">C64</span>
-      <span class="quick-link" data-q="amiga 500">Amiga 500</span>
-      <span class="quick-link" data-q="apple macintosh classic">Mac Classic</span>
-      <span class="quick-link" data-q="atari st">Atari ST</span>
-      <span class="quick-link" data-q="ibm thinkpad">ThinkPad</span>
-      <span class="quick-link" data-q="tandy trs-80">TRS-80</span>
-      <span class="quick-link" data-q="vintage computer lot">Lots</span>
-      <span class="quick-link" data-q="nintendo nes">NES</span>
-    </div>
-    <div style="font-size:0.85rem;color:var(--muted);text-align:center;margin-top:0.25rem;">
-      Data from eBay Browse API &bull; Affiliate links via eBay Partner Network
-    </div>
-  </div>
-
-  <p class="price-guide-status">Sold-price comparisons unavailable.</p>
-
-  <!-- Results -->
-  <div id="search-results">
-    <div class="boot-screen">
-      <div class="title-font" style="font-size:3rem;color:var(--accent);margin-bottom:0.5rem;">&#9670;</div>
-      <div class="title-font" style="font-size:1.5rem;color:var(--muted);">ATEBIT STORE</div>
-      <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;">
-        Type a search above or click a quick link to begin.<br>
-        <span class="cursor">_</span>
-      </div>
-    </div>
-  </div>
-
+  </form>
+  <p class="price-guide-status">Sold-price comparisons are unavailable.</p>
+  <noscript><p>Price Guide search requires JavaScript. <a href="/classic/">Browse the Classic directory</a>.</p></noscript>
+  <p id="guide-status" role="status" aria-atomic="true"></p>
+  <div id="search-results"></div>
 </main>
-
-<footer class="about-privacy-section">
-  <hr>
-  <p>
-    Listing prices are current eBay asking prices and may change.
-    Some links on this page are eBay Partner Network affiliate links &mdash; 
-    we may earn a commission on purchases.
-  </p>
-  <p>
-        <a href="/">Home</a> &nbsp; <a href="/store/">Price Guide</a> &nbsp; <a href="/about.html">About</a> &nbsp; <a href="/privacy.html">Privacy</a> &nbsp; <a href="https://atebittech.substack.com" target="_blank">Newsletter</a>
-      </p>
+<footer class="guide-footer">
+  <p>Listing prices are current eBay asking prices and may change. Some links are eBay Partner Network affiliate links. We may earn a commission on purchases.</p>
+  <p><a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a></p>
 </footer>
 
 <script>
@@ -495,7 +206,6 @@ function formatPrice(price, currency) {
   }).format(price);
 }
 
-function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
 const CAT_TO_ID = {
     'Vintage Computers & Mainframes': '162075',
@@ -505,11 +215,12 @@ const CAT_TO_ID = {
   };
 
 const $ = id => document.getElementById(id);
+const form = $('guide-search');
+const status = $('guide-status');
 const el = {
-  si: $('search-input'), sb: $('search-btn'), res: $('search-results'),
-  fb: $('filter-brand'), fc: $('filter-category'), fsort: $('filter-sort')
+  si: $('search-input'), res: $('search-results'),
+  fb: $('filter-brand'), fc: form.elements.namedItem('item-type'), fsort: $('filter-sort')
 };
-let selectedMarketplace = 'EBAY_US';
 let currency = 'USD';
 let allItems = [];
 let searchId = 0;
@@ -522,7 +233,7 @@ function buildWorkerUrl() {
 
   const url = new URL(API);
   url.searchParams.set('q', query);
-  url.searchParams.set('marketplace', selectedMarketplace);
+  url.searchParams.set('marketplace', form.elements.namedItem('marketplace').value);
   const category = CAT_TO_ID[el.fc.value];
   if (category) url.searchParams.set('category', category);
   return url;
@@ -532,8 +243,9 @@ async function search() {
   const id = ++searchId;
   allItems = [];
   const url = buildWorkerUrl();
-  if (!url) { showEmptyState(); return; }
-  el.res.innerHTML = '<div class="loading-spinner">Searching...</div>';
+  el.res.replaceChildren();
+  if (!url) { status.textContent = 'Enter a keyword or choose a brand to search.'; return; }
+  status.textContent = 'Searching eBay listings…';
   let data;
   try {
     const response = await fetch(url, { signal: AbortSignal.timeout(25000) });
@@ -542,24 +254,17 @@ async function search() {
     if (!Array.isArray(data?.results)) throw new Error('Invalid search response');
   } catch {
     if (id !== searchId) return;
-    el.res.innerHTML = '<div class="no-results" role="status">Listing search is temporarily unavailable. Please try again.</div>';
+    status.textContent = 'Listing search is temporarily unavailable. Please try again.';
     return;
   }
   if (id !== searchId) return;
   if (!data.results.length) {
-    el.res.innerHTML = '<div class="no-results" role="status">No vintage computing items found.<br><span style="font-size:0.8rem;">Try a different search term, brand, or category.</span></div>';
+    status.textContent = 'No listings found. Try a different keyword, marketplace, or item type.';
     return;
   }
   currency = data.currency || 'USD';
   allItems = data.results;
   render();
-}
-
-function showEmptyState() {
-  el.res.innerHTML = '<div class="empty-state" style="text-align:center;padding:3rem 1rem;color:var(--muted);">' +
-    '<p style="font-family:VT323,monospace;font-size:2rem;color:var(--accent);margin-bottom:0.5rem;">&#9670; Search vintage computing &#9670;</p>' +
-    '<p style="font-size:1rem;">Type a system name above or try a quick link below.</p>' +
-    '</div>';
 }
 
 function render() {
@@ -577,86 +282,81 @@ function render() {
         return (a.currency || currency).localeCompare(b.currency || currency) || direction * (a.price - b.price);
       });
     }
-    if (!items.length) {
-      el.res.innerHTML = '<div class="no-results" role="status">No items match your filters.<br><span style="font-size:0.8rem;">Try broadening your search.</span></div>';
-      return;
-    }
-    let h = '<div class="results-grid">';
-    for (const i of items) {
-      const p = formatPrice(i.price, i.currency || currency);
-      const img = i.image || '';
-      const ih = img
-        ? '<img src="' + img + '" alt="" loading="lazy" width="280" height="180" onerror="this.outerHTML=\'<div style=height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;>&#9670;</div>\'">'
-        : '<div style="height:180px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:VT323,monospace;font-size:2rem;">&#9670;</div>';
-      const catLabel = i._cat === 'Vintage Computers & Mainframes' ? 'System'
-        : i._cat === 'Vintage Parts & Accessories' ? 'Parts'
-        : i._cat === 'Vintage Manuals & Merchandise' ? 'Manuals/Merch'
-        : i._cat === 'Other Vintage Computing' ? 'Other Vintage'
-        : 'Other';
-      const t = (i.title || '').replace(/[🕹️☠🔥👍💀➖]/g, '').trim();
-      h += '<div class="store-card">' + ih +
-        '<div class="card-body">' +
-        '<div class="card-title">' + esc(t) + '</div>' +
-        '<div class="card-meta">' +
-        '<span class="card-tag cat">' + catLabel + '</span>' +
-        '<span class="card-tag brand">' + i._brand.toUpperCase() + '</span>' +
-        '</div>' +
-        '<div class="price-row">' +
-        '<div class="price">' + p + '</div>' +
-        '</div>' +
-        '<div class="card-actions"><a href="' + i.url + '" target="_blank" rel="noopener">View on eBay</a></div>' +
-        '</div></div>';
-    }
-    h += '</div>'; el.res.innerHTML = h;
+    el.res.replaceChildren();
+    status.textContent = items.length
+      ? items.length + (items.length === 1 ? ' listing' : ' listings')
+      : 'No items match these filters. Try broadening your search.';
+    if (!items.length) return;
+
+    const grid = document.createElement('div');
+    grid.className = 'results-grid';
+    for (const item of items) grid.append(listingCard(item));
+    el.res.append(grid);
   }
 
-  el.sb.addEventListener('click', search);
-  el.si.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); search(); } });
-  [el.fb, el.fc].forEach(select => select.addEventListener('change', search));
-  el.fsort.addEventListener('change', () => { if (allItems.length) render(); });
-  document.querySelectorAll('.country-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      selectedMarketplace = btn.dataset.mkt;
-      if (searchId) search();
-    });
-  });
-  document.querySelectorAll('.quick-link').forEach(link => link.addEventListener('click', () => {
-    el.si.value = link.dataset.q;
+  function listingCard(item) {
+    const card = document.createElement('article');
+    card.className = 'store-card';
+    const photo = document.createElement('div');
+    photo.className = 'listing-photo';
+    photo.textContent = 'No image available';
+    if (isHttps(item.image)) {
+      const image = document.createElement('img');
+      image.alt = '';
+      image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        photo.textContent = 'No image available';
+      }, {once: true});
+      photo.replaceChildren(image);
+      image.src = item.image;
+    }
+
+    const body = document.createElement('div');
+    body.className = 'listing-body';
+    const title = document.createElement('h2');
+    title.textContent = item.title || 'Untitled listing';
+    const price = document.createElement('p');
+    price.className = 'listing-price';
+    price.textContent = Number.isFinite(item.price)
+      ? 'Asking price: ' + formatPrice(item.price, item.currency || currency)
+      : 'Asking price unavailable';
+    body.append(title, price);
+    if (item.condition && item.condition !== 'Unknown') {
+      const condition = document.createElement('p');
+      condition.className = 'listing-condition';
+      condition.textContent = item.condition;
+      body.append(condition);
+    }
+    if (isHttps(item.url)) {
+      const link = document.createElement('a');
+      link.href = item.url;
+      link.target = '_blank';
+      link.rel = 'noopener sponsored';
+      link.textContent = 'View on eBay';
+      link.setAttribute('aria-label', 'View on eBay: ' + title.textContent);
+      body.append(link);
+    }
+    card.append(photo, body);
+    return card;
+  }
+
+  function isHttps(value) {
+    try { return new URL(value).protocol === 'https:'; }
+    catch { return false; }
+  }
+
+  form.addEventListener('submit', event => {
+    event.preventDefault();
     search();
-  }));
-  showEmptyState();
-
-  // High Contrast Toggle
-  const hcBtn = document.getElementById('hc-toggle');
-  if (hcBtn) {
-    hcBtn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('hc');
-    });
-  }
-
-  // Accessibility: announce dynamic updates to screen readers
-  const announcer = document.createElement('div');
-  announcer.setAttribute('aria-live', 'polite');
-  announcer.setAttribute('aria-atomic', 'true');
-  announcer.className = 'sr-only';
-  document.body.appendChild(announcer);
-
-  // Override render to announce results
-  const origRender = render;
-  render = function() {
-    origRender();
-    const visible = document.querySelectorAll('.store-card').length;
-    const total = allItems.length;
-    announcer.textContent = 'Showing ' + visible + ' of ' + total + ' items';
-  };
-
-  // Keyboard nav: focus-visible styles are already in CSS
-  // Ensure all interactive elements are keyboard accessible
-  document.querySelectorAll('.quick-link, .store-card .card-actions a').forEach(el => {
-    if (!el.getAttribute('tabindex')) el.setAttribute('tabindex', '0');
   });
+  form.addEventListener('change', event => {
+    if (event.target === el.fsort) {
+      if (allItems.length) render();
+    } else if (event.target.matches('#filter-brand, [name=marketplace], [name=item-type]')) {
+      if (buildWorkerUrl() || searchId) search();
+    }
+  });
+  status.textContent = 'Enter a keyword or choose a brand to search.';
 
 })();
 </script>

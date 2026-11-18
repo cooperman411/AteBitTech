@@ -14,7 +14,7 @@ Centralize vendors, parts suppliers, magazines, emulators, museums, forums, and 
 - [Privacy notice](https://www.atebit.tech/privacy.html) covers hosting and analytics, Price Guide requests and eBay affiliate links, local theme storage, and contact email
 
 ## Stack
-- Static HTML, local CSS and JavaScript for the directory, and Tailwind (CDN) for the Price Guide
+- Static HTML with local CSS and JavaScript
 - Generated from `data/directory.json` — edit the data, then run `python3 scripts/build-directory.py --write`
 - `python3 scripts/validate-site.py` verifies the data, the modern page, and all 45 classic pages stay in sync; it runs on every push via GitHub Actions
 - Hosted on GitHub Pages
