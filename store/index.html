@@ -150,6 +150,7 @@
     </div>
   </form>
   <p class="price-guide-status">Sold-price comparisons are unavailable.</p>
+  <p class="price-guide-status" id="systems-note" hidden>Systems matches likely computers using listing titles. Check the listing for condition and what’s included.</p>
   <noscript><p>Price Guide search requires JavaScript. <a href="/classic/">Browse the Classic directory</a>.</p></noscript>
   <p id="guide-status" role="status" aria-atomic="true"></p>
   <div id="search-results"></div>
@@ -159,7 +160,9 @@
   <p><a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a></p>
 </footer>
 
-<script>
+<script type="module">
+import {looksLikeComputer, requestedSystemRank} from "./system-listings.js";
+
 (function(){
 const API = 'https://pricing.atebit.tech/';
 
@@ -168,7 +171,7 @@ const BRANDS = [
   { n: 'Altair', p: /\baltair\b/i },
   { n: 'Amiga', p: /\bamiga\b|a500|a600|a1200|a2000|a3000|a4000|a1000|a2500|cd32|cdtv/i },
   { n: 'Amstrad', p: /\bamstrad\b|\bcpc\s*\d|gx4000|pce\/?\d/i },
-  { n: 'Apple', p: /apple\s+(i{1,3}|macintosh|mac|powerbook|power\s*mac|lisa|pro)|macintosh|macbook|imac|powerbook|power\s*pc|(^|\s)mac\s/i },
+  { n: 'Apple', p: /apple\s+(i{1,3}|2(?:e|c|gs)?\b|\]\[|macintosh|mac|powerbook|power\s*mac|lisa|pro)|macintosh|macbook|imac|powerbook|power\s*pc|(^|\s)mac\s/i },
   { n: 'Atari', p: /\batari\b|atari\s+(s[tx]|800|2600|400|1200|xl|xe|falc|jaguar|lynx|7800|5200|1040|mega)/i },
   { n: 'Coleco', p: /\bcoleco\b/i },
   { n: 'Commodore', p: /\bcommodore\b|c64\b|c128\b|vic-?20\b|c16\b|c116\b|plus\/?4\b|pet\b|cbm\s*\d|(^|\s)1541|(^|\s)1571|(^|\s)1581/i },
@@ -223,6 +226,7 @@ const el = {
 };
 let currency = 'USD';
 let allItems = [];
+let submittedKeyword = "";
 let searchId = 0;
 
 function buildWorkerUrl() {
@@ -242,8 +246,10 @@ function buildWorkerUrl() {
 async function search() {
   const id = ++searchId;
   allItems = [];
+  submittedKeyword = el.si.value.trim();
   const url = buildWorkerUrl();
   el.res.replaceChildren();
+  $('systems-note').hidden = CAT_TO_ID[el.fc.value] !== '162075';
   if (!url) { status.textContent = 'Enter a keyword or choose a brand to search.'; return; }
   status.textContent = 'Searching eBay listings…';
   let data;
@@ -273,7 +279,14 @@ function render() {
     if (BRANDS.some(entry => entry.n === brand) || brand === 'Other' || brand === 'Uncategorized') {
       items = items.filter(item => item._brand === brand);
     }
-    if (category) items = items.filter(item => item._cat === category);
+    const systemsOnly = CAT_TO_ID[category] === '162075';
+    if (systemsOnly) {
+      items = items.filter(item => looksLikeComputer(item.title))
+        .map(item => ({ ...item, systemRank: requestedSystemRank(item.title, submittedKeyword, brand) }))
+        .filter(item => item.systemRank > 0);
+    } else if (category) {
+      items = items.filter(item => item._cat === category);
+    }
     if (sort) {
       const direction = sort === 'price_desc' ? -1 : 1;
       items.sort((a, b) => {
@@ -282,10 +295,13 @@ function render() {
         return (a.currency || currency).localeCompare(b.currency || currency) || direction * (a.price - b.price);
       });
     }
+    if (systemsOnly) items.sort((a, b) => b.systemRank - a.systemRank);
     el.res.replaceChildren();
     status.textContent = items.length
       ? items.length + (items.length === 1 ? ' listing' : ' listings')
-      : 'No items match these filters. Try broadening your search.';
+      : systemsOnly
+        ? 'No likely computer systems found. Try a specific model or another marketplace.'
+        : 'No items match these filters. Try broadening your search.';
     if (!items.length) return;
 
     const grid = document.createElement('div');
