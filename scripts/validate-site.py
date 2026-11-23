@@ -400,6 +400,55 @@ def check_classic(
             )
 
 
+def check_events(report: Report) -> None:
+    path = ROOT / "data" / "events.json"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        report.error(f"event data cannot be read: {error}")
+        return
+    if not isinstance(data, dict) or not isinstance(data.get("events"), list):
+        report.error("data/events.json must contain an events array")
+        return
+    last_updated = data.get("lastUpdated")
+    if not isinstance(last_updated, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", last_updated):
+        report.error("data/events.json must contain a manually maintained lastUpdated date")
+    events = data["events"]
+    ids: set[str] = set()
+    errors: list[str] = []
+    for position, event in enumerate(events, start=1):
+        if not isinstance(event, dict):
+            errors.append(f"event {position} is not an object")
+            continue
+        for field in ("id", "name", "category", "url", "scheduleStatus"):
+            if not event.get(field):
+                errors.append(f"event {position} is missing {field}")
+        if event.get("scheduleStatus") == "confirmed" and (not event.get("continent") or not event.get("timeZone")):
+            errors.append(f"confirmed event {event.get('name', position)} needs a region and local time zone")
+        if event.get("scheduleStatus") == "tba" and event.get("endDate") and not event.get("timeZone"):
+            errors.append(f"dated TBA event {event.get('name', position)} needs a local time zone")
+        if event.get("id") in ids:
+            errors.append(f"duplicate event id: {event.get('id')}")
+        ids.add(event.get("id", ""))
+        if event.get("scheduleStatus") == "confirmed":
+            start, end = event.get("startDate"), event.get("endDate")
+            if not start or not end or end < start:
+                errors.append(f"event {event.get('name', position)} has invalid confirmed dates")
+        if event.get("scheduleStatus") == "tba" and (event.get("startDate") or event.get("endDate")):
+            if event.get("startDate") and event.get("endDate") and event["endDate"] < event["startDate"]:
+                errors.append(f"event {event.get('name', position)} has reversed dates")
+        if not isinstance(event.get("url", ""), str) or not event["url"].startswith("https://"):
+            errors.append(f"event {event.get('name', position)} must link to an HTTPS official source")
+        if "notes" in event or "editorialStatus" in event or "publicationStatus" in event:
+            errors.append(f"event {event.get('name', position)} exposes an internal field")
+    if errors:
+        report.error(f"data/events.json has {len(errors)} issue(s)")
+        for error in errors[:10]:
+            print(f"      {error}")
+    else:
+        report.ok(f"event feed has {len(events)} valid public records and no internal fields")
+
+
 def main() -> int:
     report = Report()
     try:
@@ -413,6 +462,7 @@ def main() -> int:
         return 2
 
     check_protected_files(report, config)
+    check_events(report)
     check_database(report, config, schema, entries)
     check_sort_order(report, entries)
     if entries == embedded_entries:

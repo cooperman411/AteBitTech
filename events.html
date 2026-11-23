@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.atebit.tech/events.html">
+<title>Retro Computing &amp; Gaming Events — Ate Bit Tech</title>
+<meta name="description" content="Upcoming vintage computer festivals, retro gaming conventions, exhibitions and community events around the world.">
+<script>try { const theme = localStorage.getItem('atebit-theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) {}</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/homepage.css">
+<link rel="stylesheet" href="/events.css">
+<script src="/appearance.js" defer></script>
+<script src="/events.js" defer></script>
+<noscript><style>.appearance{display:none!important}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="brand-header">
+  <a class="brand" href="/" aria-label="Ate Bit Tech home"><img class="mascot-image" src="/mascot.svg" alt=""><span class="wordmark" aria-hidden="true"></span></a>
+  <nav class="site-nav" aria-label="Site navigation"><a href="/#directory">Directory</a><a href="/events.html" aria-current="page">Events</a><a href="/store/">Price Guide</a><a href="https://atebittech.substack.com" target="_blank" rel="noopener">Newsletter</a><a href="/about.html">About</a><a href="/classic/">Retro Site</a></nav>
+  <div class="appearance" aria-label="Appearance controls"><button type="button" id="theme-toggle" aria-label="Switch color theme">☀ / ☾</button><button type="button" id="theme-device">Use device setting</button><button type="button" id="hc-toggle" aria-pressed="false">High contrast</button></div>
+</header>
+<main class="events-page" id="main" tabindex="-1">
+  <p class="eyebrow">COMMUNITY CALENDAR</p>
+  <h1>Retro Computing &amp; Gaming Events</h1>
+  <p class="events-intro">Find upcoming vintage computer festivals, retro gaming conventions, exhibitions and community events around the world. Dates and details are verified against official event sources.</p>
+  <p class="last-updated" id="events-updated"></p>
+  <section class="event-filters" aria-label="Filter events">
+    <div class="event-filter-buttons" role="group" aria-label="Filter by event type">
+      <button type="button" data-category="all" aria-pressed="true">All Events</button>
+      <button type="button" data-category="computing" aria-pressed="false">Retro Computing</button>
+      <button type="button" data-category="gaming" aria-pressed="false">Retro Gaming</button>
+    </div>
+    <label for="event-region">Region</label>
+    <select id="event-region"><option value="all">All regions</option></select>
+  </section>
+  <section aria-labelledby="confirmed-title"><h2 id="confirmed-title">Upcoming Events</h2><div class="event-list" id="confirmed-events" aria-live="polite"></div></section>
+  <section class="dates-tba" aria-labelledby="tba-title"><h2 id="tba-title">Dates to Be Announced</h2><div class="event-list" id="tba-events" aria-live="polite"></div></section>
+  <p class="event-empty" id="events-empty" hidden>No events match these filters.</p>
+</main>
+<footer class="events-footer"><a href="/">Home</a> · <a href="/store/">Price Guide</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a></footer>
+</body>
+</html>
